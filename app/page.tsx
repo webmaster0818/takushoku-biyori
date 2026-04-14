@@ -227,6 +227,70 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 目的別で探す */}
+      <section className="max-w-5xl mx-auto px-4 py-14">
+        <h2 className="font-display text-xl md:text-2xl font-bold mb-3 text-center">
+          目的別で探す
+        </h2>
+        <p className="text-warm-gray text-sm text-center mb-8">
+          あなたの目的に合った宅食サービスがすぐに見つかります
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+          {[
+            {
+              title: "ダイエット目的",
+              desc: "全メニュー糖質30g以下。noshの低糖質メニューで無理なく続けるダイエット。",
+              icon: "🏃",
+              color: "bg-green-50 border-green-200",
+            },
+            {
+              title: "一人暮らし向け",
+              desc: "1食499円〜のコスパとアプリで完結する手軽さ。一人暮らしの強い味方。",
+              icon: "🏠",
+              color: "bg-amber-50 border-amber-200",
+            },
+            {
+              title: "高齢者向け",
+              desc: "やわらか食・塩分制限・たんぱく質調整。ウェルネスダイニングの専門コース。",
+              icon: "👴",
+              color: "bg-blue-50 border-blue-200",
+            },
+            {
+              title: "産後・授乳中",
+              desc: "栄養バランスと手軽さを両立。添加物の少ない安心メニューで産後ケア。",
+              icon: "👶",
+              color: "bg-pink-50 border-pink-200",
+            },
+            {
+              title: "筋トレ・ボディメイク",
+              desc: "たんぱく質20g以上×糖質30g以下。PFC管理が簡単にできる高たんぱくメニュー。",
+              icon: "💪",
+              color: "bg-purple-50 border-purple-200",
+            },
+            {
+              title: "グルメ・味重視",
+              desc: "プロの料理人監修のレストラン品質。三ツ星ファームで自宅がレストランに。",
+              icon: "🍽️",
+              color: "bg-orange-50 border-orange-200",
+            },
+          ].map((item) => (
+            <Link
+              key={item.title}
+              href="/articles/nosh-vs-mitsuboshi-vs-wellness/#purpose"
+              className={`${item.color} border rounded-xl p-5 hover:shadow-md transition-all group block`}
+            >
+              <span className="text-2xl mb-3 block">{item.icon}</span>
+              <h3 className="font-bold text-sm mb-2 group-hover:text-accent transition-colors">
+                {item.title}
+              </h3>
+              <p className="text-warm-gray text-xs leading-relaxed">
+                {item.desc}
+              </p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-gradient-to-b from-cream to-background py-16">
         <div className="max-w-3xl mx-auto px-4 text-center">
