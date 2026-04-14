@@ -117,48 +117,107 @@ export default function Home() {
       {/* Featured Article */}
       <section className="max-w-5xl mx-auto px-4 py-14">
         <h2 className="font-display text-xl md:text-2xl font-bold mb-8 text-center">
-          注目の比較記事
+          注目の記事
         </h2>
-        <Link
-          href="/articles/nosh-vs-mitsuboshi-vs-wellness/"
-          className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
-        >
-          <div className="flex flex-col md:flex-row">
-            <div className="md:w-2/5 relative">
-              <Image
-                src="/images/article-thumb.png"
-                alt="nosh・三ツ星ファーム・ウェルネスダイニング 3社比較"
-                width={500}
-                height={500}
-                className="w-full h-48 md:h-full object-cover"
-              />
+        <div className="space-y-5">
+          <Link
+            href="/articles/nosh-vs-mitsuboshi-vs-wellness/"
+            className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+          >
+            <div className="flex flex-col md:flex-row">
+              <div className="md:w-2/5 relative">
+                <Image
+                  src="/images/article-thumb.png"
+                  alt="nosh・三ツ星ファーム・ウェルネスダイニング 3社比較"
+                  width={500}
+                  height={500}
+                  className="w-full h-48 md:h-full object-cover"
+                />
+              </div>
+              <div className="md:w-3/5 p-6 md:p-8 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-4 w-fit">
+                  比較記事
+                </span>
+                <h3 className="text-lg md:text-xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors leading-snug">
+                  【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-4">
+                  価格・味・メニュー数・栄養・目的別コース・キャンペーン・継続しやすさの7項目で徹底比較。
+                  あなたに最適な宅配弁当が見つかります。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["nosh", "三ツ星ファーム", "ウェルネスダイニング", "価格比較"].map(
+                    (tag) => (
+                      <span
+                        key={tag}
+                        className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                      >
+                        {tag}
+                      </span>
+                    )
+                  )}
+                </div>
+              </div>
             </div>
-            <div className="md:w-3/5 p-6 md:p-8 flex flex-col justify-center">
-              <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-4 w-fit">
-                比較記事
-              </span>
-              <h3 className="text-lg md:text-xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors leading-snug">
-                【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング
-              </h3>
-              <p className="text-warm-gray text-sm leading-relaxed mb-4">
-                価格・味・メニュー数・栄養・目的別コース・キャンペーン・継続しやすさの7項目で徹底比較。
-                あなたに最適な宅配弁当が見つかります。
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {["nosh", "三ツ星ファーム", "ウェルネスダイニング", "価格比較"].map(
-                  (tag) => (
+          </Link>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <Link
+              href="/articles/nosh-reviews/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  nosh(ナッシュ)の口コミ・評判を徹底調査
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  良い口コミ・悪い口コミの両方を紹介。実際に注文してわかったメリット5つ・デメリット3つ、料金・送料・nosh
+                  club割引まで徹底解説。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["nosh", "口コミ", "評判", "料金"].map((tag) => (
                     <span
                       key={tag}
                       className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
                     >
                       {tag}
                     </span>
-                  )
-                )}
+                  ))}
+                </div>
               </div>
-            </div>
+            </Link>
+
+            <Link
+              href="/articles/hitorigurashi-osusume/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  目的別ガイド
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  一人暮らしにおすすめの宅食・宅配弁当TOP5
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  一人暮らし向けの宅食を総合ランキング。女性向け・男性向け・シニア向けの目的別おすすめや月額コストシミュレーションも。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["一人暮らし", "ランキング", "コスパ", "宅食"].map((tag) => (
+                    <span
+                      key={tag}
+                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Link>
           </div>
-        </Link>
+        </div>
       </section>
 
       {/* Categories */}

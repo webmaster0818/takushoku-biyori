@@ -1096,11 +1096,19 @@ export default function ArticlePage() {
         {/* Related articles placeholder */}
         <div className="mt-10 bg-cream rounded-xl p-6">
           <p className="font-bold text-sm mb-3">関連記事</p>
-          <ul className="space-y-2 text-sm text-warm-gray">
-            <li>nosh の悪い口コミは本当？徹底検証（準備中）</li>
-            <li>ウェルネスダイニング 口コミ・評判まとめ（準備中）</li>
-            <li>コープデリ vs パルシステム 比較（準備中）</li>
-            <li>高齢者向け宅配弁当おすすめ10選（準備中）</li>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark transition-colors">
+                【2026年最新】nosh(ナッシュ)の口コミ・評判を徹底調査
+              </Link>
+            </li>
+            <li>
+              <Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark transition-colors">
+                【2026年最新】一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5
+              </Link>
+            </li>
+            <li className="text-warm-gray">ウェルネスダイニング 口コミ・評判まとめ（準備中）</li>
+            <li className="text-warm-gray">高齢者向け宅配弁当おすすめ10選（準備中）</li>
           </ul>
         </div>
       </article>
