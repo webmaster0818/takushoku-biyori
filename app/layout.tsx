@@ -102,7 +102,7 @@ function Header() {
           className="font-display text-xl font-bold text-accent-dark tracking-tight flex items-center gap-2"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/logo.png" alt="" className="w-8 h-8 rounded" />
+          <img src="/images/logo.png" alt="" className="w-16 h-16 rounded" />
           {SITE_NAME}
         </Link>
         {/* Desktop nav */}
@@ -167,7 +167,7 @@ function Footer() {
           <div>
             <p className="font-display text-lg font-bold mb-2 flex items-center gap-2">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/logo.png" alt="" className="w-7 h-7 rounded" />
+              <img src="/images/logo.png" alt="" className="w-14 h-14 rounded" />
               {SITE_NAME}
             </p>
             <p className="text-sm text-white/70 leading-relaxed">
