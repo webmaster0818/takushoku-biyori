@@ -12,13 +12,13 @@ const categories = [
     title: "目的別ガイド",
     description: "ダイエット・高齢者・産後など目的に合った選び方",
     image: "/images/category-guide.png",
-    href: "/articles/nosh-vs-mitsuboshi-vs-wellness/",
+    href: "/articles/diet-osusume/",
   },
   {
     title: "栄養食",
     description: "糖質制限・塩分制限・たんぱく質調整の専門食",
     image: "/images/category-nutrition.png",
-    href: "/articles/nosh-vs-mitsuboshi-vs-wellness/",
+    href: "/articles/toushitsu-seigen-osusume/",
   },
   {
     title: "口コミ・評判",
@@ -329,6 +329,119 @@ export default function Home() {
               </div>
             </Link>
           </div>
+
+          {/* Phase 4B: 目的特化記事 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
+            <Link
+              href="/articles/diet-osusume/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  目的別ガイド
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  ダイエット向け宅配弁当おすすめランキングTOP5
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  低糖質・低カロリーの宅配弁当を徹底比較。置き換えダイエットの成功のコツも解説。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["ダイエット", "低糖質", "カロリー制限", "ランキング"].map((tag) => (
+                    <span
+                      key={tag}
+                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/articles/koureisha-osusume/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  目的別ガイド
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  高齢者向け宅配弁当おすすめランキングTOP5
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  やわらか食・制限食も徹底比較。離れて暮らすご家族からの注文方法も解説。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["高齢者", "シニア", "やわらか食", "制限食"].map((tag) => (
+                    <span
+                      key={tag}
+                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
+            <Link
+              href="/articles/sango-osusume/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-pink-100 text-pink-700 text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  目的別ガイド
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  産後におすすめの宅配弁当ランキングTOP5
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  産褥期の栄養管理と時短を両立。授乳中の栄養補給や出産前ストックも解説。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["産後", "授乳中", "産褥期", "ママ向け"].map((tag) => (
+                    <span
+                      key={tag}
+                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/articles/toushitsu-seigen-osusume/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-purple-100 text-purple-700 text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  目的別ガイド
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  糖質制限におすすめの宅配弁当ランキングTOP5
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  低糖質・糖質オフの宅食を徹底比較。ロカボからケトジェニックまで対応。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["糖質制限", "低糖質", "ケトジェニック", "ロカボ"].map((tag) => (
+                    <span
+                      key={tag}
+                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -413,41 +526,47 @@ export default function Home() {
               desc: "全メニュー糖質30g以下。noshの低糖質メニューで無理なく続けるダイエット。",
               image: "/images/icon-diet.png",
               color: "bg-green-50 border-green-200",
+              href: "/articles/diet-osusume/",
             },
             {
               title: "一人暮らし向け",
               desc: "1食499円〜のコスパとアプリで完結する手軽さ。一人暮らしの強い味方。",
               image: "/images/icon-single.png",
               color: "bg-amber-50 border-amber-200",
+              href: "/articles/hitorigurashi-osusume/",
             },
             {
               title: "高齢者向け",
               desc: "やわらか食・塩分制限・たんぱく質調整。ウェルネスダイニングの専門コース。",
               image: "/images/icon-elderly.png",
               color: "bg-blue-50 border-blue-200",
+              href: "/articles/koureisha-osusume/",
             },
             {
               title: "産後・授乳中",
               desc: "栄養バランスと手軽さを両立。添加物の少ない安心メニューで産後ケア。",
               image: "/images/icon-postpartum.png",
               color: "bg-pink-50 border-pink-200",
+              href: "/articles/sango-osusume/",
             },
             {
-              title: "筋トレ・ボディメイク",
-              desc: "たんぱく質20g以上×糖質30g以下。PFC管理が簡単にできる高たんぱくメニュー。",
+              title: "糖質制限",
+              desc: "糖質10g〜30g以下の専門コース。ロカボからケトジェニックまで対応。",
               image: "/images/icon-muscle.png",
               color: "bg-purple-50 border-purple-200",
+              href: "/articles/toushitsu-seigen-osusume/",
             },
             {
               title: "グルメ・味重視",
               desc: "プロの料理人監修のレストラン品質。三ツ星ファームで自宅がレストランに。",
               image: "/images/icon-gourmet.png",
               color: "bg-orange-50 border-orange-200",
+              href: "/articles/nosh-vs-mitsuboshi-vs-wellness/#purpose",
             },
           ].map((item) => (
             <Link
               key={item.title}
-              href="/articles/nosh-vs-mitsuboshi-vs-wellness/#purpose"
+              href={item.href}
               className={`${item.color} border rounded-xl p-5 hover:shadow-md transition-all group block`}
             >
               <div className="w-16 h-16 mb-3 rounded-lg overflow-hidden">

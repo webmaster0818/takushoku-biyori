@@ -49,6 +49,30 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://takushoku-biyori.com/articles/diet-osusume/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://takushoku-biyori.com/articles/koureisha-osusume/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://takushoku-biyori.com/articles/sango-osusume/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://takushoku-biyori.com/articles/toushitsu-seigen-osusume/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://takushoku-biyori.com/terms-of-service/</loc>
     <lastmod>2026-04-16</lastmod>
     <changefreq>yearly</changefreq>
