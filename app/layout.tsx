@@ -99,11 +99,10 @@ function Header() {
       <nav className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link
           href="/"
-          className="font-display text-xl font-bold text-accent-dark tracking-tight"
+          className="font-display text-xl font-bold text-accent-dark tracking-tight flex items-center gap-2"
         >
-          <span className="text-2xl mr-1" role="img" aria-label="食事">
-            🍱
-          </span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/logo.png" alt="" className="w-8 h-8 rounded" />
           {SITE_NAME}
         </Link>
         {/* Desktop nav */}
@@ -180,8 +179,10 @@ function Footer() {
       <div className="max-w-5xl mx-auto px-4 py-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <p className="font-display text-lg font-bold mb-2">
-              🍱 {SITE_NAME}
+            <p className="font-display text-lg font-bold mb-2 flex items-center gap-2">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/logo.png" alt="" className="w-7 h-7 rounded" />
+              {SITE_NAME}
             </p>
             <p className="text-sm text-white/70 leading-relaxed">
               宅配弁当・栄養食を徹底比較。
