@@ -25,20 +25,20 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://takushoku-biyori.com/about/</loc>
-    <lastmod>2026-04-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://takushoku-biyori.com/privacy-policy/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://takushoku-biyori.com/terms-of-service/</loc>
+    <lastmod>2026-04-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://takushoku-biyori.com/terms-of-service/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://takushoku-biyori.com/privacy-policy/</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://takushoku-biyori.com/content-policy/</loc>
+    <lastmod>2026-04-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

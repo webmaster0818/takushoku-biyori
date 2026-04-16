@@ -120,14 +120,6 @@ function Header() {
               比較記事
             </Link>
           </li>
-          <li>
-            <Link
-              href="/about/"
-              className="hover:text-accent transition-colors"
-            >
-              運営者情報
-            </Link>
-          </li>
         </ul>
         {/* Mobile hamburger */}
         <details className="md:hidden relative group">
@@ -159,12 +151,6 @@ function Header() {
               className="block px-4 py-2 text-sm hover:bg-cream transition-colors"
             >
               比較記事
-            </Link>
-            <Link
-              href="/about/"
-              className="block px-4 py-2 text-sm hover:bg-cream transition-colors"
-            >
-              運営者情報
             </Link>
           </div>
         </details>
@@ -204,8 +190,11 @@ function Footer() {
             <p className="font-bold text-sm mb-3">サイト情報</p>
             <ul className="space-y-2 text-sm text-white/70">
               <li>
-                <Link href="/about/" className="hover:text-white transition-colors">
-                  運営者情報
+                <Link
+                  href="/terms-of-service/"
+                  className="hover:text-white transition-colors"
+                >
+                  利用規約
                 </Link>
               </li>
               <li>
@@ -218,10 +207,10 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  href="/terms-of-service/"
+                  href="/content-policy/"
                   className="hover:text-white transition-colors"
                 >
-                  利用規約
+                  記事制作ポリシー
                 </Link>
               </li>
             </ul>
