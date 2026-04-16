@@ -799,6 +799,20 @@ export default function NoshReviewsPage() {
           >
             一人暮らしにおすすめの宅食TOP5
           </Link>
+          <span className="text-warm-gray text-sm mx-2">|</span>
+          <Link
+            href="/articles/mitsuboshi-farm-reviews/"
+            className="text-accent hover:text-accent-dark underline font-medium text-sm"
+          >
+            三ツ星ファームの口コミ・評判
+          </Link>
+          <span className="text-warm-gray text-sm mx-2">|</span>
+          <Link
+            href="/articles/wellness-dining-reviews/"
+            className="text-accent hover:text-accent-dark underline font-medium text-sm"
+          >
+            ウェルネスダイニングの口コミ・評判
+          </Link>
         </div>
 
         {/* Author info */}
@@ -823,6 +837,26 @@ export default function NoshReviewsPage() {
             <li>
               <Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">
                 【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング
+              </Link>
+            </li>
+            <li>
+              <Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark transition-colors">
+                【2026年最新】三ツ星ファームの口コミ・評判を徹底調査
+              </Link>
+            </li>
+            <li>
+              <Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark transition-colors">
+                【2026年最新】ウェルネスダイニングの口コミ・評判を徹底調査
+              </Link>
+            </li>
+            <li>
+              <Link href="/articles/magokoro-care-reviews/" className="text-accent hover:text-accent-dark transition-colors">
+                【2026年最新】まごころケア食の口コミ・評判を徹底調査
+              </Link>
+            </li>
+            <li>
+              <Link href="/articles/shokutakubin-reviews/" className="text-accent hover:text-accent-dark transition-colors">
+                【2026年最新】食宅便の口コミ・評判を徹底調査
               </Link>
             </li>
             <li>

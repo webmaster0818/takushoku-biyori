@@ -217,6 +217,118 @@ export default function Home() {
               </div>
             </Link>
           </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
+            <Link
+              href="/articles/mitsuboshi-farm-reviews/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  三ツ星ファームの口コミ・評判を徹底調査
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  一流シェフ監修の冷凍弁当の実力は？まずいは本当？料金プラン・送料・メニューの特徴を実食レビューで解説。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["三ツ星ファーム", "口コミ", "評判", "実食"].map((tag) => (
+                    <span
+                      key={tag}
+                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/articles/wellness-dining-reviews/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  ウェルネスダイニングの口コミ・評判を徹底調査
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  制限食の専門サービスの実力とは？管理栄養士への無料相談、全6コースの料金・送料を徹底解説。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["ウェルネスダイニング", "口コミ", "制限食", "料金"].map((tag) => (
+                    <span
+                      key={tag}
+                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
+            <Link
+              href="/articles/magokoro-care-reviews/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  まごころケア食の口コミ・評判を徹底調査
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  1食390円台のコスパ最強サービスの実力は？初回90円のお試しや冷凍庫レンタルなど特徴を解説。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["まごころケア食", "口コミ", "コスパ", "安い"].map((tag) => (
+                    <span
+                      key={tag}
+                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/articles/shokutakubin-reviews/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  食宅便の口コミ・評判を徹底調査
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  日清医療食品が手がける宅配弁当の実力とは？管理栄養士1万人のノウハウが詰まった全コースを解説。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["食宅便", "口コミ", "日清医療食品", "品数"].map((tag) => (
+                    <span
+                      key={tag}
+                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
 
