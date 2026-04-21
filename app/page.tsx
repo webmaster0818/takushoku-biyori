@@ -442,6 +442,192 @@ export default function Home() {
               </div>
             </Link>
           </div>
+
+          {/* Phase 4C: 比較・ハウツー記事 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
+            <Link
+              href="/articles/coopdeli-vs-palsystem/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  比較記事
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  コープデリ vs パルシステム 徹底比較
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  料金・配送エリア・安全基準・品揃え・離乳食を7項目で比較。あなたに合う生協宅配が見つかります。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["コープデリ", "パルシステム", "比較", "生協"].map((tag) => (
+                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/articles/takuhai-vs-conveni/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  比較記事
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  宅配弁当 vs コンビニ弁当 どっちがお得？
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  栄養・価格・手軽さ・添加物の4項目で徹底比較。nosh・三ツ星ファーム vs コンビニ3社を具体データで解説。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["宅配弁当", "コンビニ", "比較", "栄養"].map((tag) => (
+                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
+            <Link
+              href="/articles/reitou-bento-mazui/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-orange-100 text-orange-700 text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  ハウツー
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  冷凍弁当がまずい？美味しく食べる7つのコツ
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  まずいと感じる原因と対策、解凍テクニック、美味しいサービスランキングTOP5を紹介。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["冷凍弁当", "解凍方法", "美味しく", "コツ"].map((tag) => (
+                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/articles/souryou-yasui-ranking/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  ランキング
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  送料が安い宅配弁当ランキングTOP10
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  送料込み総額で比較。送料無料のサービス一覧、地域別送料比較、送料を抑えるコツも解説。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["送料無料", "ランキング", "コスパ", "比較"].map((tag) => (
+                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          {/* Phase 5: 新規サービス口コミ記事 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
+            <Link
+              href="/articles/watami-reviews/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  ワタミの宅食の口コミ・評判を徹底調査
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  冷蔵（まごころ弁当）と冷凍（ダイレクト）の違い、送料無料の冷蔵タイプの特徴を解説。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["ワタミの宅食", "口コミ", "送料無料", "安否確認"].map((tag) => (
+                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/articles/yoshikei-reviews/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  ヨシケイの口コミ・評判を徹底調査
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  ミールキット（カットミール/プチママ）と冷凍弁当の違い。送料無料・初回半額のお得情報も。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["ヨシケイ", "口コミ", "ミールキット", "送料無料"].map((tag) => (
+                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
+            <Link
+              href="/articles/wanmairu-reviews/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  わんまいるの口コミ・評判を徹底調査
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  国産食材100%・手作りの実力は？湯煎解凍の手間と味のクオリティを詳しく解説。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["わんまいる", "口コミ", "国産食材", "湯煎"].map((tag) => (
+                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/articles/tsurukame-reviews/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  Dr.つるかめキッチンの口コミ・評判を徹底調査
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  専門医＋管理栄養士W監修の制限食5コース。定期購入で28%OFF＋全国送料無料の仕組みを解説。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["つるかめキッチン", "口コミ", "制限食", "送料無料"].map((tag) => (
+                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
 
