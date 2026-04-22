@@ -261,9 +261,9 @@ export default function MitsuboshiFarmReviewsPage() {
 
         {/* Title */}
         <header className="mb-8">
-          <span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+          <div className="flex items-center gap-3 mb-4"><span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">
             口コミ・評判
-          </span>
+          </span><span className="text-[10px] text-gray-400">PR掲載も含みます</span></div>
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">
             {ARTICLE_TITLE}
           </h1>

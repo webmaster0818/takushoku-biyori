@@ -216,7 +216,7 @@ export default function SangoOsusumePage() {
         <Breadcrumbs />
 
         <header className="mb-8">
-          <span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full mb-4">目的別ガイド</span>
+          <div className="flex items-center gap-3 mb-4"><span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">目的別ガイド</span><span className="text-[10px] text-gray-400">PR掲載も含みます</span></div>
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-04-16">公開: 2026年4月16日</time>

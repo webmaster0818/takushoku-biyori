@@ -31,6 +31,9 @@ const categories = [
 export default function Home() {
   return (
     <>
+      <div className="bg-gray-50 border-b border-gray-200 py-1">
+        <p className="max-w-5xl mx-auto px-4 text-[10px] text-gray-400">PR掲載も含みます</p>
+      </div>
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-b from-cream via-background to-background">
         <div className="max-w-5xl mx-auto px-4 py-12 md:py-20">
