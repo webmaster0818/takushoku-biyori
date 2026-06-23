@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-16T00:00:00+09:00",
-    modifiedTime: "2026-04-16T00:00:00+09:00",
+    modifiedTime: "2026-06-23T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -76,7 +76,7 @@ function TableOfContents() {
     { id: "about", label: "まごころケア食とは？基本情報まとめ" },
     { id: "good-reviews", label: "まごころケア食の良い口コミ・評判" },
     { id: "bad-reviews", label: "まごころケア食の悪い口コミ・評判" },
-    { id: "merits", label: "実際に注文してわかったメリット5つ" },
+    { id: "merits", label: "口コミから分かるメリット5つ" },
     { id: "demerits", label: "注意すべきデメリット3つ" },
     { id: "price", label: "まごころケア食の料金・送料を徹底解説" },
     { id: "recommend", label: "おすすめな人・おすすめしない人" },
@@ -392,7 +392,7 @@ export default function MagokoroCareReviewsPage() {
         ))}
 
         {/* ===== メリット ===== */}
-        <SectionHeading id="merits">実際に注文してわかったメリット5つ</SectionHeading>
+        <SectionHeading id="merits">口コミから分かるメリット5つ</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">編集部が実際にまごころケア食を2ヶ月間利用して感じたメリットを5つにまとめました。</p>
 
@@ -615,7 +615,7 @@ export default function MagokoroCareReviewsPage() {
             <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-accent font-bold text-lg">編</div>
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
-              <p className="text-xs text-warm-gray">宅配弁当・栄養食の専門ライターチーム。実際にサービスを利用し、公平な比較情報をお届けします。</p>
+              <p className="text-xs text-warm-gray">宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。</p>
             </div>
           </div>
         </div>

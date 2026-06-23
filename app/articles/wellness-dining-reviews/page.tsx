@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "【2026年最新】ウェルネスダイニングの口コミ・評判を徹底調査！制限食のプロが作る宅配弁当の実力とは";
+  "ウェルネスダイニングの口コミ・評判は？まずいって本当？制限食宅配を中立検証【2026年6月最新】";
 const ARTICLE_DESCRIPTION =
   "ウェルネスダイニングの口コミ・評判を徹底調査。糖質制限・塩分制限・たんぱく質調整など制限食の専門サービスとしての実力を検証。良い口コミ・悪い口コミの両方を紹介し、料金・送料・全6コースの特徴を解説します。";
 const ARTICLE_URL =
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-16T00:00:00+09:00",
-    modifiedTime: "2026-04-16T00:00:00+09:00",
+    modifiedTime: "2026-06-23T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -181,7 +181,7 @@ export default function WellnessDiningReviewsPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-16T00:00:00+09:00",
-    dateModified: "2026-04-16T00:00:00+09:00",
+    dateModified: "2026-06-23T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -224,11 +224,30 @@ export default function WellnessDiningReviewsPage() {
             「ウェルネスダイニングの制限食って美味しいの？」「他の宅配弁当と何が違うの？」——糖質制限・塩分制限・たんぱく質調整など、<strong>制限食の専門サービス</strong>として知られるウェルネスダイニング。管理栄養士が設計した栄養バランスが特徴ですが、実際の味や使い勝手はどうなのでしょうか。
           </p>
           <p className="mb-3">
-            この記事では、<strong>ウェルネスダイニングの口コミ・評判を徹底リサーチ</strong>。編集部が実際に注文して食べた上で、良い口コミ・悪い口コミの信憑性を検証しました。
+            この記事では、<strong>ウェルネスダイニングの口コミ・評判を徹底リサーチ</strong>。公開されている利用者の口コミや公式情報をもとに、良い口コミ・悪い口コミの両方を整理して検証しました。
           </p>
           <p>
             <strong>全6コースの料金・送料・特徴</strong>まで詳しく解説。ウェルネスダイニングが自分に合うかどうか、この記事で判断できます。
           </p>
+        </div>
+
+        {/* 結論ボックス（ファーストビュー） */}
+        <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-3">結論：ウェルネスダイニングはこんな人に向いています</p>
+          <p className="text-sm leading-relaxed mb-4">ウェルネスダイニングは、<strong>「塩分・糖質・たんぱく質などを制限・管理したい人」</strong>に向いた制限食専門の宅配弁当です。口コミでは管理栄養士監修の制限食や無料相談を評価する声が多い一方、価格はやや高めで送料もかかる点は注意が必要です。味やボリュームの感じ方には個人差があります。健康上の制限がある場合は、医師の指導もあわせてご確認ください。</p>
+          <div className="grid md:grid-cols-2 gap-4 mb-4 text-sm">
+            <div className="bg-cream rounded-lg p-3">
+              <p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p>
+              <ul className="space-y-1 list-disc list-inside"><li>塩分・糖質・たんぱく質などの制限食に強い</li><li>管理栄養士への相談ができるという口コミ</li><li>やわらかさ等で選べるコースがある</li></ul>
+            </div>
+            <div className="bg-cream rounded-lg p-3">
+              <p className="font-bold text-warm-gray mb-2">△ 注意したい点</p>
+              <ul className="space-y-1 list-disc list-inside"><li>1食あたりの価格はやや高め</li><li>送料が別途かかる</li><li>制限の度合いは医師の指示に合わせて要確認</li></ul>
+            </div>
+          </div>
+          <p className="text-xs text-warm-gray mb-4">※料金・送料・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。</p>
+          <a href="https://www.wellness-dining.com/" target="_blank" rel="noopener noreferrer sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">ウェルネスダイニング 公式サイトで最新の料金・お試しを見る →</a>
+          <p className="text-[10px] text-gray-400 text-center mt-2">PR・本記事はアフィリエイト広告を含みます</p>
         </div>
 
         <TableOfContents />
@@ -410,12 +429,12 @@ export default function WellnessDiningReviewsPage() {
         <SectionHeading id="merits">実際に注文してわかったメリット5つ</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          編集部が実際にウェルネスダイニングを2ヶ月間利用して感じたメリットを5つにまとめました。
+          口コミや公開情報から見えてくるウェルネスダイニングのメリットを5つにまとめました。
         </p>
 
         {[
           { num: 1, title: "制限食の専門性が圧倒的", text: "糖質15g以下、塩分2.0g以下、たんぱく質10g以下、カロリー240kcal以下——これらの厳しい制限値を実現できるのは、制限食の専門サービスならでは。nosh（糖質30g以下）や三ツ星ファーム（糖質25g以下）では到達できない数値です。医師から「塩分は1日6g以下に」と指示された方も、ウェルネスダイニングなら1食2.0g以下に抑えられるので、残り2食で4g以内に収めれば指示を守れます。" },
-          { num: 2, title: "管理栄養士への無料相談が心強い", text: "実際に電話相談を利用しましたが、こちらの健康状態や検査数値を聞いた上で、最適なコースと食べ方のアドバイスをもらえました。「塩分制限コースがいいか、カロリー制限コースがいいか」といった具体的な相談にも丁寧に対応してくれます。高齢のご家族の食事管理について相談する方も多いとのこと。病院以外で専門家に無料相談できる場所は貴重です。" },
+          { num: 2, title: "管理栄養士への無料相談が心強い", text: "口コミによると、電話相談ではこちらの健康状態や検査数値を伝えた上で、最適なコースと食べ方のアドバイスをもらえたという声があります。「塩分制限コースがいいか、カロリー制限コースがいいか」といった具体的な相談にも丁寧に対応してくれます。高齢のご家族の食事管理について相談する方も多いとのこと。病院以外で専門家に無料相談できる場所は貴重です。" },
           { num: 3, title: "定期購入14食・21食で送料完全無料", text: "定期購入の14食・21食セットは送料完全無料。noshは毎回913円〜の送料がかかるため、月2回配送で年間約22,000円の送料差になります。長期利用するほどウェルネスダイニングの送料無料は大きなメリット。食材費で比較するとnoshの方が安いですが、送料込みの総額で比較するとその差は縮まります。" },
           { num: 4, title: "品数4品で食事の満足感が高い", text: "ウェルネスダイニングは主菜1品＋副菜3品の計4品構成。noshは主菜1品＋副菜2〜3品なので、品数ではウェルネスダイニングがやや優位。1食の中で様々な食材を摂取でき、彩りも良いので食事の満足感が高いです。制限食でありながら「ちゃんとした食事を食べている」という感覚があります。" },
           { num: 5, title: "初回送料無料でお試ししやすい", text: "初めての方はどのコースでも送料無料でお試し注文が可能。さらに「お試し定期注文」なら8回まで送料無料が続くため、約2ヶ月間はコスト的にお得に利用できます。味や量を十分に確認してから本契約に移行できるので、失敗のリスクが極めて低い設計です。" },
@@ -653,7 +672,7 @@ export default function WellnessDiningReviewsPage() {
             <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-accent font-bold text-lg">編</div>
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
-              <p className="text-xs text-warm-gray">宅配弁当・栄養食の専門ライターチーム。実際にサービスを利用し、公平な比較情報をお届けします。</p>
+              <p className="text-xs text-warm-gray">宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。</p>
             </div>
           </div>
         </div>

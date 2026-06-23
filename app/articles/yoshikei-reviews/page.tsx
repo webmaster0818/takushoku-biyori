@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-21T00:00:00+09:00",
-    modifiedTime: "2026-04-21T00:00:00+09:00",
+    modifiedTime: "2026-06-23T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -120,7 +120,7 @@ function SubHeading({ children }: { children: React.ReactNode }) {
 export default function YoshikeiReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-04-21T00:00:00+09:00",
+    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-06-23T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -154,6 +154,25 @@ export default function YoshikeiReviewsPage() {
           <p className="mb-3">「ヨシケイって実際どうなの？」「送料無料って本当？」——創業50年以上の歴史を持つ食材宅配の老舗・ヨシケイ。ミールキットから冷凍弁当まで幅広いラインナップで、全国約50万世帯に利用されています。</p>
           <p className="mb-3">この記事では、<strong>ヨシケイの口コミ・評判を徹底リサーチ</strong>。人気のカットミール・プチママなどのミールキットと、冷凍���当「シンプルミール」の料金・特徴を詳しく比較します��</p>
           <p><strong>送料無料の仕��み</strong>や初回半額のお試しキャンペーン情報もお伝えします。</p>
+        </div>
+
+        {/* 結論ボックス（ファーストビュー） */}
+        <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-3">結論：ヨシケイはこんな人に向いています</p>
+          <p className="text-sm leading-relaxed mb-4">ヨシケイは、<strong>「夕食の調理を時短したい人」「冷凍弁当で手軽に済ませたい人」</strong>に向いた宅配サービスです。ミールキットと冷凍弁当（シンプルミール等）があり、口コミでは時短や続けやすさを評価する声が多い一方、地域によって取り扱い内容や配達条件が異なる点は確認が必要です。料金・メニューは地域・時期で変わります。</p>
+          <div className="grid md:grid-cols-2 gap-4 mb-4 text-sm">
+            <div className="bg-cream rounded-lg p-3">
+              <p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p>
+              <ul className="space-y-1 list-disc list-inside"><li>ミールキットで調理を時短できる</li><li>冷凍弁当(シンプルミール)が比較的手頃</li><li>地域密着の宅配で受け取りやすい</li></ul>
+            </div>
+            <div className="bg-cream rounded-lg p-3">
+              <p className="font-bold text-warm-gray mb-2">△ 注意したい点</p>
+              <ul className="space-y-1 list-disc list-inside"><li>地域により取り扱い・内容が異なる</li><li>不在時の留め置き等の配達条件を確認</li><li>ミールキットは自分で調理が必要</li></ul>
+            </div>
+          </div>
+          <p className="text-xs text-warm-gray mb-4">※料金・送料・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。</p>
+          <a href="https://yoshikei-dvlp.co.jp/" target="_blank" rel="noopener noreferrer sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">ヨシケイ 公式サイトで最新の料金・お試しを見る →</a>
+          <p className="text-[10px] text-gray-400 text-center mt-2">PR・本記事はアフィリエイト広告を含みます</p>
         </div>
 
         <TableOfContents />

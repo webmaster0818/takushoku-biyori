@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "【2026年最新】三ツ星ファームの口コミ・評判を徹底調査！まずいは本当？実食レビューでわかったメリット・デメリット";
+  "【2026年最新】三ツ星ファームの口コミ・評判を徹底調査！まずいって本当？口コミから分かるメリット・デメリットを中立検証";
 const ARTICLE_DESCRIPTION =
   "三ツ星ファームの口コミ・評判を徹底調査。「まずい」の真相を実食検証し、良い口コミ・悪い口コミの両方を紹介。料金プラン・送料・メニューの特徴を解説。nosh・ウェルネスダイニングとの違いもわかります。";
 const ARTICLE_URL =
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-16T00:00:00+09:00",
-    modifiedTime: "2026-04-16T00:00:00+09:00",
+    modifiedTime: "2026-06-23T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -222,7 +222,7 @@ export default function MitsuboshiFarmReviewsPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-16T00:00:00+09:00",
-    dateModified: "2026-04-16T00:00:00+09:00",
+    dateModified: "2026-06-23T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -284,11 +284,30 @@ export default function MitsuboshiFarmReviewsPage() {
             「三ツ星ファームって本当に美味しいの？」「まずいって口コミがあるけど大丈夫？」——一流シェフ監修の冷凍宅配弁当として注目を集める三ツ星ファーム。SNSでは「レストランみたい」と絶賛する声がある一方、「値段が高い」「量が少ない」という不満も。
           </p>
           <p className="mb-3">
-            そこでこの記事では、<strong>三ツ星ファームの口コミ・評判を徹底的にリサーチ</strong>。編集部が実際に注文して食べた上で、良い口コミ・悪い口コミの信憑性を検証しました。
+            そこでこの記事では、<strong>三ツ星ファームの口コミ・評判を徹底的にリサーチ</strong>。公開されている利用者の口コミや公式情報をもとに、良い口コミ・悪い口コミの両方を整理して検証しました。
           </p>
           <p>
             さらに、<strong>料金プラン・送料・メニューの特徴</strong>まで詳しく解説。三ツ星ファームが自分に合うかどうか、この記事を読めば判断できます。
           </p>
+        </div>
+
+        {/* 結論ボックス（ファーストビュー） */}
+        <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-3">結論：三ツ星ファームはこんな人に向いています</p>
+          <p className="text-sm leading-relaxed mb-4">三ツ星ファームは、<strong>「価格よりも味とメニューの満足度を重視したい人」</strong>に向いた宅配弁当です。口コミでは味のレベルの高さやメニューの豊富さを評価する声が多い一方、1食あたりの価格は他の低価格サービスより高めで、送料も別途かかる点は押さえておきたいポイントです。「まずい」という声もありますが、価格帯を踏まえた評価は分かれており、味の感じ方には個人差があります。</p>
+          <div className="grid md:grid-cols-2 gap-4 mb-4 text-sm">
+            <div className="bg-cream rounded-lg p-3">
+              <p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p>
+              <ul className="space-y-1 list-disc list-inside"><li>味・メニューの満足度を評価する口コミが多い</li><li>糖質・カロリーに配慮したコース設計</li><li>容器やパッケージがきれい</li></ul>
+            </div>
+            <div className="bg-cream rounded-lg p-3">
+              <p className="font-bold text-warm-gray mb-2">△ 注意したい点</p>
+              <ul className="space-y-1 list-disc list-inside"><li>1食あたりの価格は低価格系より高め</li><li>送料が別途かかる</li><li>定期コースの縛り・解約条件は要確認</li></ul>
+            </div>
+          </div>
+          <p className="text-xs text-warm-gray mb-4">※料金・送料・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。</p>
+          <a href="https://mitsuboshi-farm.jp/" target="_blank" rel="noopener noreferrer sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">三ツ星ファーム 公式サイトで最新の料金・お試しを見る →</a>
+          <p className="text-[10px] text-gray-400 text-center mt-2">PR・本記事はアフィリエイト広告を含みます</p>
         </div>
 
         <TableOfContents />
@@ -497,14 +516,14 @@ export default function MitsuboshiFarmReviewsPage() {
         </SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          編集部が実際に三ツ星ファームを3ヶ月間利用して感じたメリットを5つにまとめました。
+          口コミや公開情報から見えてくる三ツ星ファームのメリットを5つにまとめました。
         </p>
 
         {[
           {
             num: 1,
             title: "味のクオリティが冷凍弁当業界トップクラス",
-            text: "実際に食べてみて最も感動したのが味のレベルです。特にデミグラスハンバーグ、チキン南蛮、エビのチリソースなどの人気メニューは、レストランで食べても遜色ないクオリティ。副菜も一品一品丁寧に味付けされており、「作り置きのおかず」感がありません。noshやウェルネスダイニングと比較しても、味の面では三ツ星ファームが頭一つ抜けていると感じました。",
+            text: "口コミで最も高く評価されているのが味のレベルです。特にデミグラスハンバーグ、チキン南蛮、エビのチリソースなどの人気メニューは、レストランで食べても遜色ないクオリティ。副菜も一品一品丁寧に味付けされており、「作り置きのおかず」感がありません。noshやウェルネスダイニングと比較しても、味の面では三ツ星ファームが頭一つ抜けているという声が目立ちます。",
           },
           {
             num: 2,
@@ -624,7 +643,7 @@ export default function MitsuboshiFarmReviewsPage() {
 
         <SubHeading>月額コストシミュレーション</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          実際に1ヶ月利用した場合のコストを利用頻度別にシミュレーションしました（本州在住・初回割引なし）。
+          1ヶ月利用した場合のコストを利用頻度別にシミュレーションしました（本州在住・初回割引なし）。
         </p>
         <ComparisonTable
           headers={[
@@ -880,7 +899,7 @@ export default function MitsuboshiFarmReviewsPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。実際にサービスを利用し、公平な比較情報をお届けします。
+                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
               </p>
             </div>
           </div>
