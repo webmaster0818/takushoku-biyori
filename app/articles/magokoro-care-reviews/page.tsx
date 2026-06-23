@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "【2026年最新】まごころケア食の口コミ・評判を徹底調査！1食390円台の実力は？メリット・デメリットを解説";
+  "まごころケア食の口コミ・評判は？まずいって本当？良い・悪い評価を中立検証【2026年6月最新】";
 const ARTICLE_DESCRIPTION =
-  "まごころケア食の口コミ・評判を徹底調査。1食390円台からのコスパ最強クラスの宅配弁当サービスの実力を検証。良い口コミ・悪い口コミの両方を紹介し、料金・送料・全コースの特徴を解説します。";
+  "まごころケア食は「まずい」って本当？良い口コミ・悪い口コミの両方と、送料込みの実質単価、全コースの料金を中立に検証。1食あたりの安さや向く人・向かない人を整理しました。最新の料金・お試し価格は公式でご確認ください。【2026年6月更新】";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/magokoro-care-reviews/";
 
@@ -147,7 +147,7 @@ function StarRating({ count }: { count: number }) {
 export default function MagokoroCareReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-16T00:00:00+09:00", dateModified: "2026-04-16T00:00:00+09:00",
+    datePublished: "2026-04-16T00:00:00+09:00", dateModified: "2026-06-23T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -176,6 +176,7 @@ export default function MagokoroCareReviewsPage() {
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-04-16">公開: 2026年4月16日</time>
+            <time dateTime="2026-06-23">更新: 2026年6月23日</time>
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
@@ -185,11 +186,49 @@ export default function MagokoroCareReviewsPage() {
             「まごころケア食って安いけど、味は大丈夫？」「まずいって口コミは本当？」——1食390円台から利用できる<strong>コスパ最強クラスの冷凍宅配弁当</strong>として注目のまごころケア食。初回は1食90円という破格のお試し価格も話題です。
           </p>
           <p className="mb-3">
-            この記事では、<strong>まごころケア食の口コミ・評判を徹底リサーチ</strong>。編集部が実際に注文して食べた上で、安さの秘密と味の実力を検証しました。
+            この記事では、<strong>まごころケア食の口コミ・評判を徹底リサーチ</strong>。公開されている利用者の口コミや公式情報をもとに、安さの理由・味の評判・送料込みの実質単価を中立的に検証しました。
           </p>
           <p>
             <strong>全コースの料金・送料・冷凍庫レンタル</strong>まで詳しく解説。まごころケア食が自分に合うかどうか、この記事で判断できます。
           </p>
+        </div>
+
+        {/* ===== 結論ボックス（ファーストビュー） ===== */}
+        <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-3">結論：まごころケア食はこんな人に向いています</p>
+          <p className="text-sm leading-relaxed mb-4">
+            まごころケア食は、<strong>「とにかく安く、栄養バランスの整った宅配弁当を続けたい人」</strong>に向いたサービスです。1食あたりの価格は宅配弁当の中でも最安クラスで、初回お試しのハードルも低め。一方で、ボリュームは控えめ・送料が毎回かかる点は事前に押さえておきたいポイントです。「まずい」という声もありますが、価格を踏まえた評価は分かれており、味の感じ方には個人差があります。
+          </p>
+          <div className="grid md:grid-cols-2 gap-4 mb-4 text-sm">
+            <div className="bg-cream rounded-lg p-3">
+              <p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p>
+              <ul className="space-y-1 list-disc list-inside">
+                <li>1食あたりの安さは業界最安クラス</li>
+                <li>初回お試しの価格が低くはじめやすい</li>
+                <li>まとめ買い向けの冷凍庫無料レンタルあり</li>
+              </ul>
+            </div>
+            <div className="bg-cream rounded-lg p-3">
+              <p className="font-bold text-warm-gray mb-2">△ 注意したい点</p>
+              <ul className="space-y-1 list-disc list-inside">
+                <li>1食のボリュームは控えめという声</li>
+                <li>送料が毎回かかる（食数が少ないと割高）</li>
+                <li>副菜が似た傾向になることがある</li>
+              </ul>
+            </div>
+          </div>
+          <p className="text-xs text-warm-gray mb-4">
+            ※料金・送料・初回お試し価格・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。
+          </p>
+          <a
+            href="https://magokoro-care-shoku.com/"
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition"
+          >
+            まごころケア食 公式サイトで最新の料金・お試しを見る →
+          </a>
+          <p className="text-[10px] text-gray-400 text-center mt-2">PR・本記事はアフィリエイト広告を含みます</p>
         </div>
 
         <TableOfContents />
