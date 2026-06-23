@@ -72,7 +72,7 @@ function TableOfContents() {
     { id: "price", label: "料金プランと定期購入の仕組み" },
     { id: "good-reviews", label: "サポートミールの良い口コミ・評判" },
     { id: "bad-reviews", label: "サポートミールの悪い口コミ・評判" },
-    { id: "merits", label: "実食レビュー編集部が感じたメリット5つ" },
+    { id: "merits", label: "口コミから分かるメリット5つ" },
     { id: "demerits", label: "注意すべきデメリット3つ" },
     { id: "recommend", label: "サポートミールがおすすめな人・おすすめしない人" },
     { id: "comparison", label: "nosh・三ツ星ファームとの比較" },
@@ -338,7 +338,7 @@ export default function RizapSupportMealReviewsPage() {
           糖質制限の設計上、糖質源となる主食(ご飯・パン)を抑えているため、<strong>「ボリュームに物足りなさを感じることがある」</strong>という声も。サラダや汁物を追加するか、おかずをご飯とセットで食べるのではなく単体で食べる前提で運用するのがおすすめです。
         </p>
 
-        <SectionHeading id="merits">実食レビュー編集部が感じたメリット5つ</SectionHeading>
+        <SectionHeading id="merits">口コミから分かるメリット5つ</SectionHeading>
 
         {[
           { num: 1, title: "糖質9.5〜12gは他社で再現困難", text: "他社の低糖質宅配は糖質20〜30g程度が中心。サポートミールの9.5〜12gは群を抜いています。ケトジェニックや糖質制限を本気でやる方には、この一点だけで選ぶ価値があります。" },

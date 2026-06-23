@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "【2026年最新】三ツ星ファームの口コミ・評判を徹底調査！まずいって本当？口コミから分かるメリット・デメリットを中立検証";
 const ARTICLE_DESCRIPTION =
-  "三ツ星ファームの口コミ・評判を徹底調査。「まずい」の真相を実食検証し、良い口コミ・悪い口コミの両方を紹介。料金プラン・送料・メニューの特徴を解説。nosh・ウェルネスダイニングとの違いもわかります。";
+  "三ツ星ファームの口コミ・評判を徹底調査。「まずい」の真相を口コミから検証し、良い口コミ・悪い口コミの両方を紹介。料金プラン・送料・メニューの特徴を解説。nosh・ウェルネスダイニングとの違いもわかります。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/mitsuboshi-farm-reviews/";
 

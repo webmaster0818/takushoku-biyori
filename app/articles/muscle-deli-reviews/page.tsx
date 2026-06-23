@@ -80,7 +80,7 @@ function TableOfContents() {
     { id: "plans", label: "4つのプラン(LEAN/MAINTAIN/GAIN/LOW CARB)解説" },
     { id: "good-reviews", label: "マッスルデリの良い口コミ・評判" },
     { id: "bad-reviews", label: "マッスルデリの悪い口コミ・評判" },
-    { id: "merits", label: "実食レビュー編集部が感じたメリット5つ" },
+    { id: "merits", label: "口コミから分かるメリット5つ" },
     { id: "demerits", label: "注意すべきデメリット3つ" },
     { id: "recommend", label: "マッスルデリがおすすめな人・おすすめしない人" },
     { id: "comparison", label: "他の高タンパク宅配との比較" },
@@ -433,7 +433,7 @@ export default function MuscleDeliReviewsPage() {
           全体的に高評価ですが、「エスニック系のスパイスが強いメニューが苦手」「ソースが少し濃いと感じることがある」など、味の方向性が好みに合わないケースも報告されています。初回は少なめ食数で試して相性を確認するのが安全です。
         </p>
 
-        <SectionHeading id="merits">実食レビュー編集部が感じたメリット5つ</SectionHeading>
+        <SectionHeading id="merits">口コミから分かるメリット5つ</SectionHeading>
 
         {[
           {

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "ママの休食の口コミ・評判【2026年最新】産後・授乳期向け冷凍宅配の実食レポ";
+  "ママの休食の口コミ・評判は？産後・授乳期向け冷凍宅配を中立検証【2026年最新】";
 const ARTICLE_DESCRIPTION =
   "ママの休食の口コミ・評判を徹底調査。産後・授乳期・妊娠中の女性をターゲットにした冷凍宅配弁当の栄養設計、メニュー、料金、続けやすさを公式情報ベースで解説。本当に産後ママに役立つかを判定します。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/mamano-kyushoku-reviews/";
@@ -72,7 +72,7 @@ function TableOfContents() {
     { id: "target", label: "想定ターゲット(妊娠中・産後・授乳期)" },
     { id: "good-reviews", label: "良い口コミ・評判" },
     { id: "bad-reviews", label: "悪い口コミ・評判" },
-    { id: "merits", label: "実食レビュー編集部が感じたメリット5つ" },
+    { id: "merits", label: "口コミから分かるメリット5つ" },
     { id: "demerits", label: "注意すべきデメリット3つ" },
     { id: "recommend", label: "おすすめな人・おすすめしない人" },
     { id: "comparison", label: "他の産後向け宅食との比較" },
@@ -333,7 +333,7 @@ export default function MamanoKyushokuReviewsPage() {
           女性ターゲットに最適化されているため、夫婦で食べると<strong>男性側がボリュームに物足りなさを感じる</strong>ケースがあります。ご飯やサラダを追加する、男性は別途主菜を増やすなどの工夫が必要。
         </p>
 
-        <SectionHeading id="merits">実食レビュー編集部が感じたメリット5つ</SectionHeading>
+        <SectionHeading id="merits">口コミから分かるメリット5つ</SectionHeading>
 
         {[
           { num: 1, title: "「料理しなきゃ」という呪縛から解放される", text: "産後ママの最大の苦痛のひとつは「自分の食事は適当でいい」と感じて栄養が偏ること。ママの休食を冷凍庫に常備すれば「ちゃんと食べてる」という自己肯定感が保てます。これは食べ物以上の心理的価値。" },

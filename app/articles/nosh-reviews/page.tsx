@@ -290,6 +290,19 @@ export default function NoshReviewsPage() {
           </p>
         </div>
 
+        {/* 結論ボックス（ファーストビュー） */}
+        <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-3">結論：noshはこんな人に向いています</p>
+          <p className="text-sm leading-relaxed mb-4">noshは、<strong>「メニューの豊富さと、低糖質・高たんぱくの設計を手軽に続けたい人」</strong>に向いた冷凍宅配弁当です。口コミではメニュー数の多さやアプリの使いやすさを評価する声が多い一方、送料は地域で変わり、1食あたりは最安クラスではない点は押さえておきたいポイントです。「まずい」という声もありますが、評価は分かれており、味の感じ方には個人差があります。</p>
+          <div className="grid md:grid-cols-2 gap-4 mb-4 text-sm">
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>メニューが多く飽きにくいという口コミ</li><li>低糖質・高たんぱくなど栄養設計が選びやすい</li><li>アプリで配送・メニュー管理がしやすい</li></ul></div>
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>送料が地域・プランで変わる</li><li>1食あたりは最安クラスではない</li><li>まとめ買い前提で冷凍庫スペースが要る</li></ul></div>
+          </div>
+          <p className="text-xs text-warm-gray mb-4">※料金・送料・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。</p>
+          <a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">nosh（ナッシュ）公式サイトで最新の料金・お試しを見る →</a>
+          <p className="text-[10px] text-gray-400 text-center mt-2">PR・本記事はアフィリエイト広告を含みます</p>
+        </div>
+
         <TableOfContents />
 
         {/* ===== 基本情報 ===== */}
@@ -479,7 +492,7 @@ export default function NoshReviewsPage() {
         <SectionHeading id="merits">実際に注文してわかったメリット5つ</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          編集部が実際にnoshを3ヶ月間利用して感じたメリットを5つにまとめました。口コミだけではわからない「実際に使ってみての実感」をお伝えします。
+          口コミや公開情報から見えてくるnoshのメリットを5つにまとめました。
         </p>
 
         {[
@@ -842,6 +855,21 @@ export default function NoshReviewsPage() {
             <li>
               <Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">
                 【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング
+              </Link>
+            </li>
+            <li>
+              <Link href="/articles/jisshitsu-tanka-hikaku/" className="text-accent hover:text-accent-dark transition-colors">
+                冷凍弁当は「送料込みの実質単価」で比較
+              </Link>
+            </li>
+            <li>
+              <Link href="/articles/nosh-vs-watami/" className="text-accent hover:text-accent-dark transition-colors">
+                nosh vs ワタミの宅食｜違いと選び方
+              </Link>
+            </li>
+            <li>
+              <Link href="/articles/diet-osusume/" className="text-accent hover:text-accent-dark transition-colors">
+                ダイエット向け宅配弁当のおすすめ
               </Link>
             </li>
             <li>

@@ -394,7 +394,7 @@ export default function MagokoroCareReviewsPage() {
         {/* ===== メリット ===== */}
         <SectionHeading id="merits">口コミから分かるメリット5つ</SectionHeading>
 
-        <p className="text-sm mb-6 leading-relaxed">編集部が実際にまごころケア食を2ヶ月間利用して感じたメリットを5つにまとめました。</p>
+        <p className="text-sm mb-6 leading-relaxed">口コミや公開情報から見えてくるまごころケア食のメリットを5つにまとめました。</p>
 
         {[
           { num: 1, title: "圧倒的なコストパフォーマンス", text: "1食390円台は宅配弁当業界で最安クラス。コンビニ弁当（400〜600円）より安いのに、管理栄養士が監修した栄養バランスの良い食事が摂れます。月30食利用しても食材費約12,000円＋送料で、外食や自炊と比較してもコスパは非常に優秀。「安かろう悪かろう」ではなく、大量生産とシンプルなパッケージでコストを抑えている正当な低価格です。" },
