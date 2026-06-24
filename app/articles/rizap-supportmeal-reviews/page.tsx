@@ -167,7 +167,7 @@ export default function RizapSupportMealReviewsPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-05-28T00:00:00+09:00",
+    dateModified: "2026-06-24T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -224,6 +224,17 @@ export default function RizapSupportMealReviewsPage() {
           <p>
             <strong>料金は本当にお得か、定期購入の縛りはどうか、味と続けやすさ</strong>を公平に評価し、自分に合うかを判断できる内容にまとめました。
           </p>
+        </div>
+
+        {/* 結論ボックス（ファーストビュー） */}
+        <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-3">結論：RIZAPサポートミールはこんな人に向いています</p>
+          <div className="grid sm:grid-cols-2 gap-3 text-sm leading-relaxed mb-4">
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>1食糖質9.5〜12gの厳格な低糖質設計（他社で再現しにくい）</li><li>RIZAPメソッド準拠の栄養設計でタンパク質を意識した構成</li><li>洋食系メニューの味のクオリティが高く満足感がある</li></ul></div>
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>1食800円台と宅配弁当としては価格が高め</li><li>糖質制限が不要な人やコスパ重視の人には割高</li><li>主食を抑えた設計のためボリュームに物足りなさを感じる場合がある</li></ul></div>
+          </div>
+          <p className="text-xs text-warm-gray mb-4">※料金・送料・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。</p>
+          <a href="https://shop.rizap.jp/shop/pages/supportmeal" target="_blank" rel="noopener noreferrer sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">RIZAPサポートミール 公式サイトで最新の料金・お試しを見る →</a>
         </div>
 
         <TableOfContents />
@@ -487,6 +498,15 @@ export default function RizapSupportMealReviewsPage() {
           <Link href="/articles/toushitsu-seigen-osusume/" className="text-accent hover:text-accent-dark underline font-medium text-sm">糖質制限おすすめ宅配</Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline font-medium text-sm">noshの口コミ・評判</Link>
+        </div>
+
+        <div className="border-t border-warm-border pt-6 mt-8">
+          <p className="font-bold text-sm mb-3">関連記事</p>
+          <ul className="space-y-2 text-sm">
+            <li><Link href="/articles/toushitsu-seigen-osusume/" className="text-accent hover:text-accent-dark underline">糖質制限におすすめの宅配弁当</Link></li>
+            <li><Link href="/articles/diet-osusume/" className="text-accent hover:text-accent-dark underline">ダイエット向け宅配弁当のおすすめ</Link></li>
+            <li><Link href="/articles/jisshitsu-tanka-hikaku/" className="text-accent hover:text-accent-dark underline">実質単価で比較する宅配弁当</Link></li>
+          </ul>
         </div>
 
         <div className="border-t border-warm-border pt-6 mt-8">

@@ -122,7 +122,7 @@ function SubHeading({ children }: { children: React.ReactNode }) {
 export default function WatamiReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-04-21T00:00:00+09:00",
+    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-06-24T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -157,6 +157,17 @@ export default function WatamiReviewsPage() {
           <p className="mb-3">「ワタミの宅食って実際どうなの？」「ひどいって口コミは本当？」——病院・介護施設向け給食で培ったノウハウを活かし、一般家庭にも宅配弁当を届けるワタミの宅食。</p>
           <p className="mb-3">この記事では、<strong>ワタミの宅食の口コミ・評判を徹底リサーチ</strong>。冷蔵タイプ（まごころおかず・手鞠・ダブル）と冷凍タイプ（ワタミの宅食ダイレクト）の違いも詳しく解説します。</p>
           <p>料金プラン・送料・配送方法・メリット・デメリットまで、<strong>この記事を読めばワタミの宅食が自分に合うかどうか判断できます</strong>。</p>
+        </div>
+
+        {/* 結論ボックス（ファーストビュー） */}
+        <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-3">結論：ワタミの宅食ダイレクトはこんな人に向いています</p>
+          <div className="grid sm:grid-cols-2 gap-3 text-sm leading-relaxed mb-4">
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>業界最大手ならではの安心感と豊富な実績</li><li>塩分・カロリーに配慮したやさしい味付けの冷凍おかず（100種類以上）</li><li>「いつでも二菜」1食約360円〜と手頃な価格・お試ししやすさ</li></ul></div>
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>品数（おかずのみ）や量が物足りなく感じる場合がある</li><li>冷凍タイプは送料（本州・四国・九州800円〜）がかかる</li><li>味の濃さは控えめで、好みによっては薄いと感じることも</li></ul></div>
+          </div>
+          <p className="text-xs text-warm-gray mb-4">※料金・送料・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。</p>
+          <a href="https://www.watami-takushoku-direct.jp/" target="_blank" rel="noopener noreferrer sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">ワタミの宅食ダイレクト 公式サイトで最新の料金・お試しを見る →</a>
         </div>
 
         <TableOfContents />
@@ -315,6 +326,9 @@ export default function WatamiReviewsPage() {
             { href: "/articles/koureisha-osusume/", label: "高齢者向け宅配弁当おすすめランキング" },
             { href: "/articles/souryou-yasui-ranking/", label: "送料が安い宅配弁当ランキング" },
             { href: "/articles/yoshikei-reviews/", label: "ヨシケイの口コミ・評判" },
+            { href: "/articles/nosh-vs-watami/", label: "nosh（ナッシュ）とワタミの宅食を徹底比較" },
+            { href: "/articles/yoshikei-vs-watami/", label: "ヨシケイとワタミの宅食を徹底比較" },
+            { href: "/articles/jisshitsu-tanka-hikaku/", label: "実質単価で比較！宅配弁当のコスパ" },
           ].map((link) => (
             <div key={link.href}><Link href={link.href} className="text-accent hover:text-accent-dark text-sm transition-colors">→ {link.label}</Link></div>
           ))}

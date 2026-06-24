@@ -135,7 +135,7 @@ function StarRating({ count }: { count: number }) {
 export default function ShokutakubinReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-16T00:00:00+09:00", dateModified: "2026-04-16T00:00:00+09:00",
+    datePublished: "2026-04-16T00:00:00+09:00", dateModified: "2026-06-24T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -178,6 +178,17 @@ export default function ShokutakubinReviewsPage() {
           <p>
             <strong>全コースの料金・送料・特徴</strong>まで詳しく解説。食宅便が自分に合うかどうか、この記事で判断できます。
           </p>
+        </div>
+
+        {/* 結論ボックス（ファーストビュー） */}
+        <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-3">結論：食宅便はこんな人に向いています</p>
+          <div className="grid sm:grid-cols-2 gap-3 text-sm leading-relaxed mb-4">
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>病院給食最大手・日清医療食品が運営する安心感</li><li>低糖質・塩分ケア・たんぱくケアなど制限食コースが豊富</li><li>1食あたり596円〜と比較的手頃で品数が多い</li></ul></div>
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>都度購入は送料がかかる（らくらく定期便で割引）</li><li>1品ずつの量は控えめでがっつり派には物足りない声も</li><li>冷凍便のため冷凍庫スペースの確保が必要</li></ul></div>
+          </div>
+          <p className="text-xs text-warm-gray mb-4">※料金・送料・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。</p>
+          <a href="https://shokutakubin.com/" target="_blank" rel="noopener noreferrer sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">食宅便 公式サイトで最新の料金・お試しを見る →</a>
         </div>
 
         <TableOfContents />
@@ -572,6 +583,9 @@ export default function ShokutakubinReviewsPage() {
             <li><Link href="/articles/magokoro-care-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】まごころケア食の口コミ・評判を徹底調査</Link></li>
             <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link></li>
             <li><Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark transition-colors">【2026年】一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5</Link></li>
+            <li><Link href="/articles/koureisha-osusume/" className="text-accent hover:text-accent-dark transition-colors">高齢者におすすめの宅配弁当・宅食ランキング</Link></li>
+            <li><Link href="/articles/jisshitsu-tanka-hikaku/" className="text-accent hover:text-accent-dark transition-colors">実質単価で比較！宅配弁当のコスパ徹底比較</Link></li>
+            <li><Link href="/articles/souryou-yasui-ranking/" className="text-accent hover:text-accent-dark transition-colors">送料が安い宅配弁当ランキング</Link></li>
           </ul>
         </div>
       

@@ -231,7 +231,7 @@ export default function MuscleDeliReviewsPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-05-28T00:00:00+09:00",
+    dateModified: "2026-06-24T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -308,6 +308,17 @@ export default function MuscleDeliReviewsPage() {
           <p>
             「<strong>本当に筋トレ・ダイエットに役立つのか</strong>」「価格に見合う価値があるか」を判断できる内容にまとめました。
           </p>
+        </div>
+
+        {/* 結論ボックス（ファーストビュー） */}
+        <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-3">結論：マッスルデリはこんな人に向いています</p>
+          <div className="grid sm:grid-cols-2 gap-3 text-sm leading-relaxed mb-4">
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>1食タンパク質30g以上〜50g以上の高タンパク設計で、PFC計算なしでも食事が整う</li><li>減量・増量・糖質制限など目的別4プランを切り替えられる</li><li>メイン肉・魚料理のボリュームがあり、食べごたえ・満足感が高い</li></ul></div>
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>1食あたりの単価が一般的な冷凍宅配弁当より高め</li><li>節約目的・栄養を気にしない一般的な用途には不向き</li><li>味の方向性やメニューの好みが分かれる場合がある</li></ul></div>
+          </div>
+          <p className="text-xs text-warm-gray mb-4">※料金・送料・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。</p>
+          <a href="https://muscledeli.jp/" target="_blank" rel="noopener noreferrer sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">マッスルデリ 公式サイトで最新の料金・お試しを見る →</a>
         </div>
 
         <TableOfContents />

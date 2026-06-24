@@ -167,7 +167,7 @@ export default function MamanoKyushokuReviewsPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-05-28T00:00:00+09:00",
+    dateModified: "2026-06-24T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -224,6 +224,17 @@ export default function MamanoKyushokuReviewsPage() {
           <p>
             <strong>「本当に産後ママの負担を減らしてくれるサービスなのか」</strong>を判断できる内容にまとめています。
           </p>
+        </div>
+
+        {/* 結論ボックス（ファーストビュー） */}
+        <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-3">結論：ママの休食はこんな人に向いています</p>
+          <div className="grid sm:grid-cols-2 gap-3 text-sm leading-relaxed mb-4">
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>妊娠〜授乳期に不足しやすい葉酸・鉄・カルシウムを意識した管理栄養士監修の栄養設計</li><li>レンジ加熱だけで完結し、産後・授乳期の「料理する時間がない」時に助かる</li><li>家庭的で優しい味付け。出産祝い・産後ギフトとしても喜ばれる</li></ul></div>
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>特化型のため1食単価が一般的な宅配弁当より高め</li><li>メニュー数は大手(nosh・三ツ星ファーム)より少なめ</li><li>量は女性向けで、アレルギー・原材料は事前確認が必要</li></ul></div>
+          </div>
+          <p className="text-xs text-warm-gray mb-4">※料金・送料・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。</p>
+          <a href="https://mamanokyushoku.com/" target="_blank" rel="noopener noreferrer sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">ママの休食 公式サイトで最新の料金・お試しを見る →</a>
         </div>
 
         <TableOfContents />
@@ -487,6 +498,15 @@ export default function MamanoKyushokuReviewsPage() {
               <p className="text-xs text-warm-gray">宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。</p>
             </div>
           </div>
+        </div>
+
+        <div className="border-t border-warm-border pt-6 mt-8">
+          <p className="font-bold text-sm mb-3">関連記事</p>
+          <ul className="space-y-2 text-sm">
+            <li><Link href="/articles/sango-osusume/" className="text-accent hover:text-accent-dark underline">産後ママにおすすめの宅食</Link></li>
+            <li><Link href="/articles/diet-osusume/" className="text-accent hover:text-accent-dark underline">ダイエットにおすすめの宅食</Link></li>
+            <li><Link href="/articles/jisshitsu-tanka-hikaku/" className="text-accent hover:text-accent-dark underline">実質単価で比較する宅食</Link></li>
+          </ul>
         </div>
       </article>
     </>

@@ -120,7 +120,7 @@ function SubHeading({ children }: { children: React.ReactNode }) {
 export default function TsurukameReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-04-21T00:00:00+09:00",
+    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-06-24T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -154,6 +154,17 @@ export default function TsurukameReviewsPage() {
           <p className="mb-3">「Dr.つるかめキッチンって実際どうなの？」「制限食なのに美味しいって本当？」——糖尿病・腎臓病・高血圧などの食事制限が必要な方に向けた宅配弁当サービス、Dr.つるかめキッチン。</p>
           <p className="mb-3">この記事では、<strong>Dr.つるかめキッチンの口コミ・評判を徹底リサーチ</strong>。専門医・管理栄養士がW監修する5つの制限食コースの内容、料金、そして定期購入で全国送料無料になる仕組みを詳しく解説します。</p>
           <p>「制限食を探しているけど、味が心配」「他社の制限食と何が違うの？」という方は、ぜひ参考にしてください。</p>
+        </div>
+
+        {/* 結論ボックス（ファーストビュー） */}
+        <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-3">結論：Dr.つるかめキッチンはこんな人に向いています</p>
+          <div className="grid sm:grid-cols-2 gap-3 text-sm leading-relaxed mb-4">
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>専門医＋管理栄養士のW監修で、医学的根拠に基づいた制限食という安心感</li><li>糖質・塩分・たんぱく質・カロリー・バランスの制限食コースから選べる</li><li>「制限食なのに美味しい」との口コミが多く、持病・健康管理層に向く</li></ul></div>
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>1食あたりの単価が他社よりやや高めと感じる声がある</li><li>都度購入は送料がかかる（定期購入は全国送料無料）</li><li>メニューは選べず完全おまかせのため、好き嫌い・味の好み差が出る</li></ul></div>
+          </div>
+          <p className="text-xs text-warm-gray mb-4">※料金・送料・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。</p>
+          <a href="https://tsurukame-kitchen.com/" target="_blank" rel="noopener noreferrer sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">Dr.つるかめキッチン 公式サイトで最新の料金・お試しを見る →</a>
         </div>
 
         <TableOfContents />
@@ -308,6 +319,7 @@ export default function TsurukameReviewsPage() {
             { href: "/articles/shokutakubin-reviews/", label: "食宅便の口コミ・評判" },
             { href: "/articles/koureisha-osusume/", label: "高齢者向け宅配弁���おすすめランキング" },
             { href: "/articles/toushitsu-seigen-osusume/", label: "糖質制限におすすめの宅配弁当ランキング" },
+            { href: "/articles/jisshitsu-tanka-hikaku/", label: "実質単価で比較！宅配弁当の本当のコスパ" },
             { href: "/articles/souryou-yasui-ranking/", label: "送料が安い宅配弁当ランキング" },
           ].map((link) => (
             <div key={link.href}><Link href={link.href} className="text-accent hover:text-accent-dark text-sm transition-colors">→ {link.label}</Link></div>

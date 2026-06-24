@@ -119,7 +119,7 @@ function SubHeading({ children }: { children: React.ReactNode }) {
 export default function WanmairuReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-04-21T00:00:00+09:00",
+    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-06-24T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -153,6 +153,17 @@ export default function WanmairuReviewsPage() {
           <p className="mb-3">「わんまいるって美味しいの？」「国産食材100%って本当？」「湯煎って面倒じゃない？」——冷凍宅食の中でも「味」と「素材」にとことんこだわるわんまいる。</p>
           <p className="mb-3">この記事では、<strong>わんまいるの口コミ・評判を徹底リサーチ</strong>。国産食材100%・手作り調理の実力、湯煎解凍の手間、そして気になる料金まで詳しく解説します。</p>
           <p>「冷凍弁当の味に妥協したくない」「安心できる食材の宅食を探している」という方は、ぜひ参考にしてください。</p>
+        </div>
+
+        {/* 結論ボックス（ファーストビュー） */}
+        <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-3">結論：わんまいるはこんな人に向いています</p>
+          <div className="grid sm:grid-cols-2 gap-3 text-sm leading-relaxed mb-4">
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>国産食材100%・無添加で安心感がある</li><li>手作り調理で家庭料理のような味わい（煮魚・煮物が特に好評）</li><li>湯煎解凍でしっとり美味しく仕上がる</li></ul></div>
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>1食1,000円前後と価格が高め</li><li>湯煎の手間がかかる（レンジで完結しない）</li><li>送料が高め（特に北海道は2,145円）</li></ul></div>
+          </div>
+          <p className="text-xs text-warm-gray mb-4">※料金・送料・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。</p>
+          <a href="https://1meal.life/" target="_blank" rel="noopener noreferrer sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">わんまいる 公式サイトで最新の料金・お試しを見る →</a>
         </div>
 
         <TableOfContents />
@@ -271,6 +282,8 @@ export default function WanmairuReviewsPage() {
             { href: "/articles/mitsuboshi-farm-reviews/", label: "三ツ星ファームの口コミ・評判" },
             { href: "/articles/reitou-bento-mazui/", label: "冷凍弁当がまずい？美味しく食べるコツ" },
             { href: "/articles/souryou-yasui-ranking/", label: "送料が安い宅配弁当ランキング" },
+            { href: "/articles/koureisha-osusume/", label: "高齢者におすすめの宅配弁当" },
+            { href: "/articles/jisshitsu-tanka-hikaku/", label: "実質単価で比較する宅配弁当" },
           ].map((link) => (
             <div key={link.href}><Link href={link.href} className="text-accent hover:text-accent-dark text-sm transition-colors">→ {link.label}</Link></div>
           ))}
