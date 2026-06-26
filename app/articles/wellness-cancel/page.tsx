@@ -278,7 +278,7 @@ export default function WellnessCancelPage() {
         </header>
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 text-xs leading-relaxed">
-          <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。<strong>2026年6月時点の各社公式情報</strong>に基づき記述。最新の解約フロー等は各公式サイトでご確認ください。ウェルネスダイニングの最新情報は<a href="https://www.wellness-dining.com/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">ウェルネスダイニング公式サイト</a>をご覧ください。
+          <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。<strong>2026年6月時点の各社公式情報</strong>に基づき記述。最新の解約フロー等は各公式サイトでご確認ください。ウェルネスダイニングの最新情報は<a href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">ウェルネスダイニング公式サイト</a>をご覧ください。
         </div>
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -510,7 +510,7 @@ export default function WellnessCancelPage() {
 
         <div className="text-center my-8">
           <a
-            href="https://www.wellness-dining.com/"
+            href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443"
             target="_blank"
             rel="noopener noreferrer sponsored"
             className="inline-block bg-accent text-white font-bold px-8 py-4 rounded-lg hover:bg-accent-dark transition-colors text-base"

@@ -368,7 +368,7 @@ export default function OtameshiSetOsusumePage() {
           <strong>こんな人におすすめ:</strong> 味のクオリティを最優先したい人、グルメ志向の人、外食が多くて自宅でもレストラン品質を求める人。
         </p>
         <div className="mb-6">
-          <CTAButton href="https://mitsuboshi-farm.jp/" label="三ツ星ファームの公式サイトで詳細を見る" />
+          <CTAButton href="https://t.felmat.net/fmcl?ak=M5863L.1.M98647P.B1357443" label="三ツ星ファームの公式サイトで詳細を見る" />
         </div>
         <p className="text-sm mb-6 leading-relaxed">
           詳しいレビューは <Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark underline">三ツ星ファームの口コミ・評判記事</Link> をご覧ください。
@@ -415,7 +415,7 @@ export default function OtameshiSetOsusumePage() {
           <strong>こんな人におすすめ:</strong> 糖尿病・腎臓病・高血圧などで医師から食事制限を指示されている人、栄養管理の専門性を最優先したい人。
         </p>
         <div className="mb-6">
-          <CTAButton href="https://www.wellness-dining.com/" label="ウェルネスダイニングの公式サイトで詳細を見る" />
+          <CTAButton href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" label="ウェルネスダイニングの公式サイトで詳細を見る" />
         </div>
 
         <SubHeading>7位: まごころケア食 — コスパ最強のシニア向け</SubHeading>
