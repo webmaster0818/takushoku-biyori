@@ -4,14 +4,14 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "【2026年最新】ヨシケイの口コミ・評判を徹底調査！ミールキットと冷凍弁当の料金・メニュー・送料を解説";
 const ARTICLE_DESCRIPTION =
-  "ヨシケイの口コミ・評判を徹底調査。カットミール・プチママなどのミール���ットと冷凍弁当シンプルミールの違い、料金・送料無料の仕組み・メニューを詳しく解説。良い口コミ・悪い口コミの両方を紹介��ます。";
+  "ヨシケイの口コミ・評判を徹底調査。カットミール・プチママなどのミールキットと冷凍弁当シンプルミールの違い、料金・送料無料の仕組み・メニューを詳しく解説。良い口コミ・悪い口コミの両方を紹介します。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/yoshikei-reviews/";
 
 export const metadata: Metadata = {
   title: ARTICLE_TITLE,
   description: ARTICLE_DESCRIPTION,
   keywords:
-    "ヨ���ケイ 口コミ, ヨシケイ 評判, ヨシケ��� カットミール, ヨシケイ プチママ, ヨシケイ シ���プルミール, ヨシケイ 料金, ヨシケイ 送料無料",
+    "ヨシケイ 口コミ, ヨシケイ 評判, ヨシケイ カットミール, ヨシケイ プチママ, ヨシケイ シンプルミール, ヨシケイ 料金, ヨシケイ 送料無料",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
     type: "article",
@@ -28,7 +28,7 @@ const faqData = [
   {
     question: "ヨシケイはお試しできる？",
     answer:
-      "はい、初めての方限定でお試しキャンペーンがあります。ミールキット（カットミール・プチママ等）は5日間お試しで1食あたり約300円（通常の約半額）。冷凍弁当のシンプルミールも初回半額で1食約170円から試せます。お試し後に自動で定期購入にはならないため、気軽に試すことができます���",
+      "はい、初めての方限定でお試しキャンペーンがあります。ミールキット（カットミール・プチママ等）は5日間お試しで1食あたり約300円（通常の約半額）。冷凍弁当のシンプルミールも初回半額で1食約170円から試せます。お試し後に自動で定期購入にはならないため、気軽に試すことができます。",
   },
   {
     question: "ヨシケイの配送エリアは？",
@@ -38,7 +38,7 @@ const faqData = [
   {
     question: "ヨシケイは毎日注文しないとダメ？",
     answer:
-      "いいえ、好きな日だけ注文できます。週単位でメニューを選べるため、月曜・水曜・金曜だけなど、必要な日だけ利用可能です。注文しない日は料金がかからず、ペナルティもありません。ただし、カット野菜の消費期限は短い（配達日当日〜翌日）ため、届いたらすぐに調理する必要��あります。",
+      "いいえ、好きな日だけ注文できます。週単位でメニューを選べるため、月曜・水曜・金曜だけなど、必要な日だけ利用可能です。注文しない日は料金がかからず、ペナルティもありません。ただし、カット野菜の消費期限は短い（配達日当日〜翌日）ため、届いたらすぐに調理する必要があります。",
   },
   {
     question: "ヨシケイとnoshはどう違う？",
@@ -46,9 +46,9 @@ const faqData = [
       "最大の違いは「ミールキット vs 冷凍弁当」です。ヨシケイのメインはミールキット（食材とレシピが届き自分で調理）で、送料無料・1食300〜500円と安いのが特徴。noshは調理済みの冷凍弁当が届くため調理不要ですが、送料が地域により1,000〜2,000円かかります。「自分で少し料理したい＋安く抑えたい」ならヨシケイ、「完全に調理不要がいい」ならnoshがおすすめです。",
   },
   {
-    question: "ヨシケイの冷凍弁当（シンプルミール）と他社の冷���弁当の違い��？",
+    question: "ヨシケイの冷凍弁当（シンプルミール）と他社の冷凍弁当の違いは？",
     answer:
-      "ヨシケイの���ンプルミールは1食約350円（初回半額で約170円）＋送料無料と、業界最安クラスのコスパが魅力です。ただし、メニューが日替わり3食セットで自分で選べない点、配送エリアが限定されている点が他社との違いです。noshのように自分でメニューを選びたい方や、対象エリア外の方には不向き��す。",
+      "ヨシケイのシンプルミールは1食約350円（初回半額で約170円）＋送料無料と、業界最安クラスのコスパが魅力です。ただし、メニューが日替わり3食セットで自分で選べない点、配送エリアが限定されている点が他社との違いです。noshのように自分でメニューを選びたい方や、対象エリア外の方には不向きです。",
   },
 ];
 
@@ -71,7 +71,8 @@ function TableOfContents() {
     { id: "about", label: "ヨシケイとは？基本情報まとめ" },
     { id: "courses", label: "主要コースの違い（カットミール/プチママ/シンプルミール）" },
     { id: "good-reviews", label: "良い口コミ・評判" },
-    { id: "bad-reviews", label: "���い口コミ・評判" },
+    { id: "bad-reviews", label: "悪い口コミ・評判" },
+    { id: "mazui", label: "ヨシケイは「まずい」って本当？" },
     { id: "price", label: "料金・送料を徹底解説" },
     { id: "merits", label: "メリット5つ" },
     { id: "demerits", label: "デメリット3つ" },
@@ -120,7 +121,7 @@ function SubHeading({ children }: { children: React.ReactNode }) {
 export default function YoshikeiReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-06-23T00:00:00+09:00",
+    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-07-03T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -152,8 +153,8 @@ export default function YoshikeiReviewsPage() {
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">「ヨシケイって実際どうなの？」「送料無料って本当？」——創業50年以上の歴史を持つ食材宅配の老舗・ヨシケイ。ミールキットから冷凍弁当まで幅広いラインナップで、全国約50万世帯に利用されています。</p>
-          <p className="mb-3">この記事では、<strong>ヨシケイの口コミ・評判を徹底リサーチ</strong>。人気のカットミール・プチママなどのミールキットと、冷凍���当「シンプルミール」の料金・特徴を詳しく比較します��</p>
-          <p><strong>送料無料の仕��み</strong>や初回半額のお試しキャンペーン情報もお伝えします。</p>
+          <p className="mb-3">この記事では、<strong>ヨシケイの口コミ・評判を徹底リサーチ</strong>。人気のカットミール・プチママなどのミールキットと、冷凍弁当「シンプルミール」の料金・特徴を詳しく比較します。</p>
+          <p><strong>送料無料の仕組み</strong>や初回半額のお試しキャンペーン情報もお伝えします。</p>
         </div>
 
         {/* 結論ボックス（ファーストビュー） */}
@@ -202,7 +203,7 @@ export default function YoshikeiReviewsPage() {
             ["プチママ", "ミールキット", "約20分", "約480〜550円", "20年以上のロングセラー・離乳食レシピ付き"],
             ["定番", "ミールキット", "約30〜35分", "約500〜600円", "本格的な家庭料理が作れる"],
             ["Lovyu（ラビュ）", "ミールキット", "約15〜40分", "約600〜750円", "おしゃれなカフェ風メニュー"],
-            ["シンプル��ール", "��凍弁当", "レンジ約4分", "約350円", "1食3品・送料無料・初回半額"],
+            ["シンプルミール", "冷凍弁当", "レンジ約4分", "約350円", "1食3品・送料無料・初回半額"],
           ]}
         />
 
@@ -215,7 +216,7 @@ export default function YoshikeiReviewsPage() {
         <SectionHeading id="good-reviews">良い口コミ・評判</SectionHeading>
         {[
           { title: "献立を考えなくて済む", reviews: ["「毎日の献立を考えるストレスから解放された。これだけでもヨシケイを使う価値がある」（30代女性）", "「レシピ通りに作れば20分で完成。料理の腕も上がった気がする」（40代女性）", "「夫に『最近ご飯美味しいね』と言われた。ヨシケイのレシピのおかげ」（30代女性）"] },
-          { title: "送料無料で経済的", reviews: ["「毎日届くのに送料無料は本当にありがたい。他のサービスだと送料だけで月2,000〜3,000���かかる」（40代男性）", "「スーパーに行く回数が減り、無駄な買い物が減った。結果的に食費が下がった」（30代女性）"] },
+          { title: "送料無料で経済的", reviews: ["「毎日届くのに送料無料は本当にありがたい。他のサービスだと送料だけで月2,000〜3,000円かかる」（40代男性）", "「スーパーに行く回数が減り、無駄な買い物が減った。結果的に食費が下がった」（30代女性）"] },
           { title: "食材の無駄が出ない", reviews: ["「必要な分だけ届くから、野菜を腐らせることがなくなった」（20代女性）", "「一人暮らしでも2人分を注文して翌日のお弁当にできるのが良い」（30代男性）"] },
         ].map((cat) => (
           <div key={cat.title} className="mb-6">
@@ -236,6 +237,14 @@ export default function YoshikeiReviewsPage() {
           </div>
         ))}
 
+        <SectionHeading id="mazui">ヨシケイは「まずい」って本当？味の評判を検証</SectionHeading>
+        <p className="mb-4">
+          「ヨシケイ まずい」と検索されることがありますが、当サイトが収集した口コミでは、味への強い不満は主流ではありません。ミールキット（カットミール・プチママ）は<strong>自分で調理する方式</strong>のため、仕上がりの味はレシピ通りに作れるかに左右されます。「レシピ通りに作れば20分で完成。料理の腕も上がった気がする」という声があるように、調理済み弁当と違って「届いたものがまずい」という性質のサービスではありません。
+        </p>
+        <p className="mb-4">
+          一方、冷凍弁当の<strong>シンプルミール</strong>は調理済みのため味の好みが分かれる余地があります。1食約350円という業界最安クラスの価格帯であることを踏まえると、「高級弁当の味を期待すると物足りないが、価格対比では十分」というのが妥当な評価です。味が不安な方は、<strong>初回半額（1食約170円）のお試し</strong>で実際に確かめてから継続を判断するのがおすすめです。
+        </p>
+
         <SectionHeading id="price">料金・送料を徹底解説</SectionHeading>
         <SubHeading>ミールキットの1ヶ月コスト目安（2人分・週5日）</SubHeading>
         <ComparisonTable
@@ -246,12 +255,12 @@ export default function YoshikeiReviewsPage() {
             ["定番", "約5,000〜6,000円", "約20,000〜24,000円"],
           ]}
         />
-        <p className="text-sm mb-6 leading-relaxed">上記は2人分の目安です。3人分、4人分はそれぞれ1.5倍、2倍程度になりま��。ヨシケイは<strong>送料が完全無料</strong>のため、上記の金額がそのまま実質コストになります。スーパーで食材を買って自炊する場合と比較しても、食材の無駄が出ない分、大きな差にはなりにくいです。</p>
+        <p className="text-sm mb-6 leading-relaxed">上記は2人分の目安です。3人分、4人分はそれぞれ1.5倍、2倍程度になります。ヨシケイは<strong>送料が完全無料</strong>のため、上記の金額がそのまま実質コストになります。スーパーで食材を買って自炊する場合と比較しても、食材の無駄が出ない分、大きな差にはなりにくいです。</p>
 
-        <SectionHeading id="merits">メ���ット5つ</SectionHeading>
+        <SectionHeading id="merits">メリット5つ</SectionHeading>
         <div className="space-y-3 mb-6">
           {[
-            { title: "送料完全無料", text: "自社配送のため送料がかかりません。他社の冷凍弁当は送料だけで月2,000〜4,000円かかることを考えると、大きなメリッ���です。" },
+            { title: "送料完全無料", text: "自社配送のため送料がかかりません。他社の冷凍弁当は送料だけで月2,000〜4,000円かかることを考えると、大きなメリットです。" },
             { title: "献立を考える手間がゼロ", text: "毎週届くメニューブックから選ぶだけ。管理栄養士が栄養バランスを計算済みなので、自分で栄養を気にする必要がありません。" },
             { title: "食材の無駄がゼロ", text: "その日使う分だけ届くため、野菜を腐らせることがありません。一人暮らしの方にとっても嬉しいポイントです。" },
             { title: "初回お試しが半額", text: "ミールキットは5日間お試しで1食約300円、シンプルミールは初回半額で1食約170円。リスクなしで味を確認できます。" },
@@ -278,16 +287,16 @@ export default function YoshikeiReviewsPage() {
           ))}
         </div>
 
-        <SectionHeading id="recommend">おすすめな人��おすすめしない人</SectionHeading>
-        <SubHeading>おすすめな���</SubHeading>
+        <SectionHeading id="recommend">おすすめな人・おすすめしない人</SectionHeading>
+        <SubHeading>おすすめな人</SubHeading>
         <div className="space-y-2 mb-6">
-          {["毎日の献立を考えるのが面倒な方", "送料を一切払い���くない方", "食材の無駄をなくしたい方", "料理の時短はしたいが、全く料理しないのは嫌な方", "初回半額でお試ししたい方"].map((t) => (
+          {["毎日の献立を考えるのが面倒な方", "送料を一切払いたくない方", "食材の無駄をなくしたい方", "料理の時短はしたいが、全く料理しないのは嫌な方", "初回半額でお試ししたい方"].map((t) => (
             <div key={t} className="flex items-start gap-2 text-sm"><span className="text-accent mt-0.5">●</span><span>{t}</span></div>
           ))}
         </div>
-        <SubHeading>おすすめし���い人</SubHeading>
+        <SubHeading>おすすめしない人</SubHeading>
         <div className="space-y-2 mb-6">
-          {["完全に調理不要な冷凍弁当だけを求める方", "配送時間帯を自由に選びたい方", "冷凍弁当（シンプルミール）の対象エリア外の���"].map((t) => (
+          {["完全に調理不要な冷凍弁当だけを求める方", "配送時間帯を自由に選びたい方", "冷凍弁当（シンプルミール）の対象エリア外の方"].map((t) => (
             <div key={t} className="flex items-start gap-2 text-sm"><span className="text-red-400 mt-0.5">●</span><span>{t}</span></div>
           ))}
         </div>
@@ -304,14 +313,14 @@ export default function YoshikeiReviewsPage() {
           ))}
         </div>
 
-        <SectionHeading id="faq">よくある��問（FAQ）</SectionHeading>
+        <SectionHeading id="faq">よくある質問（FAQ）</SectionHeading>
         {faqData.map((faq) => (<FAQ key={faq.question} question={faq.question} answer={faq.answer} />))}
 
-        <SectionHeading id="summary">ま���め</SectionHeading>
+        <SectionHeading id="summary">まとめ</SectionHeading>
         <div className="bg-cream rounded-xl p-5 mb-6">
           <p className="font-bold text-sm mb-3">ヨシケイ まとめ</p>
           <div className="space-y-2 text-sm leading-relaxed">
-            <p>ヨシケイは<strong>送料無料・自社配送</strong>のミールキット＆��凍弁当サービスです。創業50年以上の実績と全国約50万世帯の利用者数が信頼の証。</p>
+            <p>ヨシケイは<strong>送料無料・自社配送</strong>のミールキット＆冷凍弁当サービスです。創業50年以上の実績と全国約50万世帯の利用者数が信頼の証。</p>
             <p>カットミール（10分調理）やプチママ（離乳食レシピ付き）など、ライフスタイルに合わせたコースが充実。冷凍弁当のシンプルミールは1食約350円（初回約170円）で業界最安クラスです。</p>
             <p>「献立を考えるのが面倒」「送料無料がいい」「食材の無駄を減らしたい」方にぴったり。初回お試しは半額で利用できるため、まずは5日間のお試しから始めてみることをおすすめします。</p>
           </div>

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "まごころケア食の口コミ・評判は？まずいって本当？良い・悪い評価を中立検証【2026年6月最新】";
+  "まごころケア食の口コミ・評判は？まずいって本当？良い・悪い評価を中立検証【2026年7月最新】";
 const ARTICLE_DESCRIPTION =
-  "まごころケア食は「まずい」って本当？良い口コミ・悪い口コミの両方と、送料込みの実質単価、全コースの料金を中立に検証。1食あたりの安さや向く人・向かない人を整理しました。最新の料金・お試し価格は公式でご確認ください。【2026年6月更新】";
+  "まごころケア食は「まずい」って本当？良い口コミ・悪い口コミの両方と、送料込みの実質単価、全コースの料金を中立に検証。1食あたりの安さや向く人・向かない人を整理しました。最新の料金・お試し価格は公式でご確認ください。【2026年7月更新】";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/magokoro-care-reviews/";
 
@@ -147,7 +147,7 @@ function StarRating({ count }: { count: number }) {
 export default function MagokoroCareReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-16T00:00:00+09:00", dateModified: "2026-06-23T00:00:00+09:00",
+    datePublished: "2026-04-16T00:00:00+09:00", dateModified: "2026-07-03T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -176,7 +176,7 @@ export default function MagokoroCareReviewsPage() {
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-04-16">公開: 2026年4月16日</time>
-            <time dateTime="2026-06-23">更新: 2026年6月23日</time>
+            <time dateTime="2026-07-03">更新: 2026年7月3日</time>
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>

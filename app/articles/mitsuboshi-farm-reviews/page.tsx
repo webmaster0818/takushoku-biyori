@@ -222,7 +222,7 @@ export default function MitsuboshiFarmReviewsPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-16T00:00:00+09:00",
-    dateModified: "2026-06-23T00:00:00+09:00",
+    dateModified: "2026-07-03T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
