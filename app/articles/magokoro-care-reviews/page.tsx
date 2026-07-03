@@ -458,6 +458,9 @@ export default function MagokoroCareReviewsPage() {
         <p className="text-sm mb-6 leading-relaxed">
           <strong>送料のポイント：</strong>送料は全国一律980円（2026年3月改定）。21食セットなら1食あたりの送料負担は約47円で、送料込みでも1食約443円。nosh（送料込み690円〜）、三ツ星ファーム（送料込み727円〜）と比較しても圧倒的に安い水準です。
         </p>
+        <p className="text-sm mb-6 leading-relaxed">
+          なお、編集部が18社の料金・送料を公式サイトで直接確認して送料込みの1食実質単価に正規化した<Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark underline">宅食料金白書2026</Link>でも、まごころケア食（7食・定期）は送料込み1食566円で18社中最安でした。他社との横並び比較はそちらをご覧ください。
+        </p>
 
         <SubHeading>月額コストシミュレーション（健康バランスコース・定期）</SubHeading>
         <ComparisonTable
@@ -627,6 +630,7 @@ export default function MagokoroCareReviewsPage() {
             <li><Link href="/articles/shokutakubin-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】食宅便の口コミ・評判を徹底調査</Link></li>
             <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link></li>
             <li><Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark transition-colors">【2026年】一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5</Link></li>
+            <li><Link href="/articles/lifemeal-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">ライフミールの口コミ・評判は？まずいって本当？（同じシルバーライフ運営）</Link></li>
           </ul>
         </div>
       

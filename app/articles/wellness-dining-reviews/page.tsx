@@ -496,7 +496,7 @@ export default function WellnessDiningReviewsPage() {
         />
 
         <p className="text-sm mb-6 leading-relaxed">
-          <strong>送料のポイント：</strong>定期購入14食・21食セットなら送料完全無料は、宅配弁当業界でも珍しい大きなメリットです。noshは毎回913円〜の送料がかかるため、長期利用するほどウェルネスダイニングの方がトータルコストで有利になるケースがあります。
+          <strong>送料のポイント：</strong>定期購入14食・21食セットなら送料完全無料は、宅配弁当業界でも珍しい大きなメリットです。noshは毎回913円〜の送料がかかるため、長期利用するほどウェルネスダイニングの方がトータルコストで有利になるケースがあります。送料込みの1食実質単価で18社を比較した<Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark underline">宅食料金白書2026</Link>（編集部の公式サイト一次調査）もあわせてご覧ください。
         </p>
 
         <SubHeading>月額コストシミュレーション</SubHeading>

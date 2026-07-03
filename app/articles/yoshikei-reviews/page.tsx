@@ -255,7 +255,7 @@ export default function YoshikeiReviewsPage() {
             ["定番", "約5,000〜6,000円", "約20,000〜24,000円"],
           ]}
         />
-        <p className="text-sm mb-6 leading-relaxed">上記は2人分の目安です。3人分、4人分はそれぞれ1.5倍、2倍程度になります。ヨシケイは<strong>送料が完全無料</strong>のため、上記の金額がそのまま実質コストになります。スーパーで食材を買って自炊する場合と比較しても、食材の無駄が出ない分、大きな差にはなりにくいです。</p>
+        <p className="text-sm mb-6 leading-relaxed">上記は2人分の目安です。3人分、4人分はそれぞれ1.5倍、2倍程度になります。ヨシケイは<strong>送料が完全無料</strong>のため、上記の金額がそのまま実質コストになります。スーパーで食材を買って自炊する場合と比較しても、食材の無駄が出ない分、大きな差にはなりにくいです。冷凍宅配弁当を含む18社の送料込み実質単価は、編集部が公式サイトを一次調査した<Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark underline">宅食料金白書2026</Link>で比較できます。</p>
 
         <SectionHeading id="merits">メリット5つ</SectionHeading>
         <div className="space-y-3 mb-6">

@@ -623,7 +623,7 @@ export default function MitsuboshiFarmReviewsPage() {
 
         <p className="text-sm mb-6 leading-relaxed">
           <strong>送料のポイント：</strong>
-          三ツ星ファームの送料は全国一律990円（北海道・沖縄は2,500円）。noshの地域別送料と比較すると、関東・関西ではnosh（913円）の方がわずかに安く、東北・九州では三ツ星ファーム（990円）の方が安くなるケースもあります。初回は送料無料キャンペーンが適用されることが多いので、初回注文は実質的にかなりお得です。
+          三ツ星ファームの送料は全国一律990円（北海道・沖縄は2,500円）。noshの地域別送料と比較すると、関東・関西ではnosh（913円）の方がわずかに安く、東北・九州では三ツ星ファーム（990円）の方が安くなるケースもあります。初回は送料無料キャンペーンが適用されることが多いので、初回注文は実質的にかなりお得です。送料込みの1食実質単価で18社を横並び比較した<Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark underline">宅食料金白書2026</Link>（編集部の公式サイト一次調査）も参考にしてください。
         </p>
 
         <SubHeading>会員ランク制度の仕組み</SubHeading>

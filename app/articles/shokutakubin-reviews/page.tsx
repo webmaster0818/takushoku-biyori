@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "【2026年最新】食宅便の口コミ・評判を徹底調査！日清医療食品の宅配弁当の実力をメリット・デメリットで解説";
+  "食宅便の口コミ・評判は？まずいって本当？日清医療食品の宅配弁当を中立検証【2026年7月最新】";
 const ARTICLE_DESCRIPTION =
-  "食宅便（しょくたくびん）の口コミ・評判を徹底調査。日清医療食品が手がける宅配弁当の味・栄養・コスパを検証。良い口コミ・悪い口コミの両方を紹介し、料金プラン・送料・全コースの特徴を解説します。";
+  "食宅便（しょくたくびん）は「まずい」って本当？口コミ・評判を出典付きで徹底検証。日清医療食品が手がける宅配弁当の味・栄養・コスパを、実食レビューメディアの評価を引用しながら中立に解説。料金プラン・送料・全コースの特徴も整理します。【2026年7月更新】";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/shokutakubin-reviews/";
 
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-16T00:00:00+09:00",
-    modifiedTime: "2026-04-16T00:00:00+09:00",
+    modifiedTime: "2026-07-04T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -76,6 +76,7 @@ function TableOfContents() {
     { id: "about", label: "食宅便とは？基本情報まとめ" },
     { id: "good-reviews", label: "食宅便の良い口コミ・評判" },
     { id: "bad-reviews", label: "食宅便の悪い口コミ・評判" },
+    { id: "mazui", label: "食宅便は「まずい」って本当？" },
     { id: "merits", label: "実際に注文してわかったメリット5つ" },
     { id: "demerits", label: "注意すべきデメリット3つ" },
     { id: "price", label: "食宅便の料金・送料を徹底解説" },
@@ -135,7 +136,7 @@ function StarRating({ count }: { count: number }) {
 export default function ShokutakubinReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-16T00:00:00+09:00", dateModified: "2026-06-24T00:00:00+09:00",
+    datePublished: "2026-04-16T00:00:00+09:00", dateModified: "2026-07-04T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -164,6 +165,7 @@ export default function ShokutakubinReviewsPage() {
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-04-16">公開: 2026年4月16日</time>
+            <time dateTime="2026-07-04">更新: 2026年7月4日</time>
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
@@ -250,7 +252,21 @@ export default function ShokutakubinReviewsPage() {
         {/* ===== 良い口コミ ===== */}
         <SectionHeading id="good-reviews">食宅便の良い口コミ・評判</SectionHeading>
 
-        <p className="text-sm mb-6 leading-relaxed">SNSや口コミサイトから集めた良い評判を5つのカテゴリに分類しています。</p>
+        <p className="text-sm mb-6 leading-relaxed">まず、第三者メディアの実食レビューの評価を出典付きで紹介し、続いてSNSや口コミサイトから集めた良い評判を5つのカテゴリに分類します。</p>
+
+        <SubHeading>第三者メディアの実食評価（出典付き）</SubHeading>
+        <div className="space-y-2 mb-6">
+          <div className="bg-green-50 rounded-lg p-3 text-sm leading-relaxed">
+            <p className="mb-1">「甘めの大根おろしソースとよくあっていて、万人に受け入れられるようなバランスのよい美味しさ」「おかずがバラエティに富んでいるので飽きが来ない」（実食レビュー）</p>
+            <p className="text-xs text-warm-gray">出典: <a href="https://www.ozmall.co.jp/healthcare/food/article/40177/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">OZmall「食宅便はまずいって本当？」実食レビュー</a></p>
+          </div>
+          <div className="bg-green-50 rounded-lg p-3 text-sm leading-relaxed">
+            <p className="mb-1">「野菜がシャキシャキで、食感の違いを楽しめました」「ブロッコリーの歯ごたえと、帆立のコリコリ食感が美味しかった」（実食レビュー）</p>
+            <p className="text-xs text-warm-gray">出典: <a href="https://meal.app-liv.jp/archive/138979/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">宅食グルメ（Appliv）実食レビュー</a></p>
+          </div>
+        </div>
+
+        <SubHeading>SNS・口コミサイトの傾向</SubHeading>
 
         {[
           {
@@ -346,6 +362,15 @@ export default function ShokutakubinReviewsPage() {
             </div>
           </div>
         ))}
+
+        {/* ===== まずい？検証 ===== */}
+        <SectionHeading id="mazui">食宅便は「まずい」って本当？味の評判を検証</SectionHeading>
+        <p className="text-sm mb-4 leading-relaxed">
+          「食宅便 まずい」という検索候補が表示されることがありますが、<strong>当サイトが確認した範囲では、実食レビューメディアの評価はむしろ良好です</strong>。お試しセットを実食した宅食グルメは「まずい」という噂は当たらないと結論づけ、実食した3品すべてを<strong>「一定レベルの美味しさなので、ストレスなく食べられた」</strong>（<a href="https://meal.app-liv.jp/archive/138979/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">出典</a>）と評価。OZmallの実食レビューでも<strong>「万人に受け入れられるようなバランスのよい美味しさ」</strong>（<a href="https://www.ozmall.co.jp/healthcare/food/article/40177/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">出典</a>）と表現されています。
+        </p>
+        <p className="text-sm mb-6 leading-relaxed">
+          一方で「まずい」と感じる余地があるのは主に2つのケースです。1つは<strong>制限食コース（塩分ケア・たんぱくケアなど）</strong>で、栄養基準を守るぶん味付けが控えめになり、濃い味に慣れた人には物足りなく感じられること。もう1つは<strong>「派手さはない家庭的な味」</strong>という設計上、レストラン級の感動を期待すると肩透かしに感じることです。病院・介護給食最大手の日清医療食品が作る「毎日食べても飽きない安定した味」がコンセプトなので、味の方向性が合うかはおまかせコースの1回注文（都度購入）で確かめるのが確実です。
+        </p>
 
         {/* ===== メリット ===== */}
         <SectionHeading id="merits">実際に注文してわかったメリット5つ</SectionHeading>
@@ -586,6 +611,8 @@ export default function ShokutakubinReviewsPage() {
             <li><Link href="/articles/koureisha-osusume/" className="text-accent hover:text-accent-dark transition-colors">高齢者におすすめの宅配弁当・宅食ランキング</Link></li>
             <li><Link href="/articles/jisshitsu-tanka-hikaku/" className="text-accent hover:text-accent-dark transition-colors">実質単価で比較！宅配弁当のコスパ徹底比較</Link></li>
             <li><Link href="/articles/souryou-yasui-ranking/" className="text-accent hover:text-accent-dark transition-colors">送料が安い宅配弁当ランキング</Link></li>
+            <li><Link href="/articles/lifemeal-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">ライフミールの口コミ・評判は？まずいって本当？</Link></li>
+            <li><Link href="/articles/chef-mutenka-tsukurioki-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">シェフの無添つくりおきの口コミ・評判は？まずいって本当？</Link></li>
           </ul>
         </div>
       

@@ -177,7 +177,7 @@ export default function Home() {
                   nosh(ナッシュ)の口コミ・評判を徹底調査
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  良い口コミ・悪い口コミの両方を紹介。実際に注文してわかったメリット5つ・デメリット3つ、料金・送料・nosh
+                  「まずい」は本当？良い口コミ・悪い口コミを出典付きで検証。料金・送料・nosh
                   club割引まで徹底解説。
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -321,6 +321,62 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["食宅便", "口コミ", "日清医療食品", "品数"].map((tag) => (
+                    <span
+                      key={tag}
+                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
+            <Link
+              href="/articles/tsukurioki-jp-kuchikomi/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  つくりおき.jp(ツクリオ)の口コミ・評判を徹底調査
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  冷蔵の手作りおかず宅配は「まずい」？出典付きの口コミで検証。料金・対応エリア・LINE注文の仕組みも解説。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["つくりおき.jp", "口コミ", "冷蔵おかず", "共働き"].map((tag) => (
+                    <span
+                      key={tag}
+                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/articles/green-spoon-kuchikomi/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  GREEN SPOONの口コミ・評判を徹底調査
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  野菜ゴロゴロの冷凍宅配食は「まずい」？出典付きの口コミで検証。料金・送料・無添加方針の実態も解説。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["GREEN SPOON", "口コミ", "野菜", "スープ"].map((tag) => (
                     <span
                       key={tag}
                       className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
@@ -539,6 +595,31 @@ export default function Home() {
             </Link>
           </div>
 
+          {/* 宅食料金白書2026 */}
+          <div className="grid grid-cols-1 gap-5 mt-5">
+            <Link
+              href="/articles/takushoku-ryokin-hakusho/"
+              className="block bg-white border-2 border-accent/40 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  独自調査データ
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  宅食料金白書2026｜18社の料金・送料・1食実質単価を正規化比較
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  18社の料金・送料・初回割引・解約条件を全て公式サイトで直接確認し、送料込みの1食実質単価に正規化して比較（2026年7月調査）。送料の地域差・定期縛りの罠も一覧化。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["料金比較", "送料込み", "実質単価", "18社", "一次データ"].map((tag) => (
+                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+          </div>
+
           {/* Phase 5: 新規サービス口コミ記事 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
             <Link
@@ -625,6 +706,52 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["つるかめキッチン", "口コミ", "制限食", "送料無料"].map((tag) => (
+                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
+            <Link
+              href="/articles/chef-mutenka-tsukurioki-kuchikomi/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  シェフの無添つくりおきの口コミ・評判は？まずいって本当？
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  無添加調理×冷蔵手作りおかず。実食レビューの評価を出典付きで検証し、料金と注意点を整理。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["シェフの無添つくりおき", "口コミ", "無添加", "つくりおき"].map((tag) => (
+                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/articles/lifemeal-kuchikomi/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  ライフミールの口コミ・評判は？まずいって本当？
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  1食490円台〜の低価格冷凍弁当。実食レビューの評価を出典付きで検証し、冷凍庫無料レンタルの条件も解説。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["ライフミール", "口コミ", "コスパ", "冷凍弁当"].map((tag) => (
                     <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
                   ))}
                 </div>

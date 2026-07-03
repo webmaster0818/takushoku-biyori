@@ -1,0 +1,876 @@
+{
+  "title": "宅食料金白書 2026年7月",
+  "collected_at": "2026-07-04",
+  "currency": "JPY",
+  "tax": "included",
+  "methodology": "全18ブランドの公式サイトをWebFetchで直接確認（比較サイト・まとめ記事からの転記なし）。確認できなかった項目はnullとしnoteに理由を記録。1食実質単価 = (plans[].price_jpy + shipping.representative_jpy) / plans[].meals で機械計算可能（shipping.type=free は 0 加算）。",
+  "brands": [
+    {
+      "slug": "nosh",
+      "name": "nosh（ナッシュ）",
+      "plans": [
+        {
+          "plan_name": "6食プラン",
+          "meals": 6,
+          "price_jpy": 4318,
+          "note": "1食719円（税込）"
+        },
+        {
+          "plan_name": "8食プラン",
+          "meals": 8,
+          "price_jpy": 5157,
+          "note": "1食644円（税込）"
+        },
+        {
+          "plan_name": "10食プラン",
+          "meals": 10,
+          "price_jpy": 6206,
+          "note": "1食620円（税込）。nosh club（累計購入ランク割引）で最安1食499円まで"
+        }
+      ],
+      "shipping": {
+        "type": "regional",
+        "representative_jpy": 1166,
+        "temperature": "frozen",
+        "note": "全国11エリア別。関東は6食1,166円／8食・10食1,386円（税込、クール宅急便料金込み）。送料表は2025年5月1日改訂版"
+      },
+      "first_discount": "初回¥1,500 OFF（2回目¥1,000 OFF・3回目¥500 OFF、合計3,000円OFF）",
+      "subscription": "定期のみ",
+      "cancel_note": "継続回数の制限・解約金なし。スキップ・一時停止はアプリで可、noshランク保持。都度購入の記載なし（定期配送サービスと明記）",
+      "source_urls": [
+        "https://nosh.jp/",
+        "https://nosh.jp/plan",
+        "https://nosh.jp/shipping",
+        "https://nosh.jp/faq"
+      ],
+      "verified_at": "2026-07-04",
+      "verified": true,
+      "notes": "20食プランの掲載なし（6/8/10食のみ）"
+    },
+    {
+      "slug": "mitsuboshi-farm",
+      "name": "三ツ星ファーム",
+      "plans": [
+        {
+          "plan_name": "よりどりプラン 7食コース",
+          "meals": 7,
+          "price_jpy": 6485,
+          "note": "1食あたり927円（税込）＋送料"
+        },
+        {
+          "plan_name": "よりどりプラン 14食コース",
+          "meals": 14,
+          "price_jpy": 11458,
+          "note": "1食あたり819円（税込）。初回送料無料"
+        },
+        {
+          "plan_name": "よりどりプラン 21食コース",
+          "meals": 21,
+          "price_jpy": 14918,
+          "note": "1食あたり711円（税込）。初回送料無料"
+        },
+        {
+          "plan_name": "長期継続応援プラン 14食",
+          "meals": 14,
+          "price_jpy": 9946,
+          "note": "＋送料。合計6回以上の継続約束。広告LPにより9,276円等の別価格表記あり"
+        },
+        {
+          "plan_name": "長期継続応援プラン 21食",
+          "meals": 21,
+          "price_jpy": 12650,
+          "note": "1食603円（税込）＋送料。合計6回以上の継続約束。LPにより13,419円表記の変種あり"
+        }
+      ],
+      "shipping": {
+        "type": "flat",
+        "representative_jpy": 990,
+        "temperature": "frozen",
+        "note": "全国一律990円（税込）、北海道・沖縄・一部離島は2,500円（税込）。14食・21食コースは初回送料無料"
+      },
+      "first_discount": "初回送料無料（14食・21食コース。7食コースは初回から送料加算）",
+      "subscription": "定期のみ",
+      "cancel_note": "よりどりプランは受け取り回数の縛りなし・解約手数料なし。長期継続応援プランは6回未満の途中解約で手数料7,700円（税込）、冷凍庫プレゼントプランは12回縛り・途中解約16,500円（税込）",
+      "source_urls": [
+        "https://mitsuboshifarm.jp/",
+        "https://mitsuboshifarm.jp/page/longtermplan/02/",
+        "https://mitsuboshifarm.jp/page/longtermplan/06/",
+        "https://mitsuboshifarm.jp/page/freezer/02/"
+      ],
+      "verified_at": "2026-07-04",
+      "verified": true,
+      "notes": "本体サイトはJSレンダリングのため、よりどりプラン価格は公式サイト配信のJSバンドル内表記テキストで直接確認。faq.mitsuboshifarm.jpの価格FAQ記事は現在404"
+    },
+    {
+      "slug": "magokoro-care-shoku",
+      "name": "まごころケア食",
+      "plans": [
+        {
+          "plan_name": "健康バランス食（まごころお得便）7食",
+          "meals": 7,
+          "price_jpy": 2982,
+          "note": "お得便（定期）価格・定価から約28%割引後。1食あたり約426円"
+        },
+        {
+          "plan_name": "健康バランス食（まごころお得便）14食",
+          "meals": 14,
+          "price_jpy": 5572,
+          "note": "1食あたり約398円"
+        },
+        {
+          "plan_name": "健康バランス食（まごころお得便）21食",
+          "meals": 21,
+          "price_jpy": 8274,
+          "note": "1食あたり約394円"
+        },
+        {
+          "plan_name": "糖質制限食／塩分制限食／たんぱく調整食／カロリー調整食／ムース食 7食",
+          "meals": 7,
+          "price_jpy": 2982,
+          "note": "6コースともお得便価格は同一（14食5,572円・21食8,274円）"
+        },
+        {
+          "plan_name": "ご飯付きセット 7食",
+          "meals": 7,
+          "price_jpy": 3556,
+          "note": "14食6,552円・21食9,408円"
+        }
+      ],
+      "shipping": {
+        "type": "flat",
+        "representative_jpy": 980,
+        "temperature": "frozen",
+        "note": "全国一律980円（税込）、沖縄県・離島は1,480円（税込）。送料980円への値下げ告知表記あり（利用ガイドも980円で一致）"
+      },
+      "first_discount": "初回限定1食190円（初回限定 健康バランス／糖質制限14食定期セット・冷凍庫無料レンタル付き）／LINE友だち追加で500円クーポン",
+      "subscription": "両方",
+      "cancel_note": "定期（お得便）は回数縛りの明記なし（8回分セットプランは8回単位・自動更新）。停止・解約は次回お届け6日前16時までにマイページで手続き。配送頻度は毎週/隔週/3週ごと/月1回から選択",
+      "source_urls": [
+        "https://magokoro-care-shoku.com/",
+        "https://magokoro-care-shoku.com/help/guide",
+        "https://magokoro-care-shoku.com/products/detail/47"
+      ],
+      "verified_at": "2026-07-04",
+      "verified": true,
+      "notes": "上記は定期（お得便）価格。都度購入の定価は金額を取得できず（約28%割引前の定価という表記のみ）"
+    },
+    {
+      "slug": "wellness-dining",
+      "name": "ウェルネスダイニング",
+      "plans": [
+        {
+          "plan_name": "栄養バランス気配り宅配食 7食",
+          "meals": 7,
+          "price_jpy": 5022,
+          "note": "税込。お試し注文（初回送料無料）"
+        },
+        {
+          "plan_name": "栄養バランス気配り宅配食 14食",
+          "meals": 14,
+          "price_jpy": 9882,
+          "note": "税込"
+        },
+        {
+          "plan_name": "栄養バランス気配り宅配食 21食",
+          "meals": 21,
+          "price_jpy": 14364,
+          "note": "税込"
+        },
+        {
+          "plan_name": "糖質＆カロリー制限 気配り宅配食 7食",
+          "meals": 7,
+          "price_jpy": 5238,
+          "note": "税込〜。塩分制限7食5,184円〜／たんぱく＆塩分調整7食5,508円〜／脂質制限7食6,372円〜／厳選栄養バランス7食7,408円〜"
+        }
+      ],
+      "shipping": {
+        "type": "flat",
+        "representative_jpy": 880,
+        "temperature": "frozen",
+        "note": "都度注文880円（税込）、定期注文は14食・21食送料無料／7食のみ440円（税込・通常送料半額）。北海道・沖縄は都度1,870円／定期7食935円。お試し（初回）は全食数送料無料"
+      },
+      "first_discount": "「7食・14食・21食、どの食数でも初回送料無料でご注文いただけます」",
+      "subscription": "両方",
+      "cancel_note": "注文回数の縛りなし・解約金なし。スキップ・休止は電話またはネットで可。変更はお届け予定日の1週間前までに連絡",
+      "source_urls": [
+        "https://www.wellness-dining.com/",
+        "https://www.wellness-dining.com/kikubari/",
+        "https://www.wellness-dining.com/kikubari/products/k140/",
+        "https://www.wellness-dining.com/souryou.html",
+        "https://www.wellness-dining.com/kikubari/teiki/"
+      ],
+      "verified_at": "2026-07-04",
+      "verified": true,
+      "notes": "通販公式はwellness-dining.com。コース別価格は「〜円」表記（メニュー構成により変動の含み）"
+    },
+    {
+      "slug": "yoshikei",
+      "name": "ヨシケイ",
+      "plans": [
+        {
+          "plan_name": "お試し5days（すまいるごはん・プチママ）",
+          "meals": 5,
+          "price_jpy": null,
+          "per_meal_jpy": 300,
+          "note": "おひとり様1食あたり300円（税込）・月〜金の5日間・配達料無料。人数別の合計金額はテキスト掲載なし（画像のみ）。地域によりキャンペーンが異なる場合ありと明記"
+        },
+        {
+          "plan_name": "通常コース（Smile and Table／Standard／Balance等）",
+          "meals": null,
+          "price_jpy": null,
+          "note": "週替わりメニュー・地域会社別価格のため、全国共通の税込料金は公式サイトに掲載なし。お試しは「通常価格の最大半額」表記"
+        }
+      ],
+      "shipping": {
+        "type": "free",
+        "representative_jpy": 0,
+        "temperature": "chilled",
+        "note": "「ご利用での配達料は頂いておりません」（自社スタッフによる毎日配達）。ミールキット中心（冷蔵）、冷凍弁当の取扱いもあり"
+      },
+      "first_discount": "初めての方限定「ミールキットお試し5days」＝1食300円（税込）・通常価格の最大半額・配達料無料",
+      "subscription": "都度購入可",
+      "cancel_note": "定期契約なし。1週間単位の注文で必要な週・日だけ利用可。入会金・年会費・配達料無料（支払いは週単位）",
+      "source_urls": [
+        "https://yoshikei-dvlp.co.jp/",
+        "https://yoshikei-dvlp.co.jp/shishoku/",
+        "https://yoshikei-dvlp.co.jp/shishoku-test/smile/",
+        "https://yoshikei-dvlp.co.jp/service/"
+      ],
+      "verified_at": "2026-07-04",
+      "verified": false,
+      "notes": "通常コースの具体的な税込料金が公式サイト上に非掲載（地域・週替わり制のためカタログ／地域会社サイト参照方式）のためverified=false。お試し300円/食と配達料無料は公式ページで直接確認済み"
+    },
+    {
+      "slug": "shokutakubin",
+      "name": "食宅便",
+      "plans": [
+        {
+          "plan_name": "おまかせコース 7食（らくらく定期便）",
+          "meals": 7,
+          "price_jpy": 4830,
+          "note": "公式トップの7食セット定期便価格表より"
+        },
+        {
+          "plan_name": "塩分&カロリーケア 7食（らくらく定期便）",
+          "meals": 7,
+          "price_jpy": 5180,
+          "note": ""
+        },
+        {
+          "plan_name": "低糖質セレクト 7食（らくらく定期便）",
+          "meals": 7,
+          "price_jpy": 5180,
+          "note": ""
+        },
+        {
+          "plan_name": "たんぱくケア 7食（らくらく定期便）",
+          "meals": 7,
+          "price_jpy": 5180,
+          "note": ""
+        },
+        {
+          "plan_name": "やわらかい食事 7食（らくらく定期便）",
+          "meals": 7,
+          "price_jpy": 5180,
+          "note": ""
+        }
+      ],
+      "shipping": {
+        "type": "flat",
+        "representative_jpy": 940,
+        "temperature": "frozen",
+        "note": "全国一律・1梱包あたり。らくらく定期便940円／都度便1,330円（税込）。1梱包2セットまで。出荷倉庫が分かれると梱包ごとに送料"
+      },
+      "first_discount": null,
+      "subscription": "両方",
+      "cancel_note": "らくらく定期便はスキップ機能あり。回数縛りの明記なし（解約手続き案内はガイドにあり）",
+      "source_urls": [
+        "http://shokutakubin.com/shop/default.aspx",
+        "http://shokutakubin.com/shop/pages/guide.aspx"
+      ],
+      "verified_at": "2026-07-04",
+      "verified": true,
+      "notes": "トップページ・利用ガイドいずれにも初回割引の現行表記なし（クーポンコード入力欄の案内のみ）"
+    },
+    {
+      "slug": "tsukurioki-jp",
+      "name": "ツクリオ（旧つくりおき.jp）",
+      "plans": [
+        {
+          "plan_name": "週3食プラン（2人前×3食）",
+          "meals": 6,
+          "price_jpy": 7990,
+          "note": "週あたり・税込送料込。meals=2人前×3食分"
+        },
+        {
+          "plan_name": "週3食プラン（4人前×3食）",
+          "meals": 12,
+          "price_jpy": 9990,
+          "note": "週あたり・税込送料込。初回限定5,990円の表記あり"
+        },
+        {
+          "plan_name": "週5食プラン（4人前×5食）",
+          "meals": 20,
+          "price_jpy": 15960,
+          "note": "週あたり・税込送料込。初回限定11,960円の表記あり"
+        }
+      ],
+      "shipping": {
+        "type": "free",
+        "representative_jpy": 0,
+        "temperature": "chilled",
+        "note": "「税込・送料込」と明記。冷凍せず冷蔵でお届け。全国（沖縄・離島など一部地域除く）、提供エリアは公式LINEで確認する方式"
+      },
+      "first_discount": "クーポンコード「RC-2026WELCOME」で初回割引（4人前×週3食 9,990円→5,990円、週5食 15,960円→11,960円）",
+      "subscription": "定期のみ",
+      "cancel_note": "いつでも休会・解約可能（無料）。注文・休会・退会はLINE上で完結。キャンセルは配達前週の水曜日中まで",
+      "source_urls": [
+        "https://www.tsukurioki.jp/",
+        "https://www.tsuklio.com/"
+      ],
+      "verified_at": "2026-07-04",
+      "verified": true,
+      "notes": "2026年3月16日に「つくりおき.jp」から「ツクリオ（Tsuklio）」へリブランド（Antwayプレスリリースで裏取り済）。両公式で料金一致を確認"
+    },
+    {
+      "slug": "green-spoon",
+      "name": "GREEN SPOON",
+      "plans": [
+        {
+          "plan_name": "定期プラン S BOX",
+          "meals": 8,
+          "price_jpy": null,
+          "note": "食数別の税込合計額は公式で直接確認できず（FAQ403・価格表が画像形式・料金LP終了）"
+        },
+        {
+          "plan_name": "定期プラン M BOX",
+          "meals": 12,
+          "price_jpy": null,
+          "note": "同上"
+        },
+        {
+          "plan_name": "定期プラン L BOX",
+          "meals": 20,
+          "price_jpy": null,
+          "note": "同上。メニュー単品ごとの価格制（弁当/メイン/スープ等で単価が異なり、個数が増えるほど1食単価が下がる仕組み）"
+        }
+      ],
+      "shipping": {
+        "type": "regional",
+        "representative_jpy": 990,
+        "temperature": "frozen",
+        "note": "定期購入時「全国一律900円（税込990円）（北海道/沖縄を除く）」＝関東990円。北海道/沖縄は別料金。単品購入は個数・地域により変動。2025年9月に送料改定実施"
+      },
+      "first_discount": "「12食セット（定期お届け）お試しキャンペーン 最大33％OFF」（公式LPの現行表記）",
+      "subscription": "両方",
+      "cancel_note": "注文回数縛りなし・解約金なし。スキップ・停止自由。ただし初回購入分の解約・キャンセルは不可",
+      "source_urls": [
+        "https://green-spoon.jp/",
+        "https://green-spoon.jp/lp_special/all_0530120/",
+        "https://green-spoon.jp/news/242",
+        "https://green-spoon.jp/news/174"
+      ],
+      "verified_at": "2026-07-04",
+      "verified": false,
+      "notes": "食数別の具体的な税込価格が公式ページから直接取得できず価格はnull。送料・初回割引・解約条件は公式で確認済"
+    },
+    {
+      "slug": "chef-muten-tsukurioki",
+      "name": "シェフの無添つくりおき",
+      "plans": [
+        {
+          "plan_name": "食卓サポートプラン",
+          "meals": null,
+          "price_jpy": 5173,
+          "note": "2回目以降の税込価格。初回4,980円。人数×食数の内訳はページから抽出できず（画像形式）"
+        },
+        {
+          "plan_name": "食卓おまかせプラン",
+          "meals": null,
+          "price_jpy": 13607,
+          "note": "2回目以降の税込価格。初回12,980円。人数×食数の内訳はページから抽出できず（画像形式）"
+        }
+      ],
+      "shipping": {
+        "type": "flat",
+        "representative_jpy": 990,
+        "temperature": "chilled",
+        "note": "全プラン共通990円（税込）・冷蔵便。初回は送料無料。一部エリアでお届け曜日が異なる"
+      },
+      "first_discount": "初回: 食卓サポートプラン4,980円（通常5,173円）／食卓おまかせプラン12,980円（通常13,607円）＋初回送料無料",
+      "subscription": "定期のみ",
+      "cancel_note": "「解約条件や契約回数の制限はありません」とQ&Aに記載。スキップは注文ステータスが「準備中」の間のみ可",
+      "source_urls": [
+        "https://store.tavenal.com/tsukurioki/"
+      ],
+      "verified_at": "2026-07-04",
+      "verified": true,
+      "notes": "指定URLのmutenmeal.comはDNS解決不可。公式は store.tavenal.com/tsukurioki/。プランの人数×食数構造は画像掲載のため未取得"
+    },
+    {
+      "slug": "lifemeal",
+      "name": "ライフミール",
+      "plans": [
+        {
+          "plan_name": "定期購入 7食セット",
+          "meals": 7,
+          "price_jpy": 3640,
+          "note": "1食520円"
+        },
+        {
+          "plan_name": "定期購入 10食セット",
+          "meals": 10,
+          "price_jpy": 5100,
+          "note": "1食510円。初回限定は1,900円（1食190円）"
+        },
+        {
+          "plan_name": "定期購入 20食セット",
+          "meals": 20,
+          "price_jpy": 9800,
+          "note": "1食490円"
+        },
+        {
+          "plan_name": "8回まとめ買い 10食×8回",
+          "meals": 80,
+          "price_jpy": 34188,
+          "note": "1食427円"
+        },
+        {
+          "plan_name": "8回まとめ買い 20食×8回",
+          "meals": 160,
+          "price_jpy": 63200,
+          "note": "1食395円"
+        }
+      ],
+      "shipping": {
+        "type": "regional",
+        "representative_jpy": 980,
+        "temperature": "frozen",
+        "note": "沖縄県以外980円・沖縄県1,480円（関東=980円）。ご飯付きセットを含む場合は各+250円。冷凍便で全国対応"
+      },
+      "first_discount": "「初回はお試し価格¥190」（10食セット初回限定 1,900円＝1食190円）",
+      "subscription": "定期のみ",
+      "cancel_note": "回数縛りなし・いつでも解約可。スキップとプラン停止機能あり。受付はお届け日の5日前まで。初回購入分の解約・キャンセルは不可",
+      "source_urls": [
+        "https://l-meal.com/",
+        "https://l-meal.com/faq"
+      ],
+      "verified_at": "2026-07-04",
+      "verified": true,
+      "notes": "指定URLのlifemeal.jpは別サービス（栄養コラムサイト）。公式は l-meal.com。公式サイト上は定期コースのみ"
+    },
+    {
+      "slug": "watami-takushoku",
+      "name": "ワタミの宅食",
+      "plans": [
+        {
+          "plan_name": "まごころ手鞠 週5日（日替わり5日間コース）",
+          "meals": 5,
+          "price_jpy": 2950,
+          "note": "1食590円×5日（税込・宅配料込み）"
+        },
+        {
+          "plan_name": "まごころおかず 週5日",
+          "meals": 5,
+          "price_jpy": 3450,
+          "note": "1食690円×5日"
+        },
+        {
+          "plan_name": "まごころ御膳 週5日",
+          "meals": 5,
+          "price_jpy": 3550,
+          "note": "1食710円×5日"
+        },
+        {
+          "plan_name": "まごころダブル 週5日",
+          "meals": 5,
+          "price_jpy": 3950,
+          "note": "1食790円×5日"
+        },
+        {
+          "plan_name": "まごころ小箱 週5日",
+          "meals": 5,
+          "price_jpy": 3100,
+          "note": "1食620円×5日"
+        },
+        {
+          "plan_name": "まごころ小箱（小） 週5日",
+          "meals": 5,
+          "price_jpy": 2350,
+          "note": "1食470円×5日"
+        },
+        {
+          "plan_name": "週7日間コース（各商品）",
+          "meals": 7,
+          "price_jpy": null,
+          "note": "週7日間コース・曜日指定コース（週1〜4日は1食+40円）の存在は確認したが、合計金額は郵便番号入力後にのみ表示されるため未取得"
+        }
+      ],
+      "shipping": {
+        "type": "free",
+        "representative_jpy": 0,
+        "temperature": "chilled",
+        "note": "「価格には宅配料を含みます」と明記。まごころスタッフが毎日手渡しで届ける方式で別途送料なし"
+      },
+      "first_discount": "初回割引ページ掲載中：初めての方・6ヵ月以上お休みの方対象に初回1週分を割引（例：まごころおかず 3,450円→2,760円）。1世帯1回限り・土日祝分は対象外。別途「2週間おためしセット（10日分・2食分無料）」あり",
+      "subscription": "都度購入可",
+      "cancel_note": "定期縛りなし（週単位注文）。追加・変更・キャンセルはお届け日2日前の17時まで（受付は平日9時〜17時）",
+      "source_urls": [
+        "https://www.watami-takushoku.co.jp/category/bento2",
+        "https://www.watami-takushoku.co.jp/item/2780",
+        "https://www.watami-takushoku.co.jp/item/2776",
+        "https://www.watami-takushoku.co.jp/category/firstfree"
+      ],
+      "verified_at": "2026-07-04",
+      "verified": true,
+      "notes": "週7日コースの合計額のみ郵便番号入力が必要で未取得（価格は地域により異なる場合がある旨の注記あり）"
+    },
+    {
+      "slug": "watami-direct",
+      "name": "ワタミの宅食ダイレクト",
+      "plans": [
+        {
+          "plan_name": "いつでも三菜 10食セット お試し割",
+          "meals": 10,
+          "price_jpy": 3900,
+          "note": "1食390円・通常価格から800円OFF・お一人様1回限り（公式LPで確認）"
+        },
+        {
+          "plan_name": "いつでも三菜（通常/定期）",
+          "meals": null,
+          "price_jpy": null,
+          "note": "トップページに参考表記「1食あたり399円から」。セット別の通常税込価格はJS描画のため未取得"
+        },
+        {
+          "plan_name": "いつでも五菜（通常/定期）",
+          "meals": null,
+          "price_jpy": null,
+          "note": "トップページに参考表記「1食あたり499円から」。セット別価格は同上の理由で未取得"
+        }
+      ],
+      "shipping": {
+        "type": "regional",
+        "representative_jpy": 880,
+        "temperature": "frozen",
+        "note": "1注文あたり税込：本州・四国・九州880円／北海道1,210円／沖縄2,420円（冷凍便・佐川急便）。送料無料条件の記載は確認できず"
+      },
+      "first_discount": "「お試し割」：いつでも三菜10食セット3,900円（税込・1食390円・1回限り）。「継続割」：定期購入の初回から3回分が各800円OFF（計2,400円OFF、3回以上の継続が条件）",
+      "subscription": "両方",
+      "cancel_note": "都度購入と定期購入（おまかせセット5%OFF／選べるセット3%OFF）の両方あり。継続割適用時は定期3回以上の受け取りが条件。通常定期の回数縛り・解約期限はFAQ本文が取得できず未確認",
+      "source_urls": [
+        "https://www.watami-takushoku-direct.jp/",
+        "https://www.watami-takushoku-direct.jp/shop/guide",
+        "https://www.watami-takushoku-direct.jp/lp?u=campaign08",
+        "https://www.watami-takushoku-direct.jp/shop/faq"
+      ],
+      "verified_at": "2026-07-04",
+      "verified": false,
+      "notes": "食数別の通常税込価格表と定期解約条件が公式ページのJS描画/FAQ折りたたみのため取得できず"
+    },
+    {
+      "slug": "coopdeli",
+      "name": "コープデリ（夕食宅配デイリーコープ）",
+      "plans": [
+        {
+          "plan_name": "舞菜おかず",
+          "meals": 1,
+          "price_jpy": 702,
+          "note": "1食税込。週3日以上（月〜金）の定期。2食以上で1食24円引の対象"
+        },
+        {
+          "plan_name": "舞菜弁当",
+          "meals": 1,
+          "price_jpy": 680,
+          "note": "1食税込。2食以上で1食24円引の対象"
+        },
+        {
+          "plan_name": "舞菜ミニ弁当",
+          "meals": 1,
+          "price_jpy": 464,
+          "note": "1食税込"
+        },
+        {
+          "plan_name": "舞菜しっかりおかず",
+          "meals": 1,
+          "price_jpy": 756,
+          "note": "1食税込。2食以上で1食24円引の対象"
+        },
+        {
+          "plan_name": "舞菜御膳",
+          "meals": 1,
+          "price_jpy": 842,
+          "note": "1食税込。2食以上で1食24円引の対象"
+        },
+        {
+          "plan_name": "エネルギー塩分調整食",
+          "meals": 1,
+          "price_jpy": 842,
+          "note": "1食税込"
+        }
+      ],
+      "shipping": {
+        "type": "free",
+        "representative_jpy": 0,
+        "temperature": "chilled",
+        "note": "夕食宅配デイリーコープは「配達手数料 無料」と公式に明記。参考：通常宅配ウイークリーコープの東京都は基本手数料88円＋配達手数料110円＝週198円（税込）、1回6,000円（税抜）以上で無料、加入後8週間無料"
+      },
+      "first_discount": "「選べるおためしセット」掲載中（3種）。公開ページにおためし価格の金額表記なし（申込フォーム内でのみ確認可）。WEB加入特典として加入後8週間手数料無料＋3,000円分クーポン等の表記あり",
+      "subscription": "定期のみ",
+      "cancel_note": "夕食宅配は月〜金のうち週3日以上・1週間単位の定期で自動継続。中止はお届け前週の火曜19時30分までに連絡（期限後キャンセルは原則不可）",
+      "source_urls": [
+        "https://daily.coopdeli.jp/index.html",
+        "https://efriends.coopdeli.jp/docreq/daily/index.php",
+        "https://efriends.coopdeli.jp/look/shipping/",
+        "https://efriends.coopdeli.jp/look/webtrial/"
+      ],
+      "verified_at": "2026-07-04",
+      "verified": true,
+      "notes": "手数料は東京都のページを採用。ミールキット価格は要エリア指定で未取得。おためしセットの具体金額は公開ページに記載なし"
+    },
+    {
+      "slug": "ouchi-coop",
+      "name": "おうちコープ（夕食宅配マイシィ）",
+      "plans": [
+        {
+          "plan_name": "にぎわいコース",
+          "meals": 1,
+          "price_jpy": 898,
+          "note": "1食税込・おかず7〜8種。2食以上で1食20円引"
+        },
+        {
+          "plan_name": "おかずコース",
+          "meals": 1,
+          "price_jpy": 785,
+          "note": "1食税込・おかず6〜7種。2食以上で1食20円引"
+        },
+        {
+          "plan_name": "きらくコース",
+          "meals": 1,
+          "price_jpy": 740,
+          "note": "1食税込・おかず5〜6種＋ご飯付き。2食以上で1食20円引"
+        }
+      ],
+      "shipping": {
+        "type": "free",
+        "representative_jpy": 0,
+        "temperature": "chilled",
+        "note": "夕食宅配マイシィは「配達料無料」と公式に明記（神奈川・静岡・山梨）。参考：通常宅配おうちコープの神奈川県宅配サービス料は週110円（3,500円以上利用時）／198円（3,500円未満）／14,000円以上で0円、子育て割0円"
+      },
+      "first_discount": "「おためしワンコイン！時短料理」セット：6品・約2,000円相当が税込500円（75%OFF）。1世帯1回限り、神奈川・静岡・山梨在住の未利用者限定",
+      "subscription": "定期のみ",
+      "cancel_note": null,
+      "source_urls": [
+        "https://www.maici.coop/",
+        "https://www.maici.coop/course/",
+        "https://www.ouchi.coop/service/commission/",
+        "https://www.ouchi.coop/otameshi8/"
+      ],
+      "verified_at": "2026-07-04",
+      "verified": false,
+      "notes": "神奈川を代表として採用。マイシィの最低注文日数の下限と休止・解約期限が公式公開ページで確認できずcancel_note=null"
+    },
+    {
+      "slug": "tsurukame-kitchen",
+      "name": "Dr.つるかめキッチン",
+      "plans": [
+        {
+          "plan_name": "糖質制限気づかい御膳 7食",
+          "meals": 7,
+          "price_jpy": 5184,
+          "note": "定期コース価格（28%OFF・初回から適用）"
+        },
+        {
+          "plan_name": "糖質制限気づかい御膳 14食",
+          "meals": 14,
+          "price_jpy": 9828,
+          "note": "定期コース価格"
+        },
+        {
+          "plan_name": "糖質制限気づかい御膳 21食",
+          "meals": 21,
+          "price_jpy": 14364,
+          "note": "定期コース価格"
+        },
+        {
+          "plan_name": "糖質制限気づかい御膳 7食（都度）",
+          "meals": 7,
+          "price_jpy": 7228,
+          "note": "都度購入価格"
+        },
+        {
+          "plan_name": "カロリー制限気づかい御膳 7食",
+          "meals": 7,
+          "price_jpy": 5184,
+          "note": "定期コース価格。14食9,828円/21食14,364円。都度は7食7,228円/14食13,730円/21食20,210円（糖質制限と同額体系）"
+        }
+      ],
+      "shipping": {
+        "type": "flat",
+        "representative_jpy": 770,
+        "temperature": "frozen",
+        "note": "都度購入は全国一律770円(税込)。定期コースは全国送料無料。ヤマト運輸クール冷凍便"
+      },
+      "first_discount": "初回限定10%OFF（トップページお知らせ欄の表記・常設かは不明）。常設は定期コース28%OFF（初回から適用）",
+      "subscription": "両方",
+      "cancel_note": "定期はいつでも解約可（回数縛りなし）。次回お届け予定日の6日前までに連絡",
+      "source_urls": [
+        "https://tsurukame-kitchen.com/",
+        "https://tsurukame-kitchen.com/menu/post-123",
+        "https://tsurukame-kitchen.com/menu/post-9"
+      ],
+      "verified_at": "2026-07-04",
+      "verified": true,
+      "notes": "塩分制限・たんぱく＆塩分制限・バランス栄養の各御膳もあり（個別ページ未確認）"
+    },
+    {
+      "slug": "medimeal",
+      "name": "メディミール",
+      "plans": [
+        {
+          "plan_name": "カロリー制限食 7食",
+          "meals": 7,
+          "price_jpy": 5270,
+          "note": "初回・定期・都度とも同一価格と公式ページに記載"
+        },
+        {
+          "plan_name": "カロリー制限食 14食",
+          "meals": 14,
+          "price_jpy": 9698,
+          "note": "同上"
+        },
+        {
+          "plan_name": "カロリー制限食 21食",
+          "meals": 21,
+          "price_jpy": 14018,
+          "note": "同上"
+        },
+        {
+          "plan_name": "たんぱく質＆塩分制限食 7食",
+          "meals": 7,
+          "price_jpy": 5270,
+          "note": "14食9,698円/21食14,018円（カロリー制限食と同額体系）"
+        },
+        {
+          "plan_name": "バランス健康食 7食",
+          "meals": 7,
+          "price_jpy": 4622,
+          "note": "14食9,158円/21食13,478円"
+        }
+      ],
+      "shipping": {
+        "type": "flat",
+        "representative_jpy": 880,
+        "temperature": "frozen",
+        "note": "都度注文880円(税込)。初回および定期便は送料無料。全国一律か地域差があるかの明記は確認ページ上になし"
+      },
+      "first_discount": "初回送料無料（880円相当がお得）／会員登録で100P",
+      "subscription": "両方",
+      "cancel_note": "最低利用回数なし。お届け7日前までの連絡でいつでも解約・一時休止可能",
+      "source_urls": [
+        "https://medimeal.net/",
+        "https://medimeal.net/restricted/calorie/",
+        "https://medimeal.net/restricted/protein/",
+        "https://medimeal.net/restricted/balance/"
+      ],
+      "verified_at": "2026-07-04",
+      "verified": true,
+      "notes": "糖質制限食・塩分制限食・ムースやわらか食コースもあり（個別ページ未確認）。定期と都度の商品価格は同一で、差は送料の有無のみ"
+    },
+    {
+      "slug": "kinnikushokudo-deli",
+      "name": "筋肉食堂DELI",
+      "plans": [
+        {
+          "plan_name": "ベーシックコース 7食",
+          "meals": 7,
+          "price_jpy": 7560,
+          "note": "定期購入価格（税抜7,000円）。単品よりいつでも15%オフ表記"
+        },
+        {
+          "plan_name": "ベーシックコース 14食",
+          "meals": 14,
+          "price_jpy": 14818,
+          "note": "定期購入価格"
+        },
+        {
+          "plan_name": "ベーシックコース 21食",
+          "meals": 21,
+          "price_jpy": 21546,
+          "note": "定期購入価格"
+        },
+        {
+          "plan_name": "ベーシックコース 7食（お試し・都度）",
+          "meals": 7,
+          "price_jpy": 8694,
+          "note": "都度（お試し）購入価格"
+        },
+        {
+          "plan_name": "ローカーボコース 7食",
+          "meals": 7,
+          "price_jpy": 7333,
+          "note": "定期購入価格。14食14,364円/21食20,866円。都度は7食8,424円"
+        }
+      ],
+      "shipping": {
+        "type": "regional",
+        "representative_jpy": 1640,
+        "temperature": "frozen",
+        "note": "地域・食数・箱サイズにより変動。代表値=関東7食1,640円（14食1,780円、沖縄は7食3,190円〜21食4,180円）。クール便(冷凍)。定期でも送料無料にはならず"
+      },
+      "first_discount": null,
+      "subscription": "両方",
+      "cancel_note": "回数縛り・解約金なし。次回お届け予定日の7日前までにマイページから停止で解約可",
+      "source_urls": [
+        "https://deli.kinnikushokudo.jp/",
+        "https://deli.kinnikushokudo.jp/shop/products/basic",
+        "https://deli.kinnikushokudo.jp/shop/products/low-carb",
+        "https://deli.kinnikushokudo.jp/shop/faq"
+      ],
+      "verified_at": "2026-07-04",
+      "verified": true,
+      "notes": "初回限定割引の表記は公式サイト上に見当たらず（トップの「期間限定 1食831円〜(税抜)」は定期の期間限定価格表記であり初回割引ではない）。比較サイトにある「初回50%OFF」等は公式で確認できず不採用。正URLは deli.kinnikushokudo.jp（kinnikushokudo-ec.jpはDNS解決不可）"
+    },
+    {
+      "slug": "fit-food-home",
+      "name": "FIT FOOD HOME",
+      "plans": [
+        {
+          "plan_name": "おかず単品（例: 本格回鍋肉ほか）",
+          "meals": 1,
+          "price_jpy": 1129,
+          "note": "都度単品の代表価格帯。デミグラスハンバーグ・国産豚の角煮は1,243円"
+        },
+        {
+          "plan_name": "まとめ買い（10個）",
+          "meals": 10,
+          "price_jpy": null,
+          "note": "固定セット価格ではなく選んだ商品合計から最大5%OFF（14個は最大8%OFF、20個は最大12%OFF）のため一律価格なし"
+        },
+        {
+          "plan_name": "定期購入",
+          "meals": null,
+          "price_jpy": null,
+          "note": "都度購入価格の5%OFF＋送料無料（FAQ明記）。商品組合せ次第のため固定価格なし"
+        }
+      ],
+      "shipping": {
+        "type": "flat",
+        "representative_jpy": 990,
+        "temperature": "frozen",
+        "note": "都度購入990円(税込)/回、定期配送は送料無料。北海道550円・沖縄1,100円(税込)/回の追加送料。クロネコヤマトクール便"
+      },
+      "first_discount": null,
+      "subscription": "両方",
+      "cancel_note": "定期は初回キャンセル不可。2回目以降は解約・休止可能で違約金なし。スキップは注文確定メール受取後の翌水曜14時まで",
+      "source_urls": [
+        "https://store.tavenal.com/",
+        "https://store.tavenal.com/question-answer",
+        "https://fitfoodhome.life/otameshi/",
+        "https://store.tavenal.com/product/all"
+      ],
+      "verified_at": "2026-07-04",
+      "verified": false,
+      "notes": "公式ストアはstore.tavenal.com（fitfoodhome.comは名前解決不可）。お試しセットLPは価格が画像のみ＋SOLD OUTで数値確認不能のため初回割引null。単品×個数割引方式のため食数別固定価格なし"
+    }
+  ]
+}
