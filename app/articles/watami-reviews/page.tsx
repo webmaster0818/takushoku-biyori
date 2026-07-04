@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "【2026年最新】ワタミの宅食の口コミ・評判を徹底調査！まごころ弁当の料金・メニュー・配送を解説";
+  "ワタミの宅食の口コミ・評判は？まずいって本当？まごころ商品の料金・配送を出典付きで検証【2026年7月最新】";
 const ARTICLE_DESCRIPTION =
-  "ワタミの宅食の口コミ・評判を徹底調査。冷蔵（まごころおかず/手鞠/ダブル）と冷凍（ワタミの宅食ダイレクト）の違い、料金・送料・配送方法を詳しく解説。良い口コミ・悪い口コミの両方を紹介します。";
+  "ワタミの宅食は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。冷蔵（まごころおかず/手鞠/御膳/ダブル）の料金（1食税込470円〜・宅配料込み）と冷凍（ワタミの宅食ダイレクト）の違いも解説。最新の料金は公式でご確認ください。【2026年7月更新】";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/watami-reviews/";
 
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-21T00:00:00+09:00",
-    modifiedTime: "2026-04-21T00:00:00+09:00",
+    modifiedTime: "2026-07-04T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -28,7 +28,7 @@ const faqData = [
   {
     question: "ワタミの宅食とワタミの宅食ダイレクトの違いは？",
     answer:
-      "「ワタミの宅食」は冷蔵のお弁当を毎日自社スタッフが届けるサービスです。「ワタミの宅食ダイレクト」は冷凍のおかずセットをヤマト運輸で届けるサービスです。冷蔵タイプは送料無料・毎日届く温かみがありますが、配送エリアが限定されます。冷凍タイプは全国配送可能でストックできますが、送料（800円〜）がかかります。",
+      "「ワタミの宅食」は冷蔵のお弁当・お惣菜を毎日自社スタッフが届けるサービスです。「ワタミの宅食ダイレクト」は冷凍のおかずセットを宅配便で届けるサービスです。冷蔵タイプは宅配料込み価格・毎日届く温かみがありますが、配送エリアが限定されます。冷凍タイプは全国配送可能でストックできますが、送料（本州・四国・九州で税込880円〜）がかかります。",
   },
   {
     question: "ワタミの宅食は1人分だけでも注文できる？",
@@ -48,7 +48,7 @@ const faqData = [
   {
     question: "ワタミの宅食は解約金やペナルティはある？",
     answer:
-      "ありません。冷蔵タイプは週単位で注文するため、注文しなければ自動的にお届けが止まります。冷凍タイプ（ダイレクト）の定期購入も、次回お届け予定日の6日前までに連絡すれば、いつでも解約可能で違約金はかかりません。",
+      "冷蔵タイプ（ワタミの宅食）は週単位の注文で定期縛りがなく、追加・変更・キャンセルはお届け日2日前の17時まで受け付けられています（2026年7月4日公式確認）。冷凍タイプ（ダイレクト）は都度購入と定期購入があり、継続割などのキャンペーン適用時は受け取り回数の条件が付く場合があります。正確な解約条件は公式サイトでご確認ください。",
   },
 ];
 
@@ -70,8 +70,9 @@ function TableOfContents() {
   const sections = [
     { id: "about", label: "ワタミの宅食とは？基本情報まとめ" },
     { id: "types", label: "冷蔵（ワタミの宅食）と冷凍（ダイレクト）の違い" },
-    { id: "good-reviews", label: "良い口コミ・評判" },
-    { id: "bad-reviews", label: "悪い口コミ・評判" },
+    { id: "good-reviews", label: "良い口コミ・評判（出典付き）" },
+    { id: "bad-reviews", label: "悪い口コミ・評判（出典付き）" },
+    { id: "mazui", label: "ワタミの宅食はまずい？味の評判を検証" },
     { id: "price", label: "料金・送料を徹底解説" },
     { id: "merits", label: "メリット4つ" },
     { id: "demerits", label: "デメリット3つ" },
@@ -119,10 +120,33 @@ function SubHeading({ children }: { children: React.ReactNode }) {
   return <h3 className="text-lg font-bold mt-8 mb-4 pl-3 border-l-4 border-accent">{children}</h3>;
 }
 
+type SourcedReviewItem = {
+  text: string;
+  meta?: string;
+  sourceName: string;
+  sourceUrl: string;
+};
+
+function SourcedReview({ review, tone }: { review: SourcedReviewItem; tone: "good" | "bad" }) {
+  return (
+    <div className={`${tone === "good" ? "bg-green-50" : "bg-red-50"} rounded-lg p-3 text-sm leading-relaxed`}>
+      <p className="mb-1.5">
+        「{review.text}」{review.meta ? `（${review.meta}）` : ""}
+      </p>
+      <p className="text-xs text-warm-gray">
+        出典:{" "}
+        <a href={review.sourceUrl} target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">
+          {review.sourceName}
+        </a>
+      </p>
+    </div>
+  );
+}
+
 export default function WatamiReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-06-24T00:00:00+09:00",
+    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-07-04T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -149,6 +173,7 @@ export default function WatamiReviewsPage() {
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-04-21">公開: 2026年4月21日</time>
+            <time dateTime="2026-07-04">更新: 2026年7月4日</time>
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
@@ -161,13 +186,17 @@ export default function WatamiReviewsPage() {
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：ワタミの宅食ダイレクトはこんな人に向いています</p>
+          <p className="font-bold text-base mb-3">結論：ワタミの宅食はこんな人に向いています</p>
+          <p className="text-sm leading-relaxed mb-4">
+            ワタミの宅食は、<strong>「宅配料込みの価格で、冷蔵のお弁当・お惣菜を毎日届けてほしい人」「高齢の家族の見守りを兼ねたい人」</strong>に向いたサービスです。口コミでは「出汁が染みて美味しい」「塩分控えめでも味がしっかり」という評価が目立つ一方、薄味・量の少なさは好みが分かれます。「まずい」という評判の実態も出典付きで検証します（<a href="#mazui" className="text-accent underline">検証セクションへ</a>）。
+          </p>
           <div className="grid sm:grid-cols-2 gap-3 text-sm leading-relaxed mb-4">
-            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>業界最大手ならではの安心感と豊富な実績</li><li>塩分・カロリーに配慮したやさしい味付けの冷凍おかず（100種類以上）</li><li>「いつでも二菜」1食約360円〜と手頃な価格・お試ししやすさ</li></ul></div>
-            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>品数（おかずのみ）や量が物足りなく感じる場合がある</li><li>冷凍タイプは送料（本州・四国・九州800円〜）がかかる</li><li>味の濃さは控えめで、好みによっては薄いと感じることも</li></ul></div>
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>業界最大手ならではの安心感と豊富な実績</li><li>まごころスタッフの毎日手渡し配達＋見守り</li><li>1食470円〜（宅配料込み）と手頃な価格</li></ul></div>
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>日替わり献立でメニューは選べない</li><li>配達エリアが一部地域に限定される</li><li>味は控えめで、好みによっては薄いと感じることも</li></ul></div>
           </div>
-          <p className="text-xs text-warm-gray mb-4">※料金・送料・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。</p>
-          <a href="https://www.watami-takushoku-direct.jp/" target="_blank" rel="noopener noreferrer sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">ワタミの宅食ダイレクト 公式サイトで最新の料金・お試しを見る →</a>
+          <p className="text-xs text-warm-gray mb-4">※料金・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。</p>
+          <a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">ワタミの宅食 公式サイトで最新の料金・初回割引を見る →</a>
+          <p className="text-[10px] text-gray-400 text-center mt-2">※リンク先は公式サイトです（本リンクはアフィリエイト広告ではありません）</p>
         </div>
 
         <TableOfContents />
@@ -182,8 +211,8 @@ export default function WatamiReviewsPage() {
             ["運営会社", "ワタミ株式会社"],
             ["サービス開始", "2008年"],
             ["タイプ", "冷蔵（毎日配送）＋冷凍（クール宅配便）"],
-            ["配送", "冷蔵：自社スタッフが毎日お届け / 冷凍：ヤマト運輸"],
-            ["送料", "冷蔵：無料 / 冷凍：本州・四国・九州800円"],
+            ["配送", "冷蔵：自社スタッフが毎日お届け / 冷凍：宅配便"],
+            ["送料", "冷蔵：宅配料込み価格 / 冷凍：本州・四国・九州880円（税込）"],
             ["メニュー数", "冷蔵：週替わり / 冷凍：100種類以上"],
             ["支払い方法", "クレジットカード・口座振替・現金（冷蔵のみ）"],
             ["特徴", "自社スタッフ配送・まごころスタッフによる安否確認"],
@@ -195,9 +224,9 @@ export default function WatamiReviewsPage() {
           headers={["比較項目", "ワタミの宅食（冷蔵）", "ワタミの宅食ダイレクト（冷凍）"]}
           rows={[
             ["お届け状態", "冷蔵（チルド）", "冷凍"],
-            ["配送方法", "自社スタッフ（まごころスタッフ）", "ヤマト運輸クール宅急便"],
+            ["配送方法", "自社スタッフ（まごころスタッフ）", "宅配便（冷凍便）"],
             ["配送頻度", "毎日（月〜金 or 月〜土）", "まとめて1回配送"],
-            ["送料", "無料", "本州・四国・九州800円、北海道1,100円、沖縄2,200円"],
+            ["送料", "宅配料込み価格", "本州・四国・九州880円、北海道1,210円、沖縄2,420円（税込）"],
             ["ご飯の有無", "ご飯付きコースあり", "おかずのみ"],
             ["保存期間", "当日〜翌日", "冷凍で約10ヶ月"],
             ["配送エリア", "一部エリア限定", "全国（離島除く）"],
@@ -205,62 +234,118 @@ export default function WatamiReviewsPage() {
           ]}
         />
 
-        <SubHeading>冷蔵タイプのコース一覧</SubHeading>
+        <SubHeading>冷蔵タイプのコース一覧（週5日コース・税込・宅配料込み）</SubHeading>
         <ComparisonTable
-          headers={["コース名", "内容", "5日間コース料金", "1食あたり"]}
+          headers={["コース名", "週5日コース料金", "1食あたり"]}
           rows={[
-            ["まごころ手鞠", "主菜1品＋副菜3品（約250kcal）", "2,950円〜", "約590円"],
-            ["まごころおかず", "主菜1品＋副菜4品（約400kcal）", "3,450円〜", "約690円"],
-            ["まごころダブル", "主菜2品＋副菜3品（約500kcal）", "3,950円〜", "約790円"],
-            ["まごころ御膳（ご飯付き）", "主菜1品＋副菜3品＋ご飯（約500kcal）", "3,080円〜", "約616円"],
+            ["まごころ小箱（小）", "2,350円", "470円"],
+            ["まごころ手鞠", "2,950円", "590円"],
+            ["まごころ小箱", "3,100円", "620円"],
+            ["まごころおかず", "3,450円", "690円"],
+            ["まごころ御膳", "3,550円", "710円"],
+            ["まごころダブル", "3,950円", "790円"],
           ]}
         />
+        <p className="text-xs text-warm-gray mb-4">※出典: ワタミの宅食公式サイト（2026年7月4日確認）。価格には宅配料を含みます。週7日間コース・曜日指定コース（週1〜4日は1食＋40円）もあり、地域により価格が異なる場合があります。</p>
 
-        <p className="text-sm mb-6 leading-relaxed">冷蔵タイプの最大の特徴は<strong>まごころスタッフによる毎日配送</strong>です。配送時に安否確認も行ってくれるため、一人暮らしの高齢者のご家族が「見守り」目的で利用するケースも多いです。地域によって料金が異なる場合があるため、正確な料金は公式サイトで郵便番号を入力して確認してください。</p>
+        <p className="text-sm mb-6 leading-relaxed">冷蔵タイプの最大の特徴は<strong>まごころスタッフによる毎日配送</strong>です。配送時に安否確認も行ってくれるため、一人暮らしの高齢者のご家族が「見守り」目的で利用するケースも多いです。初めての方・6ヵ月以上お休みした方向けに<strong>初回1週分の割引（例: まごころおかず3,450円→2,760円）</strong>が実施されています（2026年7月4日確認・1世帯1回限り・土日祝分対象外）。正確な料金は公式サイトで郵便番号を入力して確認してください。</p>
 
-        <SubHeading>冷凍タイプ（ダイレクト）のコース一覧</SubHeading>
+        <SubHeading>冷凍タイプ（ダイレクト）の料金目安</SubHeading>
         <ComparisonTable
-          headers={["コース名", "内容", "7食セット料金", "1食あたり"]}
+          headers={["コース名", "内容", "価格の目安（税込）"]}
           rows={[
-            ["いつでも二菜", "主菜1品＋副菜1品", "2,520円〜", "約360円"],
-            ["いつでも三菜", "主菜1品＋副菜2品", "3,500円〜", "約500円"],
-            ["いつでも五菜", "主菜1品＋副菜4品", "4,200円〜", "約600円"],
-            ["ロカボリック", "糖質15g以下・たんぱく質20g以上", "4,486円〜", "約641円"],
+            ["お試し割: いつでも三菜10食", "主菜1品＋副菜2品", "3,900円（1食390円・1回限り）"],
+            ["いつでも三菜（通常/定期）", "主菜1品＋副菜2品", "1食あたり399円〜（公式参考表記）"],
+            ["いつでも五菜（通常/定期）", "主菜1品＋副菜4品", "1食あたり499円〜（公式参考表記）"],
           ]}
         />
+        <p className="text-xs text-warm-gray mb-6">※出典: ワタミの宅食ダイレクト公式サイト（2026年7月4日確認）。詳しくは<Link href="/articles/watami-direct-kuchikomi/" className="underline hover:text-accent">ワタミの宅食ダイレクトの口コミ・評判</Link>で解説しています。</p>
 
-        <SectionHeading id="good-reviews">良い口コミ・評判</SectionHeading>
-        <p className="text-sm mb-6 leading-relaxed">口コミサイト・SNSからワタミの宅食の良い評判を集めました。</p>
+        <SectionHeading id="good-reviews">良い口コミ・評判（出典付き）</SectionHeading>
+        <p className="text-sm mb-6 leading-relaxed">公開されている第三者メディアの実食レビュー・利用者アンケート・掲載SNS投稿から、良い評判を出典付きで紹介します（引用は原文ママ。省略箇所は「（略）」で明示）。</p>
         {[
-          { title: "味が美味しい・やさしい味付け", reviews: ["「毎日届くのが楽しみ。味付けがちょうどよく、塩分控えめなのに美味しい」（60代女性）", "「コンビニ弁当と違って、家庭料理のようなやさしい味わいがある」（50代男性）", "「冷凍のダイレクトも試したが、100種類以上あるので飽きない」（40代女性）"] },
-          { title: "送料無料・配送が便利（冷蔵タイプ）", reviews: ["「毎日届けてくれるのに送料無料なのが嬉しい」（70代男性）", "「留守でも保冷ボックスに入れておいてくれるので安心」（50代女性）", "「離れて暮らす母のために利用。まごころスタッフの安否確認が安心」（40代女性）"] },
-          { title: "リーズナブルな価格", reviews: ["「まごころ手鞠が1食約590円で、コンビニより安くて栄養バランスも良い」（30代男性）", "「冷凍のいつでも二菜は1食約360円。送料を入れても十分安い」（20代女性）", "「外食するよりずっとお得で、しかも健康的」（50代男性）"] },
+          {
+            title: "味が美味しい・やさしい味付け",
+            reviews: [
+              { text: "出汁が染みていて美味しかったです", meta: "編集部が「まごころおかず」5食を実食したレビュー", sourceName: "HonNe（EXIDEA運営）", sourceUrl: "https://exidea.co.jp/blog/meal/home-meal/watami-takushoku/" },
+              { text: "塩分控えめなのに味はしっかり付いてて夫『美味しいよ〜』", meta: "記事内掲載のSNS投稿", sourceName: "HonNe（EXIDEA運営）", sourceUrl: "https://exidea.co.jp/blog/meal/home-meal/watami-takushoku/" },
+              { text: "お試しでワタミの宅食頼んでみたけど、すっごく美味しい", meta: "記事内掲載のSNS投稿", sourceName: "HonNe（EXIDEA運営）", sourceUrl: "https://exidea.co.jp/blog/meal/home-meal/watami-takushoku/" },
+            ] as SourcedReviewItem[],
+          },
+          {
+            title: "手軽さ・栄養バランス・生活の変化",
+            reviews: [
+              { text: "手軽に利用でき、美味しくて栄養のある食事がとれるところが魅力的。メニューの種類が豊富。", meta: "利用者アンケート・20代女性", sourceName: "OZmall", sourceUrl: "https://www.ozmall.co.jp/healthcare/food/article/40175/" },
+              { text: "野菜や魚など健康的なメニューで量も丁度よく、ゴミ類が減った。", meta: "利用者アンケート・60代男性", sourceName: "OZmall", sourceUrl: "https://www.ozmall.co.jp/healthcare/food/article/40175/" },
+            ] as SourcedReviewItem[],
+          },
         ].map((cat) => (
           <div key={cat.title} className="mb-6">
             <SubHeading>{cat.title}</SubHeading>
             <div className="space-y-2">
-              {cat.reviews.map((r) => (
-                <div key={r} className="bg-green-50 rounded-lg p-3"><p className="text-sm text-foreground/80 leading-relaxed">{r}</p></div>
+              {cat.reviews.map((r, i) => (
+                <SourcedReview key={i} review={r} tone="good" />
               ))}
             </div>
           </div>
         ))}
 
-        <SectionHeading id="bad-reviews">悪い口コミ・評判</SectionHeading>
+        <SectionHeading id="bad-reviews">悪い口コミ・評判（出典付き）</SectionHeading>
+        <p className="text-sm mb-6 leading-relaxed">ネガティブな意見も出典付きで正直に紹介します。申し込み前に知っておくべき注意点です。</p>
         {[
-          { title: "味が薄い・物足りない", reviews: ["「健康的なのはわかるけど、もう少し味が濃くてもいいのでは」（40代男性）", "「若い人には物足りなく感じるかも。高齢者向きの味付け」（30代男性）"] },
-          { title: "量が少ない", reviews: ["「まごころ手鞠は小食の人向け。男性には物足りない」（30代男性）", "「おかずのみなのでご飯を別途用意する必要がある」（40代女性）"] },
-          { title: "メニューが選べない（冷蔵タイプ）", reviews: ["「冷蔵タイプは日替わりで届くのでメニューを選べない。苦手な食材があると困る」（50代女性）", "「冷凍ダイレクトもお任せコースはメニューが選べない」（40代男性）"] },
+          {
+            title: "味が薄い・高齢者向けの味付けに感じる",
+            reviews: [
+              { text: "味薄すぎて美味しくない", meta: "記事内掲載のSNS投稿", sourceName: "HonNe（EXIDEA運営）", sourceUrl: "https://exidea.co.jp/blog/meal/home-meal/watami-takushoku/" },
+              { text: "主に高齢者向けと言うのもあってか、量は少なく味は薄い", meta: "記事内掲載のSNS投稿", sourceName: "HonNe（EXIDEA運営）", sourceUrl: "https://exidea.co.jp/blog/meal/home-meal/watami-takushoku/" },
+            ] as SourcedReviewItem[],
+          },
+          {
+            title: "価格・ボリュームへの不満",
+            reviews: [
+              { text: "価格が高めで、ボリュームが物足りない。", meta: "利用者アンケート・20代女性", sourceName: "OZmall", sourceUrl: "https://www.ozmall.co.jp/healthcare/food/article/40175/" },
+              { text: "唯一苦手なおかずです(笑)味付けはおいしいですが、冷凍ごぼうと人参の食感は独特のものがあり、いつまでたっても慣れません。。", meta: "「まごころおかず」金平ごぼうの実食レビュー", sourceName: "mituhosi.com（実食レビューブログ）", sourceUrl: "https://mituhosi.com/blogs/home-delivery/wataminotakusyoku-magokorookazu" },
+            ] as SourcedReviewItem[],
+          },
         ].map((cat) => (
           <div key={cat.title} className="mb-6">
             <SubHeading>{cat.title}</SubHeading>
             <div className="space-y-2">
-              {cat.reviews.map((r) => (
-                <div key={r} className="bg-red-50 rounded-lg p-3"><p className="text-sm text-foreground/80 leading-relaxed">{r}</p></div>
+              {cat.reviews.map((r, i) => (
+                <SourcedReview key={i} review={r} tone="bad" />
               ))}
             </div>
           </div>
         ))}
+
+        <SectionHeading id="mazui">ワタミの宅食はまずい？味の評判を検証</SectionHeading>
+        <p className="text-sm mb-4 leading-relaxed">「ワタミの宅食 まずい」と検索されることがあります。公開レビューを確認すると、<strong>「まずい」という強い酷評は少数派で、実体は「薄味の好み」と「一部食材の食感」に分解できる</strong>のが実態でした。</p>
+        <div className="space-y-3 mb-6">
+          <div className="bg-red-50 rounded-lg p-4 text-sm leading-relaxed">
+            <p className="font-bold mb-1">1. 「まずい」の噂と実食のギャップ</p>
+            <p className="mb-1.5">
+              まごころおかずを実食したレビューブログは「ところが世間の口コミ評価は「まずい」「ひどい」がとても多く、これでは注文するのが不安になります。」と噂に触れた上で、結論として<strong>「世間の口コミや評価には「まずい」「ひどい」というものが多いですが、このコスパでこれだけのおかずが食べられたら大満足できます。」</strong>と評価しています。具体的に苦手とされたのは冷凍ごぼう・人参の食感（金平ごぼう）という特定食材でした。
+            </p>
+            <p className="text-xs text-warm-gray">
+              出典:{" "}
+              <a href="https://mituhosi.com/blogs/home-delivery/wataminotakusyoku-magokorookazu" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">mituhosi.com</a>
+            </p>
+          </div>
+          <div className="bg-red-50 rounded-lg p-4 text-sm leading-relaxed">
+            <p className="font-bold mb-1">2. 塩分控えめの設計が濃い味好みには「薄い」と感じられる</p>
+            <p className="mb-1.5">
+              「味薄すぎて美味しくない」という投稿がある一方、「塩分控えめなのに味はしっかり付いてて夫『美味しいよ〜』」という真逆の声もあります。病院・介護施設向け給食のノウハウを土台にした<strong>健康配慮の薄味設計そのものが、評価の分かれ目</strong>です。濃い味・ジャンクな味を求める人には合いません。
+            </p>
+            <p className="text-xs text-warm-gray">
+              出典:{" "}
+              <a href="https://exidea.co.jp/blog/meal/home-meal/watami-takushoku/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">HonNe</a>
+            </p>
+          </div>
+        </div>
+        <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
+          <p className="font-bold mb-1">編集部の結論：「まずい」は①薄味の好み②特定食材の食感が主因</p>
+          <p>実食レビューでは「出汁が染みていて美味しかった」という評価が中心で、酷評は薄味の好みと一部食材（冷凍根菜の食感など）に集中しています。塩分控えめのやさしい味付けを求める人・高齢の家族向けなら満足度は高く、濃い味重視なら他サービスが向いています。初回1週分の割引で実際に味を確かめてから続けるのが確実です。</p>
+        </div>
 
         <SectionHeading id="price">料金・送料を徹底解説</SectionHeading>
         <p className="text-sm mb-6 leading-relaxed">ワタミの宅食の料金体系を詳しく見ていきます。冷蔵タイプと冷凍タイプで料金体系が異なります。</p>

@@ -758,6 +758,210 @@ export default function Home() {
               </div>
             </Link>
           </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
+            <Link
+              href="/articles/watami-direct-kuchikomi/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  ワタミの宅食ダイレクトの口コミ・評判は？まずいって本当？
+                </h3>
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  出典付きの実際の口コミと料金・注意点を中立に検証しています。
+                </p>
+              </div>
+            </Link>
+            <Link
+              href="/articles/coopdeli-kuchikomi/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  コープデリの宅配弁当の口コミ・評判は？まずいって本当？
+                </h3>
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  出典付きの実際の口コミと料金・注意点を中立に検証しています。
+                </p>
+              </div>
+            </Link>
+            <Link
+              href="/articles/ouchi-coop-kuchikomi/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  おうちコープの宅配弁当の口コミ・評判は？まずいって本当？
+                </h3>
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  出典付きの実際の口コミと料金・注意点を中立に検証しています。
+                </p>
+              </div>
+            </Link>
+            <Link
+              href="/articles/yushoku-net-kuchikomi/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  夕食ネットの口コミ・評判は？まずいって本当？
+                </h3>
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  出典付きの実際の口コミと料金・注意点を中立に検証しています。
+                </p>
+              </div>
+            </Link>
+            <Link
+              href="/articles/medimeal-kuchikomi/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  メディミールの口コミ・評判は？まずいって本当？
+                </h3>
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  出典付きの実際の口コミと料金・注意点を中立に検証しています。
+                </p>
+              </div>
+            </Link>
+            <Link
+              href="/articles/kinnikushokudo-deli-kuchikomi/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  筋肉食堂DELIの口コミ・評判は？まずいって本当？
+                </h3>
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  出典付きの実際の口コミと料金・注意点を中立に検証しています。
+                </p>
+              </div>
+            </Link>
+            <Link
+              href="/articles/fitfoodhome-kuchikomi/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  FIT FOOD HOMEの口コミ・評判は？まずいって本当？
+                </h3>
+                <p className="text-sm text-warm-gray leading-relaxed">
+                  出典付きの実際の口コミと料金・注意点を中立に検証しています。
+                </p>
+              </div>
+            </Link>
+            <Link
+              href="/articles/nichirei-foods-direct-kuchikomi/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  ニチレイフーズダイレクトの口コミ・評判は？まずいって本当？
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  冷凍食品大手の宅配食「きくばりごぜん」。実食レビューの評価を出典付きで検証し、料金と送料無料条件を整理。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["ニチレイ", "口コミ", "きくばりごぜん", "健康設計"].map((tag) => (
+                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/articles/gofood-kuchikomi/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  GOFOOD(ゴーフード)の口コミ・評判は？まずいって本当？
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  全メニュー糖質20g以下・タンパク質20g以上の低糖質弁当。実食レビューの評価を出典付きで検証。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["GOFOOD", "口コミ", "低糖質", "高タンパク"].map((tag) => (
+                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
+            <Link
+              href="/articles/dietician-kuchikomi/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  ダイエティシャンの口コミ・評判は？販売終了の真相も解説
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  2025年11月に販売終了した高タンパク宅配食。当時の口コミを出典付きで振り返り、代替サービスも紹介。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["ダイエティシャン", "口コミ", "販売終了", "代替サービス"].map((tag) => (
+                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/articles/taihei-family-set-kuchikomi/"
+              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            >
+              <div className="p-6 flex flex-col justify-center">
+                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                  口コミ・評判
+                </span>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+                  タイヘイファミリーセットの口コミ・評判は？まずいって本当？
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed mb-3">
+                  1880年創業の老舗の宅配健康食。医師監修の制限食と定期送料無料の仕組みを口コミとあわせて解説。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["タイヘイ", "口コミ", "制限食", "送料無料"].map((tag) => (
+                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
 

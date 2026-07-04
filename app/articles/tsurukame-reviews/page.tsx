@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "【2026年最新】Dr.つるかめキッチンの口コミ・評判を徹底調査！制限食5コースの料金・味・送料を解説";
+  "Dr.つるかめキッチンの口コミ・評判は？まずいって本当？制限食5コースの料金・味を出典付きで検証【2026年7月最新】";
 const ARTICLE_DESCRIPTION =
-  "Dr.つるかめキッチンの口コミ・評判を徹底調査。専門医・管理栄養士監修の制限食5コース（糖質制限/塩分制限/たんぱく質制限/カロリー制限/バランス栄養）の料金・味・送料を詳しく解説。定期購入で全国送料無料。";
+  "Dr.つるかめキッチンは「まずい」って本当？公開レビューの良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。専門医・管理栄養士W監修の制限食5コース（糖質制限/塩分制限/たんぱく質制限/カロリー制限/バランス栄養）の料金・送料も2026年7月4日確認の公式データで解説します。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/tsurukame-reviews/";
 
 export const metadata: Metadata = {
@@ -19,12 +19,17 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-21T00:00:00+09:00",
-    modifiedTime: "2026-04-21T00:00:00+09:00",
+    modifiedTime: "2026-07-04T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
 
 const faqData = [
+  {
+    question: "Dr.つるかめキッチンはまずいって本当？",
+    answer:
+      "公開レビューを確認すると、実食メディアの評価は「制限食としては味がしっかりしていて美味しい」でおおむね一致しています。一方で「正直あんまり美味しくない」というX投稿や酷評のAmazonレビューも実在します。糖質15g以下・塩分2.0g以下という制約の中の味付けのため、一般の弁当と同じ物差しで見ると物足りなく感じる人がいるのは事実です。感じ方には個人差があるため、回数縛りのない定期購入で1回試して判断するのが確実です。",
+  },
   {
     question: "Dr.つるかめキッチンはお試しできる？",
     answer:
@@ -70,8 +75,9 @@ function TableOfContents() {
   const sections = [
     { id: "about", label: "Dr.つるかめキッチンとは？基本情報" },
     { id: "courses", label: "制限食5コースの詳細と料金" },
-    { id: "good-reviews", label: "良い口コミ・評判" },
-    { id: "bad-reviews", label: "悪い口コミ・評判" },
+    { id: "good-reviews", label: "良い口コミ・評判（出典付き）" },
+    { id: "bad-reviews", label: "悪い口コミ・評判（出典付き）" },
+    { id: "mazui", label: "Dr.つるかめキッチンはまずい？味の評判を検証" },
     { id: "price", label: "料金・送料を徹底解説" },
     { id: "merits", label: "メリット4つ" },
     { id: "demerits", label: "デメリット3つ" },
@@ -117,10 +123,146 @@ function SubHeading({ children }: { children: React.ReactNode }) {
   return <h3 className="text-lg font-bold mt-8 mb-4 pl-3 border-l-4 border-accent">{children}</h3>;
 }
 
+type SourcedReviewItem = {
+  text: string;
+  meta?: string;
+  sourceName: string;
+  sourceUrl: string;
+};
+
+function SourcedReview({
+  review,
+  tone,
+}: {
+  review: SourcedReviewItem;
+  tone: "good" | "bad";
+}) {
+  return (
+    <div
+      className={`${tone === "good" ? "bg-green-50" : "bg-red-50"} rounded-lg p-3 text-sm leading-relaxed`}
+    >
+      <p className="mb-1.5">
+        「{review.text}」{review.meta ? `（${review.meta}）` : ""}
+      </p>
+      <p className="text-xs text-warm-gray">
+        出典:{" "}
+        <a
+          href={review.sourceUrl}
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          className="underline hover:text-accent"
+        >
+          {review.sourceName}
+        </a>
+      </p>
+    </div>
+  );
+}
+
+/* ---------- Review data（公開レビューからの引用・出典明記） ---------- */
+
+const goodReviewCategories: {
+  title: string;
+  reviews: SourcedReviewItem[];
+}[] = [
+  {
+    title: "制限食なのに味がしっかりしている",
+    reviews: [
+      {
+        text: "しっかりとした味付けで、ご飯がすすみました",
+        meta: "宅食比較サイト編集長の実食レビュー",
+        sourceName: "宅食リスト",
+        sourceUrl: "https://takusyokulist.com/tsurukame/",
+      },
+      {
+        text: "塩分控えめですが、ソースを使った味付けが上手でした",
+        meta: "1,000食以上を実食した会社員ブロガー",
+        sourceName: "ひとり暮らしの宅配食生活",
+        sourceUrl: "https://www.single-meallife.com/tsurukame-kitchen-review/",
+      },
+      {
+        text: "健康的な食事だから期待してなかったけど、普通に美味しい",
+        meta: "記事掲載のX（旧Twitter）投稿",
+        sourceName: "おうちごはん研究所",
+        sourceUrl: "https://home-gohan.net/tsurukame-kitchen/",
+      },
+    ],
+  },
+  {
+    title: "専門医監修の安心感",
+    reviews: [
+      {
+        text: "専門医監修で安心して食べられるのもよかったです",
+        meta: "宅食比較サイト編集長の実食レビュー",
+        sourceName: "宅食リスト",
+        sourceUrl: "https://takusyokulist.com/tsurukame/",
+      },
+      {
+        text: "制限食と考えれば充分おいしいです",
+        meta: "記事筆者の実食総評",
+        sourceName: "宅食ラボ",
+        sourceUrl: "https://takushoku-lab.com/tsurukame-kitchen-isnt-tasty/",
+      },
+    ],
+  },
+];
+
+const badReviewCategories: {
+  title: string;
+  reviews: SourcedReviewItem[];
+  comment: string;
+}[] = [
+  {
+    title: "メニューが選べない（完全おまかせ）",
+    reviews: [
+      {
+        text: "つるかめキッチンのメニューの内容は自分で選ぶことができません",
+        meta: "42食実食の会社員ブロガー",
+        sourceName: "ひとり暮らしの宅配食生活",
+        sourceUrl: "https://www.single-meallife.com/tsurukame-kitchen-review/",
+      },
+    ],
+    comment:
+      "栄養制限値を厳密に管理するため、メニューは管理栄養士のおまかせ制です。「選ぶ手間がない」と前向きに捉える利用者もいますが、好き嫌いが多い方には不向きです。noshのように自分で選びたい方は他社を検討しましょう。",
+  },
+  {
+    title: "価格がやや高め（特に都度購入）",
+    reviews: [
+      {
+        text: "ただ一食700円くらいなので、自炊に比べたらまあまあなお値段しました",
+        meta: "記事掲載のX（旧Twitter）投稿",
+        sourceName: "宅食ラボ",
+        sourceUrl: "https://takushoku-lab.com/tsurukame-kitchen-isnt-tasty/",
+      },
+      {
+        text: "つるかめキッチンのデメリットは、単品で購入するとやや高めなことです",
+        meta: "年間300食の宅配弁当を食べる記事筆者の実食評",
+        sourceName: "おいしい宅食",
+        sourceUrl: "https://oishi-takushoku.com/tsurukame-kitchen/",
+      },
+    ],
+    comment:
+      "定期コース（28%OFF・送料無料）なら7食5,184円＝1食約741円ですが、都度購入は7食7,228円＋送料770円＝1食約1,143円と割高です。回数縛りのない定期で注文するのが前提のサービスと考えましょう（料金は2026年7月4日の公式サイト確認時点）。",
+  },
+  {
+    title: "量が控えめで男性には物足りないことも",
+    reviews: [
+      {
+        text: "成人男性だとボリュームが足りないと感じるかもしれません",
+        meta: "42食実食の会社員ブロガー",
+        sourceName: "ひとり暮らしの宅配食生活",
+        sourceUrl: "https://www.single-meallife.com/tsurukame-kitchen-review/",
+      },
+    ],
+    comment:
+      "カロリー・糖質を制限値内に収める設計のため、量はどうしても控えめです。ご飯や汁物を組み合わせて満腹感を調整するのが現実的な使い方です。",
+  },
+];
+
 export default function TsurukameReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-06-24T00:00:00+09:00",
+    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-07-04T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -220,31 +362,97 @@ export default function TsurukameReviewsPage() {
           ))}
         </div>
 
-        <SectionHeading id="good-reviews">良い口コミ・評判</SectionHeading>
-        {[
-          { title: "制限食なのに美味しい", reviews: ["「糖質制限食とは思えない味。しっかり味がついていて満足感がある」（50代男性・糖尿病）", "「塩分2.0g以下なのに薄味と感じない。出汁と香辛料の使い方がうまい」（60代女性・高血圧）", "「制限食＝まずいというイメージが覆った。毎日の食事が楽しみになった」（70代男性）"] },
-          { title: "専門医監修の安心感", reviews: ["「医師が監修しているという安心感で選んだ。数値も改善傾向にある」（60代男性）", "「腎臓病の食事制限は自分で計算するのが大変だったが、つるかめキッチンなら安心」（50代女性）"] },
-          { title: "定期購入で全国送料無料", reviews: ["「送料無料は本当にありがたい。他の制限食サービスは送料だけで月1,500〜2,000円かかる」（50代男性）", "「北海道在住だが送料無料。他社だと北海道は2,000円近い送料がかかるので大きい」（60代女性）"] },
-        ].map((cat) => (
-          <div key={cat.title} className="mb-6">
-            <SubHeading>{cat.title}</SubHeading>
-            <div className="space-y-2">{cat.reviews.map((r) => (<div key={r} className="bg-green-50 rounded-lg p-3"><p className="text-sm text-foreground/80 leading-relaxed">{r}</p></div>))}</div>
+        <SectionHeading id="good-reviews">良い口コミ・評判（出典付き）</SectionHeading>
+        <p className="text-sm mb-6 leading-relaxed">
+          公開されている第三者メディアの実食レビューから、良い評判を出典付きで紹介します（引用は原文ママ。省略箇所は「（略）」で明示）。
+        </p>
+        {goodReviewCategories.map((category) => (
+          <div key={category.title} className="mb-6">
+            <SubHeading>{category.title}</SubHeading>
+            <div className="space-y-2">
+              {category.reviews.map((review, i) => (
+                <SourcedReview key={i} review={review} tone="good" />
+              ))}
+            </div>
           </div>
         ))}
 
-        <SectionHeading id="bad-reviews">悪い口コミ・評判</SectionHeading>
-        {[
-          { title: "メニューが選べない", reviews: ["「何が届くかわからないのがストレス。苦手な食材が入っていることもある」（40代女性）", "「noshのように自分で選べるサービスと比べると、自由度が低い」（50代男性）"] },
-          { title: "価格がやや高い", reviews: ["「1食約741円は他の冷凍弁当と比べて高め。制限食の品質を考えれば妥当かもしれないが」（50代男性）", "「7食で5,184円。月4回注文すると約20,000円になる」（60代女性）"] },
-          { title: "量が少なく感じる", reviews: ["「男性にはやや物足りない量。ご飯を多めに用意する必要がある」（40代男性）", "「カロリー制限だから仕方ないが、最初は空腹感があった。1週間ほどで慣れた」（50代男性）"] },
-        ].map((cat) => (
-          <div key={cat.title} className="mb-6">
-            <SubHeading>{cat.title}</SubHeading>
-            <div className="space-y-2">{cat.reviews.map((r) => (<div key={r} className="bg-red-50 rounded-lg p-3"><p className="text-sm text-foreground/80 leading-relaxed">{r}</p></div>))}</div>
+        <SectionHeading id="bad-reviews">悪い口コミ・評判（出典付き）</SectionHeading>
+        <p className="text-sm mb-6 leading-relaxed">
+          ネガティブな意見も出典付きで正直に紹介します。購入前に知っておくべき注意点です。
+        </p>
+        {badReviewCategories.map((category) => (
+          <div key={category.title} className="mb-6">
+            <SubHeading>{category.title}</SubHeading>
+            <div className="space-y-2 mb-3">
+              {category.reviews.map((review, i) => (
+                <SourcedReview key={i} review={review} tone="bad" />
+              ))}
+            </div>
+            <div className="bg-cream rounded-lg p-4 text-sm leading-relaxed">
+              <p className="font-bold mb-1">編集部の見解</p>
+              <p>{category.comment}</p>
+            </div>
           </div>
         ))}
+
+        <SectionHeading id="mazui">Dr.つるかめキッチンはまずい？味の評判を検証</SectionHeading>
+        <p className="text-sm mb-4 leading-relaxed">
+          「つるかめキッチン まずい」と検索されることがあります。公開レビューを確認すると、<strong>実食メディアの評価はおおむね良好な一方、「まずい」という強い酷評も実在する</strong>という構図でした。両方を隠さず紹介します。
+        </p>
+        <SubHeading>「まずい」という声の実例</SubHeading>
+        <div className="space-y-2 mb-6">
+          <SourcedReview
+            review={{
+              text: "Dr.つるかめキッチン、毎日食べてるけど、正直、あんまり美味しくない。。。やはり、冷凍のお弁当というのは限界があるのかもと思う。続けるか迷うな。安くはないし。",
+              meta: "記事掲載のX（旧Twitter）投稿・毎日利用者",
+              sourceName: "宅食ラボ",
+              sourceUrl: "https://takushoku-lab.com/tsurukame-kitchen-isnt-tasty/",
+            }}
+            tone="bad"
+          />
+          <SourcedReview
+            review={{
+              text: "びっくりするほど不味い。めったにレビューは書かないが、書かざるを得ないレベル。",
+              meta: "記事掲載のAmazonカスタマーレビュー",
+              sourceName: "おいしい宅食",
+              sourceUrl: "https://oishi-takushoku.com/tsurukame-kitchen/",
+            }}
+            tone="bad"
+          />
+        </div>
+        <SubHeading>一方で「まずくない・おいしい」という実食評価も</SubHeading>
+        <div className="space-y-2 mb-6">
+          <SourcedReview
+            review={{
+              text: "まずいなんてことはなく、とってもおいしかったです",
+              meta: "編集長実食による「まずい」検証の結論",
+              sourceName: "宅食リスト",
+              sourceUrl: "https://takusyokulist.com/tsurukame/",
+            }}
+            tone="good"
+          />
+          <SourcedReview
+            review={{
+              text: "制限食と考えれば充分おいしいです",
+              meta: "記事筆者の実食総評",
+              sourceName: "宅食ラボ",
+              sourceUrl: "https://takushoku-lab.com/tsurukame-kitchen-isnt-tasty/",
+            }}
+            tone="good"
+          />
+        </div>
+        <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
+          <p className="font-bold mb-1">編集部の結論：評価は「制限食としての期待値」で分かれる</p>
+          <p>
+            酷評は「一般の弁当と同じ物差し」で見た場合に出やすく、実食メディアの多くは「塩分・糖質制限下の食事としては味がしっかりしている」という評価で一致しています。糖質15g以下・塩分2.0g以下という制約の中の味付けである以上、濃い味・ボリューム重視の人には合いません。逆に、制限食を自炊してきた人ほど満足度が高い傾向です。感じ方には個人差があるため、回数縛りのない定期（1回で解約可）でまず7食を試すのが現実的です。
+          </p>
+        </div>
 
         <SectionHeading id="price">料金・送料を徹底解説</SectionHeading>
+        <p className="text-xs text-warm-gray mb-4">
+          ※本セクションの料金・送料は2026年7月4日に編集部が公式サイトで直接確認した金額（税込）です。最新の金額は公式サイトでご確認ください。
+        </p>
         <SubHeading>定期購入 vs 都度購入</SubHeading>
         <ComparisonTable
           headers={["項目", "定期購入", "都度購入"]}
@@ -268,6 +476,9 @@ export default function TsurukameReviewsPage() {
             ["21食セット", "14,364円", "約684円"],
           ]}
         />
+        <p className="text-sm mb-6 leading-relaxed">
+          編集部が18社の料金・送料を公式サイトで直接確認し、送料込みの1食実質単価に正規化して比較した<Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark underline">宅食料金白書2026</Link>（2026年7月4日調査）も公開しています。Dr.つるかめキッチンは都度購入だと送料770円が加算される一方、定期コースは送料無料のため、定期前提なら制限食の中では標準的な価格帯です。他社との横並び比較はそちらをご覧ください。
+        </p>
 
         <SectionHeading id="merits">メリット4つ</SectionHeading>
         <div className="space-y-3 mb-6">
