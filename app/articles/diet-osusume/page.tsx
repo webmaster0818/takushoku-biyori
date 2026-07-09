@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { HakushoUnitPriceTable } from "@/components/HakushoUnitPriceTable";
 
 const ARTICLE_TITLE =
   "【2026年最新】ダイエット向け宅配弁当おすすめランキングTOP5｜低糖質・低カロリーで無理なく痩せる";
@@ -948,6 +949,8 @@ export default function DietOsusumePage() {
           </div>
           <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ。最新情報は各公式サイトでご確認ください。</p>
         </section>
+        <HakushoUnitPriceTable slugs={["nosh", "mitsuboshi-farm", "shokutakubin", "wellness-dining", "kinnikushokudo-deli"]} />
+
 
         </article>
     </>
