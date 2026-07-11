@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://takushoku-biyori.pages.dev/sitemap.xml
+Sitemap: https://takushoku-biyori.com/sitemap.xml
