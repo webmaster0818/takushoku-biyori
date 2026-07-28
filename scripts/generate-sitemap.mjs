@@ -19,6 +19,9 @@ const STATIC_PAGES = [
   { path: '/privacy-policy/', priority: '0.3', changefreq: 'monthly' },
   { path: '/terms-of-service/', priority: '0.3', changefreq: 'monthly' },
   { path: '/content-policy/', priority: '0.3', changefreq: 'monthly' },
+  { path: '/editorial/', priority: '0.5', changefreq: 'monthly' },
+  { path: '/author/', priority: '0.5', changefreq: 'monthly' },
+  { path: '/methodology/', priority: '0.5', changefreq: 'monthly' },
 ]
 
 function articleSlugs() {

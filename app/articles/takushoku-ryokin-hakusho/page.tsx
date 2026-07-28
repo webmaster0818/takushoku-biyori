@@ -634,7 +634,7 @@ export default function TakushokuRyokinHakushoPage() {
           ]}
         />
         <p className="text-sm mb-4 leading-relaxed">
-          三ツ星ファームの通常の「よりどりプラン」には縛りはありません。縛りがあるのは、単価を下げる代わりに継続を約束する長期継続応援プラン・冷凍庫プレゼントプランだけです。<strong>「1食603円」など安い方の表示価格はこの縛り付きプランの価格</strong>であることが多いので、申込前にどのプランかを必ず確認しましょう。詳細は<Link href="/articles/mitsuboshi-cancel/" className="text-accent hover:underline">三ツ星ファームの解約方法まとめ</Link>も参考にしてください。
+          三ツ星ファームの通常の「よりどりプラン」には縛りはありません。縛りがあるのは、単価を下げる代わりに継続を約束する長期継続応援プラン・冷凍庫プレゼントプランだけです。<strong>「1食603円」など安い方の表示価格はこの縛り付きプランの価格</strong>であることが多いので、申込前にどのプランかを必ず確認しましょう。詳細は<Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:underline">三ツ星ファームの解約方法まとめ</Link>も参考にしてください。
         </p>
         <SubHeading>縛りはなくても「解約期限」はある</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
@@ -704,7 +704,7 @@ export default function TakushokuRyokinHakushoPage() {
             <li><Link href="/articles/tsurukame-reviews/" className="text-accent hover:text-accent-dark transition-colors">Dr.つるかめキッチンの口コミ・評判</Link></li>
             <li><Link href="/articles/watami-direct-otameshi/" className="text-accent hover:text-accent-dark transition-colors">ワタミの宅食ダイレクトのお試し割まとめ</Link></li>
             <li><Link href="/articles/chef-mutenka-tsukurioki-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">シェフの無添つくりおきの口コミ・評判</Link></li>
-            <li><Link href="/articles/jisshitsu-tanka-hikaku/" className="text-accent hover:text-accent-dark transition-colors">送料込みの実質単価比較（考え方の解説）</Link></li>
+            <li><Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark transition-colors">送料込みの実質単価比較（考え方の解説）</Link></li>
             <li><Link href="/articles/souryou-yasui-ranking/" className="text-accent hover:text-accent-dark transition-colors">送料が安い宅配弁当ランキングTOP10</Link></li>
           </ul>
         </div>
@@ -718,6 +718,11 @@ export default function TakushokuRyokinHakushoPage() {
             </div>
           </div>
         </div>
+              {/* eeat-links-202607 */}
+        <div className="mt-10 rounded-lg border p-4 text-xs leading-relaxed" style={{ borderColor: "#dde3eb", color: "#6b7785" }}>
+          この記事は宅食びより編集部が「<Link href="/methodology/" className="underline">評価方法・データ源</Link>」に基づき、各社公式サイトの一次確認と出典付きの口コミ集約のみで作成しています（編集部による実食レビューは現在未実施・導入準備中）。編集体制は「<Link href="/author/" className="underline">編集部の体制と役割</Link>」をご覧ください。内容の誤りにお気づきの場合は<Link href="/editorial/" className="underline">編集部</Link>までご指摘ください。
+        </div>
+
       </article>
     </>
   );

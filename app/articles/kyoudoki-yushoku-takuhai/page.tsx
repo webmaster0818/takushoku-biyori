@@ -386,7 +386,7 @@ export default function KyoudokiYushokuTakuhaiPage() {
         </div>
 
         <p className="text-sm mb-6 leading-relaxed">
-          送料も判断材料になります。冷凍宅配は送料がかかるサービスもあれば、条件付きで送料がかからないサービスもあります。送料無料の選択肢を知りたい方は<Link href="/articles/souryou-muryou-reitou-bento/" className="text-accent underline">送料無料の冷凍宅配弁当のまとめ</Link>もあわせてご覧ください(条件は時期で変わるため最新は公式で確認)。
+          送料も判断材料になります。冷凍宅配は送料がかかるサービスもあれば、条件付きで送料がかからないサービスもあります。送料無料の選択肢を知りたい方は<Link href="/articles/souryou-yasui-ranking/" className="text-accent underline">送料無料の冷凍宅配弁当のまとめ</Link>もあわせてご覧ください(条件は時期で変わるため最新は公式で確認)。
         </p>
 
         {/* ===== 受け取り ===== */}
@@ -445,7 +445,7 @@ export default function KyoudokiYushokuTakuhaiPage() {
 
         <SubHeading>頼まない週はスキップする</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          余裕のある週は自炊に戻し、忙しい週だけ利用する——そんな柔軟な使い方も可能です。サービスによっては配送のスキップや停止ができます。スキップの手順や締め日はサービスごとに異なるため、<Link href="/articles/takuhai-skip/" className="text-accent underline">宅配弁当のスキップ方法の解説</Link>も参考に、申し込み前に条件を確認しておきましょう。
+          余裕のある週は自炊に戻し、忙しい週だけ利用する——そんな柔軟な使い方も可能です。サービスによっては配送のスキップや停止ができます。スキップの手順や締め日はサービスごとに異なるため、<Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent underline">宅配弁当のスキップ方法の解説</Link>も参考に、申し込み前に条件を確認しておきましょう。
         </p>
 
         {/* ===== 料金 ===== */}
@@ -500,7 +500,7 @@ export default function KyoudokiYushokuTakuhaiPage() {
             一人暮らしにおすすめの宅配弁当
           </Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
-          <Link href="/articles/souryou-muryou-reitou-bento/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
+          <Link href="/articles/souryou-yasui-ranking/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
             送料無料の冷凍宅配弁当
           </Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
@@ -508,7 +508,7 @@ export default function KyoudokiYushokuTakuhaiPage() {
             置き配対応の宅配弁当
           </Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
-          <Link href="/articles/takuhai-skip/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
+          <Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
             宅配弁当のスキップ方法
           </Link>
         </div>
@@ -526,6 +526,11 @@ export default function KyoudokiYushokuTakuhaiPage() {
             </div>
           </div>
         </div>
+              {/* eeat-links-202607 */}
+        <div className="mt-10 rounded-lg border p-4 text-xs leading-relaxed" style={{ borderColor: "#dde3eb", color: "#6b7785" }}>
+          この記事は宅食びより編集部が「<Link href="/methodology/" className="underline">評価方法・データ源</Link>」に基づき、各社公式サイトの一次確認と出典付きの口コミ集約のみで作成しています（編集部による実食レビューは現在未実施・導入準備中）。編集体制は「<Link href="/author/" className="underline">編集部の体制と役割</Link>」をご覧ください。内容の誤りにお気づきの場合は<Link href="/editorial/" className="underline">編集部</Link>までご指摘ください。
+        </div>
+
       </article>
     </>
   );

@@ -378,7 +378,7 @@ export default function LifemealKuchikomiPage() {
           {[
             { href: "/articles/magokoro-care-reviews/", label: "まごころケア食の口コミ・評判（同じシルバーライフ運営）" },
             { href: "/articles/chef-mutenka-tsukurioki-kuchikomi/", label: "シェフの無添つくりおきの口コミ・評判" },
-            { href: "/articles/jisshitsu-tanka-hikaku/", label: "冷凍弁当は「送料込みの実質単価」で比較" },
+            { href: "/articles/takushoku-ryokin-hakusho/", label: "冷凍弁当は「送料込みの実質単価」で比較" },
             { href: "/articles/souryou-yasui-ranking/", label: "送料が安い宅配弁当ランキング" },
             { href: "/articles/hitorigurashi-osusume/", label: "一人暮らしにおすすめの宅食TOP5" },
           ].map((link) => (
@@ -420,10 +420,15 @@ export default function LifemealKuchikomiPage() {
             <li><Link href="/articles/chef-mutenka-tsukurioki-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">シェフの無添つくりおきの口コミ・評判は？まずいって本当？</Link></li>
             <li><Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】nosh(ナッシュ)の口コミ・評判を徹底調査</Link></li>
             <li><Link href="/articles/1shoku-200yen-dai/" className="text-accent hover:text-accent-dark transition-colors">1食200円台で買える宅配弁当はある？</Link></li>
-            <li><Link href="/articles/jisshitsu-tanka-hikaku/" className="text-accent hover:text-accent-dark transition-colors">実質単価で比較！宅配弁当のコスパ徹底比較</Link></li>
+            <li><Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark transition-colors">実質単価で比較！宅配弁当のコスパ徹底比較</Link></li>
             <li><Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark transition-colors">【2026年】一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5</Link></li>
           </ul>
         </div>
+              {/* eeat-links-202607 */}
+        <div className="mt-10 rounded-lg border p-4 text-xs leading-relaxed" style={{ borderColor: "#dde3eb", color: "#6b7785" }}>
+          この記事は宅食びより編集部が「<Link href="/methodology/" className="underline">評価方法・データ源</Link>」に基づき、各社公式サイトの一次確認と出典付きの口コミ集約のみで作成しています（編集部による実食レビューは現在未実施・導入準備中）。編集体制は「<Link href="/author/" className="underline">編集部の体制と役割</Link>」をご覧ください。内容の誤りにお気づきの場合は<Link href="/editorial/" className="underline">編集部</Link>までご指摘ください。
+        </div>
+
       </article>
     </>
   );

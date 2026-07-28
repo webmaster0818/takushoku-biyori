@@ -622,14 +622,14 @@ export default function NoshCouponPage() {
           </Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link
-            href="/articles/nosh-5000yen-off/"
+            href="/articles/nosh-coupon/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
           >
             nosh初回5,000円オフキャンペーンは本当？
           </Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link
-            href="/articles/nosh-cancel/"
+            href="/articles/nosh-reviews/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
           >
             nosh解約方法を画像付きで解説
@@ -657,6 +657,11 @@ export default function NoshCouponPage() {
             </div>
           </div>
         </div>
+              {/* eeat-links-202607 */}
+        <div className="mt-10 rounded-lg border p-4 text-xs leading-relaxed" style={{ borderColor: "#dde3eb", color: "#6b7785" }}>
+          この記事は宅食びより編集部が「<Link href="/methodology/" className="underline">評価方法・データ源</Link>」に基づき、各社公式サイトの一次確認と出典付きの口コミ集約のみで作成しています（編集部による実食レビューは現在未実施・導入準備中）。編集体制は「<Link href="/author/" className="underline">編集部の体制と役割</Link>」をご覧ください。内容の誤りにお気づきの場合は<Link href="/editorial/" className="underline">編集部</Link>までご指摘ください。
+        </div>
+
       </article>
     </>
   );

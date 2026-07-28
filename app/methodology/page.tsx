@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const PAGE_TITLE = "評価方法・データ源";
 const PAGE_DESC =
-  "宅食びよりの宅配弁当・冷凍弁当サービス評価方法を全公開。実食検証の手順、5項目評価基準、価格データの取得方法、利益相反の管理について解説します。";
+  "宅食びよりの宅配弁当・冷凍弁当サービス評価方法を全公開。公式データの一次確認手順、実質単価の計算方法、口コミ集約の基準、利益相反の管理について解説します。";
 const PAGE_URL = "https://takushoku-biyori.com/methodology/";
 
 export const metadata: Metadata = {
@@ -14,10 +14,10 @@ export const metadata: Metadata = {
 };
 
 const criteria = [
-  { name: "味", weight: "25%", detail: "編集部3名以上による試食評価。各メニュー10種以上を試食、5段階で記録" },
+  { name: "味の傾向", weight: "25%", detail: "公開されている利用者口コミを出典付きで定性集約（複数プラットフォームで一致する傾向のみ採用）。編集部による実食評価は現在未実施・導入準備中" },
   { name: "栄養", weight: "20%", detail: "栄養成分表示の充実度・低糖質/高タンパク等の特化対応・原材料の透明性を評価" },
   { name: "コスパ", weight: "20%", detail: "1食あたり総額（送料込み）と他社比較、長期利用時の割引適用後価格" },
-  { name: "配送品質", weight: "15%", detail: "配送タイミング遵守率、冷凍状態、梱包丁寧さ、不在時対応" },
+  { name: "配送条件", weight: "15%", detail: "公式サイト記載の配送方法・配送エリア・送料・不在時対応（置き配等）の比較" },
   { name: "継続のしやすさ", weight: "20%", detail: "解約難易度、スキップ機能、プラン変更柔軟性、最低契約期間" },
 ];
 
@@ -64,9 +64,9 @@ export default function MethodologyPage() {
         <ul className="list-disc pl-6 space-y-2 mb-10">
           <li><strong>料金・送料・キャンペーン:</strong> 各社公式サイトを月次以上で確認、変更があれば即時反映</li>
           <li><strong>栄養成分:</strong> 公式公開資料・パッケージ表示を照合</li>
-          <li><strong>味・配送品質:</strong> 編集部による自費注文と実食検証</li>
+          <li><strong>味の傾向:</strong> 公開されている利用者口コミの出典付き定性集約（編集部による実食レビューは現在未実施・導入準備中）</li>
           <li><strong>口コミ・評判:</strong> Twitter（X）・Instagram・楽天・Amazon の口コミを定性集約。複数プラットフォームで一致する内容のみ採用</li>
-          <li><strong>解約難易度:</strong> 編集部が実際に解約申請して所要時間・引き止め状況を記録</li>
+          <li><strong>解約条件:</strong> 各社公式サイトの解約規定・締め日を一次確認して整理（実際の解約手続きの検証は未実施）</li>
         </ul>
 
         <h2 className="font-display text-2xl font-bold mb-4">利益相反の管理</h2>
@@ -79,7 +79,7 @@ export default function MethodologyPage() {
         <h2 className="font-display text-2xl font-bold mb-4">情報の更新サイクル</h2>
         <ul className="list-disc pl-6 space-y-2 mb-10">
           <li>料金・キャンペーン: 月1回以上</li>
-          <li>味・配送品質の再検証: 6ヶ月に1回（メニュー一新時は随時）</li>
+          <li>口コミ傾向・配送条件の見直し: 6ヶ月に1回（メニュー一新時は随時）</li>
           <li>ランキング更新: 四半期ごと</li>
         </ul>
 
