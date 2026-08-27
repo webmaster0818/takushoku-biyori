@@ -5,7 +5,7 @@ import { HakushoUnitPriceTable } from "@/components/HakushoUnitPriceTable";
 const ARTICLE_TITLE =
   "【2026年最新】ダイエット向け宅配弁当おすすめランキングTOP5｜低糖質・低カロリーで無理なく痩せる";
 const ARTICLE_DESCRIPTION =
-  "ダイエットにおすすめの宅配弁当を管理栄養士監修で徹底比較。nosh・三ツ星ファーム・ウェルネスダイニングなど人気5社を糖質・カロリー・価格で比較し、低糖質・低カロリーの宅食ランキングTOP5を発表。置き換えダイエットの成功のコツも解説。";
+  "ダイエットにおすすめの宅配弁当を公式情報と出典付きの口コミで徹底比較。nosh・三ツ星ファーム・ウェルネスダイニングなど人気5社を糖質・カロリー・価格で比較し、低糖質・低カロリーの宅食ランキングTOP5を発表。置き換えダイエットの成功のコツも解説。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/diet-osusume/";
 

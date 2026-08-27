@@ -49,8 +49,8 @@ export default function Home() {
                 もっと豊かに。
               </h1>
               <p className="text-warm-gray text-base md:text-lg leading-relaxed mb-8 max-w-lg">
-                管理栄養士監修のもと、nosh・三ツ星ファーム・ウェルネスダイニングなど
-                人気の宅食サービスを本音で比較。
+                各社の公式サイトで料金・送料を一次確認し、出典付きの口コミとあわせて
+                nosh・三ツ星ファーム・ウェルネスダイニングなどを比較。
                 忙しいあなたにぴったりの一食が見つかります。
               </p>
               <Link
@@ -99,15 +99,15 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 text-xs md:text-sm text-warm-gray">
             <span className="flex items-center gap-1.5">
               <svg className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
-              管理栄養士監修
+              公式サイトで一次確認
             </span>
             <span className="flex items-center gap-1.5">
               <svg className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
-              全サービス実食レビュー
+              出典付きの口コミのみ
             </span>
             <span className="flex items-center gap-1.5">
               <svg className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
-              2026年最新情報
+              確認日を明記
             </span>
             <span className="flex items-center gap-1.5">
               <svg className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
@@ -234,10 +234,10 @@ export default function Home() {
                   三ツ星ファームの口コミ・評判を徹底調査
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  一流シェフ監修の冷凍弁当の実力は？まずいは本当？料金プラン・送料・メニューの特徴を実食レビューで解説。
+                  一流シェフ監修の冷凍弁当の実力は？まずいは本当？料金プラン・送料・メニューの特徴を公式情報と出典付きの口コミで解説。
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {["三ツ星ファーム", "口コミ", "評判", "実食"].map((tag) => (
+                  {["三ツ星ファーム", "口コミ", "評判", "料金"].map((tag) => (
                     <span
                       key={tag}
                       className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
@@ -726,7 +726,7 @@ export default function Home() {
                   シェフの無添つくりおきの口コミ・評判は？まずいって本当？
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  無添加調理×冷蔵手作りおかず。実食レビューの評価を出典付きで検証し、料金と注意点を整理。
+                  無添加調理×冷蔵手作りおかず。第三者メディアの実食レビューを出典付きで検証し、料金と注意点を整理。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["シェフの無添つくりおき", "口コミ", "無添加", "つくりおき"].map((tag) => (
@@ -748,7 +748,7 @@ export default function Home() {
                   ライフミールの口コミ・評判は？まずいって本当？
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  1食490円台〜の低価格冷凍弁当。実食レビューの評価を出典付きで検証し、冷凍庫無料レンタルの条件も解説。
+                  1食490円台〜の低価格冷凍弁当。第三者メディアの実食レビューを出典付きで検証し、冷凍庫無料レンタルの条件も解説。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["ライフミール", "口コミ", "コスパ", "冷凍弁当"].map((tag) => (
@@ -884,7 +884,7 @@ export default function Home() {
                   ニチレイフーズダイレクトの口コミ・評判は？まずいって本当？
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  冷凍食品大手の宅配食「きくばりごぜん」。実食レビューの評価を出典付きで検証し、料金と送料無料条件を整理。
+                  冷凍食品大手の宅配食「きくばりごぜん」。第三者メディアの実食レビューを出典付きで検証し、料金と送料無料条件を整理。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["ニチレイ", "口コミ", "きくばりごぜん", "健康設計"].map((tag) => (
@@ -906,7 +906,7 @@ export default function Home() {
                   GOFOOD(ゴーフード)の口コミ・評判は？まずいって本当？
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  全メニュー糖質20g以下・タンパク質20g以上の低糖質弁当。実食レビューの評価を出典付きで検証。
+                  全メニュー糖質20g以下・タンパク質20g以上の低糖質弁当。第三者メディアの実食レビューを出典付きで検証。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["GOFOOD", "口コミ", "低糖質", "高タンパク"].map((tag) => (

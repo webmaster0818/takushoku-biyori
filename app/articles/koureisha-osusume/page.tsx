@@ -5,7 +5,7 @@ import { HakushoUnitPriceTable } from "@/components/HakushoUnitPriceTable";
 const ARTICLE_TITLE =
   "【2026年最新】高齢者向け宅配弁当おすすめランキングTOP5｜やわらか食・制限食も徹底比較";
 const ARTICLE_DESCRIPTION =
-  "高齢者におすすめの宅配弁当を管理栄養士監修で徹底比較。やわらか食・塩分制限・たんぱく調整・ムース食対応の宅食サービスTOP5を発表。離れて暮らすご家族からの注文方法、介護食との違い、見守りサービスまで、シニアの宅食選びに必要な情報を網羅。";
+  "高齢者におすすめの宅配弁当を公式情報と出典付きの口コミで徹底比較。やわらか食・塩分制限・たんぱく調整・ムース食対応の宅食サービスTOP5を発表。離れて暮らすご家族からの注文方法、介護食との違い、見守りサービスまで、シニアの宅食選びに必要な情報を網羅。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/koureisha-osusume/";
 

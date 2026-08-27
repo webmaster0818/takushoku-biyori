@@ -5,7 +5,7 @@ import { HakushoUnitPriceTable } from "@/components/HakushoUnitPriceTable";
 const ARTICLE_TITLE =
   "【2026年最新】産後におすすめの宅配弁当ランキングTOP5｜産褥期の栄養管理と時短を両立";
 const ARTICLE_DESCRIPTION =
-  "産後・産褥期におすすめの宅配弁当を管理栄養士監修で徹底比較。nosh・ママの休食・ウェルネスダイニングなど人気5社を栄養バランス・添加物・価格で比較。授乳中の栄養管理、上の子も一緒に食べられるサービス、里帰りなしの食事問題まで徹底解説。";
+  "産後・産褥期におすすめの宅配弁当を公式情報と出典付きの口コミで徹底比較。nosh・ママの休食・ウェルネスダイニングなど人気5社を栄養バランス・添加物・価格で比較。授乳中の栄養管理、上の子も一緒に食べられるサービス、里帰りなしの食事問題まで徹底解説。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/sango-osusume/";
 

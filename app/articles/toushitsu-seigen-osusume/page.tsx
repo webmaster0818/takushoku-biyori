@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "【2026年最新】糖質制限におすすめの宅配弁当ランキングTOP5｜低糖質・糖質オフの宅食を徹底比較";
 const ARTICLE_DESCRIPTION =
-  "糖質制限におすすめの宅配弁当を管理栄養士監修で徹底比較。nosh・食宅便・ウェルネスダイニングなど人気5社を糖質量・価格・味で比較し、ランキングTOP5を発表。糖質制限のレベル別おすすめ、1日の糖質量の目安、ケトジェニック向けメニューまで解説。";
+  "糖質制限におすすめの宅配弁当を公式情報と出典付きの口コミで徹底比較。nosh・食宅便・ウェルネスダイニングなど人気5社を糖質量・価格・味で比較し、ランキングTOP5を発表。糖質制限のレベル別おすすめ、1日の糖質量の目安、ケトジェニック向けメニューまで解説。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/toushitsu-seigen-osusume/";
 
