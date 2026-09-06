@@ -397,6 +397,13 @@ export default function GofoodKuchikomiPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        {/* goodeli-disambig-202609
+            「グーデリ」で検索した人がこの記事に着地していたため、別サービスであることを先頭で明示する。 */}
+        <div className="mt-2 rounded-lg border p-3 text-xs leading-relaxed" style={{ borderColor: "#dde3eb", color: "#6b7785" }}>
+          「goodeli（グーデリ）」をお探しの方へ：goodeli は GOFOOD とは別のサービスです。
+          <Link href="/articles/goodeli-kuchikomi/" className="underline">goodeli(グーデリ)の料金・送料・違いはこちら</Link>
+        </div>
+
         <Breadcrumbs />
 
         {/* Title */}
