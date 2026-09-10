@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "nosh(ナッシュ)の口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年7月最新】";
+  "nosh(ナッシュ)の口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年9月最新】";
 const ARTICLE_DESCRIPTION =
   "nosh(ナッシュ)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。1食あたりの料金（税込620円〜・club最安499円）、地域別送料、nosh club割引の仕組みも解説します。最新の料金は公式でご確認ください。【2026年7月更新】";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/nosh-reviews/";

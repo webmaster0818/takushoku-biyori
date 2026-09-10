@@ -386,7 +386,7 @@
    "verified_at": "2026-07-04",
    "verified": false,
    "notes": "食数別の具体的な税込価格が公式ページから直接取得できず価格はnull。送料・初回割引・解約条件は公式で確認済",
-   "reverify_note": "⚠️2026-09-05時点で /pages/subscription が404。プラン価格を公式で再取得できず、前回値を据え置き（未確認扱い）"
+   "reverify_note": "⚠️公開情報からは確認できない。理由が判明: 料金はログイン後のマイページ内でボックスごとに表示され、送料改定(2025-09-08)の金額は画像で掲載されているため、公開ページからテキストで取得できない。前回値を据え置き、未確認として明示する。"
   },
   {
    "slug": "chef-muten-tsukurioki",
@@ -782,7 +782,7 @@
     "type": "flat",
     "representative_jpy": 880,
     "temperature": "frozen",
-    "note": "都度注文880円(税込)。初回および定期便は送料無料。全国一律か地域差があるかの明記は確認ページ上になし"
+    "note": "初回送料無料。2回目以降は一律880円（税込）。定期注文は送料無料。沖縄・離島は1,100円。2026-09-10確認"
    },
    "first_discount": "初回送料無料（880円相当がお得）／会員登録で100P",
    "subscription": "両方",
@@ -793,10 +793,10 @@
     "https://medimeal.net/restricted/protein/",
     "https://medimeal.net/restricted/balance/"
    ],
-   "verified_at": "2026-07-04",
+   "verified_at": "2026-09-10",
    "verified": true,
    "notes": "糖質制限食・塩分制限食・ムースやわらか食コースもあり（個別ページ未確認）。定期と都度の商品価格は同一で、差は送料の有無のみ",
-   "reverify_note": "⚠️2026-09-06時点で公式トップに価格表の掲載がなく再取得できず。前回値を据え置き（未確認扱い）"
+   "reverify_note": "カロリー制限食7食5,270円(税込)は変更なし。14食9,698円/21食14,018円を新たに確認。送料は初回無料・2回目以降880円(税込)・定期は無料・沖縄離島1,100円"
   },
   {
    "slug": "kinnikushokudo-deli",
@@ -848,10 +848,10 @@
     "https://deli.kinnikushokudo.jp/shop/products/low-carb",
     "https://deli.kinnikushokudo.jp/shop/faq"
    ],
-   "verified_at": "2026-07-04",
+   "verified_at": "2026-09-10",
    "verified": true,
    "notes": "初回限定割引の表記は公式サイト上に見当たらず（トップの「期間限定 1食831円〜(税抜)」は定期の期間限定価格表記であり初回割引ではない）。比較サイトにある「初回50%OFF」等は公式で確認できず不採用。正URLは deli.kinnikushokudo.jp（kinnikushokudo-ec.jpはDNS解決不可）",
-   "reverify_note": "⚠️2026-09-06時点で公式トップの表示は「ベーシック1食831円〜(税抜)」。前回記録の7食7,560円(1食1,080円税込)と一致しないため、セット価格を公式の詳細ページで再取得するまで未確認扱いとする"
+   "reverify_note": "ベーシックコース7食7,560円は変更なし（定期20%オフ適用後の価格）。14食14,818円/21食21,546円。公式トップの「1食831円〜(税抜)」は大容量セットの下限表示で、7食セット価格と矛盾しないことを確認"
   },
   {
    "slug": "fit-food-home",
@@ -898,29 +898,29 @@
   }
  ],
  "reverify": {
-  "date": "2026-09-06",
+  "date": "2026-09-10",
   "done": [
    "nosh",
    "mitsuboshi-farm",
    "magokoro-care-shoku",
    "wellness-dining",
-   "ouchi-coop",
-   "watami-direct",
-   "watami-takushoku",
-   "tsurukame-kitchen",
+   "yoshikei",
    "shokutakubin",
    "tsukurioki-jp",
-   "lifemeal",
    "chef-muten-tsukurioki",
+   "lifemeal",
+   "watami-takushoku",
+   "watami-direct",
    "coopdeli",
-   "fit-food-home",
-   "yoshikei"
+   "ouchi-coop",
+   "tsurukame-kitchen",
+   "medimeal",
+   "kinnikushokudo-deli",
+   "fit-food-home"
   ],
   "unconfirmed": [
-   "green-spoon",
-   "medimeal",
-   "kinnikushokudo-deli"
+   "green-spoon"
   ],
-  "note": "18社中15社の再確認完了。3社は公式に価格表が出ておらず未確認のまま据え置き（推測で埋めない）。⚠️未確認3社が残るため、白書の数値を根拠にした断定表現は避ける。"
+  "note": "18社中17社の再確認完了（2026-09-05〜09-10）。GREEN SPOONのみ、公式が料金をログイン後のマイページ、送料を画像で出しているため公開情報から取得不能。推測で埋めず未確認のまま据え置く。"
  }
 }

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "ウェルネスダイニングの口コミ・評判は？まずいって本当？制限食宅配を中立検証【2026年7月最新】";
+  "ウェルネスダイニングの口コミ・評判は？まずいって本当？制限食宅配を中立検証【2026年9月最新】";
 const ARTICLE_DESCRIPTION =
   "ウェルネスダイニングの口コミ・評判を徹底調査。糖質制限・塩分制限・たんぱく質調整など制限食の専門サービスとしての実力を検証。良い口コミ・悪い口コミの両方を紹介し、料金・送料・全6コースの特徴を解説します。";
 const ARTICLE_URL =

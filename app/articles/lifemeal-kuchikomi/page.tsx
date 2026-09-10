@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "ライフミールの口コミ・評判は？まずいって本当？料金と実力を中立検証【2026年7月最新】";
+  "ライフミールの口コミ・評判は？まずいって本当？料金と実力を中立検証【2026年9月最新】";
 const ARTICLE_DESCRIPTION =
   "ライフミール（LifeMeal）の口コミ・評判を出典付きで検証。「まずい」という噂は本当か、実食レビューメディアの評価を引用しながら中立に解説。1食490円台からの料金体系、初回割引、冷凍庫無料レンタルの条件も整理。最新の料金・キャンペーンは公式サイトでご確認ください。";
 const ARTICLE_URL =

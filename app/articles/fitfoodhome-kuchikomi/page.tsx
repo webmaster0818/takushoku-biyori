@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "FIT FOOD HOME(フィットフードホーム)の口コミ・評判は？まずいって本当？無添加調理の実力を出典付きで中立検証【2026年7月最新】";
+  "FIT FOOD HOME(フィットフードホーム)の口コミ・評判は？まずいって本当？無添加調理の実力を出典付きで中立検証【2026年9月最新】";
 const ARTICLE_DESCRIPTION =
   "FIT FOOD HOME(フィットフードホーム)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。無添加調理の冷凍おかずの料金（単品1,129円〜・2026年7月4日公式確認）、送料、定期の割引条件も解説します。";
 const ARTICLE_URL =
