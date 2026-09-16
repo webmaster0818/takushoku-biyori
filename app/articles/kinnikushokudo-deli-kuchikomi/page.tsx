@@ -871,6 +871,28 @@ export default function KinnikushokudoDeliKuchikomiPage() {
         <div className="mt-10 rounded-lg border p-4 text-xs leading-relaxed" style={{ borderColor: "#dde3eb", color: "#6b7785" }}>
           この記事は宅食びより編集部が「<Link href="/methodology/" className="underline">評価方法・データ源</Link>」に基づき、各社公式サイトの一次確認と出典付きの口コミ集約のみで作成しています（編集部による実食レビューは現在未実施・導入準備中）。編集体制は「<Link href="/author/" className="underline">編集部の体制と役割</Link>」をご覧ください。内容の誤りにお気づきの場合は<Link href="/editorial/" className="underline">編集部</Link>までご指摘ください。
         </div>
+      {/* coop-link-202609: クリックが出ている生協系の記事へ寄せる（GSC実測にもとづく内部リンクの配分見直し） */}
+      <div className="my-8 rounded-lg border border-gray-200 bg-white p-5">
+        <p className="mb-2 text-xs font-medium text-gray-500">生協の宅配弁当を個別に読む</p>
+        <ul className="space-y-1 text-sm">
+          <li>
+            <Link href="/articles/ouchi-coop-kuchikomi/" className="text-emerald-700 underline hover:opacity-80">
+              おうちコープ「マイシィ」の口コミ・評判は？まずいって本当？
+            </Link>
+          </li>
+          <li>
+            <Link href="/articles/coopdeli-kuchikomi/" className="text-emerald-700 underline hover:opacity-80">
+              コープデリ夕食宅配「舞菜」の口コミ・評判と料金
+            </Link>
+          </li>
+          <li>
+            <Link href="/articles/reitou-bento-mazui/" className="text-emerald-700 underline hover:opacity-80">
+              冷凍宅配弁当は本当にまずい？主要15社を数値で比較
+            </Link>
+          </li>
+        </ul>
+      </div>
+
 
       </article>
     </>
