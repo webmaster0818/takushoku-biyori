@@ -93,8 +93,7 @@ const jsonLd = {
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "ホーム", item: "https://takushoku-biyori.com/" },
-        { "@type": "ListItem", position: 2, name: "記事一覧", item: "https://takushoku-biyori.com/articles/" },
-        { "@type": "ListItem", position: 3, name: "goodeli(グーデリ)とは", item: ARTICLE_URL },
+        { "@type": "ListItem", position: 2, name: "goodeli(グーデリ)とは", item: ARTICLE_URL },
       ],
     },
   ],
@@ -108,8 +107,7 @@ export default function Page() {
       <article className="mx-auto max-w-3xl px-5 py-10">
         <nav className="text-xs text-gray-500">
           <Link href="/" className="hover:underline">ホーム</Link>
-          <span> ／ </span>
-          <Link href="/articles/" className="hover:underline">記事一覧</Link>
+
         </nav>
 
         <h1 className="mt-4 text-2xl md:text-3xl font-bold leading-relaxed">
