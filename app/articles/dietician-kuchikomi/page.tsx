@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "ダイエティシャン 口コミ, Dietician 口コミ, ダイエティシャン 評判, ダイエティシャン まずい, ダイエティシャン 販売終了, ダイエティシャン 代わり, 高タンパク 宅配弁当, ダイエット 宅配弁当",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

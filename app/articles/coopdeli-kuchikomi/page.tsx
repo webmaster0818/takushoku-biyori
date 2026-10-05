@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "コープデリ 夕食宅配 口コミ, コープデリ 弁当 評判, 舞菜 口コミ, 舞菜弁当 まずい, デイリーコープ 口コミ, コープデリ 夕食宅配 料金, 生協 夕食宅配 口コミ",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

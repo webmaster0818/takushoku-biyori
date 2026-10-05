@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "ニチレイフーズダイレクトの口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年7月最新】";
 const ARTICLE_DESCRIPTION =
-  "ニチレイフーズダイレクトは「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。冷凍食品大手ニチレイフーズの宅配食「きくばりごぜん」の料金（定期8食1食税込800円）、送料（本州・四国7,500円以上で無料）、お試し4食セットも解説。最新の料金は公式でご確認ください。【2026年7月更新】";
+  "ニチレイフーズダイレクトは「まずい」って本当？公開レビューから良い・悪い口コミを出典付きで紹介し、味の評判を検証。冷凍食品大手ニチレイフーズの宅配食「きくばりごぜん」の料金（定期8食1食税込800円）、送料（本州・四国7,500円以上で無料）、お試し4食セットも解説。最新の料金は公式で確認を。【2026年7月更新】";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/nichirei-foods-direct-kuchikomi/";
 
@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "ニチレイフーズダイレクト 口コミ, ニチレイフーズダイレクト 評判, ニチレイフーズダイレクト まずい, 気くばり御膳 口コミ, きくばりごぜん 口コミ, ニチレイ 冷凍弁当, ニチレイフーズダイレクト 料金, 宅配弁当 口コミ",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

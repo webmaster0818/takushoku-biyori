@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "ニチレイフーズダイレクト お試しセット, ニチレイ お試し, ニチレイフーズダイレクト 送料, ニチレイ 冷凍弁当, ニチレイ 宅配, ニチレイフーズダイレクト 申し込み, 冷凍弁当 お試し",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,
@@ -485,6 +486,8 @@ export default function NichireiOtameshiPage() {
           <Link href="/articles/koureisha-osusume/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
             高齢者向け宅配弁当のおすすめ
           </Link>
+          <span className="text-warm-gray text-sm mx-2">|</span>
+          <Link href="/articles/nichirei-foods-direct-kuchikomi/" className="text-accent hover:text-accent-dark underline font-medium text-sm">ニチレイフーズダイレクトの口コミ・評判</Link>
         </div>
 
         <div className="border-t border-warm-border pt-6 mt-8">

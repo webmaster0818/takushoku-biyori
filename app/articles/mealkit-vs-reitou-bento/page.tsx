@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "ミールキット 冷凍弁当 比較, ミールキット 違い, 冷凍弁当 違い, ミールキット 冷凍 どっち, ミールキット デメリット, 冷凍弁当 メリット, 宅配弁当 比較, ミールキット 一人暮らし",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "GREEN SPOON 口コミ, グリーンスプーン 口コミ, グリーンスプーン 評判, GREEN SPOON まずい, グリーンスプーン まずい, GREEN SPOON 料金, グリーンスプーン 値段, 宅配食 口コミ, スープ 宅配",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

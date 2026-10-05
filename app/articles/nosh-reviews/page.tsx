@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "nosh 口コミ, nosh 評判, ナッシュ 口コミ, ナッシュ 評判, nosh まずい, ナッシュ まずい, nosh 料金, nosh 送料, nosh メリット デメリット, 宅配弁当 口コミ",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,
@@ -1112,6 +1113,8 @@ export default function NoshReviewsPage() {
                 【2026年】一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5
               </Link>
             </li>
+            <li><Link href="/articles/nosh-ryoukin-souryou/" className="text-accent hover:text-accent-dark transition-colors">nosh（ナッシュ）の料金・送料の仕組みをわかりやすく解説</Link></li>
+            <li><Link href="/articles/oisix-vs-nosh/" className="text-accent hover:text-accent-dark transition-colors">オイシックス vs nosh(ナッシュ)徹底比較｜ミールキットと冷凍弁当はどっちが向いている？</Link></li>
           </ul>
         </div>
 

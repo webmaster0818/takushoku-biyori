@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "スーパー 冷凍弁当, 冷凍弁当 比較, 宅配弁当 vs スーパー, 冷凍食品 vs 宅食, 冷凍弁当 安い, 冷凍弁当 栄養, 一人暮らし 冷凍弁当, シニア 冷凍弁当",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

@@ -1,5 +1,10 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "https://takushoku-biyori.com/" },
+};
 
 const categories = [
   {

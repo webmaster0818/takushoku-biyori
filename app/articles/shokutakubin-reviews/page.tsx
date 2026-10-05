@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "食宅便 口コミ, 食宅便 評判, 食宅便 まずい, 食宅便 料金, 食宅便 送料, 日清医療食品, 宅配弁当 口コミ",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

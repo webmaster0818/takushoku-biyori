@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "三ツ星ファーム 口コミ, 三ツ星ファーム 評判, 三ツ星ファーム まずい, 三ツ星ファーム 料金, 三ツ星ファーム 送料, 三ツ星ファーム メニュー, 宅配弁当 口コミ",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,
@@ -941,6 +942,7 @@ export default function MitsuboshiFarmReviewsPage() {
                 【2026年】一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5
               </Link>
             </li>
+            <li><Link href="/articles/mitsuboshi-coupon/" className="text-accent hover:text-accent-dark transition-colors">三ツ星ファームのクーポン・キャンペーン｜初回割引の探し方と注意点</Link></li>
           </ul>
         </div>
       

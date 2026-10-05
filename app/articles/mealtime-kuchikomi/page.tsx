@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     "ミールタイム, ミールタイム 料金, ミールタイム 口コミ, ミールタイム 評判, 腎臓病食 宅配, 低たんぱく食 宅配, 糖尿病食 宅配, ファンデリー",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

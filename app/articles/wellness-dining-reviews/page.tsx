@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "ウェルネスダイニング 口コミ, ウェルネスダイニング 評判, ウェルネスダイニング まずい, ウェルネスダイニング 料金, ウェルネスダイニング 送料, 制限食 宅配, 宅配弁当 口コミ",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,
@@ -684,6 +685,7 @@ export default function WellnessDiningReviewsPage() {
             <li><Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】nosh(ナッシュ)の口コミ・評判を徹底調査</Link></li>
             <li><Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】三ツ星ファームの口コミ・評判を徹底調査</Link></li>
             <li><Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark transition-colors">【2026年】一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5</Link></li>
+            <li><Link href="/articles/taihei-family-set-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">タイヘイファミリーセットの口コミ・評判は？まずいって本当？</Link></li>
           </ul>
         </div>
       

@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "nosh 三ツ星ファーム ウェルネスダイニング 比較, 宅配弁当 比較, 冷凍宅配弁当 おすすめ, 宅配弁当 ランキング, 宅配弁当 一人暮らし, 宅配弁当 ダイエット, 宅配弁当 高齢者",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,
@@ -1114,6 +1115,8 @@ export default function ArticlePage() {
             </li>
             <li className="text-warm-gray">ウェルネスダイニング 口コミ・評判まとめ（準備中）</li>
             <li className="text-warm-gray">高齢者向け宅配弁当おすすめ10選（準備中）</li>
+            <li><Link href="/articles/mitsuboshi-coupon/" className="text-accent hover:text-accent-dark transition-colors">三ツ星ファームのクーポン・キャンペーン｜初回割引の探し方と注意点</Link></li>
+            <li><Link href="/articles/nosh-ryoukin-souryou/" className="text-accent hover:text-accent-dark transition-colors">nosh（ナッシュ）の料金・送料の仕組みをわかりやすく解説</Link></li>
           </ul>
         </div>
       

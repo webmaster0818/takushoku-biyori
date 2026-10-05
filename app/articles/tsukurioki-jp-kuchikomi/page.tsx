@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "つくりおき.jp 口コミ, つくりおき.jp 評判, つくりおき.jp まずい, ツクリオ 口コミ, ツクリオ 評判, つくりおき.jp 料金, つくりおき.jp エリア, 作り置き 宅配, 宅食 口コミ",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

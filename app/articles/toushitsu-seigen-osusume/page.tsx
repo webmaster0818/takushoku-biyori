@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "糖質制限 宅配弁当 おすすめ, 低糖質 弁当 宅配, 糖質オフ 宅食, 糖質制限 冷凍弁当, 低糖質 宅食, ケトジェニック 宅配弁当, 糖質制限食 宅配, ロカボ 宅配弁当",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,
@@ -679,6 +680,8 @@ export default function ToushitsuSeigenOsusumePage() {
             <li><Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】ウェルネスダイニングの口コミ・評判を徹底調査</Link></li>
             <li><Link href="/articles/diet-osusume/" className="text-accent hover:text-accent-dark transition-colors">ダイエット向け宅配弁当おすすめランキングTOP5</Link></li>
             <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link></li>
+            <li><Link href="/articles/goodeli-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">goodeli(グーデリ)とは？料金・送料・GOFOODとの違い</Link></li>
+            <li><Link href="/articles/rizap-supportmeal-reviews/" className="text-accent hover:text-accent-dark transition-colors">ライザップ サポートミールの口コミ・評判</Link></li>
           </ul>
         </div>
       

@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "DELIPICKS, デリピックス, デリピックス お試し, デリピックス 特徴, デリピックス 口コミ, 高タンパク 冷凍弁当, フレンチシェフ 冷凍宅配, 宅配弁当 お試し, 冷凍宅配弁当 ダイエット",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

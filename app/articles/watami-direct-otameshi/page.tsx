@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "ワタミの宅食ダイレクト お試し, ワタミ 宅食 ダイレクト, ワタミ 冷凍 宅配, ワタミ いつでも三菜, ワタミ 五菜, ワタミ ダイレクト 申込, ワタミ ダイレクト 送料, ワタミ ダイレクト 定期",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

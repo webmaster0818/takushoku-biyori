@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "つるかめキッチン 口コミ, Dr.つるかめキッチン 評判, つるかめキッチン 料金, つるかめキッチン 糖質制限, つるかめキッチン 塩分制限, 制限食 宅配弁当",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

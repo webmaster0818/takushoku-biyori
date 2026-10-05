@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "宅配弁当 お試しセット, 宅食 お試し, 冷凍弁当 初回限定, nosh お試し, 三ツ星ファーム お試し, 食宅便 お試し, ワタミ お試し, 宅配弁当 送料無料, 宅食 初回 安い",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,
@@ -530,6 +531,10 @@ export default function OtameshiSetOsusumePage() {
           <Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
             三ツ星ファームの口コミ・評判
           </Link>
+          <span className="text-warm-gray text-sm mx-2">|</span>
+          <Link href="/articles/delipicks-otameshi/" className="text-accent hover:text-accent-dark underline font-medium text-sm">DELIPICKS（デリピックス）のお試し・特徴まとめ</Link>
+          <span className="text-warm-gray text-sm mx-2">|</span>
+          <Link href="/articles/nichirei-otameshi/" className="text-accent hover:text-accent-dark underline font-medium text-sm">ニチレイフーズダイレクトのお試しセット</Link>
         </div>
 
         <div className="border-t border-warm-border pt-6 mt-8">

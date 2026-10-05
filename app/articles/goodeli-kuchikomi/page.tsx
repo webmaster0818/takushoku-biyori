@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     "goodeli, グーデリ, グーデリ 料金, グーデリ 送料, グーデリ 解約, goodeli 口コミ, グーデリ ゴーフード 違い, 冷凍宅配弁当",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

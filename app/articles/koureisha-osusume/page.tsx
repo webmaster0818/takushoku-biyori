@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "宅配弁当 高齢者 おすすめ, 高齢者 宅食, シニア 宅配弁当, 高齢者 食事 宅配, やわらか食 宅配弁当, 制限食 宅配, 高齢者 冷凍弁当, 介護食 宅配",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,
@@ -710,6 +711,7 @@ export default function KoureishaOsusumePage() {
             <li><Link href="/articles/shokutakubin-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】食宅便の口コミ・評判を徹底調査</Link></li>
             <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link></li>
             <li><Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark transition-colors">一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5</Link></li>
+            <li><Link href="/articles/takuhai-cook123-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">宅配クック123の料金・配達料・安否確認｜1食から頼める高齢者向け宅配弁当</Link></li>
           </ul>
         </div>
       

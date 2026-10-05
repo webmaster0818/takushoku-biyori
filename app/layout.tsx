@@ -37,6 +37,7 @@ export const metadata: Metadata = {
   },
   description: SITE_DESCRIPTION,
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "website",
     locale: "ja_JP",
     url: SITE_URL,

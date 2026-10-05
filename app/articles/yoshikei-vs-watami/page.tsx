@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "ヨシケイ ワタミ 比較, ヨシケイ vs ワタミ, ヨシケイ 宅配, ワタミの宅食, 宅食 比較, ミールキット 比較, ワタミ ヨシケイ どっち, 宅配弁当 比較",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

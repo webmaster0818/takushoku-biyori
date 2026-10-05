@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "宅配弁当 産後 おすすめ, 産後 宅食, 産褥期 宅配弁当, 産後 食事 宅配, 授乳中 宅配弁当, 産後ママ 宅食, 産後 冷凍弁当, 妊娠中 宅配弁当",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,
@@ -655,6 +656,7 @@ export default function SangoOsusumePage() {
             <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link></li>
             <li><Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark transition-colors">一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5</Link></li>
             <li><Link href="/articles/diet-osusume/" className="text-accent hover:text-accent-dark transition-colors">ダイエット向け宅配弁当おすすめランキングTOP5</Link></li>
+            <li><Link href="/articles/mamano-kyushoku-reviews/" className="text-accent hover:text-accent-dark transition-colors">ママの休食の口コミ・評判は？産後・授乳期向け冷凍宅配を中立検証</Link></li>
           </ul>
         </div>
       

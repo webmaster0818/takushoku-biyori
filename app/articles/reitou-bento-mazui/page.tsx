@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "冷凍弁当 まずい, 冷凍弁当 美味しく食べる, 冷凍弁当 解凍方法, 冷凍弁当 レンジ, 冷凍弁当 おすすめ, 宅配弁当 まずい",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

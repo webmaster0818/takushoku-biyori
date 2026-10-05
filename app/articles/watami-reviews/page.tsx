@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "ワタミの宅食 口コミ, ワタミ 宅食 評判, ワタミの宅食 まずい, ワタミの宅食 料金, ワタミの宅食ダイレクト, まごころおかず, まごころ手鞠",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

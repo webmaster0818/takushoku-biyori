@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "GOFOOD(ゴーフード)の口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年7月最新】";
 const ARTICLE_DESCRIPTION =
-  "GOFOOD(ゴーフード)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。全メニュー糖質20g以下・タンパク質20g以上の低糖質冷凍弁当の料金（10食セット1食税込598円〜）、送料、回数縛りなしの仕組みも解説。最新の販売状況・料金は公式でご確認ください。【2026年7月更新】";
+  "GOFOOD(ゴーフード)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証。全メニュー糖質20g以下・タンパク質20g以上の低糖質冷凍弁当の料金（10食セット1食税込598円〜）、送料、回数縛りなしの仕組みも解説。最新の販売状況・料金は公式で確認を。【2026年7月更新】";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/gofood-kuchikomi/";
 
 export const metadata: Metadata = {
@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "GOFOOD 口コミ, ゴーフード 口コミ, ゴーフード 評判, GOFOOD まずい, ゴーフード まずい, GOFOOD 料金, ゴーフード 送料, 低糖質 宅配弁当, 糖質制限 冷凍弁当",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

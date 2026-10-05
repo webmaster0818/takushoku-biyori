@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "nosh クーポン, ナッシュ クーポン, nosh 割引コード, ナッシュ 初回割引, nosh キャンペーン, nosh 3000円オフ, nosh 友達紹介, nosh club, 宅配弁当 クーポン",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

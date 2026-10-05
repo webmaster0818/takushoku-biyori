@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "nosh 料金, ナッシュ 料金, nosh 送料, ナッシュ 送料, nosh 1食 いくら, nosh club, nosh 継続割引, ナッシュ 値段, 宅配弁当 料金 仕組み",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

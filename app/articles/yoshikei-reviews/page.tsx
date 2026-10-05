@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "ヨシケイ 口コミ, ヨシケイ 評判, ヨシケイ カットミール, ヨシケイ プチママ, ヨシケイ シンプルミール, ヨシケイ 料金, ヨシケイ 送料無料",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,
@@ -308,6 +309,7 @@ export default function YoshikeiReviewsPage() {
             { href: "/articles/watami-reviews/", label: "ワタミの宅食の口コミ・評判" },
             { href: "/articles/souryou-yasui-ranking/", label: "送料が安い宅配弁当ランキング" },
             { href: "/articles/hitorigurashi-osusume/", label: "一人暮らしにおすすめの宅食TOP5" },
+            { href: "/articles/yushoku-net-kuchikomi/", label: "夕食ネット(ヨシケイ)の口コミ・評判" },
           ].map((link) => (
             <div key={link.href}><Link href={link.href} className="text-accent hover:text-accent-dark text-sm transition-colors">→ {link.label}</Link></div>
           ))}

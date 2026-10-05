@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "わんまいる 口コミ, わんまいる 評判, わんまいる まずい, わんまいる 料金, わんまいる 健幸ディナー, 国産食材 宅配, 湯煎 冷凍弁当",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

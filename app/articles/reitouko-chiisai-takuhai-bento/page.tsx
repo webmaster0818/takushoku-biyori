@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "冷凍宅配弁当 冷凍庫 小さい, 宅食 一人暮らし 冷凍庫, 冷凍庫 容量 弁当, 冷凍弁当 サイズ, 宅配弁当 6食 おすすめ, 冷凍庫 入らない 宅食",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

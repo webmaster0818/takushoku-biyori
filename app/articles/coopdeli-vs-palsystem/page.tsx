@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "コープデリ パルシステム 比較, コープデリ パルシステム 違い, 生協 宅配 比較, コープデリ 手数料, パルシステム 手数料, 生協 どっち",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

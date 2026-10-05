@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "宅配弁当 置き配, 冷凍弁当 置き配, 宅食 置き配 対応, クール便 置き配, 宅配ボックス 冷凍, nosh 置き配, 三ツ星ファーム 置き配, 不在 宅配弁当",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

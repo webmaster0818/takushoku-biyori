@@ -4,6 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "記事制作ポリシー",
   description: "宅食びよりの記事制作ポリシーです。記事の制作方針や品質管理についてご案内します。",
+  alternates: { canonical: "https://takushoku-biyori.com/content-policy/" },
 };
 
 export default function ContentPolicyPage() {

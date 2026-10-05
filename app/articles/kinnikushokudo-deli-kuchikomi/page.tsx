@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "筋肉食堂DELI 口コミ, 筋肉食堂DELI 評判, 筋肉食堂DELI まずい, 筋肉食堂DELI 料金, 筋肉食堂 宅配, 高たんぱく 宅配弁当, 筋トレ 宅配食, ボディメイク 冷凍弁当",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,
@@ -865,6 +866,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
                 冷凍庫が小さくても使える宅配弁当
               </Link>
             </li>
+            <li><Link href="/articles/delipicks-otameshi/" className="text-accent hover:text-accent-dark transition-colors">DELIPICKS（デリピックス）のお試し・特徴まとめ</Link></li>
           </ul>
         </div>
               {/* eeat-links-202607 */}

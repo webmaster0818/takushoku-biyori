@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   description: PAGE_DESC,
   alternates: { canonical: PAGE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: PAGE_TITLE,
     description: PAGE_DESC,

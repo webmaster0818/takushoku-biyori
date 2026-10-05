@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "宅配弁当 コンビニ弁当 比較, 宅配弁当 コンビニ どっち, 冷凍弁当 コンビニ 比較, 宅食 コンビニ 栄養, 宅配弁当 コスパ",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,
@@ -407,6 +408,7 @@ export default function TakuhaiVsConveniPage() {
             { href: "/articles/hitorigurashi-osusume/", label: "一人暮らしにおすすめの宅食TOP5" },
             { href: "/articles/diet-osusume/", label: "ダイエット向け宅配弁当おすすめランキング" },
             { href: "/articles/souryou-yasui-ranking/", label: "送料が安い宅配弁当ランキング" },
+            { href: "/articles/super-vs-takuhai-reitou-bento/", label: "スーパーの冷凍弁当 vs 宅配冷凍弁当の比較" },
           ].map((link) => (
             <div key={link.href}>
               <Link href={link.href} className="text-accent hover:text-accent-dark text-sm transition-colors">→ {link.label}</Link>

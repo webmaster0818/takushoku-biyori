@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "まごころケア食 口コミ, まごころケア食 評判, まごころケア食 まずい, まごころケア食 料金, まごころケア食 送料, 宅配弁当 安い, 宅配弁当 口コミ",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

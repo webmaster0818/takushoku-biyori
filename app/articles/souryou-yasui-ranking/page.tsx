@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "宅配弁当 送料 安い, 宅食 送料無料, 宅配弁当 送料 比較, 冷凍弁当 送料, 宅食 送料込み 安い, 宅配弁当 コスパ",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

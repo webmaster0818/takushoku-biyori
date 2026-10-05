@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "タイヘイ ファミリーセット 口コミ, タイヘイ 宅配弁当 評判, タイヘイ ファミリーセット まずい, ヘルシー御膳 口コミ, タイヘイ 料金, タイヘイ 送料, 制限食 宅配, 宅配弁当 口コミ",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

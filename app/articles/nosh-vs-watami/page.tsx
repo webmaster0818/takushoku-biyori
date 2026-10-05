@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "nosh ワタミ 比較, ナッシュ ワタミ, nosh vs ワタミの宅食, ナッシュ ワタミ どっち, nosh 低糖質, ワタミの宅食, 冷凍弁当 比較, 宅配弁当 比較",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

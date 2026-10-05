@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "ママの休食 口コミ, ママの休食 評判, ママの休食 産後, ママの休食 授乳期, 産後 宅配弁当, 授乳中 宅配, 妊娠中 宅配弁当, 産前産後 冷凍 宅配, 産後 食事",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

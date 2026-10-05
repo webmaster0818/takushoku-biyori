@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "マッスルデリ 口コミ, マッスルデリ 評判, Muscle Deli 口コミ, マッスルデリ 料金, マッスルデリ プラン, 高タンパク 宅配弁当, 筋トレ 弁当, ダイエット 宅配, 高タンパク 冷凍弁当",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

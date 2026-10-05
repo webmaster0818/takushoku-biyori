@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "ワタミの宅食ダイレクト 口コミ, ワタミの宅食ダイレクト 評判, ワタミの宅食ダイレクト まずい, ワタミの宅食ダイレクト 料金, ワタミの宅食ダイレクト 送料, いつでも三菜, いつでも五菜, 冷凍弁当 口コミ",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

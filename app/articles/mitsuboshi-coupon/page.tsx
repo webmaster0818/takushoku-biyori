@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "三ツ星ファーム クーポン, 三ツ星ファーム キャンペーン, 三ツ星ファーム 初回割引, 三ツ星ファーム 割引, 三ツ星ファーム お得, ミツボシファーム クーポン, 三ツ星ファーム 初回",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "オイシックス nosh 比較, oisix ナッシュ 違い, ミールキット 冷凍弁当 比較, オイシックス 料金, nosh 料金, 一人暮らし 宅食 比較, 共働き 宅食",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "宅配弁当 ダイエット おすすめ, ダイエット 宅食, 低糖質 宅配弁当, ダイエット弁当 宅配, 低カロリー 宅配弁当, 糖質制限 弁当 宅配, 冷凍弁当 ダイエット, 宅配弁当 痩せる",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,
@@ -906,6 +907,7 @@ export default function DietOsusumePage() {
                 一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5
               </Link>
             </li>
+            <li><Link href="/articles/dietician-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">ダイエティシャン(Dietician)の口コミ・評判と販売終了後の代替サービス</Link></li>
           </ul>
         </div>
       

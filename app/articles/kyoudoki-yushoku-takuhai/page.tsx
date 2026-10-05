@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "共働き 夕食 宅配弁当, 共働き 平日 夕食, 宅配弁当 時短, 共働き 作り置き 不要, 冷凍 宅配弁当 ストック, 置き配 宅配弁当, 子ども 宅配弁当, 宅食 共働き",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

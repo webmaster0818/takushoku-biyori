@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "ライフミール 口コミ, ライフミール 評判, ライフミール まずい, ライフミール 料金, LifeMeal 冷凍弁当, 宅配弁当 安い, 宅配弁当 口コミ",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

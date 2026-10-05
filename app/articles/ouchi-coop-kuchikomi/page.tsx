@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "おうちコープ 夕食宅配 口コミ, マイシィ 口コミ, マイシィ 評判, おうちコープ 弁当 まずい, おうちコープ 夕食宅配 料金, 生協 夕食宅配 神奈川, ユーコープ マイシィ",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

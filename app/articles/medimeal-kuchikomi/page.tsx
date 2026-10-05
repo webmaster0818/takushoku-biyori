@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "メディミール 口コミ, メディミール 評判, メディミール まずい, メディミール 料金, メディミール 制限食, 制限食 宅配弁当, カロリー制限食 宅配, たんぱく質制限 宅配弁当",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,
@@ -898,6 +899,7 @@ export default function MedimealKuchikomiPage() {
                 冷凍弁当の栄養バランスの考え方
               </Link>
             </li>
+            <li><Link href="/articles/mealtime-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">ミールタイムの料金・送料・管理栄養士の無料相談｜腎臓病食と糖尿病食の宅配</Link></li>
           </ul>
         </div>
               {/* eeat-links-202607 */}

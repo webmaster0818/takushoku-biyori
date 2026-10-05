@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "夕食ネット 口コミ, 夕食ネット 評判, 夕食ネット まずい, シンプルミール 口コミ, シンプルミール まずい, 夕食ネット 料金, 夕食ネット エリア, ヨシケイ 夕食ネット, 夕食.net",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

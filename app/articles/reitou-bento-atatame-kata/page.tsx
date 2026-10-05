@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "冷凍弁当 温め方, 冷凍弁当 解凍, 冷凍弁当 レンジ ワット数, 冷凍弁当 加熱時間, 冷凍弁当 美味しく食べる, nosh 温め方, 三ツ星ファーム 温め方",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

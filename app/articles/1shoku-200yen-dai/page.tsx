@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "宅配弁当 200円台, 安い 宅配弁当, 宅配弁当 激安, 冷凍弁当 安い, 宅配弁当 1食いくら, 宅配弁当 最安, 宅食 安い, 宅配弁当 実質単価",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

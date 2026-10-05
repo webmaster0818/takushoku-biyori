@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "冷凍 宅配弁当 栄養, 冷凍弁当 添加物, 宅配弁当 栄養バランス, 冷凍 栄養 落ちる, 栄養成分表示 見方, PFCバランス, 宅配弁当 塩分, 冷凍弁当 健康",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

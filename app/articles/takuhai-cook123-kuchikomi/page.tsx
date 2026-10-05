@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     "宅配クック123, 宅配クック123 料金, 宅配クック123 口コミ, 宅配クック123 評判, 宅配クック123 配達料, 高齢者 宅配弁当, 安否確認 弁当, 透析食 宅配",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

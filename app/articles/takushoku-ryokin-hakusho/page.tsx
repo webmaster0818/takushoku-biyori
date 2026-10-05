@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     "宅食 料金 比較, 宅配弁当 料金 一覧, 宅配弁当 送料 比較, 宅食 1食あたり 値段, 宅配弁当 実質単価, 宅食 白書, 宅配弁当 解約金, 宅配弁当 定期縛り",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

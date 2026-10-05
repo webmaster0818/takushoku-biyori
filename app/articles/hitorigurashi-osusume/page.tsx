@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "宅食 一人暮らし おすすめ, 宅配弁当 一人暮らし, 宅食 一人暮らし ランキング, 宅配弁当 コスパ, 宅食 安い, 一人暮らし 食事, 冷凍弁当 おすすめ, 宅配弁当 ダイエット",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,
@@ -956,6 +957,8 @@ export default function HitorigurashiOsusumePage() {
                 【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング
               </Link>
             </li>
+            <li><Link href="/articles/okihai-taiou-takuhai-bento/" className="text-accent hover:text-accent-dark transition-colors">置き配対応の冷凍宅配弁当｜不在時受け取りの方法と各社対応一覧</Link></li>
+            <li><Link href="/articles/reitouko-chiisai-takuhai-bento/" className="text-accent hover:text-accent-dark transition-colors">冷凍庫が小さい家庭でも続けられる冷凍宅配弁当の選び方</Link></li>
           </ul>
         </div>
       

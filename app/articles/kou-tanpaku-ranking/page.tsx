@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "高タンパク 宅配弁当, 高タンパク質 冷凍弁当, 筋トレ 宅配, ボディメイク 宅配弁当, タンパク質 多い 弁当, ダイエット 高タンパク, プロテイン 弁当, マッスルデリ ランキング, ナッシュ タンパク質",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

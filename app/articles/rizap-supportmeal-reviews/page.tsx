@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "ライザップ サポートミール 口コミ, RIZAP サポートミール 評判, サポートミール 料金, ライザップ 弁当, 低糖質 宅配, RIZAP 低糖質 食事, サポートミール 解約, ダイエット 宅配弁当",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,

@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "シェフの無添つくりおき 口コミ, シェフの無添つくりおき 評判, シェフの無添つくりおき まずい, シェフの無添つくりおき 料金, 無添加 つくりおき 宅配, 宅配惣菜 口コミ",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "article",
     title: ARTICLE_TITLE,
     description: ARTICLE_DESCRIPTION,
@@ -429,6 +430,7 @@ export default function ChefMutenkaTsukuriokiKuchikomiPage() {
             <li><Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】nosh(ナッシュ)の口コミ・評判を徹底調査</Link></li>
             <li><Link href="/articles/mealkit-vs-reitou-bento/" className="text-accent hover:text-accent-dark transition-colors">ミールキット vs 冷凍弁当 どっちを選ぶ？</Link></li>
             <li><Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark transition-colors">【2026年】一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5</Link></li>
+            <li><Link href="/articles/fitfoodhome-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">FIT FOOD HOME(フィットフードホーム)の口コミ・評判は？まずいって本当？</Link></li>
           </ul>
         </div>
               {/* eeat-links-202607 */}
