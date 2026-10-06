@@ -1113,8 +1113,8 @@ export default function ArticlePage() {
                 【2026年最新】一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5
               </Link>
             </li>
-            <li className="text-warm-gray">ウェルネスダイニング 口コミ・評判まとめ（準備中）</li>
-            <li className="text-warm-gray">高齢者向け宅配弁当おすすめ10選（準備中）</li>
+            <li><Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark transition-colors">ウェルネスダイニングの口コミ・評判は？まずいって本当？制限食宅配を中立検証</Link></li>
+            <li><Link href="/articles/koureisha-osusume/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】高齢者向け宅配弁当おすすめランキングTOP5｜やわらか食・制限食も徹底比較</Link></li>
             <li><Link href="/articles/mitsuboshi-coupon/" className="text-accent hover:text-accent-dark transition-colors">三ツ星ファームのクーポン・キャンペーン｜初回割引の探し方と注意点</Link></li>
             <li><Link href="/articles/nosh-ryoukin-souryou/" className="text-accent hover:text-accent-dark transition-colors">nosh（ナッシュ）の料金・送料の仕組みをわかりやすく解説</Link></li>
           </ul>
