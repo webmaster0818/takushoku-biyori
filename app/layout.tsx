@@ -114,11 +114,24 @@ function Header() {
             </Link>
           </li>
           <li>
+            <Link href="/articles/" className="hover:text-accent transition-colors">
+              記事一覧
+            </Link>
+          </li>
+          <li>
             <Link
-              href="/articles/nosh-vs-mitsuboshi-vs-wellness/"
+              href="/articles/#hikaku"
               className="hover:text-accent transition-colors"
             >
               比較記事
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/articles/#kuchikomi"
+              className="hover:text-accent transition-colors"
+            >
+              口コミ・評判
             </Link>
           </li>
         </ul>
@@ -148,10 +161,22 @@ function Header() {
               ホーム
             </Link>
             <Link
-              href="/articles/nosh-vs-mitsuboshi-vs-wellness/"
+              href="/articles/"
+              className="block px-4 py-2 text-sm hover:bg-cream transition-colors"
+            >
+              記事一覧
+            </Link>
+            <Link
+              href="/articles/#hikaku"
               className="block px-4 py-2 text-sm hover:bg-cream transition-colors"
             >
               比較記事
+            </Link>
+            <Link
+              href="/articles/#kuchikomi"
+              className="block px-4 py-2 text-sm hover:bg-cream transition-colors"
+            >
+              口コミ・評判
             </Link>
           </div>
         </details>
@@ -181,8 +206,23 @@ function Footer() {
             <p className="font-bold text-sm mb-3">カテゴリ</p>
             <ul className="space-y-2 text-sm text-white/70">
               <li>
-                <Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="hover:text-white transition-colors">
+                <Link href="/articles/" className="hover:text-white transition-colors">
+                  記事一覧
+                </Link>
+              </li>
+              <li>
+                <Link href="/articles/#hikaku" className="hover:text-white transition-colors">
                   宅食比較
+                </Link>
+              </li>
+              <li>
+                <Link href="/articles/#kuchikomi" className="hover:text-white transition-colors">
+                  口コミ・評判
+                </Link>
+              </li>
+              <li>
+                <Link href="/articles/#mokuteki" className="hover:text-white transition-colors">
+                  目的別ガイド
                 </Link>
               </li>
             </ul>

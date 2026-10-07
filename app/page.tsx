@@ -11,7 +11,7 @@ const categories = [
     title: "宅食比較",
     description: "人気サービスを価格・味・栄養で徹底比較",
     image: "/images/category-compare.png",
-    href: "/articles/nosh-vs-mitsuboshi-vs-wellness/",
+    href: "/articles/#hikaku",
   },
   {
     title: "目的別ガイド",
@@ -29,7 +29,7 @@ const categories = [
     title: "口コミ・評判",
     description: "実際のユーザーのリアルな声を集約",
     image: "/images/category-review.png",
-    href: "/articles/nosh-vs-mitsuboshi-vs-wellness/",
+    href: "/articles/#kuchikomi",
   },
 ];
 

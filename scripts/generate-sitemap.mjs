@@ -16,6 +16,7 @@ const TODAY = new Date().toISOString().slice(0, 10)
 
 const STATIC_PAGES = [
   { path: '/', priority: '1.0', changefreq: 'daily' },
+  { path: '/articles/', priority: '0.8', changefreq: 'weekly' },
   { path: '/privacy-policy/', priority: '0.3', changefreq: 'monthly' },
   { path: '/terms-of-service/', priority: '0.3', changefreq: 'monthly' },
   { path: '/content-policy/', priority: '0.3', changefreq: 'monthly' },
