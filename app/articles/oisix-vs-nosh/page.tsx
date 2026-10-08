@@ -59,7 +59,7 @@ function Breadcrumbs() {
       <ol className="flex flex-wrap items-center gap-1">
         <li><Link href="/" className="hover:text-accent transition-colors">ホーム</Link></li>
         <li className="breadcrumb-sep" />
-        <li><span className="text-foreground/70">サービス比較</span></li>
+        <li><Link href="/articles/#hikaku" className="text-foreground/70 hover:text-accent transition-colors">比較・料金データ</Link></li>
         <li className="breadcrumb-sep" />
         <li><span className="text-foreground">オイシックス vs nosh(ナッシュ)</span></li>
       </ol>
@@ -178,7 +178,7 @@ export default function OisixVsNoshPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "ホーム", item: "https://takushoku-biyori.com/" },
-      { "@type": "ListItem", position: 2, name: "サービス比較" },
+      { "@type": "ListItem", position: 2, name: "比較・料金データ" },
       { "@type": "ListItem", position: 3, name: "オイシックス vs nosh(ナッシュ)" },
     ],
   };

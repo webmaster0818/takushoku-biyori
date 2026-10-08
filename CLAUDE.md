@@ -68,3 +68,11 @@ GSC診断(28d 6/3-7/1): クリック2・表示738(前月391→1.9倍)・平均20
   nosh-coupon 33% / medimeal 45% / watami-direct 47% / dietician 47% / fitfoodhome 47% /
   lifemeal 48% / reitou-bento-mazui 48% / coopdeli 48% / wanmairu 50% / chef-mutenka 52%
 - 計測方法: 記事本文からタグを除き、ポジ語/ネガ語の出現数で比率を出す（このログのスクリプト参照）。
+
+### 2026-10-08 記事側カテゴリ名の統一（P4・前日の記事一覧新設の続き）✅本番反映済み
+- 実測: パンくずのカテゴリ文字列は **20種**（口コミ・評判27 / 目的別ガイド5 / 比較4 / 比較記事3 / ランキング2 / 使い方ガイド2 / 選び方・サービス紹介・使い方・運用・クーポン・割引・お試しセット・クーポン・キャンペーン・nosh（ナッシュ）・サービス比較・おすすめ・知識・コラム・ハウツー・選び方ガイド・比較・データ・サービスガイド 各1）＋カテゴリ無し3本（goodeli/mealtime/takuhai-cook123＝nav が `aria-label` 無しの別マークアップ）
+- **全60記事を `/articles/` の5グループ名に統一**（`/tmp/takushoku-cat-unify.py` で機械置換・パンくずnav／BreadcrumbList JSON-LD（\uXXXX文字列形式と object literal 形式の2種）／ヘッダーバッジ の3か所）。パンくずのカテゴリは `/articles/#<group id>` へのリンク化。カテゴリ無し3本は内容（公式情報整理＝サービス紹介）から「選び方・使い方・サービス紹介」
+- 判断: `delipicks-otameshi`(サービス紹介) `watami-direct-otameshi`(サービスガイド) は前日は受け皿グループに落ちていたが、お試しセット記事なので「クーポン・お試しセット」へ。`takushoku-ryokin-hakusho` のバッジ「独自調査データ」→「比較・料金データ」
+- `lib/articles.ts`: 束ね用 `categories[]` を廃止し **label 完全一致でなければ build を落とす**＋パンくず href の `#id` とカテゴリの不一致も落とす（再発防止）
+- TOP「目的別ガイド」カード → `/articles/#mokuteki`。「栄養食」カードは対応グループが無いので `toushitsu-seigen-osusume` のまま
+- ⚠️ BreadcrumbList の `\uXXXX` 文字列形式は「json.dumps(ensure_ascii) の `"` だけを `\"` にしたもの」（バックスラッシュは二重化しない）。再生成時に注意

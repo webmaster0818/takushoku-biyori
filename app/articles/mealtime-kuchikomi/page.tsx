@@ -102,7 +102,8 @@ const jsonLd = {
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "ホーム", item: "https://takushoku-biyori.com/" },
-        { "@type": "ListItem", position: 2, name: "ミールタイムの料金と栄養相談", item: ARTICLE_URL },
+        { "@type": "ListItem", position: 2, name: "選び方・使い方・サービス紹介" },
+        { "@type": "ListItem", position: 3, name: "ミールタイムの料金と栄養相談", item: ARTICLE_URL },
       ],
     },
   ],
@@ -114,8 +115,14 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <article className="mx-auto max-w-3xl px-5 py-10">
-        <nav className="text-xs text-gray-500">
-          <Link href="/" className="hover:underline">ホーム</Link>
+        <nav aria-label="パンくずリスト" className="text-xs text-gray-500">
+          <ol className="flex flex-wrap items-center gap-1">
+            <li><Link href="/" className="hover:underline">ホーム</Link></li>
+            <li className="breadcrumb-sep" />
+            <li><Link href="/articles/#guide" className="text-foreground/70 hover:underline">選び方・使い方・サービス紹介</Link></li>
+            <li className="breadcrumb-sep" />
+            <li><span className="text-foreground">ミールタイムの料金と栄養相談</span></li>
+          </ol>
         </nav>
 
         <h1 className="mt-4 text-2xl md:text-3xl font-bold leading-relaxed">

@@ -68,7 +68,7 @@ function Breadcrumbs() {
         </li>
         <li className="breadcrumb-sep" />
         <li>
-          <span className="text-foreground/70">お試しセット</span>
+          <Link href="/articles/#otoku" className="text-foreground/70 hover:text-accent transition-colors">クーポン・お試しセット</Link>
         </li>
         <li className="breadcrumb-sep" />
         <li>
@@ -237,7 +237,7 @@ export default function NichireiOtameshiPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "ホーム", item: "https://takushoku-biyori.com/" },
-      { "@type": "ListItem", position: 2, name: "お試しセット" },
+      { "@type": "ListItem", position: 2, name: "クーポン・お試しセット" },
       { "@type": "ListItem", position: 3, name: "ニチレイフーズダイレクト お試しセット" },
     ],
   };

@@ -69,7 +69,7 @@ function Breadcrumbs() {
         </li>
         <li className="breadcrumb-sep" />
         <li>
-          <span className="text-foreground/70">nosh（ナッシュ）</span>
+          <Link href="/articles/#guide" className="text-foreground/70 hover:text-accent transition-colors">選び方・使い方・サービス紹介</Link>
         </li>
         <li className="breadcrumb-sep" />
         <li>
@@ -238,7 +238,7 @@ export default function NoshRyoukinSouryouPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "ホーム", item: "https://takushoku-biyori.com/" },
-      { "@type": "ListItem", position: 2, name: "nosh（ナッシュ）" },
+      { "@type": "ListItem", position: 2, name: "選び方・使い方・サービス紹介" },
       { "@type": "ListItem", position: 3, name: "料金・送料の仕組み" },
     ],
   };

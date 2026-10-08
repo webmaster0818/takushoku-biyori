@@ -68,7 +68,7 @@ function Breadcrumbs() {
         </li>
         <li className="breadcrumb-sep" />
         <li>
-          <span className="text-foreground/70">比較</span>
+          <Link href="/articles/#hikaku" className="text-foreground/70 hover:text-accent transition-colors">比較・料金データ</Link>
         </li>
         <li className="breadcrumb-sep" />
         <li>
@@ -237,7 +237,7 @@ export default function NoshVsWatamiPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "ホーム", item: "https://takushoku-biyori.com/" },
-      { "@type": "ListItem", position: 2, name: "比較" },
+      { "@type": "ListItem", position: 2, name: "比較・料金データ" },
       { "@type": "ListItem", position: 3, name: "nosh vs ワタミの宅食" },
     ],
   };

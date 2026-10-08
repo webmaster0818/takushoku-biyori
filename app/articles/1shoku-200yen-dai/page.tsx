@@ -68,7 +68,7 @@ function Breadcrumbs() {
         </li>
         <li className="breadcrumb-sep" />
         <li>
-          <span className="text-foreground/70">選び方</span>
+          <Link href="/articles/#guide" className="text-foreground/70 hover:text-accent transition-colors">選び方・使い方・サービス紹介</Link>
         </li>
         <li className="breadcrumb-sep" />
         <li>
@@ -236,7 +236,7 @@ export default function Shoku200YenDaiPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "ホーム", item: "https://takushoku-biyori.com/" },
-      { "@type": "ListItem", position: 2, name: "選び方" },
+      { "@type": "ListItem", position: 2, name: "選び方・使い方・サービス紹介" },
       { "@type": "ListItem", position: 3, name: "1食200円台で買える安い宅配弁当" },
     ],
   };

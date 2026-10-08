@@ -65,7 +65,7 @@ function Breadcrumbs() {
       <ol className="flex flex-wrap items-center gap-1">
         <li><Link href="/" className="hover:text-accent transition-colors">ホーム</Link></li>
         <li className="breadcrumb-sep" />
-        <li><span className="text-foreground/70">目的別ガイド</span></li>
+        <li><Link href="/articles/#mokuteki" className="text-foreground/70 hover:text-accent transition-colors">目的別ガイド・ランキング</Link></li>
         <li className="breadcrumb-sep" />
         <li><span className="text-foreground">産後向け宅配弁当おすすめ</span></li>
       </ol>
@@ -214,7 +214,7 @@ export default function SangoOsusumePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"\u30db\u30fc\u30e0\", \"item\": \"https://takushoku-biyori.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"\u76ee\u7684\u5225\u30ac\u30a4\u30c9\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"\u7523\u5f8c\u5411\u3051\u5b85\u914d\u5f01\u5f53\u304a\u3059\u3059\u3081\"}]}" }}
+        dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"\u30db\u30fc\u30e0\", \"item\": \"https://takushoku-biyori.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"\u76ee\u7684\u5225\u30ac\u30a4\u30c9\u30fb\u30e9\u30f3\u30ad\u30f3\u30b0\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"\u7523\u5f8c\u5411\u3051\u5b85\u914d\u5f01\u5f53\u304a\u3059\u3059\u3081\"}]}" }}
       />
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
@@ -223,7 +223,7 @@ export default function SangoOsusumePage() {
         <Breadcrumbs />
 
         <header className="mb-8">
-          <div className="flex items-center gap-3 mb-4"><span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">目的別ガイド</span><span className="text-[10px] text-gray-400">PR掲載も含みます</span></div>
+          <div className="flex items-center gap-3 mb-4"><span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">目的別ガイド・ランキング</span><span className="text-[10px] text-gray-400">PR掲載も含みます</span></div>
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-04-16">公開: 2026年4月16日</time>

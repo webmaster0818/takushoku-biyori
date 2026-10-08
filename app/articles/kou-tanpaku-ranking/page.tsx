@@ -59,7 +59,7 @@ function Breadcrumbs() {
       <ol className="flex flex-wrap items-center gap-1">
         <li><Link href="/" className="hover:text-accent transition-colors">ホーム</Link></li>
         <li className="breadcrumb-sep" />
-        <li><span className="text-foreground/70">ランキング</span></li>
+        <li><Link href="/articles/#mokuteki" className="text-foreground/70 hover:text-accent transition-colors">目的別ガイド・ランキング</Link></li>
         <li className="breadcrumb-sep" />
         <li><span className="text-foreground">高タンパク質 冷凍宅配弁当ランキング</span></li>
       </ol>
@@ -277,7 +277,7 @@ export default function KouTanpakuRankingPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "ホーム", item: "https://takushoku-biyori.com/" },
-      { "@type": "ListItem", position: 2, name: "ランキング" },
+      { "@type": "ListItem", position: 2, name: "目的別ガイド・ランキング" },
       { "@type": "ListItem", position: 3, name: "高タンパク質 冷凍宅配弁当ランキング" },
     ],
   };

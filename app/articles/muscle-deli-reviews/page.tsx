@@ -64,7 +64,7 @@ function Breadcrumbs() {
         </li>
         <li className="breadcrumb-sep" />
         <li>
-          <span className="text-foreground/70">口コミ・評判</span>
+          <Link href="/articles/#kuchikomi" className="text-foreground/70 hover:text-accent transition-colors">口コミ・評判</Link>
         </li>
         <li className="breadcrumb-sep" />
         <li>

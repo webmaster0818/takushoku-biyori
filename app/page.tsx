@@ -17,7 +17,7 @@ const categories = [
     title: "目的別ガイド",
     description: "ダイエット・高齢者・産後など目的に合った選び方",
     image: "/images/category-guide.png",
-    href: "/articles/diet-osusume/",
+    href: "/articles/#mokuteki",
   },
   {
     title: "栄養食",

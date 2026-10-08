@@ -65,7 +65,7 @@ function Breadcrumbs() {
         </li>
         <li className="breadcrumb-sep" />
         <li>
-          <span className="text-foreground/70">使い方ガイド</span>
+          <Link href="/articles/#guide" className="text-foreground/70 hover:text-accent transition-colors">選び方・使い方・サービス紹介</Link>
         </li>
         <li className="breadcrumb-sep" />
         <li>
@@ -217,7 +217,7 @@ export default function ReitouBentoAtatameKataPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "ホーム", item: "https://takushoku-biyori.com/" },
-      { "@type": "ListItem", position: 2, name: "使い方ガイド" },
+      { "@type": "ListItem", position: 2, name: "選び方・使い方・サービス紹介" },
       { "@type": "ListItem", position: 3, name: "冷凍弁当の温め方" },
     ],
   };

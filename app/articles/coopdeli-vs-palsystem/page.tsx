@@ -65,7 +65,7 @@ function Breadcrumbs() {
         </li>
         <li className="breadcrumb-sep" />
         <li>
-          <span className="text-foreground/70">比較記事</span>
+          <Link href="/articles/#hikaku" className="text-foreground/70 hover:text-accent transition-colors">比較・料金データ</Link>
         </li>
         <li className="breadcrumb-sep" />
         <li>
@@ -230,7 +230,7 @@ export default function CoopdeliVsPalsystemPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"\u30db\u30fc\u30e0\", \"item\": \"https://takushoku-biyori.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"\u6bd4\u8f03\u8a18\u4e8b\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"\u30b3\u30fc\u30d7\u30c7\u30ea vs \u30d1\u30eb\u30b7\u30b9\u30c6\u30e0 \u6bd4\u8f03\"}]}" }}
+        dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"\u30db\u30fc\u30e0\", \"item\": \"https://takushoku-biyori.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"\u6bd4\u8f03\u30fb\u6599\u91d1\u30c7\u30fc\u30bf\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"\u30b3\u30fc\u30d7\u30c7\u30ea vs \u30d1\u30eb\u30b7\u30b9\u30c6\u30e0 \u6bd4\u8f03\"}]}" }}
       />
       
 
@@ -239,7 +239,7 @@ export default function CoopdeliVsPalsystemPage() {
 
         <header className="mb-8">
           <div className="flex items-center gap-3 mb-4"><span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">
-            比較記事
+            比較・料金データ
           </span><span className="text-[10px] text-gray-400">PR掲載も含みます</span></div>
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">
             {ARTICLE_TITLE}

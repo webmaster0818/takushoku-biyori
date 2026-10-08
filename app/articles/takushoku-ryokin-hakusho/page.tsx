@@ -280,7 +280,7 @@ function Breadcrumbs() {
       <ol className="flex flex-wrap items-center gap-1">
         <li><Link href="/" className="hover:text-accent transition-colors">ホーム</Link></li>
         <li className="breadcrumb-sep" />
-        <li><span className="text-foreground/70">比較・データ</span></li>
+        <li><Link href="/articles/#hikaku" className="text-foreground/70 hover:text-accent transition-colors">比較・料金データ</Link></li>
         <li className="breadcrumb-sep" />
         <li><span className="text-foreground">宅食料金白書2026</span></li>
       </ol>
@@ -371,7 +371,7 @@ export default function TakushokuRyokinHakushoPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "ホーム", item: "https://takushoku-biyori.com/" },
-      { "@type": "ListItem", position: 2, name: "比較・データ" },
+      { "@type": "ListItem", position: 2, name: "比較・料金データ" },
       { "@type": "ListItem", position: 3, name: "宅食料金白書2026" },
     ],
   };
@@ -389,7 +389,7 @@ export default function TakushokuRyokinHakushoPage() {
         <Breadcrumbs />
 
         <header className="mb-8">
-          <div className="flex items-center gap-3 mb-4"><span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">独自調査データ</span><span className="text-[10px] text-gray-400">PR掲載も含みます</span></div>
+          <div className="flex items-center gap-3 mb-4"><span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">比較・料金データ</span><span className="text-[10px] text-gray-400">PR掲載も含みます</span></div>
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>

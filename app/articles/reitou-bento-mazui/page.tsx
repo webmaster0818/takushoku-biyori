@@ -60,7 +60,7 @@ function Breadcrumbs() {
       <ol className="flex flex-wrap items-center gap-1">
         <li><Link href="/" className="hover:text-accent transition-colors">ホーム</Link></li>
         <li className="breadcrumb-sep" />
-        <li><span className="text-foreground/70">ハウツー</span></li>
+        <li><Link href="/articles/#guide" className="text-foreground/70 hover:text-accent transition-colors">選び方・使い方・サービス紹介</Link></li>
         <li className="breadcrumb-sep" />
         <li><span className="text-foreground">冷凍弁当 まずい？美味しく食べるコツ</span></li>
       </ol>
@@ -167,7 +167,7 @@ export default function ReitouBentoMazuiPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"\u30db\u30fc\u30e0\", \"item\": \"https://takushoku-biyori.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"\u30cf\u30a6\u30c4\u30fc\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"\u51b7\u51cd\u5f01\u5f53 \u307e\u305a\u3044\uff1f\u7f8e\u5473\u3057\u304f\u98df\u3079\u308b\u30b3\u30c4\"}]}" }}
+        dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"\u30db\u30fc\u30e0\", \"item\": \"https://takushoku-biyori.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"\u9078\u3073\u65b9\u30fb\u4f7f\u3044\u65b9\u30fb\u30b5\u30fc\u30d3\u30b9\u7d39\u4ecb\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"\u51b7\u51cd\u5f01\u5f53 \u307e\u305a\u3044\uff1f\u7f8e\u5473\u3057\u304f\u98df\u3079\u308b\u30b3\u30c4\"}]}" }}
       />
       
 
@@ -175,7 +175,7 @@ export default function ReitouBentoMazuiPage() {
         <Breadcrumbs />
 
         <header className="mb-8">
-          <div className="flex items-center gap-3 mb-4"><span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">ハウツー</span><span className="text-[10px] text-gray-400">PR掲載も含みます</span></div>
+          <div className="flex items-center gap-3 mb-4"><span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">選び方・使い方・サービス紹介</span><span className="text-[10px] text-gray-400">PR掲載も含みます</span></div>
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-04-21">公開: 2026年4月21日</time>

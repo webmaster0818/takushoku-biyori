@@ -59,7 +59,7 @@ function Breadcrumbs() {
       <ol className="flex flex-wrap items-center gap-1">
         <li><Link href="/" className="hover:text-accent transition-colors">ホーム</Link></li>
         <li className="breadcrumb-sep" />
-        <li><span className="text-foreground/70">口コミ・評判</span></li>
+        <li><Link href="/articles/#kuchikomi" className="text-foreground/70 hover:text-accent transition-colors">口コミ・評判</Link></li>
         <li className="breadcrumb-sep" />
         <li><span className="text-foreground">ライザップ サポートミールの口コミ・評判</span></li>
       </ol>

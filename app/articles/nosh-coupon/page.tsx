@@ -68,7 +68,7 @@ function Breadcrumbs() {
         </li>
         <li className="breadcrumb-sep" />
         <li>
-          <span className="text-foreground/70">クーポン・キャンペーン</span>
+          <Link href="/articles/#otoku" className="text-foreground/70 hover:text-accent transition-colors">クーポン・お試しセット</Link>
         </li>
         <li className="breadcrumb-sep" />
         <li>
@@ -246,7 +246,7 @@ export default function NoshCouponPage() {
       {
         "@type": "ListItem",
         position: 2,
-        name: "クーポン・キャンペーン",
+        name: "クーポン・お試しセット",
       },
       {
         "@type": "ListItem",

@@ -59,7 +59,7 @@ function Breadcrumbs() {
       <ol className="flex flex-wrap items-center gap-1">
         <li><Link href="/" className="hover:text-accent transition-colors">ホーム</Link></li>
         <li className="breadcrumb-sep" />
-        <li><span className="text-foreground/70">サービスガイド</span></li>
+        <li><Link href="/articles/#otoku" className="text-foreground/70 hover:text-accent transition-colors">クーポン・お試しセット</Link></li>
         <li className="breadcrumb-sep" />
         <li><span className="text-foreground">ワタミの宅食ダイレクト お試しセット完全ガイド</span></li>
       </ol>
@@ -189,7 +189,7 @@ export default function WatamiDirectOtameshiPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "ホーム", item: "https://takushoku-biyori.com/" },
-      { "@type": "ListItem", position: 2, name: "サービスガイド" },
+      { "@type": "ListItem", position: 2, name: "クーポン・お試しセット" },
       { "@type": "ListItem", position: 3, name: "ワタミの宅食ダイレクト お試しセット完全ガイド" },
     ],
   };

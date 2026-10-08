@@ -69,7 +69,7 @@ function Breadcrumbs() {
         </li>
         <li className="breadcrumb-sep" />
         <li>
-          <span className="text-foreground/70">目的別ガイド</span>
+          <Link href="/articles/#mokuteki" className="text-foreground/70 hover:text-accent transition-colors">目的別ガイド・ランキング</Link>
         </li>
         <li className="breadcrumb-sep" />
         <li>
@@ -387,7 +387,7 @@ export default function HitorigurashiOsusumePage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"\u30db\u30fc\u30e0\", \"item\": \"https://takushoku-biyori.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"\u76ee\u7684\u5225\u30ac\u30a4\u30c9\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"\u4e00\u4eba\u66ae\u3089\u3057\u306b\u304a\u3059\u3059\u3081\u306e\u5b85\u98df\"}]}" }}
+        dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"\u30db\u30fc\u30e0\", \"item\": \"https://takushoku-biyori.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"\u76ee\u7684\u5225\u30ac\u30a4\u30c9\u30fb\u30e9\u30f3\u30ad\u30f3\u30b0\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"\u4e00\u4eba\u66ae\u3089\u3057\u306b\u304a\u3059\u3059\u3081\u306e\u5b85\u98df\"}]}" }}
       />
       
       <script
@@ -401,7 +401,7 @@ export default function HitorigurashiOsusumePage() {
         {/* Title */}
         <header className="mb-8">
           <div className="flex items-center gap-3 mb-4"><span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">
-            目的別ガイド
+            目的別ガイド・ランキング
           </span><span className="text-[10px] text-gray-400">PR掲載も含みます</span></div>
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">
             {ARTICLE_TITLE}

@@ -21,31 +21,22 @@ export type ArticleMeta = {
 };
 
 export type CategoryGroup = {
+  /** 一覧ページのアンカー id（記事パンくずの href="/articles/#id" と一致させる） */
   id: string;
+  /** 表示名。記事側のパンくず・BreadcrumbList・ヘッダーバッジもこの文字列をそのまま使う */
   label: string;
-  /** この表示グループに束ねる、記事側のカテゴリ名。空配列は「どこにも属さない記事」の受け皿 */
-  categories: string[];
 };
 
-/** 記事側のカテゴリ名は表記ゆれがあるため、一覧では表示グループに束ねる */
+/**
+ * サイトのカテゴリ定義（2026-10-08 に記事側の表記ゆれをこの5つに統一済み）。
+ * 記事のカテゴリ名はここの label と完全一致でなければビルドを落とす（表記ゆれ・カテゴリ欠落の再発防止）。
+ */
 export const CATEGORY_GROUPS: CategoryGroup[] = [
-  { id: "kuchikomi", label: "口コミ・評判", categories: ["口コミ・評判"] },
-  {
-    id: "hikaku",
-    label: "比較・料金データ",
-    categories: ["比較", "比較記事", "サービス比較", "比較・データ"],
-  },
-  {
-    id: "mokuteki",
-    label: "目的別ガイド・ランキング",
-    categories: ["目的別ガイド", "ランキング", "おすすめ"],
-  },
-  {
-    id: "otoku",
-    label: "クーポン・お試しセット",
-    categories: ["クーポン・割引", "クーポン・キャンペーン", "お試しセット"],
-  },
-  { id: "guide", label: "選び方・使い方・サービス紹介", categories: [] },
+  { id: "kuchikomi", label: "口コミ・評判" },
+  { id: "hikaku", label: "比較・料金データ" },
+  { id: "mokuteki", label: "目的別ガイド・ランキング" },
+  { id: "otoku", label: "クーポン・お試しセット" },
+  { id: "guide", label: "選び方・使い方・サービス紹介" },
 ];
 
 const ARTICLES_DIR = path.join(process.cwd(), "app", "articles");
@@ -83,10 +74,22 @@ export function getAllArticles(): ArticleMeta[] {
     const publishedTime = pick(src, /publishedTime:\s*"([^"]+)"/);
     const modifiedTime = pick(src, /modifiedTime:\s*"([^"]+)"/) || publishedTime;
     const nav = pick(src, /aria-label="パンくずリスト"([\s\S]*?)<\/nav>/);
-    const category = nav ? pick(nav, /text-foreground\/70">([^<]+)</).trim() : "";
+    const category = nav ? pick(nav, /text-foreground\/70[^"]*">([^<]+)</).trim() : "";
 
     if (!title || !description || !publishedTime) {
       throw new Error(`[lib/articles] metadata missing in app/articles/${slug}/page.tsx`);
+    }
+    const group = CATEGORY_GROUPS.find((g) => g.label === category);
+    if (!group) {
+      throw new Error(
+        `[lib/articles] app/articles/${slug}/page.tsx のパンくずカテゴリ「${category}」は未定義。CATEGORY_GROUPS のいずれかの label と完全一致させること`
+      );
+    }
+    const navHref = pick(nav, /href="\/articles\/#([a-z]+)"/);
+    if (navHref !== group.id) {
+      throw new Error(
+        `[lib/articles] app/articles/${slug}/page.tsx のパンくずリンク先 #${navHref} がカテゴリ「${category}」(#${group.id}) と不一致`
+      );
     }
     list.push({
       slug,
@@ -103,16 +106,11 @@ export function getAllArticles(): ArticleMeta[] {
 }
 
 export function groupArticles(articles: ArticleMeta[]) {
-  const known = new Set(CATEGORY_GROUPS.flatMap((g) => g.categories));
   const byDateDesc = (a: ArticleMeta, b: ArticleMeta) =>
     b.modifiedTime.localeCompare(a.modifiedTime) || b.publishedTime.localeCompare(a.publishedTime);
   return CATEGORY_GROUPS.map((g) => ({
     ...g,
-    articles: articles
-      .filter((a) =>
-        g.categories.length === 0 ? !known.has(a.category) : g.categories.includes(a.category)
-      )
-      .sort(byDateDesc),
+    articles: articles.filter((a) => a.category === g.label).sort(byDateDesc),
   }));
 }
 

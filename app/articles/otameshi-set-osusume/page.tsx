@@ -65,7 +65,7 @@ function Breadcrumbs() {
         </li>
         <li className="breadcrumb-sep" />
         <li>
-          <span className="text-foreground/70">おすすめ</span>
+          <Link href="/articles/#mokuteki" className="text-foreground/70 hover:text-accent transition-colors">目的別ガイド・ランキング</Link>
         </li>
         <li className="breadcrumb-sep" />
         <li>
@@ -235,7 +235,7 @@ export default function OtameshiSetOsusumePage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "ホーム", item: "https://takushoku-biyori.com/" },
-      { "@type": "ListItem", position: 2, name: "おすすめ" },
+      { "@type": "ListItem", position: 2, name: "目的別ガイド・ランキング" },
       { "@type": "ListItem", position: 3, name: "お試しセットおすすめ7選" },
     ],
   };
