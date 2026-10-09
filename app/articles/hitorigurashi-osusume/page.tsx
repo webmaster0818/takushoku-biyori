@@ -345,7 +345,7 @@ export default function HitorigurashiOsusumePage() {
         position: 2,
         name: "三ツ星ファーム",
         description:
-          "プロの料理人監修のレストラン品質。化学調味料・合成着色料不使用。味のクオリティは冷凍宅配弁当業界トップクラス。",
+          "料理人監修のメニュー125種類以上。おかずプレートは350kcal以下・糖質25g以下・たんぱく質15g以上（一部商品を除く）。",
         url: "https://mitsuboshifarm.jp/",
       },
       {
