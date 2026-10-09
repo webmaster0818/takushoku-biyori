@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-11T00:00:00+09:00",
-    modifiedTime: "2026-04-14T00:00:00+09:00",
+    modifiedTime: "2026-10-09T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -37,17 +37,17 @@ const faqData = [
   {
     question: "1回だけお試しできますか？",
     answer:
-      "3社とも最低継続回数の縛りはありません。1回だけ注文して解約することが可能です。特に三ツ星ファームは初回限定7食1,980円のお試しプランがあり、気軽に試せます。noshも初回から3回目まで合計3,000円OFFの割引があるので、まずは1回試してみるのがおすすめです。",
+      "通常の定期便なら3社とも最低継続回数の縛りはありません。ただし三ツ星ファームは初回分のキャンセル・変更ができず、お得な長期継続応援プラン（合計6回）・冷凍庫プレゼントプラン（合計12回）は途中解約に手数料がかかります。三ツ星ファームは定期便とは別に、1個から買える「都度購入」でも試せます（公式サイト・2026年10月9日確認）。noshも初回から3回目まで合計3,000円OFFの割引があるので、まずは1回試してみるのがおすすめです。",
   },
   {
     question: "添加物は使われていますか？",
     answer:
-      "3社とも国の安全基準を満たした添加物のみ使用しています。もっとも添加物に厳しいのは三ツ星ファームで、化学調味料・合成着色料・人工甘味料を極力使わない方針です。noshは保存料・合成着色料不使用が基本、ウェルネスダイニングは冷凍保存に必要な最小限の添加物のみ使用しています。",
+      "3社とも国の安全基準を満たした添加物のみ使用しています。三ツ星ファームは、公式サイトで添加物に関する方針の記載が見当たりませんでした（2026年10月9日確認）。noshは保存料・合成着色料不使用が基本、ウェルネスダイニングは冷凍保存に必要な最小限の添加物のみ使用しています。",
   },
   {
     question: "アレルギー対応はありますか？",
     answer:
-      "noshはアレルギー情報をメニューごとに明記しており、該当アレルゲンを含むメニューを避けて選ぶことが可能です。三ツ星ファームも同様にアレルギー表示があります。ウェルネスダイニングは管理栄養士に電話で相談でき、アレルゲンを除いたメニュー調整にも対応してくれます。ただし、3社とも完全なアレルギー除去食ではないため、重度のアレルギーがある方は事前に各社へ問い合わせることをおすすめします。",
+      "noshはアレルギー情報をメニューごとに明記しており、該当アレルゲンを含むメニューを避けて選ぶことが可能です。三ツ星ファームはアプリで苦手・アレルギー食材を登録できますが、公式に「アレルギーに完全対応はしていない」と案内されています。ウェルネスダイニングは管理栄養士に電話で相談でき、アレルゲンを除いたメニュー調整にも対応してくれます。ただし、3社とも完全なアレルギー除去食ではないため、重度のアレルギーがある方は事前に各社へ問い合わせることをおすすめします。",
   },
   {
     question: "注文からどれくらいで届きますか？",
@@ -57,7 +57,7 @@ const faqData = [
   {
     question: "解約は簡単にできますか？",
     answer:
-      "解約のしやすさは3社で異なります。noshはマイページから数クリックで即解約でき、もっとも簡単です。三ツ星ファームはWebまたは電話で解約可能。ウェルネスダイニングは電話のみでの解約となるため、やや手間がかかります。3社とも解約金・違約金は一切かかりません。",
+      "解約のしやすさは3社で異なります。noshはマイページから数クリックで即解約でき、もっとも簡単です。三ツ星ファームは公式アプリ・公式LINE（24時間）または電話（9:00〜18:00）で停止でき、次回お届け予定日の7日前までの手続きが必要です。ウェルネスダイニングはWebフォーム・マイページ・電話で、お届け予定日の7日前までに連絡が必要です。通常の定期便に解約金はありませんが、三ツ星ファームの長期継続応援プランは途中解約7,700円、冷凍庫プレゼントプランは16,500円かかります。",
   },
   {
     question: "電子レンジ以外の調理は必要ですか？",
@@ -295,7 +295,7 @@ export default function ArticlePage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-11T00:00:00+09:00",
-    dateModified: "2026-04-14T00:00:00+09:00",
+    dateModified: "2026-10-09T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -338,7 +338,7 @@ export default function ArticlePage() {
         position: 2,
         name: "三ツ星ファーム",
         description:
-          "プロの料理人監修のレストラン品質。化学調味料・合成着色料不使用。初回7食1,980円のお試しプランあり。",
+          "料理人監修のメニュー125種類以上。おかずプレートは350kcal以下・糖質25g以下・たんぱく質15g以上（一部商品を除く）。通常の定期便は1食711円〜。",
         url: "https://mitsuboshifarm.jp/",
       },
       {
@@ -385,7 +385,7 @@ export default function ArticlePage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-04-11">公開: 2026年4月11日</time>
-            <time dateTime="2026-04-14" className="font-medium text-foreground/70">最終更新: 2026年4月14日</time>
+            <time dateTime="2026-10-09" className="font-medium text-foreground/70">最終更新: 2026年10月9日（三ツ星ファームの料金・メニュー数・支払い・停止方法を公式で再確認）</time>
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
@@ -412,12 +412,12 @@ export default function ArticlePage() {
         <ComparisonTable
           headers={["項目", "nosh（ナッシュ）", "三ツ星ファーム", "ウェルネスダイニング"]}
           rows={[
-            ["1食あたり最安", "599円〜", "626円〜", "663円〜"],
-            ["メニュー数", "100種類以上", "80種類以上", "コース制（固定）"],
-            ["糖質量", "30g以下（全メニュー）", "25g以下あり", "15g以下のコースあり"],
+            ["1食あたり最安", "599円〜", "711円〜（通常の定期便）", "663円〜"],
+            ["メニュー数", "100種類以上", "125種類以上（2026年10月9日確認）", "コース制（固定）"],
+            ["糖質量", "30g以下（全メニュー）", "25g以下（一部商品を除く）", "15g以下のコースあり"],
             ["塩分量", "2.5g以下", "記載なし", "2.0g以下のコースあり"],
-            ["送料", "913円〜2,827円", "990円〜2,970円", "770円〜"],
-            ["初回特典", "累計3,000円OFF", "初回1,980円", "送料無料"],
+            ["送料", "913円〜2,827円", "990円（北海道・沖縄2,500円）", "770円〜"],
+            ["初回特典", "累計3,000円OFF", "14食・21食は初回送料無料", "送料無料"],
             ["特徴", "高コスパ×豊富なメニュー", "レストラン品質の味", "医療・介護レベルの栄養管理"],
             ["向いている人", "一人暮らし・ダイエット", "グルメ志向・贅沢したい", "糖尿病・腎臓病・高齢者"],
           ]}
@@ -462,16 +462,16 @@ export default function ArticlePage() {
         <ComparisonTable
           headers={["プラン", "nosh", "三ツ星ファーム", "ウェルネスダイニング"]}
           rows={[
-            ["最小プラン", "6食 3,990円（665円/食）", "7食 4,382円（626円/食）", "7食 4,644円（663円/食）"],
-            ["中プラン", "8食 4,990円（624円/食）", "14食 8,618円（616円/食）", "14食 9,072円（648円/食）"],
-            ["大プラン", "10食 5,990円（599円/食）", "21食 12,960円（617円/食）", "21食 13,500円（643円/食）"],
+            ["最小プラン", "6食 3,990円（665円/食）", "7食 6,485円（927円/食）", "7食 4,644円（663円/食）"],
+            ["中プラン", "8食 4,990円（624円/食）", "14食 11,458円（819円/食）", "14食 9,072円（648円/食）"],
+            ["大プラン", "10食 5,990円（599円/食）", "21食 14,918円（711円/食）", "21食 13,500円（643円/食）"],
           ]}
         />
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">最安比較のポイント</p>
           <ul className="list-disc list-inside space-y-1">
             <li><strong>nosh</strong>は10食プランなら1食599円と最安値級。継続割引もあり、最大16.55%OFFで1食499円まで下がります。</li>
-            <li><strong>三ツ星ファーム</strong>は14食以上で1食616〜626円と安定した価格帯。</li>
+            <li><strong>三ツ星ファーム</strong>は通常の定期便で1食711〜927円（2026年10月9日・公式確認）。合計6回の受け取りを約束する長期継続応援プランなら21食で1食約603円まで下がりますが、途中解約は7,700円です。</li>
             <li><strong>ウェルネスダイニング</strong>は食事制限付きで1食643〜663円と、栄養管理のコストを考えれば妥当です。</li>
           </ul>
         </div>
@@ -481,23 +481,23 @@ export default function ArticlePage() {
           headers={["サービス", "送料の幅", "最安エリア", "最高エリア"]}
           rows={[
             ["nosh", "913円〜2,827円", "関東", "北海道・沖縄"],
-            ["三ツ星ファーム", "990円〜2,970円", "関東", "北海道・沖縄"],
+            ["三ツ星ファーム", "990円／北海道・沖縄2,500円", "全国一律（北海道・沖縄以外）", "北海道・沖縄"],
             ["ウェルネスダイニング", "770円〜（定期便は半額）", "全国一律", "—"],
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
-          <strong>ポイント：</strong>ウェルネスダイニングは定期購入で送料半額（385円）になるため、継続するなら実質最安。noshと三ツ星ファームは地域差が大きく、北海道や沖縄だと送料だけで月3,000円近くかかる点に注意。
+          <strong>ポイント：</strong>ウェルネスダイニングは定期購入で送料半額（385円）になるため、継続するなら実質最安。noshは地域差が大きく、三ツ星ファームは北海道・沖縄以外なら一律990円です。どちらも北海道・沖縄は送料が高くなる点に注意。
         </p>
 
         <SubHeading>注文方法・解約のしやすさ</SubHeading>
         <ComparisonTable
           headers={["項目", "nosh", "三ツ星ファーム", "ウェルネスダイニング"]}
           rows={[
-            ["注文方法", "Web・アプリ", "Web・LINE", "Web・電話"],
-            ["配送間隔", "1/2/3週に1回", "2/3/4週に1回", "1/2/3/4週に1回"],
+            ["注文方法", "Web・アプリ", "Web・アプリ", "Web・電話"],
+            ["配送間隔", "1/2/3週に1回", "1/2/3/4週に1回", "1/2/3/4週に1回"],
             ["スキップ", "◎ 簡単", "○ 可能", "○ 可能"],
-            ["解約手続き", "マイページから即可", "Web・電話で可", "電話のみ"],
-            ["最低継続回数", "なし", "なし", "なし"],
+            ["解約手続き", "マイページから即可", "アプリ・LINE・電話（7日前まで）", "Webフォーム・マイページ・電話（7日前まで）"],
+            ["最低継続回数", "なし", "通常なし（長期継続応援6回・冷凍庫プレゼント12回）", "なし"],
           ]}
         />
 
@@ -506,7 +506,7 @@ export default function ArticlePage() {
           headers={["サービス", "容器サイズ（目安）", "10食あたりの占有スペース"]}
           rows={[
             ["nosh", "18×18×4.5cm", "冷凍庫中段ほぼ1段"],
-            ["三ツ星ファーム", "18×14×4cm", "やや省スペース"],
+            ["三ツ星ファーム", "17.7×18×4cm（公式FAQ）", "noshとほぼ同等"],
             ["ウェルネスダイニング", "18×17×3cm", "最もコンパクト"],
           ]}
         />
@@ -516,8 +516,8 @@ export default function ArticlePage() {
           headers={["方法", "nosh", "三ツ星ファーム", "ウェルネスダイニング"]}
           rows={[
             ["クレジットカード", "◎", "◎", "◎"],
-            ["代金引換", "○", "○", "○"],
-            ["後払い", "×", "○", "○"],
+            ["代金引換", "○", "×（カードエラー時の自動切替のみ）", "○"],
+            ["後払い", "×", "○（NP後払い・248円）", "○"],
             ["Amazon Pay", "◎", "×", "×"],
             ["コンビニ払い", "×", "×", "○"],
           ]}
@@ -534,14 +534,14 @@ export default function ArticlePage() {
         <ComparisonTable
           headers={["項目", "nosh", "三ツ星ファーム", "ウェルネスダイニング"]}
           rows={[
-            ["1食あたり最安（通常）", "599円（10食）", "616円（14食）", "643円（21食）"],
-            ["1食あたり最安（割引適用）", "499円（継続割引MAX）", "283円（初回7食限定）", "643円（割引なし）"],
+            ["1食あたり最安（通常）", "599円（10食）", "711円（21食）", "643円（21食）"],
+            ["1食あたり最安（割引適用）", "499円（継続割引MAX）", "約603円（長期継続応援21食・6回約束）", "643円（割引なし）"],
             ["送料（関東・1回）", "913円", "990円", "770円"],
-            ["送料込み1食あたり（10食）", "690円", "715円（※7食計算）", "753円（7食計算）"],
+            ["送料込み1食あたり（10食）", "690円", "約758円（21食で計算）", "753円（7食計算）"],
             ["入会金", "無料", "無料", "無料"],
             ["年会費", "無料", "無料", "無料"],
-            ["解約金", "無料", "無料", "無料"],
-            ["最低注文回数", "なし（1回で解約可）", "なし（1回で解約可）", "なし（1回で解約可）"],
+            ["解約金", "無料", "通常無料（長期継続応援7,700円・冷凍庫プレゼント16,500円）", "無料"],
+            ["最低注文回数", "なし（1回で解約可）", "通常なし（初回分はキャンセル不可）", "なし（1回で解約可）"],
           ]}
         />
 
@@ -552,10 +552,10 @@ export default function ArticlePage() {
         <ComparisonTable
           headers={["プラン", "nosh 10食×2回", "三ツ星 14食×2回", "ウェルネス 14食×2回"]}
           rows={[
-            ["食材費", "11,980円", "17,236円", "18,144円"],
+            ["食材費", "11,980円", "22,916円", "18,144円"],
             ["送料（関東）", "1,826円", "1,980円", "770円（定期半額）"],
-            ["合計", "13,806円", "19,216円", "18,914円"],
-            ["1食あたり実質", "691円", "687円", "676円"],
+            ["合計", "13,806円", "24,896円", "18,914円"],
+            ["1食あたり実質", "691円", "889円", "676円"],
             ["食数", "20食", "28食", "28食"],
           ]}
         />
@@ -564,7 +564,7 @@ export default function ArticlePage() {
           <ul className="list-disc list-inside space-y-1">
             <li><strong>月の食数を多くするなら</strong>ウェルネスダイニングの定期便が送料面で有利</li>
             <li><strong>月1万円以下で収めたいなら</strong>nosh 10食プラン×月2回がベスト</li>
-            <li><strong>初回のお試しだけなら</strong>三ツ星ファーム 7食1,980円が圧倒的にお得</li>
+            <li><strong>三ツ星ファームを安く続けるなら</strong>長期継続応援プラン（21食で1食約603円・6回約束・途中解約7,700円）。定期便なしで試すなら1個からの都度購入も可</li>
             <li>noshは長期継続で割引が効き、最終的に1食499円まで下がる唯一のサービス</li>
           </ul>
         </div>
@@ -583,28 +583,28 @@ export default function ArticlePage() {
         <SubHeading>2. メニュー数とバリエーション</SubHeading>
         <div className="space-y-4 mb-6 text-sm leading-relaxed">
           <p><strong>nosh：</strong>100種類以上の常時ラインナップに加え、毎週3品の新メニューが追加。洋食・和食・中華・スイーツ・パン・スープまで幅広く、飽きにくい設計です。特にスイーツ（ドーナツ、ロールケーキなど）が糖質オフで楽しめるのはnoshならでは。</p>
-          <p><strong>三ツ星ファーム：</strong>約80種類のメニューを常時用意。noshより少ないですが「質重視」の方向性で、一品一品の完成度が非常に高いです。季節限定メニューも定期的に登場するため、リピーターも飽きずに楽しめます。</p>
+          <p><strong>三ツ星ファーム：</strong>公式サイトの表記で125種類以上（2026年10月9日確認）。毎回自分で選べ、人気順やおすすめで自動選択する「おまかせ選択」機能もあります。季節限定メニューも登場します。</p>
           <p><strong>ウェルネスダイニング：</strong>メニューは「コースごとに事前決定」されており、個別に選ぶことはできません。ただし7種類のコースから目的に合ったコースを選べます。メニューのバリエーション自体は豊富で、和洋中バランスよく構成されていますが、「今日はこれが食べたい」という選び方ができないのがデメリットです。</p>
-          <p className="font-medium">結論：好きなメニューを自由に選びたいなら nosh &gt; 三ツ星ファーム &gt;&gt;&gt; ウェルネスダイニング</p>
+          <p className="font-medium">結論：好きなメニューを自由に選びたいなら nosh・三ツ星ファーム &gt;&gt;&gt; ウェルネスダイニング</p>
         </div>
 
         <SubHeading>3. 栄養バランス（糖質・塩分・カロリー）</SubHeading>
         <ComparisonTable
           headers={["項目", "nosh", "三ツ星ファーム", "ウェルネスダイニング"]}
           rows={[
-            ["糖質量", "全メニュー30g以下", "25g以下メニューあり", "15g以下コースあり"],
+            ["糖質量", "全メニュー30g以下", "25g以下（一部商品を除く）", "15g以下コースあり"],
             ["塩分量", "全メニュー2.5g以下", "メニュー依存", "2.0g以下コースあり"],
-            ["カロリー", "350〜550kcal", "350〜500kcal", "240〜300kcal"],
-            ["たんぱく質", "20g前後", "20g前後", "コース別管理"],
+            ["カロリー", "350〜550kcal", "350kcal以下（一部商品を除く）", "240〜300kcal"],
+            ["たんぱく質", "20g前後", "15g以上（一部商品を除く）", "コース別管理"],
           ]}
         />
 
         <SubHeading>4. 添加物の有無</SubHeading>
         <div className="space-y-4 mb-6 text-sm leading-relaxed">
           <p><strong>nosh：</strong>保存料・合成着色料は不使用が基本方針ですが、全メニュー完全無添加ではありません。</p>
-          <p><strong>三ツ星ファーム：</strong>3社の中でもっとも添加物に厳しく、化学調味料・合成着色料・人工甘味料を極力使わない方針。</p>
+          <p><strong>三ツ星ファーム：</strong>公式サイトに添加物に関する方針の記載は見当たりませんでした（2026年10月9日確認）。気になる場合は商品ごとの原材料表示を確認してください。</p>
           <p><strong>ウェルネスダイニング：</strong>冷凍保存のための最小限の添加物のみ。</p>
-          <p className="font-medium">結論：添加物の少なさで選ぶなら 三ツ星ファーム &gt; nosh &gt; ウェルネスダイニング</p>
+          <p className="font-medium">結論：添加物を重視する場合は、各社の公式サイトで商品ごとの原材料表示を確認するのが確実です。</p>
         </div>
 
         <SubHeading>5. 目的別コースの充実度</SubHeading>
@@ -636,8 +636,8 @@ export default function ArticlePage() {
           <div className="bg-amber-50 rounded-lg p-4 text-sm">
             <p className="font-bold mb-2">三ツ星ファーム</p>
             <ul className="list-disc list-inside space-y-1">
-              <li>初回限定7食 1,980円</li>
-              <li>LINE友だち追加でクーポン</li>
+              <li>14食・21食コースは初回送料無料</li>
+              <li>1個から買える都度購入あり</li>
             </ul>
           </div>
           <div className="bg-blue-50 rounded-lg p-4 text-sm">
@@ -649,7 +649,7 @@ export default function ArticlePage() {
           </div>
         </div>
         <p className="text-sm mb-6 leading-relaxed">
-          <strong>ポイント：</strong>短期で試すなら三ツ星ファームの初回1,980円が最安。長期で続けるならnoshの継続割引が最強。ウェルネスダイニングは送料面での継続メリットが大きい設計です。
+          <strong>ポイント：</strong>三ツ星ファームは14食・21食コースの初回送料無料、または1個からの都度購入で試せます（初回分はキャンセル不可）。長期で続けるならnoshの継続割引が最強。ウェルネスダイニングは送料面での継続メリットが大きい設計です。
         </p>
 
         <SubHeading>7. 継続のしやすさ</SubHeading>
@@ -657,9 +657,9 @@ export default function ArticlePage() {
           headers={["項目", "nosh", "三ツ星ファーム", "ウェルネスダイニング"]}
           rows={[
             ["スキップの手軽さ", "◎", "○", "○"],
-            ["解約の手軽さ", "◎", "○", "△（電話）"],
-            ["継続割引", "◎（最大17%）", "×", "○（送料半額）"],
-            ["最低継続回数", "なし", "なし", "なし"],
+            ["解約の手軽さ", "◎", "○", "○（7日前まで）"],
+            ["継続割引", "◎（最大17%）", "○（長期継続応援プラン・6回約束）", "○（送料半額）"],
+            ["最低継続回数", "なし", "通常なし（お得プランは6回・12回）", "なし"],
           ]}
         />
 
@@ -681,9 +681,8 @@ export default function ArticlePage() {
               {[
                 ["価格の安さ", 5, 4, 3],
                 ["味のクオリティ", 4, 5, 3],
-                ["メニューの豊富さ", 5, 4, 2],
+                ["メニューの豊富さ", 5, 5, 2],
                 ["栄養管理の厳密さ", 3, 3, 5],
-                ["添加物の少なさ", 4, 5, 3],
                 ["解約のしやすさ", 5, 4, 3],
                 ["継続コスパ", 5, 3, 4],
                 ["高齢者対応", 2, 2, 5],
@@ -730,13 +729,13 @@ export default function ArticlePage() {
               <li>自宅での食事に「質」を求める</li>
               <li>冷凍弁当のイメージを覆したい</li>
               <li>共働きで夕食の手間を省きたい</li>
-              <li>添加物にこだわりたい</li>
+              <li>たんぱく質15g以上の基準で選びたい</li>
             </ul>
             <p className="font-bold mt-3 mb-2">三ツ星ファーム が負ける場面</p>
             <ul className="list-disc list-inside space-y-1 text-foreground/70">
               <li>とにかく安く続けたい</li>
               <li>糖尿病・腎臓病の食事療法が必要</li>
-              <li>メニュー数を重視</li>
+              <li>途中解約手数料のあるプランは避けたい（お得に続けるプランは回数約束あり）</li>
             </ul>
           </div>
           <div className="bg-blue-50 rounded-lg p-4">
@@ -821,7 +820,7 @@ export default function ArticlePage() {
             産後や授乳中は、赤ちゃんのお世話で料理に時間をかけられない一方、しっかりした栄養摂取が求められる時期です。この2つの条件を同時に満たせるのが、三ツ星ファームとnoshです。
           </p>
           <p>
-            <strong>栄養面を重視するなら三ツ星ファーム</strong>がおすすめ。プロの料理人が監修したメニューは素材の味を活かした調理法で、添加物も最小限。授乳中で食の安全性が気になるママにとって、化学調味料・合成着色料不使用というのは安心材料です。「手抜きなのにちゃんとした食事が取れている」という満足感は、産後のメンタルケアにもつながります。
+            <strong>栄養面を重視するなら三ツ星ファーム</strong>がおすすめ。料理人監修のメニューで、おかずプレートはたんぱく質15g以上（一部商品を除く）の基準があり、たんぱく質を確保しやすい設計です。「手抜きなのにちゃんとした食事が取れている」という満足感は、産後のメンタルケアにもつながります。
           </p>
           <p>
             <strong>コスパと手軽さを重視するならnosh</strong>。産後は何かと出費が増えるため、1食499円〜599円のnoshは家計に優しい選択です。スマホアプリで注文・スキップ・解約がすべて完結するため、赤ちゃんを抱っこしながらでも操作できます。
@@ -858,7 +857,7 @@ export default function ArticlePage() {
 
         {[
           { title: "コスパ重視", rec: "nosh", text: "月額コストを最小化したい方はnosh一択。10食プラン+継続割引で1食499円まで下がり、3社中もっとも継続コスパが高くなります。" },
-          { title: "美味しさ・グルメ重視", rec: "三ツ星ファーム", text: "「冷凍なのにここまで美味しいのか」と驚かされるクオリティ。プロの料理人監修のメインディッシュは、1食あたり626円でレストラン級の満足感が得られます。" },
+          { title: "美味しさ・グルメ重視", rec: "三ツ星ファーム", text: "「冷凍なのにここまで美味しいのか」と驚かされるクオリティ。料理人監修のメニューを、通常の定期便なら1食711円〜で選べます。" },
           { title: "健康管理・食事制限", rec: "ウェルネスダイニング", text: "糖尿病・高血圧・腎臓病などで医師から食事制限を指示されている方は、迷わずウェルネスダイニング。管理栄養士が設計した7つの専用コースがあります。" },
           { title: "一人暮らし", rec: "nosh", text: "100種類以上から自由に選べる柔軟さと、1食あたり500円台の安さが一人暮らしの強い味方。スキップも解約もマイページで完結します。" },
           { title: "高齢者・親への仕送り", rec: "ウェルネスダイニング", text: "やわらか食コース・塩分制限コースなど、高齢者のニーズに応えるコースが充実。電話での注文対応もあり、スマホが苦手な親世代でも利用できます。" },
@@ -876,47 +875,50 @@ export default function ArticlePage() {
 
         {/* ===== 口コミ ===== */}
         <SectionHeading id="reviews">利用者の口コミ・評判</SectionHeading>
+        <p className="text-sm mb-4 leading-relaxed">
+          各社の口コミの傾向を要約しています（口コミ本文の転載や、当サイトが独自に聞き取った声ではありません）。出典は各社の個別記事に掲載しています：<Link href="/articles/nosh-reviews/" className="text-accent underline">noshの口コミ</Link>／<Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent underline">三ツ星ファームの口コミ</Link>／<Link href="/articles/wellness-dining-reviews/" className="text-accent underline">ウェルネスダイニングの口コミ</Link>。
+        </p>
 
         {[
           {
             name: "nosh",
             good: [
-              "「糖質オフなのに満足感があり、ダイエット中の味方になってくれる」（30代女性）",
-              "「メニューが豊富で飽きない。スイーツがあるのが嬉しい」（20代女性）",
-              "「継続割引が効いてくると一食500円以下になるので、自炊より安く済む時も」（20代男性）",
+              "糖質を抑えながら満足感があるという趣旨の声が見られる",
+              "メニューが多く、スイーツも選べる点を評価する声がある",
+              "nosh clubの継続割引で1食の価格が下がる点を評価する声がある",
             ],
             bad: [
-              "「メニューによって当たり外れがある」（30代男性）",
-              "「送料が地域によって高い。北海道在住だと毎回3,000円近く」（40代女性）",
-              "「冷凍庫が10食分で埋まるので、一人暮らしだとパンパン」（20代女性）",
+              "メニューによって当たり外れがあるという声がある",
+              "送料が地域によって高く、北海道などは負担が大きいという声がある",
+              "10食単位だと冷凍庫が埋まりやすいという声がある",
             ],
             color: "bg-green-50",
           },
           {
             name: "三ツ星ファーム",
             good: [
-              "「冷凍弁当とは思えないクオリティ。本当にレストランみたい」（40代女性）",
-              "「添加物が少ないのが安心。家族にも勧められる」（30代女性）",
-              "「共働きの平日夕食として最強」（30代男性）",
+              "実食した第三者メディアでは「味が安定しておいしい」「期待以上においしい」という評価が目立つ",
+              "125種類以上から毎回選べる点を評価する声が多い",
+              "楽天のショップレビューは907件で平均4.68（配送・対応への評価が中心）",
             ],
             bad: [
-              "「ちょっと量が少なく感じる時がある」（30代男性）",
-              "「値段がnoshより少し高いので、継続するか迷う」（20代女性）",
-              "「糖質制限が目的だとnoshの方が厳格で選びやすい」（40代女性）",
+              "おかずのみで量が少なめと感じる声がある",
+              "通常の定期便は1食711円〜で、価格と量の釣り合いを指摘する声がある",
+              "お得なプランの回数約束・途中解約手数料など、やめ方への不満が多い",
             ],
             color: "bg-amber-50",
           },
           {
             name: "ウェルネスダイニング",
             good: [
-              "「糖尿病の父に送っている。管理栄養士監修の安心感がある」（50代女性）",
-              "「塩分制限コースが本当に助かる」（60代男性）",
-              "「やわらか食は高齢の母が食べやすく、本当にありがたい」（50代女性）",
+              "家族の食事制限に使い、管理栄養士の相談窓口があることに安心感を挙げる声がある",
+              "塩分制限・糖質制限でも出汁や香辛料で味がしっかりしているという声がある",
+              "高齢の家族の食事管理の負担が減ったという声がある",
             ],
             bad: [
-              "「味が薄い・素朴すぎると感じる日がある」（60代女性）",
-              "「解約が電話のみでちょっと面倒だった」（40代女性）",
-              "「メニューを自分で選べないのがマイナス」（30代男性）",
+              "制限食のため味が薄いと感じる人もいる",
+              "変更・休止は7日前までの手続きが必要で、手間に感じる声がある",
+              "メニューを自分で選べない（おまかせ制）のが残念という声がある",
             ],
             color: "bg-blue-50",
           },
@@ -976,11 +978,11 @@ export default function ArticlePage() {
         {[
           {
             title: "1食あたりの料金で比較する",
-            text: "「◯食プランで△△円」という表示を見ると安く感じますが、大切なのは「1食あたり単価＋送料÷食数」の実質単価です。noshの10食プランは送料込みでも1食690円前後（関東）、三ツ星ファームの14食は715円前後、ウェルネスダイニングの14食定期便は676円前後。月にどれくらい注文するかを計算し、月額トータルで比較しましょう。また、noshの継続割引は10食以上で最大16.55%OFFになるため、長期利用を考えるならnoshが圧倒的にお得です。",
+            text: "「◯食プランで△△円」という表示を見ると安く感じますが、大切なのは「1食あたり単価＋送料÷食数」の実質単価です。noshの10食プランは送料込みでも1食690円前後（関東）、三ツ星ファームの14食は889円前後（送料990円込み）、ウェルネスダイニングの14食定期便は676円前後。月にどれくらい注文するかを計算し、月額トータルで比較しましょう。また、noshの継続割引は10食以上で最大16.55%OFFになるため、長期利用を考えるならnoshが圧倒的にお得です。",
           },
           {
             title: "メニュー数と選択の自由度",
-            text: "「毎日同じようなメニューで飽きた」は宅配弁当の解約理由で最も多いものの一つ。noshは100種類以上から自由に選べ、毎週新メニューが追加されるため飽きにくい設計。三ツ星ファームも80種類以上で季節限定メニューあり。一方、ウェルネスダイニングはコースごとに固定メニューなので、「今日はこれが食べたい」という選び方ができません。自分がどれくらい「選ぶ自由」を重視するかで判断しましょう。",
+            text: "「毎日同じようなメニューで飽きた」は宅配弁当の解約理由で最も多いものの一つ。noshは100種類以上から自由に選べ、毎週新メニューが追加されるため飽きにくい設計。三ツ星ファームも125種類以上（2026年10月9日・公式確認）で季節限定メニューあり。一方、ウェルネスダイニングはコースごとに固定メニューなので、「今日はこれが食べたい」という選び方ができません。自分がどれくらい「選ぶ自由」を重視するかで判断しましょう。",
           },
           {
             title: "栄養バランス・制限食の対応",
@@ -988,11 +990,11 @@ export default function ArticlePage() {
           },
           {
             title: "配送頻度と送料",
-            text: "宅配弁当は食材費だけでなく、毎回の送料がかかります。noshと三ツ星ファームは地域によって913円〜2,970円と大きな差があり、北海道や沖縄在住だと送料だけで月5,000円以上になることも。一方、ウェルネスダイニングは全国一律770円（定期便は385円）と良心的。配送頻度は各社1〜4週に1回から選べますが、まとめて注文するほど1回あたりの送料負担は減ります。冷凍庫の容量と相談しながら、送料を含めたトータルコストで判断しましょう。",
+            text: "宅配弁当は食材費だけでなく、毎回の送料がかかります。noshは地域によって913円〜2,827円と差があり、三ツ星ファームは990円（北海道・沖縄2,500円）。北海道や沖縄在住だと送料だけで月5,000円以上になることも。一方、ウェルネスダイニングは全国一律770円（定期便は385円）と良心的。配送頻度は各社1〜4週に1回から選べますが、まとめて注文するほど1回あたりの送料負担は減ります。冷凍庫の容量と相談しながら、送料を含めたトータルコストで判断しましょう。",
           },
           {
             title: "解約・スキップのしやすさ",
-            text: "「いざという時にすぐ辞められるか」は意外と見落としがちなポイントです。noshはマイページから数クリックで即解約でき、もっとも簡単。三ツ星ファームはWebまたは電話で解約可能。ウェルネスダイニングは電話のみでの解約なので、「電話が苦手」「平日忙しくて電話できない」という方には不向きです。また3社とも、解約だけでなく「スキップ」（次回配送を1回飛ばす）機能があるので、「来月は不要」という時も安心。まずは気軽に始めて、合わなければすぐ辞められるかどうかを確認しておきましょう。",
+            text: "「いざという時にすぐ辞められるか」は意外と見落としがちなポイントです。noshはマイページから数クリックで即解約でき、もっとも簡単。三ツ星ファームは公式アプリ・LINE・電話で停止可能（お得プランの途中解約は電話のみ・手数料あり）。ウェルネスダイニングはWebフォーム・マイページ・電話で受け付けていますが、お届け予定日の7日前までの連絡が必要です（2026年10月8日・公式確認）。また3社とも、解約だけでなく「スキップ」（次回配送を1回飛ばす）機能があるので、「来月は不要」という時も安心。まずは気軽に始めて、合わなければすぐ辞められるかどうかを確認しておきましょう。",
           },
         ].map((tip, i) => (
           <div key={tip.title} className="flex gap-4 mb-5">
@@ -1013,7 +1015,7 @@ export default function ArticlePage() {
             { step: "1", title: "公式サイトから会員登録", text: "メールアドレス・氏名・住所・支払い方法を登録します。所要時間は5分程度。noshはスマホアプリからも登録可能です。" },
             { step: "2", title: "プランとメニューを選択", text: "食数（6〜21食）、配送間隔（1〜4週に1回）、メニュー（またはコース）を選びます。noshと三ツ星ファームは個別メニューを選択、ウェルネスダイニングはコースを選択します。" },
             { step: "3", title: "初回便の配送", text: "最短4〜7日で初回便が到着。冷凍庫に保管して、電子レンジで温めるだけ。加熱時間の目安はパッケージに記載されています。" },
-            { step: "4", title: "継続 or スキップ or 解約", text: "次回便の発送日が近づく前に、継続・スキップ・解約を判断。解約方法は各社で異なります（nosh: マイページ、三ツ星: Web/電話、ウェルネス: 電話のみ）。" },
+            { step: "4", title: "継続 or スキップ or 解約", text: "次回便の発送日が近づく前に、継続・スキップ・解約を判断。解約方法は各社で異なります（nosh: マイページ、三ツ星: アプリ・LINE・電話、ウェルネス: Webフォーム・マイページ・電話）。" },
           ].map((s) => (
             <div key={s.step} className="flex gap-4 bg-cream rounded-lg p-4">
               <span className="flex-shrink-0 w-8 h-8 bg-accent-dark text-white rounded-full flex items-center justify-center text-sm font-bold">
@@ -1141,7 +1143,7 @@ export default function ArticlePage() {
               </thead>
               <tbody>
                 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">nosh（ナッシュ）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">599-748</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=M5863L.1.M98647P.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">三ツ星ファーム</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">25以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">626-842</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=M5863L.1.M98647P.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">三ツ星ファーム</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">25以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15以上</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">−</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">711-927</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ウェルネスダイニング</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240-300</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">12-18</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">663-880</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://magokoro-care-shoku.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">まごころケア食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-350</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">462-580</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ワタミの宅食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-400</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">40-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">3.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">590-680</td></tr>
@@ -1158,7 +1160,7 @@ export default function ArticlePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ。最新情報は各公式サイトでご確認ください。</p>
+          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」）。最新情報は各公式サイトでご確認ください。</p>
         </section>
 
                 {/* eeat-links-202607 */}

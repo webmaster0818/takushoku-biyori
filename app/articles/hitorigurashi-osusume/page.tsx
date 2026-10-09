@@ -491,12 +491,12 @@ export default function HitorigurashiOsusumePage() {
           {
             num: 4,
             title: "メニューの自由度（飽きずに続けられるか）",
-            text: "宅配弁当で最も多い解約理由は「飽きた」。一人暮らしで毎日利用するなら、メニューの豊富さと選択の自由度は非常に重要です。noshは60種類以上から自分で選べ、毎週新メニューが追加。三ツ星ファームも80種類以上。一方、ウェルネスダイニングやまごころケア食はコース制で、メニューを自分で選べません。「飽きやすいタイプ」の方は、メニュー数が多く自分で選べるサービスを選びましょう。",
+            text: "宅配弁当で最も多い解約理由は「飽きた」。一人暮らしで毎日利用するなら、メニューの豊富さと選択の自由度は非常に重要です。noshは60種類以上から自分で選べ、毎週新メニューが追加。三ツ星ファームも125種類以上（2026年10月9日・公式確認）。一方、ウェルネスダイニングやまごころケア食はコース制で、メニューを自分で選べません。「飽きやすいタイプ」の方は、メニュー数が多く自分で選べるサービスを選びましょう。",
           },
           {
             num: 5,
             title: "解約のしやすさ（気軽に始めて気軽に辞められるか）",
-            text: "一人暮らしは生活スタイルが変わりやすいもの。転職、引っ越し、同棲など、環境の変化に合わせて柔軟に利用できるかが重要です。noshはマイページから数クリックで即解約、スキップも簡単。三ツ星ファームはWeb・電話で解約可能。ウェルネスダイニングは電話のみ。「いつでも辞められる」という安心感があるサービスの方が、気軽に始められます。",
+            text: "一人暮らしは生活スタイルが変わりやすいもの。転職、引っ越し、同棲など、環境の変化に合わせて柔軟に利用できるかが重要です。noshはマイページから数クリックで即解約、スキップも簡単。三ツ星ファームは公式アプリ・LINE・電話で停止可能（お届け7日前まで）。ウェルネスダイニングはWebフォーム・マイページ・電話（お届け7日前まで）。「いつでも辞められる」という安心感があるサービスの方が、気軽に始められます。",
           },
         ].map((point) => (
           <div key={point.num} className="flex gap-4 mb-5">
@@ -553,25 +553,25 @@ export default function HitorigurashiOsusumePage() {
           color="bg-amber-50"
           features={[
             "プロの料理人監修メニュー",
-            "化学調味料・合成着色料不使用",
-            "80種類以上のメニュー",
-            "初回7食1,980円のお試しプラン",
+            "メニュー125種類以上",
+            "アプリ・LINEで変更・停止",
+            "14食・21食コースは初回送料無料",
           ]}
-          price="626円〜（14食プラン）"
-          shipping="990円〜（関東）"
+          price="711円〜（21食・通常の定期便）"
+          shipping="990円（北海道・沖縄2,500円）"
           pros={[
             "味のクオリティが冷凍弁当No.1",
             "食へのこだわりが強い方も満足",
-            "初回お試し1,980円で始めやすい",
+            "1個から買える都度購入で試せる",
           ]}
           cons={[
             "noshより1食あたり少し高い",
-            "送料も地域差が大きい",
-            "アプリがない（Web注文のみ）",
+            "北海道・沖縄は送料2,500円",
+            "お得なプランは途中解約に手数料（7,700円〜）",
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
-          「冷凍弁当でもおいしさは妥協したくない」という方には三ツ星ファーム。プロの料理人が監修したメニューは、「冷凍弁当とは思えない」と口コミで高評価。初回7食1,980円（1食283円）のお試しプランがあるので、まずは味を確認してから判断できます。
+          「冷凍弁当でもおいしさは妥協したくない」という方には三ツ星ファーム。プロの料理人が監修したメニューは、「冷凍弁当とは思えない」と口コミで高評価。定期便とは別に1個から買える都度購入もあるので、まずは味を確認してから判断できます（2026年10月9日・公式確認）。
         </p>
 
         <RankingCard
@@ -663,7 +663,7 @@ export default function HitorigurashiOsusumePage() {
           headers={["サービス", "1食あたり", "送料", "メニュー数", "解約", "おすすめ度"]}
           rows={[
             ["nosh", "599円〜", "913円〜", "60種類以上", "◎", "★★★★★"],
-            ["三ツ星ファーム", "626円〜", "990円〜", "80種類以上", "○", "★★★★☆"],
+            ["三ツ星ファーム", "711円〜", "990円", "125種類以上", "○", "★★★★☆"],
             ["ウェルネスダイニング", "663円〜", "770円〜", "コース制", "△", "★★★★☆"],
             ["まごころケア食", "470円〜", "無料", "コース制", "○", "★★★★☆"],
             ["食宅便", "560円〜", "780円", "160種類以上", "○", "★★★☆☆"],
@@ -686,7 +686,7 @@ export default function HitorigurashiOsusumePage() {
           {
             name: "2位：三ツ星ファーム",
             reason: "低カロリー×高クオリティ。満足感のあるダイエット食",
-            detail: "三ツ星ファームのメニューは350kcal以下・糖質25g以下・たんぱく質15g以上で設計。カロリーを抑えながらもプロの料理人監修で味のクオリティが高いため、「ダイエット中でも美味しいものが食べたい」という女性に最適。化学調味料・合成着色料不使用なので、添加物が気になる方にも安心です。",
+            detail: "三ツ星ファームのメニューは350kcal以下・糖質25g以下・たんぱく質15g以上で設計。カロリーを抑えながらもプロの料理人監修で味のクオリティが高いため、「ダイエット中でも美味しいものが食べたい」という女性に最適。メニューは125種類以上から選べます。",
           },
           {
             name: "3位：食宅便（低糖質セレクト）",
@@ -785,7 +785,7 @@ export default function HitorigurashiOsusumePage() {
           headers={["サービス", "プラン", "食材費/月", "送料/月", "月額合計", "1食あたり"]}
           rows={[
             ["nosh", "10食×2回", "11,980円", "1,826円", "13,806円", "690円"],
-            ["三ツ星ファーム", "14食+7食", "13,000円", "1,980円", "14,980円", "713円"],
+            ["三ツ星ファーム", "14食+7食", "17,943円", "1,980円", "19,923円", "949円"],
             ["ウェルネスダイニング", "14食+7食", "13,716円", "770円", "14,486円", "690円"],
             ["まごころケア食", "21食", "9,870円", "0円", "9,870円", "470円"],
             ["食宅便", "7食×3回", "11,760円", "2,340円", "14,100円", "671円"],
@@ -983,7 +983,7 @@ export default function HitorigurashiOsusumePage() {
               </thead>
               <tbody>
                 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">nosh（ナッシュ）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">599-748</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=M5863L.1.M98647P.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">三ツ星ファーム</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">25以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">626-842</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=M5863L.1.M98647P.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">三ツ星ファーム</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">25以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15以上</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">−</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">711-927</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ウェルネスダイニング</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240-300</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">12-18</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">663-880</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://magokoro-care-shoku.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">まごころケア食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-350</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">462-580</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ワタミの宅食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-400</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">40-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">3.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">590-680</td></tr>
@@ -1000,7 +1000,7 @@ export default function HitorigurashiOsusumePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ。最新情報は各公式サイトでご確認ください。</p>
+          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」）。最新情報は各公式サイトでご確認ください。</p>
         </section>
 
                 {/* eeat-links-202607 */}

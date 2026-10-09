@@ -452,7 +452,7 @@ export default function DietOsusumePage() {
           {
             icon: "&#127869;",
             title: "メニューが豊富で飽きない。ダイエットなのに「美味しい」",
-            text: "「ダイエット食＝まずい・味気ない」は過去の話。noshは60種類以上、三ツ星ファームは80種類以上のメニューから自由に選べ、毎週新メニューが追加されます。プロの料理人が監修したレストラン品質のメニューもあり、「ダイエット中なのにこんなに美味しいものが食べられるの？」という驚きがあります。低糖質のスイーツ（ドーナツ・ロールケーキ等）もあり、甘いもの好きの方も無理なく続けられます。",
+            text: "「ダイエット食＝まずい・味気ない」は過去の話。noshは60種類以上、三ツ星ファームは125種類以上（2026年10月9日・公式確認）のメニューから自由に選べ、毎週新メニューが追加されます。プロの料理人が監修したレストラン品質のメニューもあり、「ダイエット中なのにこんなに美味しいものが食べられるの？」という驚きがあります。低糖質のスイーツ（ドーナツ・ロールケーキ等）もあり、甘いもの好きの方も無理なく続けられます。",
           },
           {
             icon: "&#128176;",
@@ -551,13 +551,13 @@ export default function DietOsusumePage() {
           tagline="350kcal以下 × レストラン品質。美味しくダイエット"
           color="bg-amber-50"
           features={[
-            "全メニュー350kcal以下",
+            "おかずプレートは350kcal以下（一部商品を除く）",
             "糖質25g以下・たんぱく質15g以上",
             "プロの料理人監修",
-            "化学調味料・合成着色料不使用",
+            "メニュー125種類以上",
           ]}
-          price="626円〜（14食プラン）"
-          shipping="990円〜（関東）"
+          price="711円〜（21食・通常の定期便）"
+          shipping="990円（北海道・沖縄2,500円）"
           pros={[
             "カロリー350kcal以下が保証されている",
             "味のクオリティが業界トップクラス",
@@ -565,7 +565,7 @@ export default function DietOsusumePage() {
           ]}
           cons={[
             "noshより1食あたり少し高い",
-            "アプリがない（Web注文のみ）",
+            "お得なプランは途中解約に手数料（7,700円〜）",
             "メニュー変更の自由度がnoshほど高くない",
           ]}
         />
@@ -667,7 +667,7 @@ export default function DietOsusumePage() {
 
         <SubHeading>三ツ星ファーム - 美味しさ最優先のダイエット食</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          三ツ星ファームの最大の特徴は「ダイエット食なのにレストラン品質」。一流シェフが監修したメニューは彩りも味も妥協なし。カロリー350kcal以下・糖質25g以下・たんぱく質15g以上の「三ツ星基準」を全メニューがクリアしており、数値面でもダイエットに最適。化学調味料・合成着色料不使用で体にも優しい。初回7食1,980円（1食283円）のお試しプランで味を確認してからスタートできます。
+          三ツ星ファームの最大の特徴は「ダイエット食なのにレストラン品質」。一流シェフが監修したメニューは彩りも味も妥協なし。カロリー350kcal以下・糖質25g以下・たんぱく質15g以上の「三ツ星基準」（一部商品を除く）で作られており、数値面でもダイエットに向いています。定期便の初回分はキャンセルできないため、不安な人は1個から買える都度購入で味を確かめてから始められます（2026年10月9日・公式確認）。
         </p>
 
         <SubHeading>食宅便（低糖質セレクト） - 厳密な糖質制限に</SubHeading>
@@ -693,7 +693,7 @@ export default function DietOsusumePage() {
           headers={["サービス", "1食あたり", "送料", "糖質", "カロリー", "たんぱく質"]}
           rows={[
             ["nosh", "599円〜", "913円〜", "30g以下", "平均350kcal", "平均20g"],
-            ["三ツ星ファーム", "626円〜", "990円〜", "25g以下", "350kcal以下", "15g以上"],
+            ["三ツ星ファーム", "711円〜", "990円", "25g以下（一部除く）", "350kcal以下（一部除く）", "15g以上（一部除く）"],
             ["食宅便", "560円〜", "780円", "10g以下", "約250kcal", "約15g"],
             ["ウェルネスダイニング", "663円〜", "770円〜", "15g以下", "240kcal±10%", "約15g"],
             ["筋肉食堂DELI", "748円〜", "860円〜", "約15g", "約400kcal", "30g以上"],
@@ -705,7 +705,7 @@ export default function DietOsusumePage() {
           headers={["サービス", "食材費/月", "送料/月", "月額合計", "1食あたり実質"]}
           rows={[
             ["nosh（10食×2回）", "11,980円", "1,826円", "13,806円", "690円"],
-            ["三ツ星ファーム（14食+7食）", "13,000円", "1,980円", "14,980円", "713円"],
+            ["三ツ星ファーム（14食+7食）", "17,943円", "1,980円", "19,923円", "949円"],
             ["食宅便（7食×3回）", "11,760円", "2,340円", "14,100円", "671円"],
             ["ウェルネスダイニング（14食+7食）", "13,716円", "770円", "14,486円", "690円"],
             ["筋肉食堂DELI（10食×2回）", "14,960円", "1,720円", "16,680円", "834円"],
@@ -932,7 +932,7 @@ export default function DietOsusumePage() {
               </thead>
               <tbody>
                 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">nosh（ナッシュ）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">599-748</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=M5863L.1.M98647P.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">三ツ星ファーム</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">25以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">626-842</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=M5863L.1.M98647P.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">三ツ星ファーム</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">25以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15以上</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">−</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">711-927</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ウェルネスダイニング</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240-300</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">12-18</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">663-880</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://magokoro-care-shoku.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">まごころケア食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-350</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">462-580</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ワタミの宅食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-400</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">40-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">3.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">590-680</td></tr>
@@ -949,7 +949,7 @@ export default function DietOsusumePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ。最新情報は各公式サイトでご確認ください。</p>
+          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」）。最新情報は各公式サイトでご確認ください。</p>
         </section>
         <HakushoUnitPriceTable slugs={["nosh", "mitsuboshi-farm", "shokutakubin", "wellness-dining", "kinnikushokudo-deli"]} />
 

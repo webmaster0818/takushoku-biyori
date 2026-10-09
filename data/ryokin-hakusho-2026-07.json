@@ -96,18 +96,19 @@
     "note": "全国一律990円（税込）、北海道・沖縄・一部離島は2,500円（税込）。14食・21食コースは初回送料無料"
    },
    "first_discount": "初回送料無料（14食・21食コース。7食コースは初回から送料加算）",
-   "subscription": "定期のみ",
+   "subscription": "両方",
    "cancel_note": "よりどりプランは受け取り回数の縛りなし・解約手数料なし。長期継続応援プランは6回未満の途中解約で手数料7,700円（税込）、冷凍庫プレゼントプランは12回縛り・途中解約16,500円（税込）",
    "source_urls": [
     "https://mitsuboshifarm.jp/",
     "https://mitsuboshifarm.jp/page/longtermplan/02/",
     "https://mitsuboshifarm.jp/page/longtermplan/06/",
-    "https://mitsuboshifarm.jp/page/freezer/02/"
+    "https://mitsuboshifarm.jp/page/freezer/02/",
+    "https://terms.inglewood.co.jp/n09mnby078/commercial-transactions/"
    ],
-   "verified_at": "2026-09-05",
+   "verified_at": "2026-10-09",
    "verified": true,
    "notes": "本体サイトはJSレンダリングのため、よりどりプラン価格は公式サイト配信のJSバンドル内表記テキストで直接確認。faq.mitsuboshifarm.jpの価格FAQ記事は現在404",
-   "reverify_note": "7食6,485円・送料990円とも変更なし（沖縄北海道2,500円）"
+   "reverify_note": "2026-10-09再確認: よりどり7食6,485円/14食11,458円/21食14,918円・送料990円（北海道沖縄2,500円）とも変更なし。subscriptionを「定期のみ」→「両方」に訂正: 公式トップ（JSバンドル内表記）に「定期便とは別にお好きな単品商品を1個からご購入いただけます」「1回限りの『都度購入』」、特商法表記に「単品購入の場合 1回の注文につき送料を頂戴いたします」"
   },
   {
    "slug": "magokoro-care-shoku",

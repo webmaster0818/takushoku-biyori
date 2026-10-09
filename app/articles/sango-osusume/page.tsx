@@ -38,7 +38,7 @@ const faqData = [
   {
     question: "授乳中に食べてはいけないものはありますか？宅配弁当は大丈夫？",
     answer:
-      "授乳中は「絶対に食べてはいけないもの」は基本的にありませんが、アルコール・カフェインの大量摂取は避けるべきです。宅配弁当にはアルコール・カフェインは含まれないため安心。添加物が気になる方は、三ツ星ファーム（化学調味料・合成着色料不使用）やわんまいる（国産食材100%）を選ぶと良いでしょう。なお、「脂っこいものを食べると乳腺炎になる」という説は医学的根拠がなく、バランスの良い食事を心がければ問題ありません。",
+      "授乳中は「絶対に食べてはいけないもの」は基本的にありませんが、アルコール・カフェインの大量摂取は避けるべきです。宅配弁当にはアルコール・カフェインは含まれないため安心。添加物が気になる方は、各サービスの原材料表示を確認して選ぶと良いでしょう（わんまいるは国産食材100%をうたっています）。なお、「脂っこいものを食べると乳腺炎になる」という説は医学的根拠がなく、バランスの良い食事を心がければ問題ありません。",
   },
   {
     question: "上の子（幼児）も一緒に食べられる宅配弁当はありますか？",
@@ -201,7 +201,7 @@ export default function SangoOsusumePage() {
     numberOfItems: 5,
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "nosh（ナッシュ）", description: "60種類以上から自由に選べる。糖質30g以下で産後の栄養管理に最適。アプリで簡単注文。", url: "https://nosh.jp/" },
-      { "@type": "ListItem", position: 2, name: "三ツ星ファーム", description: "化学調味料・合成着色料不使用。プロの料理人監修で産後のご褒美に。", url: "https://mitsuboshifarm.jp/" },
+      { "@type": "ListItem", position: 2, name: "三ツ星ファーム", description: "料理人監修のメニュー125種類以上。たんぱく質15g以上の基準で産後のご褒美に。", url: "https://mitsuboshifarm.jp/" },
       { "@type": "ListItem", position: 3, name: "ウェルネスダイニング", description: "管理栄養士に産後の食事を無料相談。栄養バランスの整った7コース。", url: "https://www.wellness-dining.com/" },
       { "@type": "ListItem", position: 4, name: "わんまいる", description: "国産食材100%。湯煎調理で手作り感のある食事。添加物が気になるママに。", url: "https://www.onemile.jp/" },
       { "@type": "ListItem", position: 5, name: "ヨシケイ（シンプルミール）", description: "1食約300円の圧倒的コスパ。毎日届く常温弁当で置き配も可能。", url: "https://yoshikei-dvlp.co.jp/" },
@@ -297,7 +297,7 @@ export default function SangoOsusumePage() {
 
         {[
           { num: 1, title: "栄養バランス（たんぱく質・鉄分・カルシウムの充実度）", text: "授乳中のママは1日のたんぱく質70g以上、鉄分10.5mg、カルシウム650mgが推奨されています。宅配弁当1食でたんぱく質15〜25gをカバーできれば、残りの食事と合わせて必要量を満たしやすくなります。nosh（平均20g）、三ツ星ファーム（15g以上）はたんぱく質が豊富。鉄分・カルシウムはサプリメントで補うのが現実的ですが、食宅便やウェルネスダイニングはミネラルバランスも考慮した設計です。" },
-          { num: 2, title: "添加物の少なさ（授乳中の安心感）", text: "医学的には、宅配弁当に含まれる食品添加物が母乳を通じて赤ちゃんに悪影響を与えるという科学的根拠はありません。しかし、「できるだけ添加物を避けたい」というママの気持ちは大切。三ツ星ファームは化学調味料・合成着色料不使用、わんまいるは国産食材100%で添加物を極力排除。安心感を重視するならこの2社がおすすめです。" },
+          { num: 2, title: "添加物の少なさ（授乳中の安心感）", text: "医学的には、宅配弁当に含まれる食品添加物が母乳を通じて赤ちゃんに悪影響を与えるという科学的根拠はありません。しかし、「できるだけ添加物を避けたい」というママの気持ちは大切。わんまいるは国産食材100%をうたっています。気になる方は各サービスの原材料表示を確認しましょう。" },
           { num: 3, title: "注文・受け取りの手軽さ（赤ちゃんを抱えて玄関に出る負担）", text: "産後のママにとって宅配の受け取りは意外と大変。赤ちゃんを抱えて玄関に出たり、授乳中にインターホンが鳴ったり。冷凍宅配弁当はヤマト運輸のクール便が基本で、日時指定可能。土日の午前中に指定してパパに受け取ってもらうのが最も楽です。ヨシケイは玄関前に保冷箱で置き配してくれるため、受け取りの負担がゼロです。" },
           { num: 4, title: "家族での利用しやすさ（パパ・上の子も食べられるか）", text: "産後は「ママの分だけ」でなく「家族全員の食事」が問題になります。noshの20食プランなら夫婦で10日分、三ツ星ファームの21食プランなら家族3人で7日分。上の子（2歳以上）にはハンバーグや魚の煮付けなど、辛くないメニューを選べばシェア可能。1つのサービスで家族全員の食事をカバーできれば、最も効率的です。" },
         ].map((point) => (
@@ -349,29 +349,29 @@ export default function SangoOsusumePage() {
         <RankingCard
           rank={2}
           name="三ツ星ファーム"
-          tagline="無添加 × レストラン品質。頑張るママへのご褒美"
+          tagline="料理人監修 × たんぱく質15g以上。頑張るママへのご褒美"
           color="bg-amber-50"
           features={[
-            "化学調味料・合成着色料不使用",
+            "メニュー125種類以上",
             "プロの料理人監修メニュー",
             "350kcal以下・糖質25g以下",
             "21食プランで家族利用に最適",
           ]}
-          price="572円〜（21食プラン）"
-          shipping="990円〜（関東）"
+          price="711円〜（21食・通常の定期便）"
+          shipping="990円（北海道・沖縄2,500円）"
           pros={[
-            "化学調味料・合成着色料不使用で安心",
+            "たんぱく質15g以上（一部商品を除く）で栄養を確保しやすい",
             "味のクオリティが高く産後のストレス解消に",
-            "21食プランなら1食572円とコスパ良好",
+            "長期継続応援プランなら21食で1食約603円（6回約束）",
           ]}
           cons={[
-            "アプリがない（Web注文のみ）",
-            "送料が地域差大",
+            "お得なプランは途中解約に手数料（7,700円〜）",
+            "北海道・沖縄は送料2,500円",
             "メニュー自由度がnoshほど高くない",
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
-          添加物が気になる授乳中のママには三ツ星ファーム。化学調味料・合成着色料不使用で、プロの料理人監修のレストラン品質メニューは「産後の自分へのご褒美」に最適。21食プランなら1食572円とコスパも良好です。詳しくは<Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark underline">三ツ星ファームの口コミ・評判を徹底調査</Link>をご覧ください。
+          料理人監修のメニューを「産後の自分へのご褒美」にしたいママには三ツ星ファーム。おかずプレートはたんぱく質15g以上（一部商品を除く）で、通常の定期便は21食で1食711円、長期継続応援プラン（6回約束・途中解約7,700円）なら1食約603円です（2026年10月9日・公式確認）。詳しくは<Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark underline">三ツ星ファームの口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
 
         <RankingCard
@@ -468,7 +468,7 @@ export default function SangoOsusumePage() {
 
         <SubHeading>三ツ星ファーム - 産後ママのご褒美食</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          三ツ星ファームは化学調味料・合成着色料不使用で、授乳中のママが安心して食べられる宅配弁当。プロの料理人監修のメニューは「冷凍弁当とは思えない」クオリティで、産後の慣れない育児でストレスが溜まりがちなママへの「ご褒美」になります。350kcal以下・糖質25g以下で、産後太りを気にする方にも適した栄養設計。21食プランなら1食572円で、noshの20食プランとほぼ同額のコスパです。
+          三ツ星ファームは料理人監修のメニューを125種類以上から選べる宅配弁当。プロの料理人監修のメニューは「冷凍弁当とは思えない」クオリティで、産後の慣れない育児でストレスが溜まりがちなママへの「ご褒美」になります。350kcal以下・糖質25g以下で、産後太りを気にする方にも適した栄養設計。通常の定期便は21食で1食711円（送料990円別）、長期継続応援プランなら1食約603円です（2026年10月9日・公式確認）。
         </p>
 
         <SubHeading>ウェルネスダイニング - 栄養相談付きで安心</SubHeading>
@@ -494,7 +494,7 @@ export default function SangoOsusumePage() {
           headers={["サービス", "1食あたり", "送料", "添加物", "たんぱく質", "家族利用"]}
           rows={[
             ["nosh", "564円〜", "913円〜", "一部使用", "平均20g", "20食プランあり"],
-            ["三ツ星ファーム", "572円〜", "990円〜", "不使用", "15g以上", "21食プランあり"],
+            ["三ツ星ファーム", "711円〜", "990円", "公式に方針記載なし", "15g以上", "21食プランあり"],
             ["ウェルネスダイニング", "663円〜", "定期385円", "一部使用", "約15g", "7〜21食"],
             ["わんまいる", "796円〜", "935円", "不使用", "約15g", "5食セット"],
             ["ヨシケイ", "約397円", "無料", "一部使用", "約10g", "毎日配達"],
@@ -506,7 +506,7 @@ export default function SangoOsusumePage() {
           headers={["サービス", "プラン", "食材費/月", "送料/月", "月額合計"]}
           rows={[
             ["nosh", "20食×3回", "33,840円", "2,739円", "36,579円"],
-            ["三ツ星ファーム", "21食×約2.8回", "33,600円", "2,772円", "36,372円"],
+            ["三ツ星ファーム", "21食×約2.8回", "41,770円", "2,772円", "44,542円"],
             ["ウェルネスダイニング", "14食×約4.3回", "38,540円", "1,656円", "40,196円"],
             ["わんまいる", "5食×12回", "47,760円", "11,220円", "58,980円"],
             ["ヨシケイ", "3食×約20日", "23,800円", "0円", "23,800円"],
@@ -517,7 +517,7 @@ export default function SangoOsusumePage() {
           <p className="font-bold mb-1">産後の食費の結論</p>
           <ul className="list-disc list-inside space-y-1">
             <li><strong>コスパ最強：ヨシケイ</strong>（月約23,800円）——毎日届く・送料無料・置き配で産後に最適</li>
-            <li><strong>バランス良好：nosh・三ツ星ファーム</strong>（月約36,000円）——家族利用とコスパの両立</li>
+            <li><strong>バランス良好：nosh</strong>（月約36,600円）——家族利用とコスパの両立。<strong>三ツ星ファーム</strong>は通常の定期便で月約44,500円</li>
             <li><strong>安心感重視：ウェルネスダイニング</strong>（月約40,000円）——栄養相談付きの安心感</li>
             <li><strong>国産食材：わんまいる</strong>（月約59,000円）——価格は高いが1〜2ヶ月限定ならアリ</li>
           </ul>
@@ -571,7 +571,7 @@ export default function SangoOsusumePage() {
           headers={["産後の状況", "おすすめサービス"]}
           rows={[
             ["家族全員の食事をカバーしたい", "nosh（20食プラン）"],
-            ["添加物が気になる・ご褒美感がほしい", "三ツ星ファーム"],
+            ["ご褒美感がほしい・たんぱく質を確保したい", "三ツ星ファーム"],
             ["栄養管理をプロに相談したい", "ウェルネスダイニング"],
             ["国産食材100%にこだわりたい", "わんまいる"],
             ["とにかく安く抑えたい", "ヨシケイ（シンプルミール）"],
@@ -597,7 +597,6 @@ export default function SangoOsusumePage() {
                 {[
                   ["産後おすすめ度", 5, 5, 4, 3, 4],
                   ["栄養バランス", 4, 4, 5, 4, 3],
-                  ["添加物の少なさ", 3, 5, 3, 5, 3],
                   ["コスパ", 4, 4, 3, 2, 5],
                   ["家族利用", 5, 4, 3, 2, 4],
                 ].map(([label, ...scores], i) => (
@@ -616,7 +615,7 @@ export default function SangoOsusumePage() {
             産後の宅食選びで迷ったら、まずは<strong>nosh</strong>がおすすめ。20食プランで家族全員の食事をカバーでき、アプリの使いやすさ・メニューの豊富さ・コスパのバランスが最も優れています。
           </p>
           <p className="text-sm leading-relaxed mb-4">
-            添加物が気になる方は<strong>三ツ星ファーム</strong>（化学調味料・合成着色料不使用）、コスパ最優先なら<strong>ヨシケイ</strong>（1食約397円・送料無料）が最適です。
+            ご褒美感とたんぱく質を重視するなら<strong>三ツ星ファーム</strong>（料理人監修・たんぱく質15g以上）、コスパ最優先なら<strong>ヨシケイ</strong>（1食約397円・送料無料）が最適です。
           </p>
           <p className="text-sm leading-relaxed">
             <strong>出産前のストックがポイント。</strong>産後に「宅配弁当を探す余裕」はありません。妊娠後期のうちに20〜30食をストックしておけば、産後1ヶ月の食事問題をまるごと解決できます。
@@ -681,7 +680,7 @@ export default function SangoOsusumePage() {
               </thead>
               <tbody>
                 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">nosh（ナッシュ）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">599-748</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=M5863L.1.M98647P.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">三ツ星ファーム</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">25以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">626-842</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=M5863L.1.M98647P.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">三ツ星ファーム</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">25以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15以上</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">−</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">711-927</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ウェルネスダイニング</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240-300</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">12-18</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">663-880</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://magokoro-care-shoku.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">まごころケア食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-350</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">462-580</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ワタミの宅食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-400</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">40-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">3.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">590-680</td></tr>
@@ -698,7 +697,7 @@ export default function SangoOsusumePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ。最新情報は各公式サイトでご確認ください。</p>
+          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」）。最新情報は各公式サイトでご確認ください。</p>
         </section>
         <HakushoUnitPriceTable slugs={["nosh", "mitsuboshi-farm", "wellness-dining", "shokutakubin", "magokoro-care-shoku"]} />
 

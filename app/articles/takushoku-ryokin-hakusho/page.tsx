@@ -635,7 +635,7 @@ export default function TakushokuRyokinHakushoPage() {
           ]}
         />
         <p className="text-sm mb-4 leading-relaxed">
-          三ツ星ファームの通常の「よりどりプラン」には縛りはありません。縛りがあるのは、単価を下げる代わりに継続を約束する長期継続応援プラン・冷凍庫プレゼントプランだけです。<strong>「1食603円」など安い方の表示価格はこの縛り付きプランの価格</strong>であることが多いので、申込前にどのプランかを必ず確認しましょう。詳細は<Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:underline">三ツ星ファームの解約方法まとめ</Link>も参考にしてください。
+          三ツ星ファームの通常の「よりどりプラン」には縛りはありません。定期便を契約せず、単品を1個から買える「都度購入」もあります（1回の注文ごとに送料・2026年10月9日公式確認）。縛りがあるのは、単価を下げる代わりに継続を約束する長期継続応援プラン・冷凍庫プレゼントプランだけです。<strong>「1食603円」など安い方の表示価格はこの縛り付きプランの価格</strong>であることが多いので、申込前にどのプランかを必ず確認しましょう。詳細は<Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:underline">三ツ星ファームの解約方法まとめ</Link>も参考にしてください。
         </p>
         <SubHeading>縛りはなくても「解約期限」はある</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">

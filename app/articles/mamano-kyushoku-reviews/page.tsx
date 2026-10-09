@@ -337,7 +337,7 @@ export default function MamanoKyushokuReviewsPage() {
 
         <SubHeading>2. メニューのバリエーションが大手より少ない</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          nosh(60種類以上)や三ツ星ファーム(80種類以上)と比べると、選択肢の幅は限られます。長期で毎日利用すると<strong>「同じメニューに当たることが増える」</strong>感覚を持つ方もいます。短期集中型の利用と相性が良いと言えます。
+          nosh(60種類以上)や三ツ星ファーム(125種類以上)と比べると、選択肢の幅は限られます。長期で毎日利用すると<strong>「同じメニューに当たることが増える」</strong>感覚を持つ方もいます。短期集中型の利用と相性が良いと言えます。
         </p>
 
         <SubHeading>3. 量は女性向けで男性には少ない</SubHeading>
