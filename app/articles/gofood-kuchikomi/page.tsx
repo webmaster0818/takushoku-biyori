@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "GOFOOD(ゴーフード)の口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年7月最新】";
+  "GOFOOD(ゴーフード)の口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "GOFOOD(ゴーフード)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証。全メニュー糖質20g以下・タンパク質20g以上の低糖質冷凍弁当の料金（10食セット1食税込598円〜）、送料、回数縛りなしの仕組みも解説。最新の販売状況・料金は公式で確認を。【2026年7月更新】";
+  "GOFOOD(ゴーフード)は「まずい」って本当？公開レビューの良い・悪い口コミを出典付きで検証。糖質20g以下・タンパク質20g以上の低糖質冷凍弁当の料金（10食1食税込598円〜）・送料・解約条件も解説。公式は2025年6月30日のサービス終了を告知済み。最新の販売状況は公式で確認を。【2026年10月更新】";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/gofood-kuchikomi/";
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-07-04T00:00:00+09:00",
+    modifiedTime: "2026-10-09T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -36,7 +36,7 @@ const faqData = [
   {
     question: "GOFOODの送料はいくら？",
     answer:
-      "5食・10食セットは地域別で税込940円（関西）〜2,170円（北海道・沖縄）です。関東は1,080円、九州は1,100円など。20食セットなら北海道・沖縄（980円）を除く都府県は送料無料になります（2026年7月4日公式FAQ確認）。最新の送料は公式サイトでご確認ください。",
+      "5食・10食セットは地域別で税込940円（関西）〜2,170円（北海道・沖縄）です。関東は1,080円、九州は1,100円など。20食セットなら北海道・沖縄（980円）を除く都府県は送料無料になります（2026年10月9日公式FAQ確認）。最新の送料は公式サイトでご確認ください。",
   },
   {
     question: "GOFOODに回数縛りはある？解約は簡単？",
@@ -326,7 +326,7 @@ const badReviewCategories: {
       },
     ],
     comment:
-      "実食系レビューでは肉系（チキン・ハンバーグ）の評価が高く、魚系・副菜の評価が相対的に低い傾向がはっきりしています。メニュー数は25品前後（2026年7月時点の公式商品一覧）と大手より少なめなので、長期利用では飽き対策としてメニュー構成をよく見て選ぶのが現実的です。",
+      "実食系レビューでは肉系（チキン・ハンバーグ）の評価が高く、魚系・副菜の評価が相対的に低い傾向がはっきりしています。メニュー数は25品前後（2026年10月9日時点の公式商品一覧）と大手より少なめなので、長期利用では飽き対策としてメニュー構成をよく見て選ぶのが現実的です。",
   },
 ];
 
@@ -340,7 +340,7 @@ export default function GofoodKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-07-04T00:00:00+09:00",
+    dateModified: "2026-10-09T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -420,6 +420,7 @@ export default function GofoodKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
+            <time dateTime="2026-10-09">更新: 2026年10月9日（公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -448,9 +449,9 @@ export default function GofoodKuchikomiPage() {
 
         {/* 販売状況の注記 */}
         <div className="bg-yellow-50 border border-yellow-300 rounded-xl p-4 mb-8 text-sm leading-relaxed">
-          <p className="font-bold mb-1">【2026年7月4日時点の販売状況について】</p>
+          <p className="font-bold mb-1">【2026年10月9日時点の販売状況について】</p>
           <p>
-            編集部確認時点で公式サイト（gofood.jp）は稼働しており、5食〜20食セットの購入ページも表示されます。ただし2025年5月に一部メニューの終売が公式発表されているほか、運営会社は新ブランド「goodeli（グーデリ）」の展開も始めており、一部の比較サイトでは販売停止と紹介されています。<strong>注文前に必ず公式サイトで最新の販売状況をご確認ください。</strong>
+            公式サイトのお知らせ（2025年5月30日付）で「2025年6月30日をもちましてサービスを終了」「新たに新ブランドとして生まれ変わります」と告知されています（<a href="https://gofood.jp/shop/information/info40" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式お知らせ</a>・2026年10月9日確認）。同日時点で購入ページ自体は表示されますが、商品一覧は全品「販売価格：0円」表示で、実際に注文できるかは確認できていません。運営会社は新ブランド「goodeli（グーデリ）」を展開しています。本記事の料金・送料は公式サイトに掲載されている値をそのまま記載したものです。<strong>注文前に必ず公式サイトで最新の販売状況をご確認ください。</strong>
           </p>
         </div>
 
@@ -508,7 +509,7 @@ export default function GofoodKuchikomiPage() {
             ["運営会社", "ゴーフード株式会社（2019年設立・東京都港区）"],
             ["サービス形態", "低糖質冷凍宅配弁当（定期便が基本・都度購入も可）"],
             ["栄養基準", "全メニュー糖質20g以下・タンパク質20g以上"],
-            ["メニュー数", "25品前後（2026年7月4日時点の公式商品一覧）"],
+            ["メニュー数", "25品前後（2026年10月9日時点の公式商品一覧）"],
             ["特徴", "ダイズライス使用メニュー・チキン系中心のラインナップ"],
             ["調理", "電子レンジで温めるだけ（最短約2分〜）"],
             ["配送周期", "7日/14日/21日/28日から選択"],
@@ -516,10 +517,10 @@ export default function GofoodKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: GOFOOD公式サイト・公式FAQ（2026年7月4日確認）。最新情報は公式サイトでご確認ください。
+          ※出典: GOFOOD公式サイト・公式FAQ（2026年10月9日確認）。最新情報は公式サイトでご確認ください。
         </p>
 
-        <SubHeading>料金プラン概要（税込・2026年7月4日公式確認）</SubHeading>
+        <SubHeading>料金プラン概要（税込・2026年10月9日公式確認）</SubHeading>
         <ComparisonTable
           headers={["プラン", "1食あたり", "備考"]}
           rows={[
@@ -532,7 +533,7 @@ export default function GofoodKuchikomiPage() {
           <strong>まとめ買いするほど1食単価と送料負担が下がる</strong>構造です。友達紹介の招待クーポン（初回1,000円割引）が用意されている時期もあります。
         </p>
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: GOFOOD公式購入ページ（2026年7月4日確認）。セット合計金額・最新のキャンペーンは公式サイトでご確認ください。
+          ※出典: GOFOOD公式購入ページ（2026年10月9日確認）。セット合計金額・最新のキャンペーンは公式サイトでご確認ください。
         </p>
 
         <SubHeading>GOFOODの3つの特徴</SubHeading>
@@ -656,7 +657,7 @@ export default function GofoodKuchikomiPage() {
               白米の代わりに使われる大豆食品「ダイズライス」は、低糖質化の要である一方、大豆特有の風味と食感があります。白米と同じものを期待すると違和感につながるため、<strong>最初はダイズライスなしのおかず型メニューから試す</strong>のが無難です。
             </p>
             <p className="text-xs text-warm-gray">
-              ※ダイズライスの仕様はGOFOOD公式サイトより（2026年7月4日確認）
+              ※ダイズライスの仕様はGOFOOD公式サイトより（2026年10月9日確認）
             </p>
           </div>
         </div>
@@ -746,12 +747,12 @@ export default function GofoodKuchikomiPage() {
           {
             num: 1,
             title: "販売状況・メニュー構成の変動が大きい",
-            text: "2025年5月に8品の終売が公式発表されるなど、ラインナップの入れ替わりが大きめです。運営会社は新ブランド「goodeli」の展開も始めており、一部比較サイトでは販売停止と紹介されています。注文前に公式サイトで最新の販売状況を必ず確認してください。",
+            text: "2025年5月に8品の終売が公式発表されたうえ、公式お知らせで2025年6月30日のサービス終了が告知されています（2026年10月9日確認）。運営会社は新ブランド「goodeli」を展開しています。注文前に公式サイトで最新の販売状況を必ず確認してください。",
           },
           {
             num: 2,
             title: "5食・10食では送料が地域別940〜2,170円かかる",
-            text: "関西940円・関東1,080円・北海道と沖縄は2,170円と、少量注文では送料負担が重くなります。1食単価が安くても、5食セット＋送料だと実質単価は700円台後半〜になる地域もあるため、まとめ買い前提で考えましょう。",
+            text: "関西940円・関東1,080円・北海道と沖縄は2,170円と、少量注文では送料負担が重くなります。1食単価が安くても、5食セット＋送料だと実質単価は最安の関西でも約844円（656円×5食＋940円÷5）になるため、まとめ買い前提で考えましょう。",
           },
           {
             num: 3,
@@ -773,7 +774,7 @@ export default function GofoodKuchikomiPage() {
         {/* ===== 料金・送料 ===== */}
         <SectionHeading id="price">GOFOODの料金・送料を徹底解説</SectionHeading>
 
-        <SubHeading>プラン別料金（税込・2026年7月4日公式確認）</SubHeading>
+        <SubHeading>プラン別料金（税込・2026年10月9日公式確認）</SubHeading>
         <ComparisonTable
           headers={["プラン", "1食あたり", "セット金額の目安"]}
           rows={[
@@ -783,10 +784,10 @@ export default function GofoodKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: GOFOOD公式購入ページ（2026年7月4日確認）。セット金額はカート内で確定します。※20食の送料無料は北海道・沖縄（980円）を除く。最新価格は公式サイトでご確認ください。
+          ※出典: GOFOOD公式購入ページ（2026年10月9日確認）。セット金額はカート内で確定します。※20食の送料無料は北海道・沖縄（980円）を除く。最新価格は公式サイトでご確認ください。
         </p>
 
-        <SubHeading>送料（税込・5食/10食セット・2026年7月4日公式FAQ確認）</SubHeading>
+        <SubHeading>送料（税込・5食/10食セット・2026年10月9日公式FAQ確認）</SubHeading>
         <ComparisonTable
           headers={["地域", "送料"]}
           rows={[
@@ -805,7 +806,7 @@ export default function GofoodKuchikomiPage() {
           で比較できます。
         </p>
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: GOFOOD公式FAQ（2026年7月4日確認）。最新の送料は公式サイトでご確認ください。
+          ※出典: GOFOOD公式FAQ（2026年10月9日確認）。最新の送料は公式サイトでご確認ください。
         </p>
 
         {/* ===== おすすめな人・おすすめしない人 ===== */}

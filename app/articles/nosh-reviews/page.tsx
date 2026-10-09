@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "nosh(ナッシュ)の口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年9月最新】";
+  "nosh(ナッシュ)の口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "nosh(ナッシュ)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。1食あたりの料金（税込620円〜・club最安499円）、地域別送料、nosh club割引の仕組みも解説します。最新の料金は公式でご確認ください。【2026年7月更新】";
+  "nosh(ナッシュ)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。1食あたりの料金（税込612円〜・club最安492円）、地域別送料、nosh club割引の仕組みも解説します。最新の料金は公式でご確認ください。【2026年10月更新】";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/nosh-reviews/";
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-15T00:00:00+09:00",
-    modifiedTime: "2026-07-04T00:00:00+09:00",
+    modifiedTime: "2026-10-09T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -31,7 +31,7 @@ const faqData = [
   {
     question: "noshの最低注文回数は？1回だけでも解約できる？",
     answer:
-      "noshには最低注文回数の縛りはありません。初回1回だけ注文して解約することも可能です。解約はマイページから完了し、解約金・違約金はかかりません。ただし、解約するとnosh clubのランクが失効するため、一時的に不要な場合は「スキップ」や「停止」を利用するのがおすすめです（公式サイトによると、スキップ・停止は何回行ってもランクは保持されます）。",
+      "noshには最低注文回数の縛りはありません。初回1回だけ注文して解約することも可能です。解約はマイページから完了し、解約金・違約金はかかりません。なお、変更・スキップ・停止・解約はお届け予定日の4〜5日前（地域により異なる）が締切で、初回購入分はキャンセルできません（公式FAQ・2026年10月9日確認）。ただし、解約するとnosh clubのランクが失効するため、一時的に不要な場合は「スキップ」や「停止」を利用するのがおすすめです（公式サイトによると、スキップ・停止は何回行ってもランクは保持されます）。",
   },
   {
     question: "noshの賞味期限はどれくらい？",
@@ -51,7 +51,7 @@ const faqData = [
   {
     question: "noshのアレルギー対応は？",
     answer:
-      "noshはメニューごとにアレルギー情報を公式サイト・アプリで公開しています。注文時にアレルゲンでフィルタリングして該当メニューを除外することが可能です。ただし、同じ製造ラインで複数のメニューを製造しているため、完全なアレルゲン除去食ではありません。重度のアレルギーがある方は、事前にnoshカスタマーサポートに問い合わせることをおすすめします。",
+      "noshはメニューごとにアレルギー情報を公式サイト・アプリで公開しています。注文時にアレルゲンでフィルタリングして該当メニューを除外することが可能です。ただし、同じ製造ラインで複数のメニューを製造しているため、完全なアレルゲン除去食ではありません。公式FAQでは「重篤な症状が出る方はご利用をお控えください」と案内されています（2026年10月9日確認）。",
   },
 ];
 
@@ -351,7 +351,7 @@ const badReviewCategories: {
       },
     ],
     comment:
-      "1食あたり税込620円〜（10食プラン・通常時）に加えて送料がかかるため、自炊よりは確実に高くつきます。比較対象を「自炊」ではなく「コンビニ弁当＋栄養面の手間」「外食」に置くと評価が変わる価格帯です。継続利用ならnosh clubの割引（最安で1食税込499円）で差は縮まります。",
+      "1食あたり税込612円〜（12食プラン・通常時）に加えて送料がかかるため、自炊よりは確実に高くつきます。比較対象を「自炊」ではなく「コンビニ弁当＋栄養面の手間」「外食」に置くと評価が変わる価格帯です。継続利用ならnosh clubの割引（最安で1食税込492円）で差は縮まります。",
   },
 ];
 
@@ -365,7 +365,7 @@ export default function NoshReviewsPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-15T00:00:00+09:00",
-    dateModified: "2026-07-04T00:00:00+09:00",
+    dateModified: "2026-10-09T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -438,7 +438,7 @@ export default function NoshReviewsPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-04-15">公開: 2026年4月15日</time>
-            <time dateTime="2026-07-04">更新: 2026年7月4日</time>
+            <time dateTime="2026-10-09">更新: 2026年10月9日（公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -527,7 +527,7 @@ export default function NoshReviewsPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: nosh公式サイト（2026年7月時点）。最新情報は公式サイトでご確認ください。
+          ※出典: nosh公式サイト（2026年10月9日確認）。最新情報は公式サイトでご確認ください。
         </p>
 
         <SubHeading>料金プラン概要（1食あたり・税込）</SubHeading>
@@ -537,13 +537,14 @@ export default function NoshReviewsPage() {
             ["6食プラン", "719円", "470円"],
             ["8食プラン", "644円", "457円"],
             ["10食プラン", "620円", "471円"],
+            ["12食プラン", "612円", "—"],
           ]}
         />
         <p className="text-sm mb-2 leading-relaxed">
-          10食プランが1食あたり最安の<strong>税込620円</strong>。初回は1,500円OFF・2回目1,000円OFF・3回目500円OFFの<strong>合計3,000円OFFクーポン</strong>が用意されています。さらにnosh clubの継続割引で、最安<strong>1食税込499円</strong>まで下がります。
+          通常価格は12食プランが1食あたり最安の<strong>税込612円</strong>（10食プランは620円）。初回は1,500円OFF・2回目1,000円OFF・3回目500円OFFの<strong>合計3,000円OFFクーポン</strong>が用意されています。さらにnosh clubの継続割引で、最安<strong>1食税込492円</strong>（12食プラン・最高ランク時。10食プランは499円）まで下がります。
         </p>
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: nosh公式サイトの表示価格（2026年7月時点）。価格・クーポン内容は変更される場合があります。最新の合計金額は公式サイトでご確認ください。
+          ※出典: nosh公式サイトの表示価格（2026年10月9日確認）。価格・クーポン内容は変更される場合があります。最新の合計金額は公式サイトでご確認ください。
         </p>
 
         <SubHeading>noshの3つの特徴</SubHeading>
@@ -745,7 +746,7 @@ export default function NoshReviewsPage() {
           {
             num: 3,
             title: "nosh club割引で続けるほどお得になる",
-            text: "nosh独自の継続割引制度「nosh club」は、累計購入数に応じて割引率がアップする仕組み。10食ごとにランクが上がり、最高ランクでは10食プランが1食あたり税込499円まで下がります。特別な手続きは不要で自動適用。公式サイトによると、スキップ・停止は何回行ってもランクは保持されるため、一時的に不要な時は解約ではなく停止を選ぶのがコツです。",
+            text: "nosh独自の継続割引制度「nosh club」は、累計購入数に応じて割引率がアップする仕組み。10食ごとにランクが上がり、最高ランクでは10食プランが1食あたり税込499円（12食プランなら492円）まで下がります。特別な手続きは不要で自動適用。公式サイトによると、スキップ・停止は何回行ってもランクは保持されるため、一時的に不要な時は解約ではなく停止を選ぶのがコツです（ただし停止から1年以内に再申込がないと会員資格を失い、停止中はクーポンが無効になる点は公式規約・FAQに明記されています）。",
           },
           {
             num: 4,
@@ -780,7 +781,7 @@ export default function NoshReviewsPage() {
           {
             num: 1,
             title: "送料が地域によって大きく変わる",
-            text: "noshの製造拠点は関西のため、送料は関西が最安（10食で1,243円）、関東は1,386円、北海道は1,992円と地域差があります（2026年7月時点・公式送料一覧より）。月2回配送なら送料だけで2,500〜4,000円になるケースも。対策としては「10食プランでまとめ買いして配送回数を減らす」のが最も有効です。",
+            text: "noshの製造拠点は関西のため、送料は関西が最安（4〜12食で1,023円）、関東は1,166円、北海道は1,713円と地域差があります（2026年10月9日・公式送料一覧より）。10食を月2回配送なら送料だけで関西2,046円〜北海道3,426円になります。対策としては「10食プランでまとめ買いして配送回数を減らす」のが最も有効です。",
           },
           {
             num: 2,
@@ -814,16 +815,17 @@ export default function NoshReviewsPage() {
             ["6食プラン", "719円", "少量から試したい人向け"],
             ["8食プラン", "644円", "バランス型"],
             ["10食プラン", "620円", "nosh club最安時499円"],
-            ["20食プラン", "—", "2回目以降の配送で選択可"],
+            ["12食プラン", "612円", "通常価格で最安・nosh club最安時492円"],
+            ["20食プラン", "612円", "2回目以降の配送で選択可（12,240円）"],
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: nosh公式サイト（2026年7月時点）。価格は変更される場合があるため、最新の合計金額は公式サイトでご確認ください。
+          ※出典: nosh公式サイト（2026年10月9日確認）。価格は変更される場合があるため、最新の合計金額は公式サイトでご確認ください。
         </p>
 
         <SubHeading>地域別送料の例（税込）</SubHeading>
         <ComparisonTable
-          headers={["地域", "6食", "8食・10食"]}
+          headers={["地域", "4〜12食", "20食"]}
           rows={[
             ["関西", "1,023円", "1,243円"],
             ["関東", "1,166円", "1,386円"],
@@ -832,22 +834,23 @@ export default function NoshReviewsPage() {
           ]}
         />
         <p className="text-sm mb-2 leading-relaxed">
-          <strong>送料のポイント：</strong>製造拠点が関西にあるため、関西が最安です。送料は毎回かかるので、<strong>「送料込みの1食あたり」で考えることが重要</strong>。10食プラン（関東）なら送料込みで1食あたり約759円、関西なら約744円です。まとめ買いで配送回数を減らすほど送料負担は下がります。
+          <strong>送料のポイント：</strong>製造拠点が関西にあるため、関西が最安です。送料は毎回かかるので、<strong>「送料込みの1食あたり」で考えることが重要</strong>。10食プラン（関東）なら送料込みで1食あたり約737円、関西なら約723円です（プラン合計6,206円＋送料で試算）。まとめ買いで配送回数を減らすほど送料負担は下がります。
         </p>
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: nosh公式サイト「全国送料一覧」（2026年7月時点・クール便料金込み）。上記以外の地域は公式サイトの送料一覧をご確認ください。
+          ※出典: nosh公式サイト「全国送料一覧」（2026年7月27日改訂版・2026年10月9日確認・クール便料金込み）。4〜12食は同一料金です。上記以外の地域は公式サイトの送料一覧をご確認ください。
         </p>
 
         <SubHeading>nosh club割引の仕組み</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          nosh clubは、累計購入数に応じて割引率がアップする継続割引制度です。10食ごとにランクが上がり、最高ランク（累計280食以上）で<strong>10食プランが1食あたり税込499円</strong>になります。会費・申込手続きは不要で、自動的に適用されます。
+          nosh clubは、累計購入数に応じて割引率がアップする継続割引制度です。10食ごとにランクが上がり、最高ランク（累計280食以上）で<strong>10食プランが1食あたり税込499円（12食プランは492円）</strong>になります。会費・申込手続きは不要で、自動的に適用されます。
         </p>
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">nosh club活用のポイント</p>
           <ul className="list-disc list-inside space-y-1">
             <li>「解約」するとランクが失効するが、「停止」「スキップ」は何回行ってもランクは保持される（公式サイトより）</li>
             <li>10食プランを続ければ着実にランクが上がり、長期利用ほど1食単価が下がる</li>
-            <li>最安時は1食税込499円。送料込みでも関東で約640円/食の水準</li>
+            <li>最安時は10食プランで1食税込499円。送料込みでも関東で約616円/食の水準</li>
+            <li>停止から1年以内に再申込がないと会員資格を失う。停止中はクーポンも無効（公式規約・FAQより）</li>
           </ul>
         </div>
 
@@ -858,14 +861,14 @@ export default function NoshReviewsPage() {
         <ComparisonTable
           headers={["利用パターン", "食数/月", "食材費（試算）", "送料", "月額合計", "1食あたり"]}
           rows={[
-            ["月1回（8食）", "8食", "5,152円", "1,386円", "6,538円", "817円"],
-            ["月1回（10食）", "10食", "6,200円", "1,386円", "7,586円", "759円"],
-            ["月2回（10食×2）", "20食", "12,400円", "2,772円", "15,172円", "759円"],
-            ["月3回（10食×3）", "30食", "18,600円", "4,158円", "22,758円", "759円"],
+            ["月1回（8食）", "8食", "5,157円", "1,166円", "6,323円", "790円"],
+            ["月1回（10食）", "10食", "6,206円", "1,166円", "7,372円", "737円"],
+            ["月2回（10食×2）", "20食", "12,412円", "2,332円", "14,744円", "737円"],
+            ["月3回（10食×3）", "30食", "18,618円", "3,498円", "22,116円", "737円"],
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※1食あたり税込価格（8食644円・10食620円）×食数で編集部が試算（2026年7月時点）。nosh club割引適用で下がります。正確な請求額は公式サイトでご確認ください。
+          ※公式FAQ記載のプラン合計（8食5,157円・10食6,206円）と関東送料1,166円で編集部が試算（2026年10月9日時点）。nosh club割引適用で下がります。正確な請求額は公式サイトでご確認ください。
         </p>
 
         {/* ===== おすすめな人・おすすめしない人 ===== */}
@@ -928,18 +931,18 @@ export default function NoshReviewsPage() {
         <ComparisonTable
           headers={["項目", "nosh", "三ツ星ファーム", "ウェルネスダイニング"]}
           rows={[
-            ["1食あたり最安（税込）", "620円〜（club最安499円）", "626円〜", "663円〜"],
+            ["1食あたり最安（税込）", "612円〜（club最安492円）", "626円〜", "663円〜"],
             ["メニュー数", "100種類以上", "80種類以上", "コース制（固定）"],
             ["メニュー選択", "自由に選べる", "自由に選べる", "コースごと固定"],
             ["糖質", "30g以下（全メニュー）", "25g以下あり", "15g以下コースあり"],
             ["アプリ", "あり（高機能）", "なし", "なし"],
             ["解約のしやすさ", "◎（マイページ）", "○（Web/電話）", "△（電話のみ）"],
-            ["継続割引", "nosh club（最安499円/食）", "なし", "送料優遇"],
+            ["継続割引", "nosh club（最安492円/食）", "なし", "送料優遇"],
             ["向いている人", "自由度・手軽さ重視", "味・クオリティ重視", "食事制限・高齢者"],
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※各社公式サイトの公開情報をもとに編集部作成（2026年7月時点）。最新情報は各公式サイトでご確認ください。
+          ※各社公式サイトの公開情報をもとに編集部作成（nosh分は2026年10月9日確認・他社は2026年7月時点）。最新情報は各公式サイトでご確認ください。
         </p>
 
         <div className="table-wrapper mb-6">
@@ -1148,7 +1151,7 @@ export default function NoshReviewsPage() {
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://yoshikei-dvlp.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ヨシケイ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.0</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">597-750</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.coopdeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">コープデリ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.5</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">550-700</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.pal-system.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">パルシステム</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">580-720</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ナッシュclub（割引）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">499-624</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ナッシュclub（割引）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">492-714</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://tsurukame-kitchen.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">つるかめキッチン</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">13</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">660-815</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://1meal.life/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ワンミール</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">770-840</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://fitfoodhome.tabeyoukai.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">FIT FOOD HOME</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.0</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">750-1,080</td></tr>
