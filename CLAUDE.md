@@ -102,4 +102,12 @@ GSC診断(28d 6/3-7/1): クリック2・表示738(前月391→1.9倍)・平均20
 - 追加: 消費者庁の確約計画認定（2025-09-19・No.1表示とInstagram投稿の転載・「違反を認定したものではない」を明記）、「解約・停止の方法と締切」節、長期継続/冷凍庫プランの表、第三者実食レビューの評価表、FAQ 5→10問、更新日表示。title/description/dateModified=10月
 - 見出し「実際に注文してわかった」→「口コミと公式情報からわかった」（実食未実施）。星評価に「編集部の整理・実食評価ではない」注記
 - ⚠️ ポジ率（簡易語数カウント）は解約手順の事実記述で下がった。感情面はポジ側に第三者実食評価を足して補っている
-- 残: 白書 `ryokin-hakusho-2026-07.json` の三ツ星 subscription「定期のみ」→公式は単品「都度購入」あり。`nosh-vs-mitsuboshi-vs-wellness` に三ツ星「80種類」が3か所残存（公式は125種類以上）＝次回直す。`mitsuboshi-coupon` は未確認
+- 残りは同日中に対応（下の追記）
+
+### 2026-10-09（続き）三ツ星ファームの古い値を全記事で訂正 ✅本番反映済み（source 6a65259・e33dc25 / deploy 99be59b・409d18f）
+- `nosh-vs-mitsuboshi-vs-wellness`: 80種類→125種類以上（3か所）／料金 7食4,382・14食8,618・21食12,960円（626/616/617円）→6,485・11,458・14,918円（927/819/711円）／「初回7食1,980円」「283円」（公式に無い）→14・21食初回送料無料・都度購入／送料「990〜2,970円・関東最安」→990円（北海道沖縄2,500円）／配送間隔 2/3/4週→1/2/3/4週／注文「Web・LINE」→Web・アプリ／解約「Web・電話」→アプリ・LINE・電話（7日前）／「解約金なし・最低回数なし」→通常なし・お得プラン7,700/16,500円／代引○→×（カードエラー時の自動切替のみ）・後払い248円／容器18×14→17.7×18×4cm／栄養表を三ツ星基準に／月額試算 19,216→24,896円・687→889円／「化学調味料・合成着色料不使用」（公式に記載なし）を削除・結論と星から添加物軸を削除／年代性別付き架空引用18件→傾向＋個別記事を出典に／ウェルネス解約「電話のみ」→Webフォーム・マイページ・電話（10/8確認値）／dateModified 10/9
+- 白書: 三ツ星 subscription「定期のみ」→「両方」（公式トップJS表記「1個から都度購入」＋特商法「単品購入は注文ごとに送料」）・verified_at 10/9・本文に都度購入の一文
+- 他記事（全文grep）: 15社表の三ツ星行（17記事・626-842円/たんぱく20-30g→711-927円/15以上/塩分−）、626円・680円・572円・283円・80種類・「アプリがない（Web注文のみ）」・「化学調味料・合成着色料不使用」・「全メニューがクリア」を diet/toushitsu/hitorigurashi/sango（ランキングカード・試算表・JSON-LD）・kou-tanpaku（URLが mitsuboshi-farm.jp だった→mitsuboshifarm.jp）・nosh-reviews・nosh-coupon・souryou-yasui（697→889円）・takuhai-vs-conveni・shokutakubin・magokoro・muscle-deli・green-spoon・rizap・reitou-bento-mazui・mamano で訂正
+- sango の産後試算: 三ツ星 36,372→44,542円（通常定期便で再計算）・「添加物の少なさ」評価行を削除
+- precheck 全OK・本番curlで旧値0件確認。**Indexing 12/25（429でクォータ切れ）**。未送信13本＝reitou-bento-mazui rizap-supportmeal-reviews sango-osusume shokutakubin-reviews souryou-yasui-ranking takuhai-vs-conveni takushoku-ryokin-hakusho toushitsu-seigen-osusume tsurukame-reviews wanmairu-reviews watami-reviews wellness-dining-reviews yoshikei-reviews → 明日送信
+- ⚠️ 3社比較記事の nosh・ウェルネス側の数値（nosh 599円/送料913円〜等）は今回未確認のまま（三ツ星以外はスコープ外）
