@@ -111,3 +111,15 @@ GSC診断(28d 6/3-7/1): クリック2・表示738(前月391→1.9倍)・平均20
 - sango の産後試算: 三ツ星 36,372→44,542円（通常定期便で再計算）・「添加物の少なさ」評価行を削除
 - precheck 全OK・本番curlで旧値0件確認。**Indexing 12/25（429でクォータ切れ）**。未送信13本＝reitou-bento-mazui rizap-supportmeal-reviews sango-osusume shokutakubin-reviews souryou-yasui-ranking takuhai-vs-conveni takushoku-ryokin-hakusho toushitsu-seigen-osusume tsurukame-reviews wanmairu-reviews watami-reviews wellness-dining-reviews yoshikei-reviews → 明日送信
 - ⚠️ 3社比較記事の nosh・ウェルネス側の数値（nosh 599円/送料913円〜等）は今回未確認のまま（三ツ星以外はスコープ外）
+
+### 2026-10-10 P2 鮮度再確認の続き: 7月のまま11本のうちGSC上位5本を公式と突合（成長ルーチン）✅本番反映済み（source b272ee3 / deploy 18f83a0）
+- 選定: GSC 28d（9/11〜10/8）表示順 = kinnikushokudo-deli 76 / green-spoon 66 / dietician 56 / taihei-family-set 52 / tsukurioki-jp 43（次点 yushoku-net 40・白書 39・medimeal 24・wanmairu 20・fitfoodhome 15・tsurukame 0）
+- 突合は孫エージェントなしで自分で実施（公式生HTML・公式JSON API・特商法・公式FAQ。dietician は公式が DNS 解決不可のため Internet Archive の公式スナップショット）
+  - **ツクリオ（食い違い8）**: 4人前週3食 9,990→**10,690円**、4人前週5食 15,960→**16,960円**、1人前 833→891円・798→848円、月額 39,960→42,760・63,840→67,840円、2人前の単価「約1,332円/食（約666円/人前×2）」→1人前1,331円、**2人前週5食 11,990円**を追加、4人前の初回限定価格（6,690/12,960円）を追記。変更・お休み・退会の締切=前週水曜23:59（LINE）、締切後キャンセル不可。パワーシールの「43都府県（北海道・宮崎・鹿児島・沖縄除く）」は公式内で対応エリアページと表記が食い違う→両方併記
+  - **ダイエティシャン（食い違い2）**: 代替候補の GOFOOD は公式が2025-06-30終了告知済み（10/9確認）→**筋肉食堂DELIローカーボ（糖質12.2g・たんぱく31.8g・994円〜）に差し替え**。nosh 620→612円
+  - **筋肉食堂DELI（食い違い2）**: 沖縄14食欄「〜4,180円」→3,900円（送料表を全地域×7/14/21食に拡張）、「1食約1,080円〜／1,000円超」→最安はローカーボ21食994円。バルクアップ料金・お届け間隔・6日前決済を追記。トップの「期間限定 1食805円～（税抜）」は条件不明→条件不明と明記
+  - **GREEN SPOON（食い違い1＋α）**: 724円等は「定期初回」価格ではなく通常の定期BOX単価（公式 /api/store/order-plan の tax_unit_price）→「定期L BOX」に。初回分キャンセル不可・変更締切4〜8日前（特商法）・支払い方法を追記。⚠️公式トップ注記は送料「税込990円」、特商法は「1,089円〜3,289円」→記事は1,089円のまま・併記。公式FAQ(faq.green-spoon.jp)はCloudflareチャレンジでcurl/ヘッドレスとも不可
+  - **タイヘイ（食い違い0・条件の欠落1）**: 価格・送料・締切はすべて一致。**定期は「初回含め最低3回」**（公式FAQ）が記事に無かった→FAQ・表・デメリットに追記。糖質少なめ=糖質17.0g以下
+- 確認不可（値は変えず）: 筋肉食堂の店舗名3つ・初回割引の有無／GS の北海道・沖縄送料内訳3値・スタート応援プラン・グリコ/会員数/セブン／Dietician の販売当時価格8値＋myランク・メニュー数・開始時期・工場／タイヘイの1972・1974年・カード手数料／ツクリオの2018創業・3,000万食・改称日
+- 5本とも title【2026年10月最新】・description【2026年10月更新】・modifiedTime/dateModified=10/10・「更新: 2026年10月10日（公式で再確認）」。precheck 1回目 tsukurioki description 162字で不合格→短縮→全項目OK
+- **残り（P2）**: 7月のまま 6本 = yushoku-net / takushoku-ryokin-hakusho（白書18社）/ medimeal / wanmairu / fitfoodhome / tsurukame。白書は筋肉食堂（バルクアップ・送料21食）・GREEN SPOON（初回表記）・ツクリオの今回値と突合が必要
