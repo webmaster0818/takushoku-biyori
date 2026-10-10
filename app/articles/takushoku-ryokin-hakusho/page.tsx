@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-07-04T00:00:00+09:00",
+    modifiedTime: "2026-10-10T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -355,7 +355,7 @@ function SubHeading({ children }: { children: React.ReactNode }) {
 export default function TakushokuRyokinHakushoPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-07-04T00:00:00+09:00",
+    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-10-10T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -416,7 +416,7 @@ export default function TakushokuRyokinHakushoPage() {
         <SectionHeading id="methodology">調査方法（全18社を公式サイトで直接確認）</SectionHeading>
         <ul className="text-sm mb-6 leading-relaxed list-disc list-inside space-y-2">
           <li><strong>調査対象:</strong> 宅配弁当・宅食（冷凍弁当・冷蔵惣菜・夕食宅配・ミールキット）18ブランド</li>
-          <li><strong>確認日:</strong> {VERIFIED_DATE}（本ページの数値は原則この日の公式サイト掲載額・税込。ツクリオのみ2026年10月10日に公式で再確認した値＝4人前プランの値上げを反映）</li>
+          <li><strong>確認日:</strong> {VERIFIED_DATE}（本ページの数値は原則この日の公式サイト掲載額・税込。ツクリオ・nosh・ウェルネスダイニングは2026年10月10日に公式で再確認した値＝ツクリオ4人前プランとウェルネスダイニング全コースの値上げ、noshの送料表改訂を反映）</li>
           <li><strong>情報源:</strong> 各社公式サイトのみを直接確認。<strong>比較サイト・まとめ記事からの転記は一切していません</strong></li>
           <li><strong>実質単価の計算式:</strong> (代表プランの税込料金＋代表送料)÷食数。送料は各社の代表値（地域別の場合は関東など公式の代表表記）を採用し、送料無料・配達料込みのサービスは0円として計算</li>
           <li><strong>代表プラン:</strong> 各社の基準となる最小〜標準プラン（1回限りのお試し特価は比較対象から除外）</li>
@@ -516,13 +516,13 @@ export default function TakushokuRyokinHakushoPage() {
             ],
             [
               "800円台",
-              `食宅便（${yen(unitOf("shokutakubin") as number)}円）、ウェルネスダイニング（${yen(unitOf("wellness-dining") as number)}円）、Dr.つるかめキッチン（${yen(unitOf("tsurukame-kitchen") as number)}円）、メディミール（${yen(unitOf("medimeal") as number)}円）、おうちコープ（${yen(unitOf("ouchi-coop") as number)}円）`,
+              `食宅便（${yen(unitOf("shokutakubin") as number)}円）、Dr.つるかめキッチン（${yen(unitOf("tsurukame-kitchen") as number)}円）、メディミール（${yen(unitOf("medimeal") as number)}円）、おうちコープ（${yen(unitOf("ouchi-coop") as number)}円）`,
               "制限食・栄養管理系の主戦場",
             ],
             [
               "900円〜1,000円台",
-              `nosh（${yen(unitOf("nosh") as number)}円）、三ツ星ファーム（${yen(unitOf("mitsuboshi-farm") as number)}円）`,
-              "味・メニュー選択重視の人気2強。少食数だと送料負担が重い",
+              `nosh（${yen(unitOf("nosh") as number)}円）、三ツ星ファーム（${yen(unitOf("mitsuboshi-farm") as number)}円）、ウェルネスダイニング（${yen(unitOf("wellness-dining") as number)}円・都度注文7食で計算）`,
+              "味・メニュー選択重視の人気2強と、少食数の都度注文の制限食。少食数だと送料負担が重い",
             ],
             [
               "1,300円超",
@@ -570,7 +570,7 @@ export default function TakushokuRyokinHakushoPage() {
           </table>
         </div>
         <p className="text-xs text-warm-gray mb-4">
-          ※noshの関東送料は8・10食で1,386円のため、10食の実質単価は{yen(calcUnit(brandOf("nosh").plans[2].price_jpy as number, 1386, 10))}円になります（表は代表送料1,166円で計算）。Dr.つるかめキッチンは定期なら送料無料でさらに下がります。三ツ星ファームの14食・21食は初回送料無料です。
+          ※noshの送料は4〜12食で同額（関東1,166円）のため、10食なら実質単価は{yen(calcUnit(brandOf("nosh").plans[2].price_jpy as number, 1166, 10))}円、12食なら{yen(calcUnit(brandOf("nosh").plans[3].price_jpy as number, 1166, 12))}円になります（2026年7月27日改訂の送料表・2026年10月10日確認）。Dr.つるかめキッチンは定期なら送料無料でさらに下がります。三ツ星ファームの14食・21食は初回送料無料です。
         </p>
         <p className="text-sm mb-6 leading-relaxed">
           まごころケア食は21食セットで<strong>1食{yen(calcUnit(magokoro21.price_jpy as number, 980, magokoro21.meals as number))}円</strong>まで下がり、今回の調査で最も安い水準でした。また三ツ星ファームには長期継続応援プラン21食（{yen(mitsuboshiChoki21.price_jpy as number)}円＋送料）という選択肢もありますが、後述の<a href="#cancel-lock" className="text-accent hover:underline">解約縛り</a>とセットなので注意が必要です。冷凍庫の容量が許すなら、大容量プランを選ぶのが送料負担を下げる最短ルートです。
@@ -586,7 +586,8 @@ export default function TakushokuRyokinHakushoPage() {
         <ComparisonTable
           headers={["サービス", "本州（代表）", "北海道・沖縄など"]}
           rows={[
-            ["nosh", "1,166円（関東・6食）", "全国11エリア別（8・10食の関東は1,386円）"],
+            ["nosh", "1,166円（関東・4〜12食）", "北海道1,713円／沖縄1,623円（20食は関東1,386円・北海道1,992円・沖縄1,918円）"],
+            ["ウェルネスダイニング", "880円（都度・全国一律）", "北海道・沖縄 1,870円（定期7食は935円）"],
             ["三ツ星ファーム", "990円（全国一律）", "北海道・沖縄・一部離島 2,500円"],
             ["まごころケア食", "980円（全国一律）", "沖縄・離島 1,480円"],
             ["ライフミール", "980円（沖縄以外）", "沖縄 1,480円"],
@@ -648,7 +649,7 @@ export default function TakushokuRyokinHakushoPage() {
             ["Dr.つるかめキッチン", "次回お届け予定日の6日前までに連絡"],
             ["メディミール", "お届け7日前までの連絡"],
             ["筋肉食堂DELI", "次回お届け予定日の7日前までにマイページから停止"],
-            ["ウェルネスダイニング", "お届け予定日の1週間前までに連絡"],
+            ["ウェルネスダイニング", "お届け予定日の7日前まで（1回休止はマイページ、複数回休止・解約はフォーム・電話）"],
             ["ワタミの宅食", "お届け日2日前の17時まで（受付は平日9〜17時）"],
             ["ツクリオ", "配達前週の水曜日中までにLINEでキャンセル"],
             ["コープデリ（夕食宅配）", "前週の火曜19時30分まで（期限後キャンセルは原則不可）"],
@@ -665,7 +666,7 @@ export default function TakushokuRyokinHakushoPage() {
             <strong>「つくりおき.jp」は2026年3月16日に「ツクリオ（Tsuklio）」へ名称変更</strong>されました（運営: Antway社。プレスリリースおよび新旧両公式サイトで確認済み）。本白書では新名称「ツクリオ」で掲載しています。旧名称で検索した場合も同一サービスです。
           </p>
           <p className="text-xs text-warm-gray">
-            このほか、noshの送料表は2025年5月1日改訂版、GREEN SPOONの送料は2025年9月改定後の金額を採用しています（いずれも{VERIFIED_DATE}時点の公式掲載）。
+            このほか、noshの送料表は2026年7月27日改訂版（2026年10月10日確認）、GREEN SPOONの送料は2025年9月改定後の金額を採用しています（いずれも{VERIFIED_DATE}時点の公式掲載）。
           </p>
         </div>
 

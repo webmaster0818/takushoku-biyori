@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-05-28T00:00:00+09:00",
-    modifiedTime: "2026-05-28T00:00:00+09:00",
+    modifiedTime: "2026-10-10T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -168,7 +168,7 @@ export default function WatamiDirectOtameshiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-05-28T00:00:00+09:00",
+    dateModified: "2026-10-10T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -390,7 +390,7 @@ export default function WatamiDirectOtameshiPage() {
 
         {[
           { num: 1, title: "1食あたりの量はやや少なめ", text: "三菜の熱量は約150〜220kcal、五菜でも約300〜400kcal程度と、ボリューム重視の男性には物足りない可能性があります。ご飯や汁物の追加が前提と考えるのが現実的です。" },
-          { num: 2, title: "メニュー選択の自由度はnoshより低い", text: "noshのような60種類以上から好きに選ぶスタイルではなく、コース制+おまかせ/選べるという構造。「好きな主菜だけ選びたい」ニーズには合いません。" },
+          { num: 2, title: "メニュー選択の自由度はnoshより低い", text: "noshのような100種類以上から好きに選ぶスタイルではなく、コース制+おまかせ/選べるという構造。「好きな主菜だけ選びたい」ニーズには合いません。" },
           { num: 3, title: "送料込みの実質単価は地域差あり", text: "本州は安いものの、北海道・沖縄は送料が高くなる可能性があります。1食360〜499円の安さに惹かれて注文しても、送料込みだと割高になるケースもあるので必ず総額を確認しましょう。" },
         ].map((demerit) => (
           <div key={demerit.num} className="flex gap-4 mb-5">

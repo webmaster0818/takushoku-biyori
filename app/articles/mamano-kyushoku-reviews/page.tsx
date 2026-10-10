@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-05-28T00:00:00+09:00",
-    modifiedTime: "2026-05-28T00:00:00+09:00",
+    modifiedTime: "2026-10-10T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -39,7 +39,7 @@ const faqData = [
   {
     question: "料金はどれくらい？noshより高い？",
     answer:
-      "ママの休食は管理栄養士監修・産後特化型のため、一般的なコスパ重視型の冷凍宅配弁当(noshの599円〜など)より1食単価は高めの設計です。具体的な料金プランは食数や定期/都度購入で変動するため、最新の正確な価格は公式サイト(https://mamanokyushoku.com/)でご確認ください。栄養設計の専門性に価値を感じるかで判断するのが妥当です。",
+      "ママの休食は管理栄養士監修・産後特化型のため、一般的なコスパ重視型の冷凍宅配弁当(noshの612円〜など・2026年10月10日公式確認)より1食単価は高めの設計です。具体的な料金プランは食数や定期/都度購入で変動するため、最新の正確な価格は公式サイト(https://mamanokyushoku.com/)でご確認ください。栄養設計の専門性に価値を感じるかで判断するのが妥当です。",
   },
   {
     question: "解約は簡単にできますか？",
@@ -168,7 +168,7 @@ export default function MamanoKyushokuReviewsPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-06-24T00:00:00+09:00",
+    dateModified: "2026-10-10T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -337,7 +337,7 @@ export default function MamanoKyushokuReviewsPage() {
 
         <SubHeading>2. メニューのバリエーションが大手より少ない</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          nosh(60種類以上)や三ツ星ファーム(125種類以上)と比べると、選択肢の幅は限られます。長期で毎日利用すると<strong>「同じメニューに当たることが増える」</strong>感覚を持つ方もいます。短期集中型の利用と相性が良いと言えます。
+          nosh(100種類以上)や三ツ星ファーム(125種類以上)と比べると、選択肢の幅は限られます。長期で毎日利用すると<strong>「同じメニューに当たることが増える」</strong>感覚を持つ方もいます。短期集中型の利用と相性が良いと言えます。
         </p>
 
         <SubHeading>3. 量は女性向けで男性には少ない</SubHeading>
@@ -429,8 +429,8 @@ export default function MamanoKyushokuReviewsPage() {
           rows={[
             ["主なターゲット", "妊娠・産後・授乳期女性", "一般・ダイエット中", "高齢者・健康志向"],
             ["栄養設計の方向性", "葉酸・鉄・カルシウム・タンパク質重視", "糖質30g以下・塩分2.5g以下", "管理栄養士監修・塩分配慮"],
-            ["1食単価", "高め", "599円〜", "590〜680円"],
-            ["メニュー数", "中(産後特化)", "60種類以上", "コース制"],
+            ["1食単価", "高め", "612円〜", "590〜680円"],
+            ["メニュー数", "中(産後特化)", "100種類以上", "コース制"],
             ["冷凍/冷蔵", "冷凍", "冷凍", "冷蔵(主)/冷凍(ダイレクト)"],
             ["配送", "全国", "全国", "エリア限定(冷蔵)"],
           ]}

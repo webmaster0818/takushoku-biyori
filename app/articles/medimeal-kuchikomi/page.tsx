@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-07-04T00:00:00+09:00",
+    modifiedTime: "2026-10-10T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -351,7 +351,7 @@ export default function MedimealKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-07-04T00:00:00+09:00",
+    dateModified: "2026-10-10T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -792,7 +792,7 @@ export default function MedimealKuchikomiPage() {
         <ComparisonTable
           headers={["項目", "メディミール", "Dr.つるかめキッチン", "ウェルネスダイニング"]}
           rows={[
-            ["制限食7食（税込）", "5,270円（カロリー制限）", "5,184円（糖質制限・定期）", "5,238円（糖質&カロリー・都度〜）"],
+            ["制限食7食（税込）", "5,270円（カロリー制限）", "5,184円（糖質制限・定期）", "5,767円（糖質＆カロリー制限）"],
             ["送料", "都度880円 / 初回・定期無料", "都度770円 / 定期無料", "都度880円 / 定期14・21食無料"],
             ["専門家体制", "開発〜調理〜電話まで管理栄養士", "専門医＋管理栄養士のW監修", "管理栄養士監修・相談窓口あり"],
             ["回数縛り", "なし", "なし", "なし"],
@@ -800,7 +800,7 @@ export default function MedimealKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※各社公式サイトの公開情報をもとに編集部作成（2026年7月4日確認）。最新情報は各公式サイトでご確認ください。
+          ※各社公式サイトの公開情報をもとに編集部作成（2026年7月4日確認。ウェルネスダイニングの列は2026年10月10日に公式で再確認）。最新情報は各公式サイトでご確認ください。
         </p>
 
         {/* ===== FAQ ===== */}

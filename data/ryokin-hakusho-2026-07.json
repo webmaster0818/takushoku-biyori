@@ -32,27 +32,34 @@
      "meals": 12,
      "price_jpy": 7344,
      "note": "1食612円（税込）。nosh clubで最安1食492円まで"
+    },
+    {
+     "plan_name": "20食プラン",
+     "meals": 20,
+     "price_jpy": 12240,
+     "note": "1食612円（税込）。2回目以降の配送でのみ選択可"
     }
    ],
    "shipping": {
     "type": "regional",
     "representative_jpy": 1166,
     "temperature": "frozen",
-    "note": "全国11エリア別。関東は6食1,166円／8食・10食1,386円（税込、クール宅急便料金込み）。送料表は2025年5月1日改訂版"
+    "note": "全国11エリア別（税込・クール宅急便料金込み）。2026年7月27日改訂版: 4〜12食は同一料金で関西1,023円・関東1,166円・北海道1,713円・沖縄1,623円、20食は関西1,243円・関東1,386円・北海道1,992円・沖縄1,918円。2026-10-10確認"
    },
    "first_discount": "初回¥1,500 OFF（2回目¥1,000 OFF・3回目¥500 OFF、合計3,000円OFF）",
    "subscription": "定期のみ",
-   "cancel_note": "継続回数の制限・解約金なし。スキップ・一時停止はアプリで可、noshランク保持。都度購入の記載なし（定期配送サービスと明記）",
+   "cancel_note": "継続回数の制限・解約金なし。変更・スキップ・停止・解約はお届け予定日の4〜5日前（地域により異なる）までにマイページ（電話・フォームも可）。初回分はキャンセル不可。スキップ・停止してもnoshランクは保持",
    "source_urls": [
     "https://nosh.jp/",
     "https://nosh.jp/plan",
     "https://nosh.jp/shipping",
-    "https://nosh.jp/faq"
+    "https://nosh.jp/club",
+    "https://nosh.jp/faq/answer/1"
    ],
-   "verified_at": "2026-09-05",
+   "verified_at": "2026-10-10",
    "verified": true,
-   "notes": "20食プランの掲載なし。12食プランは2026-09-05の再確認で新たに確認（前回2026-07-04時点は6/8/10食のみ）",
-   "reverify_note": "価格据え置き。12食プラン(7,344円)が追加されていた"
+   "notes": "20食プラン（12,240円・2回目以降のみ）を2026-10-10に確認。nosh club最高ランク（累計280食）は10食499円・12食492円/食",
+   "reverify_note": "2026-10-10: 価格据え置き。送料表が2026年7月27日改訂版（4〜12食同一料金／20食）に更新されていたため送料noteを差し替え"
   },
   {
    "slug": "mitsuboshi-farm",
@@ -171,48 +178,51 @@
     {
      "plan_name": "栄養バランス気配り宅配食 7食",
      "meals": 7,
-     "price_jpy": 5022,
-     "note": "税込。お試し注文（初回送料無料）"
+     "price_jpy": 5529,
+     "note": "税込"
     },
     {
      "plan_name": "栄養バランス気配り宅配食 14食",
      "meals": 14,
-     "price_jpy": 9882,
+     "price_jpy": 10778,
      "note": "税込"
     },
     {
      "plan_name": "栄養バランス気配り宅配食 21食",
      "meals": 21,
-     "price_jpy": 14364,
+     "price_jpy": 15800,
      "note": "税込"
     },
     {
      "plan_name": "糖質＆カロリー制限 気配り宅配食 7食",
      "meals": 7,
-     "price_jpy": 5238,
-     "note": "税込〜。塩分制限7食5,184円〜／たんぱく＆塩分調整7食5,508円〜／脂質制限7食6,372円〜／厳選栄養バランス7食7,408円〜"
+     "price_jpy": 5767,
+     "note": "税込。14食11,232円／21食16,178円。塩分制限7食5,702円・14食11,232円・21食16,178円／たんぱく＆塩分調整7食6,058円・14食11,858円・21食17,258円／脂質制限7食7,009円・14食13,305円・21食19,418円／厳選栄養バランス7食8,154円・14食15,800円・21食23,122円"
     }
    ],
    "shipping": {
     "type": "flat",
-    "representative_jpy": 770,
+    "representative_jpy": 880,
     "temperature": "frozen",
-    "note": "都度注文は全国770円（税込）。定期注文は公式内で記載が割れており、商品ページは「ずっと送料無料」、定期案内ページは「7食セットは半額385円」。どちらか一方に断定せず両方を記載する。お試しは初回送料無料。北海道・沖縄は追加送料あり（金額の明記なし）。2026-09-05確認"
+    "note": "都度注文880円（北海道・沖縄1,870円）。定期注文は14食・21食が無料、7食のみ440円（北海道・沖縄935円）。お試し注文（初回）は送料無料、お試し定期注文（毎週×8回）は8回すべて送料無料（いずれも税込・公式FAQ）。2026-10-10確認"
    },
-   "first_discount": "「7食・14食・21食、どの食数でも初回送料無料でご注文いただけます」",
+   "first_discount": "お試し注文（初回）は7食・14食・21食どれでも送料無料。お試し定期注文は毎週×8回すべて送料無料",
    "subscription": "両方",
-   "cancel_note": "注文回数の縛りなし・解約金なし。スキップ・休止は電話またはネットで可。変更はお届け予定日の1週間前までに連絡",
+   "cancel_note": "契約期間の縛り・解約金なし。変更・休止・解約はお届け予定日の7日前まで。1回休止はマイページ、複数回休止・解約はフォーム、電話0120-503-999",
    "source_urls": [
-    "https://www.wellness-dining.com/",
     "https://www.wellness-dining.com/kikubari/",
+    "https://www.wellness-dining.com/kikubari/products/k110/",
+    "https://www.wellness-dining.com/kikubari/products/k120/",
+    "https://www.wellness-dining.com/kikubari/products/k130/",
     "https://www.wellness-dining.com/kikubari/products/k140/",
-    "https://www.wellness-dining.com/souryou.html",
-    "https://www.wellness-dining.com/kikubari/teiki/"
+    "https://www.wellness-dining.com/kikubari/products/k150/",
+    "https://www.wellness-dining.com/kikubari/products/k160/",
+    "https://www.wellness-dining.com/faq/kikubari/"
    ],
-   "verified_at": "2026-09-05",
+   "verified_at": "2026-10-10",
    "verified": true,
-   "notes": "通販公式はwellness-dining.com。コース別価格は「〜円」表記（メニュー構成により変動の含み）",
-   "reverify_note": "⚠️送料が前回記録(880円)から変更。7食5,022円は据え置き"
+   "notes": "通販公式はwellness-dining.com。気配り宅配食は6コース。メニューは管理栄養士のお任せ（選べない）",
+   "reverify_note": "2026-10-10: 値上げ（栄養バランス7食5,022→5,529円等）。送料は都度880円・定期14/21食無料・7食440円に確定（公式FAQ）"
   },
   {
    "slug": "yoshikei",

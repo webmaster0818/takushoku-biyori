@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-09T00:00:00+09:00",
+    modifiedTime: "2026-10-10T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -348,7 +348,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-10-09T00:00:00+09:00",
+    dateModified: "2026-10-10T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -869,7 +869,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
             ["運営", "ニチレイフーズ（冷凍食品大手）", "ナッシュ", "日清医療食品"],
             ["1食あたり目安（税込）", "800円〜（定期8食）", "620円〜", "約596円〜"],
             ["栄養設計", "300kcal以下・塩分2.0g以下", "糖質30g・塩分2.5g以下", "コースによる（制限食豊富）"],
-            ["送料", "7,500円以上で無料（本州・四国）/定期無料", "地域別913円〜", "定期390円/都度780円"],
+            ["送料", "7,500円以上で無料（本州・四国）/定期無料", "地域別1,023円〜（2026年10月10日確認）", "定期390円/都度780円"],
             ["お試し", "4食3,300円", "初回割引あり", "お試しセットあり"],
             ["回数縛り", "なし（FAQ明記・期限なし）", "なし", "なし"],
             ["向いている人", "大手品質×健康設計", "手軽さ・食事管理", "制限食の選択肢重視"],

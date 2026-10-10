@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-16T00:00:00+09:00",
-    modifiedTime: "2026-07-04T00:00:00+09:00",
+    modifiedTime: "2026-10-10T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -137,7 +137,7 @@ function StarRating({ count }: { count: number }) {
 export default function ShokutakubinReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-16T00:00:00+09:00", dateModified: "2026-07-04T00:00:00+09:00",
+    datePublished: "2026-04-16T00:00:00+09:00", dateModified: "2026-10-10T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -233,7 +233,7 @@ export default function ShokutakubinReviewsPage() {
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
-          おまかせコース・おこのみセレクトは<strong>1食あたり596円</strong>。nosh（599円）とほぼ同水準で、三ツ星ファーム（711円〜（2026年10月9日・公式確認））より安い価格設定です。らくらく定期便を利用すると送料も割引になります。
+          おまかせコース・おこのみセレクトは<strong>1食あたり596円</strong>。nosh（通常価格の最安は12食プランの612円・2026年10月10日・公式確認）よりやや安く、三ツ星ファーム（711円〜（2026年10月9日・公式確認））より安い価格設定です。らくらく定期便を利用すると送料も割引になります。
         </p>
 
         <SubHeading>食宅便の3つの特徴</SubHeading>
@@ -347,7 +347,6 @@ export default function ShokutakubinReviewsPage() {
             title: "都度購入の送料が高い（1,330円）",
             reviews: [
               "「都度購入だと送料1,330円。5食セットだと1食あたり送料266円は痛い」（30代男性）",
-              "「らくらく定期便で940円に下がるけど、nosh（913円）と大差ない」（40代男性）",
             ],
             comment: "都度購入の送料1,330円は確かに高め。らくらく定期便なら940円に下がりますが、ウェルネスダイニング（定期14食以上で送料無料）と比べると見劣りします。7食セットの定期便にすれば1食あたりの送料負担は約134円に抑えられます。",
           },
@@ -383,7 +382,7 @@ export default function ShokutakubinReviewsPage() {
           { num: 2, title: "日清医療食品ブランドの圧倒的な安心感", text: "全国5,300以上の病院・介護施設に給食を提供する実績は、他のどの宅配弁当サービスにもない信頼性。1万人以上の管理栄養士の知見、HACCP準拠の衛生管理、原材料の品質管理——すべてにおいて医療レベルの基準を満たしています。「安心して食べられること」を最重視する方にとって、これ以上の選択肢はありません。" },
           { num: 3, title: "低糖質コースの糖質10g以下が優秀", text: "食宅便の低糖質セレクトは糖質10g以下。nosh（30g以下）の3分の1、三ツ星ファーム（25g以下）の半分以下という厳しい制限値です。厳密な糖質制限が必要な方にとっては、業界トップクラスの低糖質コースです。味も単調ではなく、和洋中のバリエーションがあります。" },
           { num: 4, title: "おこのみセレクトでメニューの自由度がある", text: "食宅便には「おこのみセレクト」コースがあり、好きなメニューを自分で選んで注文できます。ウェルネスダイニングやまごころケア食のようなおまかせ制のみのサービスと違い、苦手な食材を避けたり、好みのメニューだけを注文したりできる自由度があります。" },
-          { num: 5, title: "解約がマイページから可能", text: "食宅便のらくらく定期便は、マイページから解約手続きが可能。ウェルネスダイニングのように電話が必要ではなく、Web上で完結します。noshほどスムーズではありませんが、ウェルネスダイニングよりは手軽。解約金もかからないので、気軽に始められます。" },
+          { num: 5, title: "解約がマイページから可能", text: "食宅便のらくらく定期便は、マイページから解約手続きが可能。ウェルネスダイニング（解約はフォーム・電話）と違い、マイページ上で完結します。noshほどスムーズではありませんが、ウェルネスダイニングよりは手軽。解約金もかからないので、気軽に始められます。" },
         ].map((merit) => (
           <div key={merit.num} className="flex gap-4 mb-5">
             <span className="flex-shrink-0 w-8 h-8 bg-accent text-white rounded-full flex items-center justify-center text-sm font-bold">{merit.num}</span>
@@ -401,7 +400,7 @@ export default function ShokutakubinReviewsPage() {
 
         {[
           { num: 1, title: "1品ずつのボリュームが控えめ", text: "品数が多い分、1品ずつの量は少なめです。トータルの重量は約200gで、nosh（約250g）より軽い。成人男性は確実に物足りなさを感じます。ご飯と汁物を別途用意する前提で考えましょう。ダイエット目的なら逆にちょうどよいサイズですが、がっつり食べたい方には不向きです。" },
-          { num: 2, title: "都度購入の送料が高い（1,330円）", text: "都度購入の送料1,330円は業界でもやや高め。5食セットだと1食あたりの送料負担が266円にもなります。らくらく定期便（940円）に切り替えるだけで送料を約30%カットできるので、継続利用する方は必ず定期便を選びましょう。ウェルネスダイニングの定期14食以上送料無料と比べると見劣りしますが、nosh（913円〜）とは同水準です。" },
+          { num: 2, title: "都度購入の送料が高い（1,330円）", text: "都度購入の送料1,330円は業界でもやや高め。5食セットだと1食あたりの送料負担が266円にもなります。らくらく定期便（940円）に切り替えるだけで送料を約30%カットできるので、継続利用する方は必ず定期便を選びましょう。ウェルネスダイニングの定期14食・21食送料無料と比べると見劣りしますが、nosh（関西1,023円〜・関東1,166円・2026年10月10日・公式確認）よりは安い水準です。" },
           { num: 3, title: "専用アプリがない", text: "noshのような高機能アプリはなく、メニュー選択や配送管理はWebサイト経由。スマホでの操作性はnoshに劣ります。ただし、マイページの機能は一通り揃っており、メニュー変更・スキップ・解約はWebから可能。アプリの有無が気にならない方には問題にならないでしょう。" },
         ].map((demerit) => (
           <div key={demerit.num} className="flex gap-4 mb-5">
@@ -499,16 +498,18 @@ export default function ShokutakubinReviewsPage() {
         <ComparisonTable
           headers={["項目", "食宅便", "nosh", "まごころケア食", "ウェルネスダイニング"]}
           rows={[
-            ["1食あたり最安", "596円〜", "599円〜", "396円〜", "648円〜"],
+            ["1食あたり最安", "596円〜", "612円〜", "396円〜", "約752円〜（税込÷食数）"],
             ["品数", "4〜5品", "3〜4品", "4品", "4品"],
             ["味の評価", "★★★★☆", "★★★★☆", "★★★☆☆", "★★★☆☆"],
             ["低糖質", "10g以下コースあり", "30g以下", "制限コースあり", "15g以下コースあり"],
             ["メニュー選択", "おこのみセレクト有", "自由に選べる", "おまかせ", "おまかせ"],
-            ["送料（定期）", "940円", "913円〜", "980円", "14食以上 無料"],
+            ["送料（定期）", "940円", "1,023円〜（地域別）", "980円", "14・21食 無料（7食440円）"],
             ["運営の信頼性", "◎（日清医療食品）", "○", "○（東証プライム上場）", "○"],
             ["向いている人", "安心感・品数重視", "コスパ・自由度", "コスパ最優先", "食事制限・高齢者"],
           ]}
         />
+
+        <p className="text-xs text-warm-gray -mt-4 mb-6">※nosh・ウェルネスダイニングは2026年10月10日に公式サイトで確認（税込。ウェルネスダイニングの1食あたりは税込価格÷食数で算出）。</p>
 
         <div className="table-wrapper mb-6">
           <table className="w-full text-sm border-collapse">
@@ -637,9 +638,9 @@ export default function ShokutakubinReviewsPage() {
                 </tr>
               </thead>
               <tbody>
-                <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">nosh（ナッシュ）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">599-748</td></tr>
+                <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">nosh（ナッシュ）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">612-719</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=M5863L.1.M98647P.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">三ツ星ファーム</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">25以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15以上</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">−</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">711-927</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ウェルネスダイニング</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240-300</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">12-18</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">663-880</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ウェルネスダイニング</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240-330</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">12-18</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">752-1,165</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://magokoro-care-shoku.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">まごころケア食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-350</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">462-580</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ワタミの宅食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-400</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">40-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">3.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">590-680</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://shoutakubin.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">食宅便</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">200-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">560-700</td></tr>
@@ -647,7 +648,7 @@ export default function ShokutakubinReviewsPage() {
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://yoshikei-dvlp.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ヨシケイ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.0</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">597-750</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.coopdeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">コープデリ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.5</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">550-700</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.pal-system.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">パルシステム</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">580-720</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ナッシュclub（割引）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">499-624</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ナッシュclub（割引）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">492〜（最高ランク）</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://tsurukame-kitchen.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">つるかめキッチン</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">13</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">660-815</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://1meal.life/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ワンミール</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">770-840</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://fitfoodhome.tabeyoukai.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">FIT FOOD HOME</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.0</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">750-1,080</td></tr>
@@ -655,7 +656,7 @@ export default function ShokutakubinReviewsPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」）。最新情報は各公式サイトでご確認ください。</p>
+          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」。nosh・ナッシュclub・ウェルネスダイニングの価格は2026年10月10日に公式サイトで再確認し、noshは公式表記の1食単価、ウェルネスダイニングは全6コース・7〜21食の税込価格÷食数で算出、kcal・塩分は各コースの公式基準に更新）。最新情報は各公式サイトでご確認ください。</p>
         </section>
 
                 {/* eeat-links-202607 */}

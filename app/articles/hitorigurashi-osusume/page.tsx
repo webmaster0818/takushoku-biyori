@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-15T00:00:00+09:00",
-    modifiedTime: "2026-04-15T00:00:00+09:00",
+    modifiedTime: "2026-10-10T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -52,7 +52,7 @@ const faqData = [
   {
     question: "途中で解約やプラン変更はできますか？",
     answer:
-      "今回紹介した5社はすべて最低継続回数の縛りがなく、1回だけの利用で解約可能です。解約金・違約金もかかりません。プラン変更（食数や配送頻度の変更）もマイページやアプリから簡単にできます（ウェルネスダイニングは電話のみ）。「まずは1回試してみて、合わなければ解約」という気軽な使い方ができるのが、最近の宅配弁当サービスの良いところです。",
+      "今回紹介した5社はすべて最低継続回数の縛りがなく、1回だけの利用で解約可能です。解約金・違約金もかかりません。プラン変更（食数や配送頻度の変更）もマイページやアプリから簡単にできます（ウェルネスダイニングは1回休止がマイページ、複数回休止・解約はフォーム・電話でお届け予定日の7日前まで）。「まずは1回試してみて、合わなければ解約」という気軽な使い方ができるのが、最近の宅配弁当サービスの良いところです。",
   },
 ];
 
@@ -302,7 +302,7 @@ export default function HitorigurashiOsusumePage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-15T00:00:00+09:00",
-    dateModified: "2026-04-15T00:00:00+09:00",
+    dateModified: "2026-10-10T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -337,7 +337,7 @@ export default function HitorigurashiOsusumePage() {
         position: 1,
         name: "nosh（ナッシュ）",
         description:
-          "1食599円〜。60種類以上のメニューから自由に選べる高コスパ宅配弁当。全メニュー糖質30g以下。アプリ対応。nosh club割引で最大16.55%OFF。",
+          "1食612円〜（12食・税込）。100種類以上のメニューから自由に選べる高コスパ宅配弁当。全メニュー糖質30g・塩分2.5g以下。アプリ対応。nosh club最高ランクなら1食492円。",
         url: "https://nosh.jp/",
       },
       {
@@ -353,7 +353,7 @@ export default function HitorigurashiOsusumePage() {
         position: 3,
         name: "ウェルネスダイニング",
         description:
-          "管理栄養士監修の7つの専門コース。糖質制限・塩分制限・たんぱく質調整・やわらか食対応。栄養相談無料。",
+          "気配り宅配食は6コース（糖質＆カロリー制限・塩分制限・たんぱく＆塩分調整など）。別シリーズでやわらか宅配食もあり。栄養相談無料。",
         url: "https://www.wellness-dining.com/",
       },
       {
@@ -476,12 +476,12 @@ export default function HitorigurashiOsusumePage() {
           {
             num: 1,
             title: "1食あたりのコスト（送料込みで計算する）",
-            text: "宅食を選ぶ際、まず見るべきは「1食あたりの実質コスト」です。食材費だけでなく送料も含めて計算しましょう。例えば、noshの10食プランは1食599円ですが、送料913円（関東）を含めると実質690円/食。一方、まごころケア食は1食470円で送料無料なので、送料込みでも470円/食。見かけの価格に惑わされず、「送料込み1食あたり」で比較することが重要です。一人暮らしの食費の目安は月3万円前後。宅配弁当を夕食に使う場合、1食700円以下なら月2.1万円（30日）で食費の大部分をカバーできます。",
+            text: "宅食を選ぶ際、まず見るべきは「1食あたりの実質コスト」です。食材費だけでなく送料も含めて計算しましょう。例えば、noshの10食プランは1食620円ですが、送料1,166円（関東・2026年10月10日・公式確認）を含めると実質約737円/食。一方、まごころケア食は1食470円で送料無料なので、送料込みでも470円/食。見かけの価格に惑わされず、「送料込み1食あたり」で比較することが重要です。一人暮らしの食費の目安は月3万円前後。宅配弁当を夕食に使う場合、1食700円以下なら月2.1万円（30日）で食費の大部分をカバーできます。",
           },
           {
             num: 2,
             title: "送料（地域差が大きいサービスに注意）",
-            text: "宅配弁当の送料は、サービスによって大きく異なります。noshや三ツ星ファームは地域によって913円〜2,970円と差が大きく、北海道・沖縄在住だと送料だけで月5,000円以上になることも。一方、まごころケア食は全国送料無料、ウェルネスダイニングは定期便で送料385円と良心的。一人暮らしは支出管理が重要なので、送料は必ずチェックしましょう。",
+            text: "宅配弁当の送料は、サービスによって大きく異なります。noshは4〜12食で1,023円（関西）〜1,713円（北海道）、三ツ星ファームは990円（北海道・沖縄2,500円）と、地域によって差があります。一方、まごころケア食は全国送料無料、ウェルネスダイニングは定期注文の14食・21食なら送料無料（7食は440円）です（nosh・ウェルネスは2026年10月10日・公式確認）。一人暮らしは支出管理が重要なので、送料は必ずチェックしましょう。",
           },
           {
             num: 3,
@@ -491,12 +491,12 @@ export default function HitorigurashiOsusumePage() {
           {
             num: 4,
             title: "メニューの自由度（飽きずに続けられるか）",
-            text: "宅配弁当で最も多い解約理由は「飽きた」。一人暮らしで毎日利用するなら、メニューの豊富さと選択の自由度は非常に重要です。noshは60種類以上から自分で選べ、毎週新メニューが追加。三ツ星ファームも125種類以上（2026年10月9日・公式確認）。一方、ウェルネスダイニングやまごころケア食はコース制で、メニューを自分で選べません。「飽きやすいタイプ」の方は、メニュー数が多く自分で選べるサービスを選びましょう。",
+            text: "宅配弁当で最も多い解約理由は「飽きた」。一人暮らしで毎日利用するなら、メニューの豊富さと選択の自由度は非常に重要です。noshは100種類以上から自分で選べ、毎週新メニューが追加。三ツ星ファームも125種類以上（2026年10月9日・公式確認）。一方、ウェルネスダイニングやまごころケア食はコース制で、メニューを自分で選べません。「飽きやすいタイプ」の方は、メニュー数が多く自分で選べるサービスを選びましょう。",
           },
           {
             num: 5,
             title: "解約のしやすさ（気軽に始めて気軽に辞められるか）",
-            text: "一人暮らしは生活スタイルが変わりやすいもの。転職、引っ越し、同棲など、環境の変化に合わせて柔軟に利用できるかが重要です。noshはマイページから数クリックで即解約、スキップも簡単。三ツ星ファームは公式アプリ・LINE・電話で停止可能（お届け7日前まで）。ウェルネスダイニングはWebフォーム・マイページ・電話（お届け7日前まで）。「いつでも辞められる」という安心感があるサービスの方が、気軽に始められます。",
+            text: "一人暮らしは生活スタイルが変わりやすいもの。転職、引っ越し、同棲など、環境の変化に合わせて柔軟に利用できるかが重要です。noshはマイページから解約・スキップでき、締切はお届け予定日の4〜5日前（初回分はキャンセル不可）。三ツ星ファームは公式アプリ・LINE・電話で停止可能（お届け7日前まで）。ウェルネスダイニングは1回休止がマイページ、複数回休止・解約がフォーム・電話（お届け7日前まで）。「いつでも辞められる」という安心感があるサービスの方が、気軽に始められます。",
           },
         ].map((point) => (
           <div key={point.num} className="flex gap-4 mb-5">
@@ -524,26 +524,26 @@ export default function HitorigurashiOsusumePage() {
           color="bg-yellow-50"
           features={[
             "全メニュー糖質30g以下・塩分2.5g以下",
-            "60種類以上から自由に選べる",
+            "100種類以上から自由に選べる",
             "スマホアプリ対応",
-            "nosh club割引で最大16.55%OFF",
+            "nosh club割引（最高ランクで12食1食492円）",
           ]}
-          price="599円〜（10食プラン）"
-          shipping="913円〜（関東）"
+          price="612円〜（12食プラン）"
+          shipping="1,166円（関東・4〜12食）"
           pros={[
             "メニューの自由度が業界No.1",
             "アプリで注文・管理がストレスフリー",
-            "継続割引で1食499円まで下がる",
+            "nosh club最高ランクで1食492円（12食）まで下がる",
             "解約がマイページから即可能",
           ]}
           cons={[
-            "送料が地域差大（北海道2,145円）",
+            "送料が地域差大（北海道1,713円・4〜12食）",
             "おかずのみ（ご飯なし）",
             "メニューによって当たり外れあり",
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
-          一人暮らしに最もおすすめなのがnosh。1食599円〜のコスパの良さ、60種類以上のメニューから自分で選べる自由度、アプリの使いやすさ、解約の簡単さ——一人暮らしに必要な要素をすべて高水準で満たしています。初回3,000円OFFのキャンペーンを利用すれば、さらにお得に始められます。詳しくは<Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline">nosh(ナッシュ)の口コミ・評判を徹底調査</Link>をご覧ください。
+          一人暮らしに最もおすすめなのがnosh。1食612円〜（12食）のコスパの良さ、100種類以上のメニューから自分で選べる自由度、アプリの使いやすさ、解約の簡単さ——一人暮らしに必要な要素をすべて高水準で満たしています。初回1,500円・2回目1,000円・3回目500円OFFの割引でお得に始められます。詳しくは<Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline">nosh(ナッシュ)の口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
 
         <RankingCard
@@ -580,22 +580,22 @@ export default function HitorigurashiOsusumePage() {
           tagline="健康管理が必要な方に。管理栄養士に無料相談可"
           color="bg-blue-50"
           features={[
-            "7つの専門コース（糖質制限・塩分制限等）",
+            "気配り宅配食6コース（糖質＆カロリー制限・塩分制限等）",
             "管理栄養士に無料で栄養相談",
-            "やわらか食・ムース食にも対応",
-            "定期便で送料半額（385円）",
+            "別シリーズの「やわらか宅配食」（ムースやわらかまで3段階）あり",
+            "定期14・21食は送料無料（7食は440円）",
           ]}
-          price="663円〜（7食プラン）"
-          shipping="770円〜（定期便385円）"
+          price="約752円〜（栄養バランス21食・税込÷食数）"
+          shipping="都度880円／定期7食440円・14食以上無料"
           pros={[
             "医療レベルの食事制限食に対応",
             "管理栄養士に無料相談できる安心感",
-            "送料が良心的（定期便385円）",
+            "定期14・21食は送料無料",
           ]}
           cons={[
             "メニューが自分で選べない",
             "味が素朴（レストラン品質ではない）",
-            "解約が電話のみ",
+            "変更・休止・解約はお届け予定日の7日前まで",
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
@@ -662,9 +662,9 @@ export default function HitorigurashiOsusumePage() {
         <ComparisonTable
           headers={["サービス", "1食あたり", "送料", "メニュー数", "解約", "おすすめ度"]}
           rows={[
-            ["nosh", "599円〜", "913円〜", "60種類以上", "◎", "★★★★★"],
+            ["nosh", "612円〜", "1,023円〜（地域別）", "100種類以上", "◎", "★★★★★"],
             ["三ツ星ファーム", "711円〜", "990円", "125種類以上", "○", "★★★★☆"],
-            ["ウェルネスダイニング", "663円〜", "770円〜", "コース制", "△", "★★★★☆"],
+            ["ウェルネスダイニング", "約752円〜", "定期14・21食無料（7食440円）", "コース制（お任せ）", "△", "★★★★☆"],
             ["まごころケア食", "470円〜", "無料", "コース制", "○", "★★★★☆"],
             ["食宅便", "560円〜", "780円", "160種類以上", "○", "★★★☆☆"],
           ]}
@@ -712,7 +712,7 @@ export default function HitorigurashiOsusumePage() {
           {
             name: "1位：nosh（ナッシュ）",
             reason: "10食プランでまとめ買い＋ご飯大盛りで満足度UP",
-            detail: "noshはおかずのみですが、メニューの中にはハンバーグやチキン南蛮など、ボリュームのあるメニューも多数。10食プランで注文してご飯を大盛りにすれば、成人男性でも十分な満足感が得られます。アプリでたんぱく質量をチェックして高たんぱくメニューを選ぶと、筋トレやボディメイク中の方にも最適。1食599円〜のコスパで量と質を両立できます。",
+            detail: "noshはおかずのみですが、メニューの中にはハンバーグやチキン南蛮など、ボリュームのあるメニューも多数。10食プランで注文してご飯を大盛りにすれば、成人男性でも十分な満足感が得られます。アプリでたんぱく質量をチェックして高たんぱくメニューを選ぶと、筋トレやボディメイク中の方にも最適。1食612円〜（12食）のコスパで量と質を両立できます。",
           },
           {
             name: "2位：食宅便（まんぷく亭）",
@@ -743,7 +743,7 @@ export default function HitorigurashiOsusumePage() {
           {
             name: "1位：ウェルネスダイニング",
             reason: "糖尿病・腎臓病・高血圧の制限食に完全対応。栄養相談無料",
-            detail: "ウェルネスダイニングは糖質制限食（糖質15g以下）、塩分制限食（塩分2.0g以下）、たんぱく質調整食、カロリー制限食、やわらか食など7つの専門コースを用意。管理栄養士に電話で無料相談でき、「自分にはどのコースが合うか」をプロに聞けるのが最大の強み。高齢の方やそのご家族が安心して利用できるサービスです。定期便なら送料385円と良心的。",
+            detail: "ウェルネスダイニングは気配り宅配食として糖質＆カロリー制限（糖質15g以下）、塩分制限（塩分2.0g以下）、たんぱく＆塩分調整、脂質制限など6コースを用意し、別シリーズで「やわらか宅配食」もあります。管理栄養士に電話で無料相談でき、「自分にはどのコースが合うか」をプロに聞けるのが最大の強み。高齢の方やそのご家族が安心して利用できるサービスです。送料は定期注文の14食・21食なら無料、7食は440円です（2026年10月10日・公式確認）。",
           },
           {
             name: "2位：まごころケア食",
@@ -767,16 +767,16 @@ export default function HitorigurashiOsusumePage() {
         <SectionHeading id="cost">一人暮らしの宅食 月額コストシミュレーション</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          一人暮らしで宅配弁当を利用した場合の月額コストを、利用頻度別にシミュレーションしました。「週に何回利用するか」で月額がどう変わるか、具体的な数字で確認しましょう。noshの10食プラン（関東在住）を基準に計算しています。
+          一人暮らしで宅配弁当を利用した場合の月額コストを、利用頻度別にシミュレーションしました。「週に何回利用するか」で月額がどう変わるか、具体的な数字で確認しましょう。noshの10食プラン（関東在住・送料1,166円）を基準に、2026年10月10日に公式で確認した税込価格で計算しています。
         </p>
 
         <SubHeading>利用頻度別の月額コスト（nosh 10食プラン基準・関東在住）</SubHeading>
         <ComparisonTable
           headers={["利用パターン", "利用頻度", "月の食数", "食材費+送料", "月額合計", "1食あたり"]}
           rows={[
-            ["軽め利用", "週3回", "約12食", "5,990円+913円", "6,903円", "575円"],
-            ["平日夕食", "週5回", "約20食", "11,980円+1,826円", "13,806円", "690円"],
-            ["毎日利用", "毎日", "約30食", "17,970円+2,739円", "20,709円", "690円"],
+            ["軽め利用", "週2〜3回", "10食", "6,206円+1,166円", "7,372円", "約737円"],
+            ["平日夕食", "週5回", "20食", "12,412円+2,332円", "14,744円", "約737円"],
+            ["毎日利用", "毎日", "30食", "18,618円+3,498円", "22,116円", "約737円"],
           ]}
         />
 
@@ -784,9 +784,9 @@ export default function HitorigurashiOsusumePage() {
         <ComparisonTable
           headers={["サービス", "プラン", "食材費/月", "送料/月", "月額合計", "1食あたり"]}
           rows={[
-            ["nosh", "10食×2回", "11,980円", "1,826円", "13,806円", "690円"],
+            ["nosh", "10食×2回", "12,412円", "2,332円", "14,744円", "約737円"],
             ["三ツ星ファーム", "14食+7食", "17,943円", "1,980円", "19,923円", "949円"],
-            ["ウェルネスダイニング", "14食+7食", "13,716円", "770円", "14,486円", "690円"],
+            ["ウェルネスダイニング（栄養バランス）", "21食×1回", "15,800円", "0円", "15,800円", "約752円"],
             ["まごころケア食", "21食", "9,870円", "0円", "9,870円", "470円"],
             ["食宅便", "7食×3回", "11,760円", "2,340円", "14,100円", "671円"],
           ]}
@@ -795,9 +795,9 @@ export default function HitorigurashiOsusumePage() {
           <p className="font-bold mb-1">コスト比較のポイント</p>
           <ul className="list-disc list-inside space-y-1">
             <li><strong>最安：まごころケア食</strong>（月9,870円/1食470円）——送料無料の効果が大きい</li>
-            <li><strong>コスパ良好：nosh・食宅便</strong>（月1.3〜1.4万円/1食670〜690円）——品質と価格のバランス◎</li>
-            <li><strong>やや高め：三ツ星ファーム</strong>（月1.5万円/1食713円）——味のクオリティを考えれば妥当</li>
-            <li>nosh clubの継続割引で、noshは最安時1食499円（月9,980円）まで下がる可能性あり</li>
+            <li><strong>コスパ良好：nosh・食宅便</strong>（月1.4〜1.5万円/1食671〜737円）——品質と価格のバランス◎</li>
+            <li><strong>やや高め：三ツ星ファーム</strong>（月約2万円/1食949円）——味のクオリティを考えれば妥当</li>
+            <li>nosh clubの最高ランク（累計280食）なら、noshは12食で1食492円（12食×2回で月11,808円＋送料）まで下がる</li>
           </ul>
         </div>
 
@@ -811,8 +811,8 @@ export default function HitorigurashiOsusumePage() {
         <ComparisonTable
           headers={["項目", "宅配弁当（nosh）", "コンビニ弁当", "自炊"]}
           rows={[
-            ["1食あたりコスト", "599〜690円", "500〜800円", "200〜400円"],
-            ["月額コスト（夕食のみ）", "約13,800円", "約15,000〜24,000円", "約6,000〜12,000円"],
+            ["1食あたりコスト", "612〜737円（送料込みは約709〜737円）", "500〜800円", "200〜400円"],
+            ["月額コスト（夕食のみ）", "約14,700円（10食×2回・関東）", "約15,000〜24,000円", "約6,000〜12,000円"],
             ["調理時間", "レンジ5分", "0分（購入のみ）", "30〜60分"],
             ["買い物時間", "0分（配送）", "10〜20分/回", "30〜60分/回"],
             ["後片付け", "容器を捨てるだけ", "容器を捨てるだけ", "20〜30分"],
@@ -904,7 +904,7 @@ export default function HitorigurashiOsusumePage() {
             一人暮らしの宅食選びで迷ったら、まずは<strong>nosh</strong>から始めるのがおすすめです。コスパ・メニューの自由度・アプリの使いやすさ・解約の簡単さと、一人暮らしに必要な要素をすべて高水準で満たしています。
           </p>
           <p className="text-sm leading-relaxed mb-4">
-            初回3,000円OFFのキャンペーンを利用すれば10食プランが2,990円（1食299円）でスタートできます。合わなければマイページから即解約できるので、リスクはほぼゼロ。
+            初回1,500円・2回目1,000円・3回目500円OFFの割引があり、10食プランなら初回4,706円でスタートできます。合わなければマイページから解約できます（お届け予定日の4〜5日前まで・初回分はキャンセル不可）。
           </p>
           <p className="text-sm leading-relaxed">
             「毎日のコンビニ弁当やカップ麺を卒業したい」「自炊は面倒だけど健康は気になる」——そんな一人暮らしの食事問題、宅配弁当でスマートに解決してみませんか。
@@ -982,9 +982,9 @@ export default function HitorigurashiOsusumePage() {
                 </tr>
               </thead>
               <tbody>
-                <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">nosh（ナッシュ）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">599-748</td></tr>
+                <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">nosh（ナッシュ）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">612-719</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=M5863L.1.M98647P.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">三ツ星ファーム</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">25以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15以上</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">−</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">711-927</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ウェルネスダイニング</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240-300</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">12-18</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">663-880</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ウェルネスダイニング</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240-330</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">12-18</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">752-1,165</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://magokoro-care-shoku.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">まごころケア食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-350</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">462-580</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ワタミの宅食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-400</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">40-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">3.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">590-680</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://shoutakubin.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">食宅便</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">200-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">560-700</td></tr>
@@ -992,7 +992,7 @@ export default function HitorigurashiOsusumePage() {
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://yoshikei-dvlp.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ヨシケイ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.0</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">597-750</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.coopdeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">コープデリ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.5</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">550-700</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.pal-system.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">パルシステム</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">580-720</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ナッシュclub（割引）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">499-624</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ナッシュclub（割引）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">492〜（最高ランク）</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://tsurukame-kitchen.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">つるかめキッチン</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">13</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">660-815</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://1meal.life/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ワンミール</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">770-840</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://fitfoodhome.tabeyoukai.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">FIT FOOD HOME</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.0</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">750-1,080</td></tr>
@@ -1000,7 +1000,7 @@ export default function HitorigurashiOsusumePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」）。最新情報は各公式サイトでご確認ください。</p>
+          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」。nosh・ナッシュclub・ウェルネスダイニングの価格は2026年10月10日に公式サイトで再確認し、noshは公式表記の1食単価、ウェルネスダイニングは全6コース・7〜21食の税込価格÷食数で算出、kcal・塩分は各コースの公式基準に更新）。最新情報は各公式サイトでご確認ください。</p>
         </section>
 
                 {/* eeat-links-202607 */}

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-07-04T00:00:00+09:00",
+    modifiedTime: "2026-10-10T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -149,7 +149,7 @@ function SourcedReview({
 export default function LifemealKuchikomiPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-07-04T00:00:00+09:00",
+    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-10-10T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -307,7 +307,7 @@ export default function LifemealKuchikomiPage() {
           ]}
         />
         <p className="text-sm mb-4 leading-relaxed">
-          <strong>価格のポイント：</strong>通常価格でも1食490〜520円と、nosh（599円〜）より安く、まごころケア食（396円〜）に近い最安クラスです。さらに<strong>まとめ買い割引や、累計購入数に応じて単価が下がるクラブ制度</strong>があり、継続すると1食430円台まで下がる設計になっています。送料は別途かかり（本州で1,000円前後・沖縄等は割増の情報あり）、地域・時期で変わるため注文画面で確認してください。
+          <strong>価格のポイント：</strong>通常価格でも1食490〜520円と、nosh（612円〜・2026年10月10日公式確認）より安く、まごころケア食（396円〜）に近い最安クラスです。さらに<strong>まとめ買い割引や、累計購入数に応じて単価が下がるクラブ制度</strong>があり、継続すると1食430円台まで下がる設計になっています。送料は別途かかり（本州で1,000円前後・沖縄等は割増の情報あり）、地域・時期で変わるため注文画面で確認してください。
         </p>
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">冷凍庫無料レンタルについて</p>

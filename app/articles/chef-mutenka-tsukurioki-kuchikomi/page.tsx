@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-07-04T00:00:00+09:00",
+    modifiedTime: "2026-10-10T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -149,7 +149,7 @@ function SourcedReview({
 export default function ChefMutenkaTsukuriokiKuchikomiPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-07-04T00:00:00+09:00",
+    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-10-10T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -321,7 +321,7 @@ export default function ChefMutenkaTsukuriokiKuchikomiPage() {
           ]}
         />
         <p className="text-sm mb-4 leading-relaxed">
-          <strong>価格の考え方：</strong>食卓サポートプランは「大人2人＋幼児1人×2日分」の設計なので、ざっくり<strong>大人1人1食あたり900〜1,000円前後</strong>の計算になります。nosh（599円〜）やまごころケア食（396円〜）などの冷凍弁当と比べると割高ですが、「冷蔵の手作りおかず」「無添加調理」「家族全員分」という条件を踏まえた価格です。初回は割引＋送料無料の特典が用意されていることが多いので、必ず初回特典から始めましょう。
+          <strong>価格の考え方：</strong>食卓サポートプランは「大人2人＋幼児1人×2日分」の設計なので、ざっくり<strong>大人1人1食あたり900〜1,000円前後</strong>の計算になります。nosh（612円〜・2026年10月10日公式確認）やまごころケア食（396円〜）などの冷凍弁当と比べると割高ですが、「冷蔵の手作りおかず」「無添加調理」「家族全員分」という条件を踏まえた価格です。初回は割引＋送料無料の特典が用意されていることが多いので、必ず初回特典から始めましょう。
         </p>
         <p className="text-xs text-warm-gray mb-6">※上記は2026年7月時点の公開情報に基づく目安です。正確な最新価格・特典は必ず公式サイトでご確認ください。</p>
 

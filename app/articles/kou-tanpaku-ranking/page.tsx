@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-05-28T00:00:00+09:00",
-    modifiedTime: "2026-05-28T00:00:00+09:00",
+    modifiedTime: "2026-10-10T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -49,7 +49,7 @@ const faqData = [
   {
     question: "コスパ重視で高タンパクなのは？",
     answer:
-      "高タンパク+コスパの両立を求めるなら【nosh(1食599円〜・タンパク質15-25g)】が最も現実的。タンパク質量はマッスルデリほど多くありませんが、価格は約半額。複数食を組み合わせれば必要量を確保できます。「マッスルデリは高すぎる、でも普通の冷凍弁当ではタンパク不足」という方の落としどころとしておすすめです。",
+      "高タンパク+コスパの両立を求めるなら【nosh(1食612円〜・タンパク質15-25g)】が最も現実的。タンパク質量はマッスルデリほど多くありませんが、価格は約半額。複数食を組み合わせれば必要量を確保できます。「マッスルデリは高すぎる、でも普通の冷凍弁当ではタンパク不足」という方の落としどころとしておすすめです。",
   },
 ];
 
@@ -214,10 +214,10 @@ const rankingItems = [
     name: "nosh(ナッシュ)",
     url: "https://nosh.jp/",
     protein: "15〜25g",
-    price: "低〜中(1食599円〜)",
+    price: "低〜中(1食612円〜)",
     score: 4,
     summary: "コスパと自由度のバランスが最高。タンパク質量はマッスルデリほどではないが、価格が約半額で続けやすい。",
-    pros: ["1食599円〜の低単価", "メニュー60種類以上", "アプリ管理が高機能", "解約縛りなし"],
+    pros: ["1食612円〜（12食）の低単価", "メニュー100種類以上", "アプリ管理が高機能", "解約縛りなし"],
     cons: ["タンパク質はメニュー次第", "30g超は希少"],
     target: "コスパ最重視+ライトな筋トレ・ダイエット",
     reviewLink: "/articles/nosh-reviews/",
@@ -257,7 +257,7 @@ export default function KouTanpakuRankingPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-05-28T00:00:00+09:00",
+    dateModified: "2026-10-10T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -407,7 +407,7 @@ export default function KouTanpakuRankingPage() {
             ["筋肉食堂DELI", "平均31.8〜42.3g", "平均12.2〜60.4g(コース別)", "994〜1,480円＋送料", "目的別3コース"],
             ["FIT FOOD HOME", "20〜35g", "20〜40g", "中〜高", "目的別あり"],
             ["サポートミール", "意識した設計", "9.5〜12g", "828〜883円", "セット制"],
-            ["nosh", "15〜25g", "30g以下", "599〜748円", "自由選択"],
+            ["nosh", "15〜25g", "30g以下", "612〜719円", "自由選択"],
             ["三ツ星ファーム", "15g以上（一部除く）", "25g以下（一部除く）", "711〜927円", "自由選択"],
             ["ワンミール", "20〜30g", "20〜30g", "770〜840円", "バランス型"],
           ]}
@@ -454,7 +454,7 @@ export default function KouTanpakuRankingPage() {
 
         <SubHeading>3. 定期購入の継続割引を活用する</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          多くのサービスが定期購入で5〜16%割引を提供しています。noshの「nosh club」は累計購入数に応じて最大16.55%OFF。長期で続けるなら継続割引制度のあるサービスを選ぶのが有利です。
+          多くのサービスが定期購入で5〜16%割引を提供しています。noshの「nosh club」は累計購入数に応じて1食単価が下がり、最高ランク（累計280食）なら12食プランで1食492円（2026年10月10日・公式確認）。長期で続けるなら継続割引制度のあるサービスを選ぶのが有利です。
         </p>
 
         <SubHeading>4. 送料を含めた「実質1食単価」で比較する</SubHeading>

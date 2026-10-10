@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-05-28T00:00:00+09:00",
-    modifiedTime: "2026-05-28T00:00:00+09:00",
+    modifiedTime: "2026-10-10T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -168,7 +168,7 @@ export default function RizapSupportMealReviewsPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-06-24T00:00:00+09:00",
+    dateModified: "2026-10-10T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -291,7 +291,7 @@ export default function RizapSupportMealReviewsPage() {
         <p className="text-xs text-warm-gray mb-6">※出典: RIZAP公式オンラインショップ。最新の価格・送料は公式サイトでご確認ください。</p>
 
         <p className="text-sm mb-6 leading-relaxed">
-          サポートミールは、宅配弁当としては<strong>1食あたり800円台の中〜高価格帯</strong>に位置します。noshの599円〜と比べると割高ですが、糖質9.5〜12gという低糖質設計は他社には真似できない強み。「糖質を確実に絞りたい」目的なら価格に見合う価値があります。
+          サポートミールは、宅配弁当としては<strong>1食あたり800円台の中〜高価格帯</strong>に位置します。noshの612円〜（2026年10月10日・公式確認）と比べると割高ですが、糖質9.5〜12gという低糖質設計は他社には真似できない強み。「糖質を確実に絞りたい」目的なら価格に見合う価値があります。
         </p>
 
         <SubHeading>定期購入のポイント</SubHeading>
@@ -429,10 +429,10 @@ export default function RizapSupportMealReviewsPage() {
           headers={["項目", "サポートミール", "nosh", "三ツ星ファーム"]}
           rows={[
             ["1食糖質", "9.5〜12g", "30g以下", "25g以下のメニューあり"],
-            ["1食価格", "828〜883円", "599〜748円", "711〜927円"],
-            ["メニュー選択", "セット制(複数組み合わせ)", "自由選択(60種以上)", "自由選択(125種以上)"],
+            ["1食価格", "828〜883円", "612〜719円", "711〜927円"],
+            ["メニュー選択", "セット制(複数組み合わせ)", "自由選択(100種類以上)", "自由選択(125種以上)"],
             ["味の傾向", "洋食寄り", "和洋中バランス", "シェフ監修のグルメ志向"],
-            ["定期縛り", "原則3回継続", "なし(即解約可)", "なし"],
+            ["定期縛り", "原則3回継続", "なし(締切はお届け4〜5日前)", "なし"],
             ["ブランド", "RIZAPメソッド", "コスパ・自由度", "味のクオリティ"],
           ]}
         />

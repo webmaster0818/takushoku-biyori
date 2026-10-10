@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-05-28T00:00:00+09:00",
-    modifiedTime: "2026-05-28T00:00:00+09:00",
+    modifiedTime: "2026-10-10T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -49,7 +49,7 @@ const faqData = [
   {
     question: "1食あたりの価格はどれくらい？noshより高い？",
     answer:
-      "マッスルデリはタンパク質量30g以上(LEAN)～50g以上(GAIN)と高タンパク設計のため、一般的な冷凍宅配弁当より1食あたりの単価は高めです。nosh(599円～)や三ツ星ファーム(711円～・2026年10月9日公式確認)と比べると割高ですが、タンパク質単価(円/g)で見るとプロテイン+鶏むね自炊と同等以上のコスパになるケースもあります。最新の正確な価格・送料は公式サイト(https://muscledeli.jp/)で必ずご確認ください。",
+      "マッスルデリはタンパク質量30g以上(LEAN)～50g以上(GAIN)と高タンパク設計のため、一般的な冷凍宅配弁当より1食あたりの単価は高めです。nosh(612円～・2026年10月10日公式確認)や三ツ星ファーム(711円～・2026年10月9日公式確認)と比べると割高ですが、タンパク質単価(円/g)で見るとプロテイン+鶏むね自炊と同等以上のコスパになるケースもあります。最新の正確な価格・送料は公式サイト(https://muscledeli.jp/)で必ずご確認ください。",
   },
 ];
 
@@ -232,7 +232,7 @@ export default function MuscleDeliReviewsPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-06-24T00:00:00+09:00",
+    dateModified: "2026-10-10T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -491,7 +491,7 @@ export default function MuscleDeliReviewsPage() {
           {
             num: 1,
             title: "1食単価が一般的な冷凍宅配弁当より高い",
-            text: "noshが599円〜、三ツ星ファームが711円〜なのに対し、マッスルデリはタンパク質量を確保している分、1食単価は高めです。家計に占める割合を計算したうえで導入するのが賢明。長期継続するなら定期購入の割引適用条件を必ず公式で確認してください。",
+            text: "noshが612円〜、三ツ星ファームが711円〜なのに対し、マッスルデリはタンパク質量を確保している分、1食単価は高めです。家計に占める割合を計算したうえで導入するのが賢明。長期継続するなら定期購入の割引適用条件を必ず公式で確認してください。",
           },
           {
             num: 2,

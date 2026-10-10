@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-09T00:00:00+09:00",
+    modifiedTime: "2026-10-10T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -340,7 +340,7 @@ export default function GofoodKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-10-09T00:00:00+09:00",
+    dateModified: "2026-10-10T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -877,7 +877,7 @@ export default function GofoodKuchikomiPage() {
             ["タンパク質", "全品20g以上", "基準なし", "30g以上（プランによる）"],
             ["1食あたり目安（税込）", "598円〜", "620円〜", "約1,000円〜"],
             ["メニュー数", "25品前後", "100種類以上", "50種類以上"],
-            ["送料", "地域別940円〜/20食は無料※", "地域別913円〜", "本州無料（プラン・時期による）"],
+            ["送料", "地域別940円〜/20食は無料※", "地域別1,023円〜（2026年10月10日確認）", "本州無料（プラン・時期による）"],
             ["回数縛り", "なし", "なし", "定期は条件による"],
             ["向いている人", "厳格な糖質制限×コスパ", "ゆるい糖質管理×豊富さ", "本格ボディメイク"],
           ]}

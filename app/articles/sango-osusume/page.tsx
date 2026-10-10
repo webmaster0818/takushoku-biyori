@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-16T00:00:00+09:00",
-    modifiedTime: "2026-04-16T00:00:00+09:00",
+    modifiedTime: "2026-10-10T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -53,7 +53,7 @@ const faqData = [
   {
     question: "夫婦で利用する場合、どのプランがお得ですか？",
     answer:
-      "夫婦で利用するならnoshの20食プランが最もコスパ良好。1食あたり564円で、夫婦2人で10日分。20食プランは10食プランより1食あたり35円安く、月に2回注文すれば40食で夫婦の平日の夕食をカバーできます。送料も1回分で20食届くため、10食×2回より送料が半分に。三ツ星ファームの21食コース（1食711円・2026年10月9日公式確認）も夫婦で使えます。「産後のママ用に低カロリーメニュー、パパ用にボリュームメニュー」と分けて選べるのが宅配弁当の利点です。",
+      "夫婦で利用するならnoshの20食プランが最もコスパ良好。1食あたり612円（12食プランと同額・20食プランは2回目以降の注文から選択可）で、夫婦2人で10日分。月に2回注文すれば40食で夫婦の平日の夕食をカバーできます。送料（関東）は20食1,386円で、10食×2回（2,332円）より946円安くなります（2026年10月10日・公式確認）。三ツ星ファームの21食コース（1食711円・2026年10月9日公式確認）も夫婦で使えます。「産後のママ用に低カロリーメニュー、パパ用にボリュームメニュー」と分けて選べるのが宅配弁当の利点です。",
   },
 ];
 
@@ -177,7 +177,7 @@ export default function SangoOsusumePage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-16T00:00:00+09:00",
-    dateModified: "2026-04-16T00:00:00+09:00",
+    dateModified: "2026-10-10T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -200,9 +200,9 @@ export default function SangoOsusumePage() {
     itemListOrder: "https://schema.org/ItemListOrderDescending",
     numberOfItems: 5,
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "nosh（ナッシュ）", description: "60種類以上から自由に選べる。糖質30g以下で産後の栄養管理に最適。アプリで簡単注文。", url: "https://nosh.jp/" },
+      { "@type": "ListItem", position: 1, name: "nosh（ナッシュ）", description: "100種類以上から自由に選べる。糖質30g以下で産後の栄養管理に最適。アプリで簡単注文。", url: "https://nosh.jp/" },
       { "@type": "ListItem", position: 2, name: "三ツ星ファーム", description: "料理人監修のメニュー125種類以上。たんぱく質15g以上の基準で産後のご褒美に。", url: "https://mitsuboshifarm.jp/" },
-      { "@type": "ListItem", position: 3, name: "ウェルネスダイニング", description: "管理栄養士に産後の食事を無料相談。栄養バランスの整った7コース。", url: "https://www.wellness-dining.com/" },
+      { "@type": "ListItem", position: 3, name: "ウェルネスダイニング", description: "管理栄養士に産後の食事を無料相談。気配り宅配食は栄養バランス・塩分制限など6コース。", url: "https://www.wellness-dining.com/" },
       { "@type": "ListItem", position: 4, name: "わんまいる", description: "国産食材100%。湯煎調理で手作り感のある食事。添加物が気になるママに。", url: "https://www.onemile.jp/" },
       { "@type": "ListItem", position: 5, name: "ヨシケイ（シンプルミール）", description: "1食約300円の圧倒的コスパ。毎日届く常温弁当で置き配も可能。", url: "https://yoshikei-dvlp.co.jp/" },
     ],
@@ -271,7 +271,7 @@ export default function SangoOsusumePage() {
           {
             icon: "&#128106;",
             title: "パパ・上の子の食事も一緒に解決できる",
-            text: "産後のママが困るのは「自分の食事」だけでなく「家族の食事」。パパの夕食、上の子の食事まで作る余裕はありません。宅配弁当を20食ストックしておけば、パパの夕食もレンジで5分。上の子（2歳以上）も辛くないメニューを選べばシェアできます。noshの20食プランなら1食564円で、外食やコンビニ弁当より経済的。「産後の食事問題を家族まるごと解決」できるのが宅配弁当の強みです。",
+            text: "産後のママが困るのは「自分の食事」だけでなく「家族の食事」。パパの夕食、上の子の食事まで作る余裕はありません。宅配弁当を20食ストックしておけば、パパの夕食もレンジで5分。上の子（2歳以上）も辛くないメニューを選べばシェアできます。noshの20食プランなら1食612円で、外食やコンビニ弁当より経済的。「産後の食事問題を家族まるごと解決」できるのが宅配弁当の強みです。",
           },
           {
             icon: "&#127873;",
@@ -323,13 +323,13 @@ export default function SangoOsusumePage() {
           tagline="栄養管理 × 家族利用 × コスパ。産後の万能選手"
           color="bg-yellow-50"
           features={[
-            "60種類以上から自由に選べる",
+            "100種類以上から自由に選べる",
             "全メニュー糖質30g以下・塩分2.5g以下",
             "たんぱく質平均約20g",
             "20食プランで家族利用に最適",
           ]}
-          price="564円〜（20食プラン）"
-          shipping="913円〜（関東）"
+          price="612円〜（12食・20食プラン）"
+          shipping="1,166円（関東・4〜12食）／20食1,386円"
           pros={[
             "20食プランで家族全員の食事をカバー",
             "アプリで授乳中でも片手で注文可能",
@@ -343,7 +343,7 @@ export default function SangoOsusumePage() {
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
-          産後のママに最もおすすめなのがnosh。たんぱく質平均20gで授乳中の栄養補給に適し、20食プランなら夫婦で10日分の夕食をカバー。アプリで片手操作できるため、授乳中や赤ちゃんを抱っこしながらでも注文・メニュー選びが可能。初回3,000円OFFで10食2,990円から始められます。詳しくは<Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline">nosh(ナッシュ)の口コミ・評判を徹底調査</Link>をご覧ください。
+          産後のママに最もおすすめなのがnosh。たんぱく質平均20gで授乳中の栄養補給に適し、20食プランなら夫婦で10日分の夕食をカバー。アプリで片手操作できるため、授乳中や赤ちゃんを抱っこしながらでも注文・メニュー選びが可能。初回1,500円・2回目1,000円・3回目500円OFFの割引があります（2026年10月10日・公式確認）。詳しくは<Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline">nosh(ナッシュ)の口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
 
         <RankingCard
@@ -381,16 +381,16 @@ export default function SangoOsusumePage() {
           color="bg-blue-50"
           features={[
             "管理栄養士に無料で栄養相談",
-            "7つの専門コース",
-            "栄養バランス料理（塩分2.5g以下）",
-            "定期便で送料半額（385円）",
+            "気配り宅配食6コース（献立はお任せ）",
+            "栄養バランスコース（300kcal以下・塩分2.5g以下）",
+            "定期14・21食は送料無料（7食は440円）",
           ]}
-          price="663円〜（7食プラン）"
-          shipping="770円〜（定期便385円）"
+          price="約752円〜（栄養バランス21食・税込÷食数）"
+          shipping="都度880円／定期7食440円・14食以上無料"
           pros={[
             "管理栄養士に産後の栄養を相談できる",
             "栄養バランスが最も整っている",
-            "送料が良心的",
+            "定期14・21食は送料無料",
           ]}
           cons={[
             "メニューが自分で選べない（コース制）",
@@ -463,7 +463,7 @@ export default function SangoOsusumePage() {
 
         <SubHeading>nosh - 産後の家族まるごとサポート</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          noshが産後に最もおすすめな理由は「家族全員の食事を1つのサービスでカバーできる」こと。20食プランなら夫婦で10日分の夕食が揃い、1食あたり564円とコスパ良好。パパ用にはボリュームのあるハンバーグやチキン、ママ用にはたんぱく質豊富な魚メニュー、上の子用には辛くない煮物系と、家族それぞれのニーズに合わせてメニューを選び分けられます。アプリは片手操作に対応しているため、授乳中や抱っこ中でもメニュー選び・注文変更が可能。初回3,000円OFFキャンペーンで気軽に始められます。
+          noshが産後に最もおすすめな理由は「家族全員の食事を1つのサービスでカバーできる」こと。20食プランなら夫婦で10日分の夕食が揃い、1食あたり612円とコスパ良好。パパ用にはボリュームのあるハンバーグやチキン、ママ用にはたんぱく質豊富な魚メニュー、上の子用には辛くない煮物系と、家族それぞれのニーズに合わせてメニューを選び分けられます。アプリは片手操作に対応しているため、授乳中や抱っこ中でもメニュー選び・注文変更が可能。初回1,500円・2回目1,000円・3回目500円OFFの割引で気軽に始められます。
         </p>
 
         <SubHeading>三ツ星ファーム - 産後ママのご褒美食</SubHeading>
@@ -493,9 +493,9 @@ export default function SangoOsusumePage() {
         <ComparisonTable
           headers={["サービス", "1食あたり", "送料", "添加物", "たんぱく質", "家族利用"]}
           rows={[
-            ["nosh", "564円〜", "913円〜", "一部使用", "平均20g", "20食プランあり"],
+            ["nosh", "612円〜", "1,023円〜（地域別）", "一部使用", "平均20g", "20食プランあり"],
             ["三ツ星ファーム", "711円〜", "990円", "公式に方針記載なし", "15g以上", "21食プランあり"],
-            ["ウェルネスダイニング", "663円〜", "定期385円", "一部使用", "約15g", "7〜21食"],
+            ["ウェルネスダイニング", "約752円〜", "定期14・21食無料（7食440円）", "一部使用", "平均12.8g（栄養バランス）", "7〜21食"],
             ["わんまいる", "796円〜", "935円", "不使用", "約15g", "5食セット"],
             ["ヨシケイ", "約397円", "無料", "一部使用", "約10g", "毎日配達"],
           ]}
@@ -505,20 +505,22 @@ export default function SangoOsusumePage() {
         <ComparisonTable
           headers={["サービス", "プラン", "食材費/月", "送料/月", "月額合計"]}
           rows={[
-            ["nosh", "20食×3回", "33,840円", "2,739円", "36,579円"],
+            ["nosh", "20食×3回", "36,720円", "4,158円", "40,878円"],
             ["三ツ星ファーム", "21食×約2.8回", "41,770円", "2,772円", "44,542円"],
-            ["ウェルネスダイニング", "14食×約4.3回", "38,540円", "1,656円", "40,196円"],
+            ["ウェルネスダイニング（栄養バランス）", "21食×約2.9回（60食分）", "約45,140円", "0円", "約45,140円"],
             ["わんまいる", "5食×12回", "47,760円", "11,220円", "58,980円"],
             ["ヨシケイ", "3食×約20日", "23,800円", "0円", "23,800円"],
           ]}
         />
 
+        <p className="text-xs text-warm-gray -mt-4 mb-6">※nosh・ウェルネスダイニングは2026年10月10日に公式サイトで確認した税込価格・送料（noshは関東20食1,386円）から算出。三ツ星ファームは2026年10月9日確認。その他は記事作成時の公開データです。</p>
+
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">産後の食費の結論</p>
           <ul className="list-disc list-inside space-y-1">
             <li><strong>コスパ最強：ヨシケイ</strong>（月約23,800円）——毎日届く・送料無料・置き配で産後に最適</li>
-            <li><strong>バランス良好：nosh</strong>（月約36,600円）——家族利用とコスパの両立。<strong>三ツ星ファーム</strong>は通常の定期便で月約44,500円</li>
-            <li><strong>安心感重視：ウェルネスダイニング</strong>（月約40,000円）——栄養相談付きの安心感</li>
+            <li><strong>バランス良好：nosh</strong>（月約40,900円）——家族利用とコスパの両立。<strong>三ツ星ファーム</strong>は通常の定期便で月約44,500円</li>
+            <li><strong>安心感重視：ウェルネスダイニング</strong>（月約45,100円）——栄養相談付きの安心感</li>
             <li><strong>国産食材：わんまいる</strong>（月約59,000円）——価格は高いが1〜2ヶ月限定ならアリ</li>
           </ul>
         </div>
@@ -679,9 +681,9 @@ export default function SangoOsusumePage() {
                 </tr>
               </thead>
               <tbody>
-                <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">nosh（ナッシュ）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">599-748</td></tr>
+                <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">nosh（ナッシュ）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">612-719</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=M5863L.1.M98647P.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">三ツ星ファーム</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">25以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15以上</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">−</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">711-927</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ウェルネスダイニング</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240-300</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">12-18</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">663-880</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ウェルネスダイニング</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240-330</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">12-18</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">752-1,165</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://magokoro-care-shoku.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">まごころケア食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-350</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">462-580</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ワタミの宅食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-400</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">40-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">3.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">590-680</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://shoutakubin.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">食宅便</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">200-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">560-700</td></tr>
@@ -689,7 +691,7 @@ export default function SangoOsusumePage() {
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://yoshikei-dvlp.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ヨシケイ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.0</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">597-750</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.coopdeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">コープデリ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.5</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">550-700</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.pal-system.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">パルシステム</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">580-720</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ナッシュclub（割引）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">499-624</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ナッシュclub（割引）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">492〜（最高ランク）</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://tsurukame-kitchen.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">つるかめキッチン</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">13</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">660-815</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://1meal.life/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ワンミール</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">770-840</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://fitfoodhome.tabeyoukai.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">FIT FOOD HOME</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.0</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">750-1,080</td></tr>
@@ -697,7 +699,7 @@ export default function SangoOsusumePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」）。最新情報は各公式サイトでご確認ください。</p>
+          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」。nosh・ナッシュclub・ウェルネスダイニングの価格は2026年10月10日に公式サイトで再確認し、noshは公式表記の1食単価、ウェルネスダイニングは全6コース・7〜21食の税込価格÷食数で算出、kcal・塩分は各コースの公式基準に更新）。最新情報は各公式サイトでご確認ください。</p>
         </section>
         <HakushoUnitPriceTable slugs={["nosh", "mitsuboshi-farm", "wellness-dining", "shokutakubin", "magokoro-care-shoku"]} />
 
