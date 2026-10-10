@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "GREEN SPOON(グリーンスプーン)の口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年7月最新】";
+  "GREEN SPOON(グリーンスプーン)の口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "GREEN SPOON(グリーンスプーン)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。野菜ゴロゴロの冷凍宅配食の料金（定期初回1食税込724円〜）、送料、メニューカテゴリも解説。最新の料金は公式でご確認ください。【2026年7月更新】";
+  "GREEN SPOON(グリーンスプーン)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。野菜ゴロゴロの冷凍宅配食の料金（定期L BOX1食税込724円〜）、送料、解約の締切、メニューカテゴリも解説。【2026年10月更新】";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/green-spoon-kuchikomi/";
 
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-07-04T00:00:00+09:00",
+    modifiedTime: "2026-10-10T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -32,7 +32,7 @@ const faqData = [
   {
     question: "GREEN SPOONに注文回数の縛りはある？1回だけ試せる？",
     answer:
-      "公式サイトによると「1回だけのお試しOK！注文回数縛りなし」です。定期プラン（サブスク）が基本ですが、初回受け取り後にスキップや解約が可能で、違約金はありません。また「スタート応援プラン」のように、100日間で3回以上の注文を約束する代わりに特典（初回2食無料＋期間中5%OFF）が付く選択制のプランもあります。条件は加入前に公式サイトで確認しましょう。",
+      "公式サイトによると「1回だけのお試しOK！注文回数縛りなし」です。定期プラン（サブスク）が基本ですが、初回受け取り後にスキップや解約が可能で、違約金はありません。ただし初回分は注文確定後の解約・キャンセル不可で、2回目以降の変更締切は地域により次回お届け日の4〜8日前です（特定商取引法に基づく表示・2026年10月10日確認）。また「スタート応援プラン」のように、100日間で3回以上の注文を約束する代わりに特典（初回2食無料＋期間中5%OFF）が付く選択制のプランもあります。条件は加入前に公式サイトで確認しましょう。",
   },
   {
     question: "GREEN SPOONの送料はいくら？",
@@ -308,7 +308,7 @@ const badReviewCategories: {
       },
     ],
     comment:
-      "GREEN SPOONは1食税込724円〜（定期初回L BOX）と、冷凍宅配食の中では中〜高価格帯です。副菜付きの「弁当型」ではなく、ゴロゴロ野菜のおかず・スープ1品型が中心なので、価格を「1食の完成度」で見るか「野菜量と素材品質」で見るかで評価が変わります。食費最優先なら低価格帯サービスの方が向いています。",
+      "GREEN SPOONは1食税込724円〜（定期L BOX）と、冷凍宅配食の中では中〜高価格帯です。副菜付きの「弁当型」ではなく、ゴロゴロ野菜のおかず・スープ1品型が中心なので、価格を「1食の完成度」で見るか「野菜量と素材品質」で見るかで評価が変わります。食費最優先なら低価格帯サービスの方が向いています。",
   },
   {
     title: "量が控えめ・がっつり派には物足りない",
@@ -348,7 +348,7 @@ export default function GreenSpoonKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-07-04T00:00:00+09:00",
+    dateModified: "2026-10-10T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -421,6 +421,7 @@ export default function GreenSpoonKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
+            <time dateTime="2026-10-10">更新: 2026年10月10日（公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -505,14 +506,15 @@ export default function GreenSpoonKuchikomiPage() {
             ["監修", "管理栄養士監修のオリジナルレシピ"],
             ["添加物", "独自基準で保存料・甘味料・着色料・発色剤・漂白剤 不使用"],
             ["調理", "電子レンジ約5分（メニューによる）"],
-            ["解約", "回数縛りなし・1回だけのお試しOK（公式サイトより）"],
+            ["解約", "回数縛りなし・1回だけのお試しOK。初回分はキャンセル不可、2回目以降は次回お届け日の4〜8日前（地域別）までにマイページ等で手続き"],
+            ["支払い", "クレジットカード・Amazon Pay・NP後払い・楽天ペイ"],
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: GREEN SPOON公式サイト・公式FAQ（2026年7月時点）。最新情報は公式サイトでご確認ください。
+          ※出典: GREEN SPOON公式サイト・特定商取引法に基づく表示・運営会社サイト（2026年10月10日確認）。江崎グリコのグループ入り・会員数・セブン-イレブン販売は2026年7月時点の確認です。
         </p>
 
-        <SubHeading>料金プラン概要（定期・初回BOX）</SubHeading>
+        <SubHeading>料金プラン概要（定期BOX）</SubHeading>
         <ComparisonTable
           headers={["プラン", "食数", "1食あたり（税込）"]}
           rows={[
@@ -525,7 +527,7 @@ export default function GreenSpoonKuchikomiPage() {
           定期プランは<strong>注文数が増えるほど1食単価が下がる仕組み</strong>で、2回目以降は8〜28食の範囲で自由に変更できます。初回はS/M/L BOXが特別価格で提供されるキャンペーンが実施されることがあります（時期により内容が変わるため、具体額は公式サイトでご確認ください）。
         </p>
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: GREEN SPOON公式FAQ「商品の価格」（2026年7月時点）。カテゴリごとの単品価格・最新のキャンペーンは公式サイトでご確認ください。
+          ※出典: GREEN SPOON公式サイトの定期プラン料金データ（2026年10月10日確認・税込）。S BOXは8〜11食、M BOXは12〜19食、L BOXは20〜28食の範囲で、食数に応じてBOXが決まります。カテゴリごとの単品価格・最新のキャンペーンは公式サイトでご確認ください。
         </p>
 
         <SubHeading>GREEN SPOONの3つの特徴</SubHeading>
@@ -738,7 +740,7 @@ export default function GreenSpoonKuchikomiPage() {
           {
             num: 1,
             title: "価格は高め＋送料が毎回かかる",
-            text: "1食税込724円〜（定期初回L BOX）に加え、送料が全国一律税込1,089円（北海道・沖縄除く・2025年9月改定）かかります。L BOX（20食）なら送料負担は1食あたり約54円に抑えられますが、少量注文だと割高です。「金額重視の人にはミスマッチ」（OZmall）という指摘は妥当で、コスパ優先ならまごころケア食などの低価格帯が向きます。",
+            text: "1食税込724円〜（定期L BOX）に加え、送料が全国一律税込1,089円（北海道・沖縄除く・2025年9月改定）かかります。L BOX（20食）なら送料負担は1食あたり約54円に抑えられますが、少量注文だと割高です。「金額重視の人にはミスマッチ」（OZmall）という指摘は妥当で、コスパ優先ならまごころケア食などの低価格帯が向きます。",
           },
           {
             num: 2,
@@ -765,7 +767,7 @@ export default function GreenSpoonKuchikomiPage() {
         {/* ===== 料金・送料 ===== */}
         <SectionHeading id="price">GREEN SPOONの料金・送料を徹底解説</SectionHeading>
 
-        <SubHeading>定期プラン（初回BOX・税込）</SubHeading>
+        <SubHeading>定期プラン（BOX別・税込）</SubHeading>
         <ComparisonTable
           headers={["プラン", "食数", "1食あたり", "送料込み1食あたり（全国・試算）"]}
           rows={[
@@ -775,7 +777,7 @@ export default function GreenSpoonKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: GREEN SPOON公式FAQ（2026年7月時点）。送料込み単価は全国送料（税込1,089円）で編集部が試算。2回目以降は8〜28食で変更可能・カテゴリごとの単価制です。最新は公式サイトでご確認ください。
+          ※出典: GREEN SPOON公式サイト（2026年10月10日確認）。送料込み単価は全国送料（税込1,089円）で編集部が試算。2回目以降は8〜28食で変更可能・カテゴリごとの単価制です。最新は公式サイトでご確認ください。
         </p>
 
         <SubHeading>送料（2025年9月改定後・税込）</SubHeading>
@@ -791,7 +793,7 @@ export default function GreenSpoonKuchikomiPage() {
           <strong>送料のポイント：</strong>送料は注文ごとにかかるため、<strong>1回の食数を増やして配送回数を減らす</strong>のが実質単価を下げるコツです。L BOX（20食）なら送料負担は1食あたり約54円。S BOX（8食）だと約136円になります。
         </p>
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: GREEN SPOON公式お知らせ（送料改定・2026年7月確認）。最新の送料は公式サイトでご確認ください。
+          ※出典: GREEN SPOON公式「特定商取引法に基づく表示」で送料の範囲（税込1,089円〜3,289円）を2026年10月10日に確認。北海道・沖縄の内訳は2026年7月確認値です（公式FAQがアクセス制限で今回は閲覧できず）。なお公式トップの注記には「定期購入は全国一律税込990円」との記載も残っており、公式内で表記が分かれています。最新の送料は注文画面でご確認ください。
         </p>
 
         {/* ===== おすすめな人・おすすめしない人 ===== */}
@@ -852,7 +854,7 @@ export default function GreenSpoonKuchikomiPage() {
         <ComparisonTable
           headers={["項目", "GREEN SPOON", "nosh", "三ツ星ファーム"]}
           rows={[
-            ["1食あたり最安（税込）", "724円〜（定期初回L BOX）", "620円〜", "711円〜"],
+            ["1食あたり最安（税込）", "724円〜（定期L BOX）", "612円〜", "711円〜"],
             ["形態", "おかず/スープ/スムージー等1品型", "副菜付き弁当型", "副菜付き弁当型"],
             ["強み", "野菜量・素材・無添加方針", "低糖質設計・アプリ・自由度", "味のクオリティ"],
             ["主食", "なし（主食セット別売）", "なし", "なし"],
@@ -862,7 +864,7 @@ export default function GreenSpoonKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※各社公式サイトの公開情報をもとに編集部作成（2026年7月時点）。最新情報は各公式サイトでご確認ください。
+          ※各社公式サイトの公開情報をもとに編集部作成（GREEN SPOONは2026年10月10日、nosh・三ツ星ファームの料金は2026年10月9日、それ以外は2026年7月時点の確認）。最新情報は各公式サイトでご確認ください。
         </p>
 
         {/* ===== FAQ ===== */}
@@ -884,7 +886,7 @@ export default function GreenSpoonKuchikomiPage() {
             「まずい」という口コミは、一部メニューの当たり外れ・薄味設計・加熱ムラに分解でき、多くは加熱の工夫やメニュー選びで対処可能です。一方、<strong>価格の高さと主食なしの構成は事実</strong>なので、コスパ・ボリューム最優先の人には向きません。
           </p>
           <p className="text-sm leading-relaxed">
-            回数縛りはないので、まずは初回BOXを1回試し、野菜量と味が自分に合うかを確かめるのが失敗しない始め方です。
+            回数縛りはないので、まずは最初のBOXを1回試し、野菜量と味が自分に合うかを確かめるのが失敗しない始め方です。
           </p>
         </div>
 

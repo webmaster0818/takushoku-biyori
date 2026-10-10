@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "ダイエティシャン(Dietician)の口コミ・評判は？まずいって本当？販売終了の事実と代替サービスまで解説【2026年7月最新】";
+  "ダイエティシャン(Dietician)の口コミ・評判は？まずいって本当？販売終了の事実と代替サービスまで解説【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "ダイエティシャン(Dietician)は「まずい」って本当？——結論、Dieticianは2025年11月28日出荷分をもって販売終了しています。本記事では公開レビューの良い口コミ・悪い口コミを出典付きで振り返り、高タンパク・低糖質という特徴を引き継げる代替サービスを中立に解説します。【2026年7月更新】";
+  "ダイエティシャン(Dietician)は「まずい」って本当？——結論、Dieticianは2025年11月28日出荷分をもって販売終了しています。本記事では公開レビューの良い口コミ・悪い口コミを出典付きで振り返り、高タンパク・低糖質という特徴を引き継げる代替サービスを中立に解説します。【2026年10月更新】";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/dietician-kuchikomi/";
 
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-07-04T00:00:00+09:00",
+    modifiedTime: "2026-10-10T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -32,7 +32,7 @@ const faqData = [
   {
     question: "ダイエティシャン(Dietician)は本当に販売終了した？",
     answer:
-      "はい。公式サイトに「Dieticianは11月28日出荷をもちまして、終売させて頂きました」という告知が掲載され（2025年10月31日付お知らせ）、2026年7月4日時点で公式サイト自体も閉鎖されています。新規注文はできません。",
+      "はい。公式サイトに「Dieticianは11月28日出荷をもちまして、終売させて頂きました」という告知が掲載され（2025年10月31日付お知らせ）、2026年10月10日時点でも公式サイト（dietician-family.jp）には接続できず、新規注文はできません。",
   },
   {
     question: "ダイエティシャンの運営会社はどこだった？",
@@ -52,7 +52,7 @@ const faqData = [
   {
     question: "ダイエティシャンの代わりになる宅配弁当は？",
     answer:
-      "高タンパク・PFC管理という特徴が近いのはマッスルデリ（タンパク質30g以上のプランあり）です。糖質を抑えつつ価格重視ならGOFOOD（全品糖質20g以下・タンパク質20g以上）、手軽な低糖質管理ならnosh（全品糖質30g以下）も選択肢になります。当サイトの高タンパク宅配弁当ランキングもあわせてご覧ください。",
+      "高タンパク・PFC管理という特徴が近いのはマッスルデリ（タンパク質30g以上のプランあり）です。糖質を強く抑えたいなら筋肉食堂DELIのローカーボコース（1食平均 糖質12.2g・タンパク質31.8g）、手軽な低糖質管理ならnosh（全品糖質30g以下）も選択肢になります。なお、以前代替候補に挙げていたGOFOODは、公式お知らせで2025年6月30日のサービス終了が告知されています。当サイトの高タンパク宅配弁当ランキングもあわせてご覧ください。",
   },
 ];
 
@@ -333,7 +333,7 @@ export default function DieticianKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-07-04T00:00:00+09:00",
+    dateModified: "2026-10-10T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -406,6 +406,7 @@ export default function DieticianKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
+            <time dateTime="2026-10-10">更新: 2026年10月10日（公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -438,13 +439,13 @@ export default function DieticianKuchikomiPage() {
         <div className="border-2 border-red-300 rounded-xl p-5 mb-8 bg-red-50">
           <p className="font-bold text-base mb-3">結論：Dieticianは終売済み。現在は注文できません</p>
           <p className="text-sm leading-relaxed mb-3">
-            公式サイトには2025年10月31日付で<strong>「＜重要＞商品終売のお知らせ　Dieticianは11月28日出荷をもちまして、終売させて頂きました。」</strong>という告知が掲載されました（公式サイトのインターネットアーカイブで確認）。2026年7月4日時点では公式サイト自体が閉鎖されており、新規注文・再開の告知はありません。
+            公式サイトには2025年10月31日付で<strong>「＜重要＞商品終売のお知らせ　Dieticianは11月28日出荷をもちまして、終売させて頂きました。」</strong>という告知が掲載されました（公式サイトのインターネットアーカイブで確認）。2026年10月10日時点でも公式サイトには接続できず、新規注文・再開の告知はありません。
           </p>
           <p className="text-sm leading-relaxed mb-4">
             運営していたのは病態食・健康食の専門メーカーである<strong>メディカルフードサービス株式会社</strong>（2004年創業・横浜市）。2021年9月のサービス開始から約4年での終売でした。口コミの評価は決して低くなかったため、「気になっていたのに終わっていた」という人は、後半の<a href="#alternatives" className="text-accent underline">代替サービス3選</a>を参考にしてください。
           </p>
           <p className="text-xs text-warm-gray mb-4">
-            ※出典: Dietician公式サイト（dietician-family.jp）2025年12月10日時点のインターネットアーカイブ（2026年7月4日確認）
+            ※出典: Dietician公式サイト（dietician-family.jp）2025年12月10日時点のインターネットアーカイブ（2026年10月10日再確認）
           </p>
           <Link
             href="/articles/kou-tanpaku-ranking/"
@@ -479,7 +480,7 @@ export default function DieticianKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: Dietician公式サイトのインターネットアーカイブ（2026年7月4日確認）
+          ※出典: Dietician公式サイトのインターネットアーカイブ（SMALL/MEDIUMの栄養基準・送料込み・クレジットカードのみ・運営会社情報は2026年10月10日に再確認。メニュー数・開始時期・製造拠点は2026年7月4日確認）
         </p>
 
         {/* ===== 良い口コミ ===== */}
@@ -640,12 +641,12 @@ export default function DieticianKuchikomiPage() {
             </Link>
           </div>
           <div className="bg-green-50 rounded-lg p-4 text-sm leading-relaxed">
-            <p className="font-bold mb-1">② 糖質制限×価格重視なら → GOFOOD</p>
+            <p className="font-bold mb-1">② 糖質制限×高タンパクなら → 筋肉食堂DELI（ローカーボ）</p>
             <p className="mb-2">
-              全メニュー糖質20g以下・タンパク質20g以上で、10食セットなら1食税込598円〜。Dieticianより1食300円以上安く、数値基準の明確さも共通しています（販売状況は公式で要確認）。
+              ローカーボコースは1食平均で糖質12.2g・タンパク質31.8g・269kcal（公式表記）。定期21食なら1食税込994円で、本体価格はDieticianの販売当時（送料込968円〜）に近い水準ですが、送料が別途かかります（関東21食1,840円）。回数縛りなし・7日前までマイページで停止できます（2026年10月10日公式確認）。※以前ここで紹介していたGOFOODは、公式が2025年6月30日のサービス終了を告知しています。
             </p>
-            <Link href="/articles/gofood-kuchikomi/" className="text-accent hover:text-accent-dark underline font-medium">
-              GOFOODの口コミ・評判を見る →
+            <Link href="/articles/kinnikushokudo-deli-kuchikomi/" className="text-accent hover:text-accent-dark underline font-medium">
+              筋肉食堂DELIの口コミ・評判を見る →
             </Link>
           </div>
           <div className="bg-green-50 rounded-lg p-4 text-sm leading-relaxed">
@@ -660,17 +661,17 @@ export default function DieticianKuchikomiPage() {
         </div>
 
         <ComparisonTable
-          headers={["項目", "Dietician（終売）", "マッスルデリ", "GOFOOD", "nosh"]}
+          headers={["項目", "Dietician（終売）", "マッスルデリ", "筋肉食堂DELI ローカーボ", "nosh"]}
           rows={[
-            ["タンパク質", "30〜50g", "30g以上（プランによる）", "20g以上", "基準なし"],
-            ["糖質", "35〜45g以下", "プランによる", "20g以下", "30g以下"],
-            ["1食あたり目安（税込）", "968円〜（送料込・当時）", "約1,000円〜", "598円〜＋送料", "620円〜＋送料"],
+            ["タンパク質", "30〜50g", "30g以上（プランによる）", "平均31.8g", "基準なし"],
+            ["糖質", "35〜45g以下", "プランによる", "平均12.2g", "30g以下"],
+            ["1食あたり目安（税込）", "968円〜（送料込・当時）", "約1,000円〜", "994円〜＋送料", "612円〜＋送料"],
             ["メニュー選択", "不可（おまかせ）", "可", "可", "可"],
-            ["現在の販売", "終売", "販売中", "公式で要確認", "販売中"],
+            ["現在の販売", "終売", "販売中", "販売中", "販売中"],
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※各社公式サイトの公開情報をもとに編集部作成（2026年7月時点）。最新情報は各公式サイトでご確認ください。
+          ※各社公式サイトの公開情報をもとに編集部作成（筋肉食堂DELIは2026年10月10日、noshは2026年10月9日、マッスルデリは2026年7月時点の確認）。最新情報は各公式サイトでご確認ください。
         </p>
 
         {/* ===== FAQ ===== */}
@@ -692,7 +693,7 @@ export default function DieticianKuchikomiPage() {
             「まずい」という検索の実態は、低脂質設計に由来する肉のパサつき・副菜の薄味への声が中心で、確認できた実食メディア4媒体の総評はすべて肯定的でした。この「高タンパク×低脂質のトレードオフ」は代替サービスでも共通するので、乗り換え時の前提として覚えておきましょう。
           </p>
           <p className="text-sm leading-relaxed">
-            PFC管理重視なら<strong>マッスルデリ</strong>、糖質制限×価格なら<strong>GOFOOD</strong>、続けやすさなら<strong>nosh</strong>——目的に合わせて、当サイトの各口コミ記事から比較検討してください。
+            PFC管理重視なら<strong>マッスルデリ</strong>、糖質制限×高タンパクなら<strong>筋肉食堂DELIのローカーボ</strong>、続けやすさなら<strong>nosh</strong>——目的に合わせて、当サイトの各口コミ記事から比較検討してください。
           </p>
         </div>
 
