@@ -416,7 +416,7 @@ export default function TakushokuRyokinHakushoPage() {
         <SectionHeading id="methodology">調査方法（全18社を公式サイトで直接確認）</SectionHeading>
         <ul className="text-sm mb-6 leading-relaxed list-disc list-inside space-y-2">
           <li><strong>調査対象:</strong> 宅配弁当・宅食（冷凍弁当・冷蔵惣菜・夕食宅配・ミールキット）18ブランド</li>
-          <li><strong>確認日:</strong> {VERIFIED_DATE}（本ページの全数値はこの日の公式サイト掲載額・税込）</li>
+          <li><strong>確認日:</strong> {VERIFIED_DATE}（本ページの数値は原則この日の公式サイト掲載額・税込。ツクリオのみ2026年10月10日に公式で再確認した値＝4人前プランの値上げを反映）</li>
           <li><strong>情報源:</strong> 各社公式サイトのみを直接確認。<strong>比較サイト・まとめ記事からの転記は一切していません</strong></li>
           <li><strong>実質単価の計算式:</strong> (代表プランの税込料金＋代表送料)÷食数。送料は各社の代表値（地域別の場合は関東など公式の代表表記）を採用し、送料無料・配達料込みのサービスは0円として計算</li>
           <li><strong>代表プラン:</strong> 各社の基準となる最小〜標準プラン（1回限りのお試し特価は比較対象から除外）</li>

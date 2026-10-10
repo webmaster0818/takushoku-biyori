@@ -123,3 +123,7 @@ GSC診断(28d 6/3-7/1): クリック2・表示738(前月391→1.9倍)・平均20
 - 確認不可（値は変えず）: 筋肉食堂の店舗名3つ・初回割引の有無／GS の北海道・沖縄送料内訳3値・スタート応援プラン・グリコ/会員数/セブン／Dietician の販売当時価格8値＋myランク・メニュー数・開始時期・工場／タイヘイの1972・1974年・カード手数料／ツクリオの2018創業・3,000万食・改称日
 - 5本とも title【2026年10月最新】・description【2026年10月更新】・modifiedTime/dateModified=10/10・「更新: 2026年10月10日（公式で再確認）」。precheck 1回目 tsukurioki description 162字で不合格→短縮→全項目OK
 - **残り（P2）**: 7月のまま 6本 = yushoku-net / takushoku-ryokin-hakusho（白書18社）/ medimeal / wanmairu / fitfoodhome / tsurukame。白書は筋肉食堂（バルクアップ・送料21食）・GREEN SPOON（初回表記）・ツクリオの今回値と突合が必要
+
+### 2026-10-10（続き）範囲外P1の2件を訂正 ✅本番反映済み
+- ①白書データ `data/ryokin-hakusho-2026-07.json` のツクリオだけ今日の公式値に（4人前週3食10,690円・週5食16,960円・2人前週5食11,990円を追加・初回限定6,690/12,960円・締切=前週水曜23:59）。ブランド単位の `verified_at` を 2026-10-10 に（他社は不変）。白書ページの確認日表記に「ツクリオのみ2026年10月10日再確認」を併記。代表プラン=plans[0]（2人前週3食7,990円）なので白書の実質単価1,332円は不変。目的別ハブ3本の単価表はツクリオを含まない→表示変化なし。title/dateModified は他社未再確認のため据え置き
+- ②GOFOOD言及25本を文脈確認（公式 info40「2025年6月30日をもちましてサービス終了」を今日再確認）: **直した22本**＝15社栄養表のGOFOOD行（19本: 名前に「2025年6月30日にサービス終了」・価格欄「サービス終了」）／kou-tanpaku-ranking（2位GOFOOD→筋肉食堂DELIに差し替え・表/結論/FAQ/description）／muscle-deli-reviews（比較表の列を筋肉食堂DELIに）／watami-direct-otameshi（代替提案）／goodeli-kuchikomi（提供状況の行・FAQ・比較先の差し替え）／gofood-kuchikomi本体（「おすすめな人」→「向いていた人」・注意点・まとめの「1回試す」を終了告知と代替に）。※19本の表のうち toushitsu-seigen-osusume を含む。**問題なし3本**＝dietician（午前に対応済み）・toushitsu-seigen-osusume の goodeli 記事へのリンク題名・TOPのカードは記事リンクのみ（歴史的言及／記事タイトル）

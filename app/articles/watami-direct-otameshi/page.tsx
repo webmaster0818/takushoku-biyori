@@ -430,7 +430,7 @@ export default function WatamiDirectOtameshiPage() {
               "ガッツリ食べたい男性(→マッスルデリ, nosh)",
               "メニューを毎回自由に選びたい人(→nosh, 三ツ星ファーム)",
               "高タンパク質を最重視する人(→マッスルデリ)",
-              "厳しい糖質制限を実践している人(→サポートミール, GOFOOD)",
+              "厳しい糖質制限を実践している人(→サポートミール, 筋肉食堂DELIローカーボ)",
               "味のグルメ志向を最優先する人(→三ツ星ファーム)",
             ].map((item) => (
               <li key={item} className="flex items-start gap-2">

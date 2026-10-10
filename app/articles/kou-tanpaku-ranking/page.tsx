@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "高タンパク質 冷凍宅配弁当ランキング【2026年版】筋トレ・ダイエット向け7選";
 const ARTICLE_DESCRIPTION =
-  "高タンパク質の冷凍宅配弁当を徹底比較。筋トレ・ダイエット・ボディメイク向けに1食タンパク質20g以上の宅配弁当7社をランキング。マッスルデリ・GOFOOD・nosh・三ツ星ファームなどをタンパク質量・価格・PFCバランスで評価します。";
+  "高タンパク質の冷凍宅配弁当を徹底比較。筋トレ・ダイエット・ボディメイク向けに1食タンパク質20g以上の宅配弁当7社をランキング。マッスルデリ・筋肉食堂DELI・nosh・三ツ星ファームなどをタンパク質量・価格・PFCバランスで評価します。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/kou-tanpaku-ranking/";
 
 export const metadata: Metadata = {
@@ -44,7 +44,7 @@ const faqData = [
   {
     question: "1食タンパク質30g以上のおすすめは？",
     answer:
-      "30g以上を安定して確保したいなら【マッスルデリLEAN(30g以上)】【マッスルデリMAINTAIN(35g以上)】【マッスルデリGAIN(50g以上)】が筆頭候補。GOFOODやFIT FOOD HOMEのプロテイン特化メニューも20〜40g前後を確保しています。noshや三ツ星ファームはメニューにより15〜25gが多く、30g以上の確保が難しい場合があります。",
+      "30g以上を安定して確保したいなら【マッスルデリLEAN(30g以上)】【マッスルデリMAINTAIN(35g以上)】【マッスルデリGAIN(50g以上)】が筆頭候補。筋肉食堂DELI（コース平均31.8〜42.3g）やFIT FOOD HOMEのプロテイン特化メニューも20〜40g前後を確保しています（GOFOODは2025年6月30日にサービス終了）。noshや三ツ星ファームはメニューにより15〜25gが多く、30g以上の確保が難しい場合があります。",
   },
   {
     question: "コスパ重視で高タンパクなのは？",
@@ -173,15 +173,16 @@ const rankingItems = [
   },
   {
     rank: 2,
-    name: "GOFOOD(ゴーフード)",
-    url: "https://gofood.jp/",
-    protein: "20〜40g",
-    price: "高め",
+    name: "筋肉食堂DELI",
+    url: "https://deli.kinnikushokudo.jp/",
+    protein: "平均31.8〜42.3g（コース別）",
+    price: "1食994〜1,480円＋送料",
     score: 4,
-    summary: "低糖質(10〜20g)×高タンパクを両立。糖質制限と筋トレを並行している層に支持される。",
-    pros: ["1食糖質10〜20gと低い", "タンパク質20〜40g確保", "ケトジェニックにも使える"],
-    cons: ["価格は高め", "メニュー選択が限られる"],
-    target: "糖質制限+筋トレを並行する層",
+    summary: "高たんぱくレストラン「筋肉食堂」の宅配版。ベーシック（たんぱく質平均33.0g）・ローカーボ（31.8g・糖質12.2g）・バルクアップ（42.3g）の3コースで、目的別にPFCを選べる（2026年10月10日公式確認）。※以前この順位で紹介していたGOFOODは、公式が2025年6月30日のサービス終了を告知しています。",
+    pros: ["全コースでたんぱく質30g超（平均値）", "ローカーボは糖質平均12.2g", "回数縛りなし・7日前までマイページで停止"],
+    cons: ["定期でも送料がかかる（関東7食1,640円〜）", "1食1,000円前後〜と高め"],
+    target: "糖質制限+筋トレを並行する層 / 増量期のトレーニー",
+    reviewLink: "/articles/kinnikushokudo-deli-kuchikomi/",
   },
   {
     rank: 3,
@@ -308,7 +309,7 @@ export default function KouTanpakuRankingPage() {
             「筋トレしてるけど、毎日鶏むね茹でるのに飽きた」「ダイエット中だけどプロテインだけじゃ物足りない」——そんな筋トレ・ボディメイク中のあなたに役立つのが、<strong>高タンパク冷凍宅配弁当</strong>です。
           </p>
           <p className="mb-3">
-            この記事では、<strong>1食あたりタンパク質20g以上を確保している宅配弁当7社をランキング</strong>。マッスルデリ・GOFOOD・nosh・三ツ星ファームなどを、タンパク質量・PFCバランス・価格・続けやすさで総合評価しました。
+            この記事では、<strong>1食あたりタンパク質20g以上を確保している宅配弁当7社をランキング</strong>。マッスルデリ・筋肉食堂DELI・nosh・三ツ星ファームなどを、タンパク質量・PFCバランス・価格・続けやすさで総合評価しました。
           </p>
           <p>
             数値はすべて公式情報ベース。<strong>「自分の目的・予算で最適なのはどれか」</strong>を判断できる内容にまとめています。
@@ -403,7 +404,7 @@ export default function KouTanpakuRankingPage() {
           headers={["サービス", "タンパク質(1食)", "糖質(1食)", "1食価格", "PFCプラン分け"]}
           rows={[
             ["マッスルデリ", "30〜50g以上", "15〜75g(プラン別)", "高め", "目的別4プラン"],
-            ["GOFOOD", "20〜40g", "10〜20g", "高め", "低糖質中心"],
+            ["筋肉食堂DELI", "平均31.8〜42.3g", "平均12.2〜60.4g(コース別)", "994〜1,480円＋送料", "目的別3コース"],
             ["FIT FOOD HOME", "20〜35g", "20〜40g", "中〜高", "目的別あり"],
             ["サポートミール", "意識した設計", "9.5〜12g", "828〜883円", "セット制"],
             ["nosh", "15〜25g", "30g以下", "599〜748円", "自由選択"],
@@ -427,7 +428,7 @@ export default function KouTanpakuRankingPage() {
 
         <SubHeading>糖質制限+筋トレ並行</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          糖質15g以下を維持しながら高タンパクを取りたいなら【マッスルデリLOW CARB】【GOFOOD】【サポートミール】が候補。<Link href="/articles/toushitsu-seigen-osusume/" className="text-accent hover:text-accent-dark underline">糖質制限おすすめ宅配</Link>も参考に。
+          糖質15g以下を維持しながら高タンパクを取りたいなら【マッスルデリLOW CARB】【筋肉食堂DELIローカーボ（糖質平均12.2g）】【サポートミール】が候補。<Link href="/articles/toushitsu-seigen-osusume/" className="text-accent hover:text-accent-dark underline">糖質制限おすすめ宅配</Link>も参考に。
         </p>
 
         <SubHeading>コスパ重視・続けやすさ重視</SubHeading>
@@ -474,7 +475,7 @@ export default function KouTanpakuRankingPage() {
           <p className="font-bold mb-3">本記事の結論</p>
           <ul className="text-sm space-y-2 mb-4">
             <li><strong>1位 マッスルデリ</strong>: ボディメイクガチ勢の本命。タンパク質量・プラン設計は他社を圧倒。</li>
-            <li><strong>2位 GOFOOD</strong>: 糖質制限+筋トレ並行勢に最適。</li>
+            <li><strong>2位 筋肉食堂DELI</strong>: ローカーボで糖質制限+筋トレ並行、バルクアップで増量にも対応。</li>
             <li><strong>3位 FIT FOOD HOME</strong>: 添加物配慮+高タンパクのバランス型。</li>
             <li><strong>4位 サポートミール</strong>: 糖質9.5〜12gの厳格設計。RIZAPメソッド志向。</li>
             <li><strong>5位 nosh</strong>: コスパ最重視で続けるなら間違いない選択肢。</li>

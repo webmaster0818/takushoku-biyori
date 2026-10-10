@@ -40,7 +40,7 @@ const faqData = [
   {
     question: "goodeli（グーデリ）とGOFOOD（ゴーフード）は同じサービスですか？",
     answer:
-      "別のサービスです。goodeliは goodeli.jp が運営する冷凍宅配食で、主菜に副菜が付く構成です。GOFOOD（ゴーフード）は全メニュー糖質20g以下を掲げる低糖質の冷凍弁当で、運営会社も価格体系も異なります。名前が似ているため検索時に混同されやすいので、公式サイトのドメインで見分けてください。",
+      "別のサービスです。goodeliは goodeli.jp が運営する冷凍宅配食で、主菜に副菜が付く構成です。GOFOOD（ゴーフード）は全メニュー糖質20g以下を掲げていた低糖質の冷凍弁当で、運営会社も価格体系も異なります（GOFOODは公式お知らせで2025年6月30日のサービス終了を告知済み）。名前が似ているため検索時に混同されやすいので、公式サイトのドメインで見分けてください。",
   },
   {
     question: "goodeliの料金はいくらですか？",
@@ -126,7 +126,7 @@ export default function Page() {
         <div className="mt-6 rounded-xl border-l-4 border-accent bg-cream p-5">
           <p className="text-sm font-bold mb-2">先に結論</p>
           <ul className="space-y-2 text-sm leading-relaxed">
-            <li>・goodeli（グーデリ）と GOFOOD（ゴーフード）は<strong>別のサービス</strong>です。名前が似ているだけで、運営も価格体系も違います。</li>
+            <li>・goodeli（グーデリ）と GOFOOD（ゴーフード）は<strong>別のサービス</strong>です。名前が似ているだけで、運営も価格体系も違います。なお GOFOOD は2025年6月30日にサービスを終了しています（公式お知らせ）。</li>
             <li>・料金は<strong>14食で1食896円（税込）、21食で1食842円（税込）</strong>。まとめ買いほど1食あたりが下がります。</li>
             <li>・送料は<strong>通常1,100円・北海道と沖縄は2,750円（税込）</strong>。1食あたりで比べるときはここを足してください。</li>
             <li>・<strong>初回購入分は解約・キャンセルができません</strong>。ここは申し込み前に必ず確認してください。</li>
@@ -154,6 +154,11 @@ export default function Page() {
                 <td className="border p-2">gofood.jp</td>
               </tr>
               <tr>
+                <th className="border p-2 text-left font-normal text-gray-600">提供状況</th>
+                <td className="border p-2">販売中</td>
+                <td className="border p-2">2025年6月30日にサービス終了（公式告知）</td>
+              </tr>
+              <tr>
                 <th className="border p-2 text-left font-normal text-gray-600">主な特徴</th>
                 <td className="border p-2">主菜に副菜が付く構成。CAS凍結を採用</td>
                 <td className="border p-2">全メニュー糖質20g以下・たんぱく質20g以上の低糖質</td>
@@ -174,7 +179,7 @@ export default function Page() {
         <p className="mt-3 text-xs text-gray-500">
           goodeliの数値は公式サイト（goodeli.jp）で{CHECKED}に確認。GOFOODの数値は
           <Link href="/articles/gofood-kuchikomi/" className="text-accent underline">GOFOODの記事</Link>
-          に記載の公式確認値です。最新の料金は各公式サイトでご確認ください。
+          に記載の公式確認値（サービス終了前の価格）です。最新の料金は各公式サイトでご確認ください。
         </p>
 
         <h2 className="mt-10 text-xl font-bold border-b pb-2">goodeliの料金と送料</h2>
@@ -224,7 +229,7 @@ export default function Page() {
         <p className="mt-4 text-sm leading-relaxed">
           公式サイトによると、弁当シリーズは1食あたり<strong>たんぱく質14g以上・糖質30g以下・350kcal以下</strong>を基準としています。
           冷凍にはCAS凍結を採用していると記載があります。糖質を厳しく抑えたい場合は、
-          糖質20g以下を全メニューで統一しているGOFOODなど、基準そのものが違うサービスと比べるのが分かりやすいです。
+          1食平均の糖質を12.2gに抑えた筋肉食堂DELIのローカーボコース（2026年10月10日公式確認）など、基準そのものが違うサービスと比べるのが分かりやすいです（以前ここで挙げていたGOFOODは2025年6月30日にサービス終了）。
         </p>
 
         <h2 className="mt-10 text-xl font-bold border-b pb-2">口コミ・評判について（現時点で書けること）</h2>

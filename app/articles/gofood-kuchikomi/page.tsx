@@ -475,7 +475,7 @@ export default function GofoodKuchikomiPage() {
               <ul className="space-y-1 list-disc list-inside">
                 <li>減塩・低糖質設計で薄味に感じる人も</li>
                 <li>魚系・副菜の評価は肉系より低め</li>
-                <li>販売状況は注文前に公式で要確認</li>
+                <li>公式は2025年6月30日のサービス終了を告知済み</li>
               </ul>
             </div>
           </div>
@@ -812,7 +812,7 @@ export default function GofoodKuchikomiPage() {
         {/* ===== おすすめな人・おすすめしない人 ===== */}
         <SectionHeading id="recommend">おすすめな人・おすすめしない人</SectionHeading>
 
-        <SubHeading>GOFOODがおすすめな人</SubHeading>
+        <SubHeading>GOFOODが向いていた人（※公式は2025年6月30日のサービス終了を告知）</SubHeading>
         <div className="bg-green-50 rounded-xl p-5 mb-6">
           <ul className="space-y-2 text-sm">
             {[
@@ -905,7 +905,7 @@ export default function GofoodKuchikomiPage() {
             「まずい」という検索の実態は、減塩・低糖質設計による薄味と、魚系・副菜の相対的な弱さへの評価が中心で、「まずい」が多数派という根拠は確認できませんでした。一方、<strong>メニュー数の少なさと販売状況・ラインナップの変動</strong>は事実なので、注文前に公式サイトで最新状況を確認するのが安全です。
           </p>
           <p className="text-sm leading-relaxed">
-            回数縛りはないので、まずは評価の高いチキン系メニュー中心のセットを1回試し、薄味設計が自分に合うかを確かめるのが失敗しない始め方です。
+            ただし公式お知らせ（2025年5月30日付）で2025年6月30日のサービス終了が告知されているため、これから低糖質×高たんぱくの宅配食を始めるなら、筋肉食堂DELIのローカーボコース（1食平均 糖質12.2g・たんぱく質31.8g・定期21食で1食税込994円＋送料、2026年10月10日公式確認）など現在販売中のサービスを検討してください（<Link href="/articles/kinnikushokudo-deli-kuchikomi/" className="text-accent underline">筋肉食堂DELIの口コミ・評判</Link>）。
           </p>
         </div>
 
