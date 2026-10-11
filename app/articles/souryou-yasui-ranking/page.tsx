@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-21T00:00:00+09:00",
-    modifiedTime: "2026-10-10T00:00:00+09:00",
+    modifiedTime: "2026-10-11T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -146,7 +146,7 @@ export default function SouryouYasuiRankingPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-21T00:00:00+09:00",
-    dateModified: "2026-10-10T00:00:00+09:00",
+    dateModified: "2026-10-11T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -227,11 +227,11 @@ export default function SouryouYasuiRankingPage() {
             ["3位", "ワタミの宅食（冷蔵・手鞠）", "約530円", "無料（自社配送）", "約530円"],
             ["4位", "ワタミの宅食ダイレクト（冷凍10食）", "約390円", "800円", "約470円"],
             ["5位", "食宅便（7食・定期）", "約560円", "390円（定期半額）", "約616円"],
-            ["6位", "Dr.つるかめキッチン（7食・定期）", "約663円", "無料（定期）", "約663円"],
+            ["6位", "Dr.つるかめキッチン（21食・定期・バランス栄養御膳）", "約663円", "無料（定期）", "約663円"],
             ["7位", "nosh（10食プラン）", "620円", "1,166円（関東）", "約737円"],
             ["8位", "ウェルネスダイニング（栄養バランス14食・定期）", "約770円", "無料（定期14・21食）", "約770円"],
             ["9位", "三ツ星ファーム（14食）", "819円", "990円", "約889円"],
-            ["10位", "わんまいる（5食）", "約1,050円", "935円（北海道2,145円）", "約1,237円"],
+            ["10位", "わんまいる（5食）", "約1,050円", "1,080円（北海道・沖縄2,645円）", "約1,266円"],
           ]}
         />
 

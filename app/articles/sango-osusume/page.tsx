@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-16T00:00:00+09:00",
-    modifiedTime: "2026-10-10T00:00:00+09:00",
+    modifiedTime: "2026-10-11T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -177,7 +177,7 @@ export default function SangoOsusumePage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-16T00:00:00+09:00",
-    dateModified: "2026-10-10T00:00:00+09:00",
+    dateModified: "2026-10-11T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -414,7 +414,7 @@ export default function SangoOsusumePage() {
             "合成保存料・合成着色料不使用",
           ]}
           price="796円〜（5食プラン）"
-          shipping="935円（北海道・沖縄2,145円）"
+          shipping="1,080円（北海道・沖縄2,645円）"
           pros={[
             "国産食材100%で産後の安心感が最高レベル",
             "湯煎調理で冷凍弁当より手作り感がある",
@@ -496,7 +496,7 @@ export default function SangoOsusumePage() {
             ["nosh", "612円〜", "1,023円〜（地域別）", "一部使用", "平均20g", "20食プランあり"],
             ["三ツ星ファーム", "711円〜", "990円", "公式に方針記載なし", "15g以上", "21食プランあり"],
             ["ウェルネスダイニング", "約752円〜", "定期14・21食無料（7食440円）", "一部使用", "平均12.8g（栄養バランス）", "7〜21食"],
-            ["わんまいる", "796円〜", "935円", "不使用", "約15g", "5食セット"],
+            ["わんまいる", "796円〜", "1,080円", "不使用", "約15g", "5食セット"],
             ["ヨシケイ", "約397円", "無料", "一部使用", "約10g", "毎日配達"],
           ]}
         />
@@ -508,7 +508,7 @@ export default function SangoOsusumePage() {
             ["nosh", "20食×3回", "36,720円", "4,158円", "40,878円"],
             ["三ツ星ファーム", "21食×約2.8回", "41,770円", "2,772円", "44,542円"],
             ["ウェルネスダイニング（栄養バランス）", "21食×約2.9回（60食分）", "約45,140円", "0円", "約45,140円"],
-            ["わんまいる", "5食×12回", "47,760円", "11,220円", "58,980円"],
+            ["わんまいる", "5食×12回", "47,760円", "12,960円", "60,720円"],
             ["ヨシケイ", "3食×約20日", "23,800円", "0円", "23,800円"],
           ]}
         />
@@ -521,7 +521,7 @@ export default function SangoOsusumePage() {
             <li><strong>コスパ最強：ヨシケイ</strong>（月約23,800円）——毎日届く・送料無料・置き配で産後に最適</li>
             <li><strong>バランス良好：nosh</strong>（月約40,900円）——家族利用とコスパの両立。<strong>三ツ星ファーム</strong>は通常の定期便で月約44,500円</li>
             <li><strong>安心感重視：ウェルネスダイニング</strong>（月約45,100円）——栄養相談付きの安心感</li>
-            <li><strong>国産食材：わんまいる</strong>（月約59,000円）——価格は高いが1〜2ヶ月限定ならアリ</li>
+            <li><strong>国産食材：わんまいる</strong>（月約60,700円）——価格は高いが1〜2ヶ月限定ならアリ</li>
           </ul>
         </div>
 

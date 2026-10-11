@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-16T00:00:00+09:00",
-    modifiedTime: "2026-10-10T00:00:00+09:00",
+    modifiedTime: "2026-10-11T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -221,7 +221,7 @@ export default function KoureishaOsusumePage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-16T00:00:00+09:00",
-    dateModified: "2026-10-10T00:00:00+09:00",
+    dateModified: "2026-10-11T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -487,7 +487,7 @@ export default function KoureishaOsusumePage() {
             "管理栄養士による栄養相談",
             "定期便で送料無料",
           ]}
-          price="684円〜（7食プラン）"
+          price="710円〜（7食プラン・定期）"
           shipping="770円〜（定期便無料）"
           pros={[
             "専門医監修の制限食は高齢者に安心",
@@ -543,7 +543,7 @@ export default function KoureishaOsusumePage() {
             ["まごころケア食", "470円〜", "無料", "ムース食あり", "6コース", "なし"],
             ["食宅便", "560円〜", "780円", "あり", "5コース以上", "なし"],
             ["nosh", "612円〜", "1,023円〜（地域別）", "なし", "糖質30g・塩分2.5g以下", "なし"],
-            ["Dr.つるかめキッチン", "684円〜", "定期無料", "なし", "4コース", "あり"],
+            ["Dr.つるかめキッチン", "663円〜", "定期無料", "なし", "5コース", "あり"],
           ]}
         />
 
