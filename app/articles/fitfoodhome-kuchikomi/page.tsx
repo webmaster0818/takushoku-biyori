@@ -451,7 +451,7 @@ export default function FitFoodHomeKuchikomiPage() {
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
           <p className="font-bold text-base mb-3">結論：FIT FOOD HOMEはこんな人に向いています</p>
           <p className="text-sm leading-relaxed mb-4">
-            FIT FOOD HOMEは、<strong>「添加物を避けたい、かつ味も妥協したくない人」</strong>に向いた無添加調理の冷凍おかず宅配です。口コミでは「手作りのような味」「別格にウマい」という強い高評価が目立ち、「SNS調査で『まずい』の意見なし」という報告もあります（<a href="#mazui" className="text-accent underline">検証セクションへ</a>）。一方、単品1,129円〜という価格と量の控えめさは注意点です。
+            FIT FOOD HOMEは、<strong>「添加物を避けたい、かつ味も妥協したくない人」</strong>に向いた無添加調理の冷凍おかず宅配です。口コミでは「手作りのような味」「別格にウマい」という強い高評価が目立ち、「SNS調査で『まずい』の意見なし」という報告もあります（<a href="#mazui" className="text-accent underline">検証セクションへ</a>）。一方、おかず1個1,188円〜（まとめ割で1,129円〜）という価格と量の控えめさは注意点です。
           </p>
           <div className="grid md:grid-cols-2 gap-4 mb-4 text-sm">
             <div className="bg-cream rounded-lg p-3">
