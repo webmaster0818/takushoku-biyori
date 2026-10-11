@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "Dr.つるかめキッチンの口コミ・評判は？まずいって本当？制限食5コースの料金・味を出典付きで検証【2026年9月最新】";
+  "Dr.つるかめキッチンの口コミ・評判は？まずいって本当？制限食5コースの料金・味を出典付きで検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "Dr.つるかめキッチンは「まずい」って本当？公開レビューの良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。専門医・管理栄養士W監修の制限食5コース（糖質制限/塩分制限/たんぱく質制限/カロリー制限/バランス栄養）の料金・送料も2026年7月4日確認の公式データで解説します。";
+  "Dr.つるかめキッチンは「まずい」って本当？公開レビューの良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。専門医・管理栄養士W監修の制限食5コース（糖質制限/塩分制限/たんぱく質制限/カロリー制限/バランス栄養）の料金・送料も2026年10月11日確認の公式データで解説します。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/tsurukame-reviews/";
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-21T00:00:00+09:00",
-    modifiedTime: "2026-10-10T00:00:00+09:00",
+    modifiedTime: "2026-10-11T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -54,7 +54,7 @@ const faqData = [
   {
     question: "定期購入の解約方法は？",
     answer:
-      "電話で解約できます（0120-666-637）。次回お届け予定日の6日前までに連絡すれば、購入回数に関係なく解約可能で、解約金は一切かかりません。解約ではなく「休止」や「配送間隔の変更」も電話で対応してもらえます。",
+      "カスタマーセンター（0120-666-637・平日9〜17時）またはお問い合わせフォームから連絡します。公式FAQでは「配送回数や期間に制限はなく、お届け予定日の6日前までであればいつでもご解約いただけます」とされ、締切を過ぎた場合は「次回配送から解約」となります。解約ではなく「スキップ」「一時休止」（再開するまで決済・お届けが止まる）や、次回のお届け食数・頻度の変更もできます。",
   },
 ];
 
@@ -243,7 +243,7 @@ const badReviewCategories: {
       },
     ],
     comment:
-      "定期コース（28%OFF・送料無料）なら7食5,184円＝1食約741円ですが、都度購入は7食7,228円＋送料770円＝1食約1,143円と割高です。回数縛りのない定期で注文するのが前提のサービスと考えましょう（料金は2026年7月4日の公式サイト確認時点）。",
+      "定期コース（28%OFF・送料無料）なら7食5,184円＝1食約741円ですが、都度購入は7食7,228円＋送料770円＝1食約1,143円と割高です。回数縛りのない定期で注文するのが前提のサービスと考えましょう（料金は2026年10月11日の公式サイト確認時点）。",
   },
   {
     title: "量が控えめで男性には物足りないことも",
@@ -263,7 +263,7 @@ const badReviewCategories: {
 export default function TsurukameReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-10-10T00:00:00+09:00",
+    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-10-11T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -289,7 +289,7 @@ export default function TsurukameReviewsPage() {
           <div className="flex items-center gap-3 mb-4"><span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">口コミ・評判</span><span className="text-[10px] text-gray-400">PR掲載も含みます</span></div>
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
-            <time dateTime="2026-04-21">公開: 2026年4月21日</time><span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
+            <time dateTime="2026-04-21">公開: 2026年4月21日</time><time dateTime="2026-10-11">更新: 2026年10月11日（公式で再確認）</time><span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
 
@@ -323,10 +323,11 @@ export default function TsurukameReviewsPage() {
             ["監修", "専門医＋管理栄養士のW監修"],
             ["コース数", "5コース（糖質/塩分/たんぱく質/カロリー/バランス）"],
             ["食数", "7食・14食・21食セットから選択"],
-            ["配送", "ヤマト運輸クール宅急便"],
+            ["配送", "ヤマト運輸クール宅急便（注文から7日前後でお届け・一部離島を除く）"],
+            ["支払い", "クレジットカード / Amazon Pay / コンビニ後払い（手数料240円） / 代金引換（手数料330円）"],
             ["送料", "定期購入：全国送料無料 / 都度購入：770円"],
             ["配送間隔", "1週間/2週間/3週間/1ヶ月から選択"],
-            ["解約", "いつでも可（縛りなし・解約金なし）"],
+            ["解約", "いつでも可（縛りなし・解約金なし）・お届け予定日の6日前までに連絡"],
           ]}
         />
 
@@ -452,7 +453,7 @@ export default function TsurukameReviewsPage() {
 
         <SectionHeading id="price">料金・送料を徹底解説</SectionHeading>
         <p className="text-xs text-warm-gray mb-4">
-          ※本セクションの料金・送料は2026年7月4日に編集部が公式サイトで直接確認した金額（税込）です。最新の金額は公式サイトでご確認ください。
+          ※本セクションの料金・送料は2026年10月11日に編集部が公式サイトで直接確認した金額（税込）です。最新の金額は公式サイトでご確認ください。
         </p>
         <SubHeading>定期購入 vs 都度購入</SubHeading>
         <ComparisonTable
@@ -499,9 +500,9 @@ export default function TsurukameReviewsPage() {
         <SectionHeading id="demerits">デメリット3つ</SectionHeading>
         <div className="space-y-3 mb-6">
           {[
-            { title: "メニューが選べない（完全おまかせ）", text: "栄養制限値を厳密に管理するため、メニューは全ておまかせ。苦手な食材が含まれる可能性があり、好き嫌いが多い方には不向きです。" },
-            { title: "1食あたりの価格がやや高め", text: "定期購入でも1食684〜787円と、nosh（通常612〜719円・nosh club最高ランクで492円／2026年10月10日・公式確認）やまごころケア食（約470円）と比較するとやや高め。ただし制限食の品質と送料無料を考慮すると妥当な価格帯です。" },
-            { title: "解約が電話のみ", text: "解約・休止・変更は電話連絡のみ。noshのようにマイページから解約できるサービスと比較すると、やや不便です。" },
+            { title: "メニューが選べない（完全おまかせ）", text: "栄養制限値を厳密に管理するため、メニューは全ておまかせ。公式FAQによると、主菜に使われる苦手な食材は抜いてもらえますが、副菜・調味料は対応外で、アレルギーへの完全対応もありません。好き嫌いが多い方には不向きです。" },
+            { title: "1食あたりの価格がやや高め", text: "定期購入でも1食663〜787円と、nosh（通常612〜719円・nosh club最高ランクで492円／2026年10月10日・公式確認）やまごころケア食（約470円）と比較するとやや高め。ただし制限食の品質と送料無料を考慮すると妥当な価格帯です。" },
+            { title: "解約は連絡が必要", text: "解約・休止は「お届け予定日の6日前までにご連絡」が公式の案内で、窓口はカスタマーセンター（電話・平日9〜17時）とお問い合わせフォームです。公式FAQにマイページで解約を完結する手順の記載はなく、noshのようにマイページで手続きできるサービスと比べるとやや手間です。" },
           ].map((item) => (
             <div key={item.title} className="bg-red-50 rounded-lg p-4">
               <p className="font-bold text-sm mb-1">{item.title}</p>
@@ -546,7 +547,7 @@ export default function TsurukameReviewsPage() {
           <p className="font-bold text-sm mb-3">Dr.つるかめキッチン まとめ</p>
           <div className="space-y-2 text-sm leading-relaxed">
             <p>Dr.つるかめキッチンは<strong>専門医＋管理栄養士のW監修</strong>による制限食専門の冷凍宅配弁当サービスです。</p>
-            <p>糖質制限・塩分制限・たんぱく質制限・カロリー制限・バランス栄養の5コースを展開。定期購入なら28%OFFかつ全国送料無料で、1食あたり684〜787円で利用できます。</p>
+            <p>糖質制限・塩分制限・たんぱく質制限・カロリー制限・バランス栄養の5コースを展開。定期購入なら28%OFFかつ全国送料無料で、1食あたり663〜787円で利用できます。</p>
             <p>「制限食なのに美味しい」という口コミが多数。定期購入に縛りがないため、実質お試し感覚で始められます。食事制限が必要な方や、ご家族の健康管理をサポートしたい方におすすめのサービスです。</p>
           </div>
         </div>

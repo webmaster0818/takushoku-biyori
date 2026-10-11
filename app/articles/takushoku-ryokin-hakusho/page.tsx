@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-10T00:00:00+09:00",
+    modifiedTime: "2026-10-11T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -72,7 +72,7 @@ const MISSING_REASON: Record<string, string> = {
   "watami-direct":
     "通常セットの食数別税込価格が公式サイトのJS描画のため未取得。お試し割（10食3,900円）は1回限りの特別価格のため比較対象外",
   "fit-food-home":
-    "単品×個数割引方式で固定セット価格がなく、送料全額を単品1個に負担させる計算は実態と乖離するため対象外（単品1,129円〜＋都度送料990円）",
+    "単品×個数割引方式で固定セット価格がなく、送料全額を単品1個に負担させる計算は実態と乖離するため対象外（おかず1個1,188円〜・10個入りのまとめ割で1,129円〜＋都度送料990円）",
 };
 
 // 表示用の短縮ラベル（数値はすべて上記JSONの記載から。要約のみ）
@@ -355,7 +355,7 @@ function SubHeading({ children }: { children: React.ReactNode }) {
 export default function TakushokuRyokinHakushoPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-10-10T00:00:00+09:00",
+    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-10-11T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -416,7 +416,7 @@ export default function TakushokuRyokinHakushoPage() {
         <SectionHeading id="methodology">調査方法（全18社を公式サイトで直接確認）</SectionHeading>
         <ul className="text-sm mb-6 leading-relaxed list-disc list-inside space-y-2">
           <li><strong>調査対象:</strong> 宅配弁当・宅食（冷凍弁当・冷蔵惣菜・夕食宅配・ミールキット）18ブランド</li>
-          <li><strong>確認日:</strong> {VERIFIED_DATE}（本ページの数値は原則この日の公式サイト掲載額・税込。ツクリオ・nosh・ウェルネスダイニングは2026年10月10日に公式で再確認した値＝ツクリオ4人前プランとウェルネスダイニング全コースの値上げ、noshの送料表改訂を反映）</li>
+          <li><strong>確認日:</strong> {VERIFIED_DATE}（本ページの数値は原則この日の公式サイト掲載額・税込。ツクリオ・nosh・ウェルネスダイニングは2026年10月10日に公式で再確認した値＝ツクリオ4人前プランとウェルネスダイニング全コースの値上げ、noshの送料表改訂を反映。Dr.つるかめキッチン・メディミール・FIT FOOD HOMEは2026年10月11日に公式で再確認＝FIT FOOD HOMEの単品価格訂正とメディミール都度21食の送料無料を反映）</li>
           <li><strong>情報源:</strong> 各社公式サイトのみを直接確認。<strong>比較サイト・まとめ記事からの転記は一切していません</strong></li>
           <li><strong>実質単価の計算式:</strong> (代表プランの税込料金＋代表送料)÷食数。送料は各社の代表値（地域別の場合は関東など公式の代表表記）を採用し、送料無料・配達料込みのサービスは0円として計算</li>
           <li><strong>代表プラン:</strong> 各社の基準となる最小〜標準プラン（1回限りのお試し特価は比較対象から除外）</li>
@@ -610,7 +610,7 @@ export default function TakushokuRyokinHakushoPage() {
           headers={["サービス", "都度注文の送料", "定期の送料"]}
           rows={[
             ["Dr.つるかめキッチン", "770円（全国一律）", "無料（定期コース）"],
-            ["メディミール", "880円", "無料（初回・定期便）"],
+            ["メディミール", "880円（21食セットは無料）", "無料（初回・定期便）"],
             ["ウェルネスダイニング", "880円", "14食・21食は無料／7食は440円"],
             ["FIT FOOD HOME", "990円", "無料（定期配送）"],
             ["食宅便", "1,330円（都度便）", "940円（らくらく定期便）"],

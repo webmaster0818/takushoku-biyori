@@ -741,6 +741,12 @@
      "meals": 7,
      "price_jpy": 5184,
      "note": "定期コース価格。14食9,828円/21食14,364円。都度は7食7,228円/14食13,730円/21食20,210円（糖質制限と同額体系）"
+    },
+    {
+     "plan_name": "つるかめバランス栄養御膳 7食",
+     "meals": 7,
+     "price_jpy": 4968,
+     "note": "定期コース価格。14食9,504円/21食13,932円。都度は7食6,980円/14食13,190円/21食19,400円。たんぱく＆塩分制限は定期7食5,508円/14食10,476円/21食15,336円"
     }
    ],
    "shipping": {
@@ -751,16 +757,20 @@
    },
    "first_discount": "初回限定10%OFF（トップページお知らせ欄の表記・常設かは不明）。常設は定期コース28%OFF（初回から適用）",
    "subscription": "両方",
-   "cancel_note": "定期はいつでも解約可（回数縛りなし）。次回お届け予定日の6日前までに連絡",
+   "cancel_note": "定期は配送回数・期間の制限なくいつでも解約可。お届け予定日の6日前までに連絡（締切後は次回配送から解約）。連絡先はカスタマーセンター（電話・平日9〜17時）またはお問い合わせフォーム。スキップ・一時休止も可",
    "source_urls": [
     "https://tsurukame-kitchen.com/",
     "https://tsurukame-kitchen.com/menu/post-123",
-    "https://tsurukame-kitchen.com/menu/post-9"
+    "https://tsurukame-kitchen.com/menu/post-9",
+    "https://tsurukame-kitchen.com/menu/post-93",
+    "https://tsurukame-kitchen.com/menu/post-108",
+    "https://tsurukame-kitchen.com/menu/post-128",
+    "https://tsurukame-kitchen.com/faq/"
    ],
-   "verified_at": "2026-09-05",
+   "verified_at": "2026-10-11",
    "verified": true,
-   "notes": "塩分制限・たんぱく＆塩分制限・バランス栄養の各御膳もあり（個別ページ未確認）",
-   "reverify_note": "送料は都度770円(税込)・定期は送料無料。前回記録と一致"
+   "notes": "5コース（糖質制限/カロリー制限/塩分制限=同額、たんぱく＆塩分制限、バランス栄養）の料金を各コースページで確認（2026-10-11）",
+   "reverify_note": "2026-10-11: 価格・送料（都度770円・定期無料）は前回と一致。解約の連絡先・締切後の扱いを追記"
   },
   {
    "slug": "medimeal",
@@ -801,7 +811,7 @@
     "type": "flat",
     "representative_jpy": 880,
     "temperature": "frozen",
-    "note": "初回送料無料。2回目以降は一律880円（税込）。定期注文は送料無料。沖縄・離島は1,100円。2026-09-10確認"
+    "note": "初回送料無料。2回目以降の都度注文は880円（税込・沖縄/離島1,100円）だが、税抜10,000円以上は送料無料のため21食セットは無料（公式FAQ「冷凍弁当の場合：７食セット・１４食セットは880円、２１食セットは送料無料」）。定期便は送料無料。2026-10-11確認"
    },
    "first_discount": "初回送料無料（880円相当がお得）／会員登録で100P",
    "subscription": "両方",
@@ -810,12 +820,13 @@
     "https://medimeal.net/",
     "https://medimeal.net/restricted/calorie/",
     "https://medimeal.net/restricted/protein/",
-    "https://medimeal.net/restricted/balance/"
+    "https://medimeal.net/restricted/balance/",
+    "https://medimeal.net/QA/"
    ],
-   "verified_at": "2026-09-10",
+   "verified_at": "2026-10-11",
    "verified": true,
-   "notes": "糖質制限食・塩分制限食・ムースやわらか食コースもあり（個別ページ未確認）。定期と都度の商品価格は同一で、差は送料の有無のみ",
-   "reverify_note": "カロリー制限食7食5,270円(税込)は変更なし。14食9,698円/21食14,018円を新たに確認。送料は初回無料・2回目以降880円(税込)・定期は無料・沖縄離島1,100円"
+   "notes": "糖質制限食・塩分制限食はカロリー制限食と同額、ムースやわらか食はバランス健康食と同額（各コースページで確認）。定期と都度の商品価格は同一で、差は送料の有無のみ。支払いはクレカ/代引(330円)/後払い(440円)",
+   "reverify_note": "2026-10-11: 全コースの7/14/21食価格は前回と一致。都度21食が送料無料である点を公式FAQで確認し追記"
   },
   {
    "slug": "kinnikushokudo-deli",
@@ -877,22 +888,22 @@
    "name": "FIT FOOD HOME",
    "plans": [
     {
-     "plan_name": "おかず単品（例: 本格回鍋肉ほか）",
+     "plan_name": "おかず1個（例: 本格回鍋肉ほか・5個/7個入り時）",
      "meals": 1,
-     "price_jpy": 1129,
-     "note": "都度単品の代表価格帯。デミグラスハンバーグ・国産豚の角煮は1,243円"
+     "price_jpy": 1188,
+     "note": "5個・7個入り時の税込価格（おかずの最安価格帯）。デミグラスハンバーグ・国産豚の角煮等は1,308円。10個入りのまとめ割5%OFFで1,129円（同1,243円）"
     },
     {
      "plan_name": "まとめ買い（10個）",
      "meals": 10,
      "price_jpy": null,
-     "note": "固定セット価格ではなく選んだ商品合計から最大5%OFF（14個は最大8%OFF、20個は最大12%OFF）のため一律価格なし"
+     "note": "固定セット価格ではなく選んだ商品合計から最大5%OFF（14個は最大8%OFF、20個は最大12%OFF。5/7個入りとの比較・商品により異なる）のため一律価格なし"
     },
     {
      "plan_name": "定期購入",
      "meals": null,
      "price_jpy": null,
-     "note": "都度購入価格の5%OFF＋送料無料（FAQ明記）。商品組合せ次第のため固定価格なし"
+     "note": "都度購入価格の5%OFF＋送料無料（公式FAQ）。商品組合せ次第のため固定価格なし"
     }
    ],
    "shipping": {
@@ -903,17 +914,17 @@
    },
    "first_discount": null,
    "subscription": "両方",
-   "cancel_note": "定期は初回キャンセル不可。2回目以降は解約・休止可能で違約金なし。スキップは注文確定メール受取後の翌水曜14時まで",
+   "cancel_note": "定期は初回キャンセル・スキップ不可。2回目以降は解約・休止可能で違約金なし。スキップは注文確定メール受取後の翌水曜14時まで",
    "source_urls": [
     "https://store.tavenal.com/",
     "https://store.tavenal.com/question-answer",
     "https://fitfoodhome.life/otameshi/",
     "https://store.tavenal.com/product/all"
    ],
-   "verified_at": "2026-09-06",
+   "verified_at": "2026-10-11",
    "verified": false,
    "notes": "公式ストアはstore.tavenal.com（fitfoodhome.comは名前解決不可）。お試しセットLPは価格が画像のみ＋SOLD OUTで数値確認不能のため初回割引null。単品×個数割引方式のため食数別固定価格なし",
-   "reverify_note": "送料は都度990円(税込)・定期無料で変更なし。商品価格は公式トップに記載がなく未取得（前回値を据え置き）"
+   "reverify_note": "2026-10-11: 公式ストアの商品一覧で価格を確認。前回の1,129円は10個入りのまとめ割（5%OFF）適用後の価格で、5個・7個入り時は1,188円だったため訂正。送料は都度990円・定期無料で変更なし"
   }
  ],
  "reverify": {
@@ -940,6 +951,6 @@
   "unconfirmed": [
    "green-spoon"
   ],
-  "note": "18社中17社の再確認完了（2026-09-05〜09-10）。GREEN SPOONのみ、公式が料金をログイン後のマイページ、送料を画像で出しているため公開情報から取得不能。推測で埋めず未確認のまま据え置く。"
+  "note": "18社中17社の再確認完了（2026-09-05〜09-10）。GREEN SPOONのみ、公式が料金をログイン後のマイページ、送料を画像で出しているため公開情報から取得不能。推測で埋めず未確認のまま据え置く。 2026-10-11: Dr.つるかめキッチン・メディミール・FIT FOOD HOMEを再確認（FIT FOOD HOMEの単品価格を1,188円に訂正、メディミール都度21食の送料無料を追記）。"
  }
 }
