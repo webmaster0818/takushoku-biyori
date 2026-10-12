@@ -29,7 +29,7 @@ const faqData = [
   {
     question: "ヨシケイはお試しできる？",
     answer:
-      "はい、初めての方限定でお試しキャンペーンがあります。ミールキットは「お試し5days」で、おひとり様1食あたり約280〜670円程度（コースにより通常価格の約30〜50%OFF・週や地域で前後・2026年10月12日公式確認）。冷凍弁当のシンプルミールも初回半額で1食約170円から試せます。お試し後に自動で定期購入にはならないため、気軽に試すことができます。",
+      "はい、初めての方限定でお試しキャンペーンがあります。ミールキットは「お試し5days」で、おひとり様1食あたり約280〜670円程度（コースにより通常価格の約30〜50%OFF・週や地域で前後・2026年10月12日公式確認）。冷凍弁当のシンプルミール（3食1,290円）も初回10セットまで半額（1食約215円）で試せます。お試し後に自動で定期購入にはならないため、気軽に試すことができます。",
   },
   {
     question: "ヨシケイの配送エリアは？",
@@ -49,7 +49,7 @@ const faqData = [
   {
     question: "ヨシケイの冷凍弁当（シンプルミール）と他社の冷凍弁当の違いは？",
     answer:
-      "ヨシケイのシンプルミールは1食約350円（初回半額で約170円）＋送料無料と、業界最安クラスのコスパが魅力です。ただし、メニューが日替わり3食セットで自分で選べない点、配送エリアが限定されている点が他社との違いです。noshのように自分でメニューを選びたい方や、対象エリア外の方には不向きです。",
+      "ヨシケイ（夕食ネット）のシンプルミールは3食セット1,290円（1食430円・税込）で配達料は原則無料（一部地域を除く）、初めての方は初回10セットまで半額（1食約215円）と、価格の安さが魅力です（2026年10月12日・公式確認）。ただし、3食セット単位の販売でセット内のメニューは選べない点、配送エリアが限定されている点が他社との違いです。noshのように自分でメニューを選びたい方や、対象エリア外の方には不向きです。",
   },
 ];
 
@@ -204,7 +204,7 @@ export default function YoshikeiReviewsPage() {
             ["プチママ", "ミールキット", "約20分", "約480〜550円", "20年以上のロングセラー・離乳食レシピ付き"],
             ["定番", "ミールキット", "約30〜35分", "約500〜600円", "本格的な家庭料理が作れる"],
             ["Lovyu（ラビュ）", "ミールキット", "約15〜40分", "約600〜750円", "おしゃれなカフェ風メニュー"],
-            ["シンプルミール", "冷凍弁当", "レンジ約4分", "約350円", "1食3品・送料無料・初回半額"],
+            ["シンプルミール", "冷凍弁当", "レンジ約4分", "430円（3食1,290円）", "3食セット・配達料原則無料・初回10セットまで半額"],
           ]}
         />
 
@@ -212,7 +212,7 @@ export default function YoshikeiReviewsPage() {
         <p className="text-sm mb-6 leading-relaxed">人気の2コースを比較すると、<strong>カットミール</strong>は野菜がカット済みで包丁の使用が最大3回以内。10〜15分で2品が完成する最速コースです。一方<strong>プチママ</strong>は野菜を自分でカットする必要がありますが、その分価格が安く、大人の取り分けで作れる離乳食レシピが付いているため、小さな子どものいる家庭に特に人気です。時短最優先ならカットミール、コスパ・離乳食対応ならプチママがおすすめです。</p>
 
         <SubHeading>冷凍弁当「シンプルミール」</SubHeading>
-        <p className="text-sm mb-6 leading-relaxed">シンプルミールは3食1セットで販売される冷凍弁当です。1食あたり約350円（税込）で、<strong>初回は半額の約170円</strong>で試せます。電子レンジ約4分で完成し、送料も無料。ただし対応エリアが限定されており、メニューは日替わりで自分で選ぶことはできません。noshのように自由にメニューを選びたい方には不向きですが、コスパの良さは業界トップクラスです。</p>
+        <p className="text-sm mb-6 leading-relaxed">シンプルミールは3食1セットで販売される冷凍弁当です。3食セット1,290円（1食430円・税込）で、<strong>初回10セットまで半額（1食約215円）</strong>で試せます（2026年10月12日・公式確認）。電子レンジ約4分で完成し、配達料は原則無料（一部地域を除く）。ただし対応エリアが限定されており、メニューは日替わりで自分で選ぶことはできません。noshのように自由にメニューを選びたい方には不向きですが、コスパの良さは業界トップクラスです。</p>
 
         <SectionHeading id="good-reviews">良い口コミ・評判</SectionHeading>
         {[
@@ -243,7 +243,7 @@ export default function YoshikeiReviewsPage() {
           「ヨシケイ まずい」と検索されることがありますが、当サイトが収集した口コミでは、味への強い不満は主流ではありません。ミールキット（カットミール・プチママ）は<strong>自分で調理する方式</strong>のため、仕上がりの味はレシピ通りに作れるかに左右されます。「レシピ通りに作れば20分で完成。料理の腕も上がった気がする」という声があるように、調理済み弁当と違って「届いたものがまずい」という性質のサービスではありません。
         </p>
         <p className="mb-4">
-          一方、冷凍弁当の<strong>シンプルミール</strong>は調理済みのため味の好みが分かれる余地があります。1食約350円という業界最安クラスの価格帯であることを踏まえると、「高級弁当の味を期待すると物足りないが、価格対比では十分」というのが妥当な評価です。味が不安な方は、<strong>初回半額（1食約170円）のお試し</strong>で実際に確かめてから継続を判断するのがおすすめです。
+          一方、冷凍弁当の<strong>シンプルミール</strong>は調理済みのため味の好みが分かれる余地があります。1食430円という低価格帯であることを踏まえると、「高級弁当の味を期待すると物足りないが、価格対比では十分」というのが妥当な評価です。味が不安な方は、<strong>初回半額（1食約215円）のお試し</strong>で実際に確かめてから継続を判断するのがおすすめです。
         </p>
 
         <SectionHeading id="price">料金・送料を徹底解説</SectionHeading>
@@ -264,8 +264,8 @@ export default function YoshikeiReviewsPage() {
             { title: "送料完全無料", text: "自社配送のため送料がかかりません。他社の冷凍弁当は送料だけで月2,000〜4,000円かかることを考えると、大きなメリットです。" },
             { title: "献立を考える手間がゼロ", text: "毎週届くメニューブックから選ぶだけ。管理栄養士が栄養バランスを計算済みなので、自分で栄養を気にする必要がありません。" },
             { title: "食材の無駄がゼロ", text: "その日使う分だけ届くため、野菜を腐らせることがありません。一人暮らしの方にとっても嬉しいポイントです。" },
-            { title: "初回お試しが割安", text: "ミールキットは5日間お試しで1食約280〜670円程度（コースにより約30〜50%OFF）、シンプルミールは初回半額で1食約170円。リスクなしで味を確認できます。" },
-            { title: "冷凍弁当は業界最安クラス", text: "シンプルミールは1食約350円＋送料無料。コンビニ弁当より安く、栄養バランスも優れています。" },
+            { title: "初回お試しが割安", text: "ミールキットは5日間お試しで1食約280〜670円程度（コースにより約30〜50%OFF）、シンプルミールは初回10セットまで半額で1食約215円。リスクなしで味を確認できます。" },
+            { title: "冷凍弁当が低価格", text: "シンプルミールは1食430円（3食1,290円）で配達料は原則無料。コンビニ弁当より安い価格帯です。" },
           ].map((item) => (
             <div key={item.title} className="bg-green-50 rounded-lg p-4">
               <p className="font-bold text-sm mb-1">{item.title}</p>
@@ -323,7 +323,7 @@ export default function YoshikeiReviewsPage() {
           <p className="font-bold text-sm mb-3">ヨシケイ まとめ</p>
           <div className="space-y-2 text-sm leading-relaxed">
             <p>ヨシケイは<strong>送料無料・自社配送</strong>のミールキット＆冷凍弁当サービスです。創業50年以上の実績と全国約50万世帯の利用者数が信頼の証。</p>
-            <p>カットミール（10分調理）やプチママ（離乳食レシピ付き）など、ライフスタイルに合わせたコースが充実。冷凍弁当のシンプルミールは1食約350円（初回約170円）で業界最安クラスです。</p>
+            <p>カットミール（10分調理）やプチママ（離乳食レシピ付き）など、ライフスタイルに合わせたコースが充実。冷凍弁当のシンプルミールは1食430円（初回10セットまで半額で約215円）の低価格帯です。</p>
             <p>「献立を考えるのが面倒」「送料無料がいい」「食材の無駄を減らしたい」方にぴったり。初回お試しは半額で利用できるため、まずは5日間のお試しから始めてみることをおすすめします。</p>
           </div>
         </div>
@@ -353,7 +353,7 @@ export default function YoshikeiReviewsPage() {
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ウェルネスダイニング</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240-330</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">12-18</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">752-1,165</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://magokoro-care-shoku.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">まごころケア食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-350</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">462-580</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ワタミの宅食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-400</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">40-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">3.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">590-680</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://shoutakubin.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">食宅便</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">200-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">560-700</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://shoutakubin.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">食宅便</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">200-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">690-740</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://muscledeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">Muscle Deli</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-60</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">1,098-1,490</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://yoshikei-dvlp.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ヨシケイ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.0</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">597-750</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.coopdeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">コープデリ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.5</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">550-700</td></tr>
@@ -366,7 +366,7 @@ export default function YoshikeiReviewsPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」。nosh・ナッシュclub・ウェルネスダイニングの価格は2026年10月10日に公式サイトで再確認し、noshは公式表記の1食単価、ウェルネスダイニングは全6コース・7〜21食の税込価格÷食数で算出、kcal・塩分は各コースの公式基準に更新）。最新情報は各公式サイトでご確認ください。</p>
+          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（食宅便の1食価格は2026年10月12日に公式サイトで再確認＝7食セット690〜740円・送料別。三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」。nosh・ナッシュclub・ウェルネスダイニングの価格は2026年10月10日に公式サイトで再確認し、noshは公式表記の1食単価、ウェルネスダイニングは全6コース・7〜21食の税込価格÷食数で算出、kcal・塩分は各コースの公式基準に更新）。最新情報は各公式サイトでご確認ください。</p>
         </section>
 
                 {/* eeat-links-202607 */}

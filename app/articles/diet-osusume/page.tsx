@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-16T00:00:00+09:00",
-    modifiedTime: "2026-10-10T00:00:00+09:00",
+    modifiedTime: "2026-10-12T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -301,7 +301,7 @@ export default function DietOsusumePage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-16T00:00:00+09:00",
-    dateModified: "2026-10-10T00:00:00+09:00",
+    dateModified: "2026-10-12T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -582,19 +582,19 @@ export default function DietOsusumePage() {
             "1食あたり糖質10g以下",
             "日清医療食品の管理栄養士が設計",
             "約160種類のメニュー",
-            "お試しセット4食1,980円",
+            "らくらく定期便は送料940円（都度便1,330円）",
           ]}
-          price="560円〜（7食プラン）"
-          shipping="780円"
+          price="740円（低糖質セレクト7食5,180円）"
+          shipping="940円（定期）／1,330円（都度）"
           pros={[
             "糖質10g以下は業界最厳のストイックさ",
             "医療食品メーカーの信頼性",
-            "1食560円〜のコスパ",
+            "公式アプリで注文・配送スケジュール変更ができる",
           ]}
           cons={[
             "メニューが自分で選べない（セット制）",
             "味は素朴（レストラン品質ではない）",
-            "アプリがない",
+            "送料込みでは1食約874円（定期）とnoshより高め",
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
@@ -694,9 +694,9 @@ export default function DietOsusumePage() {
           rows={[
             ["nosh", "612円〜", "1,023円〜（地域別）", "30g以下", "平均350kcal", "平均20g"],
             ["三ツ星ファーム", "711円〜", "990円", "25g以下（一部除く）", "350kcal以下（一部除く）", "15g以上（一部除く）"],
-            ["食宅便", "560円〜", "780円", "10g以下", "約250kcal", "約15g"],
+            ["食宅便（低糖質セレクト）", "740円", "940円（定期）／1,330円（都度）", "10g以下", "約250kcal", "約15g"],
             ["ウェルネスダイニング（糖質＆カロリー制限）", "約770円〜", "定期14・21食無料（7食440円）", "15g以下", "240kcal±10%", "平均13.2g"],
-            ["筋肉食堂DELI", "748円〜", "860円〜", "約15g", "約400kcal", "30g以上"],
+            ["筋肉食堂DELI（ローカーボ）", "994円〜（21食）", "1,640円〜（関東・食数別）", "約15g", "約400kcal", "30g以上"],
           ]}
         />
 
@@ -706,21 +706,21 @@ export default function DietOsusumePage() {
           rows={[
             ["nosh（10食×2回）", "12,412円", "2,332円", "14,744円", "約737円"],
             ["三ツ星ファーム（14食+7食）", "17,943円", "1,980円", "19,923円", "949円"],
-            ["食宅便（7食×3回）", "11,760円", "2,340円", "14,100円", "671円"],
+            ["食宅便（低糖質セレクト7食×3回・定期）", "15,540円", "2,820円", "18,360円", "約874円"],
             ["ウェルネスダイニング（糖質＆カロリー制限21食×1回）", "16,178円", "0円", "16,178円", "約770円"],
-            ["筋肉食堂DELI（10食×2回）", "14,960円", "1,720円", "16,680円", "834円"],
+            ["筋肉食堂DELI（ローカーボ21食×1回・定期）", "20,866円", "1,840円", "22,706円", "約1,081円"],
           ]}
         />
 
-        <p className="text-xs text-warm-gray -mt-4 mb-6">※nosh・ウェルネスダイニングの料金・送料は2026年10月10日に公式サイトで確認（税込・noshの送料は関東1,166円で計算・1食あたりは税込価格÷食数で算出）。三ツ星ファームは2026年10月9日確認。その他は記事作成時の公開データです。</p>
+        <p className="text-xs text-warm-gray -mt-4 mb-6">※nosh・ウェルネスダイニングの料金・送料は2026年10月10日に公式サイトで確認（税込・noshの送料は関東1,166円で計算・1食あたりは税込価格÷食数で算出）。三ツ星ファームは2026年10月9日確認。食宅便（低糖質セレクト7食5,180円・らくらく定期便送料940円）と筋肉食堂DELI（ローカーボ21食20,866円・関東21食送料1,840円）は2026年10月12日に公式サイトで確認。</p>
 
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">コスパの結論</p>
           <ul className="list-disc list-inside space-y-1">
-            <li><strong>コスパ最強：食宅便</strong>（月14,100円/1食671円）——最も安く本格的な糖質制限が可能</li>
-            <li><strong>バランス良好：nosh</strong>（月14,744円/1食約737円）——コスパと自由度の両立。継続割引でさらに安くなる</li>
+            <li><strong>コスパ重視：nosh</strong>（月14,744円/1食約737円）——この5社の試算では最安。コスパと自由度の両立。継続割引でさらに安くなる</li>
+            <li><strong>厳密な糖質制限：食宅便</strong>（月18,360円/1食約874円）——全メニュー糖質10g以下。送料込みの1食はnoshより約140円高い</li>
             <li><strong>味重視：三ツ星ファーム</strong>（月19,923円/1食949円）——美味しさと栄養管理の両立</li>
-            <li><strong>ボディメイク：筋肉食堂DELI</strong>（月16,680円/1食834円）——高たんぱくの付加価値を考えれば妥当</li>
+            <li><strong>ボディメイク：筋肉食堂DELI</strong>（月22,706円/1食約1,081円）——5社で最も高いが、高たんぱくに特化</li>
           </ul>
         </div>
 
@@ -791,7 +791,7 @@ export default function DietOsusumePage() {
             ["本格的な糖質制限", "食宅便（低糖質セレクト）"],
             ["プロに相談しながら管理", "ウェルネスダイニング"],
             ["筋トレ+ダイエット", "筋肉食堂DELI"],
-            ["コスパ最優先", "nosh（継続割引活用） or 食宅便"],
+            ["コスパ最優先", "nosh（継続割引活用）"],
           ]}
         />
 
@@ -938,7 +938,7 @@ export default function DietOsusumePage() {
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ウェルネスダイニング</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240-330</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">12-18</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">752-1,165</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://magokoro-care-shoku.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">まごころケア食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-350</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">462-580</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ワタミの宅食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-400</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">40-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">3.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">590-680</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://shoutakubin.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">食宅便</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">200-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">560-700</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://shoutakubin.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">食宅便</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">200-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">690-740</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://muscledeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">Muscle Deli</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-60</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">1,098-1,490</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://yoshikei-dvlp.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ヨシケイ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.0</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">597-750</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.coopdeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">コープデリ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.5</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">550-700</td></tr>
@@ -951,7 +951,7 @@ export default function DietOsusumePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」。nosh・ナッシュclub・ウェルネスダイニングの価格は2026年10月10日に公式サイトで再確認し、noshは公式表記の1食単価、ウェルネスダイニングは全6コース・7〜21食の税込価格÷食数で算出、kcal・塩分は各コースの公式基準に更新）。最新情報は各公式サイトでご確認ください。</p>
+          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（食宅便の1食価格は2026年10月12日に公式サイトで再確認＝7食セット690〜740円・送料別。三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」。nosh・ナッシュclub・ウェルネスダイニングの価格は2026年10月10日に公式サイトで再確認し、noshは公式表記の1食単価、ウェルネスダイニングは全6コース・7〜21食の税込価格÷食数で算出、kcal・塩分は各コースの公式基準に更新）。最新情報は各公式サイトでご確認ください。</p>
         </section>
         <HakushoUnitPriceTable slugs={["nosh", "mitsuboshi-farm", "shokutakubin", "wellness-dining", "kinnikushokudo-deli"]} />
 

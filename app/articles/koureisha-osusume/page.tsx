@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-16T00:00:00+09:00",
-    modifiedTime: "2026-10-11T00:00:00+09:00",
+    modifiedTime: "2026-10-12T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -221,7 +221,7 @@ export default function KoureishaOsusumePage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-16T00:00:00+09:00",
-    dateModified: "2026-10-11T00:00:00+09:00",
+    dateModified: "2026-10-12T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -431,17 +431,16 @@ export default function KoureishaOsusumePage() {
             "やわらかい食事コース完備",
             "低糖質セレクト・塩分ケアコースあり",
           ]}
-          price="560円〜（7食プラン）"
-          shipping="780円"
+          price="690円〜（おまかせコース7食4,830円）"
+          shipping="940円（定期）／1,330円（都度）"
           pros={[
             "病院や介護施設への給食実績がある信頼性",
             "メニュー160種類以上で飽きにくい",
             "やわらかい食事コースの品質が高い",
           ]}
           cons={[
-            "送料がまごころケア食より高い",
+            "送料込みでは1食約824円（おまかせ7食・定期）と、まごころケア食より高い",
             "注文がWebメイン（高齢者本人には難しい場合も）",
-            "アプリがない",
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
@@ -541,7 +540,7 @@ export default function KoureishaOsusumePage() {
           rows={[
             ["ウェルネスダイニング", "約752円〜（税込÷食数）", "定期14・21食無料（7食440円）", "3段階（別シリーズ）", "気配り宅配食6コース", "無料"],
             ["まごころケア食", "470円〜", "無料", "ムース食あり", "6コース", "なし"],
-            ["食宅便", "560円〜", "780円", "あり", "5コース以上", "なし"],
+            ["食宅便", "690円〜", "940円（定期）／1,330円（都度）", "あり", "5コース以上", "なし"],
             ["nosh", "612円〜", "1,023円〜（地域別）", "なし", "糖質30g・塩分2.5g以下", "なし"],
             ["Dr.つるかめキッチン", "663円〜", "定期無料", "なし", "5コース", "あり"],
           ]}
@@ -553,20 +552,20 @@ export default function KoureishaOsusumePage() {
           rows={[
             ["ウェルネスダイニング（塩分制限）", "21食×約1.4回", "約22,650円", "0円（定期21食は無料）", "約22,650円"],
             ["まごころケア食", "21食×約1.4回", "約13,200円", "0円", "約13,200円"],
-            ["食宅便", "7食×約4.3回", "約16,800円", "約3,350円", "約20,150円"],
+            ["食宅便（おまかせ・定期）", "7食×約4.3回", "約20,770円", "約4,040円", "約24,810円"],
             ["nosh", "10食×3回", "18,618円", "3,498円（関東）", "22,116円"],
             ["Dr.つるかめキッチン", "21食×約1.4回", "約20,060円", "0円", "約20,060円"],
           ]}
         />
 
-        <p className="text-xs text-warm-gray -mt-4 mb-6">※ウェルネスダイニング・noshは2026年10月10日に公式サイトで確認した税込価格・送料から算出（ウェルネスは塩分制限21食16,178円、noshは10食6,206円・関東送料1,166円）。その他は記事作成時の公開データです。</p>
+        <p className="text-xs text-warm-gray -mt-4 mb-6">※ウェルネスダイニング・noshは2026年10月10日に公式サイトで確認した税込価格・送料から算出（ウェルネスは塩分制限21食16,178円、noshは10食6,206円・関東送料1,166円）。食宅便は2026年10月12日に公式サイトで確認（おまかせコース7食4,830円・らくらく定期便送料940円）。その他は記事作成時の公開データです。</p>
 
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">高齢者のコスパの結論</p>
           <ul className="list-disc list-inside space-y-1">
             <li><strong>最安：まごころケア食</strong>（月約13,200円）——送料無料の効果が非常に大きい</li>
             <li><strong>相談付き：ウェルネスダイニング</strong>（月約22,650円）——管理栄養士の相談料込みと考えれば妥当</li>
-            <li><strong>信頼感：食宅便</strong>（月約20,150円）——病院給食メーカーの安心品質</li>
+            <li><strong>信頼感：食宅便</strong>（月約24,810円）——この5社の試算では最も高いが、病院給食メーカーの安心品質</li>
             <li><strong>持病重視：Dr.つるかめキッチン</strong>（月約20,060円）——専門医監修で定期便送料無料</li>
           </ul>
         </div>
@@ -742,7 +741,7 @@ export default function KoureishaOsusumePage() {
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ウェルネスダイニング</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240-330</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">12-18</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">752-1,165</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://magokoro-care-shoku.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">まごころケア食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-350</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">462-580</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ワタミの宅食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-400</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">40-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">3.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">590-680</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://shoutakubin.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">食宅便</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">200-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">560-700</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://shoutakubin.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">食宅便</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">200-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">690-740</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://muscledeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">Muscle Deli</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-60</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">1,098-1,490</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://yoshikei-dvlp.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ヨシケイ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.0</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">597-750</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.coopdeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">コープデリ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.5</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">550-700</td></tr>
@@ -755,7 +754,7 @@ export default function KoureishaOsusumePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」。nosh・ナッシュclub・ウェルネスダイニングの価格は2026年10月10日に公式サイトで再確認し、noshは公式表記の1食単価、ウェルネスダイニングは全6コース・7〜21食の税込価格÷食数で算出、kcal・塩分は各コースの公式基準に更新）。最新情報は各公式サイトでご確認ください。</p>
+          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（食宅便の1食価格は2026年10月12日に公式サイトで再確認＝7食セット690〜740円・送料別。三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」。nosh・ナッシュclub・ウェルネスダイニングの価格は2026年10月10日に公式サイトで再確認し、noshは公式表記の1食単価、ウェルネスダイニングは全6コース・7〜21食の税込価格÷食数で算出、kcal・塩分は各コースの公式基準に更新）。最新情報は各公式サイトでご確認ください。</p>
         </section>
         <HakushoUnitPriceTable slugs={["wellness-dining", "magokoro-care-shoku", "shokutakubin", "tsurukame-kitchen", "nosh", "watami-takushoku"]} />
 

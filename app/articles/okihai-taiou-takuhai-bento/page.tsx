@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-05-28T00:00:00+09:00",
-    modifiedTime: "2026-05-28T00:00:00+09:00",
+    modifiedTime: "2026-10-12T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -191,7 +191,7 @@ export default function OkihaiTaiouTakuhaiBentoPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-05-28T00:00:00+09:00",
+    dateModified: "2026-10-12T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -309,7 +309,7 @@ export default function OkihaiTaiouTakuhaiBentoPage() {
             ["nosh", "ヤマト運輸クール宅急便", "対面受取が基本（公式FAQ参照）"],
             ["三ツ星ファーム", "ヤマト運輸クール宅急便", "対面受取が基本（公式FAQ参照）"],
             ["食宅便", "ヤマト運輸/佐川急便等", "対面受取が基本（公式FAQ参照）"],
-            ["ワタミの宅食ダイレクト", "ヤマト運輸クール宅急便", "対面受取が基本（公式FAQ参照）"],
+            ["ワタミの宅食ダイレクト", "冷凍宅配便（佐川急便）", "対面受取が基本・不在時は不在伝票（公式FAQ・2026年10月12日確認）"],
             ["DELIPICKS", "ヤマト運輸クール宅急便", "対面受取が基本（公式FAQ参照）"],
             ["ウェルネスダイニング", "ヤマト運輸クール宅急便", "対面受取が基本（公式FAQ参照）"],
             ["まごころケア食", "ヤマト運輸クール宅急便", "対面受取が基本（公式FAQ参照）"],

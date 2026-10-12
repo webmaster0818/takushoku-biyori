@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-21T00:00:00+09:00",
-    modifiedTime: "2026-10-10T00:00:00+09:00",
+    modifiedTime: "2026-10-12T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -30,7 +30,7 @@ const faqData = [
   {
     question: "宅配弁当はコンビニ弁当より高い？",
     answer:
-      "必ずしも高くありません。コンビニ弁当は1食500〜700円程度ですが、サラダや飲み物を追加すると800〜1,000円近くになることもあります。宅配弁当はnoshが1食612〜719円（nosh club最高ランクで492円）、ヨシケイのシンプルミールなら1食約350円と、サービスによってはコンビニより安く利用できます。送料を含めた総額で比較することが大切です。",
+      "必ずしも高くありません。コンビニ弁当は1食500〜700円程度ですが、サラダや飲み物を追加すると800〜1,000円近くになることもあります。宅配弁当はnoshが1食612〜719円（nosh club最高ランクで492円）、ヨシケイ（夕食ネット）のシンプルミールなら1食430円（3食1,290円・配達料原則無料・2026年10月12日公式確認）と、サービスによってはコンビニより安く利用できます。送料を含めた総額で比較することが大切です。",
   },
   {
     question: "宅配弁当とコンビニ弁当、栄養バランスはどっちが良い？",
@@ -159,7 +159,7 @@ export default function TakuhaiVsConveniPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-21T00:00:00+09:00",
-    dateModified: "2026-10-10T00:00:00+09:00",
+    dateModified: "2026-10-12T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -276,8 +276,8 @@ export default function TakuhaiVsConveniPage() {
           rows={[
             ["nosh（10食プラン・2026年10月10日確認）", "620円", "関西1,023円〜北海道1,713円", "約723〜792円/食"],
             ["三ツ星ファーム（14食）", "819円", "990円（14食・21食は初回無料）", "約889円/食"],
-            ["ヨシケイ シンプルミール", "約350円", "無料（自社配送）", "約350円/食"],
-            ["まごころケア食（7食）", "約470円", "無料", "約470円/食"],
+            ["ヨシケイ（夕食ネット）シンプルミール", "430円", "無料（自社配達・一部地域を除く）", "430円/食"],
+            ["まごころケア食（7食・お得便・2026年10月12日確認）", "約426円", "980円（沖縄・離島1,480円）", "約566円/食"],
             ["セブン 幕の内弁当", "550〜650円", "なし", "550〜650円"],
             ["ローソン のり弁当", "450〜550円", "なし", "450〜550円"],
             ["ファミマ 幕の内弁当", "550〜650円", "なし", "550〜650円"],
@@ -288,16 +288,16 @@ export default function TakuhaiVsConveniPage() {
         <ComparisonTable
           headers={["パターン", "1食の総額目安", "月30食の合計"]}
           rows={[
-            ["nosh（10食プラン・関東）", "約720円", "約21,600円"],
-            ["三ツ星ファーム（14食）", "約697円", "約20,900円"],
-            ["ヨシケイ シンプルミール", "約350円", "約10,500円"],
+            ["nosh（10食プラン・関東）", "約737円", "約22,110円"],
+            ["三ツ星ファーム（14食）", "約889円", "約26,670円"],
+            ["ヨシケイ（夕食ネット）シンプルミール", "430円", "12,900円"],
             ["コンビニ弁当のみ", "約600円", "約18,000円"],
             ["コンビニ弁当＋サラダ＋飲み物", "約900円", "約27,000円"],
           ]}
         />
 
         <p className="text-sm mb-6 leading-relaxed">
-          コンビニ弁当は単体なら500〜650円程度ですが、栄養バランスを考えてサラダ・飲み物・副菜を追加すると<strong>1食800〜1,000円</strong>になることも珍しくありません。宅配弁当はおかず1品で栄養バランスが完成している点を考慮すると、総合的なコスパは宅配弁当のほうが優れています。特にヨシケイのシンプルミール（1食約350円・送料無料）は、コンビニ弁当より明確に安い選択肢です。
+          コンビニ弁当は単体なら500〜650円程度ですが、栄養バランスを考えてサラダ・飲み物・副菜を追加すると<strong>1食800〜1,000円</strong>になることも珍しくありません。宅配弁当はおかず1品で栄養バランスが完成している点を考慮すると、総合的なコスパは宅配弁当のほうが優れています。特にヨシケイ（夕食ネット）のシンプルミール（1食430円・配達料原則無料・対象7都府県）は、コンビニ弁当より安い選択肢です。
         </p>
 
         {/* ===== 手軽さ ===== */}
@@ -432,7 +432,7 @@ export default function TakuhaiVsConveniPage() {
               <strong>栄養バランス</strong>は宅配弁当が圧勝。管理栄養士監修で糖質・カロリー・塩分がコントロールされており、コンビニ弁当の約3分の1の糖質量に抑えられています。
             </p>
             <p>
-              <strong>価格</strong>はサービスによりますが、コンビニ弁当にサラダ・飲み物を追加すると宅配弁当と同程度かそれ以上に。ヨシケイ シンプルミール（1食約350円）なら確実にコンビニより安く済みます。
+              <strong>価格</strong>はサービスによりますが、コンビニ弁当にサラダ・飲み物を追加すると宅配弁当と同程度かそれ以上に。ヨシケイ（夕食ネット）のシンプルミール（1食430円）ならコンビニ弁当より安く済みます。
             </p>
             <p>
               <strong>手軽さ</strong>は即時性ではコンビニが優位ですが、ストック性・買い出し不要という面では宅配弁当に軍配。日常的な食事管理なら宅配弁当、急な食事にはコンビニと使い分けるのがベストです。
@@ -469,7 +469,7 @@ export default function TakuhaiVsConveniPage() {
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ウェルネスダイニング</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240-330</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">12-18</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">752-1,165</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://magokoro-care-shoku.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">まごころケア食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-350</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">462-580</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ワタミの宅食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-400</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">40-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">3.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">590-680</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://shoutakubin.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">食宅便</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">200-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">560-700</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://shoutakubin.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">食宅便</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">200-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">690-740</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://muscledeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">Muscle Deli</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-60</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">1,098-1,490</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://yoshikei-dvlp.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ヨシケイ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.0</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">597-750</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.coopdeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">コープデリ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.5</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">550-700</td></tr>
@@ -482,7 +482,7 @@ export default function TakuhaiVsConveniPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」。nosh・ナッシュclub・ウェルネスダイニングの価格は2026年10月10日に公式サイトで再確認し、noshは公式表記の1食単価、ウェルネスダイニングは全6コース・7〜21食の税込価格÷食数で算出、kcal・塩分は各コースの公式基準に更新）。最新情報は各公式サイトでご確認ください。</p>
+          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（食宅便の1食価格は2026年10月12日に公式サイトで再確認＝7食セット690〜740円・送料別。三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」。nosh・ナッシュclub・ウェルネスダイニングの価格は2026年10月10日に公式サイトで再確認し、noshは公式表記の1食単価、ウェルネスダイニングは全6コース・7〜21食の税込価格÷食数で算出、kcal・塩分は各コースの公式基準に更新）。最新情報は各公式サイトでご確認ください。</p>
         </section>
 
                 {/* eeat-links-202607 */}

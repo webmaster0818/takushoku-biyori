@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-16T00:00:00+09:00",
-    modifiedTime: "2026-10-11T00:00:00+09:00",
+    modifiedTime: "2026-10-12T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -177,7 +177,7 @@ export default function SangoOsusumePage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-16T00:00:00+09:00",
-    dateModified: "2026-10-11T00:00:00+09:00",
+    dateModified: "2026-10-12T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -204,7 +204,7 @@ export default function SangoOsusumePage() {
       { "@type": "ListItem", position: 2, name: "三ツ星ファーム", description: "料理人監修のメニュー125種類以上。たんぱく質15g以上の基準で産後のご褒美に。", url: "https://mitsuboshifarm.jp/" },
       { "@type": "ListItem", position: 3, name: "ウェルネスダイニング", description: "管理栄養士に産後の食事を無料相談。気配り宅配食は栄養バランス・塩分制限など6コース。", url: "https://www.wellness-dining.com/" },
       { "@type": "ListItem", position: 4, name: "わんまいる", description: "国産食材100%。湯煎調理で手作り感のある食事。添加物が気になるママに。", url: "https://www.onemile.jp/" },
-      { "@type": "ListItem", position: 5, name: "ヨシケイ（シンプルミール）", description: "1食約300円の圧倒的コスパ。毎日届く常温弁当で置き配も可能。", url: "https://yoshikei-dvlp.co.jp/" },
+      { "@type": "ListItem", position: 5, name: "ヨシケイ（シンプルミール）", description: "3食セット1,290円（1食430円）の冷凍弁当。配達料は原則無料で置き配も可能（対象7都府県）。", url: "https://yoshikei-dvlp.co.jp/" },
     ],
   };
 
@@ -433,29 +433,29 @@ export default function SangoOsusumePage() {
         <RankingCard
           rank={5}
           name="ヨシケイ（シンプルミール）"
-          tagline="1食約300円の圧倒的コスパ。毎日届く常温弁当"
+          tagline="1食430円の冷凍弁当。配達料は原則無料"
           color="bg-purple-50"
           features={[
-            "3食セット1,190円（1食約397円）",
-            "初回お試し半額（3食595円）",
-            "送料無料・毎日届く",
-            "玄関前に置き配可能",
+            "3食セット1,290円（1食430円）",
+            "初回10セットまで半額（3食645円）",
+            "配達料は原則無料（一部地域を除く）",
+            "不在時は宅配BOXや玄関前に置き配",
           ]}
-          price="約397円（3食セット）"
-          shipping="無料"
+          price="430円（3食セット1,290円）"
+          shipping="無料（一部地域を除く）"
           pros={[
-            "1食約300円台は業界最安クラス",
-            "毎日届くので冷凍庫の容量を気にしなくていい",
+            "1食430円の低価格",
+            "当日朝5時までの注文で当日配達（公式表記）",
             "置き配対応で受け取り不要",
           ]}
           cons={[
-            "冷凍弁当ではないため長期保存不可",
-            "メニューの自由度が低い（日替わり）",
-            "配達エリアが限定される場合がある",
+            "3食セット単位で、セット内のメニューは選べない",
+            "配達エリアが7都府県に限られる",
+            "時間指定ができない",
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
-          コスパ最優先の方にはヨシケイのシンプルミール。1食約397円で送料無料は、産後の出費が多い時期に嬉しい価格設定。初回お試しは半額の3食595円（1食約198円）。毎日届くので冷凍庫の容量を気にする必要がなく、置き配対応なので赤ちゃんが寝ている間に玄関前に届けてもらえます。
+          コスパ最優先の方にはヨシケイ（夕食ネット）のシンプルミール。3食セット1,290円（1食430円）で配達料は原則無料と、産後の出費が多い時期に嬉しい価格設定です。初めての方は初回10セットまで半額（3食645円・1食約215円）。不在時は宅配BOXや玄関前に置き配してもらえるので、赤ちゃんが寝ている間でも受け取れます（2026年10月12日・公式確認）。
         </p>
 
         {/* ===== 詳細レビュー ===== */}
@@ -481,9 +481,9 @@ export default function SangoOsusumePage() {
           わんまいるは「国産食材100%・合成保存料不使用・合成着色料不使用」という3つの安心を掲げる宅配おかず。冷凍パウチを湯煎で温めるスタイルで、レンジ加熱より食材の食感と風味が活きます。1食あたり主菜1品+副菜2品の3品構成で、品数が多く見た目の満足感も高い。価格は1食796円〜と他社より高めですが、「産後の1〜2ヶ月だけ」と割り切れば、国産食材の安心感は大きな価値です。
         </p>
 
-        <SubHeading>ヨシケイ - 毎日届くコスパ最強弁当</SubHeading>
+        <SubHeading>ヨシケイ（夕食ネット） - 低価格の冷凍弁当</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          ヨシケイのシンプルミールは1食約397円で送料無料という圧倒的コスパ。冷凍弁当ではなく毎日届くスタイルなので、冷凍庫の容量を気にする必要がありません。玄関前の保冷箱に置き配してくれるため、インターホンが鳴らず赤ちゃんが起きることもなし。初回お試しは半額（3食595円）で気軽に試せます。ただし配達エリアが限定される場合があるため、まず公式サイトでエリア確認を。
+          ヨシケイ（夕食ネット）のシンプルミールは3食セット1,290円（1食430円）の冷凍弁当で、配達料は原則無料（一部地域を除く）。不在時は宅配BOXや玄関前に置き配してくれるため、インターホンで赤ちゃんが起きる心配が減ります。初めての方は初回10セットまで半額（3食645円）で試せます。ただし配達エリアが限定される場合があるため、まず公式サイトでエリア確認を。
         </p>
 
         {/* ===== 料金比較 ===== */}
@@ -497,7 +497,7 @@ export default function SangoOsusumePage() {
             ["三ツ星ファーム", "711円〜", "990円", "公式に方針記載なし", "15g以上", "21食プランあり"],
             ["ウェルネスダイニング", "約752円〜", "定期14・21食無料（7食440円）", "一部使用", "平均12.8g（栄養バランス）", "7〜21食"],
             ["わんまいる", "796円〜", "1,080円", "不使用", "約15g", "5食セット"],
-            ["ヨシケイ", "約397円", "無料", "一部使用", "約10g", "毎日配達"],
+            ["ヨシケイ（夕食ネット）", "430円", "無料（一部地域を除く）", "一部使用", "約10g", "3食セット単位"],
           ]}
         />
 
@@ -509,16 +509,16 @@ export default function SangoOsusumePage() {
             ["三ツ星ファーム", "21食×約2.8回", "41,770円", "2,772円", "44,542円"],
             ["ウェルネスダイニング（栄養バランス）", "21食×約2.9回（60食分）", "約45,140円", "0円", "約45,140円"],
             ["わんまいる", "5食×12回", "47,760円", "12,960円", "60,720円"],
-            ["ヨシケイ", "3食×約20日", "23,800円", "0円", "23,800円"],
+            ["ヨシケイ（夕食ネット）", "3食×20セット", "25,800円", "0円（一部地域を除く）", "25,800円"],
           ]}
         />
 
-        <p className="text-xs text-warm-gray -mt-4 mb-6">※nosh・ウェルネスダイニングは2026年10月10日に公式サイトで確認した税込価格・送料（noshは関東20食1,386円）から算出。三ツ星ファームは2026年10月9日確認。その他は記事作成時の公開データです。</p>
+        <p className="text-xs text-warm-gray -mt-4 mb-6">※nosh・ウェルネスダイニングは2026年10月10日に公式サイトで確認した税込価格・送料（noshは関東20食1,386円）から算出。三ツ星ファームは2026年10月9日確認。ヨシケイ（夕食ネット）のシンプルミールは2026年10月12日に公式サイトで確認（3食1,290円）。その他は記事作成時の公開データです。</p>
 
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">産後の食費の結論</p>
           <ul className="list-disc list-inside space-y-1">
-            <li><strong>コスパ最強：ヨシケイ</strong>（月約23,800円）——毎日届く・送料無料・置き配で産後に最適</li>
+            <li><strong>最安：ヨシケイ（夕食ネット）</strong>（月約25,800円）——この5社の試算で最も安い。配達料は原則無料・置き配対応（対象7都府県）</li>
             <li><strong>バランス良好：nosh</strong>（月約40,900円）——家族利用とコスパの両立。<strong>三ツ星ファーム</strong>は通常の定期便で月約44,500円</li>
             <li><strong>安心感重視：ウェルネスダイニング</strong>（月約45,100円）——栄養相談付きの安心感</li>
             <li><strong>国産食材：わんまいる</strong>（月約60,700円）——価格は高いが1〜2ヶ月限定ならアリ</li>
@@ -617,7 +617,7 @@ export default function SangoOsusumePage() {
             産後の宅食選びで迷ったら、まずは<strong>nosh</strong>がおすすめ。20食プランで家族全員の食事をカバーでき、アプリの使いやすさ・メニューの豊富さ・コスパのバランスが最も優れています。
           </p>
           <p className="text-sm leading-relaxed mb-4">
-            ご褒美感とたんぱく質を重視するなら<strong>三ツ星ファーム</strong>（料理人監修・たんぱく質15g以上）、コスパ最優先なら<strong>ヨシケイ</strong>（1食約397円・送料無料）が最適です。
+            ご褒美感とたんぱく質を重視するなら<strong>三ツ星ファーム</strong>（料理人監修・たんぱく質15g以上）、コスパ最優先なら<strong>ヨシケイ（夕食ネット）</strong>（1食430円・配達料原則無料・対象7都府県）が候補です。
           </p>
           <p className="text-sm leading-relaxed">
             <strong>出産前のストックがポイント。</strong>産後に「宅配弁当を探す余裕」はありません。妊娠後期のうちに20〜30食をストックしておけば、産後1ヶ月の食事問題をまるごと解決できます。
@@ -686,7 +686,7 @@ export default function SangoOsusumePage() {
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ウェルネスダイニング</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240-330</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">12-18</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">752-1,165</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://magokoro-care-shoku.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">まごころケア食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-350</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">462-580</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ワタミの宅食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-400</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">40-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">3.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">590-680</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://shoutakubin.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">食宅便</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">200-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">560-700</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://shoutakubin.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">食宅便</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">200-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">690-740</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://muscledeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">Muscle Deli</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-60</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">1,098-1,490</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://yoshikei-dvlp.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ヨシケイ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.0</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">597-750</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.coopdeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">コープデリ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.5</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">550-700</td></tr>
@@ -699,7 +699,7 @@ export default function SangoOsusumePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」。nosh・ナッシュclub・ウェルネスダイニングの価格は2026年10月10日に公式サイトで再確認し、noshは公式表記の1食単価、ウェルネスダイニングは全6コース・7〜21食の税込価格÷食数で算出、kcal・塩分は各コースの公式基準に更新）。最新情報は各公式サイトでご確認ください。</p>
+          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（食宅便の1食価格は2026年10月12日に公式サイトで再確認＝7食セット690〜740円・送料別。三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」。nosh・ナッシュclub・ウェルネスダイニングの価格は2026年10月10日に公式サイトで再確認し、noshは公式表記の1食単価、ウェルネスダイニングは全6コース・7〜21食の税込価格÷食数で算出、kcal・塩分は各コースの公式基準に更新）。最新情報は各公式サイトでご確認ください。</p>
         </section>
         <HakushoUnitPriceTable slugs={["nosh", "mitsuboshi-farm", "wellness-dining", "shokutakubin", "magokoro-care-shoku"]} />
 
