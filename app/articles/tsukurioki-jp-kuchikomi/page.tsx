@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-10T00:00:00+09:00",
+    modifiedTime: "2026-10-12T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -360,7 +360,7 @@ export default function TsukuriokiJpKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-10-10T00:00:00+09:00",
+    dateModified: "2026-10-12T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -861,7 +861,7 @@ export default function TsukuriokiJpKuchikomiPage() {
           headers={["項目", "つくりおき.jp", "nosh", "まごころケア食"]}
           rows={[
             ["形態", "冷蔵の手作りおかず（家族向け）", "冷凍弁当（1人前）", "冷凍弁当（1人前）"],
-            ["1人前あたり目安", "848円〜（送料込）", "612円〜＋送料", "396円〜＋送料"],
+            ["1人前あたり目安", "848円〜（送料込）", "612円〜＋送料", "394円〜＋送料"],
             ["保存", "冷蔵4日間", "冷凍（数ヶ月）", "冷凍（3ヶ月以上）"],
             ["メニュー選択", "おまかせ（週替わり）", "自由に選べる", "おまかせ"],
             ["向く世帯", "3〜4人家族", "1〜2人", "1〜2人・シニア"],

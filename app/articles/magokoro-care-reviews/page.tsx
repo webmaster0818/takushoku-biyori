@@ -32,7 +32,7 @@ const faqData = [
   {
     question: "まごころケア食のお試しはある？",
     answer:
-      "はい、初回限定で「健康バランス」コースの14食定期セットが1食あたり90円（14食で1,260円）でお試しできます。通常価格14食5,572円と比べて約77%OFFの特別価格です。2回目以降も定期購入者用の割引料金が適用されるため、まずはこの初回特別価格で味やボリュームを確認するのがおすすめです。",
+      "はい、初回限定で「健康バランス」コースの14食定期セットが1食あたり190円（14食で2,660円・冷凍庫無料レンタル付き）でお試しできます（健康バランス・糖質制限・ムース。ご飯付きセットは1食240円）。定期（お得便）の14食5,572円と比べて約52%OFFの特別価格です（2026年10月12日・公式確認）。2回目以降も定期購入者用の割引料金が適用されるため、まずはこの初回特別価格で味やボリュームを確認するのがおすすめです。",
   },
   {
     question: "まごころケア食の賞味期限はどれくらい？",
@@ -184,7 +184,7 @@ export default function MagokoroCareReviewsPage() {
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
-            「まごころケア食って安いけど、味は大丈夫？」「まずいって口コミは本当？」——1食390円台から利用できる<strong>コスパ最強クラスの冷凍宅配弁当</strong>として注目のまごころケア食。初回は1食90円という破格のお試し価格も話題です。
+            「まごころケア食って安いけど、味は大丈夫？」「まずいって口コミは本当？」——1食390円台から利用できる<strong>低価格帯の冷凍宅配弁当</strong>として注目のまごころケア食。初回限定で1食190円（14食2,660円）のお試し価格もあります。
           </p>
           <p className="mb-3">
             この記事では、<strong>まごころケア食の口コミ・評判を徹底リサーチ</strong>。公開されている利用者の口コミや公式情報をもとに、安さの理由・味の評判・送料込みの実質単価を中立的に検証しました。
@@ -252,7 +252,7 @@ export default function MagokoroCareReviewsPage() {
             ["配送", "ヤマト運輸クール宅急便（冷凍）"],
             ["支払い方法", "クレジットカード・銀行振込・代金引換・コンビニ払い"],
             ["解約", "電話またはメール"],
-            ["特徴", "業界最安クラス / 初回1食90円 / 冷凍庫無料レンタル / 置き配対応"],
+            ["特徴", "業界最安クラス / 初回1食190円 / 冷凍庫無料レンタル / 置き配対応"],
           ]}
         />
 
@@ -260,21 +260,21 @@ export default function MagokoroCareReviewsPage() {
         <ComparisonTable
           headers={["プラン", "通常価格（税込）", "定期価格（税込）", "定期1食あたり"]}
           rows={[
-            ["7食セット", "3,780円", "2,982円（初回1,260円）", "426円（初回90円）"],
-            ["10食セット", "5,400円", "4,260円", "426円"],
-            ["14食セット", "7,560円", "5,572円（初回1,260円）", "398円（初回90円）"],
-            ["21食セット", "11,340円", "8,316円", "396円"],
+            ["7食セット", "4,137円", "2,982円", "426円"],
+            ["10食セット", "5,760円", "4,140円", "414円"],
+            ["14食セット", "7,784円", "5,572円（初回限定2,660円）", "398円（初回190円）"],
+            ["21食セット", "11,571円", "8,274円", "394円"],
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
-          定期購入の21食セットなら<strong>1食あたり396円</strong>。初回限定の14食定期セットはなんと<strong>1食あたり90円</strong>。nosh（612円〜・2026年10月10日・公式確認）、三ツ星ファーム（711円〜（2026年10月9日・公式確認））と比較すると、圧倒的な価格優位性があります。
+          定期購入（お得便）の21食セットなら<strong>1食あたり394円</strong>（送料980円は別）。初回限定の14食定期セットは<strong>1食あたり190円</strong>（2026年10月12日・公式確認）。nosh（612円〜・2026年10月10日・公式確認）、三ツ星ファーム（711円〜（2026年10月9日・公式確認））と比較すると、圧倒的な価格優位性があります。
         </p>
 
         <SubHeading>まごころケア食の3つの特徴</SubHeading>
         <div className="space-y-3 mb-6">
           {[
             { title: "業界最安クラスの価格設定", text: "1食390円台からという価格は、大手宅配弁当サービスの中でも最安クラス。運営元の株式会社シルバーライフは東証プライム上場企業で、介護施設・高齢者向け配食サービスで培った大量生産のノウハウにより低価格を実現しています。コンビニ弁当（400〜600円）よりも安い価格帯で、栄養バランスの整った食事が摂れます。" },
-            { title: "初回1食90円の破格のお試し価格", text: "初回限定で14食定期セットが1,260円（1食90円）で試せるキャンペーンを実施中。通常価格5,572円の約77%OFFという破格の価格です。味やボリュームを確認してから本契約に進めるため、初めての方でも安心して始められます。" },
+            { title: "初回1食190円のお試し価格", text: "初回限定で14食定期セットが2,660円（1食190円・冷凍庫無料レンタル付き）で試せます。お得便の14食5,572円の約52%OFFです（2026年10月12日・公式確認）。味やボリュームを確認してから本契約に進めるため、初めての方でも安心して始められます。" },
             { title: "冷凍庫の無料レンタルサービス", text: "14食・21食セットの定期購入者向けに、冷凍庫を無料でレンタルできるサービスがあります。一人暮らし用の小型冷蔵庫では冷凍スペースが足りない方でも、専用冷凍庫があれば安心してまとめ買いできます。" },
           ].map((item) => (
             <div key={item.title} className="bg-green-50 rounded-lg p-4">
@@ -294,7 +294,6 @@ export default function MagokoroCareReviewsPage() {
             title: "とにかく安い・コスパが最強",
             reviews: [
               "「1食400円以下でこのクオリティは驚き。コンビニ弁当買うより安い」（30代男性）",
-              "「初回90円は破格。試さない理由がない」（20代女性）",
               "「年金暮らしでも続けられる価格帯。本当に助かっている」（70代男性）",
               "「noshは600円台、三ツ星ファームは700円台。まごころケア食の400円以下は圧倒的」（40代女性）",
             ],
@@ -377,7 +376,7 @@ export default function MagokoroCareReviewsPage() {
               "「本体が安くても送料980円がかかると、トータルではそこそこの値段になる」（30代男性）",
               "「ウェルネスダイニングのように定期で送料無料にならないのが残念」（40代女性）",
             ],
-            comment: "2026年3月の改定で送料は1,080円から980円に値下げされましたが、毎回かかるのは負担感があります。21食セットにすれば1食あたりの送料負担は約47円に抑えられます。送料込みでも1食約443円と、他社より圧倒的に安い価格帯を維持しています。",
+            comment: "2026年3月の改定で送料は1,080円から980円に値下げされましたが、毎回かかるのは負担感があります。21食セットにすれば1食あたりの送料負担は約47円に抑えられます。送料込みでも1食約441円と、他社より圧倒的に安い価格帯を維持しています。",
           },
         ].map((category) => (
           <div key={category.title} className="mb-6">
@@ -399,7 +398,7 @@ export default function MagokoroCareReviewsPage() {
 
         {[
           { num: 1, title: "圧倒的なコストパフォーマンス", text: "1食390円台は宅配弁当業界で最安クラス。コンビニ弁当（400〜600円）より安いのに、管理栄養士が監修した栄養バランスの良い食事が摂れます。月30食利用しても食材費約12,000円＋送料で、外食や自炊と比較してもコスパは非常に優秀。「安かろう悪かろう」ではなく、大量生産とシンプルなパッケージでコストを抑えている正当な低価格です。" },
-          { num: 2, title: "初回1食90円の圧倒的なお試し価格", text: "14食定期セットが1,260円（1食90円）で試せるのは業界でも異例の安さ。nosh（初回1,500円OFF適用で1食457.1〜487.0円・2026年10月10日公式確認）、三ツ星ファーム（初回は14食・21食の送料無料で1食711円〜）と比べても桁違いのお得さです。「まずは味を確かめたい」という方にとって、ほぼノーリスクでお試しできる価格設定は大きな魅力です。" },
+          { num: 2, title: "初回1食190円のお試し価格", text: "14食定期セットが2,660円（1食190円）で試せるのは業界でも安い水準です。nosh（初回1,500円OFF適用で1食457.1〜487.0円・2026年10月10日公式確認）、三ツ星ファーム（初回は14食・21食の送料無料で1食711円〜）と比べても桁違いのお得さです。「まずは味を確かめたい」という方にとって、ほぼノーリスクでお試しできる価格設定は大きな魅力です。" },
           { num: 3, title: "冷凍庫の無料レンタルで保管場所の心配不要", text: "14食・21食セットの定期購入者向けに冷凍庫を無料レンタルできるサービスは、まごころケア食ならでは。一人暮らし用の小型冷蔵庫では冷凍スペースが足りず困る方が多いですが、専用冷凍庫があればまとめ買いも安心。しかも無料。冷凍庫の購入費（約2〜3万円）を節約できるのも大きなメリットです。" },
           { num: 4, title: "置き配対応で不在時も受け取り可能", text: "仕事や外出で不在がちな方にとって、置き配対応は非常に便利。冷凍品なので「保冷ボックスに入れて玄関先に置き配」してもらえます。noshや三ツ星ファームは基本的に対面受取りが必要なため、受け取りの手間がないまごころケア食は一人暮らしの方に特に重宝します。" },
           { num: 5, title: "東証プライム上場企業の安心感", text: "運営元の株式会社シルバーライフは東証プライム上場企業。介護施設や高齢者施設への配食サービスで長年の実績があり、品質管理体制がしっかりしています。「安いから品質が心配」という不安を払拭する信頼性があります。全国の介護施設に年間数千万食を提供する製造力が、個人向けサービスの低価格を支えています。" },
@@ -419,7 +418,7 @@ export default function MagokoroCareReviewsPage() {
         <p className="text-sm mb-6 leading-relaxed">注意点も率直にお伝えします。</p>
 
         {[
-          { num: 1, title: "味のクオリティはnosh・三ツ星ファームに劣る", text: "正直に言えば、味のレベルはnoshや三ツ星ファームに一歩及びません。まごころケア食は「家庭料理的な素朴な味わい」で、レストラン級の感動体験はありません。ただし「まずい」というレベルでは全くなく、毎日食べても飽きない安定した味付けです。価格差（nosh612円 vs まごころ396円）を考えれば十分なクオリティと言えます。" },
+          { num: 1, title: "味のクオリティはnosh・三ツ星ファームに劣る", text: "正直に言えば、味のレベルはnoshや三ツ星ファームに一歩及びません。まごころケア食は「家庭料理的な素朴な味わい」で、レストラン級の感動体験はありません。ただし「まずい」というレベルでは全くなく、毎日食べても飽きない安定した味付けです。価格差（nosh612円 vs まごころ394円）を考えれば十分なクオリティと言えます。" },
           { num: 2, title: "ボリュームが少なめ（約180g）", text: "1食あたり約180gは、宅配弁当の中でもやや少なめです。nosh（約250g）、三ツ星ファーム（約200〜280g）と比べるとコンパクト。成人男性はもちろん、女性でも「おかずだけでは足りない」と感じる可能性が高いです。ご飯・汁物・サラダを別途用意する前提で考えましょう。ダイエット目的なら逆にちょうど良いサイズ感です。" },
           { num: 3, title: "メニューが選べない・副菜のバリエーション不足", text: "おまかせ制でメニューは選べません。noshのように「好きなものだけ選ぶ」楽しみはなく、副菜が似たパターンになりがちです。食事を「楽しみ」として捉えたい方には物足りないかもしれません。ただし、コストを最優先に考えるなら、この点は許容範囲でしょう。" },
         ].map((demerit) => (
@@ -439,11 +438,12 @@ export default function MagokoroCareReviewsPage() {
         <ComparisonTable
           headers={["コース", "7食（定期）", "14食（定期）", "21食（定期）", "21食1食あたり"]}
           rows={[
-            ["健康バランス", "2,982円", "5,572円", "8,316円", "396円"],
-            ["糖質制限", "3,192円", "5,992円", "8,932円", "425円"],
-            ["塩分制限", "3,192円", "5,992円", "8,932円", "425円"],
-            ["たんぱく質調整", "3,192円", "5,992円", "8,932円", "425円"],
-            ["カロリー調整", "3,192円", "5,992円", "8,932円", "425円"],
+            ["健康バランス", "2,982円", "5,572円", "8,274円", "394円"],
+            ["糖質制限食", "2,982円", "5,572円", "8,274円", "394円"],
+            ["塩分制限食", "2,982円", "5,572円", "8,274円", "394円"],
+            ["たんぱく調整食", "2,982円", "5,572円", "8,274円", "394円"],
+            ["カロリー調整食", "2,982円", "5,572円", "8,274円", "394円"],
+            ["ムース食", "2,982円", "5,572円", "8,274円", "394円"],
           ]}
         />
 
@@ -457,7 +457,7 @@ export default function MagokoroCareReviewsPage() {
         />
 
         <p className="text-sm mb-6 leading-relaxed">
-          <strong>送料のポイント：</strong>送料は全国一律980円（2026年3月改定）。21食セットなら1食あたりの送料負担は約47円で、送料込みでも1食約443円。nosh（送料込み690円〜）、三ツ星ファーム（送料込み727円〜）と比較しても圧倒的に安い水準です。
+          <strong>送料のポイント：</strong>送料は全国一律980円（2026年3月改定）。定期（お得便）でも送料は無料にならず、21食セットなら1食あたりの送料負担は約47円で、送料込みでも1食約441円。nosh（12食・関東の送料込みで約709円）、三ツ星ファーム（21食の送料込みで約758円）と比べても安い水準です（2026年10月12日・公式確認）。
         </p>
         <p className="text-sm mb-6 leading-relaxed">
           なお、編集部が18社の料金・送料を公式サイトで直接確認して送料込みの1食実質単価に正規化した<Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark underline">宅食料金白書2026</Link>でも、まごころケア食（7食・定期）は送料込み1食566円で18社中最安でした。他社との横並び比較はそちらをご覧ください。
@@ -469,7 +469,7 @@ export default function MagokoroCareReviewsPage() {
           rows={[
             ["週2回（7食×1回）", "7食", "2,982円", "980円", "3,962円", "566円"],
             ["週3〜4回（14食×1回）", "14食", "5,572円", "980円", "6,552円", "468円"],
-            ["毎日（21食×1回＋7食×1回）", "28食", "11,298円", "1,960円", "13,258円", "474円"],
+            ["毎日（21食×1回＋7食×1回）", "28食", "11,256円", "1,960円", "13,216円", "472円"],
           ]}
         />
 
@@ -520,8 +520,8 @@ export default function MagokoroCareReviewsPage() {
         <ComparisonTable
           headers={["項目", "まごころケア食", "nosh", "三ツ星ファーム", "ウェルネスダイニング"]}
           rows={[
-            ["1食あたり最安", "396円〜", "612円〜", "711円〜", "約752円〜（税込÷食数）"],
-            ["初回お試し", "1食90円", "初回1,500円・2回目1,000円・3回目500円OFF", "14食・21食は初回送料無料", "お試し注文は送料無料"],
+            ["1食あたり最安", "394円〜", "612円〜", "711円〜", "約752円〜（税込÷食数）"],
+            ["初回お試し", "1食190円（14食2,660円）", "初回1,500円・2回目1,000円・3回目500円OFF", "14食・21食は初回送料無料", "お試し注文は送料無料"],
             ["味の評価", "★★★☆☆", "★★★★☆", "★★★★★", "★★★☆☆"],
             ["ボリューム", "約180g", "約250g", "約200〜280g", "約200g"],
             ["メニュー選択", "おまかせ", "自由に選べる", "自由に選べる", "おまかせ"],
@@ -597,13 +597,13 @@ export default function MagokoroCareReviewsPage() {
           </div>
 
           <p className="text-sm leading-relaxed mb-4">
-            まごころケア食は<strong>「コスパ」「お試ししやすさ」</strong>の2つで他社を圧倒しています。1食390円台、初回90円という価格は宅配弁当業界でも突出した安さ。冷凍庫レンタルや置き配対応など、実用的なサービスも充実しています。
+            まごころケア食は<strong>「コスパ」「お試ししやすさ」</strong>の2つで他社を圧倒しています。1食390円台、初回1食190円という価格は宅配弁当業界でも突出した安さ。冷凍庫レンタルや置き配対応など、実用的なサービスも充実しています。
           </p>
           <p className="text-sm leading-relaxed mb-4">
             味のクオリティは三ツ星ファームやnoshに及ばないものの、「毎日食べても飽きない家庭料理的な味わい」は十分に及第点。コストを最優先に考える方、高齢のご家族の食事管理をしたい方に最適なサービスです。
           </p>
           <p className="text-sm leading-relaxed">
-            まずは<strong>初回1食90円のお試しキャンペーン</strong>を活用して14食セットを体験してみましょう。味やボリュームに納得できたら、21食セットの定期購入に切り替えてコスパを最大化するのがおすすめです。
+            まずは<strong>初回1食190円のお試し</strong>を活用して14食セットを体験してみましょう。味やボリュームに納得できたら、21食セットの定期購入に切り替えてコスパを最大化するのがおすすめです。
           </p>
         </div>
 
@@ -660,7 +660,7 @@ export default function MagokoroCareReviewsPage() {
                 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">nosh（ナッシュ）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">612-719</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=M5863L.1.M98647P.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">三ツ星ファーム</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">25以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15以上</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">−</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">711-927</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ウェルネスダイニング</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240-330</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">12-18</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">752-1,165</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://magokoro-care-shoku.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">まごころケア食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-350</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">462-580</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://magokoro-care-shoku.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">まごころケア食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-350</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">394-426</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ワタミの宅食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-400</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">40-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">3.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">590-680</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://shoutakubin.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">食宅便</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">200-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">690-740</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://muscledeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">Muscle Deli</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-60</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">1,098-1,490</td></tr>
@@ -675,7 +675,7 @@ export default function MagokoroCareReviewsPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（食宅便の1食価格は2026年10月12日に公式サイトで再確認＝7食セット690〜740円・送料別。三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」。nosh・ナッシュclub・ウェルネスダイニングの価格は2026年10月10日に公式サイトで再確認し、noshは公式表記の1食単価、ウェルネスダイニングは全6コース・7〜21食の税込価格÷食数で算出、kcal・塩分は各コースの公式基準に更新）。最新情報は各公式サイトでご確認ください。</p>
+          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（食宅便とまごころケア食の1食価格は2026年10月12日に公式サイトで再確認＝食宅便は7食セット690〜740円、まごころケア食はお得便394〜426円、いずれも送料別。三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」。nosh・ナッシュclub・ウェルネスダイニングの価格は2026年10月10日に公式サイトで再確認し、noshは公式表記の1食単価、ウェルネスダイニングは全6コース・7〜21食の税込価格÷食数で算出、kcal・塩分は各コースの公式基準に更新）。最新情報は各公式サイトでご確認ください。</p>
         </section>
 
                 {/* eeat-links-202607 */}

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-05-28T00:00:00+09:00",
-    modifiedTime: "2026-10-10T00:00:00+09:00",
+    modifiedTime: "2026-10-12T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -210,7 +210,7 @@ export default function OtameshiSetOsusumePage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-10-10T00:00:00+09:00",
+    dateModified: "2026-10-12T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -419,9 +419,9 @@ export default function OtameshiSetOsusumePage() {
           <CTAButton href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" label="ウェルネスダイニングの公式サイトで詳細を見る" />
         </div>
 
-        <SubHeading>7位: まごころケア食 — コスパ最強のシニア向け</SubHeading>
+        <SubHeading>7位: まごころケア食 — コスパ重視のシニア向け</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          1食あたりの価格が業界最安水準で、シニア・高齢者世帯にも人気のサービス。お試し的に少食数プランから始められ、栄養面では塩分・糖質・たんぱく質などのケアコースが用意されています。
+          定期（お得便）は1食394〜426円（送料980円別）、初回限定の14食定期セットは2,660円（1食190円）と価格の安さが特徴で、シニア・高齢者世帯にも人気のサービス（2026年10月12日・公式確認）。お試し的に少食数プランから始められ、栄養面では塩分・糖質・たんぱく質などのケアコースが用意されています。
         </p>
         <p className="text-sm mb-4 leading-relaxed">
           <strong>こんな人におすすめ:</strong> とにかくコスパを重視する人、シニア・高齢者の家族向け、続けやすい価格帯を求める人。

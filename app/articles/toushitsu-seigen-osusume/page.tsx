@@ -203,7 +203,7 @@ export default function ToushitsuSeigenOsusumePage() {
       { "@type": "ListItem", position: 2, name: "食宅便（低糖質セレクト）", description: "糖質10g以下の業界最厳の糖質制限。日清医療食品の管理栄養士設計。ケトジェニックにも対応。", url: "https://shokutakubin.com/" },
       { "@type": "ListItem", position: 3, name: "三ツ星ファーム", description: "糖質25g以下・たんぱく質15g以上。プロの料理人監修で低糖質なのに美味しい。", url: "https://mitsuboshifarm.jp/" },
       { "@type": "ListItem", position: 4, name: "ウェルネスダイニング", description: "糖質＆カロリー制限気配り宅配食（糖質15g以下）。管理栄養士への無料相談あり。糖尿病の方にも。", url: "https://www.wellness-dining.com/" },
-      { "@type": "ListItem", position: 5, name: "まごころケア食", description: "糖質制限食（糖質15g以下）を1食470円〜で提供。送料無料でコスパ最強の糖質制限。", url: "https://magokoro-care-shoku.com/" },
+      { "@type": "ListItem", position: 5, name: "まごころケア食", description: "糖質制限食（糖質15g以下）を1食394円〜（21食・お得便）で提供。送料980円込みでも1食約441円。", url: "https://magokoro-care-shoku.com/" },
     ],
   };
 
@@ -293,7 +293,7 @@ export default function ToushitsuSeigenOsusumePage() {
           { num: 1, title: "1食あたりの糖質量（自分の制限レベルに合っているか）", text: "宅配弁当の糖質量は、nosh（30g以下）、三ツ星ファーム（25g以下）、ウェルネスダイニング（15g以下）、食宅便の低糖質セレクト（10g以下）と大きく異なります。ロカボ（緩やかな糖質制限）ならnoshで十分。スタンダード糖質制限なら三ツ星ファームかウェルネスダイニング。ケトジェニック（スーパー糖質制限）なら食宅便の低糖質セレクト一択。自分の糖質制限レベルに合った糖質量のサービスを選ぶことが最も重要です。" },
           { num: 2, title: "たんぱく質量（糖質を減らした分、たんぱく質で補えるか）", text: "糖質制限では、糖質を減らした分のカロリーをたんぱく質と脂質で補う必要があります。1食あたりたんぱく質15g以上は確保したいところ。nosh（平均20g）、三ツ星ファーム（15g以上）は十分。食宅便の低糖質セレクトは糖質10g以下のストイックさですが、たんぱく質は約15gで合格ライン。ウェルネスダイニングは約15gとバランス型。たんぱく質が不足すると筋肉量が減るため、必ずチェックしましょう。" },
           { num: 3, title: "メニューの豊富さ（糖質制限でも飽きずに続けられるか）", text: "糖質制限の挫折理由No.1は「飽きる」。毎日サラダチキンとゆで卵では続きません。noshは100種類以上（低糖質スイーツ含む）、三ツ星ファームは125種類以上（2026年10月9日・公式確認）、食宅便は160種類以上とメニューが豊富。毎週新メニューが追加されるnoshは、長期の糖質制限でも飽きにくい。低糖質のドーナツやロールケーキがあるのも、甘いもの好きの方には嬉しいポイントです。" },
-          { num: 4, title: "価格（糖質制限は長期戦。続けられるコストか）", text: "糖質制限は最低3ヶ月、理想的には6ヶ月以上続けて初めて効果が定着します。1食あたりnosh 612円〜（12食・2026年10月10日・公式確認）、食宅便 740円（低糖質セレクト7食・2026年10月12日・公式確認）、まごころケア食 470円〜。週5回利用で月額は9,870円（まごころケア食）〜18,360円（食宅便 低糖質セレクト7食×3回・定期送料込み）。3ヶ月で約3〜5.5万円。この金額を無理なく続けられるか確認しましょう。nosh clubは累計購入数に応じた割引で、最高ランク（累計280食）なら12食で1食492円まで下がります。" },
+          { num: 4, title: "価格（糖質制限は長期戦。続けられるコストか）", text: "糖質制限は最低3ヶ月、理想的には6ヶ月以上続けて初めて効果が定着します。1食あたりnosh 612円〜（12食・2026年10月10日・公式確認）、食宅便 740円（低糖質セレクト7食・2026年10月12日・公式確認）、まごころケア食 394円〜（21食・お得便・送料980円別）。週5回利用で月額は9,254円（まごころケア食・送料込み）〜18,360円（食宅便 低糖質セレクト7食×3回・定期送料込み）。3ヶ月で約2.8〜5.5万円。この金額を無理なく続けられるか確認しましょう。nosh clubは累計購入数に応じた割引で、最高ランク（累計280食）なら12食で1食492円まで下がります。" },
         ].map((point) => (
           <div key={point.num} className="flex gap-4 mb-5">
             <span className="flex-shrink-0 w-8 h-8 bg-accent text-white rounded-full flex items-center justify-center text-sm font-bold">{point.num}</span>
@@ -440,18 +440,18 @@ export default function ToushitsuSeigenOsusumePage() {
         <RankingCard
           rank={5}
           name="まごころケア食"
-          tagline="糖質15g以下 × 送料無料。コスパ最強の糖質制限"
+          tagline="糖質15g以下。送料込みでも21食で1食約441円"
           color="bg-purple-50"
           features={[
             "糖質制限食（糖質15g以下）",
-            "1食あたり470円〜の業界最安水準",
-            "全国送料無料",
+            "1食394〜426円（お得便・送料別）",
+            "送料は全国一律980円（沖縄・離島1,480円）",
             "14食・21食のまとめ買いでさらにお得",
           ]}
-          price="470円〜（14食プラン）"
-          shipping="無料"
+          price="398円（14食・お得便5,572円）"
+          shipping="980円（沖縄・離島1,480円）"
           pros={[
-            "送料無料で実質コスト最安クラス",
+            "送料込みでも21食なら1食約441円",
             "糖質15g以下はウェルネスダイニングと同レベル",
             "コンパクト容器で冷凍庫にやさしい",
           ]}
@@ -462,7 +462,7 @@ export default function ToushitsuSeigenOsusumePage() {
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
-          糖質制限を最安コストで続けたい方にはまごころケア食。糖質15g以下の糖質制限食が1食470円〜で全国送料無料。月額約9,870円（21食）は糖質制限宅配弁当で最も経済的。詳しくは<Link href="/articles/magokoro-care-reviews/" className="text-accent hover:text-accent-dark underline">まごころケア食の口コミ・評判を徹底調査</Link>をご覧ください。
+          糖質制限を最安コストで続けたい方にはまごころケア食。糖質15g以下の糖質制限食が1食394円〜（21食・お得便）で、送料980円を含めても月約9,254円（21食）。この記事で比べた5社の中で最も安い計算です（2026年10月12日・公式確認）。詳しくは<Link href="/articles/magokoro-care-reviews/" className="text-accent hover:text-accent-dark underline">まごころケア食の口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
 
         {/* ===== 詳細レビュー ===== */}
@@ -488,9 +488,9 @@ export default function ToushitsuSeigenOsusumePage() {
           ウェルネスダイニングの糖質＆カロリー制限気配り宅配食は、糖質15g以下・塩分2.0g以下・カロリー240kcal±10%。管理栄養士への無料電話相談で「HbA1cが7.0なのですが、どのコースがいい？」といった医療レベルの相談にも対応。糖尿病の食事管理で「病院の栄養指導に近い品質」を自宅で受けられるのは、ウェルネスダイニングならではの強みです。送料は定期注文の14食・21食なら無料、7食は440円です（2026年10月10日・公式確認）。
         </p>
 
-        <SubHeading>まごころケア食 - コスパ最強の糖質制限</SubHeading>
+        <SubHeading>まごころケア食 - 低コストで続ける糖質制限</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          まごころケア食の糖質制限食は、糖質15g以下が1食470円〜で全国送料無料。ウェルネスダイニングの糖質＆カロリー制限（21食で1食約770円・税込価格÷食数で算出）と同じ糖質15g以下の基準ながら、1食あたり約300円安い計算。月21食なら約6,300円の差になります。味は家庭的で素朴ですが、「毎日食べても飽きない安心感のある味」という評価が多く、長期利用に向いています。
+          まごころケア食の糖質制限食は、糖質15g以下が1食394円〜（21食・お得便）。定期でも送料980円（沖縄・離島1,480円）がかかりますが、21食なら送料込みで1食約441円です。ウェルネスダイニングの糖質＆カロリー制限（21食定期は送料無料で1食約770円・税込価格÷食数で算出）と同じ糖質15g以下の基準ながら、1食あたり約330円安い計算。月21食なら約6,900円（9,254円 vs 16,178円）の差になります。味は家庭的で素朴ですが、「毎日食べても飽きない安心感のある味」という評価が多く、長期利用に向いています。
         </p>
 
         {/* ===== 料金比較 ===== */}
@@ -504,7 +504,7 @@ export default function ToushitsuSeigenOsusumePage() {
             ["食宅便（低糖質セレクト）", "740円", "940円（定期）／1,330円（都度）", "10g以下", "約15g", "160種類以上"],
             ["三ツ星ファーム", "711円〜", "990円", "25g以下（一部除く）", "15g以上（一部除く）", "125種類以上"],
             ["ウェルネスダイニング", "約770円〜", "定期14・21食無料（7食440円）", "15g以下", "平均13.2g", "お任せ（選べない）"],
-            ["まごころケア食", "470円〜", "無料", "15g以下", "約12g", "コース制"],
+            ["まごころケア食", "394円〜（21食・お得便）", "980円（沖縄・離島1,480円）", "15g以下", "約12g", "コース制"],
           ]}
         />
 
@@ -516,16 +516,16 @@ export default function ToushitsuSeigenOsusumePage() {
             ["食宅便（低糖質セレクト・定期）", "7食×3回", "15,540円", "2,820円", "18,360円"],
             ["三ツ星ファーム", "14食+7食", "17,943円", "1,980円", "19,923円"],
             ["ウェルネスダイニング（糖質＆カロリー制限）", "21食×1回", "16,178円", "0円", "16,178円"],
-            ["まごころケア食", "21食", "9,870円", "0円", "9,870円"],
+            ["まごころケア食（お得便）", "21食", "8,274円", "980円", "9,254円"],
           ]}
         />
 
-        <p className="text-xs text-warm-gray -mt-4 mb-6">※nosh・ウェルネスダイニングの料金・送料は2026年10月10日に公式サイトで確認（税込・noshの送料は関東1,166円で計算）。三ツ星ファームは2026年10月9日確認。食宅便（低糖質セレクト7食5,180円・らくらく定期便送料940円）は2026年10月12日確認。その他は記事作成時の公開データです。</p>
+        <p className="text-xs text-warm-gray -mt-4 mb-6">※nosh・ウェルネスダイニングの料金・送料は2026年10月10日に公式サイトで確認（税込・noshの送料は関東1,166円で計算）。三ツ星ファームは2026年10月9日確認。まごころケア食（お得便21食8,274円・送料980円）と食宅便（低糖質セレクト7食5,180円・らくらく定期便送料940円）は2026年10月12日確認。その他は記事作成時の公開データです。</p>
 
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">糖質制限のコスパ結論</p>
           <ul className="list-disc list-inside space-y-1">
-            <li><strong>最安：まごころケア食</strong>（月9,870円）——糖質15g以下で業界最安。長期の糖質制限に最適</li>
+            <li><strong>最安：まごころケア食</strong>（月9,254円）——送料980円を含めてもこの5社で最安。糖質15g以下で長期の糖質制限に向く</li>
             <li><strong>バランス型：nosh</strong>（月14,744円）——コスパと自由度の両立。スイーツも低糖質</li>
             <li><strong>厳密制限：食宅便</strong>（月18,360円）——糖質10g以下でケトジェニック対応。送料込みではnoshより月約3,600円高い</li>
             <li><strong>味重視：三ツ星ファーム</strong>（月19,923円）——美味しく糖質制限したい方に</li>
@@ -599,7 +599,7 @@ export default function ToushitsuSeigenOsusumePage() {
             ["スタンダード糖質制限", "三ツ星ファーム（糖質25g以下）"],
             ["厳格な糖質制限", "ウェルネスダイニング（糖質15g以下）"],
             ["ケトジェニック", "食宅便 低糖質セレクト（糖質10g以下）"],
-            ["コスパ最優先", "まごころケア食（糖質15g以下・送料無料）"],
+            ["コスパ最優先", "まごころケア食（糖質15g以下・21食で送料込み1食約441円）"],
             ["美味しさ最優先", "三ツ星ファーム or nosh"],
             ["糖尿病の食事管理", "ウェルネスダイニング or 食宅便"],
           ]}
@@ -710,7 +710,7 @@ export default function ToushitsuSeigenOsusumePage() {
                 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">nosh（ナッシュ）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">612-719</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=M5863L.1.M98647P.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">三ツ星ファーム</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">25以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15以上</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">−</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">711-927</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ウェルネスダイニング</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240-330</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">12-18</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">752-1,165</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://magokoro-care-shoku.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">まごころケア食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-350</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">462-580</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://magokoro-care-shoku.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">まごころケア食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-350</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">394-426</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ワタミの宅食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-400</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">40-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">3.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">590-680</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://shoutakubin.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">食宅便</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">200-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">690-740</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://muscledeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">Muscle Deli</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-60</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">1,098-1,490</td></tr>
@@ -725,7 +725,7 @@ export default function ToushitsuSeigenOsusumePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（食宅便の1食価格は2026年10月12日に公式サイトで再確認＝7食セット690〜740円・送料別。三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」。nosh・ナッシュclub・ウェルネスダイニングの価格は2026年10月10日に公式サイトで再確認し、noshは公式表記の1食単価、ウェルネスダイニングは全6コース・7〜21食の税込価格÷食数で算出、kcal・塩分は各コースの公式基準に更新）。最新情報は各公式サイトでご確認ください。</p>
+          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（食宅便とまごころケア食の1食価格は2026年10月12日に公式サイトで再確認＝食宅便は7食セット690〜740円、まごころケア食はお得便394〜426円、いずれも送料別。三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」。nosh・ナッシュclub・ウェルネスダイニングの価格は2026年10月10日に公式サイトで再確認し、noshは公式表記の1食単価、ウェルネスダイニングは全6コース・7〜21食の税込価格÷食数で算出、kcal・塩分は各コースの公式基準に更新）。最新情報は各公式サイトでご確認ください。</p>
         </section>
 
                 {/* eeat-links-202607 */}

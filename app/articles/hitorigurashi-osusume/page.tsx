@@ -361,7 +361,7 @@ export default function HitorigurashiOsusumePage() {
         position: 4,
         name: "まごころケア食",
         description:
-          "1食あたり470円〜の圧倒的コスパ。全国送料無料。シニア一人暮らしにも安心の優しい味付け。",
+          "1食394円〜（21食・お得便）、送料980円込みでも1食約441円。シニア一人暮らしにも安心の優しい味付け。",
         url: "https://magokoro-care-shoku.com/",
       },
       {
@@ -476,12 +476,12 @@ export default function HitorigurashiOsusumePage() {
           {
             num: 1,
             title: "1食あたりのコスト（送料込みで計算する）",
-            text: "宅食を選ぶ際、まず見るべきは「1食あたりの実質コスト」です。食材費だけでなく送料も含めて計算しましょう。例えば、noshの10食プランは1食620円ですが、送料1,166円（関東・2026年10月10日・公式確認）を含めると実質約737円/食。一方、まごころケア食は1食470円で送料無料なので、送料込みでも470円/食。見かけの価格に惑わされず、「送料込み1食あたり」で比較することが重要です。一人暮らしの食費の目安は月3万円前後。宅配弁当を夕食に使う場合、1食700円以下なら月2.1万円（30日）で食費の大部分をカバーできます。",
+            text: "宅食を選ぶ際、まず見るべきは「1食あたりの実質コスト」です。食材費だけでなく送料も含めて計算しましょう。例えば、noshの10食プランは1食620円ですが、送料1,166円（関東・2026年10月10日・公式確認）を含めると実質約737円/食。一方、まごころケア食は21食（お得便）なら1食394円で、送料980円を含めても約441円/食です（2026年10月12日・公式確認）。見かけの価格に惑わされず、「送料込み1食あたり」で比較することが重要です。一人暮らしの食費の目安は月3万円前後。宅配弁当を夕食に使う場合、1食700円以下なら月2.1万円（30日）で食費の大部分をカバーできます。",
           },
           {
             num: 2,
             title: "送料（地域差が大きいサービスに注意）",
-            text: "宅配弁当の送料は、サービスによって大きく異なります。noshは4〜12食で1,023円（関西）〜1,713円（北海道）、三ツ星ファームは990円（北海道・沖縄2,500円）と、地域によって差があります。一方、まごころケア食は全国送料無料、ウェルネスダイニングは定期注文の14食・21食なら送料無料（7食は440円）です（nosh・ウェルネスは2026年10月10日・公式確認）。一人暮らしは支出管理が重要なので、送料は必ずチェックしましょう。",
+            text: "宅配弁当の送料は、サービスによって大きく異なります。noshは4〜12食で1,023円（関西）〜1,713円（北海道）、三ツ星ファームは990円（北海道・沖縄2,500円）と、地域によって差があります。一方、まごころケア食は定期（お得便）でも全国一律980円（沖縄・離島1,480円）、ウェルネスダイニングは定期注文の14食・21食なら送料無料（7食は440円）です（nosh・ウェルネスは2026年10月10日・公式確認）。一人暮らしは支出管理が重要なので、送料は必ずチェックしましょう。",
           },
           {
             num: 3,
@@ -605,18 +605,18 @@ export default function HitorigurashiOsusumePage() {
         <RankingCard
           rank={4}
           name="まごころケア食"
-          tagline="送料無料×圧倒的コスパ。シニア一人暮らしにも"
+          tagline="送料込みでも21食で1食約441円。シニア一人暮らしにも"
           color="bg-green-50"
           features={[
-            "1食あたり470円〜の業界最安水準",
-            "全国送料無料",
+            "1食394〜426円（お得便・送料別）",
+            "送料は全国一律980円（沖縄・離島1,480円）",
             "やわらか食・たんぱく調整食あり",
             "14食・21食のまとめ買いでさらにお得",
           ]}
-          price="470円〜（14食プラン）"
-          shipping="無料"
+          price="398円（14食・お得便5,572円）"
+          shipping="980円（沖縄・離島1,480円）"
           pros={[
-            "送料無料で実質コスト最安クラス",
+            "送料込みでも21食なら1食約441円",
             "シニア向けのやわらか食がある",
             "容器がコンパクトで冷凍庫にやさしい",
           ]}
@@ -627,7 +627,7 @@ export default function HitorigurashiOsusumePage() {
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
-          コスパ最重視の一人暮らし、特にシニアの一人暮らしにおすすめなのがまごころケア食。1食470円〜で全国送料無料という圧倒的なコストパフォーマンスが魅力。やわらか食やたんぱく調整食もあり、高齢の一人暮らしの食事サポートに最適です。味は素朴で家庭的ですが、「毎日食べても飽きない安心感のある味」と評価されています。
+          コスパ最重視の一人暮らし、特にシニアの一人暮らしにおすすめなのがまごころケア食。1食394円〜（21食・お得便）で、送料980円を含めても1食約441円という安さが魅力。やわらか食やたんぱく調整食もあり、高齢の一人暮らしの食事サポートに最適です。味は素朴で家庭的ですが、「毎日食べても飽きない安心感のある味」と評価されています。
         </p>
 
         <RankingCard
@@ -665,7 +665,7 @@ export default function HitorigurashiOsusumePage() {
             ["nosh", "612円〜", "1,023円〜（地域別）", "100種類以上", "◎", "★★★★★"],
             ["三ツ星ファーム", "711円〜", "990円", "125種類以上", "○", "★★★★☆"],
             ["ウェルネスダイニング", "約752円〜", "定期14・21食無料（7食440円）", "コース制（お任せ）", "△", "★★★★☆"],
-            ["まごころケア食", "470円〜", "無料", "コース制", "○", "★★★★☆"],
+            ["まごころケア食", "394円〜（21食・お得便）", "980円（沖縄・離島1,480円）", "コース制", "○", "★★★★☆"],
             ["食宅便", "690円〜", "940円（定期）／1,330円（都度）", "160種類以上", "○", "★★★☆☆"],
           ]}
         />
@@ -747,8 +747,8 @@ export default function HitorigurashiOsusumePage() {
           },
           {
             name: "2位：まごころケア食",
-            reason: "1食470円〜で送料無料。年金生活の方にも続けやすい価格",
-            detail: "まごころケア食は1食470円〜で全国送料無料と、シニアの一人暮らしでも無理なく続けられる価格設定。やわらか食・たんぱく調整食・糖質制限食などのコースがあり、優しい味付けでシニアの方にも食べやすいと好評。容器もコンパクトで冷凍庫の場所を取りにくいのもポイントです。",
+            reason: "送料980円込みでも21食なら1食約441円。年金生活の方にも続けやすい価格",
+            detail: "まごころケア食は1食394円〜（21食・お得便）で、送料980円込みでも1食約441円と、シニアの一人暮らしでも無理なく続けられる価格設定。やわらか食・たんぱく調整食・糖質制限食などのコースがあり、優しい味付けでシニアの方にも食べやすいと好評。容器もコンパクトで冷凍庫の場所を取りにくいのもポイントです。",
           },
           {
             name: "3位：食宅便（やわらかい食事）",
@@ -787,14 +787,14 @@ export default function HitorigurashiOsusumePage() {
             ["nosh", "10食×2回", "12,412円", "2,332円", "14,744円", "約737円"],
             ["三ツ星ファーム", "14食+7食", "17,943円", "1,980円", "19,923円", "949円"],
             ["ウェルネスダイニング（栄養バランス）", "21食×1回", "15,800円", "0円", "15,800円", "約752円"],
-            ["まごころケア食", "21食", "9,870円", "0円", "9,870円", "470円"],
+            ["まごころケア食（お得便）", "21食", "8,274円", "980円", "9,254円", "約441円"],
             ["食宅便（おまかせ・定期）", "7食×3回", "14,490円", "2,820円", "17,310円", "約824円"],
           ]}
         />
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">コスト比較のポイント</p>
           <ul className="list-disc list-inside space-y-1">
-            <li><strong>最安：まごころケア食</strong>（月9,870円/1食470円）——送料無料の効果が大きい</li>
+            <li><strong>最安：まごころケア食</strong>（月9,254円/1食約441円）——送料980円を含めてもこの5社で最安</li>
             <li><strong>コスパ良好：nosh</strong>（月14,744円/1食約737円）——品質と価格のバランス◎</li>
             <li><strong>中間価格：食宅便</strong>（月17,310円/1食約824円）——noshより1食約90円高いが、メニュー数と医療食品メーカーの安心感がある</li>
             <li><strong>やや高め：三ツ星ファーム</strong>（月約2万円/1食949円）——味のクオリティを考えれば妥当</li>
@@ -986,7 +986,7 @@ export default function HitorigurashiOsusumePage() {
                 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">nosh（ナッシュ）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">612-719</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=M5863L.1.M98647P.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">三ツ星ファーム</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">25以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15以上</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">−</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">711-927</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ウェルネスダイニング</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240-330</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">12-18</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">752-1,165</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://magokoro-care-shoku.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">まごころケア食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-350</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">462-580</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://magokoro-care-shoku.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">まごころケア食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-350</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-40</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">394-426</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ワタミの宅食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-400</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">40-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">3.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">590-680</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://shoutakubin.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">食宅便</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">200-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">690-740</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://muscledeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">Muscle Deli</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-60</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">1,098-1,490</td></tr>
@@ -1001,7 +1001,7 @@ export default function HitorigurashiOsusumePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（食宅便の1食価格は2026年10月12日に公式サイトで再確認＝7食セット690〜740円・送料別。三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」。nosh・ナッシュclub・ウェルネスダイニングの価格は2026年10月10日に公式サイトで再確認し、noshは公式表記の1食単価、ウェルネスダイニングは全6コース・7〜21食の税込価格÷食数で算出、kcal・塩分は各コースの公式基準に更新）。最新情報は各公式サイトでご確認ください。</p>
+          <p className="text-xs text-warm-gray mt-2">※2026年5月時点の公開データ（食宅便とまごころケア食の1食価格は2026年10月12日に公式サイトで再確認＝食宅便は7食セット690〜740円、まごころケア食はお得便394〜426円、いずれも送料別。三ツ星ファームの行は2026年10月9日に公式サイトで再確認し、kcal・糖質・タンパク質を三ツ星基準、価格を通常の定期便の1食単価に更新。塩分は公式に基準の記載が見当たらないため「−」。nosh・ナッシュclub・ウェルネスダイニングの価格は2026年10月10日に公式サイトで再確認し、noshは公式表記の1食単価、ウェルネスダイニングは全6コース・7〜21食の税込価格÷食数で算出、kcal・塩分は各コースの公式基準に更新）。最新情報は各公式サイトでご確認ください。</p>
         </section>
 
                 {/* eeat-links-202607 */}

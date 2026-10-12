@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-05-28T00:00:00+09:00",
-    modifiedTime: "2026-10-10T00:00:00+09:00",
+    modifiedTime: "2026-10-12T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -210,7 +210,7 @@ export default function NoshCouponPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-10-10T00:00:00+09:00",
+    dateModified: "2026-10-12T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -568,7 +568,7 @@ export default function NoshCouponPage() {
             ["nosh", "3回分割引 計3,000円OFF", "612〜719円", "公式サイト自動適用"],
             ["三ツ星ファーム", "14食・21食は初回送料無料", "711〜927円", "公式サイト"],
             ["ウェルネスダイニング", "お試し注文は送料無料", "約752〜1,165円（税込÷食数）", "公式申込フォーム"],
-            ["まごころケア食", "初回限定セット価格あり", "462〜580円", "公式サイトから定期申込"],
+            ["まごころケア食", "初回限定14食2,660円（1食190円）", "394〜426円（お得便）／551〜591円（都度）", "公式サイトから定期申込"],
           ]}
         />
 
