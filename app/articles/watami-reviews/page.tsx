@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-21T00:00:00+09:00",
-    modifiedTime: "2026-10-10T00:00:00+09:00",
+    modifiedTime: "2026-10-12T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -29,7 +29,7 @@ const faqData = [
   {
     question: "ワタミの宅食とワタミの宅食ダイレクトの違いは？",
     answer:
-      "「ワタミの宅食」は冷蔵のお弁当・お惣菜を毎日自社スタッフが届けるサービスです。「ワタミの宅食ダイレクト」は冷凍のおかずセットを宅配便で届けるサービスです。冷蔵タイプは宅配料込み価格・毎日届く温かみがありますが、配送エリアが限定されます。冷凍タイプは全国配送可能でストックできますが、送料（本州・四国・九州で税込880円〜）がかかります。",
+      "「ワタミの宅食」は冷蔵のお弁当・お惣菜を毎日自社スタッフが届けるサービスです。「ワタミの宅食ダイレクト」は冷凍のおかずセットを宅配便で届けるサービスです。冷蔵タイプは宅配料込み価格・毎日届く温かみがありますが、配送エリアが限定されます。冷凍タイプは全国配送可能でストックできますが、送料（本州・四国・九州で税込990円〜・2026年10月1日改定）がかかります。",
   },
   {
     question: "ワタミの宅食は1人分だけでも注文できる？",
@@ -147,7 +147,7 @@ function SourcedReview({ review, tone }: { review: SourcedReviewItem; tone: "goo
 export default function WatamiReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-10-10T00:00:00+09:00",
+    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-10-12T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -213,7 +213,7 @@ export default function WatamiReviewsPage() {
             ["サービス開始", "2008年"],
             ["タイプ", "冷蔵（毎日配送）＋冷凍（クール宅配便）"],
             ["配送", "冷蔵：自社スタッフが毎日お届け / 冷凍：宅配便"],
-            ["送料", "冷蔵：宅配料込み価格 / 冷凍：本州・四国・九州880円（税込）"],
+            ["送料", "冷蔵：宅配料込み価格 / 冷凍：本州・四国・九州990円（税込・2026年10月1日改定）"],
             ["メニュー数", "冷蔵：週替わり / 冷凍：100種類以上"],
             ["支払い方法", "クレジットカード・口座振替・現金（冷蔵のみ）"],
             ["特徴", "自社スタッフ配送・まごころスタッフによる安否確認"],
@@ -227,7 +227,7 @@ export default function WatamiReviewsPage() {
             ["お届け状態", "冷蔵（チルド）", "冷凍"],
             ["配送方法", "自社スタッフ（まごころスタッフ）", "宅配便（冷凍便）"],
             ["配送頻度", "毎日（月〜金 or 月〜土）", "まとめて1回配送"],
-            ["送料", "宅配料込み価格", "本州・四国・九州880円、北海道1,210円、沖縄2,420円（税込）"],
+            ["送料", "宅配料込み価格", "本州・四国・九州990円、北海道1,320円、沖縄2,420円（税込・2026年10月1日改定）"],
             ["ご飯の有無", "ご飯付きコースあり", "おかずのみ"],
             ["保存期間", "当日〜翌日", "冷凍で約10ヶ月"],
             ["配送エリア", "一部エリア限定", "全国（離島除く）"],

@@ -3,12 +3,12 @@ import Link from "next/link";
 import hakusho from "@/data/ryokin-hakusho-2026-07.json";
 
 const ARTICLE_TITLE =
-  "宅食料金白書2026｜18社の料金・送料・1食あたり実質単価を正規化比較【7月調査】";
+  "宅食料金白書2026｜18社の料金・送料・1食あたり実質単価を正規化比較【2026年10月再調査】";
 const ARTICLE_DESCRIPTION =
-  "宅配弁当・宅食18社の料金・送料・初回割引・解約条件を全て公式サイトで直接確認し、「(料金+送料)÷食数」の1食実質単価に正規化して比較した独自調査データ（2026年7月4日確認）。送料の地域差・定期縛り・違約金も一覧化。出典明記での引用歓迎。最新の金額は各公式サイトでご確認ください。";
+  "宅配弁当・宅食18社の料金・送料・初回割引・解約条件を全て公式サイトで直接確認し、「(料金+送料)÷食数」の1食実質単価に正規化して比較した独自調査データ（2026年10月11〜12日に全社を公式で再確認）。送料の地域差・定期縛り・違約金も一覧化。出典明記での引用歓迎。最新の金額は各公式サイトでご確認ください。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/takushoku-ryokin-hakusho/";
-const VERIFIED_DATE = "2026年7月4日";
+const VERIFIED_DATE = "2026年10月11〜12日";
 
 export const metadata: Metadata = {
   title: ARTICLE_TITLE,
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-11T00:00:00+09:00",
+    modifiedTime: "2026-10-12T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -64,7 +64,7 @@ const REP_PLAN_INDEX: Record<string, number> = { "watami-direct": 1 };
 // 実質単価を「−」表示にするブランドと、その理由（欠損の推測埋めはしない）
 const MISSING_REASON: Record<string, string> = {
   yoshikei:
-    "通常コースが週替わりメニュー・地域会社別価格のため、全国共通の税込価格が公式サイトに非掲載。お試し5daysは1食300円（配達料無料）",
+    "通常コースが週替わりメニュー・地域会社別価格のため、全国共通の税込価格が公式サイトに非掲載。お試し5daysは1食あたり約280〜670円程度（コース別・配達料無料）",
   "green-spoon":
     "食数別の税込合計額が公式サイトで直接確認できず（メニュー単品ごとの価格制のため）",
   "chef-muten-tsukurioki":
@@ -91,7 +91,7 @@ const DISPLAY: Record<
     shippingLabel: "1,166円（関東・6食）",
     discountLabel: "初回〜3回目で計3,000円OFF",
     lockLabel: "なし",
-    unitNote: "全国11エリア別送料。関東の8・10食は1,386円",
+    unitNote: "全国11エリア別送料。4〜12食は同額、関東の20食は1,386円",
   },
   "mitsuboshi-farm": {
     reviewHref: "/articles/mitsuboshi-farm-reviews/",
@@ -117,7 +117,7 @@ const DISPLAY: Record<
   yoshikei: {
     reviewHref: "/articles/yoshikei-reviews/",
     shippingLabel: "0円（自社配達）",
-    discountLabel: "お試し5days＝1食300円",
+    discountLabel: "お試し5days＝1食約280〜670円程度（コースにより約30〜50%OFF）",
     lockLabel: "なし（週単位の都度注文）",
   },
   shokutakubin: {
@@ -135,7 +135,7 @@ const DISPLAY: Record<
   },
   "green-spoon": {
     shippingLabel: "990円（北海道・沖縄除く）",
-    discountLabel: "12食セットお試し最大33%OFF",
+    discountLabel: "−（旧お試しキャンペーンは終了・現行の初回割引は公式で確認できず）",
     lockLabel: "なし（初回分キャンセル不可）",
   },
   "chef-muten-tsukurioki": {
@@ -159,10 +159,10 @@ const DISPLAY: Record<
   },
   "watami-direct": {
     reviewHref: "/articles/watami-direct-otameshi/",
-    shippingLabel: "880円（本州・四国・九州）",
+    shippingLabel: "990円（本州・四国・九州・2026年10月1日改定）",
     discountLabel: "お試し割10食3,900円／継続割 計2,400円OFF",
     lockLabel: "継続割は定期3回以上",
-    unitNote: "北海道1,210円・沖縄2,420円",
+    unitNote: "北海道1,320円・沖縄2,420円",
   },
   coopdeli: {
     shippingLabel: "0円（配達手数料無料）",
@@ -172,7 +172,7 @@ const DISPLAY: Record<
   "ouchi-coop": {
     shippingLabel: "0円（配達料無料）",
     discountLabel: "おためし500円（対象地域・1世帯1回）",
-    lockLabel: "−（公式公開ページで確認できず）",
+    lockLabel: "週3回または週5回・自動継続",
   },
   "tsurukame-kitchen": {
     reviewHref: "/articles/tsurukame-reviews/",
@@ -192,7 +192,7 @@ const DISPLAY: Record<
     shippingLabel: "1,640円（関東・7食）",
     discountLabel: "公式サイト上の初回割引表記なし",
     lockLabel: "なし",
-    unitNote: "地域・食数で変動。沖縄は3,190円〜",
+    unitNote: "地域・食数で変動。沖縄は3,190円〜4,180円",
   },
   "fit-food-home": {
     shippingLabel: "990円（都度）",
@@ -253,17 +253,17 @@ const faqData = [
   {
     question: "「1食実質単価」とはどんな指標？",
     answer:
-      "「(代表プランの税込料金＋代表送料)÷食数」で計算した、送料込みの1食あたり負担額です。宅配弁当は本体価格が安く見えても送料で逆転することが多いため、送料を含めて正規化しています。数値はすべて2026年7月4日に各社公式サイトで直接確認した金額から機械的に計算しており、比較サイトからの転記はありません。料金・送料は改定されることがあるため、最新は各公式サイトでご確認ください。",
+      "「(代表プランの税込料金＋代表送料)÷食数」で計算した、送料込みの1食あたり負担額です。宅配弁当は本体価格が安く見えても送料で逆転することが多いため、送料を含めて正規化しています。数値はすべて各社公式サイトで直接確認した金額（2026年10月11〜12日に全18社を再確認）から機械的に計算しており、比較サイトからの転記はありません。料金・送料は改定されることがあるため、最新は各公式サイトでご確認ください。",
   },
   {
     question: "送料込みで一番安い宅配弁当はどこ？",
     answer:
-      "今回計算できた13社の中では、まごころケア食（7食・定期）が送料込み1食566円で最安でした。次いでワタミの宅食のまごころ手鞠が1食590円（宅配料込み）、ライフミール（7食・定期）が1食660円です。ただしまごころケア食は21食セットにすると1食441円まで下がるなど、食数によって順位は変わります。2026年7月4日確認時点の計算であり、最新の価格は各公式サイトでご確認ください。",
+      "今回計算できた13社の中では、まごころケア食（7食・定期）が送料込み1食566円で最安でした。次いでワタミの宅食のまごころ手鞠が1食590円（宅配料込み）、ライフミール（7食・定期）が1食660円です。ただしまごころケア食は21食セットにすると1食441円まで下がるなど、食数によって順位は変わります。2026年10月11〜12日確認時点の計算であり、最新の価格は各公式サイトでご確認ください。",
   },
   {
     question: "送料無料（送料込み）の宅食サービスはどこ？",
     answer:
-      "自社配送で送料がかからないのは、ワタミの宅食・ヨシケイ・コープデリ（夕食宅配）・おうちコープ（夕食宅配マイシィ）です。ツクリオ（旧つくりおき.jp）は表示価格が送料込みです。また、Dr.つるかめキッチンとメディミールは定期便なら送料無料、ウェルネスダイニングは定期の14食・21食で送料無料になります（2026年7月4日確認時点）。",
+      "自社配送で送料がかからないのは、ワタミの宅食・ヨシケイ・コープデリ（夕食宅配）・おうちコープ（夕食宅配マイシィ）です。ツクリオ（旧つくりおき.jp）は表示価格が送料込みです。また、Dr.つるかめキッチンとメディミールは定期便なら送料無料、ウェルネスダイニングは定期の14食・21食で送料無料になります（2026年10月11〜12日確認時点）。",
   },
   {
     question: "定期縛りや解約金がある宅食サービスは？",
@@ -355,7 +355,7 @@ function SubHeading({ children }: { children: React.ReactNode }) {
 export default function TakushokuRyokinHakushoPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-10-11T00:00:00+09:00",
+    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-10-12T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -393,7 +393,7 @@ export default function TakushokuRyokinHakushoPage() {
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
-            <time dateTime="2026-07-04">更新: 2026年7月4日</time>
+            <time dateTime="2026-10-12">更新: 2026年10月12日（全18社を公式で再確認）</time>
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
@@ -416,7 +416,7 @@ export default function TakushokuRyokinHakushoPage() {
         <SectionHeading id="methodology">調査方法（全18社を公式サイトで直接確認）</SectionHeading>
         <ul className="text-sm mb-6 leading-relaxed list-disc list-inside space-y-2">
           <li><strong>調査対象:</strong> 宅配弁当・宅食（冷凍弁当・冷蔵惣菜・夕食宅配・ミールキット）18ブランド</li>
-          <li><strong>確認日:</strong> {VERIFIED_DATE}（本ページの数値は原則この日の公式サイト掲載額・税込。ツクリオ・nosh・ウェルネスダイニングは2026年10月10日に公式で再確認した値＝ツクリオ4人前プランとウェルネスダイニング全コースの値上げ、noshの送料表改訂を反映。Dr.つるかめキッチン・メディミール・FIT FOOD HOMEは2026年10月11日に公式で再確認＝FIT FOOD HOMEの単品価格訂正とメディミール都度21食の送料無料を反映）</li>
+          <li><strong>確認日:</strong> {VERIFIED_DATE}（初回調査は2026年7月4日。本ページの数値は税込で、15社は2026年10月12日、Dr.つるかめキッチン・メディミール・FIT FOOD HOMEの3社は2026年10月11日に公式サイトで再確認した値です。10月の再確認で反映した主な変更＝ワタミの宅食ダイレクトの送料改定（2026年10月1日〜・本州990円）、ウェルネスダイニング全コースとツクリオ4人前プランの値上げ、noshの送料表改訂、ヨシケイのお試し価格の表記変更、FIT FOOD HOMEの単品価格訂正、メディミール都度21食の送料無料。GREEN SPOONの食数別価格など、公式で確定できない値は引き続き「−」です）</li>
           <li><strong>情報源:</strong> 各社公式サイトのみを直接確認。<strong>比較サイト・まとめ記事からの転記は一切していません</strong></li>
           <li><strong>実質単価の計算式:</strong> (代表プランの税込料金＋代表送料)÷食数。送料は各社の代表値（地域別の場合は関東など公式の代表表記）を採用し、送料無料・配達料込みのサービスは0円として計算</li>
           <li><strong>代表プラン:</strong> 各社の基準となる最小〜標準プラン（1回限りのお試し特価は比較対象から除外）</li>
@@ -591,8 +591,8 @@ export default function TakushokuRyokinHakushoPage() {
             ["三ツ星ファーム", "990円（全国一律）", "北海道・沖縄・一部離島 2,500円"],
             ["まごころケア食", "980円（全国一律）", "沖縄・離島 1,480円"],
             ["ライフミール", "980円（沖縄以外）", "沖縄 1,480円"],
-            ["ワタミの宅食ダイレクト", "880円（本州・四国・九州）", "北海道 1,210円／沖縄 2,420円"],
-            ["筋肉食堂DELI", "1,640円（関東・7食）", "沖縄 3,190円〜4,180円"],
+            ["ワタミの宅食ダイレクト", "990円（本州・四国・九州・2026年10月1日改定）", "北海道 1,320円／沖縄 2,420円"],
+            ["筋肉食堂DELI", "1,640円（関東・7食／14食1,780円・21食1,840円）", "沖縄 3,190円〜4,180円（7〜21食）"],
             ["FIT FOOD HOME", "990円（都度）", "北海道 +550円／沖縄 +1,100円"],
           ]}
         />
@@ -650,13 +650,15 @@ export default function TakushokuRyokinHakushoPage() {
             ["メディミール", "お届け7日前までの連絡"],
             ["筋肉食堂DELI", "次回お届け予定日の7日前までにマイページから停止"],
             ["ウェルネスダイニング", "お届け予定日の7日前まで（1回休止はマイページ、複数回休止・解約はフォーム・電話）"],
-            ["ワタミの宅食", "お届け日2日前の17時まで（受付は平日9〜17時）"],
+            ["ワタミの宅食", "前週水曜まではマイページ、以降はお届け日2日前の17時までに電話・スタッフへ（平日9〜17時・WEB不可）"],
             ["ツクリオ", "配達前週の水曜日中までにLINEでキャンセル"],
-            ["コープデリ（夕食宅配）", "前週の火曜19時30分まで（期限後キャンセルは原則不可）"],
+            ["コープデリ（夕食宅配）", "eフレンズでの休止・再開は配達前週の水曜午前2時まで（お届け週のキャンセルは不可・2026年10月9日確認）"],
+            ["おうちコープ（夕食宅配マイシィ）", "コース・数量変更やキャンセルはお届け日前週の水曜20時まで（締切後は不可）"],
+            ["ワタミの宅食ダイレクト（定期）", "注文確定前のみ、お届け予定日の4〜6日前（地域により異なる）までにマイページで"],
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※おうちコープ（夕食宅配マイシィ）の解約期限は公式公開ページで確認できませんでした。ワタミの宅食ダイレクトの通常定期の解約期限も公式FAQから取得できていません。いずれも申込前に各公式サイト・窓口でご確認ください。
+          ※締切は地域・連休で変わることがあります。申込前に各公式サイト・窓口でご確認ください。
         </p>
 
         {/* ===== リブランド情報 ===== */}
@@ -666,7 +668,7 @@ export default function TakushokuRyokinHakushoPage() {
             <strong>「つくりおき.jp」は2026年3月16日に「ツクリオ（Tsuklio）」へ名称変更</strong>されました（運営: Antway社。プレスリリースおよび新旧両公式サイトで確認済み）。本白書では新名称「ツクリオ」で掲載しています。旧名称で検索した場合も同一サービスです。
           </p>
           <p className="text-xs text-warm-gray">
-            このほか、noshの送料表は2026年7月27日改訂版（2026年10月10日確認）、GREEN SPOONの送料は2025年9月改定後の金額を採用しています（いずれも{VERIFIED_DATE}時点の公式掲載）。
+            このほか、noshの送料表は2026年7月27日改訂版、ワタミの宅食ダイレクトの送料は2026年10月1日改定後（本州・四国・九州880円→990円、北海道1,210円→1,320円）、GREEN SPOONの送料は2025年9月改定後の金額を採用しています（いずれも{VERIFIED_DATE}時点の公式掲載）。
           </p>
         </div>
 

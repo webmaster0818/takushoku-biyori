@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-21T00:00:00+09:00",
-    modifiedTime: "2026-10-10T00:00:00+09:00",
+    modifiedTime: "2026-10-12T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -29,7 +29,7 @@ const faqData = [
   {
     question: "ヨシケイはお試しできる？",
     answer:
-      "はい、初めての方限定でお試しキャンペーンがあります。ミールキット（カットミール・プチママ等）は5日間お試しで1食あたり約300円（通常の約半額）。冷凍弁当のシンプルミールも初回半額で1食約170円から試せます。お試し後に自動で定期購入にはならないため、気軽に試すことができます。",
+      "はい、初めての方限定でお試しキャンペーンがあります。ミールキットは「お試し5days」で、おひとり様1食あたり約280〜670円程度（コースにより通常価格の約30〜50%OFF・週や地域で前後・2026年10月12日公式確認）。冷凍弁当のシンプルミールも初回半額で1食約170円から試せます。お試し後に自動で定期購入にはならないため、気軽に試すことができます。",
   },
   {
     question: "ヨシケイの配送エリアは？",
@@ -122,7 +122,7 @@ function SubHeading({ children }: { children: React.ReactNode }) {
 export default function YoshikeiReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-10-10T00:00:00+09:00",
+    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-10-12T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -264,7 +264,7 @@ export default function YoshikeiReviewsPage() {
             { title: "送料完全無料", text: "自社配送のため送料がかかりません。他社の冷凍弁当は送料だけで月2,000〜4,000円かかることを考えると、大きなメリットです。" },
             { title: "献立を考える手間がゼロ", text: "毎週届くメニューブックから選ぶだけ。管理栄養士が栄養バランスを計算済みなので、自分で栄養を気にする必要がありません。" },
             { title: "食材の無駄がゼロ", text: "その日使う分だけ届くため、野菜を腐らせることがありません。一人暮らしの方にとっても嬉しいポイントです。" },
-            { title: "初回お試しが半額", text: "ミールキットは5日間お試しで1食約300円、シンプルミールは初回半額で1食約170円。リスクなしで味を確認できます。" },
+            { title: "初回お試しが割安", text: "ミールキットは5日間お試しで1食約280〜670円程度（コースにより約30〜50%OFF）、シンプルミールは初回半額で1食約170円。リスクなしで味を確認できます。" },
             { title: "冷凍弁当は業界最安クラス", text: "シンプルミールは1食約350円＋送料無料。コンビニ弁当より安く、栄養バランスも優れています。" },
           ].map((item) => (
             <div key={item.title} className="bg-green-50 rounded-lg p-4">
