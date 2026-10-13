@@ -183,3 +183,12 @@ GSC診断(28d 6/3-7/1): クリック2・表示738(前月391→1.9倍)・平均20
 ### 2026-10-12 成長ルーチン: sitemap lastmod
 - `scripts/generate-sitemap.mjs` の lastmod を「ページと参照データの最終コミット日」に変更（全URL 10/07 のまま＝修正済みの三ツ星・ウェルネス口コミ記事が 9/17・9/26 から再クロールされていなかった）。
 - **デプロイ前に必ず `npm run build`（prebuild で sitemap を再生成）**。`npx next build` を直接使う場合は先に `node scripts/generate-sitemap.mjs`。記事を直したらコミットしてから生成すると日付が正しく出る（未コミットは当日扱い）。
+
+### 2026-10-13 P2: 配送業者表記を公式FAQと突合・ライフミール送料・ワタミの宅食 1食価格 ✅本番反映済み（source bed3939・d69b126 / deploy 2e3db7cc・1b8805f1）
+- 根拠（すべて2026-10-13 公式）: nosh /faq/question/5「配送業者はどこか」／三ツ星 Helpfeel「配送業者について」／ウェルネス /faq/kikubari/／まごころ /faq.html・/help/guide.html／食宅便 /shop/pages/faq.aspx・guide_03／マッスルデリ /shop/pages/faq／FFH store.tavenal.com/question-answer／つるかめ /faq／ツクリオ トップ（配送・梱包）／タイヘイ /Page/faq.aspx／わんまいる onemile.jp トップ／DELIPICKS Zendesk API（/api/v2/help_center/ja/articles.json）／ワタミダイレクト /shop/faq／ライフミール l-meal.com/faq・トップ／ワタミの宅食 /category/bento2
+- **配送業者**: 一致＝三ツ星（ヤマト・冷凍庫のみ佐川）・ウェルネス・食宅便（常温の一部のみ佐川/日本郵便）・マッスルデリ・FFH・つるかめ・タイヘイ・わんまいる・DELIPICKS・ツクリオのパワーシール便。**食い違い**＝ワタミの宅食ダイレクト（記事「ヤマト」→佐川急便）・まごころ（「ヤマト」→佐川急便またはヤマト運輸）・nosh（ヤマト・一部地域は佐川・選択不可）・食宅便（okihai表「ヤマト/佐川急便等」）・ツクリオ通常便（「自社配送」→公式は委託の配達パートナー）・一般論「宅配弁当は全部ヤマト」5か所。件数 18→0
+- ついでに直した: まごころの支払い方法（銀行振込・コンビニ払い→公式は口座引き落とし・都度代引き・GMO後払い、コンビニ/銀行振込は対象外）、okihai表のまごころ置き配（お得便7食・対象エリアのみ選択可）、**15社表のリンク切れ公式URL** shoutakubin.com / fitfoodhome.tabeyoukai.com（NXDOMAIN・各19＋1）→ shokutakubin.com / store.tavenal.com
+- **ライフミール送料**: 「本州で1,000円前後」→ 沖縄県以外980円・沖縄県1,480円（ご飯付き+250円）。価格7/10/20食・初回1,900円も一致
+- **ワタミの宅食**: 15社表（19記事）590-680 → 公式 冷蔵7商品の5日間コース 470〜790円（宅配料込み）。watami-reviews の料金表は一致（出典日を10/13に・糖尿病配慮のお惣菜690円を注記。商品名は一覧で画像altのみ＝書かない）
+- 確認不可（据え置き）: オイシックスの配送（Akamai で HTTP/2 切断・ヘッドレスChromeも不可）。まごころ置き配の配送業者は公式に記載なし
+- precheck 全項目OK×2
