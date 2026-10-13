@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-05-28T00:00:00+09:00",
-    modifiedTime: "2026-10-10T00:00:00+09:00",
+    modifiedTime: "2026-10-13T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -232,7 +232,7 @@ export default function MuscleDeliReviewsPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-10-10T00:00:00+09:00",
+    dateModified: "2026-10-13T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -501,7 +501,7 @@ export default function MuscleDeliReviewsPage() {
           {
             num: 3,
             title: "受取の冷凍便対応が必要",
-            text: "ヤマト運輸クール宅急便など冷凍便で届くため、不在時の置き配ができない場合があります。再配達の手間や、まとめ買い時の冷凍庫スペース確保は事前にプランニングが必要です。",
+            text: "ヤマト運輸のクール宅急便で届き、冷凍対応の宅配ボックス以外では受け取れません（公式FAQ・2026年10月13日確認）。不在時は不在連絡票から再配達の依頼が必要です（クール宅急便の保管は不在票の初日を含め3日間）。再配達の手間や、まとめ買い時の冷凍庫スペース確保は事前にプランニングが必要です。",
           },
         ].map((demerit) => (
           <div key={demerit.num} className="flex gap-4 mb-5">

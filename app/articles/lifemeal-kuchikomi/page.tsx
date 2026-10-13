@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-12T00:00:00+09:00",
+    modifiedTime: "2026-10-13T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -149,7 +149,7 @@ function SourcedReview({
 export default function LifemealKuchikomiPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-10-12T00:00:00+09:00",
+    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-10-13T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -198,7 +198,7 @@ export default function LifemealKuchikomiPage() {
           <p className="text-sm leading-relaxed mb-4">ライフミールは、<strong>「1食500円前後の低価格で、栄養バランスの整った冷凍弁当を日常的に続けたい人」</strong>に向いたサービスです。実食レビューでは「冷凍とは思えないクオリティ」「水っぽさは感じなかった」と味も一定の評価を得ています。一方、ボリュームは控えめで、メニューによって好みが分かれるという指摘もあります。「まずい」という強い不満は当サイトが確認した範囲では主流ではありません。</p>
           <div className="grid md:grid-cols-2 gap-4 mb-4 text-sm">
             <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>1食490円台〜の業界最安クラスの価格</li><li>「冷凍とは思えないクオリティ」という実食評価</li><li>冷凍庫無料レンタルなど継続支援の仕組み</li></ul></div>
-            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>ボリュームは腹八分目程度と控えめ</li><li>魚メニューなどで好みが分かれる声</li><li>送料が毎回かかる（地域により変動）</li></ul></div>
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>ボリュームは腹八分目程度と控えめ</li><li>魚メニューなどで好みが分かれる声</li><li>送料が毎回かかる（沖縄県以外980円・沖縄県1,480円）</li></ul></div>
           </div>
           <p className="text-xs text-warm-gray mb-4">※料金・送料・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。</p>
           <a href="https://l-meal.com/" target="_blank" rel="noopener noreferrer sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">ライフミール 公式サイトで最新の料金・初回割引を見る →</a>
@@ -307,13 +307,13 @@ export default function LifemealKuchikomiPage() {
           ]}
         />
         <p className="text-sm mb-4 leading-relaxed">
-          <strong>価格のポイント：</strong>通常価格でも1食490〜520円と、nosh（612円〜・2026年10月10日公式確認）より安く、まごころケア食（394円〜・送料別）に近い最安クラスです。さらに<strong>まとめ買い割引や、累計購入数に応じて単価が下がるクラブ制度</strong>があり、継続すると1食430円台まで下がる設計になっています。送料は別途かかり（本州で1,000円前後・沖縄等は割増の情報あり）、地域・時期で変わるため注文画面で確認してください。
+          <strong>価格のポイント：</strong>通常価格でも1食490〜520円と、nosh（612円〜・2026年10月10日公式確認）より安く、まごころケア食（394円〜・送料別）に近い最安クラスです。さらに<strong>まとめ買い割引や、累計購入数に応じて単価が下がるクラブ制度</strong>があり、継続すると1食430円台まで下がる設計になっています。送料は毎回別途かかり、<strong>沖縄県以外は980円・沖縄県は1,480円</strong>です（ご飯付きセットを含む場合は各+250円＝1,230円／1,730円。公式FAQ・2026年10月13日確認）。
         </p>
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">冷凍庫無料レンタルについて</p>
           <p>ライフミール独自の特典として、10食・20食セットの定期利用者向けに<strong>専用冷凍庫の無料レンタル</strong>があります（クレジットカード払い・月1回以上の継続などの条件あり）。「冷凍庫がいっぱいで宅配弁当を諦めていた」人には大きなメリットですが、解約時の返却送料が自己負担になる場合がある点は事前に確認しましょう。</p>
         </div>
-        <p className="text-xs text-warm-gray mb-6">※上記は2026年7月時点の公開情報に基づく目安です。正確な最新価格・送料・キャンペーンは必ず公式サイトでご確認ください。</p>
+        <p className="text-xs text-warm-gray mb-6">※定期購入の価格（7食3,640円・10食5,100円・20食9,800円・初回10食1,900円）と送料は2026年10月13日に公式サイト・公式FAQで確認しました。キャンペーンは時期により変わるため、最新は公式サイトでご確認ください。</p>
 
         <SectionHeading id="merits">メリット5つ</SectionHeading>
         <div className="space-y-3 mb-6">

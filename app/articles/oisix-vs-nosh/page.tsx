@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-05-28T00:00:00+09:00",
-    modifiedTime: "2026-10-10T00:00:00+09:00",
+    modifiedTime: "2026-10-13T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -157,7 +157,7 @@ export default function OisixVsNoshPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-10-10T00:00:00+09:00",
+    dateModified: "2026-10-13T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -303,7 +303,7 @@ export default function OisixVsNoshPage() {
           headers={["サービス", "配送方法", "送料の目安"]}
           rows={[
             ["オイシックス", "ヤマト運輸クール便（冷蔵+冷凍）+ 自社便（一部エリア）", "通常800円〜1,800円程度（地域・購入金額により変動）"],
-            ["nosh", "ヤマト運輸クール宅急便（冷凍）", "4〜12食で関西1,023円〜北海道1,713円（関東1,166円・2026年7月27日改訂）"],
+            ["nosh", "ヤマト運輸のクール宅配便（冷凍）。一部地域は佐川急便（公式FAQ）", "4〜12食で関西1,023円〜北海道1,713円（関東1,166円・2026年7月27日改訂）"],
           ]}
         />
 
