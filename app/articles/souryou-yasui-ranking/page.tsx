@@ -328,6 +328,8 @@ export default function SouryouYasuiRankingPage() {
           {[
             { href: "/articles/nosh-vs-mitsuboshi-vs-wellness/", label: "nosh・三ツ星ファーム・ウェルネスダイニング 3社比較" },
             { href: "/articles/nosh-reviews/", label: "nosh(ナッシュ)の口コミ・評判" },
+            { href: "/articles/mitsuboshi-farm-reviews/", label: "三ツ星ファームの口コミ・評判" },
+            { href: "/articles/wellness-dining-reviews/", label: "ウェルネスダイニングの口コミ・評判" },
             { href: "/articles/magokoro-care-reviews/", label: "まごころケア食の口コミ・評判" },
             { href: "/articles/tsurukame-reviews/", label: "Dr.つるかめキッチンの口コミ・評判" },
             { href: "/articles/takuhai-vs-conveni/", label: "宅配弁当 vs コンビニ弁当 どっちがお得？" },

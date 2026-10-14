@@ -925,7 +925,7 @@ export default function NoshReviewsPage() {
           >
             【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング
           </Link>
-          の記事で解説しています。
+          の記事で解説しています。各社の口コミは<Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark underline">三ツ星ファームの口コミ・評判</Link>・<Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark underline">ウェルネスダイニングの口コミ・評判</Link>でも出典付きで整理しています。
         </p>
 
         <ComparisonTable
@@ -935,7 +935,7 @@ export default function NoshReviewsPage() {
             ["メニュー数", "100種類以上", "125種類以上", "100種類（お任せ）"],
             ["メニュー選択", "自由に選べる", "自由に選べる", "管理栄養士のお任せ"],
             ["糖質", "30g以下（全メニュー）", "25g以下あり", "15g以下コースあり"],
-            ["アプリ", "あり（高機能）", "あり", "なし"],
+            ["アプリ", "あり（高機能）", "あり", "あり（iOS・配送スキップ等。2026年10月14日確認）"],
             ["解約のしやすさ", "◎（マイページ・4〜5日前まで）", "○（アプリ・LINE・電話・7日前まで）", "○（フォーム・電話・7日前まで）"],
             ["継続割引", "nosh club（最安492円/食）", "長期継続応援プラン（回数約束あり）", "なし（定期14・21食は送料無料）"],
             ["向いている人", "自由度・手軽さ重視", "味・クオリティ重視", "食事制限・高齢者"],

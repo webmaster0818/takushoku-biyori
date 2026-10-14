@@ -514,7 +514,7 @@ export default function MagokoroCareReviewsPage() {
         <p className="text-sm mb-6 leading-relaxed">
           まごころケア食と主要な競合サービスを比較。詳しい比較は
           <Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark underline">【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link>
-          の記事も参考にしてください。
+          の記事も参考にしてください。各社の口コミは<Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark underline">三ツ星ファームの口コミ・評判</Link>・<Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark underline">ウェルネスダイニングの口コミ・評判</Link>で整理しています。
         </p>
 
         <ComparisonTable
@@ -526,7 +526,7 @@ export default function MagokoroCareReviewsPage() {
             ["ボリューム", "約180g", "約250g", "約200〜280g", "約200g"],
             ["メニュー選択", "おまかせ", "自由に選べる", "自由に選べる", "おまかせ"],
             ["送料", "980円", "1,023円〜（地域別）", "990円", "定期14・21食 無料（7食440円）"],
-            ["アプリ", "なし", "あり", "あり", "なし"],
+            ["アプリ", "なし", "あり", "あり", "あり（iOS・配送スキップ等。2026年10月14日確認）"],
             ["冷凍庫レンタル", "あり（無料）", "なし", "あり（条件付）", "なし"],
             ["向いている人", "コスパ最優先", "コスパ・自由度", "味・クオリティ", "食事制限・高齢者"],
           ]}

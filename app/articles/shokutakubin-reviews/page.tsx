@@ -492,7 +492,7 @@ export default function ShokutakubinReviewsPage() {
         <p className="text-sm mb-6 leading-relaxed">
           食宅便と主要な競合サービスを比較。
           <Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark underline">【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link>
-          の記事も参考にしてください。
+          の記事も参考にしてください。制限食で比べるなら<Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark underline">ウェルネスダイニングの口コミ・評判</Link>もあわせてどうぞ。
         </p>
 
         <ComparisonTable

@@ -571,7 +571,7 @@ export default function HitorigurashiOsusumePage() {
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
-          「冷凍弁当でもおいしさは妥協したくない」という方には三ツ星ファーム。プロの料理人が監修したメニューは、「冷凍弁当とは思えない」と口コミで高評価。定期便とは別に1個から買える都度購入もあるので、まずは味を確認してから判断できます（2026年10月9日・公式確認）。
+          「冷凍弁当でもおいしさは妥協したくない」という方には三ツ星ファーム。プロの料理人が監修したメニューは、「冷凍弁当とは思えない」と口コミで高評価。定期便とは別に1個から買える都度購入もあるので、まずは味を確認してから判断できます（2026年10月9日・公式確認）。良い口コミ・悪い口コミと解約条件は<Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark underline">三ツ星ファームの口コミ・評判</Link>で整理しています。
         </p>
 
         <RankingCard
@@ -599,7 +599,7 @@ export default function HitorigurashiOsusumePage() {
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
-          糖尿病・高血圧・腎臓病などで食事制限が必要な一人暮らしの方には、ウェルネスダイニングが最適です。管理栄養士に電話で無料相談できるのは、一人暮らしで食事管理に不安がある方にとって大きな安心感。3社の詳しい比較は<Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark underline">【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link>をご覧ください。
+          糖尿病・高血圧・腎臓病などで食事制限が必要な一人暮らしの方には、ウェルネスダイニングが最適です。管理栄養士に電話で無料相談できるのは、一人暮らしで食事管理に不安がある方にとって大きな安心感。利用者の口コミと全6コースの料金は<Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark underline">ウェルネスダイニングの口コミ・評判</Link>、3社の詳しい比較は<Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark underline">【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link>をご覧ください。
         </p>
 
         <RankingCard
