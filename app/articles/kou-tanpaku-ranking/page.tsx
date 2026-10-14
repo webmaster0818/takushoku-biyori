@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-05-28T00:00:00+09:00",
-    modifiedTime: "2026-10-13T00:00:00+09:00",
+    modifiedTime: "2026-10-14T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -162,11 +162,11 @@ const rankingItems = [
     rank: 1,
     name: "マッスルデリ(Muscle Deli)",
     url: "https://muscledeli.jp/",
-    protein: "30〜50g以上(プラン別)",
+    protein: "20〜50g以上(プラン別)",
     price: "高め",
     score: 5,
     summary: "ボディメイク特化型。LEAN/MAINTAIN/GAIN/LOW CARBの4プランで目的別にPFCを最適化。タンパク質量・栄養設計の精度では他社を圧倒する。",
-    pros: ["1食タンパク質30g以上を安定確保", "目的別4プランで減量・増量・糖質制限に対応", "メイン肉料理が満足感高い"],
+    pros: ["LEAN・MAINTAIN・GAINはタンパク質30g以上（LOW CARBは20g以上）", "目的別4プランで減量・増量・糖質制限に対応", "メイン肉料理が満足感高い"],
     cons: ["1食単価が高め", "冷凍庫スペースを取る"],
     target: "本気でボディメイクするトレーニー / モデル / 俳優",
     reviewLink: "/articles/muscle-deli-reviews/",
@@ -188,7 +188,7 @@ const rankingItems = [
     rank: 3,
     name: "FIT FOOD HOME",
     url: "https://store.tavenal.com/",
-    protein: "20〜35g",
+    protein: "18〜28g（主菜の中央50%）",
     price: "中〜高",
     score: 4,
     summary: "管理栄養士監修。プロテインタイプ・低糖質タイプなど目的別メニューがあり、健康志向の高タンパク食として支持される。",
@@ -213,7 +213,7 @@ const rankingItems = [
     rank: 5,
     name: "nosh(ナッシュ)",
     url: "https://nosh.jp/",
-    protein: "15〜25g",
+    protein: "14〜20g（主菜の中央50%）",
     price: "低〜中(1食612円〜)",
     score: 4,
     summary: "コスパと自由度のバランスが最高。タンパク質量はマッスルデリほどではないが、価格が約半額で続けやすい。",
@@ -257,7 +257,7 @@ export default function KouTanpakuRankingPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-10-13T00:00:00+09:00",
+    dateModified: "2026-10-14T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -403,16 +403,16 @@ export default function KouTanpakuRankingPage() {
         <ComparisonTable
           headers={["サービス", "タンパク質(1食)", "糖質(1食)", "1食価格", "PFCプラン分け"]}
           rows={[
-            ["マッスルデリ", "30〜50g以上", "15〜75g(プラン別)", "高め", "目的別4プラン"],
+            ["マッスルデリ", "20〜50g以上(プラン別)", "15〜75g以下(プラン別)", "高め", "目的別4プラン"],
             ["筋肉食堂DELI", "平均31.8〜42.3g", "平均12.2〜60.4g(コース別)", "994〜1,480円＋送料", "目的別3コース"],
-            ["FIT FOOD HOME", "20〜35g", "20〜40g", "中〜高", "目的別あり"],
+            ["FIT FOOD HOME", "18〜28g", "16〜27g", "中〜高", "目的別あり"],
             ["サポートミール", "意識した設計", "9.5〜12g", "828〜883円", "セット制"],
-            ["nosh", "15〜25g", "30g以下", "612〜719円", "自由選択"],
+            ["nosh", "14〜20g", "30g以下", "612〜719円", "自由選択"],
             ["三ツ星ファーム", "15g以上（一部除く）", "25g以下（一部除く）", "711〜927円", "自由選択"],
             ["ワンミール", "20〜30g", "20〜30g", "770〜840円", "バランス型"],
           ]}
         />
-        <p className="text-xs text-warm-gray mb-6">※2026年5月時点の公開情報。栄養成分・価格はメニューにより変動。最新情報は各公式サイトでご確認ください。</p>
+        <p className="text-xs text-warm-gray mb-6">※2026年5月時点の公開情報（マッスルデリ・nosh・FIT FOOD HOMEのタンパク質・糖質は2026年10月14日に公式で再確認＝マッスルデリは4プランの基準値、nosh・FIT FOOD HOMEは公式メニュー一覧の主菜の中央50%の範囲。noshの糖質は公式基準）。栄養成分・価格はメニューにより変動。最新情報は各公式サイトでご確認ください。</p>
 
         <SectionHeading id="howto-choose">目的別の選び方ガイド</SectionHeading>
 
