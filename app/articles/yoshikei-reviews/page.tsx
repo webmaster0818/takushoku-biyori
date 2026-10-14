@@ -215,10 +215,12 @@ export default function YoshikeiReviewsPage() {
         <p className="text-sm mb-6 leading-relaxed">シンプルミールは3食1セットで販売される冷凍弁当です。3食セット1,290円（1食430円・税込）で、<strong>初回10セットまで半額（1食約215円）</strong>で試せます（2026年10月12日・公式確認）。電子レンジ約4分で完成し、配達料は原則無料（一部地域を除く）。ただし対応エリアが限定されており、メニューは日替わりで自分で選ぶことはできません。noshのように自由にメニューを選びたい方には不向きですが、コスパの良さは業界トップクラスです。</p>
 
         <SectionHeading id="good-reviews">良い口コミ・評判</SectionHeading>
+        <p className="text-sm mb-2 leading-relaxed">オリコン顧客満足度ランキングの利用者コメント、App Storeの公式アプリレビュー、第三者メディアの実食・SNS調査（いずれも2026年10月14日確認）から、多い意見をテーマ別に整理しました。口コミ本文の創作や、当サイトが独自に聞き取った声ではありません。</p>
+        <p className="text-xs text-gray-500 mb-6 leading-relaxed">参考にした媒体: <a href="https://life.oricon.co.jp/rank-food-delivery/meal-kit/kinki/company/yoshikei-dvlp/" target="_blank" rel="noopener noreferrer nofollow" className="underline">オリコン顧客満足度ランキング ヨシケイ（ミールキット 近畿・調査2,381人・コメント18件）</a>／<a href="https://apps.apple.com/jp/app/id867325589" target="_blank" rel="noopener noreferrer nofollow" className="underline">App Store「ヨシケイ」公式アプリ（評価4.45・12,789件）</a>／<a href="https://exidea.co.jp/blog/meal/home-meal/yoshikei/" target="_blank" rel="noopener noreferrer nofollow" className="underline">HonNe（カットミール5日間の実食・2026年10月2日更新）</a>／<a href="https://moov.ooo/article/5fb0f0e1304fca656c6206ef" target="_blank" rel="noopener noreferrer nofollow" className="underline">Moovoo（X投稿501件の分析・2023年）</a>／<a href="https://moov.ooo/article/60e7a7c396675a483c8fc974" target="_blank" rel="noopener noreferrer nofollow" className="underline">Moovoo（5日間のお試しレビュー・2023年）</a>。みん評は当サイトから閲覧できず、引用していません。</p>
         {[
-          { title: "献立を考えなくて済む", reviews: ["「毎日の献立を考えるストレスから解放された。これだけでもヨシケイを使う価値がある」（30代女性）", "「レシピ通りに作れば20分で完成。料理の腕も上がった気がする」（40代女性）", "「夫に『最近ご飯美味しいね』と言われた。ヨシケイのレシピのおかげ」（30代女性）"] },
-          { title: "送料無料で経済的", reviews: ["「毎日届くのに送料無料は本当にありがたい。他のサービスだと送料だけで月2,000〜3,000円かかる」（40代男性）", "「スーパーに行く回数が減り、無駄な買い物が減った。結果的に食費が下がった」（30代女性）"] },
-          { title: "食材の無駄が出ない", reviews: ["「必要な分だけ届くから、野菜を腐らせることがなくなった」（20代女性）", "「一人暮らしでも2人分を注文して翌日のお弁当にできるのが良い」（30代男性）"] },
+          { title: "献立を考えなくて済む", reviews: ["オリコンの利用者コメントに「献立を考えなくてよい。買い物に行かなくて良い。」「献立に悩まなくてよいので助かっています」という声があります。", "MoovooのX投稿の分析では「7割程度が「買い物の手間が省けた」「献立を考えなくてすむのは便利」」。App Storeのレビューにも「献立を考えることが苦痛なので、それをやってくれて」という声があります。"] },
+          { title: "余計な買い物が減る（配達料は無料）", reviews: ["App Storeのレビューに「余分な買い物してしまう事がなくなり、経済的」、Moovooの分析にも「買いすぎや食べ過ぎを防げる」という声があります。食材の配達料はかかりません（公式FAQ）。", "一方で、オリコンの利用者コメントやMoovooの分析には「割高」と感じる声もあります。"] },
+          { title: "食材の無駄が出ない", reviews: ["オリコンの利用者コメントに「食材の無駄が減った。」「食材のロスがなくなった」という声があります。", "Moovooが紹介したX投稿にも「その日使う分だけ届くから食材が溜まらない、余らない」という声があります。"] },
         ].map((cat) => (
           <div key={cat.title} className="mb-6">
             <SubHeading>{cat.title}</SubHeading>
@@ -228,9 +230,8 @@ export default function YoshikeiReviewsPage() {
 
         <SectionHeading id="bad-reviews">悪い口コミ・評判</SectionHeading>
         {[
-          { title: "カット野菜の消費期限が短い", reviews: ["「カットミールの野菜は届いた当日に使わないとダメ。急な予定変更に対応しにくい」（30代女性）", "「配達日＋2日程度の消費期限。冷凍弁当の長期保存には敵わない」（40代男性）"] },
-          { title: "調理の手間はゼロではない", reviews: ["「カットミールでも10分はかかる。完全に調理不要がいいならnoshのほうが楽」（20代男性）", "「プチママは野菜を切る必要があるので、疲れた日はそれすら面倒に感じる」（30代女性）"] },
-          { title: "配送時間帯が選べない", reviews: ["「日中にしか届かないので、共働きだと受け取りが難しい。保冷ボックスで留め置きできるけど、夏場は少し不安」（30代男性）"] },
+          { title: "調理の手間はゼロではない", reviews: ["カットミールを5日間実食したHonNeは「意外と包丁が必要」とし、紹介したX投稿にも「全部カットされてるわけじゃない衝撃」という声があります。", "App Storeのレビューにも「表示されている時間内に作れた事がなく」という声があります。"] },
+          { title: "配送時間帯が選べない", reviews: ["HonNeは「時間指定や再配達ができません」とし、オートロックの建物で「受け取りに苦労しました」と書いています。App Storeのレビューにも「難点は夜配達がない事」という声があります。", "一方、5日間試したMoovooの筆者は、無料の鍵付きボックスで「留守でも夕食までにちゃんと受け取ることが可能」としています。"] },
         ].map((cat) => (
           <div key={cat.title} className="mb-6">
             <SubHeading>{cat.title}</SubHeading>
