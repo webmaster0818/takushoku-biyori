@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-05-28T00:00:00+09:00",
-    modifiedTime: "2026-10-13T00:00:00+09:00",
+    modifiedTime: "2026-10-15T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -157,7 +157,7 @@ export default function OisixVsNoshPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-10-13T00:00:00+09:00",
+    dateModified: "2026-10-15T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -302,7 +302,7 @@ export default function OisixVsNoshPage() {
         <ComparisonTable
           headers={["サービス", "配送方法", "送料の目安"]}
           rows={[
-            ["オイシックス", "ヤマト運輸クール便（冷蔵+冷凍）+ 自社便（一部エリア）", "通常800円〜1,800円程度（地域・購入金額により変動）"],
+            ["オイシックス", "主にヤマト運輸。産直おとりよせ市場・おいトクの一部商品は佐川急便の場合あり（公式FAQ・2026年10月15日確認）", "注文金額（税抜）と地域で変動：定期会員以外は本州0〜1,600円（8,000円以上で0円）・沖縄最大2,400円／定期会員は本州0〜1,200円（6,500円以上で0円）。冷凍品は別途冷凍手数料（2026年6月18日改定・公式FAQ）"],
             ["nosh", "ヤマト運輸のクール宅配便（冷凍）。一部地域は佐川急便（公式FAQ）", "4〜12食で関西1,023円〜北海道1,713円（関東1,166円・2026年7月27日改訂）"],
           ]}
         />
