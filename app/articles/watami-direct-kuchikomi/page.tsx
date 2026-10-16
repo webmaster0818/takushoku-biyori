@@ -710,7 +710,7 @@ export default function WatamiDirectKuchikomiPage() {
           {
             num: 1,
             title: "送料が毎回かかる（990円〜）",
-            text: "1注文あたり本州・四国・九州990円、北海道1,320円、沖縄2,420円（税込・2026年10月1日改定）の送料がかかります。10食注文なら1食あたり99円の上乗せです。他社と比べる際は送料込みで計算しましょう。",
+            text: "1注文あたり本州・四国・九州990円、北海道1,320円、沖縄2,420円（税込・2026年10月1日改定）の送料がかかります。10食注文なら1食あたり99円の上乗せです。他社と比べる際は、送料込みで計算することをおすすめします。",
           },
           {
             num: 2,
@@ -788,7 +788,7 @@ export default function WatamiDirectKuchikomiPage() {
             ワタミの宅食ダイレクトは、<strong>「低価格帯」「塩分・カロリー配慮」「全国配送・冷凍ストック」</strong>を兼ね備えた冷凍おかずセットです。公開レビューでは「塩分管理食とは思えないしっかり味」「味・コスパが良い」という評価が目立ち、味そのものへの酷評は少数派でした。
           </p>
           <p className="text-sm leading-relaxed mb-4">
-            「まずい」という口コミは、温めムラと三菜コースの量の物足りなさに分解でき、追加加熱・五菜の選択・ご飯の用意でおおむね対処可能です。一方、<strong>送料990円〜が毎回かかる点は事実</strong>なので、実質単価は送料込みで比較しましょう。
+            「まずい」という口コミは、温めムラと三菜コースの量の物足りなさに分解でき、追加加熱・五菜の選択・ご飯の用意でおおむね対処可能です。一方、<strong>送料990円〜が毎回かかる点は事実</strong>なので、実質単価は送料込みで比較することをおすすめします。
           </p>
           <p className="text-sm leading-relaxed">
             1回限りのお試し割（いつでも三菜10食3,900円・1食390円）から始めて、味と量が自分に合うか確かめるのが失敗しない始め方です。
@@ -850,7 +850,7 @@ export default function WatamiDirectKuchikomiPage() {
             </li>
             <li>
               <Link href="/articles/nosh-vs-watami/" className="text-accent hover:text-accent-dark transition-colors">
-                nosh（ナッシュ）とワタミの宅食を徹底比較
+                nosh（ナッシュ）とワタミの宅食を比較
               </Link>
             </li>
             <li>

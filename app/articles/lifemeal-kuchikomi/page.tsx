@@ -311,7 +311,7 @@ export default function LifemealKuchikomiPage() {
         </p>
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">冷凍庫無料レンタルについて</p>
-          <p>ライフミール独自の特典として、10食・20食セットの定期利用者向けに<strong>専用冷凍庫の無料レンタル</strong>があります（クレジットカード払い・月1回以上の継続などの条件あり）。「冷凍庫がいっぱいで宅配弁当を諦めていた」人には大きなメリットですが、解約時の返却送料が自己負担になる場合がある点は事前に確認しましょう。</p>
+          <p>ライフミール独自の特典として、10食・20食セットの定期利用者向けに<strong>専用冷凍庫の無料レンタル</strong>があります（クレジットカード払い・月1回以上の継続などの条件あり）。「冷凍庫がいっぱいで宅配弁当を諦めていた」人には大きなメリットですが、解約時の返却送料が自己負担になる場合がある点は事前にご確認ください。</p>
         </div>
         <p className="text-xs text-warm-gray mb-6">※定期購入の価格（7食3,640円・10食5,100円・20食9,800円・初回10食1,900円）と送料は2026年10月13日に公式サイト・公式FAQで確認しました。キャンペーンは時期により変わるため、最新は公式サイトでご確認ください。</p>
 
@@ -334,9 +334,9 @@ export default function LifemealKuchikomiPage() {
         <SectionHeading id="demerits">デメリット3つ</SectionHeading>
         <div className="space-y-3 mb-6">
           {[
-            { title: "ボリュームは控えめ", text: "実食レビューでも「腹八分目」「男性には物足りない」という評価が一致しています。がっつり食べたい方はご飯・汁物を足すか、ボリューム系のサービスを検討しましょう。" },
+            { title: "ボリュームは控えめ", text: "実食レビューでも「腹八分目」「男性には物足りない」という評価が一致しています。がっつり食べたい方はご飯・汁物を足すか、ボリューム系のサービスをご検討ください。" },
             { title: "送料が毎回かかる", text: "送料は無料ではなく、注文のたびにかかります。1食単価が安くても送料込みの実質単価で比較することが重要です。20食セットでまとめ買いすると1食あたりの送料負担を最小化できます。" },
-            { title: "メニューは日替わり系で選択の自由度が低め", text: "noshのように1食ずつ自由に選ぶスタイルではなく、セット中心の構成です。苦手な食材が多い方は、メニュー内容を事前に公式サイトで確認してから注文しましょう。" },
+            { title: "メニューは日替わり系で選択の自由度が低め", text: "noshのように1食ずつ自由に選ぶスタイルではなく、セット中心の構成です。苦手な食材が多い方は、メニュー内容を事前に公式サイトで確認してから注文することをおすすめします。" },
           ].map((item) => (
             <div key={item.title} className="bg-red-50 rounded-lg p-4">
               <p className="font-bold text-sm mb-1">{item.title}</p>
@@ -421,7 +421,7 @@ export default function LifemealKuchikomiPage() {
             <li><Link href="/articles/chef-mutenka-tsukurioki-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">シェフの無添つくりおきの口コミ・評判は？まずいって本当？</Link></li>
             <li><Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】nosh(ナッシュ)の口コミ・評判を徹底調査</Link></li>
             <li><Link href="/articles/1shoku-200yen-dai/" className="text-accent hover:text-accent-dark transition-colors">1食200円台で買える宅配弁当はある？</Link></li>
-            <li><Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark transition-colors">実質単価で比較！宅配弁当のコスパ徹底比較</Link></li>
+            <li><Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark transition-colors">実質単価で比較！宅配弁当のコスパ比較</Link></li>
             <li><Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark transition-colors">【2026年】一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5</Link></li>
           </ul>
         </div>

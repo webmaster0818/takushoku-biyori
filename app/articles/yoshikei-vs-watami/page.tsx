@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "ヨシケイ vs ワタミの宅食 徹底比較【2026年版】料金・宅配方式・向いている人";
+  "ヨシケイ vs ワタミの宅食 比較【2026年版】料金・宅配方式・向いている人";
 const ARTICLE_DESCRIPTION =
   "ヨシケイとワタミの宅食を、宅配方式・メニュータイプ・向いている人の観点で比較します。ミールキット中心のヨシケイと、おかず宅配のワタミの宅食、どちらが自分に合うかを整理します。料金・キャンペーンは変動するため、最新は各公式サイトでご確認ください。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/yoshikei-vs-watami/";
@@ -390,7 +390,7 @@ export default function YoshikeiVsWatamiPage() {
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">料金は時期・地域で変動します</p>
-          <p>当サイトでは正確性を優先し、価格を断定しません。<strong>最新・正確な料金は各公式サイトの表示</strong>でご確認ください。同じ「宅食」でも、調理の有無によって手間や満足ポイントが異なる点も踏まえて比較しましょう。</p>
+          <p>当サイトでは正確性を優先し、価格を断定しません。<strong>最新・正確な料金は各公式サイトの表示</strong>でご確認ください。同じ「宅食」でも、調理の有無によって手間や満足ポイントが異なる点も踏まえて比較することをおすすめします。</p>
         </div>
 
         {/* ===== 向いている人 ===== */}
@@ -414,7 +414,7 @@ export default function YoshikeiVsWatamiPage() {
 
         <SubHeading>注意したい人</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          調理する時間がまったく取れない人にはヨシケイのミールキット系は負担になることがあります。逆に、自炊が好きで作る楽しみを大事にしたい人には、調理済みおかず中心のワタミの宅食は物足りなく感じる場合があります。どちらも<strong>対応地域が限られる</strong>ことがあるため、まずは自宅が配送エリアかを確認しましょう。
+          調理する時間がまったく取れない人にはヨシケイのミールキット系は負担になることがあります。逆に、自炊が好きで作る楽しみを大事にしたい人には、調理済みおかず中心のワタミの宅食は物足りなく感じる場合があります。どちらも<strong>対応地域が限られる</strong>ことがあるため、まずは自宅が配送エリアかをご確認ください。
         </p>
 
         {/* ===== 選び方 ===== */}

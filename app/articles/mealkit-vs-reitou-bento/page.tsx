@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "ミールキット vs 冷凍弁当 徹底比較【2026年版】調理の手間・日持ち・価格感・栄養で選ぶ";
+  "ミールキット vs 冷凍弁当 比較【2026年版】調理の手間・日持ち・価格感・栄養で選ぶ";
 const ARTICLE_DESCRIPTION =
   "ミールキットと冷凍弁当の違いを、調理の手間・日持ち・価格感・栄養・向いている人の観点でフラットに比較します。どちらが自分のライフスタイルに合うかを整理します。料金・キャンペーンは変動するため、最新は各公式サイトでご確認ください。";
 const ARTICLE_URL =
@@ -498,7 +498,7 @@ export default function MealkitVsReitouBentoPage() {
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
           <p className="font-bold mb-2">関連記事</p>
           <Link href="/articles/yoshikei-vs-watami/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
-            ヨシケイ vs ワタミの宅食 徹底比較
+            ヨシケイ vs ワタミの宅食 比較
           </Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/super-vs-takuhai-reitou-bento/" className="text-accent hover:text-accent-dark underline font-medium text-sm">

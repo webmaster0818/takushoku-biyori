@@ -856,7 +856,7 @@ export default function YushokuNetKuchikomiPage() {
             </li>
             <li>
               <Link href="/articles/yoshikei-vs-watami/" className="text-accent hover:text-accent-dark transition-colors">
-                ヨシケイとワタミの宅食を徹底比較
+                ヨシケイとワタミの宅食を比較
               </Link>
             </li>
             <li>

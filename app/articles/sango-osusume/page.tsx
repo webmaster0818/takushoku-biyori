@@ -48,7 +48,7 @@ const faqData = [
   {
     question: "産後ダイエットに宅配弁当は使えますか？",
     answer:
-      "産後6ヶ月以降で授乳が安定している方なら、宅配弁当を使った緩やかなダイエットは可能です。ただし、産後すぐ（産褥期〜産後3ヶ月）は体の回復と母乳生産が最優先です。この時期に過度なカロリー制限をすると母乳の質や量に影響する可能性があります。産後ダイエットを始める場合は、nosh（糖質30g以下）で緩やかな糖質制限から始め、1日の摂取カロリーを1,800kcal以下に落とさないようにしましょう。授乳中は通常より+350kcal必要です。",
+      "産後6ヶ月以降で授乳が安定している方なら、宅配弁当を使った緩やかなダイエットは可能です。ただし、産後すぐ（産褥期〜産後3ヶ月）は体の回復と母乳生産が最優先です。この時期に過度なカロリー制限をすると母乳の質や量に影響する可能性があります。産後ダイエットを始める場合は、nosh（糖質30g以下）で緩やかな糖質制限から始め、1日の摂取カロリーを1,800kcal以下に落とさないようにしてください。授乳中は通常より+350kcal必要です。",
   },
   {
     question: "夫婦で利用する場合、どのプランがお得ですか？",
@@ -239,7 +239,7 @@ export default function SangoOsusumePage() {
             産褥期（産後6〜8週間）は体の回復期間です。この時期に無理をすると産後うつや体調不良のリスクが高まります。宅配弁当なら、管理栄養士が設計した栄養バランスの食事がレンジ5分で準備完了します。赤ちゃんのお世話に集中できます。
           </p>
           <p>
-            この記事では、<strong>産後のママにおすすめの宅配弁当5社を栄養バランス・添加物・価格で徹底比較</strong>し、ランキングTOP5を紹介します。<strong>授乳中の必要栄養素</strong>や<strong>上の子も一緒に食べられるサービス</strong>、<strong>出産前のストック方法</strong>まで、産後の食事の悩みをまるごと解決します。
+            この記事では、<strong>産後のママにおすすめの宅配弁当5社を栄養バランス・添加物・価格で比較</strong>し、ランキングTOP5を紹介します。<strong>授乳中の必要栄養素</strong>や<strong>上の子も一緒に食べられるサービス</strong>、<strong>出産前のストック方法</strong>まで、産後の食事の悩みをまるごと解決します。
           </p>
         </div>
 
@@ -297,7 +297,7 @@ export default function SangoOsusumePage() {
 
         {[
           { num: 1, title: "栄養バランス（たんぱく質・鉄分・カルシウムの充実度）", text: "授乳中のママは1日のたんぱく質70g以上、鉄分10.5mg、カルシウム650mgが推奨されています。宅配弁当1食でたんぱく質15〜25gをカバーできれば、残りの食事と合わせて必要量を満たしやすくなります。nosh（平均20g）、三ツ星ファーム（15g以上）はたんぱく質が豊富です。鉄分・カルシウムはサプリメントで補うのが現実的ですが、食宅便やウェルネスダイニングはミネラルバランスも考慮した設計です。" },
-          { num: 2, title: "添加物の少なさ（授乳中の安心感）", text: "医学的には、宅配弁当に含まれる食品添加物が母乳を通じて赤ちゃんに悪影響を与えるという科学的根拠はありません。しかし、「できるだけ添加物を避けたい」というママの気持ちは大切です。わんまいるは国産食材100%をうたっています。気になる方は各サービスの原材料表示を確認しましょう。" },
+          { num: 2, title: "添加物の少なさ（授乳中の安心感）", text: "医学的には、宅配弁当に含まれる食品添加物が母乳を通じて赤ちゃんに悪影響を与えるという科学的根拠はありません。しかし、「できるだけ添加物を避けたい」というママの気持ちは大切です。わんまいるは国産食材100%をうたっています。気になる方は各サービスの原材料表示をご確認ください。" },
           { num: 3, title: "注文・受け取りの手軽さ（赤ちゃんを抱えて玄関に出る負担）", text: "産後のママにとって宅配の受け取りは意外と大変です。赤ちゃんを抱えて玄関に出たり、授乳中にインターホンが鳴ったりすることもあります。冷凍宅配弁当はクール便（多くはヤマト運輸。まごころケア食は佐川急便またはヤマト運輸）で届き、日時指定可能です。土日の午前中に指定してパパに受け取ってもらうのが最も楽です。ヨシケイは玄関前に保冷箱で置き配してくれるため、受け取りの負担がゼロです。" },
           { num: 4, title: "家族での利用しやすさ（パパ・上の子も食べられるか）", text: "産後は「ママの分だけ」でなく「家族全員の食事」が問題になります。noshの20食プランなら夫婦で10日分、三ツ星ファームの21食プランなら家族3人で7日分。上の子（2歳以上）にはハンバーグや魚の煮付けなど、辛くないメニューを選べばシェア可能です。1つのサービスで家族全員の食事をカバーできれば、最も効率的です。" },
         ].map((point) => (
@@ -635,7 +635,7 @@ export default function SangoOsusumePage() {
           </Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
-            【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング
+            【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング
           </Link>
         </div>
 
@@ -654,7 +654,7 @@ export default function SangoOsusumePage() {
           <ul className="space-y-2 text-sm">
             <li><Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】nosh(ナッシュ)の口コミ・評判を徹底調査</Link></li>
             <li><Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】三ツ星ファームの口コミ・評判を徹底調査</Link></li>
-            <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link></li>
+            <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link></li>
             <li><Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark transition-colors">一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5</Link></li>
             <li><Link href="/articles/diet-osusume/" className="text-accent hover:text-accent-dark transition-colors">ダイエット向け宅配弁当おすすめランキングTOP5</Link></li>
             <li><Link href="/articles/mamano-kyushoku-reviews/" className="text-accent hover:text-accent-dark transition-colors">ママの休食の口コミ・評判は？産後・授乳期向け冷凍宅配を中立検証</Link></li>

@@ -626,7 +626,7 @@ export default function WellnessDiningReviewsPage() {
 
         <p className="text-sm mb-6 leading-relaxed">
           ウェルネスダイニングと主要な競合サービスを簡単に比較します。より詳しい比較は
-          <Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark underline">【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link>
+          <Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark underline">【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link>
           の記事で解説しています。
         </p>
 
@@ -717,14 +717,14 @@ export default function WellnessDiningReviewsPage() {
             一方、食事制限が不要な方、メニューの自由度や味のインパクトを求める方は、noshや三ツ星ファームの方が満足度は高いでしょう。
           </p>
           <p className="text-sm leading-relaxed">
-            まずは<strong>初回送料無料のお試し注文</strong>で7食セットを体験してみるのがおすすめです。味や量に納得できたら、14食以上の定期購入に切り替えて送料無料の恩恵を最大限活用しましょう。
+            まずは<strong>初回送料無料のお試し注文</strong>で7食セットを体験してみるのがおすすめです。味や量に納得できた場合は、14食以上の定期購入に切り替えると送料無料の対象になります。
           </p>
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
           <p className="font-bold mb-2">関連記事</p>
           <Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
-            【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング
+            【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング
           </Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
@@ -749,7 +749,7 @@ export default function WellnessDiningReviewsPage() {
         <div className="mt-10 bg-cream rounded-xl p-6">
           <p className="font-bold text-sm mb-3">関連記事</p>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link></li>
+            <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link></li>
             <li><Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】nosh(ナッシュ)の口コミ・評判を徹底調査</Link></li>
             <li><Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】三ツ星ファームの口コミ・評判を徹底調査</Link></li>
             <li><Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark transition-colors">【2026年】一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5</Link></li>

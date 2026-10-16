@@ -374,7 +374,7 @@ export default function Shoku200YenDaiPage() {
         <SectionHeading id="ochiiri">安さだけで選ぶときの落とし穴</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          価格の数字だけで飛びつくと、あとで「思っていたのと違う」となりがちです。激安価格帯ほど、次の3つの落とし穴に注意しましょう。
+          価格の数字だけで飛びつくと、あとで「思っていたのと違う」となりがちです。激安価格帯ほど、次の3つの落とし穴にご注意ください。
         </p>
 
         <SubHeading>落とし穴1：送料で実質単価が跳ね上がる</SubHeading>
@@ -394,7 +394,7 @@ export default function Shoku200YenDaiPage() {
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">価格・送料・割引は変動します</p>
-          <p>当サイトでは正確性を優先し、具体的な金額・送料・割引額は断定しません。<strong>最新・正確な情報は各公式サイトの表示</strong>でご確認ください。「安い」は一時的なキャンペーンによる場合もあるため、継続したときの実質単価まで見て判断しましょう。</p>
+          <p>当サイトでは正確性を優先し、具体的な金額・送料・割引額は断定しません。<strong>最新・正確な情報は各公式サイトの表示</strong>でご確認ください。「安い」は一時的なキャンペーンによる場合もあるため、継続したときの実質単価まで含めて判断することをおすすめします。</p>
         </div>
 
         {/* ===== 探し方 ===== */}

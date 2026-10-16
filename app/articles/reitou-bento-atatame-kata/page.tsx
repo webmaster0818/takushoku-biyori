@@ -309,7 +309,7 @@ export default function ReitouBentoAtatameKataPage() {
 
         <SubHeading>ステップ4: 推奨ワット数・時間で加熱</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          ラベルに書かれた自分の電子レンジのワット数の指示時間で加熱します。タイマーをセットしたら、途中で扉を開けたりせず最後まで通しで加熱しましょう。
+          ラベルに書かれた自分の電子レンジのワット数の指示時間で加熱します。タイマーをセットしたら、途中で扉を開けたりせず最後まで通しで加熱してください。
         </p>
 
         <SubHeading>ステップ5: 加熱後に30秒〜1分蒸らす</SubHeading>
@@ -397,7 +397,7 @@ export default function ReitouBentoAtatameKataPage() {
 
         <SubHeading>コツ1: ラベル記載のワット数と時間を守る</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          最も基本かつ最も大事なポイントです。「500Wで6分」と書かれていたら、600Wで5分などの自己流アレンジはせず、まずは指示通りに加熱しましょう。
+          最も基本かつ最も大事なポイントです。「500Wで6分」と書かれていたら、600Wで5分などの自己流アレンジはせず、まずは指示通りに加熱してください。
         </p>
 
         <SubHeading>コツ2: 容器の置き位置を工夫</SubHeading>

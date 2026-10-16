@@ -408,7 +408,7 @@ export default function NoshCouponPage() {
           {
             num: 1,
             title: "nosh公式サイト（nosh.jp）にアクセス",
-            text: "ブラウザで「nosh 公式」と検索するか、当ページのCTAボタンから直接遷移します。「nosh.jp」のドメインであることを確認しましょう。",
+            text: "ブラウザで「nosh 公式」と検索するか、当ページのCTAボタンから直接遷移します。「nosh.jp」のドメインであることをご確認ください。",
           },
           {
             num: 2,

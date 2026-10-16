@@ -147,7 +147,7 @@ export default function Home() {
                   比較記事
                 </span>
                 <h3 className="text-lg md:text-xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors leading-snug">
-                  【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング
+                  【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-4">
                   価格・味・メニュー数・栄養・目的別コース・キャンペーン・継続しやすさの7項目で比較しています。
@@ -517,7 +517,7 @@ export default function Home() {
                   比較記事
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
-                  コープデリ vs パルシステム 徹底比較
+                  コープデリ vs パルシステム 比較
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
                   料金・配送エリア・安全基準・品揃え・離乳食など7項目で比較しています。

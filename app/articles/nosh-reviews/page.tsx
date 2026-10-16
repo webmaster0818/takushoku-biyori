@@ -923,7 +923,7 @@ export default function NoshReviewsPage() {
             href="/articles/nosh-vs-mitsuboshi-vs-wellness/"
             className="text-accent hover:text-accent-dark underline"
           >
-            【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング
+            【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング
           </Link>
           の記事で解説しています。各社の口コミは<Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark underline">三ツ星ファームの口コミ・評判</Link>・<Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark underline">ウェルネスダイニングの口コミ・評判</Link>でも出典付きで整理しています。
         </p>
@@ -1027,7 +1027,7 @@ export default function NoshReviewsPage() {
             href="/articles/nosh-vs-mitsuboshi-vs-wellness/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
           >
-            【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング
+            【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング
           </Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link
@@ -1073,7 +1073,7 @@ export default function NoshReviewsPage() {
           <ul className="space-y-2 text-sm">
             <li>
               <Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">
-                【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング
+                【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング
               </Link>
             </li>
             <li>
@@ -1117,7 +1117,7 @@ export default function NoshReviewsPage() {
               </Link>
             </li>
             <li><Link href="/articles/nosh-ryoukin-souryou/" className="text-accent hover:text-accent-dark transition-colors">nosh（ナッシュ）の料金・送料の仕組みをわかりやすく解説</Link></li>
-            <li><Link href="/articles/oisix-vs-nosh/" className="text-accent hover:text-accent-dark transition-colors">オイシックス vs nosh(ナッシュ)徹底比較｜ミールキットと冷凍弁当はどっちが向いている？</Link></li>
+            <li><Link href="/articles/oisix-vs-nosh/" className="text-accent hover:text-accent-dark transition-colors">オイシックス vs nosh(ナッシュ)比較｜ミールキットと冷凍弁当はどっちが向いている？</Link></li>
           </ul>
         </div>
 

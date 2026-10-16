@@ -420,7 +420,7 @@ export default function DietOsusumePage() {
             最近の宅配弁当は管理栄養士がカロリー・糖質・塩分を計算して設計しているため、メニューを選ぶだけで自動的にカロリーコントロールが可能です。面倒な栄養計算や食材の買い出しは一切不要で、レンジで温めるだけの手軽さです。
           </p>
           <p>
-            この記事では、<strong>ダイエットに最適な宅配弁当5社を糖質量・カロリー・価格で徹底比較</strong>し、おすすめランキングTOP5を紹介します。さらに<strong>置き換えダイエットの成功のコツ</strong>や<strong>目的別（糖質制限・脂質制限・筋トレ）のおすすめメニュー</strong>まで、ダイエット宅食選びに必要な情報をすべてまとめました。
+            この記事では、<strong>ダイエットに最適な宅配弁当5社を糖質量・カロリー・価格で比較</strong>し、おすすめランキングTOP5を紹介します。さらに<strong>置き換えダイエットの成功のコツ</strong>や<strong>目的別（糖質制限・脂質制限・筋トレ）のおすすめメニュー</strong>まで、ダイエット宅食選びに必要な情報をすべてまとめました。
           </p>
         </div>
 
@@ -495,7 +495,7 @@ export default function DietOsusumePage() {
           {
             num: 4,
             title: "継続コスト（3ヶ月以上続けられる価格か）",
-            text: "ダイエットは最低3ヶ月は続ける必要があります。週5回利用した場合の月額は、nosh（10食×2回・関東送料込み）約14,700円、三ツ星ファーム約19,900円、まごころケア食約9,254円です（21食・お得便・送料980円込み）。この金額を3ヶ月以上無理なく払えるかを確認しましょう。nosh clubは累計購入数に応じて割引ランクが上がるため、続けるほど1食単価が下がります。",
+            text: "ダイエットは最低3ヶ月は続ける必要があります。週5回利用した場合の月額は、nosh（10食×2回・関東送料込み）約14,700円、三ツ星ファーム約19,900円、まごころケア食約9,254円です（21食・お得便・送料980円込み）。この金額を3ヶ月以上無理なく払えるかをご確認ください。nosh clubは累計購入数に応じて割引ランクが上がるため、続けるほど1食単価が下がります。",
           },
         ].map((point) => (
           <div key={point.num} className="flex gap-4 mb-5">
@@ -854,7 +854,7 @@ export default function DietOsusumePage() {
             href="/articles/nosh-vs-mitsuboshi-vs-wellness/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
           >
-            【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング
+            【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング
           </Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link
@@ -896,7 +896,7 @@ export default function DietOsusumePage() {
             </li>
             <li>
               <Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">
-                【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング
+                【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング
               </Link>
             </li>
             <li>

@@ -805,7 +805,7 @@ export default function OuchiCoopKuchikomiPage() {
             </li>
             <li>
               <Link href="/articles/coopdeli-vs-palsystem/" className="text-accent hover:text-accent-dark transition-colors">
-                コープデリとパルシステムの違いを徹底比較
+                コープデリとパルシステムの違いを比較
               </Link>
             </li>
             <li>

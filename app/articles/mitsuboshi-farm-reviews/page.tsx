@@ -521,7 +521,7 @@ export default function MitsuboshiFarmReviewsPage() {
               "宅食グルメの記事は、家族3人で14食を食べたうえで、継続を見送った理由も記載しています。",
             ],
             comment:
-              "通常の定期便は1食711円〜927円で、2回目以降は毎回送料990円がかかります。noshの通常価格（1食612円〜）より高めです。費用を抑えるなら21食コース（送料込みで1食約758円）か、回数の約束がある長期継続応援プラン（21食で1食約603円）が選択肢ですが、長期継続応援プランは6回未満で解約すると7,700円の手数料がかかる点に注意しましょう。",
+              "通常の定期便は1食711円〜927円で、2回目以降は毎回送料990円がかかります。noshの通常価格（1食612円〜）より高めです。費用を抑えるなら21食コース（送料込みで1食約758円）か、回数の約束がある長期継続応援プラン（21食で1食約603円）が選択肢ですが、長期継続応援プランは6回未満で解約すると7,700円の手数料がかかる点にご注意ください。",
           },
           {
             title: "量が少ないと感じる（おかずのみ）",
@@ -894,7 +894,7 @@ export default function MitsuboshiFarmReviewsPage() {
             href="/articles/nosh-vs-mitsuboshi-vs-wellness/"
             className="text-accent hover:text-accent-dark underline"
           >
-            【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング
+            【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング
           </Link>
           の記事で解説しています。
         </p>
@@ -1015,7 +1015,7 @@ export default function MitsuboshiFarmReviewsPage() {
           </p>
           <p className="text-sm leading-relaxed">
             始めるなら、<strong>初回送料無料の14食・21食コース（通常の定期便）</strong>
-            で味と量を確かめ、合えば長期継続応援プランへ切り替える順番が安全です。定期便に抵抗がある人は、1個から買える都度購入で数品試す方法もあります。初回分はキャンセルできないので、注文前にメニューと食数を確認しましょう。
+            で味と量を確かめ、合えば長期継続応援プランへ切り替える順番が安全です。定期便に抵抗がある人は、1個から買える都度購入で数品試す方法もあります。初回分はキャンセルできないので、注文前にメニューと食数をご確認ください。
           </p>
         </div>
 
@@ -1025,7 +1025,7 @@ export default function MitsuboshiFarmReviewsPage() {
             href="/articles/nosh-vs-mitsuboshi-vs-wellness/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
           >
-            【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング
+            【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング
           </Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link
@@ -1067,7 +1067,7 @@ export default function MitsuboshiFarmReviewsPage() {
                 href="/articles/nosh-vs-mitsuboshi-vs-wellness/"
                 className="text-accent hover:text-accent-dark transition-colors"
               >
-                【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング
+                【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング
               </Link>
             </li>
             <li>

@@ -79,7 +79,7 @@ function Breadcrumbs() {
 function TableOfContents() {
   const sections = [
     { id: "overview", label: "コープデリ・パルシステムとは？基本情報" },
-    { id: "comparison", label: "7項目で徹底比較" },
+    { id: "comparison", label: "7項目で比較" },
     { id: "price", label: "料金・手数料を詳しく比較" },
     { id: "safety", label: "安全基準の違い" },
     { id: "baby", label: "離乳食・子育て向けサービスの比較" },
@@ -291,7 +291,7 @@ export default function CoopdeliVsPalsystemPage() {
         </p>
 
         {/* ===== 7項目比較 ===== */}
-        <SectionHeading id="comparison">7項目で徹底比較</SectionHeading>
+        <SectionHeading id="comparison">7項目で比較</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
           コープデリとパルシステムを選ぶ上で重要な7つの項目を比較します。どちらが自分に合っているか、この表を見れば一目瞭然です。
@@ -483,7 +483,7 @@ export default function CoopdeliVsPalsystemPage() {
         <div className="bg-cream rounded-xl p-5 mb-6">
           <p className="font-bold text-sm mb-2">迷ったらお試しセットで比較がおすすめ</p>
           <p className="text-sm text-foreground/80 leading-relaxed">
-            コープデリ・パルシステムともにお試しセットや加入特典を用意しています。どちらも出資金は退会時に返金されるため、実際に試してみてから決めるのが一番確実です。併用も可能なので、最初は両方使ってみて、自分に合うほうに絞るという方法もあります。
+            コープデリ・パルシステムともにお試しセットや加入特典を用意しています。どちらも出資金は退会時に返金されるため、お試しセットなどで利用してみてから決めると確実です。併用も可能なので、最初は両方使ってみて、自分に合うほうに絞るという方法もあります。
           </p>
         </div>
 

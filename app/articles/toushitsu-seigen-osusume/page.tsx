@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "【2026年最新】糖質制限におすすめの宅配弁当ランキングTOP5｜低糖質・糖質オフの宅食を徹底比較";
+  "【2026年最新】糖質制限におすすめの宅配弁当ランキングTOP5｜低糖質・糖質オフの宅食を比較";
 const ARTICLE_DESCRIPTION =
   "糖質制限におすすめの宅配弁当を公式情報と出典付きの口コミで比較します。nosh・食宅便・ウェルネスダイニングなど人気5社を糖質量・価格・味で比較し、ランキングTOP5を紹介します。糖質制限のレベル別おすすめ、1日の糖質量の目安、ケトジェニック向けメニューまで解説します。";
 const ARTICLE_URL =
@@ -47,7 +47,7 @@ const faqData = [
   {
     question: "糖尿病で糖質制限が必要な場合、宅配弁当は使えますか？",
     answer:
-      "はい、糖尿病の食事管理に宅配弁当は非常に有効です。ウェルネスダイニングの糖質＆カロリー制限食（糖質15g以下）やDr.つるかめキッチンの糖尿病食は、医師・管理栄養士が監修しており安心です。食宅便の低糖質セレクト（糖質10g以下）は最も厳密な糖質管理が可能です。ただし、糖尿病の食事管理は個人差が大きいため、必ずかかりつけ医や管理栄養士の指導のもとで利用しましょう。インスリン使用中の方は特に注意が必要です。",
+      "はい、糖尿病の食事管理に宅配弁当は非常に有効です。ウェルネスダイニングの糖質＆カロリー制限食（糖質15g以下）やDr.つるかめキッチンの糖尿病食は、医師・管理栄養士が監修しており安心です。食宅便の低糖質セレクト（糖質10g以下）は最も厳密な糖質管理が可能です。ただし、糖尿病の食事管理は個人差が大きいため、必ずかかりつけ医や管理栄養士の指導のもとでご利用ください。インスリン使用中の方は特に注意が必要です。",
   },
   {
     question: "糖質制限の宅配弁当にご飯は付けるべきですか？",
@@ -238,7 +238,7 @@ export default function ToushitsuSeigenOsusumePage() {
             糖質制限の最大のハードルは「何を食べればいいかわからない」ことです。宅配弁当なら管理栄養士が糖質量を計算済みなので、メニューを選んで食べるだけで糖質制限が完了します。自分で計算・調理する必要は一切ありません。
           </p>
           <p>
-            この記事では、<strong>糖質制限に対応した宅配弁当5社を糖質量・味・価格で徹底比較</strong>し、おすすめランキングTOP5を紹介します。<strong>糖質制限のレベル別（ロカボ・スタンダード・ケトジェニック）のおすすめ</strong>や<strong>1日の食事プラン例</strong>まで、糖質制限を宅配弁当で成功させるための情報を網羅しました。
+            この記事では、<strong>糖質制限に対応した宅配弁当5社を糖質量・味・価格で比較</strong>し、おすすめランキングTOP5を紹介します。<strong>糖質制限のレベル別（ロカボ・スタンダード・ケトジェニック）のおすすめ</strong>や<strong>1日の食事プラン例</strong>まで、糖質制限を宅配弁当で成功させるための情報を網羅しました。
           </p>
         </div>
 
@@ -291,9 +291,9 @@ export default function ToushitsuSeigenOsusumePage() {
 
         {[
           { num: 1, title: "1食あたりの糖質量（自分の制限レベルに合っているか）", text: "宅配弁当の糖質量は、nosh（30g以下）、三ツ星ファーム（25g以下）、ウェルネスダイニング（15g以下）、食宅便の低糖質セレクト（10g以下）と大きく異なります。ロカボ（緩やかな糖質制限）ならnoshで対応できます。スタンダード糖質制限なら三ツ星ファームかウェルネスダイニングが適しています。ケトジェニック（スーパー糖質制限）なら食宅便の低糖質セレクトが適しています。自分の糖質制限レベルに合った糖質量のサービスを選ぶことが最も重要です。" },
-          { num: 2, title: "たんぱく質量（糖質を減らした分、たんぱく質で補えるか）", text: "糖質制限では、糖質を減らした分のカロリーをたんぱく質と脂質で補う必要があります。1食あたりたんぱく質15g以上を確保することをおすすめします。nosh（平均20g）、三ツ星ファーム（15g以上）は十分です。食宅便の低糖質セレクトは糖質10g以下のストイックさですが、たんぱく質は約15gで合格ラインです。ウェルネスダイニングは約15gとバランス型です。たんぱく質が不足すると筋肉量が減るため、必ずチェックしましょう。" },
+          { num: 2, title: "たんぱく質量（糖質を減らした分、たんぱく質で補えるか）", text: "糖質制限では、糖質を減らした分のカロリーをたんぱく質と脂質で補う必要があります。1食あたりたんぱく質15g以上を確保することをおすすめします。nosh（平均20g）、三ツ星ファーム（15g以上）は十分です。食宅便の低糖質セレクトは糖質10g以下のストイックさですが、たんぱく質は約15gで合格ラインです。ウェルネスダイニングは約15gとバランス型です。たんぱく質が不足すると筋肉量が減るため、必ずご確認ください。" },
           { num: 3, title: "メニューの豊富さ（糖質制限でも飽きずに続けられるか）", text: "糖質制限の挫折理由で最も多いのは「飽きる」ことです。毎日サラダチキンとゆで卵では続きません。noshは100種類以上（低糖質スイーツ含む）、三ツ星ファームは125種類以上（2026年10月9日・公式確認）、食宅便は160種類以上とメニューが豊富です。毎週新メニューが追加されるnoshは、長期の糖質制限でも飽きにくい点が特長です。低糖質のドーナツやロールケーキがあるのも、甘いもの好きの方には嬉しいポイントです。" },
-          { num: 4, title: "価格（糖質制限は長期戦。続けられるコストか）", text: "糖質制限は最低3ヶ月、理想的には6ヶ月以上続けて初めて効果が定着します。1食あたりnosh 612円〜（12食・2026年10月10日・公式確認）、食宅便 740円（低糖質セレクト7食・2026年10月12日・公式確認）、まごころケア食 394円〜（21食・お得便・送料980円別）。週5回利用で月額は9,254円（まごころケア食・送料込み）〜18,360円です（食宅便 低糖質セレクト7食×3回・定期送料込み）。3ヶ月で約2.8〜5.5万円。この金額を無理なく続けられるか確認しましょう。nosh clubは累計購入数に応じた割引で、最高ランク（累計280食）なら12食で1食492円まで下がります。" },
+          { num: 4, title: "価格（糖質制限は長期戦。続けられるコストか）", text: "糖質制限は最低3ヶ月、理想的には6ヶ月以上続けて初めて効果が定着します。1食あたりnosh 612円〜（12食・2026年10月10日・公式確認）、食宅便 740円（低糖質セレクト7食・2026年10月12日・公式確認）、まごころケア食 394円〜（21食・お得便・送料980円別）。週5回利用で月額は9,254円（まごころケア食・送料込み）〜18,360円です（食宅便 低糖質セレクト7食×3回・定期送料込み）。3ヶ月で約2.8〜5.5万円。この金額を無理なく続けられるかをご確認ください。nosh clubは累計購入数に応じた割引で、最高ランク（累計280食）なら12食で1食492円まで下がります。" },
         ].map((point) => (
           <div key={point.num} className="flex gap-4 mb-5">
             <span className="flex-shrink-0 w-8 h-8 bg-accent text-white rounded-full flex items-center justify-center text-sm font-bold">{point.num}</span>
@@ -660,7 +660,7 @@ export default function ToushitsuSeigenOsusumePage() {
           </Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
-            【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング
+            【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング
           </Link>
         </div>
 
@@ -681,7 +681,7 @@ export default function ToushitsuSeigenOsusumePage() {
             <li><Link href="/articles/shokutakubin-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】食宅便の口コミ・評判を徹底調査</Link></li>
             <li><Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】ウェルネスダイニングの口コミ・評判を徹底調査</Link></li>
             <li><Link href="/articles/diet-osusume/" className="text-accent hover:text-accent-dark transition-colors">ダイエット向け宅配弁当おすすめランキングTOP5</Link></li>
-            <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link></li>
+            <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link></li>
             <li><Link href="/articles/goodeli-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">goodeli(グーデリ)とは？料金・送料・GOFOODとの違い</Link></li>
             <li><Link href="/articles/rizap-supportmeal-reviews/" className="text-accent hover:text-accent-dark transition-colors">ライザップ サポートミールの口コミ・評判</Link></li>
           </ul>

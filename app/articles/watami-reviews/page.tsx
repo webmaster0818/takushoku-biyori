@@ -412,8 +412,8 @@ export default function WatamiReviewsPage() {
             { href: "/articles/koureisha-osusume/", label: "高齢者向け宅配弁当おすすめランキング" },
             { href: "/articles/souryou-yasui-ranking/", label: "送料が安い宅配弁当ランキング" },
             { href: "/articles/yoshikei-reviews/", label: "ヨシケイの口コミ・評判" },
-            { href: "/articles/nosh-vs-watami/", label: "nosh（ナッシュ）とワタミの宅食を徹底比較" },
-            { href: "/articles/yoshikei-vs-watami/", label: "ヨシケイとワタミの宅食を徹底比較" },
+            { href: "/articles/nosh-vs-watami/", label: "nosh（ナッシュ）とワタミの宅食を比較" },
+            { href: "/articles/yoshikei-vs-watami/", label: "ヨシケイとワタミの宅食を比較" },
             { href: "/articles/takushoku-ryokin-hakusho/", label: "実質単価で比較！宅配弁当のコスパ" },
           ].map((link) => (
             <div key={link.href}><Link href={link.href} className="text-accent hover:text-accent-dark text-sm transition-colors">→ {link.label}</Link></div>

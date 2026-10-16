@@ -386,7 +386,7 @@ export default function NoshRyoukinSouryouPage() {
 
         <SubHeading>1食単価だけでなく「送料込みの総額」で見る</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          送料は1食単価とは別にかかるため、<strong>実際の負担は「商品代金＋送料」の総額</strong>で考える必要があります。とくに少ない食数だと、1食あたりに占める送料の割合が相対的に大きくなりやすい点には注意しましょう。
+          送料は1食単価とは別にかかるため、<strong>実際の負担は「商品代金＋送料」の総額</strong>で考える必要があります。とくに少ない食数だと、1食あたりに占める送料の割合が相対的に大きくなりやすい点にご注意ください。
         </p>
 
         <ul className="text-sm space-y-2 mb-6 list-disc list-inside leading-relaxed">
@@ -432,7 +432,7 @@ export default function NoshRyoukinSouryouPage() {
         <SectionHeading id="hikaku">総額で比較するときのチェックポイント</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          noshの料金を他サービスや他プランと比べるときは、<strong>1食単価という一点だけでなく、総額で見る</strong>ことが選び方のポイントです。次のポイントを公式サイトで確認しながら比較しましょう。
+          noshの料金を他サービスや他プランと比べるときは、<strong>1食単価という一点だけでなく、総額で見る</strong>ことが選び方のポイントです。次のポイントを公式サイトで確認しながら比較することをおすすめします。
         </p>
 
         <ComparisonTable

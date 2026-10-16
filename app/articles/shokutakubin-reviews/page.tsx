@@ -475,7 +475,7 @@ export default function ShokutakubinReviewsPage() {
 
         <p className="text-sm mb-6 leading-relaxed">
           食宅便と主要な競合サービスを比較します。
-          <Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark underline">【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link>
+          <Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark underline">【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link>
           の記事も参考にしてください。制限食で比べるなら<Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark underline">ウェルネスダイニングの口コミ・評判</Link>もあわせてご覧ください。
         </p>
 
@@ -592,10 +592,10 @@ export default function ShokutakubinReviewsPage() {
           <ul className="space-y-2 text-sm">
             <li><Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】nosh(ナッシュ)の口コミ・評判を徹底調査</Link></li>
             <li><Link href="/articles/magokoro-care-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】まごころケア食の口コミ・評判を徹底調査</Link></li>
-            <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link></li>
+            <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link></li>
             <li><Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark transition-colors">【2026年】一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5</Link></li>
             <li><Link href="/articles/koureisha-osusume/" className="text-accent hover:text-accent-dark transition-colors">高齢者におすすめの宅配弁当・宅食ランキング</Link></li>
-            <li><Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark transition-colors">実質単価で比較！宅配弁当のコスパ徹底比較</Link></li>
+            <li><Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark transition-colors">実質単価で比較！宅配弁当のコスパ比較</Link></li>
             <li><Link href="/articles/souryou-yasui-ranking/" className="text-accent hover:text-accent-dark transition-colors">送料が安い宅配弁当ランキング</Link></li>
             <li><Link href="/articles/lifemeal-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">ライフミールの口コミ・評判は？まずいって本当？</Link></li>
             <li><Link href="/articles/chef-mutenka-tsukurioki-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">シェフの無添つくりおきの口コミ・評判は？まずいって本当？</Link></li>

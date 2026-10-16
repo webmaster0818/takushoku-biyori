@@ -391,7 +391,7 @@ export default function WatamiDirectOtameshiPage() {
         {[
           { num: 1, title: "1食あたりの量はやや少なめ", text: "三菜の熱量は約150〜220kcal、五菜でも約300〜400kcal程度と、ボリューム重視の男性には物足りない可能性があります。ご飯や汁物の追加が前提と考えるのが現実的です。" },
           { num: 2, title: "メニュー選択の自由度はnoshより低い", text: "noshのような100種類以上から好きに選ぶスタイルではなく、コース制+おまかせ/選べるという構造です。「好きな主菜だけ選びたい」ニーズには合いません。" },
-          { num: 3, title: "送料込みの実質単価は地域差あり", text: "本州は安いものの、北海道・沖縄は送料が高くなる可能性があります。1食360〜499円の安さに惹かれて注文しても、送料込みだと割高になるケースもあるので必ず総額を確認しましょう。" },
+          { num: 3, title: "送料込みの実質単価は地域差あり", text: "本州は安いものの、北海道・沖縄は送料が高くなる可能性があります。1食360〜499円の安さに惹かれて注文しても、送料込みだと割高になるケースもあるので必ず総額をご確認ください。" },
         ].map((demerit) => (
           <div key={demerit.num} className="flex gap-4 mb-5">
             <span className="flex-shrink-0 w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center text-sm font-bold">{demerit.num}</span>

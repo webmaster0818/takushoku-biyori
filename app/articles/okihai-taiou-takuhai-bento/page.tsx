@@ -50,7 +50,7 @@ const faqData = [
   {
     question: "再配達の依頼方法は？",
     answer:
-      "ヤマト運輸を利用するサービスの場合、不在票に記載されたQRコードまたはURL、もしくはクロネコメンバーズのアプリ・サイトから再配達を依頼できます。電話での再配達依頼も可能です。再配達の指定は当日中の早めの時間帯が望ましいですが、最長で再配達期限（通常7日間）まで対応しています。期限を過ぎると差出人に返送されてしまうため注意しましょう。",
+      "ヤマト運輸を利用するサービスの場合、不在票に記載されたQRコードまたはURL、もしくはクロネコメンバーズのアプリ・サイトから再配達を依頼できます。電話での再配達依頼も可能です。再配達の指定は当日中の早めの時間帯が望ましいですが、最長で再配達期限（通常7日間）まで対応しています。期限を過ぎると差出人に返送されてしまうためご注意ください。",
   },
 ];
 
@@ -344,7 +344,7 @@ export default function OkihaiTaiouTakuhaiBentoPage() {
 
         <SubHeading>方法5: 配送スキップを活用する</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          長期不在（出張・旅行など）の場合は、次回配送のスキップ機能を活用しましょう。多くのサービスでは「次回配送○日前まで」がスキップの締切となっています。詳しくは<Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark underline">一人暮らしにおすすめの宅食ランキング</Link>でも解説しています。
+          長期不在（出張・旅行など）の場合は、次回配送のスキップ機能をご活用ください。多くのサービスでは「次回配送○日前まで」がスキップの締切となっています。詳しくは<Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark underline">一人暮らしにおすすめの宅食ランキング</Link>でも解説しています。
         </p>
 
         <SectionHeading id="delivery-box">宅配ボックス・指定場所配達の活用</SectionHeading>

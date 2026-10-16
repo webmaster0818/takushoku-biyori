@@ -3,7 +3,7 @@ import Link from "next/link";
 import { HakushoUnitPriceTable } from "@/components/HakushoUnitPriceTable";
 
 const ARTICLE_TITLE =
-  "【2026年最新】高齢者向け宅配弁当おすすめランキングTOP5｜やわらか食・制限食も徹底比較";
+  "【2026年最新】高齢者向け宅配弁当おすすめランキングTOP5｜やわらか食・制限食も比較";
 const ARTICLE_DESCRIPTION =
   "高齢者におすすめの宅配弁当を公式情報と出典付きの口コミで比較します。やわらか食・塩分制限・たんぱく調整・ムース食対応の宅食サービスTOP5を紹介します。離れて暮らすご家族からの注文方法、介護食との違い、見守りサービスまで、シニアの宅食選びに必要な情報を網羅しています。";
 const ARTICLE_URL =
@@ -283,7 +283,7 @@ export default function KoureishaOsusumePage() {
             最近の宅配弁当は、やわらか食・ムース食・塩分制限・たんぱく調整など、高齢者特有のニーズに細かく対応しています。管理栄養士が設計した栄養バランスの取れた食事が、レンジで温めるだけで毎日食べられます。
           </p>
           <p>
-            この記事では、<strong>高齢者向け宅配弁当5社をやわらか食対応・制限食・価格で徹底比較</strong>し、おすすめランキングTOP5を紹介します。さらに<strong>離れて暮らすご家族からの注文方法</strong>や<strong>介護保険の活用法</strong>まで、シニアの宅食選びに必要な情報をすべてまとめました。
+            この記事では、<strong>高齢者向け宅配弁当5社をやわらか食対応・制限食・価格で比較</strong>し、おすすめランキングTOP5を紹介します。さらに<strong>離れて暮らすご家族からの注文方法</strong>や<strong>介護保険の活用法</strong>まで、シニアの宅食選びに必要な情報をすべてまとめました。
           </p>
         </div>
 
@@ -342,8 +342,8 @@ export default function KoureishaOsusumePage() {
         {[
           { num: 1, title: "食事制限への対応（塩分・糖質・たんぱく質）", text: "高血圧なら塩分2.0g以下、糖尿病なら糖質制限食、腎臓病ならたんぱく質調整食が必要です。ウェルネスダイニングは気配り宅配食の6コース（別シリーズにやわらか宅配食）、まごころケア食は6つのコースで幅広い制限食に対応しています。まずはかかりつけ医に「どの栄養素を制限すべきか」を確認し、対応するコースがあるサービスを選びましょう。" },
           { num: 2, title: "やわらかさのレベル（通常→やわらか→ムース）", text: "噛む力・飲み込む力に合わせて選ぶことが重要です。ウェルネスダイニングの「やわらか宅配食」は3段階（ほどよくやわらか・かなりやわらか・ムースやわらか）から選べます（2026年10月10日・公式確認）。食宅便の「やわらかい食事」は歯ぐきでつぶせるレベルです。まごころケア食の「ムース食」は舌でつぶせるレベルです。迷ったらウェルネスダイニングの管理栄養士に相談するのがおすすめです。" },
-          { num: 3, title: "価格と送料（年金生活でも続けられるか）", text: "高齢者の宅配弁当は長期利用が前提です。月額1万円〜1.5万円が無理のない目安です。まごころケア食は1食394円〜（21食・お得便）＋送料980円で、月21食なら約9,254円と最も経済的です（2026年10月12日・公式確認）。ウェルネスダイニングは定期注文の14食・21食なら送料無料、7食は440円です（都度注文は880円・北海道・沖縄1,870円）（2026年10月10日・公式確認）。年金収入で毎月続けられる価格かを必ず確認しましょう。" },
-          { num: 4, title: "注文方法の簡単さ（電話注文対応があるか）", text: "高齢者本人が注文する場合、スマホやPCの操作が難しいケースがあります。ウェルネスダイニングとまごころケア食は電話注文に対応しており、オペレーターと話しながら注文できます。食宅便もカタログからの電話注文が可能です。ご家族が代わりに注文する場合はWeb注文で問題ありませんが、本人が注文する場合は電話対応の有無を確認しましょう。" },
+          { num: 3, title: "価格と送料（年金生活でも続けられるか）", text: "高齢者の宅配弁当は長期利用が前提です。月額1万円〜1.5万円が無理のない目安です。まごころケア食は1食394円〜（21食・お得便）＋送料980円で、月21食なら約9,254円と最も経済的です（2026年10月12日・公式確認）。ウェルネスダイニングは定期注文の14食・21食なら送料無料、7食は440円です（都度注文は880円・北海道・沖縄1,870円）（2026年10月10日・公式確認）。年金収入で毎月続けられる価格かを必ずご確認ください。" },
+          { num: 4, title: "注文方法の簡単さ（電話注文対応があるか）", text: "高齢者本人が注文する場合、スマホやPCの操作が難しいケースがあります。ウェルネスダイニングとまごころケア食は電話注文に対応しており、オペレーターと話しながら注文できます。食宅便もカタログからの電話注文が可能です。ご家族が代わりに注文する場合はWeb注文で問題ありませんが、本人が注文する場合は電話対応の有無をご確認ください。" },
           { num: 5, title: "味付けの優しさ（塩分控えめでも美味しいか）", text: "高齢者向けの宅配弁当は塩分を控えめにする必要がありますが、味が薄すぎると食欲が落ちて低栄養を招きます。ウェルネスダイニングは出汁や香辛料を活用して減塩でも美味しさを保つ工夫がされており、「薄味だけど美味しい」と高齢者の利用者から好評です。まごころケア食も家庭的な優しい味付けで「毎日食べても飽きない」と評価されています。" },
         ].map((point) => (
           <div key={point.num} className="flex gap-4 mb-5">
@@ -691,7 +691,7 @@ export default function KoureishaOsusumePage() {
           </Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
-            【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング
+            【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング
           </Link>
         </div>
 
@@ -711,7 +711,7 @@ export default function KoureishaOsusumePage() {
             <li><Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】ウェルネスダイニングの口コミ・評判を徹底調査</Link></li>
             <li><Link href="/articles/magokoro-care-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】まごころケア食の口コミ・評判を徹底調査</Link></li>
             <li><Link href="/articles/shokutakubin-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】食宅便の口コミ・評判を徹底調査</Link></li>
-            <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link></li>
+            <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link></li>
             <li><Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark transition-colors">一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5</Link></li>
             <li><Link href="/articles/coopdeli-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">コープ（生協）の宅配弁当の口コミ｜コープデリ夕食宅配は冷蔵で平日毎日お届け</Link></li>
             <li><Link href="/articles/takuhai-cook123-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">宅配クック123の料金・配達料・安否確認｜1食から頼める高齢者向け宅配弁当</Link></li>

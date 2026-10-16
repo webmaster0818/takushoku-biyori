@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "オイシックス vs nosh(ナッシュ)徹底比較｜ミールキットと冷凍弁当はどっちが向いている？";
+  "オイシックス vs nosh(ナッシュ)比較｜ミールキットと冷凍弁当はどっちが向いている？";
 const ARTICLE_DESCRIPTION =
   "オイシックス（Oisix）とnosh(ナッシュ)を料金・送料・調理時間・栄養・ライフスタイル適性で比較します。ミールキット型と冷凍弁当型のサービス特性の違いを整理し、独身・夫婦・子育て世帯それぞれにおすすめの選び方を解説します。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/oisix-vs-nosh/";
@@ -71,7 +71,7 @@ function TableOfContents() {
   const sections = [
     { id: "summary-top", label: "「料理する派」はオイシックス、「時短派」はnosh" },
     { id: "service-type", label: "サービスタイプの根本的違い" },
-    { id: "price", label: "料金・送料を徹底比較" },
+    { id: "price", label: "料金・送料を比較" },
     { id: "time", label: "調理時間・手間の比較" },
     { id: "nutrition", label: "栄養・健康志向の比較" },
     { id: "menu", label: "メニュー数・バリエーション" },
@@ -215,7 +215,7 @@ export default function OisixVsNoshPage() {
             「オイシックスとnoshって、どっちがいいの？」——どちらも有名な宅食サービスですが、実は<strong>サービスタイプが根本的に違います</strong>。同じ「食材を届けてくれる」サービスでも、オイシックスは<strong>ミールキット（生鮮食材+レシピ）</strong>、noshは<strong>冷凍弁当（温めるだけ）</strong>。
           </p>
           <p className="mb-3">
-            この記事では、両者を料金・調理時間・栄養・ライフスタイル適性の4つの軸で徹底比較します。一人暮らし・共働き夫婦・子育て世帯ごとに、どちらが自分に合うかを判断できる情報を整理しました。
+            この記事では、両者を料金・調理時間・栄養・ライフスタイル適性の4つの軸で比較します。一人暮らし・共働き夫婦・子育て世帯ごとに、どちらが自分に合うかを判断できる情報を整理しました。
           </p>
           <p>
             <strong>「料理する派」はオイシックス、「時短重視派」はnosh、両方を併用する方法もあります</strong>。読み終わるころには、自分の生活パターンにフィットするサービスがはっきり見えるはずです。
@@ -283,7 +283,7 @@ export default function OisixVsNoshPage() {
         </div>
 
         {/* ===== 料金 ===== */}
-        <SectionHeading id="price">料金・送料を徹底比較</SectionHeading>
+        <SectionHeading id="price">料金・送料を比較</SectionHeading>
 
         <SubHeading>1食あたりの料金（参考レンジ）</SubHeading>
         <ComparisonTable
