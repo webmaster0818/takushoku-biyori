@@ -259,3 +259,4 @@ GSC診断(28d 6/3-7/1): クリック2・表示738(前月391→1.9倍)・平均20
 - out/ の自前 0（引用9・名詞2のみ残存）。アフィリエイト href/src（felmat 84）は修正前ビルドと完全一致・本番とも一致（3ページで確認）。precheck 全項目OK
 - **wip/remove-onemeal-1017 との関係**: 衝突行（15社表脚注19行・kou-tanpaku:7 description・sitemap 23-24）には該当語がなく**未変更**。git merge-tree で main+今回 と wip の衝突は修正前と同じ21ハンクのみ（増えていない）。解消方法は 10/16 ログのとおり
 - 残し（範囲外・一般的な接続表現）: 「多いですが」×2（magokoro・mealkit）、「望ましいですが」（okihai）
+- 本番確認: mealkit-vs-reitou-bento・okihai-taiou-takuhai-bento・toushitsu-seigen-osusume・kou-tanpaku-ranking で新文言（push から約30分＝他サイト並行ビルドで CF が遅延）。copy-audit --n 40 = 〜いです 0・NG 2件（めっちゃ・マジで＝いずれも口コミ引用）
