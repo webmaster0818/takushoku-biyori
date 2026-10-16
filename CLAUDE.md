@@ -268,3 +268,7 @@ GSC診断(28d 6/3-7/1): クリック2・表示738(前月391→1.9倍)・平均20
 - 対象外（引用）: wellness-dining-reviews 出典の HonNe 記事名「…徹底検証！」。本番 copy-audit --n 40 の残り3件（徹底検証・めっちゃ・マジで）はすべて出典付き引用
 - アフィリエイト（felmat 84件・20ページ）は修正前 deploy と完全一致。precheck 全項目OK、heading-lint 既存1件のみ
 - **wip/remove-onemeal-1017**: merge-tree の衝突は修正前と同じ21ハンク（ファイル別件数も一致）。変更行は衝突ブロックに入っていない。⚠️ kou-tanpaku の description（衝突ハンク）の wip 側に「徹底比較」が残っている → 解消時は既定どおり main 側の文面を採用すること
+
+### 2026-10-17 期限切れ情報の最適化（MediaXAI「期限切れは、最適化して」）
+- 期限切れの特典・キャンペーンの記載: **該当なし**。ソース（app/data/components/lib）と out/ を grep し、nosh（nosh.jp：初回1,500円／2回目1,000円／3回目500円OFF、終了日の記載なし）・筋肉食堂DELI（deli.kinnikushokudo.jp：「期間限定 1食805円～」の表示が継続、終了日なし）・ライフミール（初回10食1,900円が継続）を公式で確認。GREEN SPOON のスタート応援プランは公式トップでは確認できず、本文は据え置き（未確認）。
+- コーディネーター規則「古い月ラベル」: 今回公式と再照合していない10記事の title／h1／description／OG／JSON-LD headline から【2026年9月最新】【2026年9月更新】【2026年7月最新】を削除（watami-reviews, shokutakubin-reviews, mealtime-kuchikomi, magokoro-care-reviews, watami-direct-kuchikomi, wanmairu-reviews, takuhai-cook123-kuchikomi, lifemeal-kuchikomi, chef-mutenka-tsukurioki-kuchikomi, goodeli-kuchikomi）。【2026年10月】へ更新した記事は0件。本文の「2026年X月X日 公式確認」などの確認日表記はそのまま。source f2e6487。アフィリエイトURL 4件は変更前後で一致、precheck 全項目OK。
