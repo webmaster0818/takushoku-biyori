@@ -273,7 +273,7 @@ export default function ReitoukoChiisaiTakuhaiBentoPage() {
 
         <SubHeading>問題2: 既存の冷凍食品と共存できない</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          冷凍ご飯のストック、市販冷凍食品、保冷剤、アイスなど、冷凍庫はすでに使われていることが多いです。宅配弁当を10食追加すると、他の食材を圧迫し、結局どちらかを諦める羽目になります。
+          冷凍ご飯のストック、市販冷凍食品、保冷剤、アイスなど、冷凍庫はすでに使われている場合が少なくありません。宅配弁当を10食追加すると、他の食材を圧迫し、結局どちらかを諦める羽目になります。
         </p>
 
         <SubHeading>問題3: 配送日に整理が間に合わない</SubHeading>
@@ -284,7 +284,7 @@ export default function ReitoukoChiisaiTakuhaiBentoPage() {
         <SectionHeading id="size-guide">容器サイズの目安と必要スペース</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          一般的な冷凍宅配弁当の容器サイズは<strong>1食あたり約18×18×4.5cm前後</strong>が多いです。これを基準に、食数別の必要スペースを計算しました。実際のサイズはサービスにより異なるため、申し込み前に必ず公式サイトの「容器サイズ」記載を確認してください。
+          一般的な冷凍宅配弁当の容器サイズは<strong>1食あたり約18×18×4.5cm前後</strong>が主流です。これを基準に、食数別の必要スペースを計算しました。実際のサイズはサービスにより異なるため、申し込み前に必ず公式サイトの「容器サイズ」記載を確認してください。
         </p>
 
         <ComparisonTable
@@ -355,7 +355,7 @@ export default function ReitoukoChiisaiTakuhaiBentoPage() {
 
         <SubHeading>テクニック1: 縦置き収納を活用</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          引き出し型の冷凍庫であれば、宅配弁当の容器を<strong>横向きに並べるのではなく縦に立てて並べる</strong>と、見やすく省スペースになります。書類ボックスのように立てて並べると、上から一覧でき取り出しやすいです（ただし、凍結が安定するまでは平置きが必要な場合あり）。
+          引き出し型の冷凍庫であれば、宅配弁当の容器を<strong>横向きに並べるのではなく縦に立てて並べる</strong>と、見やすく省スペースになります。書類ボックスのように立てて並べると、上から一覧でき、取り出しやすくなります（ただし、凍結が安定するまでは平置きが必要な場合あり）。
         </p>
 
         <SubHeading>テクニック2: 100均のブックスタンドで仕切る</SubHeading>

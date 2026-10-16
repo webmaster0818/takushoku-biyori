@@ -216,7 +216,7 @@ const rankingItems = [
     protein: "14〜20g（主菜の中央50%）",
     price: "低〜中(1食612円〜)",
     score: 4,
-    summary: "コスパと自由度のバランスが最高です。タンパク質量はマッスルデリほどではないが、価格が約半額で続けやすいです。",
+    summary: "コスパと自由度のバランスが最高です。タンパク質量はマッスルデリほどではないが、価格が約半額のため継続しやすいサービスです。",
     pros: ["1食612円〜（12食）の低単価", "メニュー100種類以上", "アプリ管理が高機能", "解約縛りなし"],
     cons: ["タンパク質はメニュー次第", "30g超は希少"],
     target: "コスパ最重視+ライトな筋トレ・ダイエット",
@@ -335,7 +335,7 @@ export default function KouTanpakuRankingPage() {
         </ul>
 
         <p className="text-sm mb-6 leading-relaxed">
-          自炊で毎日これを実現するのは時間的・金銭的に厳しいです。だからこそ<strong>「温めるだけで1食タンパク質20〜50gが確保できる」高タンパク宅配弁当</strong>が、筋トレ・ダイエット層で人気を集めているわけです。
+          自炊で毎日これを実現するのは時間的・金銭的に容易ではありません。だからこそ<strong>「温めるだけで1食タンパク質20〜50gが確保できる」高タンパク宅配弁当</strong>が、筋トレ・ダイエット層で人気を集めているわけです。
         </p>
 
         <SectionHeading id="criteria">ランキング評価基準</SectionHeading>
@@ -418,7 +418,7 @@ export default function KouTanpakuRankingPage() {
 
         <SubHeading>増量・筋肥大したい男性</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          増量期は<strong>1食タンパク質40g以上+カロリー600kcal前後</strong>を確保したいです。【マッスルデリGAIN】が最有力候補です。プロテイン併用で1日150g以上のタンパク質摂取も現実的になります。
+          増量期は<strong>1食タンパク質40g以上+カロリー600kcal前後</strong>を確保するのが目安です。【マッスルデリGAIN】が最有力候補です。プロテイン併用で1日150g以上のタンパク質摂取も現実的になります。
         </p>
 
         <SubHeading>減量・ダイエット中の女性</SubHeading>
@@ -433,7 +433,7 @@ export default function KouTanpakuRankingPage() {
 
         <SubHeading>コスパ重視・続けやすさ重視</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          1食600円台で続けたいなら【nosh】が現実解です。タンパク質量はマッスルデリほどではないですが、プロテイン併用や複数食組み合わせで十分対応可能です。
+          1食600円台で続けたいなら【nosh】が現実解です。タンパク質量はマッスルデリには及びませんが、プロテイン併用や複数食組み合わせで十分対応可能です。
         </p>
 
         <SectionHeading id="cost-tip">高タンパク宅配のコスパ最適化テク</SectionHeading>
@@ -444,7 +444,7 @@ export default function KouTanpakuRankingPage() {
 
         <SubHeading>1. 「全食置き換え」せず「1日1食」だけ宅配にする</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          全食を高タンパク宅配にすると月額負担が大きいです。<strong>最も栄養が偏りやすい1食(夕食 or 昼食)だけを宅配に置き換え</strong>、残りはプロテイン・サラダチキン・卵などでタンパク質補給するのが最もコスパが良い運用です。
+          全食を高タンパク宅配にすると月額負担が大きくなります。<strong>最も栄養が偏りやすい1食(夕食 or 昼食)だけを宅配に置き換え</strong>、残りはプロテイン・サラダチキン・卵などでタンパク質補給するのが最もコスパが良い運用です。
         </p>
 
         <SubHeading>2. プロテインと併用してタンパク質単価を下げる</SubHeading>

@@ -365,7 +365,7 @@ export default function DelipicksOtameshiPage() {
         </p>
 
         <p className="text-sm mb-6 leading-relaxed">
-          ただし、<strong>お試しの料金・割引・招待コード・送料の扱いは時期によって変動</strong>します。本記事では具体的な金額やクーポンは断定しません。比較・検討の際は、次のポイントを公式サイトで確認すると失敗しにくいです。
+          ただし、<strong>お試しの料金・割引・招待コード・送料の扱いは時期によって変動</strong>します。本記事では具体的な金額やクーポンは断定しません。比較・検討の際は、次のポイントを公式サイトで確認しておくことをおすすめします。
         </p>
 
         <ul className="text-sm space-y-2 mb-6 list-disc list-inside leading-relaxed">

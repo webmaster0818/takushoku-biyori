@@ -416,7 +416,7 @@ export default function KyoudokiYushokuTakuhaiPage() {
 
         <ul className="text-sm space-y-2 mb-6 list-disc list-inside leading-relaxed">
           <li><strong>味付けの濃さ</strong>：大人向けは塩分・味が濃いことがあります。薄味おかずを選ぶ・取り分ける工夫を</li>
-          <li><strong>量とサイズ</strong>：1食が大人基準のことが多いです。子どもには取り分けや小分けを検討</li>
+          <li><strong>量とサイズ</strong>：1食が大人向けの量で設定されているのが一般的です。子どもには取り分けや小分けを検討</li>
           <li><strong>食べにくい食材</strong>：辛味・硬さ・骨など、小さな子に向かない食材に注意</li>
           <li><strong>アレルギー表示</strong>：原材料・アレルゲン表示を必ず確認する</li>
           <li><strong>主食・副菜の補い</strong>：ごはんや汁物、野菜を家庭で足すとバランスが整いやすい</li>
@@ -453,7 +453,7 @@ export default function KyoudokiYushokuTakuhaiPage() {
         <SectionHeading id="ryoukin">料金の考え方（具体額は公式で確認）</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          料金はサービス・コース・食数・配送頻度・地域・キャンペーンによって変わるため、本記事では<strong>具体的な金額は断定しません</strong>。共働き世帯がコストを判断するときは、次のポイントを各公式サイトで確認すると失敗しにくいです。
+          料金はサービス・コース・食数・配送頻度・地域・キャンペーンによって変わるため、本記事では<strong>具体的な金額は断定しません</strong>。共働き世帯がコストを判断するときは、次のポイントを各公式サイトで確認しておくと、判断を誤りにくくなります。
         </p>
 
         <ul className="text-sm space-y-2 mb-6 list-disc list-inside leading-relaxed">

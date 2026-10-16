@@ -229,7 +229,7 @@ export default function ReitouBentoMazuiPage() {
             {
               num: "5",
               title: "冷凍庫の匂い移り",
-              text: "冷凍庫内に他の食品の匂いが強いと、弁当に匂いが移ることがあります。密封されていてもパッケージの隙間から微量の匂いが入ることがあり、特に長期保存した場合に起こりやすいです。",
+              text: "冷凍庫内に他の食品の匂いが強いと、弁当に匂いが移ることがあります。密封されていてもパッケージの隙間から微量の匂いが入ることがあり、特に長期保存した場合に起こりやすくなります。",
             },
           ].map((item) => (
             <div key={item.num} className="bg-white border border-warm-border rounded-lg p-4">
@@ -286,7 +286,7 @@ export default function ReitouBentoMazuiPage() {
             {
               num: "7",
               title: "到着後1ヶ月以内に食べきる",
-              text: "賞味期限は6ヶ月〜1年と記載されていますが、家庭用冷凍庫では温度変化により品質が劣化しやすいです。届いてから1ヶ月以内に食べきるのが最も美味しく食べられる目安です。2週間に1回の配送サイクルなら、次の配送前に食べきるペースがベストです。",
+              text: "賞味期限は6ヶ月〜1年と記載されていますが、家庭用冷凍庫では温度変化により品質が劣化しやすい点に注意が必要です。届いてから1ヶ月以内に食べきるのが最も美味しく食べられる目安です。2週間に1回の配送サイクルなら、次の配送前に食べきるペースがベストです。",
             },
           ].map((item) => (
             <div key={item.num} className="bg-green-50 border border-green-200 rounded-lg p-4">

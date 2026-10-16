@@ -375,7 +375,7 @@ export default function WatamiDirectOtameshiPage() {
           { num: 2, title: "ワタミグループの管理栄養士監修で安心感が高い", text: "外食大手として長年食品事業を展開してきたワタミの管理栄養士が献立を設計しています。塩分・カロリーが抑えめで、健康志向の方や高齢者にも適した設計です。" },
           { num: 3, title: "全国どこでも注文可能", text: "冷凍宅配便（佐川急便）での全国配送に対応（離島など一部地域を除く）。「ワタミの宅食」が冷蔵で地域限定なのに対し、ダイレクトは冷凍で全国カバーです。地方在住でも問題ありません。" },
           { num: 4, title: "定期購入で最大5%OFF+受取が楽", text: "定期おまかせセットなら5%OFFで毎回自動配送。注文の手間も省け、メニュー選びに迷うこともありません。「とにかく続けたい」人に最適です。" },
-          { num: 5, title: "3コースから自分の食事量に合わせて選べる", text: "二菜・三菜・五菜の3コースがあり、食事量や健康状態に合わせて柔軟に選択可能です。同じワタミブランド内で切り替えられるのは継続性が高いです。" },
+          { num: 5, title: "3コースから自分の食事量に合わせて選べる", text: "二菜・三菜・五菜の3コースがあり、食事量や健康状態に合わせて柔軟に選択可能です。同じワタミブランド内で切り替えられるため、継続しやすい点も利点です。" },
         ].map((merit) => (
           <div key={merit.num} className="flex gap-4 mb-5">
             <span className="flex-shrink-0 w-8 h-8 bg-accent text-white rounded-full flex items-center justify-center text-sm font-bold">{merit.num}</span>

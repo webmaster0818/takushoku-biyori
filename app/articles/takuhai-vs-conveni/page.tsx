@@ -258,7 +258,7 @@ export default function TakuhaiVsConveniPage() {
         <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
           <p className="font-bold text-sm mb-2">注目すべき差：糖質量</p>
           <p className="text-sm text-foreground/80 leading-relaxed">
-            コンビニ弁当はご飯が占める割合が多いため、糖質が90〜110g程度になります。noshは全メニュー糖質30g以下、三ツ星ファームは25g以下と、<strong>コンビニ弁当の約3分の1</strong>。糖質制限中の方にとって、この差は非常に大きいです。ただし、宅配弁当はおかずのみのサービスが多いため、別途ご飯を用意する場合はその分の糖質も加わります。
+            コンビニ弁当はご飯が占める割合が多いため、糖質が90〜110g程度になります。noshは全メニュー糖質30g以下、三ツ星ファームは25g以下と、<strong>コンビニ弁当の約3分の1</strong>。糖質制限中の方にとって、この差は大きな意味を持ちます。ただし、宅配弁当はおかずのみのサービスが多いため、別途ご飯を用意する場合はその分の糖質も加わります。
           </p>
         </div>
 
