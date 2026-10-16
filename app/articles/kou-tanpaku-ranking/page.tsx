@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "高タンパク質 冷凍宅配弁当ランキング【2026年版】筋トレ・ダイエット向け7選";
 const ARTICLE_DESCRIPTION =
-  "高タンパク質の冷凍宅配弁当を徹底比較。筋トレ・ダイエット・ボディメイク向けに1食タンパク質20g以上の宅配弁当7社をランキング。マッスルデリ・筋肉食堂DELI・nosh・三ツ星ファームなどをタンパク質量・価格・PFCバランスで評価します。";
+  "高タンパク質の冷凍宅配弁当を比較します。筋トレ・ダイエット・ボディメイク向けに、1食タンパク質20g以上の宅配弁当7社をランキングで紹介します。マッスルデリ・筋肉食堂DELI・nosh・三ツ星ファームなどをタンパク質量・価格・PFCバランスで評価します。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/kou-tanpaku-ranking/";
 
 export const metadata: Metadata = {

@@ -88,7 +88,7 @@ function TableOfContents() {
     { id: "mazui", label: "メディミールはまずい？味の評判を検証" },
     { id: "merits", label: "口コミから分かるメリット4つ" },
     { id: "demerits", label: "注意すべきデメリット3つ" },
-    { id: "price", label: "メディミールの料金・送料を徹底解説" },
+    { id: "price", label: "メディミールの料金・送料を解説" },
     { id: "recommend", label: "おすすめな人・おすすめしない人" },
     { id: "comparison", label: "Dr.つるかめキッチン・ウェルネスダイニングとの簡易比較" },
     { id: "faq", label: "よくある質問（FAQ）" },
@@ -694,7 +694,7 @@ export default function MedimealKuchikomiPage() {
         ))}
 
         {/* ===== 料金・送料 ===== */}
-        <SectionHeading id="price">メディミールの料金・送料を徹底解説</SectionHeading>
+        <SectionHeading id="price">メディミールの料金・送料を解説</SectionHeading>
 
         <p className="text-xs text-warm-gray mb-4">
           ※本セクションの料金・送料は、編集部が2026年10月11日にメディミール公式サイトで直接確認した金額（税込）です。最新の金額は公式サイトでご確認ください。

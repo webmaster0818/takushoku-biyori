@@ -86,7 +86,7 @@ function TableOfContents() {
     { id: "good-reviews", label: "夕食ネットの良い口コミ・評判（出典付き）" },
     { id: "bad-reviews", label: "夕食ネットの悪い口コミ・評判（出典付き）" },
     { id: "mazui", label: "夕食ネット（シンプルミール）はまずい？味の評判を検証" },
-    { id: "price", label: "料金・送料・配達エリアを徹底解説" },
+    { id: "price", label: "料金・送料・配達エリアを解説" },
     { id: "merits", label: "口コミから分かるメリット4つ" },
     { id: "demerits", label: "注意すべきデメリット3つ" },
     { id: "recommend", label: "おすすめな人・おすすめしない人" },
@@ -647,7 +647,7 @@ export default function YushokuNetKuchikomiPage() {
         </div>
 
         {/* ===== 料金・送料 ===== */}
-        <SectionHeading id="price">料金・送料・配達エリアを徹底解説</SectionHeading>
+        <SectionHeading id="price">料金・送料・配達エリアを解説</SectionHeading>
 
         <SubHeading>シンプルミール（冷凍弁当）の料金</SubHeading>
         <ComparisonTable

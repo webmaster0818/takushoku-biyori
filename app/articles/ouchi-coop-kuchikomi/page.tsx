@@ -86,7 +86,7 @@ function TableOfContents() {
     { id: "good-reviews", label: "良い口コミ・評判（出典付き）" },
     { id: "bad-reviews", label: "悪い口コミ・評判（出典付き）" },
     { id: "mazui", label: "マイシィはまずい？味の評判を検証" },
-    { id: "price", label: "料金・配達料・利用条件を徹底解説" },
+    { id: "price", label: "料金・配達料・利用条件を解説" },
     { id: "merits", label: "口コミから分かるメリット4つ" },
     { id: "demerits", label: "注意すべきデメリット3つ" },
     { id: "recommend", label: "おすすめな人・おすすめしない人" },
@@ -602,7 +602,7 @@ export default function OuchiCoopKuchikomiPage() {
         </div>
 
         {/* ===== 料金・配達料 ===== */}
-        <SectionHeading id="price">料金・配達料・利用条件を徹底解説</SectionHeading>
+        <SectionHeading id="price">料金・配達料・利用条件を解説</SectionHeading>
 
         <SubHeading>かかる費用は「商品代のみ」</SubHeading>
         <p className="text-sm mb-2 leading-relaxed">

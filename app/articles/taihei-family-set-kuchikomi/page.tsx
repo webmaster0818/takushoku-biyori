@@ -88,7 +88,7 @@ function TableOfContents() {
     { id: "mazui", label: "タイヘイファミリーセットはまずい？味の評判を検証" },
     { id: "merits", label: "口コミから分かるメリット5つ" },
     { id: "demerits", label: "注意すべきデメリット3つ" },
-    { id: "price", label: "タイヘイファミリーセットの料金・送料を徹底解説" },
+    { id: "price", label: "タイヘイファミリーセットの料金・送料を解説" },
     { id: "recommend", label: "おすすめな人・おすすめしない人" },
     { id: "comparison", label: "ウェルネスダイニング・Dr.つるかめキッチンとの簡易比較" },
     { id: "faq", label: "よくある質問（FAQ）" },
@@ -748,7 +748,7 @@ export default function TaiheiFamilySetKuchikomiPage() {
         ))}
 
         {/* ===== 料金・送料 ===== */}
-        <SectionHeading id="price">タイヘイファミリーセットの料金・送料を徹底解説</SectionHeading>
+        <SectionHeading id="price">タイヘイファミリーセットの料金・送料を解説</SectionHeading>
 
         <SubHeading>主要コースの料金（税込・2026年10月10日公式確認）</SubHeading>
         <ComparisonTable

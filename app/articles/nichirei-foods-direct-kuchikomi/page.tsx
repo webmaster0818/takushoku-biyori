@@ -88,7 +88,7 @@ function TableOfContents() {
     { id: "mazui", label: "ニチレイフーズダイレクトはまずい？味の評判を検証" },
     { id: "merits", label: "口コミから分かるメリット5つ" },
     { id: "demerits", label: "注意すべきデメリット3つ" },
-    { id: "price", label: "ニチレイフーズダイレクトの料金・送料を徹底解説" },
+    { id: "price", label: "ニチレイフーズダイレクトの料金・送料を解説" },
     { id: "recommend", label: "おすすめな人・おすすめしない人" },
     { id: "comparison", label: "nosh・食宅便との簡易比較" },
     { id: "faq", label: "よくある質問（FAQ）" },
@@ -766,7 +766,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
         ))}
 
         {/* ===== 料金・送料 ===== */}
-        <SectionHeading id="price">ニチレイフーズダイレクトの料金・送料を徹底解説</SectionHeading>
+        <SectionHeading id="price">ニチレイフーズダイレクトの料金・送料を解説</SectionHeading>
 
         <SubHeading>主要コースの料金（税込・2026年10月9日公式確認）</SubHeading>
         <ComparisonTable
@@ -947,7 +947,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
           <ul className="space-y-2 text-sm">
             <li>
               <Link href="/articles/nichirei-otameshi/" className="text-accent hover:text-accent-dark transition-colors">
-                ニチレイフーズダイレクトのお試しセットを徹底解説
+                ニチレイフーズダイレクトのお試しセットを解説
               </Link>
             </li>
             <li>

@@ -88,7 +88,7 @@ function TableOfContents() {
     { id: "mazui", label: "GREEN SPOONはまずい？味の評判を検証" },
     { id: "merits", label: "口コミから分かるメリット5つ" },
     { id: "demerits", label: "注意すべきデメリット3つ" },
-    { id: "price", label: "GREEN SPOONの料金・送料を徹底解説" },
+    { id: "price", label: "GREEN SPOONの料金・送料を解説" },
     { id: "recommend", label: "おすすめな人・おすすめしない人" },
     { id: "comparison", label: "nosh・三ツ星ファームとの簡易比較" },
     { id: "faq", label: "よくある質問（FAQ）" },
@@ -765,7 +765,7 @@ export default function GreenSpoonKuchikomiPage() {
         ))}
 
         {/* ===== 料金・送料 ===== */}
-        <SectionHeading id="price">GREEN SPOONの料金・送料を徹底解説</SectionHeading>
+        <SectionHeading id="price">GREEN SPOONの料金・送料を解説</SectionHeading>
 
         <SubHeading>定期プラン（BOX別・税込）</SubHeading>
         <ComparisonTable

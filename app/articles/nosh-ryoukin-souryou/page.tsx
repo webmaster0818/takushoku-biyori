@@ -432,7 +432,7 @@ export default function NoshRyoukinSouryouPage() {
         <SectionHeading id="hikaku">総額で比較するときのチェックポイント</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          noshの料金を他サービスや他プランと比べるときは、<strong>1食単価という一点だけでなく、総額で見る</strong>ことが失敗しないコツです。次のポイントを公式サイトで確認しながら比較しましょう。
+          noshの料金を他サービスや他プランと比べるときは、<strong>1食単価という一点だけでなく、総額で見る</strong>ことが選び方のポイントです。次のポイントを公式サイトで確認しながら比較しましょう。
         </p>
 
         <ComparisonTable
@@ -485,7 +485,7 @@ export default function NoshRyoukinSouryouPage() {
             noshの料金は、<strong>「プランの食数」「nosh club（継続割引）」「送料」</strong>の3つの仕組みが組み合わさって決まります。1食単価は固定ではなく、<strong>食数を増やすほど・継続するほど下がりやすい</strong>のが基本的な考え方です。
           </p>
           <p className="mb-3">
-            一方、送料は地域・食数で変動し本体価格とは別にかかるため、比較するときは<strong>「送料込みの総額」</strong>で見るのが失敗しないコツです。
+            一方、送料は地域・食数で変動し本体価格とは別にかかるため、比較するときは<strong>「送料込みの総額」</strong>で見るのが選び方のポイントです。
           </p>
           <p>
             具体的な金額・割引率・送料は<strong>時期や地域で変動</strong>します。当サイトでは正確性を優先し、価格は断定しません。最新・正確な料金は、必ず公式サイトの表示でご確認ください。

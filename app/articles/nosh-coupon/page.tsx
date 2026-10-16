@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "【2026年最新】nosh(ナッシュ)クーポン・割引コード完全ガイド｜初回最大3,000円OFFの全手順";
+  "【2026年最新】nosh(ナッシュ)クーポン・割引コードガイド｜初回最大3,000円OFFの全手順";
 const ARTICLE_DESCRIPTION =
   "nosh(ナッシュ)で使えるクーポン・割引コード・キャンペーンを公式情報ベースで整理します。初回最大3,000円OFFの内訳、nosh club継続割引、友達紹介の仕組みと申込手順、注意点まで丁寧に解説します。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/nosh-coupon/";
@@ -72,7 +72,7 @@ function Breadcrumbs() {
         </li>
         <li className="breadcrumb-sep" />
         <li>
-          <span className="text-foreground">nosh(ナッシュ)クーポン完全ガイド</span>
+          <span className="text-foreground">nosh(ナッシュ)クーポンガイド</span>
         </li>
       </ol>
     </nav>
@@ -251,7 +251,7 @@ export default function NoshCouponPage() {
       {
         "@type": "ListItem",
         position: 3,
-        name: "nosh(ナッシュ)クーポン完全ガイド",
+        name: "nosh(ナッシュ)クーポンガイド",
       },
     ],
   };
@@ -312,7 +312,7 @@ export default function NoshCouponPage() {
             この記事では、<strong>2026年5月時点のnosh公式キャンペーン情報</strong>をもとに、自動割引・nosh club・友達紹介の3つの仕組みを丁寧に整理します。クーポンコードの真偽、適用手順、注意点まで初心者にもわかりやすく解説します。
           </p>
           <p>
-            「裏技クーポンコード」「秘密の割引」といった怪しい情報に惑わされず、公式の最大値で安心してお得に始めるための完全ガイドです。
+            「裏技クーポンコード」「秘密の割引」といった怪しい情報に惑わされず、公式の最大値で安心してお得に始めるためのガイドです。
           </p>
         </div>
 

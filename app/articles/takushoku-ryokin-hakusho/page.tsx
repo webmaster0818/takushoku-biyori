@@ -429,7 +429,7 @@ export default function TakushokuRyokinHakushoPage() {
         {/* ===== メイン比較表 ===== */}
         <SectionHeading id="main-table">18社比較表：料金・送料・1食実質単価（安い順）</SectionHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          1食実質単価（送料込み）の安い順に並べています。ブランド名のリンクから各社の詳細記事に移動できます。
+          1食実質単価（送料込み）の安い順に掲載しています。ブランド名のリンクから各社の詳細記事に移動できます。
         </p>
         <div className="table-wrapper mb-4">
           <table className="w-full text-sm border-collapse">

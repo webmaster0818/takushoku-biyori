@@ -163,7 +163,7 @@ export default function Page() {
           🚨 <strong>公式サイトには「1食いくら」の単価表がありません。</strong>
           掲載されているのは、利用パターンごとの月額と1食あたりの例です。
           当サイトで単価表を作ると公式にない数字を提示することになるため、
-          <strong>公式の例示をそのまま</strong>載せます。
+          <strong>公式の例示をそのまま</strong>掲載します。
         </p>
         <div className="mt-4 overflow-x-auto">
           <table className="w-full text-sm border-collapse">

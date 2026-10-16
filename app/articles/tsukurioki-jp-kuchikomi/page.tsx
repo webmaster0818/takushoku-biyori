@@ -88,7 +88,7 @@ function TableOfContents() {
     { id: "mazui", label: "つくりおき.jpはまずい？味の評判を検証" },
     { id: "merits", label: "口コミから分かるメリット5つ" },
     { id: "demerits", label: "注意すべきデメリット3つ" },
-    { id: "price", label: "つくりおき.jpの料金・配送を徹底解説" },
+    { id: "price", label: "つくりおき.jpの料金・配送を解説" },
     { id: "recommend", label: "おすすめな人・おすすめしない人" },
     { id: "comparison", label: "冷凍宅配弁当との違い（簡易比較）" },
     { id: "faq", label: "よくある質問（FAQ）" },
@@ -771,7 +771,7 @@ export default function TsukuriokiJpKuchikomiPage() {
         ))}
 
         {/* ===== 料金・配送 ===== */}
-        <SectionHeading id="price">つくりおき.jpの料金・配送を徹底解説</SectionHeading>
+        <SectionHeading id="price">つくりおき.jpの料金・配送を解説</SectionHeading>
 
         <SubHeading>プラン別料金表（税込・送料込）</SubHeading>
         <ComparisonTable

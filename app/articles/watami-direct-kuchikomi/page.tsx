@@ -86,7 +86,7 @@ function TableOfContents() {
     { id: "good-reviews", label: "良い口コミ・評判（出典付き）" },
     { id: "bad-reviews", label: "悪い口コミ・評判（出典付き）" },
     { id: "mazui", label: "ワタミの宅食ダイレクトはまずい？味の評判を検証" },
-    { id: "price", label: "料金・送料・お試し割を徹底解説" },
+    { id: "price", label: "料金・送料・お試し割を解説" },
     { id: "merits", label: "口コミから分かるメリット4つ" },
     { id: "demerits", label: "注意すべきデメリット3つ" },
     { id: "recommend", label: "おすすめな人・おすすめしない人" },
@@ -632,7 +632,7 @@ export default function WatamiDirectKuchikomiPage() {
         </div>
 
         {/* ===== 料金・送料 ===== */}
-        <SectionHeading id="price">料金・送料・お試し割を徹底解説</SectionHeading>
+        <SectionHeading id="price">料金・送料・お試し割を解説</SectionHeading>
 
         <SubHeading>料金の目安（税込）</SubHeading>
         <ComparisonTable
@@ -808,7 +808,7 @@ export default function WatamiDirectKuchikomiPage() {
             href="/articles/watami-direct-otameshi/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
           >
-            ワタミの宅食ダイレクトお試しセット完全ガイド
+            ワタミの宅食ダイレクトお試しセットガイド
           </Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link
@@ -845,7 +845,7 @@ export default function WatamiDirectKuchikomiPage() {
             </li>
             <li>
               <Link href="/articles/watami-direct-otameshi/" className="text-accent hover:text-accent-dark transition-colors">
-                ワタミの宅食ダイレクト お試しセット完全ガイド
+                ワタミの宅食ダイレクト お試しセットガイド
               </Link>
             </li>
             <li>

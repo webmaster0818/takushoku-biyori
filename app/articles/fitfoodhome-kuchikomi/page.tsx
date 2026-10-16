@@ -88,7 +88,7 @@ function TableOfContents() {
     { id: "mazui", label: "FIT FOOD HOMEはまずい？味の評判を検証" },
     { id: "merits", label: "口コミから分かるメリット4つ" },
     { id: "demerits", label: "注意すべきデメリット3つ" },
-    { id: "price", label: "FIT FOOD HOMEの料金・送料を徹底解説" },
+    { id: "price", label: "FIT FOOD HOMEの料金・送料を解説" },
     { id: "recommend", label: "おすすめな人・おすすめしない人" },
     { id: "faq", label: "よくある質問（FAQ）" },
     { id: "summary", label: "まとめ" },
@@ -693,7 +693,7 @@ export default function FitFoodHomeKuchikomiPage() {
         ))}
 
         {/* ===== 料金・送料 ===== */}
-        <SectionHeading id="price">FIT FOOD HOMEの料金・送料を徹底解説</SectionHeading>
+        <SectionHeading id="price">FIT FOOD HOMEの料金・送料を解説</SectionHeading>
 
         <p className="text-xs text-warm-gray mb-4">
           ※本セクションの料金・送料は、編集部が2026年10月11日にFIT FOOD HOME公式ストア（store.tavenal.com）で直接確認した金額（税込）です。最新の金額は公式サイトでご確認ください。

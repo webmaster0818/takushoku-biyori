@@ -106,7 +106,7 @@ function TableOfContents() {
     { id: "good-reviews", label: "良い口コミ・評判（出典付き）" },
     { id: "bad-reviews", label: "悪い口コミ・評判（出典付き）" },
     { id: "mazui", label: "コープ（生協）の宅配弁当はまずい？言われる理由5つと対策" },
-    { id: "price", label: "料金・手数料・利用条件を徹底解説" },
+    { id: "price", label: "料金・手数料・利用条件を解説" },
     { id: "other-coops", label: "コープデリ以外の生協の宅配弁当（地域別）" },
     { id: "merits", label: "口コミから分かるメリット4つ" },
     { id: "demerits", label: "注意すべきデメリット4つ" },
@@ -686,7 +686,7 @@ export default function CoopdeliKuchikomiPage() {
         </div>
 
         {/* ===== 料金・手数料 ===== */}
-        <SectionHeading id="price">料金・手数料・利用条件を徹底解説</SectionHeading>
+        <SectionHeading id="price">料金・手数料・利用条件を解説</SectionHeading>
 
         <SubHeading>かかる費用は「商品代のみ」</SubHeading>
         <p className="text-sm mb-2 leading-relaxed">
@@ -728,7 +728,7 @@ export default function CoopdeliKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-4">
-          ※出典: <a href="https://daily.coopdeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="underline">デイリーコープ</a>／<a href="https://efriends.coopdeli.jp/docreq/kuruco-d/index.html" target="_blank" rel="noopener noreferrer nofollow" className="underline">コープデリにいがた 夕食宅配</a>／<a href="https://www.maici.coop/course/" target="_blank" rel="noopener noreferrer nofollow" className="underline">夕食宅配Maici コース紹介</a>／<a href="https://www.sapporo.coop/service/dinner-delivery/" target="_blank" rel="noopener noreferrer nofollow" className="underline">コープさっぽろ 夕食宅配サービス</a>／<a href="https://www.fcoop.or.jp/shopping/service/dinner-delivery/" target="_blank" rel="noopener noreferrer nofollow" className="underline">エフコープ 夕食宅配</a>（いずれも2026年10月16日確認）。「−」は今回の確認範囲で配達料の記載を確かめられなかったものです。パルシステム・コープこうべ・みやぎ生協などは今回、公式ページで料金を確認しきれなかったため載せていません。
+          ※出典: <a href="https://daily.coopdeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="underline">デイリーコープ</a>／<a href="https://efriends.coopdeli.jp/docreq/kuruco-d/index.html" target="_blank" rel="noopener noreferrer nofollow" className="underline">コープデリにいがた 夕食宅配</a>／<a href="https://www.maici.coop/course/" target="_blank" rel="noopener noreferrer nofollow" className="underline">夕食宅配Maici コース紹介</a>／<a href="https://www.sapporo.coop/service/dinner-delivery/" target="_blank" rel="noopener noreferrer nofollow" className="underline">コープさっぽろ 夕食宅配サービス</a>／<a href="https://www.fcoop.or.jp/shopping/service/dinner-delivery/" target="_blank" rel="noopener noreferrer nofollow" className="underline">エフコープ 夕食宅配</a>（いずれも2026年10月16日確認）。「−」は今回の確認範囲で配達料の記載を確かめられなかったものです。パルシステム・コープこうべ・みやぎ生協などは今回、公式ページで料金を確認しきれなかったため掲載していません。
         </p>
         <p className="text-sm mb-6 leading-relaxed">
           神奈川・静岡・山梨にお住まいなら<Link href="/articles/ouchi-coop-kuchikomi/" className="text-accent hover:text-accent-dark underline">おうちコープ（ユーコープ）マイシィの口コミ・評判</Link>、エリア外なら全国配送の冷凍弁当（<Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline">nosh</Link>や<Link href="/articles/magokoro-care-reviews/" className="text-accent hover:text-accent-dark underline">まごころケア食</Link>など）が比較先になります。冷蔵で毎日届く民間サービスなら<Link href="/articles/watami-reviews/" className="text-accent hover:text-accent-dark underline">ワタミの宅食</Link>も候補です。

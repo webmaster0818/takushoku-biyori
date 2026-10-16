@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "ワタミの宅食ダイレクト お試しセット完全ガイド【2026年版】内容・送料・申込手順を解説";
+  "ワタミの宅食ダイレクト お試しセットガイド【2026年版】内容・送料・申込手順を解説";
 const ARTICLE_DESCRIPTION =
-  "ワタミの宅食ダイレクトのお試しセットを解説します。いつでも三菜/五菜/二菜の内容、料金、送料、申込手順、定期購入(おまかせセット5%OFF/選べるセット3%OFF)の仕組みを公式情報ベースで丁寧に紹介します。初めての方が迷わず始められる完全ガイドです。";
+  "ワタミの宅食ダイレクトのお試しセットを解説します。いつでも三菜/五菜/二菜の内容、料金、送料、申込手順、定期購入(おまかせセット5%OFF/選べるセット3%OFF)の仕組みを公式情報ベースで丁寧に紹介します。初めての方が迷わず始められるガイドです。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/watami-direct-otameshi/";
 
 export const metadata: Metadata = {
@@ -61,7 +61,7 @@ function Breadcrumbs() {
         <li className="breadcrumb-sep" />
         <li><Link href="/articles/#otoku" className="text-foreground/70 hover:text-accent transition-colors">クーポン・お試しセット</Link></li>
         <li className="breadcrumb-sep" />
-        <li><span className="text-foreground">ワタミの宅食ダイレクト お試しセット完全ガイド</span></li>
+        <li><span className="text-foreground">ワタミの宅食ダイレクト お試しセットガイド</span></li>
       </ol>
     </nav>
   );
@@ -190,7 +190,7 @@ export default function WatamiDirectOtameshiPage() {
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "ホーム", item: "https://takushoku-biyori.com/" },
       { "@type": "ListItem", position: 2, name: "クーポン・お試しセット" },
-      { "@type": "ListItem", position: 3, name: "ワタミの宅食ダイレクト お試しセット完全ガイド" },
+      { "@type": "ListItem", position: 3, name: "ワタミの宅食ダイレクト お試しセットガイド" },
     ],
   };
 

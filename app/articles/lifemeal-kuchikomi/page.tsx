@@ -78,7 +78,7 @@ function TableOfContents() {
     { id: "good-reviews", label: "良い口コミ・評判（出典付き）" },
     { id: "bad-reviews", label: "悪い口コミ・評判（出典付き）" },
     { id: "mazui", label: "「まずい」って本当？味の評判を検証" },
-    { id: "price", label: "料金・送料を徹底解説" },
+    { id: "price", label: "料金・送料を解説" },
     { id: "merits", label: "メリット5つ" },
     { id: "demerits", label: "デメリット3つ" },
     { id: "recommend", label: "おすすめな人・おすすめしない人" },
@@ -295,7 +295,7 @@ export default function LifemealKuchikomiPage() {
           ただし注意点もあります。全メニューが塩分に配慮した設計のため、<strong>濃い味に慣れている人には薄めに感じるメニューがある</strong>こと、そして<strong>魚メニューの匂いなどで好みが分かれる</strong>という声があることです。100種類以上あるメニューには当たり外れの感じ方に個人差があるので、初回割引で10食程度をまとめて試し、自分の口に合う系統を見つけるのが現実的な判断方法です。
         </p>
 
-        <SectionHeading id="price">ライフミールの料金・送料を徹底解説</SectionHeading>
+        <SectionHeading id="price">ライフミールの料金・送料を解説</SectionHeading>
         <SubHeading>セット別料金の目安（定期・税込）</SubHeading>
         <ComparisonTable
           headers={["セット", "価格の目安", "1食あたり"]}

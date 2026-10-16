@@ -367,7 +367,7 @@ export default function Shoku200YenDaiPage() {
         />
 
         <p className="text-sm mb-6 leading-relaxed">
-          「初回がとても安い」だけで判断すると、2回目以降に思ったより高くなることがあります。<strong>継続したときの単価</strong>もあわせて確認するのが、激安価格帯で失敗しないコツです。送料無料の冷凍弁当を軸に探したい場合は<Link href="/articles/souryou-yasui-ranking/" className="text-accent underline">送料が安い宅配弁当ランキング</Link>も参考になります。
+          「初回がとても安い」だけで判断すると、2回目以降に思ったより高くなることがあります。<strong>継続したときの単価</strong>もあわせて確認するのが、激安価格帯で選び方のポイントです。送料無料の冷凍弁当を軸に探したい場合は<Link href="/articles/souryou-yasui-ranking/" className="text-accent underline">送料が安い宅配弁当ランキング</Link>も参考になります。
         </p>
 
         {/* ===== 落とし穴 ===== */}

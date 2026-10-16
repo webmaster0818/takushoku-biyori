@@ -79,7 +79,7 @@ function Breadcrumbs() {
 function TableOfContents() {
   const sections = [
     { id: "basic", label: "冷凍弁当の温め方:基本ルール" },
-    { id: "microwave", label: "電子レンジでの温め方完全ガイド" },
+    { id: "microwave", label: "電子レンジでの温め方ガイド" },
     { id: "watt-table", label: "ワット数別・加熱時間の早見表" },
     { id: "yusen", label: "湯煎での温め方" },
     { id: "natural", label: "自然解凍はおすすめできない理由" },
@@ -286,7 +286,7 @@ export default function ReitouBentoAtatameKataPage() {
           パッケージには「フタを少し開ける」「フタを完全に取る」「フタを少しずらす」など、メニューごとに指示があります。これは蒸気の逃がし方をコントロールするためで、指示通りにしないと水っぽくなったり乾燥したりします。
         </p>
 
-        <SectionHeading id="microwave">電子レンジでの温め方完全ガイド</SectionHeading>
+        <SectionHeading id="microwave">電子レンジでの温め方ガイド</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
           電子レンジは冷凍宅配弁当の<strong>最もスタンダードな温め方です</strong>。各社の指示に従えば、3〜7分程度で食べられる状態になります。

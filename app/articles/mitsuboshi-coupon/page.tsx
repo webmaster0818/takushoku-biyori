@@ -513,7 +513,7 @@ export default function MitsuboshiCouponPage() {
           </Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/nosh-coupon/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
-            noshクーポン・割引コード完全ガイド
+            noshクーポン・割引コードガイド
           </Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/otameshi-set-osusume/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
