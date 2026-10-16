@@ -483,7 +483,7 @@ export default function CoopdeliVsPalsystemPage() {
         <div className="bg-cream rounded-xl p-5 mb-6">
           <p className="font-bold text-sm mb-2">迷ったらお試しセットで比較がおすすめ</p>
           <p className="text-sm text-foreground/80 leading-relaxed">
-            コープデリ・パルシステムともにお試しセットや加入特典を用意しています。どちらも出資金は退会時に返金されるため、お試しセットなどで利用してみてから決めると確実です。併用も可能なので、最初は両方使ってみて、自分に合うほうに絞るという方法もあります。
+            コープデリ・パルシステムともにお試しセットや加入特典を用意しています。どちらも出資金は退会時に返金されるため、利用してみてから決めると確実です。併用も可能なので、最初は両方使ってみて、自分に合うほうに絞るという方法もあります。
           </p>
         </div>
 
