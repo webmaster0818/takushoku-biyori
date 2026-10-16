@@ -483,7 +483,7 @@ export default function SangoOsusumePage() {
 
         <SubHeading>ヨシケイ（夕食ネット） - 低価格の冷凍弁当</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          ヨシケイ（夕食ネット）のシンプルミールは3食セット1,290円（1食430円）の冷凍弁当で、配達料は原則無料（一部地域を除く）。不在時は宅配BOXや玄関前に置き配してくれるため、インターホンで赤ちゃんが起きる心配が減ります。初めての方は初回10セットまで半額（3食645円）で試せます。ただし配達エリアが限定される場合があるため、まず公式サイトでエリア確認を。
+          ヨシケイ（夕食ネット）のシンプルミールは3食セット1,290円（1食430円）の冷凍弁当で、配達料は原則無料（一部地域を除く）。不在時は宅配BOXや玄関前に置き配してくれるため、インターホンで赤ちゃんが起きる心配が減ります。初めての方は初回10セットまで半額（3食645円）で試せます。ただし配達エリアが限定される場合があるため、まず公式サイトでエリア確認を。味の評判は<Link href="/articles/yoshikei-reviews/" className="text-accent underline">ヨシケイの口コミ・評判</Link>と<Link href="/articles/yushoku-net-kuchikomi/" className="text-accent underline">夕食ネットの口コミ</Link>にまとめています。
         </p>
 
         {/* ===== 料金比較 ===== */}

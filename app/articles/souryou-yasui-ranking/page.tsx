@@ -333,6 +333,9 @@ export default function SouryouYasuiRankingPage() {
             { href: "/articles/magokoro-care-reviews/", label: "まごころケア食の口コミ・評判" },
             { href: "/articles/tsurukame-reviews/", label: "Dr.つるかめキッチンの口コミ・評判" },
             { href: "/articles/takuhai-vs-conveni/", label: "宅配弁当 vs コンビニ弁当 どっちがお得？" },
+            { href: "/articles/yoshikei-reviews/", label: "ヨシケイの口コミ・評判（配達料無料のミールキット・冷凍弁当）" },
+            { href: "/articles/yushoku-net-kuchikomi/", label: "夕食ネット（ヨシケイのシンプルミール）の口コミ・評判" },
+            { href: "/articles/coopdeli-kuchikomi/", label: "コープデリ夕食宅配（配達手数料無料）の口コミ・評判" },
           ].map((link) => (
             <div key={link.href}>
               <Link href={link.href} className="text-accent hover:text-accent-dark text-sm transition-colors">→ {link.label}</Link>

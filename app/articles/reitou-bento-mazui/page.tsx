@@ -409,6 +409,8 @@ export default function ReitouBentoMazuiPage() {
             { href: "/articles/wanmairu-reviews/", label: "わんまいるの口コミ・評判を徹底調査" },
             { href: "/articles/takuhai-vs-conveni/", label: "宅配弁当 vs コンビニ弁当 どっちがお得？" },
             { href: "/articles/souryou-yasui-ranking/", label: "送料が安い宅配弁当ランキング" },
+            { href: "/articles/yoshikei-reviews/", label: "ヨシケイの弁当はまずい？口コミ・評判（ミールキット・冷凍弁当）" },
+            { href: "/articles/coopdeli-kuchikomi/", label: "コープ（生協）の宅配弁当はまずい？コープデリ夕食宅配の口コミ" },
           ].map((link) => (
             <div key={link.href}>
               <Link href={link.href} className="text-accent hover:text-accent-dark text-sm transition-colors">→ {link.label}</Link>

@@ -713,6 +713,7 @@ export default function KoureishaOsusumePage() {
             <li><Link href="/articles/shokutakubin-reviews/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】食宅便の口コミ・評判を徹底調査</Link></li>
             <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link></li>
             <li><Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark transition-colors">一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5</Link></li>
+            <li><Link href="/articles/coopdeli-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">コープ（生協）の宅配弁当の口コミ｜コープデリ夕食宅配は冷蔵で平日毎日お届け</Link></li>
             <li><Link href="/articles/takuhai-cook123-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">宅配クック123の料金・配達料・安否確認｜1食から頼める高齢者向け宅配弁当</Link></li>
           </ul>
         </div>
