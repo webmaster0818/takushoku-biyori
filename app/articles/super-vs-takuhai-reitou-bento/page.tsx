@@ -316,7 +316,7 @@ export default function SuperVsTakuhaiReitouBentoPage() {
           <li><strong>nosh:</strong> 全メニュー糖質30g以下・塩分2.5g以下に統一</li>
           <li><strong>三ツ星ファーム:</strong> 糖質25g以下のメニューを中心に展開</li>
           <li><strong>ウェルネスダイニング:</strong> 糖質制限・塩分制限・たんぱく質制限など制限食特化</li>
-          <li><strong>まごころケア食:</strong> 塩分2.5g以下・糖質ケアコースなど</li>
+          <li><strong>まごころケア食:</strong> 塩分2.5g以下（健康バランス食）・糖質15g以下の糖質制限食など</li>
         </ul>
 
         <SubHeading>スーパー冷凍弁当の栄養成分</SubHeading>
