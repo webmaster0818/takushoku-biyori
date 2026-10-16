@@ -260,3 +260,11 @@ GSC診断(28d 6/3-7/1): クリック2・表示738(前月391→1.9倍)・平均20
 - **wip/remove-onemeal-1017 との関係**: 衝突行（15社表脚注19行・kou-tanpaku:7 description・sitemap 23-24）には該当語がなく**未変更**。git merge-tree で main+今回 と wip の衝突は修正前と同じ21ハンクのみ（増えていない）。解消方法は 10/16 ログのとおり
 - 残し（範囲外・一般的な接続表現）: 「多いですが」×2（magokoro・mealkit）、「望ましいですが」（okihai）
 - 本番確認: mealkit-vs-reitou-bento・okihai-taiou-takuhai-bento・toushitsu-seigen-osusume・kou-tanpaku-ranking で新文言（push から約30分＝他サイト並行ビルドで CF が遅延）。copy-audit --n 40 = 〜いです 0・NG 2件（めっちゃ・マジで＝いずれも口コミ引用）
+
+### 2026-10-17 「しましょう」「徹底比較」「実際に試」を一掃 ✅本番反映済み（source a9a3307・fbc792f・f94f553 / deploy 26001ea7）
+- しましょう 71件を文ごとに書き換え（ご確認ください／ご注意ください／ご検討ください／〜することをおすすめします 等。nichirei「〜を必ず確認しましょう」→「確認しておきたい点は…の3点です」、wellness「恩恵を最大限活用しましょう」→「送料無料の対象になります」）
+- 徹底比較 60件 → 比較（title・h1・目次・リンク文言・本文）
+- 実際に試 2件: reitouko-chiisai「編集部が実際に試した運用ノウハウ」→「各社公式サイトで公開されている容器サイズ・プラン・配送条件をもとに」（同ページ末尾に実食レビュー未実施と明記されており、主張と矛盾していた）／coopdeli-vs-palsystem の読者向け「実際に試してみてから」→「利用してみてから」
+- 対象外（引用）: wellness-dining-reviews 出典の HonNe 記事名「…徹底検証！」。本番 copy-audit --n 40 の残り3件（徹底検証・めっちゃ・マジで）はすべて出典付き引用
+- アフィリエイト（felmat 84件・20ページ）は修正前 deploy と完全一致。precheck 全項目OK、heading-lint 既存1件のみ
+- **wip/remove-onemeal-1017**: merge-tree の衝突は修正前と同じ21ハンク（ファイル別件数も一致）。変更行は衝突ブロックに入っていない。⚠️ kou-tanpaku の description（衝突ハンク）の wip 側に「徹底比較」が残っている → 解消時は既定どおり main 側の文面を採用すること
