@@ -13,7 +13,7 @@ import Link from "next/link";
 */
 
 const ARTICLE_TITLE =
-  "宅配クック123の料金・配達料・安否確認を公式情報で整理｜1食から頼める高齢者向け宅配弁当【2026年9月最新】";
+  "宅配クック123の料金・配達料・安否確認を公式情報で整理｜1食から頼める高齢者向け宅配弁当";
 const ARTICLE_DESCRIPTION =
   "宅配クック123は普通食がごはん付き685円・おかずのみ577円（税込）、配達料は無料で1食から注文できます。65歳以上の初回は普通食1食を無料で試食できます。手渡しが基本で、応答がないときは事前に決めた緊急連絡先へ連絡する仕組みです。公式サイトで確認した料金と条件をまとめました。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/takuhai-cook123-kuchikomi/";

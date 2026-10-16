@@ -12,7 +12,7 @@ import Link from "next/link";
 */
 
 const ARTICLE_TITLE =
-  "goodeli(グーデリ)とは？料金・送料・GOFOOD(ゴーフード)との違いを公式情報で整理【2026年9月最新】";
+  "goodeli(グーデリ)とは？料金・送料・GOFOOD(ゴーフード)との違いを公式情報で整理";
 const ARTICLE_DESCRIPTION =
   "goodeli(グーデリ)は主菜＋副菜が入った冷凍宅配食です。14食1食896円・21食1食842円（税込）、送料1,100円（北海道・沖縄2,750円）を公式で確認しました。名前が似ているGOFOOD(ゴーフード)とは別サービスです。両者の違いと、申し込み前に確認したい解約条件をまとめます。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/goodeli-kuchikomi/";

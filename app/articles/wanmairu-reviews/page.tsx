@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "わんまいるの口コミ・評判は？まずいって本当？国産食材100%・湯煎解凍の実力を出典付きで検証【2026年7月最新】";
+  "わんまいるの口コミ・評判は？まずいって本当？国産食材100%・湯煎解凍の実力を出典付きで検証";
 const ARTICLE_DESCRIPTION =
   "わんまいるは「まずい」って本当？公開レビューの良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。国産食材100%の冷凍おかず「健幸ディナー」の料金（定期5食6,280円・2026年7月4日公式確認）・送料・湯煎解凍の手間も詳しく解説します。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/wanmairu-reviews/";
