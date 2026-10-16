@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "【2026年最新】宅配弁当 vs コンビニ弁当を徹底比較！栄養・価格・手軽さでどっちがお得？";
+  "【2026年最新】宅配弁当 vs コンビニ弁当を比較｜栄養・価格・手軽さでどっちがお得？";
 const ARTICLE_DESCRIPTION =
-  "宅配弁当とコンビニ弁当を栄養・価格・手軽さ・添加物の4項目で徹底比較。nosh・三ツ星ファームとセブンイレブン・ローソン・ファミマの具体的なデータで解説。一人暮らし・ダイエット中・共働きの方に最適な選択がわかります。";
+  "宅配弁当とコンビニ弁当を栄養・価格・手軽さ・添加物の4項目で比較します。nosh・三ツ星ファームとセブンイレブン・ローソン・ファミマの具体的なデータで解説します。一人暮らし・ダイエット中・共働きの方に最適な選択がわかります。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/takuhai-vs-conveni/";
 
@@ -50,7 +50,7 @@ const faqData = [
   {
     question: "一人暮らしなら宅配弁当とコンビニ、どちらがおすすめ？",
     answer:
-      "一人暮らしの方には宅配弁当がおすすめです。理由は3つ。(1)栄養バランスが管理されているため健康管理が楽。(2)冷凍ストックできるため急な予定変更にも対応可能。(3)定期購入で買い出しの手間がゼロになる。ただし、冷凍庫のスペースが必要なため、ミニ冷凍庫のない方は6〜8食プランから始めるのがおすすめです。",
+      "一人暮らしの方には宅配弁当がおすすめです。理由は3つです。(1)栄養バランスが管理されているため健康管理が楽です。(2)冷凍ストックできるため急な予定変更にも対応可能です。(3)定期購入で買い出しの手間がゼロになります。ただし、冷凍庫のスペースが必要なため、ミニ冷凍庫のない方は6〜8食プランから始めるのがおすすめです。",
   },
 ];
 
@@ -205,7 +205,7 @@ export default function TakuhaiVsConveniPage() {
             この記事では、<strong>宅配弁当とコンビニ弁当を「栄養」「価格」「手軽さ」「添加物」の4つの視点</strong>で徹底比較します。
           </p>
           <p>
-            さらに、nosh・三ツ星ファームといった人気宅配弁当とセブンイレブン・ローソン・ファミマのコンビニ弁当を具体的なデータで比較。<strong>あなたのライフスタイルに合った選択</strong>が見つかります。
+            さらに、nosh・三ツ星ファームといった人気宅配弁当とセブンイレブン・ローソン・ファミマのコンビニ弁当を具体的なデータで比較します。<strong>ライフスタイルに合った選択</strong>の参考にしてください。
           </p>
         </div>
 
@@ -264,7 +264,7 @@ export default function TakuhaiVsConveniPage() {
 
         <SubHeading>野菜の摂取量</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          厚生労働省が推奨する1日の野菜摂取量は350g以上。コンビニ弁当だけでは1食あたり50〜80g程度の野菜しか摂れず、3食すべてコンビニでも推奨量に届きません。宅配弁当は副菜に野菜が多く使われているため、1食あたり100〜150g程度の野菜を摂取でき、不足分をサラダ等で補いやすい設計になっています。
+          厚生労働省が推奨する1日の野菜摂取量は350g以上です。コンビニ弁当だけでは1食あたり50〜80g程度の野菜しか摂れず、3食すべてコンビニでも推奨量に届きません。宅配弁当は副菜に野菜が多く使われているため、1食あたり100〜150g程度の野菜を摂取でき、不足分をサラダ等で補いやすい設計になっています。
         </p>
 
         {/* ===== 価格 ===== */}
@@ -317,13 +317,13 @@ export default function TakuhaiVsConveniPage() {
         />
 
         <p className="text-sm mb-6 leading-relaxed">
-          <strong>即時性ではコンビニ弁当が圧勝</strong>です。今すぐ食べたい、ストックがない、という状況ではコンビニ一択。しかし、日常的な食事として考えると、宅配弁当のストック性は非常に便利です。冷凍庫に10〜20食分をストックしておけば、帰宅後にレンジで温めるだけ。「疲れて料理もコンビニに行くのも面倒」という日にこそ真価を発揮します。
+          <strong>即時性ではコンビニ弁当が圧勝</strong>です。今すぐ食べたい、ストックがない、という状況ではコンビニが適しています。しかし、日常的な食事として考えると、宅配弁当のストック性は非常に便利です。冷凍庫に10〜20食分をストックしておけば、帰宅後にレンジで温めるだけです。「疲れて料理もコンビニに行くのも面倒」という日にこそ真価を発揮します。
         </p>
 
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
           <p className="font-bold text-sm mb-2">賢い使い分けのコツ</p>
           <p className="text-sm text-foreground/80 leading-relaxed">
-            宅配弁当とコンビニ弁当は「二者択一」ではなく、使い分けが最適解です。平日の夕食は冷凍宅配弁当をストックしておき、急な外出時や休日のランチはコンビニを利用する。このハイブリッド方式なら、栄養管理と利便性を両立できます。
+            宅配弁当とコンビニ弁当は「二者択一」ではなく、使い分けが最適解です。平日の夕食は冷凍宅配弁当をストックしておき、急な外出時や休日のランチはコンビニを利用します。このハイブリッド方式なら、栄養管理と利便性を両立できます。
           </p>
         </div>
 
@@ -386,11 +386,11 @@ export default function TakuhaiVsConveniPage() {
 
         <div className="space-y-3 mb-6">
           {[
-            { title: "ダイエット中の方 → 宅配弁当がおすすめ", text: "糖質・カロリーが管理された宅配弁当なら、メニューを選ぶだけで食事管理が完了。nosh（糖質30g以下）、三ツ星ファーム（350kcal以下）が特におすすめです。", color: "bg-green-50" },
+            { title: "ダイエット中の方 → 宅配弁当がおすすめ", text: "糖質・カロリーが管理された宅配弁当なら、メニューを選ぶだけで食事管理が完了します。nosh（糖質30g以下）、三ツ星ファーム（350kcal以下）が特におすすめです。", color: "bg-green-50" },
             { title: "一人暮らしの方 → 宅配弁当がおすすめ", text: "買い出し不要・調理不要・洗い物不要の三拍子。冷凍ストックできるため、急な予定変更にも対応可能です。", color: "bg-blue-50" },
-            { title: "共働き世帯 → 宅配弁当がおすすめ", text: "帰宅後レンジで7分温めるだけで栄養バランスの良い食事が完成。献立を考える負担がなくなります。", color: "bg-purple-50" },
+            { title: "共働き世帯 → 宅配弁当がおすすめ", text: "帰宅後レンジで7分温めるだけで栄養バランスの良い食事が完成します。献立を考える負担がなくなります。", color: "bg-purple-50" },
             { title: "急な食事が必要なとき → コンビニ弁当がおすすめ", text: "外出先で食事が必要なとき、冷凍弁当のストックがないときは、24時間営業のコンビニが便利です。", color: "bg-amber-50" },
-            { title: "昼食（ランチ）→ 使い分けがおすすめ", text: "職場にレンジがあれば冷凍弁当を持参（1食350〜600円で済む）。外出が多い日はコンビニで対応。", color: "bg-pink-50" },
+            { title: "昼食（ランチ）→ 使い分けがおすすめ", text: "職場にレンジがあれば冷凍弁当を持参する方法もあります（1食350〜600円で済む）。外出が多い日はコンビニで対応しています。", color: "bg-pink-50" },
           ].map((item) => (
             <div key={item.title} className={`${item.color} rounded-lg p-4`}>
               <p className="font-bold text-sm mb-1">{item.title}</p>
@@ -426,16 +426,16 @@ export default function TakuhaiVsConveniPage() {
         <SectionHeading id="summary">まとめ</SectionHeading>
 
         <div className="bg-cream rounded-xl p-5 mb-6">
-          <p className="font-bold text-sm mb-3">宅配弁当 vs コンビニ弁当 結論</p>
+          <p className="font-bold text-sm mb-3">宅配弁当 vs コンビニ弁当 のまとめ</p>
           <div className="space-y-2 text-sm leading-relaxed">
             <p>
               <strong>栄養バランス</strong>は宅配弁当が圧勝。管理栄養士監修で糖質・カロリー・塩分がコントロールされており、コンビニ弁当の約3分の1の糖質量に抑えられています。
             </p>
             <p>
-              <strong>価格</strong>はサービスによりますが、コンビニ弁当にサラダ・飲み物を追加すると宅配弁当と同程度かそれ以上に。<Link href="/articles/yoshikei-reviews/" className="text-accent underline">ヨシケイ</Link>（夕食ネット）のシンプルミール（1食430円）ならコンビニ弁当より安く済みます。
+              <strong>価格</strong>はサービスによりますが、コンビニ弁当にサラダ・飲み物を追加すると宅配弁当と同程度かそれ以上になります。<Link href="/articles/yoshikei-reviews/" className="text-accent underline">ヨシケイ</Link>（夕食ネット）のシンプルミール（1食430円）ならコンビニ弁当より安く済みます。
             </p>
             <p>
-              <strong>手軽さ</strong>は即時性ではコンビニが優位ですが、ストック性・買い出し不要という面では宅配弁当に軍配。日常的な食事管理なら宅配弁当、急な食事にはコンビニと使い分けるのがベストです。
+              <strong>手軽さ</strong>は即時性ではコンビニが優位ですが、ストック性・買い出し不要という面では宅配弁当が優れています。日常的な食事管理なら宅配弁当、急な食事にはコンビニと使い分けるのがベストです。
             </p>
           </div>
         </div>
@@ -447,9 +447,9 @@ export default function TakuhaiVsConveniPage() {
         <section className="my-12">
           <h2 className="font-display text-2xl font-bold mb-3 text-foreground">主要15社の数値比較表（1食あたり）</h2>
           <p className="text-warm-gray text-sm mb-4">
-            主要宅食サービスのカロリー・糖質・タンパク質・塩分・価格を公式公開データから集約。1食あたりの栄養基準を公式に明記している社はその基準値（「以下」「以上」・コース別の場合は範囲）、メニューごとの値だけを公開している社（nosh・FIT FOOD HOME）は公式メニュー一覧の主菜の中央50%（四分位）の範囲を記載。
+            主要宅食サービスのカロリー・糖質・タンパク質・塩分・価格を公式公開データから集約しています。1食あたりの栄養基準を公式に明記している社はその基準値（「以下」「以上」・コース別の場合は範囲）、メニューごとの値だけを公開している社（nosh・FIT FOOD HOME）は公式メニュー一覧の主菜の中央50%（四分位）の範囲を記載しています。
             最新情報は各公式サイトでご確認ください。
-            <Link href="/methodology/" className="text-accent hover:underline">評価方法・データ源</Link> 参照。
+            <Link href="/methodology/" className="text-accent hover:underline">評価方法・データ源</Link>をご参照ください。
           </p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border border-warm-border bg-white rounded-lg overflow-hidden">

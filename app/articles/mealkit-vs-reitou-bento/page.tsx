@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "ミールキット vs 冷凍弁当 徹底比較【2026年版】調理の手間・日持ち・価格感・栄養で選ぶ";
 const ARTICLE_DESCRIPTION =
-  "ミールキットと冷凍弁当の違いを、調理の手間・日持ち・価格感・栄養・向いている人の観点でフラットに比較。どちらが自分のライフスタイルに合うかを整理します。料金・キャンペーンは変動するため、最新は各公式サイトでご確認ください。";
+  "ミールキットと冷凍弁当の違いを、調理の手間・日持ち・価格感・栄養・向いている人の観点でフラットに比較します。どちらが自分のライフスタイルに合うかを整理します。料金・キャンペーンは変動するため、最新は各公式サイトでご確認ください。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/mealkit-vs-reitou-bento/";
 
@@ -42,7 +42,7 @@ const faqData = [
   {
     question: "栄養バランスはどっちが良い？",
     answer:
-      "どちらが一律に優れているとは言えません。冷凍弁当は管理栄養士監修で主菜・副菜の品数やカロリー・塩分・たんぱく質などを設計した商品が多く、栄養バランスを数値で管理しやすいのが強みです。ミールキットは自分で仕上げるぶん野菜の量や味付けを調整しやすく、できたての食事をとれる点がメリット。栄養を数値で把握したいなら冷凍弁当、自分でコントロールしたいならミールキットが向きます。",
+      "どちらが一律に優れているとは言えません。冷凍弁当は管理栄養士監修で主菜・副菜の品数やカロリー・塩分・たんぱく質などを設計した商品が多く、栄養バランスを数値で管理しやすいのが強みです。ミールキットは自分で仕上げるぶん野菜の量や味付けを調整しやすく、できたての食事をとれる点がメリットです。栄養を数値で把握したいなら冷凍弁当、自分でコントロールしたいならミールキットが向きます。",
   },
   {
     question: "一人暮らしにはどっちが向いている？",
@@ -82,7 +82,7 @@ function Breadcrumbs() {
 
 function TableOfContents() {
   const sections = [
-    { id: "summary-top", label: "結論：調理したいかどうかで選ぶ" },
+    { id: "summary-top", label: "調理したいかどうかで選ぶ" },
     { id: "overview", label: "ミールキットと冷凍弁当の基本" },
     { id: "tema", label: "調理の手間の違い" },
     { id: "himochi", label: "日持ち・保存のしやすさの違い" },
@@ -289,7 +289,7 @@ export default function MealkitVsReitouBentoPage() {
             「ミールキットと冷凍弁当、どっちが自分に合うんだろう？」——どちらも食事の負担を減らせる便利なサービスですが、<strong>そもそもの仕組みが違います</strong>。
           </p>
           <p className="mb-3">
-            ざっくり言うと、ミールキットは<strong>下ごしらえ済みの食材とレシピが届いて、自分で簡単に調理する</strong>もの。冷凍弁当は<strong>調理済みのおかずが冷凍で届き、温めるだけで食べられる</strong>ものです。
+            ざっくり言うと、ミールキットは<strong>下ごしらえ済みの食材とレシピが届いて、自分で簡単に調理する</strong>ものです。冷凍弁当は<strong>調理済みのおかずが冷凍で届き、温めるだけで食べられる</strong>ものです。
           </p>
           <p>
             この記事では、調理の手間・日持ち・価格感・栄養・向いている人の観点で両者をフラットに比較します。<strong>料金・キャンペーンは時期で変動</strong>するため具体額は断定せず、最新は各公式サイトでご確認ください。
@@ -299,14 +299,14 @@ export default function MealkitVsReitouBentoPage() {
         <TableOfContents />
 
         {/* ===== 結論 ===== */}
-        <SectionHeading id="summary-top">結論：調理したいかどうかで選ぶ</SectionHeading>
+        <SectionHeading id="summary-top">調理したいかどうかで選ぶ</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
           ミールキットと冷凍弁当を選ぶときの最大の分かれ目は、<strong>「自分で少しでも調理したいか/まったくしたくないか」</strong>です。ここがはっきりすると、迷わず選べます。
         </p>
 
         <ComparisonTable
-          headers={["あなたの希望", "向いているタイプ"]}
+          headers={["ご希望", "向いているタイプ"]}
           rows={[
             ["簡単でいいから自分で作りたい／温かい料理がいい", "ミールキット"],
             ["とにかく温めるだけで完結させたい", "冷凍弁当"],
@@ -317,7 +317,7 @@ export default function MealkitVsReitouBentoPage() {
         />
 
         <div className="bg-green-50 rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-2">この記事の結論</p>
+          <p className="font-bold mb-2">この記事の要点</p>
           <ul className="list-disc list-inside space-y-1">
             <li>ミールキットは<strong>下ごしらえ済み食材を自分で調理</strong>するタイプ</li>
             <li>冷凍弁当は<strong>調理済みおかずを温めるだけ</strong>のタイプ</li>
@@ -331,12 +331,12 @@ export default function MealkitVsReitouBentoPage() {
 
         <SubHeading>ミールキットとは</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          ミールキット(料理キット)は、<strong>カット・下ごしらえ済みの食材とレシピがセットで届き、自分で短時間調理して仕上げる</strong>サービスです。献立を考える手間や買い物の手間を省きつつ、できたての温かい料理を食べられるのが特徴。野菜の量を増やしたり味付けを調整したりと、自分好みにアレンジできる自由度も魅力です。冷蔵で届くタイプが多いですが、冷凍タイプのミールキットもあります。
+          ミールキット(料理キット)は、<strong>カット・下ごしらえ済みの食材とレシピがセットで届き、自分で短時間調理して仕上げる</strong>サービスです。献立を考える手間や買い物の手間を省きつつ、できたての温かい料理を食べられるのが特徴です。野菜の量を増やしたり味付けを調整したりと、自分好みにアレンジできる自由度も魅力です。冷蔵で届くタイプが多いですが、冷凍タイプのミールキットもあります。
         </p>
 
         <SubHeading>冷凍弁当とは</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          冷凍弁当(冷凍宅配弁当)は、<strong>主菜・副菜が調理済みの状態で1食ずつ冷凍されて届き、電子レンジで温めるだけで食べられる</strong>サービスです。包丁も火も使わず、後片付けも最小限。冷凍庫にストックしておけば、好きなタイミングで1食ずつ食べられます。管理栄養士監修でカロリーや塩分、たんぱく質などを設計した商品が多く、栄養バランスを数値で管理しやすいのも特徴です。
+          冷凍弁当(冷凍宅配弁当)は、<strong>主菜・副菜が調理済みの状態で1食ずつ冷凍されて届き、電子レンジで温めるだけで食べられる</strong>サービスです。包丁も火も使わず、後片付けも最小限です。冷凍庫にストックしておけば、好きなタイミングで1食ずつ食べられます。管理栄養士監修でカロリーや塩分、たんぱく質などを設計した商品が多く、栄養バランスを数値で管理しやすいのも特徴です。
         </p>
 
         {/* ===== 調理の手間 ===== */}
@@ -357,7 +357,7 @@ export default function MealkitVsReitouBentoPage() {
         />
 
         <p className="text-sm mb-6 leading-relaxed">
-          調理する時間が少しでも取れて、できたてを食べたいならミールキット。忙しくて手間をゼロに近づけたい、洗い物も減らしたいなら冷凍弁当が向きます。<Link href="/articles/reitou-bento-atatame-kata/" className="text-accent underline">冷凍弁当の上手な温め方</Link>もあわせて知っておくと、より手軽に活用できます。
+          調理する時間が少しでも取れて、できたてを食べたいならミールキットです。忙しくて手間をゼロに近づけたい、洗い物も減らしたいなら冷凍弁当が向きます。<Link href="/articles/reitou-bento-atatame-kata/" className="text-accent underline">冷凍弁当の上手な温め方</Link>もあわせて知っておくと、より手軽に活用できます。
         </p>
 
         {/* ===== 日持ち ===== */}
@@ -396,7 +396,7 @@ export default function MealkitVsReitouBentoPage() {
         </ul>
 
         <p className="text-sm mb-6 leading-relaxed">
-          考え方として、ミールキットは<strong>食材費が中心で、自分の調理という手間が加わる</strong>もの。冷凍弁当は<strong>調理・加工まで済んだ完成品</strong>です。同じ「1食いくら」でも、省ける手間の量が違うため、金額だけでなく<strong>手間をどれだけ減らせるか</strong>もあわせて比べると納得しやすくなります。
+          考え方として、ミールキットは<strong>食材費が中心で、自分の調理という手間が加わる</strong>ものです。冷凍弁当は<strong>調理・加工まで済んだ完成品</strong>です。同じ「1食いくら」でも、省ける手間の量が違うため、金額だけでなく<strong>手間をどれだけ減らせるか</strong>もあわせて比べると納得しやすくなります。
         </p>
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6 text-sm leading-relaxed">
@@ -491,12 +491,12 @@ export default function MealkitVsReitouBentoPage() {
             日持ち・栄養設計・必要な収納スペースにも違いがあり、料金・お試しは<strong>時期や商品で変動</strong>します。当サイトでは正確性を優先し、価格は断定しません。
           </p>
           <p>
-            迷ったら、まずは少量のお試しで、味・量・手間の感覚を比べてみるのがおすすめ。最新・正確な情報は、必ず各公式サイトでご確認ください。
+            迷ったら、まずは少量のお試しで、味・量・手間の感覚を比べてみるのがおすすめです。最新・正確な情報は、必ず各公式サイトでご確認ください。
           </p>
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link href="/articles/yoshikei-vs-watami/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
             ヨシケイ vs ワタミの宅食 徹底比較
           </Link>
@@ -522,7 +522,7 @@ export default function MealkitVsReitouBentoPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

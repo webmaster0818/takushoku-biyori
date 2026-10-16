@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "1食200円台で買える安い宅配弁当はある？探し方と注意点【2026年版】";
 const ARTICLE_DESCRIPTION =
-  "1食200円台の激安宅配弁当は本当にあるのか、実質単価の考え方（まとめ買い・定期・キャンペーン適用時）を正直に整理。送料・最低食数・味や量など、安さだけで選ぶときの落とし穴と失敗しない探し方を解説します。具体的な金額は変動するため、最新は各公式サイトでご確認ください。";
+  "1食200円台の激安宅配弁当は本当にあるのか、実質単価の考え方（まとめ買い・定期・キャンペーン適用時）を整理します。送料・最低食数・味や量など、安さだけで選ぶときの落とし穴と失敗しない探し方を解説します。具体的な金額は変動するため、最新は各公式サイトでご確認ください。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/1shoku-200yen-dai/";
 
 export const metadata: Metadata = {
@@ -31,7 +31,7 @@ const faqData = [
   {
     question: "本当に1食200円台で買える宅配弁当はある？",
     answer:
-      "結論として、定価のままで1食200円台になる宅配弁当はほとんどありません。ただし、まとめ買い割引・定期便割引・初回キャンペーンなどが重なったときの『実質単価』として200円台に近づくケースは考えられます。料金は時期・食数・地域で変動するため、本記事では具体的な金額を断定しません。最新・正確な価格は必ず各公式サイトでご確認ください。",
+      "定価のままで1食200円台になる宅配弁当はほとんどありません。ただし、まとめ買い割引・定期便割引・初回キャンペーンなどが重なったときの『実質単価』として200円台に近づくケースは考えられます。料金は時期・食数・地域で変動するため、本記事では具体的な金額を断定しません。最新・正確な価格は必ず各公式サイトでご確認ください。",
   },
   {
     question: "なぜ宣伝の『1食○○円』と実際の支払額が違うの？",
@@ -81,7 +81,7 @@ function Breadcrumbs() {
 
 function TableOfContents() {
   const sections = [
-    { id: "summary-top", label: "結論：定価200円台はほぼ無い。実質単価で考える" },
+    { id: "summary-top", label: "定価200円台はほぼありません。実質単価で考える" },
     { id: "genjitsu", label: "1食200円台の現実：どんな条件で近づくのか" },
     { id: "jisshitsu", label: "実質単価の考え方（まとめ買い・定期・キャンペーン）" },
     { id: "ochiiri", label: "安さだけで選ぶときの落とし穴" },
@@ -286,7 +286,7 @@ export default function Shoku200YenDaiPage() {
             「1食200円台で買える安い宅配弁当ってあるの？」——できるだけ食費を抑えたい人にとって、これはとても気になるテーマです。
           </p>
           <p className="mb-3">
-            先に正直なことを言うと、<strong>定価のままで1食200円台になる宅配弁当はほとんどありません</strong>。ただし、まとめ買い・定期便・キャンペーンなどの割引が重なったときの「実質単価」として、200円台に近づくケースは考えられます。
+            <strong>定価のままで1食200円台になる宅配弁当はほとんどありません</strong>。ただし、まとめ買い・定期便・キャンペーンなどの割引が重なったときの「実質単価」として、200円台に近づくケースは考えられます。
           </p>
           <p>
             この記事では、激安価格帯の<strong>現実</strong>と<strong>実質単価の考え方</strong>を整理し、安さだけで選ぶときの落とし穴（送料・最低食数・味や量）まで解説します。具体的な金額は変動するため断定せず、最新は各公式サイトでご確認ください。
@@ -296,16 +296,16 @@ export default function Shoku200YenDaiPage() {
         <TableOfContents />
 
         {/* ===== 結論 ===== */}
-        <SectionHeading id="summary-top">結論：定価200円台はほぼ無い。実質単価で考える</SectionHeading>
+        <SectionHeading id="summary-top">定価200円台はほぼありません。実質単価で考える</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          最初に結論をまとめます。「1食200円台」を狙うなら、定価で探すのではなく<strong>「送料込みの実質1食単価」</strong>という発想に切り替えるのがポイントです。
+          要点は以下のとおりです。「1食200円台」を狙うなら、定価で探すのではなく<strong>「送料込みの実質1食単価」</strong>という発想に切り替えるのがポイントです。
         </p>
 
         <div className="bg-green-50 rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-2">この記事の結論</p>
+          <p className="font-bold mb-2">この記事の要点</p>
           <ul className="list-disc list-inside space-y-1">
-            <li>定価のままで1食200円台の宅配弁当は<strong>ほぼ無い</strong></li>
+            <li>定価のままで1食200円台の宅配弁当は<strong>ほぼありません</strong></li>
             <li>まとめ買い・定期・キャンペーンが重なると<strong>実質単価</strong>は下げられる</li>
             <li>比較は<strong>「本体価格＋送料 ÷ 実際の食数」</strong>で見る</li>
             <li>安さの裏で<strong>最低食数・量・味</strong>に注意（架空の評価はしません）</li>
@@ -352,7 +352,7 @@ export default function Shoku200YenDaiPage() {
             実質1食単価 ＝（本体価格 ＋ 送料 − 割引）÷ 実際に頼む食数
           </p>
           <p>
-            ポイントは<strong>「送料を足す」</strong>ことと<strong>「自分が実際に頼む食数で割る」</strong>こと。広告の最安単価は最大食数前提のことが多いので、少なく頼むなら単価は上がる前提で見ましょう。
+            ポイントは<strong>「送料を足す」</strong>ことと<strong>「自分が実際に頼む食数で割る」</strong>ことです。広告の最安単価は最大食数前提のことが多いので、少なく頼むなら単価は上がる前提で見ましょう。
           </p>
         </div>
 
@@ -384,7 +384,7 @@ export default function Shoku200YenDaiPage() {
 
         <SubHeading>落とし穴2：最低食数・最低金額・定期の縛り</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          安いプランほど<strong>最低食数や最低注文金額、定期継続が条件</strong>になっていることがあります。「少しだけ試したい」のに、実は最初からまとまった量を買う前提だった、というケースに注意。解約やスキップの条件もあわせて確認しておくと安心です。まずは<Link href="/articles/otameshi-set-osusume/" className="text-accent underline">お試しセットのおすすめ</Link>で少量から確かめるのも手です。
+          安いプランほど<strong>最低食数や最低注文金額、定期継続が条件</strong>になっていることがあります。「少しだけ試したい」のに、実は最初からまとまった量を買う前提だった、というケースに注意が必要です。解約やスキップの条件もあわせて確認しておくと安心です。まずは<Link href="/articles/otameshi-set-osusume/" className="text-accent underline">お試しセットのおすすめ</Link>で少量から確かめるのも手です。
         </p>
 
         <SubHeading>落とし穴3：味・量・品数とのバランス</SubHeading>
@@ -439,7 +439,7 @@ export default function Shoku200YenDaiPage() {
         <div className="bg-green-50 rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-2">ひとことで言うと</p>
           <p>
-            「1食200円台」は<strong>条件がそろったときの実質単価</strong>として狙うもの。<strong>送料込み・実際の食数・継続時の価格</strong>で比べ、最後は少量で味と量を確かめる——これが激安価格帯で失敗しない王道です。
+            「1食200円台」は<strong>条件がそろったときの実質単価</strong>として狙うものです。<strong>送料込み・実際の食数・継続時の価格</strong>で比べ、最後は少量で味と量を確かめる——これが激安価格帯で失敗しない王道です。
           </p>
         </div>
 
@@ -466,7 +466,7 @@ export default function Shoku200YenDaiPage() {
             安さだけで選ぶと、送料・最低食数の縛り・量や味の満足度で「思っていたのと違う」となりがちです。当サイトでは正確性を優先し、価格・送料・割引は断定せず、架空の口コミや評価も掲載しません。
           </p>
           <p>
-            まずは<strong>少量のお試しや少ない食数</strong>で味・量・配送の使い勝手を確かめ、納得できたら食数を増やすのがおすすめ。最新・正確な料金やキャンペーンは、必ず各公式サイトでご確認ください。
+            まずは<strong>少量のお試しや少ない食数</strong>で味・量・配送の使い勝手を確かめ、納得できたら食数を増やすのがおすすめです。最新・正確な料金やキャンペーンは、必ず各公式サイトでご確認ください。
           </p>
         </div>
 
@@ -481,7 +481,7 @@ export default function Shoku200YenDaiPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link href="/articles/souryou-yasui-ranking/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
             送料が安い宅配弁当ランキング
           </Link>
@@ -507,7 +507,7 @@ export default function Shoku200YenDaiPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "三ツ星ファームのクーポン・キャンペーン【2026年版】初回割引の探し方と注意点";
 const ARTICLE_DESCRIPTION =
-  "三ツ星ファームのクーポン・キャンペーン・初回割引の探し方をわかりやすく解説。どこで入手できるか、適用条件、申し込みの流れ、損しないための注意点まで網羅。割引額・コードは時期で変動するため、最新・正確な情報は公式サイトでご確認ください。";
+  "三ツ星ファームのクーポン・キャンペーン・初回割引の探し方をわかりやすく解説します。どこで入手できるか、適用条件、申し込みの流れ、損しないための注意点まで網羅しています。割引額・コードは時期で変動するため、最新・正確な情報は公式サイトでご確認ください。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/mitsuboshi-coupon/";
 
 export const metadata: Metadata = {
@@ -41,7 +41,7 @@ const faqData = [
   {
     question: "クーポンと初回キャンペーンは併用できる？",
     answer:
-      "併用できるかどうかは、その時のキャンペーン規約によって異なります。自動適用される初回特典とコード入力型クーポンが同時に使えない場合もあれば、組み合わせられる場合もあります。確実なのは、申し込み確認画面で割引が反映されているかをチェックすること。併用ルールや最も得になる組み合わせは、申込前に公式の表示で必ず確認してください。",
+      "併用できるかどうかは、その時のキャンペーン規約によって異なります。自動適用される初回特典とコード入力型クーポンが同時に使えない場合もあれば、組み合わせられる場合もあります。確実なのは、申し込み確認画面で割引が反映されているかをチェックすることです。併用ルールや最も得になる組み合わせは、申込前に公式の表示で必ず確認してください。",
   },
   {
     question: "クーポンを使うのに条件はある？",
@@ -81,7 +81,7 @@ function Breadcrumbs() {
 
 function TableOfContents() {
   const sections = [
-    { id: "summary-top", label: "結論：クーポンは公式キャンペーンページが基本" },
+    { id: "summary-top", label: "クーポンは公式キャンペーンページが基本" },
     { id: "where", label: "三ツ星ファームのクーポン・キャンペーンの探し方" },
     { id: "types", label: "クーポン・割引のタイプを整理" },
     { id: "shokai", label: "初回割引(初回キャンペーン)の特徴" },
@@ -298,14 +298,14 @@ export default function MitsuboshiCouponPage() {
         <TableOfContents />
 
         {/* ===== 結論 ===== */}
-        <SectionHeading id="summary-top">結論：クーポンは公式キャンペーンページが基本</SectionHeading>
+        <SectionHeading id="summary-top">クーポンは公式キャンペーンページが基本</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
           三ツ星ファームをお得に始める一番確実な方法は、<strong>公式サイトのキャンペーンページから新規申し込みすること</strong>です。初回向けの割引はコード不要で適用されることも多く、まずは公式の最新案内を確認するのが近道です。
         </p>
 
         <div className="bg-green-50 rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-2">この記事の結論</p>
+          <p className="font-bold mb-2">この記事の要点</p>
           <ul className="list-disc list-inside space-y-1">
             <li>クーポン・割引は<strong>公式キャンペーンページが基本の入手先</strong></li>
             <li>割引額・コードは<strong>時期により変動</strong>するため公式で要確認</li>
@@ -383,7 +383,7 @@ export default function MitsuboshiCouponPage() {
         </p>
 
         <ComparisonTable
-          headers={["あなたの状況", "おすすめの選び方"]}
+          headers={["ご利用状況", "おすすめの選び方"]}
           rows={[
             ["まず試してみたい", "公式キャンペーンの初回割引を活用"],
             ["正規のクーポンコードを持っている", "コードと自動割引のどちらが得か申込画面で比較"],
@@ -439,7 +439,7 @@ export default function MitsuboshiCouponPage() {
           },
           {
             title: "4. 申込前に必ず割引反映を確認",
-            text: "注文を確定する前に、確認画面で割引額が反映されているかをチェック。反映されていない場合は確定せず、原因(期限切れ・条件未達など)を確認しましょう。",
+            text: "注文を確定する前に、確認画面で割引額が反映されているかをご確認ください。反映されていない場合は確定せず、原因(期限切れ・条件未達など)を確認しましょう。",
           },
         ].map((item, i) => (
           <div key={i} className="bg-cream rounded-lg p-4 mb-4 text-sm leading-relaxed">
@@ -476,7 +476,7 @@ export default function MitsuboshiCouponPage() {
         </div>
 
         {/* ===== まとめ ===== */}
-        <SectionHeading id="summary">まとめ：まずは公式キャンペーンを確認しよう</SectionHeading>
+        <SectionHeading id="summary">まとめ：公式キャンペーンの確認方法</SectionHeading>
 
         <div className="bg-cream rounded-xl p-6 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
@@ -486,7 +486,7 @@ export default function MitsuboshiCouponPage() {
             割引額やクーポンコードは<strong>時期によって変動</strong>します。当サイトでは正確性を優先し、具体的な金額やコードは断定しません。
           </p>
           <p>
-            一番お得な方法を選ぶコツは、<strong>申し込み画面に表示される実際の反映額を見比べる</strong>こと。最新・正確な情報は、必ず三ツ星ファーム公式サイトでご確認ください。
+            一番お得な方法を選ぶコツは、<strong>申し込み画面に表示される実際の反映額を見比べる</strong>ことです。最新・正確な情報は、必ず三ツ星ファーム公式サイトでご確認ください。
           </p>
         </div>
 
@@ -503,7 +503,7 @@ export default function MitsuboshiCouponPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
             三ツ星ファームの口コミ・評判
           </Link>
@@ -529,7 +529,7 @@ export default function MitsuboshiCouponPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

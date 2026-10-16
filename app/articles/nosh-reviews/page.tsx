@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "nosh(ナッシュ)の口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "nosh(ナッシュ)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。1食あたりの料金（税込612円〜・club最安492円）、地域別送料、nosh club割引の仕組みも解説します。最新の料金は公式でご確認ください。【2026年10月更新】";
+  "nosh(ナッシュ)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。1食あたりの料金（税込612円〜・club最安492円）、地域別送料、nosh club割引の仕組みも解説します。最新の料金は公式でご確認ください。【2026年10月更新】";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/nosh-reviews/";
 
 export const metadata: Metadata = {
@@ -455,19 +455,19 @@ export default function NoshReviewsPage() {
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
-            「nosh(ナッシュ)って実際どうなの？」「まずいって口コミは本当？」——累計販売食数1.5億食を突破した人気の冷凍宅配弁当サービスnosh。ネット上には良い評判も悪い評判もあふれていて、どれを信じればいいのか迷いますよね。
+            「nosh(ナッシュ)って実際どうなの？」「まずいって口コミは本当？」——累計販売食数1.5億食を突破した人気の冷凍宅配弁当サービスnosh。ネット上には良い評判も悪い評判もあふれていて、どの情報を参考にすべきか判断しにくい状況です。
           </p>
           <p className="mb-3">
-            この記事では、<strong>公開されている実在のレビュー記事・公式情報を出典付きで整理</strong>し、noshの良い口コミ・悪い口コミの両方を中立に検証しました。「まずい」と言われる理由にも正面から答えます。
+            この記事では、<strong>公開されている実在のレビュー記事・公式情報を出典付きで整理</strong>し、noshの良い口コミ・悪い口コミの両方を中立に検証しました。「まずい」と言われる理由についても解説します。
           </p>
           <p>
-            さらに、<strong>料金プラン・地域別送料・nosh club割引</strong>の仕組みまで詳しく解説。noshが自分に合うかどうか、この記事で判断できます。
+            さらに、<strong>料金プラン・地域別送料・nosh club割引</strong>の仕組みまで詳しく解説します。noshが自分に合うかどうか、この記事で判断できます。
           </p>
         </div>
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：noshはこんな人に向いています</p>
+          <p className="font-bold text-base mb-3">noshが向いている方</p>
           <p className="text-sm leading-relaxed mb-4">
             noshは、<strong>「メニューの豊富さと、低糖質・低塩分の設計を手軽に続けたい人」</strong>に向いた冷凍宅配弁当です。口コミでは「温めるだけの手軽さ」「糖質・塩分控えめなのに味がしっかりしている」という評価が目立つ一方、メニューによる当たり外れ・冷凍庫スペース・自炊比のコストは注意点として挙がっています。「まずい」という声もありますが評価は分かれており、味の感じ方には個人差があります（<a href="#mazui" className="text-accent underline">検証セクションへ</a>）。
           </p>
@@ -509,7 +509,7 @@ export default function NoshReviewsPage() {
         <SectionHeading id="about">nosh(ナッシュ)とは？基本情報まとめ</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          nosh(ナッシュ)は、ナッシュ株式会社（大阪市北区）が運営する冷凍宅配弁当サービスです。「手軽に健康的な食事を」というコンセプトで急成長し、<strong>累計販売食数は1.5億食を突破</strong>（2025年12月時点・公式発表）。冷凍宅配弁当業界ではトップクラスの知名度を誇ります。
+          nosh(ナッシュ)は、ナッシュ株式会社（大阪市北区）が運営する冷凍宅配弁当サービスです。「手軽に健康的な食事を」というコンセプトで急成長し、<strong>累計販売食数は1.5億食を突破しています</strong>（2025年12月時点・公式発表）。冷凍宅配弁当業界ではトップクラスの知名度を誇ります。
         </p>
 
         <SubHeading>noshの基本スペック</SubHeading>
@@ -560,7 +560,7 @@ export default function NoshReviewsPage() {
             },
             {
               title: "スマホアプリで注文管理が完結",
-              text: "iOS・Android対応の公式アプリがあり、メニューの選択・変更・スキップ・解約まですべてアプリで完結します。栄養素の確認、お気に入り登録、配送スケジュール管理もワンストップ。「来週は旅行だからスキップ」といった柔軟な使い方ができます。",
+              text: "iOS・Android対応の公式アプリがあり、メニューの選択・変更・スキップ・解約まですべてアプリで完結します。栄養素の確認、お気に入り登録、配送スケジュール管理もワンストップです。「来週は旅行だからスキップ」といった柔軟な使い方ができます。",
             },
           ].map((item) => (
             <div key={item.title} className="bg-green-50 rounded-lg p-4">
@@ -592,7 +592,7 @@ export default function NoshReviewsPage() {
         <SectionHeading id="bad-reviews">noshの悪い口コミ・評判（出典付き）</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          良い口コミだけでなく、ネガティブな意見も出典付きで正直に紹介します。購入前に知っておくべき注意点です。
+          良い口コミだけでなく、否定的な意見も出典付きで掲載しています。購入前にご確認いただきたい注意点です。
         </p>
 
         {badReviewCategories.map((category) => (
@@ -707,7 +707,7 @@ export default function NoshReviewsPage() {
         </div>
 
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-1">編集部の結論：noshが「まずい」は一部メニュー・一部の人の感想</p>
+          <p className="font-bold mb-1">編集部の見解：noshが「まずい」は一部メニュー・一部の人の感想</p>
           <p className="mb-2">
             水っぽさや薄味の指摘は実在しますが、「冷凍とは思えない」という好意的な評価も同じだけ実在します。<strong>濃い味が好きな人・ご飯付きのがっつり弁当を求める人には合いにくく</strong>、糖質・塩分控えめの食事を手軽に続けたい人には評価が高い、という傾向です。
           </p>
@@ -746,12 +746,12 @@ export default function NoshReviewsPage() {
           {
             num: 3,
             title: "nosh club割引で続けるほどお得になる",
-            text: "nosh独自の継続割引制度「nosh club」は、累計購入数に応じて割引率がアップする仕組み。10食ごとにランクが上がり、最高ランクでは10食プランが1食あたり税込499円（12食プランなら492円）まで下がります。特別な手続きは不要で自動適用。公式サイトによると、スキップ・停止は何回行ってもランクは保持されるため、一時的に不要な時は解約ではなく停止を選ぶのがコツです（ただし停止から1年以内に再申込がないと会員資格を失い、停止中はクーポンが無効になる点は公式規約・FAQに明記されています）。",
+            text: "nosh独自の継続割引制度「nosh club」は、累計購入数に応じて割引率が上がる仕組みです。10食ごとにランクが上がり、最高ランクでは10食プランが1食あたり税込499円（12食プランなら492円）まで下がります。特別な手続きは不要で自動で適用されます。公式サイトによると、スキップ・停止は何回行ってもランクは保持されるため、一時的に不要な時は解約ではなく停止を選ぶのがコツです（ただし停止から1年以内に再申込がないと会員資格を失い、停止中はクーポンが無効になる点は公式規約・FAQに明記されています）。",
           },
           {
             num: 4,
             title: "糖質・塩分管理が無理なく続けられる",
-            text: "全メニュー糖質30g以下・塩分2.5g以下という設計は、食事管理をしたい方にとって大きな安心材料です。「メニューを選ぶたびに数値を気にする」というストレスがなく、何を選んでも設計基準内。口コミでも「手軽に糖質制限ができる」（アシタマガジン掲載の利用者の声）という評価が見られます。",
+            text: "全メニュー糖質30g以下・塩分2.5g以下という設計は、食事管理をしたい方にとって大きな安心材料です。「メニューを選ぶたびに数値を気にする」というストレスがなく、何を選んでも設計基準内です。口コミでも「手軽に糖質制限ができる」（アシタマガジン掲載の利用者の声）という評価が見られます。",
           },
           {
             num: 5,
@@ -774,7 +774,7 @@ export default function NoshReviewsPage() {
         <SectionHeading id="demerits">注意すべきデメリット3つ</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          メリットだけでなく、「ここは正直イマイチ」というポイントも率直にお伝えします。
+          メリットだけでなく、注意が必要な点もあわせてご説明します。
         </p>
 
         {[
@@ -834,7 +834,7 @@ export default function NoshReviewsPage() {
           ]}
         />
         <p className="text-sm mb-2 leading-relaxed">
-          <strong>送料のポイント：</strong>製造拠点が関西にあるため、関西が最安です。送料は毎回かかるので、<strong>「送料込みの1食あたり」で考えることが重要</strong>。10食プラン（関東）なら送料込みで1食あたり約737円、関西なら約723円です（プラン合計6,206円＋送料で試算）。まとめ買いで配送回数を減らすほど送料負担は下がります。
+          <strong>送料のポイント：</strong>製造拠点が関西にあるため、関西が最安です。送料は毎回かかるので、<strong>「送料込みの1食あたり」で考えることが重要です</strong>。10食プラン（関東）なら送料込みで1食あたり約737円、関西なら約723円です（プラン合計6,206円＋送料で試算）。まとめ買いで配送回数を減らすほど送料負担は下がります。
         </p>
         <p className="text-xs text-warm-gray mb-6">
           ※出典: nosh公式サイト「全国送料一覧」（2026年7月27日改訂版・2026年10月9日確認・クール便料金込み）。4〜12食は同一料金です。上記以外の地域は公式サイトの送料一覧をご確認ください。
@@ -849,8 +849,8 @@ export default function NoshReviewsPage() {
           <ul className="list-disc list-inside space-y-1">
             <li>「解約」するとランクが失効するが、「停止」「スキップ」は何回行ってもランクは保持される（公式サイトより）</li>
             <li>10食プランを続ければ着実にランクが上がり、長期利用ほど1食単価が下がる</li>
-            <li>最安時は10食プランで1食税込499円。送料込みでも関東で約616円/食の水準</li>
-            <li>停止から1年以内に再申込がないと会員資格を失う。停止中はクーポンも無効（公式規約・FAQより）</li>
+            <li>最安時は10食プランで1食税込499円です。送料込みでも関東で約616円/食の水準</li>
+            <li>停止から1年以内に再申込がないと会員資格を失います。停止中はクーポンも無効（公式規約・FAQより）</li>
           </ul>
         </div>
 
@@ -868,7 +868,7 @@ export default function NoshReviewsPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※公式FAQ記載のプラン合計（8食5,157円・10食6,206円）と関東送料1,166円で編集部が試算（2026年10月9日時点）。nosh club割引適用で下がります。正確な請求額は公式サイトでご確認ください。
+          ※公式FAQ記載のプラン合計（8食5,157円・10食6,206円）と関東送料1,166円で編集部が試算しています（2026年10月9日時点）。nosh club割引適用で下がります。正確な請求額は公式サイトでご確認ください。
         </p>
 
         {/* ===== おすすめな人・おすすめしない人 ===== */}
@@ -942,7 +942,7 @@ export default function NoshReviewsPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※各社公式サイトの公開情報をもとに編集部作成（nosh・三ツ星ファームは2026年10月9日、ウェルネスダイニングは2026年10月10日に確認）。最新情報は各公式サイトでご確認ください。
+          ※各社公式サイトの公開情報をもとに編集部が作成しています（nosh・三ツ星ファームは2026年10月9日、ウェルネスダイニングは2026年10月10日に確認）。最新情報は各公式サイトでご確認ください。
         </p>
 
         <div className="table-wrapper mb-6">
@@ -1022,7 +1022,7 @@ export default function NoshReviewsPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link
             href="/articles/nosh-vs-mitsuboshi-vs-wellness/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
@@ -1061,7 +1061,7 @@ export default function NoshReviewsPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>
@@ -1124,9 +1124,9 @@ export default function NoshReviewsPage() {
         <section className="my-12">
           <h2 className="font-display text-2xl font-bold mb-3 text-foreground">主要15社の数値比較表（1食あたり）</h2>
           <p className="text-warm-gray text-sm mb-4">
-            主要宅食サービスのカロリー・糖質・タンパク質・塩分・価格を公式公開データから集約。1食あたりの栄養基準を公式に明記している社はその基準値（「以下」「以上」・コース別の場合は範囲）、メニューごとの値だけを公開している社（nosh・FIT FOOD HOME）は公式メニュー一覧の主菜の中央50%（四分位）の範囲を記載。
+            主要宅食サービスのカロリー・糖質・タンパク質・塩分・価格を公式公開データから集約しています。1食あたりの栄養基準を公式に明記している社はその基準値（「以下」「以上」・コース別の場合は範囲）、メニューごとの値だけを公開している社（nosh・FIT FOOD HOME）は公式メニュー一覧の主菜の中央50%（四分位）の範囲を記載しています。
             最新情報は各公式サイトでご確認ください。
-            <Link href="/methodology/" className="text-accent hover:underline">評価方法・データ源</Link> 参照。
+            <Link href="/methodology/" className="text-accent hover:underline">評価方法・データ源</Link>をご参照ください。
           </p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border border-warm-border bg-white rounded-lg overflow-hidden">

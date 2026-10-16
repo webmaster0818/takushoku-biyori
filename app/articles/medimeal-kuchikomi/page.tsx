@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "メディミールの口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "メディミールは「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。管理栄養士チームが手がける制限食6コースの料金（カロリー制限食7食5,270円・定期送料無料）・送料・解約条件も2026年10月11日確認の公式データで解説します。";
+  "メディミールは「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。管理栄養士チームが手がける制限食6コースの料金（カロリー制限食7食5,270円・定期送料無料）・送料・解約条件も2026年10月11日確認の公式データで解説します。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/medimeal-kuchikomi/";
 
@@ -441,19 +441,19 @@ export default function MedimealKuchikomiPage() {
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
-            「メディミールって実際どうなの？」「制限食だから薄味でまずいんじゃない？」——カロリー制限・たんぱく質＆塩分制限などの制限食6コースを展開する冷凍宅配食メディミール。商品開発から調理、電話対応まで管理栄養士が担当する体制が特徴です。
+            「メディミールって実際どうなの？」「制限食だから薄味でまずいんじゃない？」——メディミールは、カロリー制限・たんぱく質＆塩分制限などの制限食6コースを展開する冷凍宅配食です。商品開発から調理、電話対応まで管理栄養士が担当する体制が特徴です。
           </p>
           <p className="mb-3">
-            この記事では、<strong>公開されている実在のレビュー記事を出典付きで整理</strong>し、メディミールの良い口コミ・悪い口コミの両方を中立に検証。「まずい」と言われる理由にも正面から答えます。
+            この記事では、<strong>公開されている実在のレビュー記事を出典付きで整理</strong>し、メディミールの良い口コミ・悪い口コミの両方を中立に検証します。「まずい」と言われる理由についても解説します。
           </p>
           <p>
-            さらに、<strong>料金体系・送料・解約条件</strong>を2026年10月11日確認の公式データで解説。メディミールが自分（またはご家族）に合うかどうか、この記事で判断できます。
+            さらに、<strong>料金体系・送料・解約条件</strong>を2026年10月11日確認の公式データで解説します。メディミールが自分（またはご家族）に合うかどうか、この記事で判断できます。
           </p>
         </div>
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：メディミールはこんな人に向いています</p>
+          <p className="font-bold text-base mb-3">メディミールが向いている方</p>
           <p className="text-sm leading-relaxed mb-4">
             メディミールは、<strong>「食事制限が必要で、栄養計算を専門家に任せたい人」</strong>に向いた制限食宅配サービスです。口コミでは「制限食なのに味がしっかりしている」「電話で管理栄養士に相談できる」という評価が目立つ一方、量の控えめさと価格は注意点として挙がっています。「まずい」と明言する口コミの実例は編集部の確認範囲では見つかりませんでした（<a href="#mazui" className="text-accent underline">検証セクションへ</a>）。
           </p>
@@ -522,11 +522,11 @@ export default function MedimealKuchikomiPage() {
           {[
             {
               title: "商品開発〜調理〜電話対応まで管理栄養士が担当",
-              text: "多くの宅配食は「管理栄養士監修」ですが、メディミールは公式サイトで「監修ではなく、商品開発から調理まですべて管理栄養士が担当」と明記。注文窓口の電話対応もすべて管理栄養士のため、食事制限の疑問をその場で相談しやすい体制です。",
+              text: "多くの宅配食は「管理栄養士監修」ですが、メディミールは公式サイトで「監修ではなく、商品開発から調理まですべて管理栄養士が担当」と明記しています。注文窓口の電話対応もすべて管理栄養士のため、食事制限の疑問をその場で相談しやすい体制です。",
             },
             {
               title: "制限の目的別に6コース",
-              text: "カロリー制限・たんぱく質＆塩分制限・糖質制限・塩分制限の4つの制限食に加え、健康維持向けのバランス健康食、噛む力が弱い方向けのムースやわらか食まで用意。持病や介護など、家庭ごとの事情に合わせて選べます。",
+              text: "カロリー制限・たんぱく質＆塩分制限・糖質制限・塩分制限の4つの制限食に加え、健康維持向けのバランス健康食、噛む力が弱い方向けのムースやわらか食まで用意されています。持病や介護など、家庭ごとの事情に合わせて選べます。",
             },
             {
               title: "商品価格は初回・定期・都度で同一、差は送料のみ",
@@ -562,7 +562,7 @@ export default function MedimealKuchikomiPage() {
         <SectionHeading id="bad-reviews">メディミールの悪い口コミ・評判（出典付き）</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          ネガティブな意見も出典付きで正直に紹介します。購入前に知っておくべき注意点です。
+          否定的な意見も出典付きで掲載しています。購入前にご確認いただきたい注意点です。
         </p>
 
         {badReviewCategories.map((category) => (
@@ -620,7 +620,7 @@ export default function MedimealKuchikomiPage() {
         </div>
 
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-1">編集部の結論：「まずい」実例は確認できず。不満は味より「量」に集中</p>
+          <p className="font-bold mb-1">編集部の見解：「まずい」実例は確認できませんでした。不満は味より「量」に集中</p>
           <p>
             制限食は「薄味でまずい」という先入観を持たれやすいジャンルですが、メディミールについては複数の実食メディアが「味はしっかりしている」で一致しています。一方で「量が少ない」という不満は実在するため、<strong>がっつり食べたい人は主食や汁物を足す前提</strong>で考えましょう。味の感じ方には個人差があるため、回数縛りのない定期便でまず1回試すのが確実です。
           </p>
@@ -806,7 +806,7 @@ export default function MedimealKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※各社公式サイトの公開情報をもとに編集部作成（メディミール・Dr.つるかめキッチンの列は2026年10月11日、ウェルネスダイニングの列は2026年10月10日に公式で確認）。最新情報は各公式サイトでご確認ください。
+          ※各社公式サイトの公開情報をもとに編集部が作成しています（メディミール・Dr.つるかめキッチンの列は2026年10月11日、ウェルネスダイニングの列は2026年10月10日に公式で確認）。最新情報は各公式サイトでご確認ください。
         </p>
 
         {/* ===== FAQ ===== */}
@@ -833,7 +833,7 @@ export default function MedimealKuchikomiPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link
             href="/articles/tsurukame-reviews/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
@@ -865,7 +865,7 @@ export default function MedimealKuchikomiPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

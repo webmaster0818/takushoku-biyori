@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "ダイエティシャン(Dietician)の口コミ・評判は？まずいって本当？販売終了の事実と代替サービスまで解説【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "ダイエティシャン(Dietician)は「まずい」って本当？——結論、Dieticianは2025年11月28日出荷分をもって販売終了しています。本記事では公開レビューの良い口コミ・悪い口コミを出典付きで振り返り、高タンパク・低糖質という特徴を引き継げる代替サービスを中立に解説します。【2026年10月更新】";
+  "ダイエティシャン(Dietician)は「まずい」って本当？——Dieticianは2025年11月28日出荷分をもって販売終了しています。本記事では公開レビューの良い口コミ・悪い口コミを出典付きで振り返り、高タンパク・低糖質という特徴を引き継げる代替サービスを中立に解説します。【2026年10月更新】";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/dietician-kuchikomi/";
 
@@ -47,7 +47,7 @@ const faqData = [
   {
     question: "ダイエティシャンの料金は送料込みだった？",
     answer:
-      "はい。公式FAQに「商品本体代金に含まれております。別途送料がかかるという事はございません」と明記されていました。販売当時の価格は10食コースで1食968円（SMALL初回）〜。お届け回数に応じて割引される「myランク」制度があり、6回目以降は1食100円引きでした。",
+      "はい。公式FAQに「商品本体代金に含まれております。別途送料がかかるという事はございません」と明記されていました。販売当時の価格は10食コースで1食968円（SMALL初回）〜です。お届け回数に応じて割引される「myランク」制度があり、6回目以降は1食100円引きでした。",
   },
   {
     question: "ダイエティシャンの代わりになる宅配弁当は？",
@@ -319,7 +319,7 @@ const badReviewCategories: {
       },
     ],
     comment:
-      "メニューはおまかせ（全37〜40種から自動で構成）でカスタム不可、支払いはクレジットカードのみでした。1食968円〜（送料込）という価格も、一般的な冷凍弁当と比べると高めの部類。「PFC設計をプロに丸投げできる対価」と捉えられるかで評価が分かれていました。",
+      "メニューはおまかせ（全37〜40種から自動で構成）でカスタム不可、支払いはクレジットカードのみでした。1食968円〜（送料込）という価格も、一般的な冷凍弁当と比べると高めの部類です。「PFC設計をプロに丸投げできる対価」と捉えられるかで評価が分かれていました。",
   },
 ];
 
@@ -429,7 +429,7 @@ export default function DieticianKuchikomiPage() {
             <strong>Dieticianは2025年11月28日出荷分をもって販売終了しており、現在は新規注文できません。</strong>この記事では、販売終了の事実関係を一次情報で整理したうえで、<strong>公開されている実在のレビュー・口コミを出典付きで振り返り</strong>、「まずい」と言われた理由も正面から検証します。
           </p>
           <p>
-            さらに、Dieticianの「高タンパク・PFC管理・送料込み」という特徴を引き継げる<strong>代替サービス3つ</strong>を中立に紹介。乗り換え先の判断までこの記事で完結できます。
+            さらに、Dieticianの「高タンパク・PFC管理・送料込み」という特徴を引き継げる<strong>代替サービス3つ</strong>を中立に紹介します。乗り換え先の判断までこの記事で完結できます。
           </p>
         </div>
 
@@ -437,7 +437,7 @@ export default function DieticianKuchikomiPage() {
         <SectionHeading id="closed">【最重要】ダイエティシャンは2025年11月に販売終了</SectionHeading>
 
         <div className="border-2 border-red-300 rounded-xl p-5 mb-8 bg-red-50">
-          <p className="font-bold text-base mb-3">結論：Dieticianは終売済み。現在は注文できません</p>
+          <p className="font-bold text-base mb-3">Dieticianは販売を終了しており、現在は注文できません</p>
           <p className="text-sm leading-relaxed mb-3">
             公式サイトには2025年10月31日付で<strong>「＜重要＞商品終売のお知らせ　Dieticianは11月28日出荷をもちまして、終売させて頂きました。」</strong>という告知が掲載されました（公式サイトのインターネットアーカイブで確認）。2026年10月10日時点でも公式サイトには接続できず、新規注文・再開の告知はありません。
           </p>
@@ -462,7 +462,7 @@ export default function DieticianKuchikomiPage() {
         <SectionHeading id="about">ダイエティシャン(Dietician)とはどんなサービスだったか</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          Dieticianは、メディカルフードサービス株式会社が2021年9月に開始した<strong>ダイエット・ボディメイク特化の冷凍宅配弁当</strong>です。管理栄養士監修のもと、三大栄養素（PFC）バランスを設計した2プラン制で、自社グループ工場（石川県小松市）で製造。「最新調理機器＋急速凍結」を掲げ、公式には2カ月で−5〜8kgの減量モニター事例も掲載されていました。以下は販売当時の情報です（公式サイトのアーカイブ・2026年7月4日確認）。
+          Dieticianは、メディカルフードサービス株式会社が2021年9月に開始した<strong>ダイエット・ボディメイク特化の冷凍宅配弁当</strong>です。管理栄養士監修のもと、三大栄養素（PFC）バランスを設計した2プラン制で、自社グループ工場（石川県小松市）で製造していました。「最新調理機器＋急速凍結」を掲げ、公式には2カ月で−5〜8kgの減量モニター事例も掲載されていました。以下は販売当時の情報です（公式サイトのアーカイブ・2026年7月4日確認）。
         </p>
 
         <SubHeading>Dieticianの基本スペック（販売当時）</SubHeading>
@@ -505,7 +505,7 @@ export default function DieticianKuchikomiPage() {
         <SectionHeading id="bad-reviews">ダイエティシャンの悪い口コミ・評判（出典付き）</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          ネガティブな意見も出典付きで正直に紹介します。代替サービス選びの判断材料にもなる注意点です。
+          否定的な意見も出典付きで掲載しています。代替サービスを選ぶ際の判断材料としてもご活用ください。
         </p>
 
         {badReviewCategories.map((category) => (
@@ -591,7 +591,7 @@ export default function DieticianKuchikomiPage() {
         </div>
 
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-1">編集部の結論：「まずい」は少数派。低脂質設計のパサつき・薄味が実態だった</p>
+          <p className="font-bold mb-1">編集部の見解：「まずい」は少数派です。低脂質設計のパサつき・薄味が実態だった</p>
           <p>
             確認した4媒体の総評はいずれも肯定的で、「まずい」が多数派という根拠はありませんでした。むしろ「PFCが優秀」「ちょうどいい量で美味しい」と、<strong>栄養設計と味の両立が評価されていたサービス</strong>です。だからこそ、代替サービスを選ぶ際も「高タンパク×低脂質の食事は多少のパサつき・薄味とトレードオフ」という前提を持っておくと、乗り換え後のギャップが小さくなります。
           </p>
@@ -634,7 +634,7 @@ export default function DieticianKuchikomiPage() {
           <div className="bg-green-50 rounded-lg p-4 text-sm leading-relaxed">
             <p className="font-bold mb-1">① PFC設計・ボディメイク特化を引き継ぐなら → マッスルデリ</p>
             <p className="mb-2">
-              目的別プランでタンパク質30g以上の食事を管理栄養士監修で提供する、Dieticianに最も設計思想が近いサービスです。メニュー数も50種類以上と豊富。
+              目的別プランでタンパク質30g以上の食事を管理栄養士監修で提供する、Dieticianに最も設計思想が近いサービスです。メニュー数も50種類以上と豊富です。
             </p>
             <Link href="/articles/muscle-deli-reviews/" className="text-accent hover:text-accent-dark underline font-medium">
               マッスルデリの口コミ・評判を見る →
@@ -652,7 +652,7 @@ export default function DieticianKuchikomiPage() {
           <div className="bg-green-50 rounded-lg p-4 text-sm leading-relaxed">
             <p className="font-bold mb-1">③ 続けやすさ・メニューの豊富さなら → nosh</p>
             <p className="mb-2">
-              全品糖質30g以下・100種類以上のメニューで、アプリからの管理も手軽。厳密なPFC管理より「ゆるく長く」続けたい人に向きます。
+              全品糖質30g以下・100種類以上のメニューで、アプリからの管理も手軽です。厳密なPFC管理より「ゆるく長く」続けたい人に向きます。
             </p>
             <Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline font-medium">
               noshの口コミ・評判を見る →
@@ -671,7 +671,7 @@ export default function DieticianKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※各社公式サイトの公開情報をもとに編集部作成（筋肉食堂DELIは2026年10月10日、noshは2026年10月9日、マッスルデリは2026年7月時点の確認）。最新情報は各公式サイトでご確認ください。
+          ※各社公式サイトの公開情報をもとに編集部が作成しています（筋肉食堂DELIは2026年10月10日、noshは2026年10月9日、マッスルデリは2026年7月時点の確認）。最新情報は各公式サイトでご確認ください。
         </p>
 
         {/* ===== FAQ ===== */}
@@ -683,7 +683,7 @@ export default function DieticianKuchikomiPage() {
         </div>
 
         {/* ===== まとめ ===== */}
-        <SectionHeading id="summary">まとめ：Dieticianは終売。評価されていた点を代替サービスで引き継ごう</SectionHeading>
+        <SectionHeading id="summary">まとめ：Dieticianの販売終了と代替サービス</SectionHeading>
 
         <div className="bg-cream rounded-xl p-6 mb-8">
           <p className="text-sm leading-relaxed mb-4">
@@ -698,7 +698,7 @@ export default function DieticianKuchikomiPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link
             href="/articles/muscle-deli-reviews/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
@@ -730,7 +730,7 @@ export default function DieticianKuchikomiPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

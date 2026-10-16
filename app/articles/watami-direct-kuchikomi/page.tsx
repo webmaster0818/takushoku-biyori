@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "ワタミの宅食ダイレクトの口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年9月最新】";
 const ARTICLE_DESCRIPTION =
-  "ワタミの宅食ダイレクト(冷凍おかずセット)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。お試し割(いつでも三菜10食セット税込3,900円・1食390円)、送料、定期購入の仕組みも解説。最新の料金は公式でご確認ください。【2026年9月更新】";
+  "ワタミの宅食ダイレクト(冷凍おかずセット)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。お試し割(いつでも三菜10食セット税込3,900円・1食390円)、送料、定期購入の仕組みも解説します。最新の料金は公式でご確認ください。【2026年9月更新】";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/watami-direct-kuchikomi/";
 
@@ -420,7 +420,7 @@ export default function WatamiDirectKuchikomiPage() {
             「ワタミの宅食ダイレクトって実際どうなの？」「まずいって口コミは本当？」——ワタミの宅食ダイレクトは、宅配弁当最大手ワタミグループの<strong>冷凍おかずセット</strong>。管理栄養士が設計した塩分・カロリー配慮のメニューを、全国に宅配便でまとめて届けてくれます。
           </p>
           <p className="mb-3">
-            この記事では、<strong>公開されている実在のレビュー記事を出典付きで整理</strong>し、良い口コミ・悪い口コミの両方を中立に検証。「まずい」と言われる理由にも正面から答えます。
+            この記事では、<strong>公開されている実在のレビュー記事を出典付きで整理</strong>し、良い口コミ・悪い口コミの両方を中立に検証します。「まずい」と言われる理由についても解説します。
           </p>
           <p>
             さらに、<strong>お試し割（いつでも三菜10食3,900円）・送料・定期購入の仕組み</strong>まで、2026年7月4日に公式サイトで確認した情報をもとに解説します。
@@ -429,7 +429,7 @@ export default function WatamiDirectKuchikomiPage() {
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：ワタミの宅食ダイレクトはこんな人に向いています</p>
+          <p className="font-bold text-base mb-3">ワタミの宅食ダイレクトが向いている方</p>
           <p className="text-sm leading-relaxed mb-4">
             ワタミの宅食ダイレクトは、<strong>「低価格帯で塩分・カロリーに配慮した冷凍おかずをストックしたい人」</strong>に向いたサービスです。口コミでは「塩分管理食とは思えないしっかりした味付け」「味・コスパの良さ」が評価される一方、三菜コースの量の少なさ・温めムラ・送料は注意点として挙がっています。「まずい」という強い酷評は少数派です（<a href="#mazui" className="text-accent underline">検証セクションへ</a>）。
           </p>
@@ -530,7 +530,7 @@ export default function WatamiDirectKuchikomiPage() {
         <SectionHeading id="bad-reviews">ワタミの宅食ダイレクトの悪い口コミ・評判（出典付き）</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          ネガティブな意見も出典付きで正直に紹介します。購入前に知っておくべき注意点です。
+          否定的な意見も出典付きで掲載しています。購入前にご確認いただきたい注意点です。
         </p>
 
         {badReviewCategories.map((category) => (
@@ -625,7 +625,7 @@ export default function WatamiDirectKuchikomiPage() {
         </div>
 
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-1">編集部の結論：「まずい」は①温めムラ②量の物足りなさが主因で、味自体の評価は高め</p>
+          <p className="font-bold mb-1">編集部の見解：「まずい」は①温めムラ②量の物足りなさが主因で、味自体の評価は高め</p>
           <p>
             介護食・給食で実績のあるワタミグループの設計だけに、塩分配慮食としての味の完成度を評価する声が目立ちます。温めムラは追加加熱で対処でき、量は五菜を選ぶかご飯を足すことで解決できるため、「まずい」の多くは使い方でカバーできる性質の不満です。まずは<strong>お試し割（1食390円・1回限り）</strong>で味との相性を確かめるのが合理的です。
           </p>
@@ -679,7 +679,7 @@ export default function WatamiDirectKuchikomiPage() {
           {
             num: 2,
             title: "業界最大手グループの管理栄養士設計",
-            text: "宅配弁当売上最大手クラスのワタミグループが運営し、管理栄養士がメニューを設計。病院・介護施設向け給食で培ったノウハウが土台にあるため、継続的に食べる健康食としての信頼材料が揃っています。",
+            text: "宅配弁当売上最大手クラスのワタミグループが運営し、管理栄養士がメニューを設計しています。病院・介護施設向け給食で培ったノウハウが土台にあるため、継続的に食べる健康食としての信頼材料が揃っています。",
           },
           {
             num: 3,
@@ -796,7 +796,7 @@ export default function WatamiDirectKuchikomiPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link
             href="/articles/watami-reviews/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
@@ -828,7 +828,7 @@ export default function WatamiDirectKuchikomiPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

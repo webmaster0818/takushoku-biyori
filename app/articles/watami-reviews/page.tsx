@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "ワタミの宅食の口コミ・評判は？まずいって本当？まごころ商品の料金・配送を出典付きで検証【2026年9月最新】";
 const ARTICLE_DESCRIPTION =
-  "ワタミの宅食は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。冷蔵（まごころおかず/手鞠/御膳/ダブル）の料金（1食税込470円〜・宅配料込み）と冷凍（ワタミの宅食ダイレクト）の違いも解説。最新の料金は公式でご確認ください。【2026年9月更新】";
+  "ワタミの宅食は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。冷蔵（まごころおかず/手鞠/御膳/ダブル）の料金（1食税込470円〜・宅配料込み）と冷凍（ワタミの宅食ダイレクト）の違いも解説します。最新の料金は公式でご確認ください。【2026年9月更新】";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/watami-reviews/";
 
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ const faqData = [
   {
     question: "ワタミの宅食は1人分だけでも注文できる？",
     answer:
-      "はい、1人分から注文可能です。冷蔵タイプ（ワタミの宅食）は2日間〜1週間の日数で注文でき、1食分ずつ届きます。冷凍タイプ（ダイレクト）は7食セットから注文可能。一人暮らしの方や、家族のうち1人分だけ宅配にしたい場合でも問題なく利用できます。",
+      "はい、1人分から注文可能です。冷蔵タイプ（ワタミの宅食）は2日間〜1週間の日数で注文でき、1食分ずつ届きます。冷凍タイプ（ダイレクト）は7食セットから注文可能です。一人暮らしの方や、家族のうち1人分だけ宅配にしたい場合でも問題なく利用できます。",
   },
   {
     question: "ワタミの宅食の配送エリアは全国対応？",
@@ -180,14 +180,14 @@ export default function WatamiReviewsPage() {
         </header>
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
-          <p className="mb-3">「ワタミの宅食って実際どうなの？」「ひどいって口コミは本当？」——病院・介護施設向け給食で培ったノウハウを活かし、一般家庭にも宅配弁当を届けるワタミの宅食。</p>
-          <p className="mb-3">この記事では、<strong>ワタミの宅食の口コミ・評判を徹底リサーチ</strong>。冷蔵タイプ（まごころおかず・手鞠・ダブル）と冷凍タイプ（ワタミの宅食ダイレクト）の違いも詳しく解説します。</p>
+          <p className="mb-3">「ワタミの宅食って実際どうなの？」「ひどいって口コミは本当？」——病院・介護施設向け給食で培ったノウハウを活かし、一般家庭にも宅配弁当を届けるワタミの宅食です。</p>
+          <p className="mb-3">この記事では、<strong>ワタミの宅食の口コミ・評判を調査しました</strong>。冷蔵タイプ（まごころおかず・手鞠・ダブル）と冷凍タイプ（ワタミの宅食ダイレクト）の違いも詳しく解説します。</p>
           <p>料金プラン・送料・配送方法・メリット・デメリットまで、<strong>この記事を読めばワタミの宅食が自分に合うかどうか判断できます</strong>。</p>
         </div>
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：ワタミの宅食はこんな人に向いています</p>
+          <p className="font-bold text-base mb-3">ワタミの宅食が向いている方</p>
           <p className="text-sm leading-relaxed mb-4">
             ワタミの宅食は、<strong>「宅配料込みの価格で、冷蔵のお弁当・お惣菜を毎日届けてほしい人」「高齢の家族の見守りを兼ねたい人」</strong>に向いたサービスです。口コミでは「出汁が染みて美味しい」「塩分控えめでも味がしっかり」という評価が目立つ一方、薄味・量の少なさは好みが分かれます。「まずい」という評判の実態も出典付きで検証します（<a href="#mazui" className="text-accent underline">検証セクションへ</a>）。
           </p>
@@ -203,7 +203,7 @@ export default function WatamiReviewsPage() {
         <TableOfContents />
 
         <SectionHeading id="about">ワタミの宅食とは？基本情報まとめ</SectionHeading>
-        <p className="text-sm mb-6 leading-relaxed">ワタミの宅食は、ワタミ株式会社が運営する宅配弁当サービスです。外食チェーン「和民」で知られるワタミグループが、病院・介護施設向け給食事業で培ったノウハウを活かし、一般家庭向けに展開。<strong>宅配弁当の売上高は業界トップクラス</strong>で、累計7億食以上を届けた実績があります。</p>
+        <p className="text-sm mb-6 leading-relaxed">ワタミの宅食は、ワタミ株式会社が運営する宅配弁当サービスです。外食チェーン「和民」で知られるワタミグループが、病院・介護施設向け給食事業で培ったノウハウを活かし、一般家庭向けに展開しています。<strong>宅配弁当の売上高は業界トップクラス</strong>で、累計7億食以上を届けた実績があります。</p>
 
         <SubHeading>基本スペック</SubHeading>
         <ComparisonTable
@@ -292,7 +292,7 @@ export default function WatamiReviewsPage() {
         ))}
 
         <SectionHeading id="bad-reviews">悪い口コミ・評判（出典付き）</SectionHeading>
-        <p className="text-sm mb-6 leading-relaxed">ネガティブな意見も出典付きで正直に紹介します。申し込み前に知っておくべき注意点です。</p>
+        <p className="text-sm mb-6 leading-relaxed">否定的な意見も出典付きで掲載しています。申し込み前にご確認いただきたい注意点です。</p>
         {[
           {
             title: "味が薄い・高齢者向けの味付けに感じる",
@@ -344,7 +344,7 @@ export default function WatamiReviewsPage() {
           </div>
         </div>
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-1">編集部の結論：「まずい」は①薄味の好み②特定食材の食感が主因</p>
+          <p className="font-bold mb-1">編集部の見解：「まずい」は①薄味の好み②特定食材の食感が主因</p>
           <p>実食レビューでは「出汁が染みていて美味しかった」という評価が中心で、酷評は薄味の好みと一部食材（冷凍根菜の食感など）に集中しています。塩分控えめのやさしい味付けを求める人・高齢の家族向けなら満足度は高く、濃い味重視なら他サービスが向いています。初回1週分の割引で実際に味を確かめてから続けるのが確実です。</p>
         </div>
 
@@ -366,8 +366,8 @@ export default function WatamiReviewsPage() {
         <div className="space-y-3 mb-6">
           {[
             { title: "冷蔵タイプは送料無料・毎日配送", text: "まごころスタッフが毎日自宅まで届けてくれ、送料は一切かかりません。毎日新鮮なお弁当を受け取れるのは冷蔵タイプならではのメリットです。" },
-            { title: "安否確認サービス付き（冷蔵タイプ）", text: "一人暮らしの高齢者の「見守り」としても機能。配達時に挨拶・確認を行い、異変があれば緊急連絡先に通知してくれます。" },
-            { title: "冷凍タイプは100種類以上のメニュー", text: "ワタミの宅食ダイレクトは和食・中華・洋食・麺類・丼の具まで100種類以上。冷凍庫にストックしておけば、好きなときに好きなメニューを食べられます。" },
+            { title: "安否確認サービス付き（冷蔵タイプ）", text: "一人暮らしの高齢者の「見守り」としても機能します。配達時に挨拶・確認を行い、異変があれば緊急連絡先に通知してくれます。" },
+            { title: "冷凍タイプは100種類以上のメニュー", text: "ワタミの宅食ダイレクトは和食・中華・洋食・麺類・丼の具まで100種類以上です。冷凍庫にストックしておけば、好きなときに好きなメニューを食べられます。" },
             { title: "業界最安クラスの価格設定", text: "冷凍の「いつでも二菜」は1食約360円、冷蔵の「まごころ手鞠」は1食約590円と、業界内でも手頃な価格帯です。" },
           ].map((item) => (
             <div key={item.title} className="bg-green-50 rounded-lg p-4">
@@ -429,16 +429,16 @@ export default function WatamiReviewsPage() {
           <div className="space-y-2 text-sm leading-relaxed">
             <p>ワタミの宅食は<strong>冷蔵（毎日配送・送料無料）と冷凍（全国配送・ストック可能）</strong>の2つのタイプを持つ、業界最大手の宅配弁当サービスです。</p>
             <p>冷蔵タイプは送料無料・安否確認サービス付きで、特に高齢者やそのご家族から高い支持を得ています。冷凍タイプ（ダイレクト）は100種類以上のメニューと1食約360円〜の低価格が魅力です。</p>
-            <p>「味が薄い」「メニューが選べない」という声もありますが、健康的な味付けと栄養バランスの良さは口コミで高評価。まずは気になるコースを1週間試してみることをおすすめします。</p>
+            <p>「味が薄い」「メニューが選べない」という声もありますが、健康的な味付けと栄養バランスの良さは口コミで高評価です。まずは気になるコースを1週間試してみることをおすすめします。</p>
           </div>
         </div>
       
         <section className="my-12">
           <h2 className="font-display text-2xl font-bold mb-3 text-foreground">主要15社の数値比較表（1食あたり）</h2>
           <p className="text-warm-gray text-sm mb-4">
-            主要宅食サービスのカロリー・糖質・タンパク質・塩分・価格を公式公開データから集約。1食あたりの栄養基準を公式に明記している社はその基準値（「以下」「以上」・コース別の場合は範囲）、メニューごとの値だけを公開している社（nosh・FIT FOOD HOME）は公式メニュー一覧の主菜の中央50%（四分位）の範囲を記載。
+            主要宅食サービスのカロリー・糖質・タンパク質・塩分・価格を公式公開データから集約しています。1食あたりの栄養基準を公式に明記している社はその基準値（「以下」「以上」・コース別の場合は範囲）、メニューごとの値だけを公開している社（nosh・FIT FOOD HOME）は公式メニュー一覧の主菜の中央50%（四分位）の範囲を記載しています。
             最新情報は各公式サイトでご確認ください。
-            <Link href="/methodology/" className="text-accent hover:underline">評価方法・データ源</Link> 参照。
+            <Link href="/methodology/" className="text-accent hover:underline">評価方法・データ源</Link>をご参照ください。
           </p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border border-warm-border bg-white rounded-lg overflow-hidden">

@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "GOFOOD(ゴーフード)の口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "GOFOOD(ゴーフード)は「まずい」って本当？公開レビューの良い・悪い口コミを出典付きで検証。糖質20g以下・タンパク質20g以上の低糖質冷凍弁当の料金（10食1食税込598円〜）・送料・解約条件も解説。公式は2025年6月30日のサービス終了を告知済み。最新の販売状況は公式で確認を。【2026年10月更新】";
+  "GOFOOD(ゴーフード)は「まずい」って本当？良い・悪い口コミを出典付きで検証します。糖質20g以下・タンパク質20g以上の低糖質冷凍弁当の料金（10食1食税込598円〜）・送料・解約条件も解説します。公式は2025年6月30日のサービス終了を告知しています。【2026年10月更新】";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/gofood-kuchikomi/";
 
 export const metadata: Metadata = {
@@ -36,7 +36,7 @@ const faqData = [
   {
     question: "GOFOODの送料はいくら？",
     answer:
-      "5食・10食セットは地域別で税込940円（関西）〜2,170円（北海道・沖縄）です。関東は1,080円、九州は1,100円など。20食セットなら北海道・沖縄（980円）を除く都府県は送料無料になります（2026年10月9日公式FAQ確認）。最新の送料は公式サイトでご確認ください。",
+      "5食・10食セットは地域別で税込940円（関西）〜2,170円（北海道・沖縄）です。関東は1,080円、九州は1,100円などです。20食セットなら北海道・沖縄（980円）を除く都府県は送料無料になります（2026年10月9日公式FAQ確認）。最新の送料は公式サイトでご確認ください。",
   },
   {
     question: "GOFOODに回数縛りはある？解約は簡単？",
@@ -46,7 +46,7 @@ const faqData = [
   {
     question: "GOFOODの賞味期限はどのくらい？",
     answer:
-      "公式FAQによると「賞味期限は製造から約半年間です」。全商品のラベルに期限が表記されています。冷凍庫でまとめてストックしておき、好きなタイミングで食べられます。",
+      "公式FAQでは「賞味期限は製造から約半年間です」と案内されています。全商品のラベルに期限が表記されています。冷凍庫でまとめてストックしておき、好きなタイミングで食べられます。",
   },
   {
     question: "GOFOODの支払い方法は？",
@@ -440,10 +440,10 @@ export default function GofoodKuchikomiPage() {
             「GOFOOD(ゴーフード)って実際どうなの？」「まずいって口コミは本当？」——全メニューが<strong>糖質20g以下・タンパク質20g以上</strong>という明確な基準で作られた低糖質冷凍宅配弁当GOFOOD。糖質制限・ボディメイク中の食事管理で名前が挙がるサービスです。
           </p>
           <p className="mb-3">
-            この記事では、<strong>公開されている実在のレビュー・口コミを出典付きで整理</strong>し、GOFOODの良い口コミ・悪い口コミの両方を中立に検証。「まずい」と言われる理由にも正面から答えます。
+            この記事では、<strong>公開されている実在のレビュー・口コミを出典付きで整理</strong>し、GOFOODの良い口コミ・悪い口コミの両方を中立に検証します。「まずい」と言われる理由についても解説します。
           </p>
           <p>
-            さらに、<strong>プラン別の料金・地域別送料・回数縛りなしの仕組み</strong>まで詳しく解説。GOFOODが自分に合うかどうか、この記事で判断できます。
+            さらに、<strong>プラン別の料金・地域別送料・回数縛りなしの仕組み</strong>まで詳しく解説します。GOFOODが自分に合うかどうか、この記事で判断できます。
           </p>
         </div>
 
@@ -451,13 +451,13 @@ export default function GofoodKuchikomiPage() {
         <div className="bg-yellow-50 border border-yellow-300 rounded-xl p-4 mb-8 text-sm leading-relaxed">
           <p className="font-bold mb-1">【2026年10月9日時点の販売状況について】</p>
           <p>
-            公式サイトのお知らせ（2025年5月30日付）で「2025年6月30日をもちましてサービスを終了」「新たに新ブランドとして生まれ変わります」と告知されています（<a href="https://gofood.jp/shop/information/info40" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式お知らせ</a>・2026年10月9日確認）。同日時点で購入ページ自体は表示されますが、商品一覧は全品「販売価格：0円」表示で、実際に注文できるかは確認できていません。運営会社は新ブランド「goodeli（グーデリ）」を展開しています。本記事の料金・送料は公式サイトに掲載されている値をそのまま記載したものです。<strong>注文前に必ず公式サイトで最新の販売状況をご確認ください。</strong>
+            公式サイトのお知らせ（2025年5月30日付）で「2025年6月30日をもちましてサービスを終了」「新たに新ブランドとして生まれ変わります」と告知されています（<a href="https://gofood.jp/shop/information/info40" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式お知らせ</a>・2026年10月9日確認）。同日時点で購入ページ自体は表示されますが、商品一覧は全品「販売価格：0円」表示で、実際に注文できるかは確認できませんでした。運営会社は新ブランド「goodeli（グーデリ）」を展開しています。本記事の料金・送料は公式サイトに掲載されている値をそのまま記載したものです。<strong>注文前に必ず公式サイトで最新の販売状況をご確認ください。</strong>
           </p>
         </div>
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：GOFOODはこんな人に向いています</p>
+          <p className="font-bold text-base mb-3">GOFOODが向いている方</p>
           <p className="text-sm leading-relaxed mb-4">
             GOFOODは、<strong>「糖質制限を数値基準で徹底しつつ、1食600円前後に抑えたい人」</strong>に向いた低糖質冷凍宅配弁当です。口コミでは「低糖質なのに美味しい」「チキン系が特に美味い」という評価が目立つ一方、減塩・低糖質設計ゆえの薄味、魚系メニューや副菜の物足りなさは注意点として挙がっています。「まずい」という声の実態は薄味への評価が中心で、感じ方には個人差があります（<a href="#mazui" className="text-accent underline">検証セクションへ</a>）。
           </p>
@@ -499,7 +499,7 @@ export default function GofoodKuchikomiPage() {
         <SectionHeading id="about">GOFOOD(ゴーフード)とは？基本情報まとめ</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          GOFOOD(ゴーフード)は、ゴーフード株式会社（2019年設立・東京都港区）が運営する低糖質冷凍宅配弁当です。最大の特徴は<strong>全メニューが「糖質20g以下・タンパク質20g以上」で統一</strong>されていること。白米の代わりに大豆食品「ダイズライス」を使うメニューや、糖質2.5g・たんぱく質35.1gの看板商品「ブロチキ」（ブロッコリー＆チキン）など、糖質制限・ボディメイク特化の設計です。
+          GOFOOD(ゴーフード)は、ゴーフード株式会社（2019年設立・東京都港区）が運営する低糖質冷凍宅配弁当です。最大の特徴は<strong>全メニューが「糖質20g以下・タンパク質20g以上」で統一</strong>されていることです。白米の代わりに大豆食品「ダイズライス」を使うメニューや、糖質2.5g・たんぱく質35.1gの看板商品「ブロチキ」（ブロッコリー＆チキン）など、糖質制限・ボディメイク特化の設計です。
         </p>
 
         <SubHeading>GOFOODの基本スペック</SubHeading>
@@ -545,11 +545,11 @@ export default function GofoodKuchikomiPage() {
             },
             {
               title: "白米の代わりに「ダイズライス」",
-              text: "米の代わりに大豆食品を使うことで、ご飯もの風のメニューでも低糖質を実現。ガパオライスなどライス系メニューを糖質制限中でも楽しめる構成です（大豆特有の風味は好みが分かれます）。",
+              text: "米の代わりに大豆食品を使うことで、ご飯もの風のメニューでも低糖質を実現しています。ガパオライスなどライス系メニューを糖質制限中でも楽しめる構成です（大豆特有の風味は好みが分かれます）。",
             },
             {
               title: "回数縛りなし・停止はマイページから",
-              text: "公式FAQに「いつでも停止可能です。ご購入の回数や期間の制約はございません」と明記。停止・変更はお届け日の6日前までマイページから操作できます（初回分のみキャンセル不可）。",
+              text: "公式FAQに「いつでも停止可能です。ご購入の回数や期間の制約はございません」と明記しています。停止・変更はお届け日の6日前までマイページから操作できます（初回分のみキャンセル不可）。",
             },
           ].map((item) => (
             <div key={item.title} className="bg-green-50 rounded-lg p-4">
@@ -581,7 +581,7 @@ export default function GofoodKuchikomiPage() {
         <SectionHeading id="bad-reviews">GOFOODの悪い口コミ・評判（出典付き）</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          ネガティブな意見も出典付きで正直に紹介します。購入前に知っておくべき注意点です。
+          否定的な意見も出典付きで掲載しています。購入前にご確認いただきたい注意点です。
         </p>
 
         {badReviewCategories.map((category) => (
@@ -611,7 +611,7 @@ export default function GofoodKuchikomiPage() {
           <div className="bg-red-50 rounded-lg p-4 text-sm leading-relaxed">
             <p className="font-bold mb-1">1. SNSで最も多い声は「味がうすい」</p>
             <p className="mb-1.5">
-              食品開発経験10年の筆者による実食記事（大豆ミートラボ）は、SNS口コミで「最も多いのが、『味がうすい』との声」と分析。筆者自身も「味はうすめです」としつつ、<strong>「味は薄めベースだけど、バランスよくおいしい」</strong>と、糖質20g以下・減塩設計とのトレードオフとして妥当と結論づけています。
+              食品開発経験10年の筆者による実食記事（大豆ミートラボ）は、SNS口コミで「最も多いのが、『味がうすい』との声」と分析しています。筆者自身も「味はうすめです」としつつ、<strong>「味は薄めベースだけど、バランスよくおいしい」</strong>と、糖質20g以下・減塩設計とのトレードオフとして妥当と結論づけています。
             </p>
             <p className="text-xs text-warm-gray">
               出典:{" "}
@@ -628,7 +628,7 @@ export default function GofoodKuchikomiPage() {
           <div className="bg-red-50 rounded-lg p-4 text-sm leading-relaxed">
             <p className="font-bold mb-1">2. 魚系・野菜系メニューの評価が肉系より低い</p>
             <p className="mb-1.5">
-              35食を実食した筆者は「魚系メニューはイマイチ」と率直に評価（ひとり暮らしの宅配食生活）。キチナビ掲載の利用者口コミにも野菜について「味がしない」という声があります。一方、<strong>チキンハンバーグ・ガパオライスなど肉系の評価は一貫して高く</strong>、メニュー選びで印象が大きく変わります。
+              35食を実食した筆者は「魚系メニューはイマイチ」と評価しています（ひとり暮らしの宅配食生活）。キチナビ掲載の利用者口コミにも野菜について「味がしない」という声があります。一方、<strong>チキンハンバーグ・ガパオライスなど肉系の評価は一貫して高く</strong>、メニュー選びで印象が大きく変わります。
             </p>
             <p className="text-xs text-warm-gray">
               出典:{" "}
@@ -685,7 +685,7 @@ export default function GofoodKuchikomiPage() {
         </div>
 
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-1">編集部の結論：「まずい」は①減塩の薄味②魚系・副菜の弱さ③ダイズライスの風味の3因に分解できる</p>
+          <p className="font-bold mb-1">編集部の見解：「まずい」は①減塩の薄味②魚系・副菜の弱さ③ダイズライスの風味の3因に分解できる</p>
           <p>
             実食メディアの総合評価は「宅食まにあ」が味92/100の高評価、キチナビも「ポジティブ評価が大多数」としており、「まずい」が多数派という根拠は確認できませんでした。<strong>濃い味好き・魚メニュー重視の人には合いにくい</strong>一方、糖質制限を数値で管理したい人にとっては、肉系メニュー中心に選べば満足度の高いサービスです。
           </p>
@@ -740,7 +740,7 @@ export default function GofoodKuchikomiPage() {
         <SectionHeading id="demerits">注意すべきデメリット3つ</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          メリットだけでなく、「ここは正直イマイチ」というポイントも率直にお伝えします。
+          メリットだけでなく、注意が必要な点もあわせてご説明します。
         </p>
 
         {[
@@ -784,7 +784,7 @@ export default function GofoodKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: GOFOOD公式購入ページ（2026年10月9日確認）。セット金額はカート内で確定します。※20食の送料無料は北海道・沖縄（980円）を除く。最新価格は公式サイトでご確認ください。
+          ※出典: GOFOOD公式購入ページ（2026年10月9日確認）。セット金額はカート内で確定します。※20食の送料無料は北海道・沖縄（980円）を除きます。最新価格は公式サイトでご確認ください。
         </p>
 
         <SubHeading>送料（税込・5食/10食セット・2026年10月9日公式FAQ確認）</SubHeading>
@@ -801,7 +801,7 @@ export default function GofoodKuchikomiPage() {
           ]}
         />
         <p className="text-sm mb-2 leading-relaxed">
-          <strong>送料のポイント：</strong>10食セット＋関東送料の場合、実質単価は1食約706円〜。<strong>20食セット（北海道・沖縄以外送料無料）なら1食598円〜のまま</strong>です。冷凍宅配弁当18社の送料込み実質単価は、編集部が公式サイトを一次調査した
+          <strong>送料のポイント：</strong>10食セット＋関東送料の場合、実質単価は1食約706円〜です。<strong>20食セット（北海道・沖縄以外送料無料）なら1食598円〜のまま</strong>です。冷凍宅配弁当18社の送料込み実質単価は、編集部が公式サイトを一次調査した
           <Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark underline">宅食料金白書2026</Link>
           で比較できます。
         </p>
@@ -883,7 +883,7 @@ export default function GofoodKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※各社公式サイトの公開情報をもとに編集部作成（2026年7月時点）。※20食の送料無料は北海道・沖縄を除く。最新情報は各公式サイトでご確認ください。
+          ※各社公式サイトの公開情報をもとに編集部が作成しています（2026年7月時点）。※20食の送料無料は北海道・沖縄を除きます。最新情報は各公式サイトでご確認ください。
         </p>
 
         {/* ===== FAQ ===== */}
@@ -910,7 +910,7 @@ export default function GofoodKuchikomiPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link
             href="/articles/nosh-reviews/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
@@ -942,7 +942,7 @@ export default function GofoodKuchikomiPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

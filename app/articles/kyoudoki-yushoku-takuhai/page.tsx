@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "共働き世帯の平日夕食に宅配弁当を使う：選び方とラクになる運用術【2026年版】";
 const ARTICLE_DESCRIPTION =
-  "共働きで平日の夕食づくりがしんどい——そんな世帯に宅配弁当を取り入れるコツを解説。時短・作り置き不要・冷凍ストック・置き配・子どもと食べる場合の注意まで、実用視点で選び方と運用方法を整理します。料金・キャンペーンは変動するため、最新は各公式サイトでご確認ください。";
+  "共働きで平日の夕食づくりがしんどい——そんな世帯に宅配弁当を取り入れるコツを解説します。時短・作り置き不要・冷凍ストック・置き配・子どもと食べる場合の注意まで、実用視点で選び方と運用方法を整理します。料金・キャンペーンは変動するため、最新は各公式サイトでご確認ください。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/kyoudoki-yushoku-takuhai/";
 
@@ -82,7 +82,7 @@ function Breadcrumbs() {
 
 function TableOfContents() {
   const sections = [
-    { id: "summary-top", label: "結論：平日全部ではなく「しんどい曜日」から置き換える" },
+    { id: "summary-top", label: "平日すべてではなく「しんどい曜日」から置き換える" },
     { id: "why", label: "共働きの平日夕食が大変な理由" },
     { id: "merit", label: "宅配弁当で減らせる4つの手間" },
     { id: "type", label: "冷凍・冷蔵どっち？タイプの選び方" },
@@ -286,10 +286,10 @@ export default function KyoudokiYushokuTakuhaiPage() {
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
-            「仕事から帰ってきて、これから夕食づくり……正直もう限界」——共働き世帯にとって、<strong>平日の夕食は一日の中でもっとも負担が集中する家事</strong>のひとつです。
+            「仕事から帰ってきてから夕食をつくるのは負担が大きい」——共働き世帯にとって、<strong>平日の夕食は一日の中でもっとも負担が集中する家事</strong>のひとつです。
           </p>
           <p className="mb-3">
-            買い物・献立決め・調理・後片付けまでをこなすには、想像以上の時間とエネルギーが必要。だからこそ、<strong>宅配弁当をうまく取り入れて「平日の夕食を仕組みでラクにする」</strong>という選択が注目されています。
+            買い物・献立決め・調理・後片付けまでをこなすには、想像以上の時間とエネルギーが必要です。だからこそ、<strong>宅配弁当をうまく取り入れて「平日の夕食を仕組みでラクにする」</strong>という選択が注目されています。
           </p>
           <p>
             この記事では、共働き世帯が宅配弁当を平日夕食に活用するための<strong>選び方・受け取りの工夫・子どもと食べる場合の注意・ラクになる運用</strong>を、実用目線で整理します。料金は変動するため断定せず、最新は各公式サイトでご確認ください。
@@ -299,14 +299,14 @@ export default function KyoudokiYushokuTakuhaiPage() {
         <TableOfContents />
 
         {/* ===== 結論 ===== */}
-        <SectionHeading id="summary-top">結論：平日全部ではなく「しんどい曜日」から置き換える</SectionHeading>
+        <SectionHeading id="summary-top">平日すべてではなく「しんどい曜日」から置き換える</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
           共働き世帯が宅配弁当を導入するときのコツは、いきなり毎日に切り替えるのではなく、<strong>「特にしんどい曜日」だけを宅配弁当に置き換える</strong>ことです。すべてを完璧にやろうとせず、負担の山を平らにするイメージで取り入れると失敗しにくくなります。
         </p>
 
         <ComparisonTable
-          headers={["あなたの状況", "おすすめの取り入れ方"]}
+          headers={["ご利用状況", "おすすめの取り入れ方"]}
           rows={[
             ["残業や保育園のお迎えで疲れる曜日がある", "その曜日だけ宅配弁当に固定する"],
             ["受け取り時間が読めない", "まとめて届く冷凍タイプをストックする"],
@@ -316,9 +316,9 @@ export default function KyoudokiYushokuTakuhaiPage() {
         />
 
         <div className="bg-green-50 rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-2">この記事の結論</p>
+          <p className="font-bold mb-2">この記事の要点</p>
           <ul className="list-disc list-inside space-y-1">
-            <li><strong>平日全部ではなく「しんどい曜日」から</strong>始めると続けやすい</li>
+            <li><strong>平日すべてではなく「しんどい曜日」から</strong>始めると続けやすい</li>
             <li>受け取り時間が読めないなら<strong>冷凍ストック型</strong>が扱いやすい</li>
             <li><strong>置き配・宅配ボックス</strong>の活用で受け取りストレスを減らす</li>
             <li>子どもと食べるなら<strong>味付け・量・アレルギー表示</strong>を要確認</li>
@@ -415,8 +415,8 @@ export default function KyoudokiYushokuTakuhaiPage() {
         </p>
 
         <ul className="text-sm space-y-2 mb-6 list-disc list-inside leading-relaxed">
-          <li><strong>味付けの濃さ</strong>：大人向けは塩分・味が濃いことがある。薄味おかずを選ぶ・取り分ける工夫を</li>
-          <li><strong>量とサイズ</strong>：1食が大人基準のことが多い。子どもには取り分けや小分けを検討</li>
+          <li><strong>味付けの濃さ</strong>：大人向けは塩分・味が濃いことがあります。薄味おかずを選ぶ・取り分ける工夫を</li>
+          <li><strong>量とサイズ</strong>：1食が大人基準のことが多いです。子どもには取り分けや小分けを検討</li>
           <li><strong>食べにくい食材</strong>：辛味・硬さ・骨など、小さな子に向かない食材に注意</li>
           <li><strong>アレルギー表示</strong>：原材料・アレルゲン表示を必ず確認する</li>
           <li><strong>主食・副菜の補い</strong>：ごはんや汁物、野菜を家庭で足すとバランスが整いやすい</li>
@@ -488,7 +488,7 @@ export default function KyoudokiYushokuTakuhaiPage() {
             共働き世帯が宅配弁当を平日夕食に取り入れるコツは、<strong>すべてを置き換えようとせず、しんどい曜日から仕組みでラクにする</strong>ことです。献立・買い物・調理・片付けという複数の手間を一度に削れるのが、宅配弁当の大きな価値です。
           </p>
           <p className="mb-3">
-            帰宅時間が読めないなら<strong>冷凍ストック型＋置き配</strong>が扱いやすく、子どもと食べるなら<strong>味付け・量・アレルギー表示</strong>に配慮を。頼まない週はスキップして、無理なく続けられる形を探しましょう。
+            帰宅時間が読めないなら<strong>冷凍ストック型＋置き配</strong>が扱いやすく、子どもと食べるなら<strong>味付け・量・アレルギー表示</strong>にご配慮ください。頼まない週はスキップして、無理なく続けられる形を探しましょう。
           </p>
           <p>
             料金・配送・対応エリアは<strong>時期や地域で変動</strong>します。当サイトでは正確性を優先し、価格は断定しません。最新・正確な情報は、必ず各サービスの公式サイトでご確認ください。
@@ -496,7 +496,7 @@ export default function KyoudokiYushokuTakuhaiPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
             一人暮らしにおすすめの宅配弁当
           </Link>
@@ -522,7 +522,7 @@ export default function KyoudokiYushokuTakuhaiPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

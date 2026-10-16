@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const PAGE_TITLE = "評価方法・データ源";
 const PAGE_DESC =
-  "宅食びよりの宅配弁当・冷凍弁当サービス評価方法を全公開。公式データの一次確認手順、実質単価の計算方法、口コミ集約の基準、利益相反の管理について解説します。";
+  "宅食びよりの宅配弁当・冷凍弁当サービスの評価方法をご説明します。公式データの確認手順、実質単価の計算方法、口コミ集約の基準、利益相反の管理について解説します。";
 const PAGE_URL = "https://takushoku-biyori.com/methodology/";
 
 export const metadata: Metadata = {
@@ -62,7 +62,7 @@ export default function MethodologyPage() {
 
         <h2 className="font-display text-2xl font-bold mb-4">データ取得源</h2>
         <ul className="list-disc pl-6 space-y-2 mb-10">
-          <li><strong>料金・送料・キャンペーン:</strong> 各社公式サイトを月次以上で確認、変更があれば即時反映</li>
+          <li><strong>料金・送料・キャンペーン:</strong> 各社公式サイトを月1回以上確認し、変更があれば速やかに反映</li>
           <li><strong>栄養成分:</strong> 公式公開資料・パッケージ表示を照合</li>
           <li><strong>味の傾向:</strong> 公開されている利用者口コミの出典付き定性集約（編集部による実食レビューは現在未実施・導入準備中）</li>
           <li><strong>口コミ・評判:</strong> Twitter（X）・Instagram・楽天・Amazon の口コミを定性集約。複数プラットフォームで一致する内容のみ採用</li>
@@ -86,7 +86,7 @@ export default function MethodologyPage() {
         <h2 className="font-display text-2xl font-bold mb-4">読者からのフィードバック</h2>
         <p className="mb-6">
           記事内容に誤りや古い情報がある場合、お問い合わせフォームよりご連絡ください。
-          確認の上、3営業日以内に修正対応いたします。
+          確認のうえ、3営業日以内に修正いたします。
         </p>
 
         <h2 className="font-display text-2xl font-bold mb-4">関連ページ</h2>

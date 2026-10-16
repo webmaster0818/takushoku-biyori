@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "筋肉食堂DELIの口コミ・評判は？まずいって本当？高たんぱく宅配食の味・料金を出典付きで中立検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "筋肉食堂DELIは「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。レストラン「筋肉食堂」発の高たんぱく冷凍宅配食の料金（ベーシック7食7,560円・2026年10月10日公式確認）・地域別送料・解約締切・マッスルデリとの違いも解説します。";
+  "筋肉食堂DELIは「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。レストラン「筋肉食堂」発の高たんぱく冷凍宅配食の料金（ベーシック7食7,560円・2026年10月10日公式確認）・地域別送料・解約締切・マッスルデリとの違いも解説します。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/kinnikushokudo-deli-kuchikomi/";
 
@@ -37,7 +37,7 @@ const faqData = [
   {
     question: "筋肉食堂DELIとマッスルデリの違いは？",
     answer:
-      "両方とも高たんぱく宅配食ですが、別会社の別サービスです。筋肉食堂DELI（deli.kinnikushokudo.jp）はTANPAC株式会社が運営し、都内で高たんぱくレストラン「筋肉食堂」を展開する外食企業の宅配版。マッスルデリ（muscledeli.jp）は株式会社Muscle Deliが運営する宅配専業サービスです。名前が似ているため検索時は注意してください。",
+      "両方とも高たんぱく宅配食ですが、別会社の別サービスです。筋肉食堂DELI（deli.kinnikushokudo.jp）はTANPAC株式会社が運営し、都内で高たんぱくレストラン「筋肉食堂」を展開する外食企業の宅配版です。マッスルデリ（muscledeli.jp）は株式会社Muscle Deliが運営する宅配専業サービスです。名前が似ているため検索時は注意してください。",
   },
   {
     question: "筋肉食堂DELIに初回割引やお試しセットはある？",
@@ -443,7 +443,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
             「筋肉食堂DELIって実際どうなの？」「高たんぱくの宅配食ってまずいんじゃない？」——都内で高たんぱくレストラン「筋肉食堂」を運営するTANPAC株式会社が手がける冷凍宅配食、筋肉食堂DELI。トレーニング民やダイエット中の人から注目を集めています。
           </p>
           <p className="mb-3">
-            この記事では、<strong>公開されている実在のレビュー記事を出典付きで整理</strong>し、筋肉食堂DELIの良い口コミ・悪い口コミの両方を中立に検証。「まずい」と言われていないかも正面から調べました。
+            この記事では、<strong>公開されている実在のレビュー記事を出典付きで整理</strong>し、筋肉食堂DELIの良い口コミ・悪い口コミの両方を中立に検証します。「まずい」という評判の有無についても調査しました。
           </p>
           <p>
             さらに、<strong>料金体系・送料・よく混同されるマッスルデリとの違い</strong>まで、2026年10月10日確認の公式データで解説します。
@@ -452,7 +452,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：筋肉食堂DELIはこんな人に向いています</p>
+          <p className="font-bold text-base mb-3">筋肉食堂DELIが向いている方</p>
           <p className="text-sm leading-relaxed mb-4">
             筋肉食堂DELIは、<strong>「たんぱく質量を最優先しつつ、味にも妥協したくない人」</strong>に向いた高たんぱく宅配食です。口コミでは「冷凍弁当を感じさせない美味しさ」「満足感がある」という評価が目立ち、複数媒体の調査で「まずい」の声が確認されていない珍しいサービスです（<a href="#mazui" className="text-accent underline">検証セクションへ</a>）。一方、1食約1,000円前後〜（ローカーボ21食994円〜）＋送料という価格は明確な注意点です。
           </p>
@@ -540,7 +540,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※両社公式サイトの公開情報をもとに編集部作成（筋肉食堂DELIは2026年10月10日、マッスルデリは2026年7月時点の確認）。
+          ※両社公式サイトの公開情報をもとに編集部が作成しています（筋肉食堂DELIは2026年10月10日、マッスルデリは2026年7月時点の確認）。
         </p>
 
         {/* ===== 良い口コミ ===== */}
@@ -565,7 +565,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
         <SectionHeading id="bad-reviews">筋肉食堂DELIの悪い口コミ・評判（出典付き）</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          ネガティブな意見も出典付きで正直に紹介します。購入前に知っておくべき注意点です。
+          否定的な意見も出典付きで掲載しています。購入前にご確認いただきたい注意点です。
         </p>
 
         {badReviewCategories.map((category) => (
@@ -626,7 +626,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
         </div>
 
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-1">編集部の結論：味の評価は高水準で安定。不満は「価格」に集中</p>
+          <p className="font-bold mb-1">編集部の見解：味の評価は高水準で安定です。不満は「価格」に集中</p>
           <p>
             レストラン運営で培った調理が背景にあるためか、味に関する酷評は編集部の確認範囲では見つかりませんでした。高たんぱく食にありがちな「パサつき」への不満が少ないのも特徴です。一方で、鶏肉中心のメニューが続くとクセや飽きを感じる人はいます。<strong>実質的な検討ポイントは味よりも「1食1,300円前後（送料込み）を継続できるか」</strong>です。
           </p>
@@ -639,12 +639,12 @@ export default function KinnikushokudoDeliKuchikomiPage() {
           {
             num: 1,
             title: "レストラン品質の味で「まずい」の声が見当たらない",
-            text: "複数媒体の口コミ調査が独立に「まずいという声がない」と報告。実店舗「筋肉食堂」の調理ノウハウを持つ外食企業の宅配版という出自が、味の安定感につながっています。",
+            text: "複数媒体の口コミ調査が独立に「まずいという声がない」と報告しています。実店舗「筋肉食堂」の調理ノウハウを持つ外食企業の宅配版という出自が、味の安定感につながっています。",
           },
           {
             num: 2,
             title: "高たんぱくでボリューム・満足感がある",
-            text: "「お肉や魚が量もしっかり入っており満足感がある」（HonNe掲載口コミ）と、量への満足度が高いのが特徴。減量中でも食べた感を重視したい人に向きます。",
+            text: "「お肉や魚が量もしっかり入っており満足感がある」（HonNe掲載口コミ）と、量への満足度が高いのが特徴です。減量中でも食べた感を重視したい人に向きます。",
           },
           {
             num: 3,
@@ -801,7 +801,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link
             href="/articles/muscle-deli-reviews/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
@@ -833,7 +833,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

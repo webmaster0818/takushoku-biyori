@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "冷凍弁当の温め方ベスト — 電子レンジ・湯煎・自然解凍の違いと最適時間【2026年版】";
 const ARTICLE_DESCRIPTION =
-  "冷凍弁当を最も美味しく食べる温め方を徹底解説。電子レンジ500W/600W/700Wでの加熱時間目安、湯煎・自然解凍の違い、解凍ムラを防ぐコツまで。各社公式の加熱指示の確認方法も紹介します。";
+  "冷凍弁当を最も美味しく食べる温め方を解説します。電子レンジ500W/600W/700Wでの加熱時間目安、湯煎・自然解凍の違い、解凍ムラを防ぐコツまでです。各社公式の加熱指示の確認方法も紹介します。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/reitou-bento-atatame-kata/";
 
@@ -268,7 +268,7 @@ export default function ReitouBentoAtatameKataPage() {
         <SectionHeading id="basic">冷凍弁当の温め方:基本ルール</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          冷凍弁当を美味しく温めるための鉄則は<strong>「パッケージの加熱指示を守る」</strong>こと。これに尽きます。なぜなら、各社は容器素材・メニュー構成・水分量を計算した上で、最適な加熱時間を導き出しているからです。
+          冷凍弁当を美味しく温めるための鉄則は<strong>「パッケージの加熱指示を守る」</strong>ことです。これに尽きます。なぜなら、各社は容器素材・メニュー構成・水分量を計算した上で、最適な加熱時間を導き出しているからです。
         </p>
 
         <SubHeading>基本ルール1: ラベルのワット数と時間を最優先</SubHeading>
@@ -289,7 +289,7 @@ export default function ReitouBentoAtatameKataPage() {
         <SectionHeading id="microwave">電子レンジでの温め方完全ガイド</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          電子レンジは冷凍宅配弁当の<strong>最もスタンダードな温め方</strong>。各社の指示に従えば、3〜7分程度で食べられる状態になります。
+          電子レンジは冷凍宅配弁当の<strong>最もスタンダードな温め方です</strong>。各社の指示に従えば、3〜7分程度で食べられる状態になります。
         </p>
 
         <SubHeading>ステップ1: 冷凍庫から取り出す</SubHeading>
@@ -319,7 +319,7 @@ export default function ReitouBentoAtatameKataPage() {
 
         <SubHeading>ステップ6: 取り出して仕上げ</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          蒸らし終わったら取り出し、フタを完全に外して食卓へ。中央付近が冷たいと感じたら、追加で10〜20秒ずつ再加熱します。一気に長時間追加すると今度は端が乾燥するため、短く区切るのがコツです。
+          蒸らし終わったら取り出し、フタを完全に外して盛り付けます。中央付近が冷たいと感じたら、追加で10〜20秒ずつ再加熱します。一気に長時間追加すると今度は端が乾燥するため、短く区切るのがコツです。
         </p>
 
         <SectionHeading id="watt-table">ワット数別・加熱時間の早見表（一般的な目安）</SectionHeading>
@@ -371,7 +371,7 @@ export default function ReitouBentoAtatameKataPage() {
         <SectionHeading id="natural">自然解凍はおすすめできない理由</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          結論から言うと、<strong>ほとんどの冷凍宅配弁当は自然解凍を推奨していません</strong>。理由は次の3点です。
+          <strong>ほとんどの冷凍宅配弁当は自然解凍を推奨していません</strong>。理由は次の3点です。
         </p>
 
         <SubHeading>理由1: 食感が劣化する</SubHeading>
@@ -397,7 +397,7 @@ export default function ReitouBentoAtatameKataPage() {
 
         <SubHeading>コツ1: ラベル記載のワット数と時間を守る</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          最も基本かつ最も大事なポイント。「500Wで6分」と書かれていたら、600Wで5分などの自己流アレンジはせず、まずは指示通りに加熱しましょう。
+          最も基本かつ最も大事なポイントです。「500Wで6分」と書かれていたら、600Wで5分などの自己流アレンジはせず、まずは指示通りに加熱しましょう。
         </p>
 
         <SubHeading>コツ2: 容器の置き位置を工夫</SubHeading>
@@ -412,7 +412,7 @@ export default function ReitouBentoAtatameKataPage() {
 
         <SubHeading>コツ4: 加熱後に30秒〜1分蒸らす</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          先述の通り、加熱直後の取り出しは厳禁。庫内でしばらく置くだけで温度が均一化します。
+          先述の通り、加熱直後の取り出しは厳禁です。庫内でしばらく置くだけで温度が均一化します。
         </p>
 
         <SubHeading>コツ5: 追加加熱は短く区切る</SubHeading>
@@ -422,7 +422,7 @@ export default function ReitouBentoAtatameKataPage() {
 
         <SubHeading>コツ6: フラットテーブル式レンジを選ぶ</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          買い替えのタイミングであれば、フラットテーブル式（インバータ式）の電子レンジがおすすめ。マイクロ波の照射制御が改善されており、解凍ムラが起きにくくなっています。
+          買い替えのタイミングであれば、フラットテーブル式（インバータ式）の電子レンジがおすすめです。マイクロ波の照射制御が改善されており、解凍ムラが起きにくくなっています。
         </p>
 
         <SubHeading>コツ7: ご飯と別のお皿に分ける</SubHeading>
@@ -464,7 +464,7 @@ export default function ReitouBentoAtatameKataPage() {
 
         <div className="bg-cream rounded-xl p-6 mb-8">
           <p className="text-sm leading-relaxed mb-4">
-            冷凍宅配弁当を美味しく食べるための温め方ベストは、結局のところ<strong>「公式パッケージの指示を忠実に守ること」</strong>。これに尽きます。各社は容器・メニュー・水分量を計算し尽くした上で加熱時間を設定しているため、自己流アレンジは劣化を招きます。
+            冷凍宅配弁当を美味しく食べるための温め方ベストは、結局のところ<strong>「公式パッケージの指示を忠実に守ること」</strong>です。各社は容器・メニュー・水分量を計算し尽くした上で加熱時間を設定しているため、自己流アレンジは劣化を招きます。
           </p>
           <p className="text-sm leading-relaxed mb-4">
             その上で、本記事で紹介した<strong>「加熱後の蒸らし」「容器の置き位置」「追加加熱は短く」</strong>といった応用テクニックを組み合わせれば、解凍ムラや水っぽさは大幅に改善できます。
@@ -475,7 +475,7 @@ export default function ReitouBentoAtatameKataPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link href="/articles/reitou-bento-mazui/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
             冷凍弁当がまずい？原因と美味しく食べる7つのコツ
           </Link>
@@ -493,7 +493,7 @@ export default function ReitouBentoAtatameKataPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。各社公式情報をもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。各社公式情報をもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

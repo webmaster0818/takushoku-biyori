@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "nosh（ナッシュ）の料金・送料の仕組みをわかりやすく解説【2026年版】";
 const ARTICLE_DESCRIPTION =
-  "nosh（ナッシュ）の料金と送料の仕組みを、プラン食数による1食単価の変化・地域や食数で変わる送料・継続割引（nosh club）の考え方からわかりやすく解説。具体的な金額は変動するため、最新・正確な料金は公式サイトでご確認ください。";
+  "nosh（ナッシュ）の料金と送料の仕組みを、プラン食数による1食単価の変化・地域や食数で変わる送料・継続割引（nosh club）の考え方からわかりやすく解説します。具体的な金額は変動するため、最新・正確な料金は公式サイトでご確認ください。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/nosh-ryoukin-souryou/";
 
@@ -82,7 +82,7 @@ function Breadcrumbs() {
 
 function TableOfContents() {
   const sections = [
-    { id: "summary-top", label: "結論：noshの料金は「食数×継続割引×送料」で決まる" },
+    { id: "summary-top", label: "noshの料金は「食数×継続割引×送料」で決まる" },
     { id: "kihon", label: "noshの料金の基本構造" },
     { id: "tansa", label: "1食単価が変わる仕組み（プラン食数）" },
     { id: "souryou", label: "送料の仕組み（地域・食数で変動）" },
@@ -285,10 +285,10 @@ export default function NoshRyoukinSouryouPage() {
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
-            「noshって結局1食いくらなの？」「送料はどれくらいかかる？」——nosh（ナッシュ）の料金は、<strong>いくつかの要素が組み合わさって決まる</strong>ため、単純な定価だけでは把握しづらいのが正直なところです。
+            「noshって結局1食いくらなの？」「送料はどれくらいかかる？」——nosh（ナッシュ）の料金は、<strong>いくつかの要素が組み合わさって決まる</strong>ため、単純な定価だけでは把握しづらい面があります。
           </p>
           <p className="mb-3">
-            ポイントは、<strong>①プランの食数で1食単価が変わる</strong>、<strong>②送料は地域・食数で変わる</strong>、<strong>③継続割引（nosh club）で長く使うほど安くなる</strong>——この3つの「仕組み」を理解すること。
+            ポイントは、<strong>①プランの食数で1食単価が変わる</strong>、<strong>②送料は地域・食数で変わる</strong>、<strong>③継続割引（nosh club）で長く使うほど安くなる</strong>——この3つの「仕組み」を理解することです。
           </p>
           <p>
             この記事では、具体的な金額ではなく<strong>料金の仕組み・考え方</strong>をわかりやすく整理します。<strong>金額は時期・地域で変動</strong>するため、最新・正確な料金は必ず公式サイトでご確認ください。
@@ -298,7 +298,7 @@ export default function NoshRyoukinSouryouPage() {
         <TableOfContents />
 
         {/* ===== 結論 ===== */}
-        <SectionHeading id="summary-top">結論：noshの料金は「食数×継続割引×送料」で決まる</SectionHeading>
+        <SectionHeading id="summary-top">noshの料金は「食数×継続割引×送料」で決まる</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
           noshの料金を理解するうえで一番大事なのは、<strong>「1食単価＝固定ではない」</strong>という点です。次の3つの要素が組み合わさって、最終的に支払う金額が決まります。
@@ -314,7 +314,7 @@ export default function NoshRyoukinSouryouPage() {
         />
 
         <div className="bg-green-50 rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-2">この記事の結論</p>
+          <p className="font-bold mb-2">この記事の要点</p>
           <ul className="list-disc list-inside space-y-1">
             <li>1食単価は<strong>選ぶ食数で変わる</strong>（多いほど安くなりやすい）</li>
             <li><strong>nosh club</strong>で継続するほど割引が進む仕組み</li>
@@ -505,7 +505,7 @@ export default function NoshRyoukinSouryouPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
             noshの口コミ・評判
           </Link>
@@ -531,7 +531,7 @@ export default function NoshRyoukinSouryouPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

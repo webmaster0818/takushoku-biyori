@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "FIT FOOD HOME(フィットフードホーム)の口コミ・評判は？まずいって本当？無添加調理の実力を出典付きで中立検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "FIT FOOD HOME(フィットフードホーム)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。無添加調理の冷凍おかずの料金（おかず1個1,188円〜・まとめ割で1,129円〜・2026年10月11日公式確認）、送料、定期の割引条件も解説します。";
+  "FIT FOOD HOME(フィットフードホーム)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。無添加調理の冷凍おかずの料金（おかず1個1,188円〜・まとめ割で1,129円〜・2026年10月11日公式確認）、送料、定期の割引条件も解説します。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/fitfoodhome-kuchikomi/";
 
@@ -320,7 +320,7 @@ const badReviewCategories: {
       },
     ],
     comment:
-      "おかず単品型が中心のため、1品で「定食」にはなりません。主食や汁物を足して組み立てる前提で考えましょう。大容量サイズの商品ラインもあるので、量重視の方はそちらも確認を。",
+      "おかず単品型が中心のため、1品で「定食」にはなりません。主食や汁物を足して組み立てる前提で考えましょう。大容量サイズの商品ラインもあるので、量重視の方はそちらもご確認ください。",
   },
   {
     title: "人気メニューの売り切れがある",
@@ -440,7 +440,7 @@ export default function FitFoodHomeKuchikomiPage() {
             「FIT FOOD HOME(フィットフードホーム)って実際どうなの？」「無添加って本当？まずくない？」——京都の自社工場で「無添加調理」の冷凍おかずを製造・直販するFIT FOOD HOME。添加物が気になる家庭を中心に支持を集めています。
           </p>
           <p className="mb-3">
-            この記事では、<strong>公開されている実在のレビュー記事を出典付きで整理</strong>し、FIT FOOD HOMEの良い口コミ・悪い口コミの両方を中立に検証。「まずい」と言われていないかも正面から調べました。
+            この記事では、<strong>公開されている実在のレビュー記事を出典付きで整理</strong>し、FIT FOOD HOMEの良い口コミ・悪い口コミの両方を中立に検証します。「まずい」という評判の有無についても調査しました。
           </p>
           <p>
             さらに、<strong>単品×個数割引という独特な料金体系・送料・定期の注意点</strong>を2026年10月11日確認の公式データで解説します。
@@ -449,7 +449,7 @@ export default function FitFoodHomeKuchikomiPage() {
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：FIT FOOD HOMEはこんな人に向いています</p>
+          <p className="font-bold text-base mb-3">FIT FOOD HOMEが向いている方</p>
           <p className="text-sm leading-relaxed mb-4">
             FIT FOOD HOMEは、<strong>「添加物を避けたい、かつ味も妥協したくない人」</strong>に向いた無添加調理の冷凍おかず宅配です。口コミでは「手作りのような味」「別格にウマい」という強い高評価が目立ち、「SNS調査で『まずい』の意見なし」という報告もあります（<a href="#mazui" className="text-accent underline">検証セクションへ</a>）。一方、おかず1個1,188円〜（まとめ割で1,129円〜）という価格と量の控えめさは注意点です。
           </p>
@@ -491,7 +491,7 @@ export default function FitFoodHomeKuchikomiPage() {
         <SectionHeading id="about">FIT FOOD HOME(フィットフードホーム)とは？基本情報まとめ</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          FIT FOOD HOME(フィットフードホーム)は、株式会社AIVICK（京都市南区）が運営する冷凍おかず・お弁当の宅配サービスです。公式ストア「tavenal」で販売され、<strong>「“カラダに不必要な成分は一切使用しない”という考え方」に基づく無添加調理</strong>を掲げているのが最大の特徴。国産無添加シリーズや冷凍おかずシリーズ、大容量サイズなどを展開しています。
+          FIT FOOD HOME(フィットフードホーム)は、株式会社AIVICK（京都市南区）が運営する冷凍おかず・お弁当の宅配サービスです。公式ストア「tavenal」で販売され、<strong>「“カラダに不必要な成分は一切使用しない”という考え方」に基づく無添加調理</strong>を掲げているのが最大の特徴です。国産無添加シリーズや冷凍おかずシリーズ、大容量サイズなどを展開しています。
         </p>
 
         <SubHeading>FIT FOOD HOMEの基本スペック</SubHeading>
@@ -526,7 +526,7 @@ export default function FitFoodHomeKuchikomiPage() {
             },
             {
               title: "単品×個数割引の自由な組み立て方式",
-              text: "固定セットではなく、好きな商品を選んで10個で最大5%OFF・14個で最大8%OFF・20個で最大12%OFFになる方式（2026年10月11日公式確認）。定期購入にすると都度購入価格の5%OFFになり、送料も無料になります。",
+              text: "固定セットではなく、好きな商品を選んで10個で最大5%OFF・14個で最大8%OFF・20個で最大12%OFFになる方式です（2026年10月11日公式確認）。定期購入にすると都度購入価格の5%OFFになり、送料も無料になります。",
             },
           ].map((item) => (
             <div key={item.title} className="bg-green-50 rounded-lg p-4">
@@ -558,7 +558,7 @@ export default function FitFoodHomeKuchikomiPage() {
         <SectionHeading id="bad-reviews">FIT FOOD HOMEの悪い口コミ・評判（出典付き）</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          ネガティブな意見も出典付きで正直に紹介します。購入前に知っておくべき注意点です。
+          否定的な意見も出典付きで掲載しています。購入前にご確認いただきたい注意点です。
         </p>
 
         {badReviewCategories.map((category) => (
@@ -619,7 +619,7 @@ export default function FitFoodHomeKuchikomiPage() {
         </div>
 
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-1">編集部の結論：味の酷評は確認できず。「薄味＝素材の味」をどう受け取るか</p>
+          <p className="font-bold mb-1">編集部の見解：味の酷評は確認できませんでした。「薄味＝素材の味」をどう受け取るか</p>
           <p>
             無添加調理のため、濃い味・ジャンクな味を期待すると物足りない可能性はありますが、その「薄味」すら「素材の味がする」と好意的に語られているのが実態です。編集部の確認範囲で「まずい」という口コミの実例は見つかりませんでした。<strong>検討のボトルネックは味ではなく価格と量</strong>です。味の感じ方には個人差があるため、まずは少数個の都度購入で試すのが安全です。
           </p>
@@ -792,7 +792,7 @@ export default function FitFoodHomeKuchikomiPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link
             href="/articles/chef-mutenka-tsukurioki-kuchikomi/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
@@ -824,7 +824,7 @@ export default function FitFoodHomeKuchikomiPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

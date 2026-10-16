@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "ニチレイフーズダイレクトの口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "ニチレイフーズダイレクトは「まずい」って本当？公開レビューから良い・悪い口コミを出典付きで紹介し、味の評判を検証。冷凍食品大手ニチレイフーズの宅配食「きくばりごぜん」の料金（定期8食1食税込800円）、送料（本州・四国7,500円以上で無料）、お試し4食セットも解説。最新の料金は公式で確認を。【2026年10月更新】";
+  "ニチレイフーズダイレクトは「まずい」って本当？良い・悪い口コミを出典付きで紹介し、味の評判を検証します。宅配食「きくばりごぜん」の料金（定期8食1食税込800円）、送料（本州・四国7,500円以上で無料）、お試し4食セットも解説します。【2026年10月更新】";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/nichirei-foods-direct-kuchikomi/";
 
@@ -32,7 +32,7 @@ const faqData = [
   {
     question: "ニチレイフーズダイレクトにお試しセットはある？",
     answer:
-      "あります。人気No.1の「きくばりごぜん」お試し4食セットが税込3,300円（1食825円・平均192kcal/塩分1.7g/野菜100g以上）。ほかに、まめなごはん4食3,800円、パワーデリ4食4,320円、糖質・塩分・脂質を控えたい方向けの栄養成分別お試し4食（各3,550円）、たんぱく質を控えたい方向けお試し4食（3,200円）もあります（2026年10月9日公式確認）。",
+      "あります。人気No.1の「きくばりごぜん」お試し4食セットが税込3,300円です（1食825円・平均192kcal/塩分1.7g/野菜100g以上）。ほかに、まめなごはん4食3,800円、パワーデリ4食4,320円、糖質・塩分・脂質を控えたい方向けの栄養成分別お試し4食（各3,550円）、たんぱく質を控えたい方向けお試し4食（3,200円）もあります（2026年10月9日公式確認）。",
   },
   {
     question: "ニチレイフーズダイレクトの送料は？無料になる条件は？",
@@ -47,7 +47,7 @@ const faqData = [
   {
     question: "ニチレイフーズダイレクトの定期購入に回数縛りはある？",
     answer:
-      "公式FAQに「定期購入の受取回数に制限はありません」とあり、定期商品ページにも「期限なし（終了連絡をいただくまで）」と明記されています（2026年10月9日確認）。定期特典は全国送料無料＋ポイント通常の10倍。変更・キャンセルは到着希望日の7日前（土日祝含まず）までに電話または問い合わせフォームで連絡します。",
+      "公式FAQに「定期購入の受取回数に制限はありません」とあり、定期商品ページにも「期限なし（終了連絡をいただくまで）」と明記されています（2026年10月9日確認）。定期特典は全国送料無料＋ポイント通常の10倍です。変更・キャンセルは到着希望日の7日前（土日祝含まず）までに電話または問い合わせフォームで連絡します。",
   },
   {
     question: "ニチレイフーズダイレクトの支払い方法は？",
@@ -438,19 +438,19 @@ export default function NichireiFoodsDirectKuchikomiPage() {
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
-            「ニチレイフーズダイレクトって実際どうなの？」「まずいって口コミは本当？」——冷凍食品大手・ニチレイフーズが運営する公式通販「ニチレイフーズダイレクト」。管理栄養士監修の冷凍おかずセット「きくばりごぜん」（旧・気くばり御膳）を中心に、健康志向の宅配食として長く選ばれています。
+            「ニチレイフーズダイレクトって実際どうなの？」「まずいって口コミは本当？」——「ニチレイフーズダイレクト」は、冷凍食品大手・ニチレイフーズが運営する公式通販です。管理栄養士監修の冷凍おかずセット「きくばりごぜん」（旧・気くばり御膳）を中心に、健康志向の宅配食として長く選ばれています。
           </p>
           <p className="mb-3">
-            この記事では、<strong>公開されている実在のレビュー・口コミを出典付きで整理</strong>し、ニチレイフーズダイレクトの良い口コミ・悪い口コミの両方を中立に検証。「まずい」と言われる理由にも正面から答えます。
+            この記事では、<strong>公開されている実在のレビュー・口コミを出典付きで整理</strong>し、ニチレイフーズダイレクトの良い口コミ・悪い口コミの両方を中立に検証します。「まずい」と言われる理由についても解説します。
           </p>
           <p>
-            さらに、<strong>コース別の料金・送料（本州・四国は7,500円以上で無料）・お試し4食セット</strong>まで詳しく解説。ニチレイフーズダイレクトが自分に合うかどうか、この記事で判断できます。
+            さらに、<strong>コース別の料金・送料（本州・四国は7,500円以上で無料）・お試し4食セット</strong>まで詳しく解説します。ニチレイフーズダイレクトが自分に合うかどうか、この記事で判断できます。
           </p>
         </div>
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：ニチレイフーズダイレクトはこんな人に向いています</p>
+          <p className="font-bold text-base mb-3">ニチレイフーズダイレクトが向いている方</p>
           <p className="text-sm leading-relaxed mb-4">
             ニチレイフーズダイレクトは、<strong>「冷凍食品大手の技術力と健康設計を両立した宅配食を選びたい人」</strong>に向いたサービスです。口コミでは「おいしくてレンジで楽」「この食べ応えで232kcalは驚き」という評価が目立つ一方、健康設計ゆえの薄味・価格の高さは注意点として挙がっています。「まずい」という声の実態は薄味・量への評価が中心で、感じ方には個人差があります（<a href="#mazui" className="text-accent underline">検証セクションへ</a>）。
           </p>
@@ -536,11 +536,11 @@ export default function NichireiFoodsDirectKuchikomiPage() {
           {[
             {
               title: "冷凍食品大手ニチレイの技術力",
-              text: "本業が冷凍食品の製造販売である大手メーカーの直販サービスなので、冷凍技術・製造品質は業界トップクラス。実食レビューでも「冷凍食品で大手であるニチレイの技術力の高さを随所に感じました」（宅食ラボ）と評価されています。",
+              text: "本業が冷凍食品の製造販売である大手メーカーの直販サービスなので、冷凍技術・製造品質は業界トップクラスです。実食レビューでも「冷凍食品で大手であるニチレイの技術力の高さを随所に感じました」（宅食ラボ）と評価されています。",
             },
             {
               title: "300kcal以下・塩分2.0g以下でも食べ応えのある設計",
-              text: "きくばりごぜんはカロリー・塩分を抑えつつ野菜100g以上（生鮮換算）を確保。「この食べ応えで232kcal、食塩相当量1.9gとは本当におどろき」（OZmall）という実食評価の通り、健康設計と満足感の両立が強みです。",
+              text: "きくばりごぜんはカロリー・塩分を抑えつつ野菜100g以上（生鮮換算）を確保しています。「この食べ応えで232kcal、食塩相当量1.9gとは本当におどろき」（OZmall）という実食評価の通り、健康設計と満足感の両立が強みです。",
             },
             {
               title: "目的別コースと栄養成分検索で選びやすい",
@@ -576,7 +576,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
         <SectionHeading id="bad-reviews">ニチレイフーズダイレクトの悪い口コミ・評判（出典付き）</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          ネガティブな意見も出典付きで正直に紹介します。購入前に知っておくべき注意点です。
+          否定的な意見も出典付きで掲載しています。購入前にご確認いただきたい注意点です。
         </p>
 
         {badReviewCategories.map((category) => (
@@ -679,7 +679,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
         </div>
 
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-1">編集部の結論：「まずい」は①健康設計の薄味②量の設計③価格感の3因に分解できる</p>
+          <p className="font-bold mb-1">編集部の見解：「まずい」は①健康設計の薄味②量の設計③価格感の3因に分解できる</p>
           <p>
             「まずい」と正面から断じた実食レビューは今回の調査では確認できませんでした。実態は塩分2.0g以下・300kcal以下という健康設計への感じ方の問題が中心で、冷凍食品大手ならではの味の完成度はレビュー各社で一貫して高評価です。<strong>濃い味・大盛り志向の人には合いにくい</strong>一方、健康管理と味を両立したい人の満足度は高い傾向です。まずはお試し4食セット（3,300円）で自分の好みに合うか確かめるのが失敗しない方法です。
           </p>
@@ -716,7 +716,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
           {
             num: 5,
             title: "お試し4食3,300円＋支払い方法8通りの始めやすさ",
-            text: "お試し4食セット（825円/食）で味を確認でき、支払いはクレジットカード・PayPay・代引き・後払い・Amazon Payなど8通り。大手ECに近い使い勝手で、通販に不慣れな家族への贈り先としても選びやすいサービスです。",
+            text: "お試し4食セット（825円/食）で味を確認でき、支払いはクレジットカード・PayPay・代引き・後払い・Amazon Payなど8通りです。大手ECに近い使い勝手で、通販に不慣れな家族への贈り先としても選びやすいサービスです。",
           },
         ].map((merit) => (
           <div key={merit.num} className="flex gap-4 mb-5">
@@ -734,7 +734,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
         <SectionHeading id="demerits">注意すべきデメリット3つ</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          メリットだけでなく、「ここは正直イマイチ」というポイントも率直にお伝えします。
+          メリットだけでなく、注意が必要な点もあわせてご説明します。
         </p>
 
         {[
@@ -794,7 +794,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
           ]}
         />
         <p className="text-sm mb-2 leading-relaxed">
-          <strong>送料のポイント：</strong>本州・四国なら8食セット（7,000円〜）に単品を1つ足すだけで送料無料ラインに届きます。定期購入は金額にかかわらず全国送料無料なので、続けるなら定期一択です。冷凍宅配弁当18社の送料込み実質単価は、編集部が公式サイトを一次調査した
+          <strong>送料のポイント：</strong>本州・四国なら8食セット（7,000円〜）に単品を1つ足すだけで送料無料ラインに届きます。定期購入は金額にかかわらず全国送料無料なので、継続する場合は定期購入が有利です。冷凍宅配弁当18社の送料込み実質単価は、編集部が公式サイトを一次調査した
           <Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark underline">宅食料金白書2026</Link>
           で比較できます。
         </p>
@@ -876,7 +876,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※各社公式サイトの公開情報をもとに編集部作成（2026年7月時点）。最新情報は各公式サイトでご確認ください。
+          ※各社公式サイトの公開情報をもとに編集部が作成しています（2026年7月時点）。最新情報は各公式サイトでご確認ください。
         </p>
 
         {/* ===== FAQ ===== */}
@@ -903,7 +903,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link
             href="/articles/nichirei-otameshi/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
@@ -935,7 +935,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

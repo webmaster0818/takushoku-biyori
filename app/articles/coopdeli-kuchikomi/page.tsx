@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "コープ（生協）の宅配弁当の口コミ・評判｜まずいって本当？コープデリ夕食宅配「舞菜」の料金・カロリーを公式で確認【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "コープの宅配弁当（コープデリ夕食宅配・舞菜）はまずい？薄味・量・飽きなど言われる理由を出典付きで整理。1食464〜842円の料金、コース別kcal・塩分、24円引きの対象、届くエリア、他地域の生協の夕食宅配も公式で確認。【2026年10月更新】";
+  "コープの宅配弁当（コープデリ夕食宅配・舞菜）はまずい？薄味・量・飽きなど言われる理由を出典付きで整理します。1食464〜842円の料金、コース別kcal・塩分、24円引きの対象、届くエリア、他地域の生協の夕食宅配も公式で確認しています。【2026年10月更新】";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/coopdeli-kuchikomi/";
 
@@ -32,7 +32,7 @@ const faqData = [
   {
     question: "コープデリの夕食宅配（デイリーコープ）とは？",
     answer:
-      "コープデリ連合会（関東信越の生協）が運営する夕食宅配サービスです。「舞菜」シリーズのお弁当・おかずを、月〜金曜（祝日も配達・土日は休み）のうち希望の曜日に、週3日以上・冷蔵で届けます。利用には生協への加入（出資金・脱退時返還）と利用登録が必要で、利用は自動継続です。お届けは東京都全域（離島を除く）と、千葉・埼玉・茨城・栃木・群馬・長野の一部の市区町村。新潟県はコープデリにいがたの別サービスです（2026年10月16日・公式確認）。",
+      "コープデリ連合会（関東信越の生協）が運営する夕食宅配サービスです。「舞菜」シリーズのお弁当・おかずを、月〜金曜（祝日も配達・土日は休み）のうち希望の曜日に、週3日以上・冷蔵で届けます。利用には生協への加入（出資金・脱退時返還）と利用登録が必要で、利用は自動継続です。お届けは東京都全域（離島を除く）と、千葉・埼玉・茨城・栃木・群馬・長野の一部の市区町村です。新潟県はコープデリにいがたの別サービスです（2026年10月16日・公式確認）。",
   },
   {
     question: "コープデリの夕食宅配の料金はいくら？",
@@ -448,7 +448,7 @@ export default function CoopdeliKuchikomiPage() {
             「コープの宅配弁当って実際どうなの？」「生協の弁当はまずいって本当？」——関東でいちばん多く検索されるコープの宅配弁当が、コープデリの夕食宅配（デイリーコープ）です。関東信越の生協が運営し、<strong>冷蔵のお弁当・おかず「舞菜」を平日、週3日から届けてくれる</strong>サービスで、基本は手渡し（留守の場合は保冷容器で指定の場所）で届きます。
           </p>
           <p className="mb-3">
-            この記事では、<strong>公開されている実在のレビュー記事を出典付きで整理</strong>し、良い口コミ・悪い口コミの両方を中立に検証。「まずい」と言われる理由にも正面から答えます。
+            この記事では、<strong>公開されている実在のレビュー記事を出典付きで整理</strong>し、良い口コミ・悪い口コミの両方を中立に検証します。「まずい」と言われる理由についても解説します。
           </p>
           <p>
             さらに、<strong>1食あたりの料金・コース別のカロリーと塩分・届くエリア・週3日以上という利用条件</strong>を2026年10月16日に公式サイトで確認し、コープデリ以外の生協（ユーコープ・コープさっぽろ・エフコープ）の宅配弁当の料金も並べました。なお当サイトは実食をしておらず、味の評価はすべて出典付きの第三者レビューです。
@@ -457,7 +457,7 @@ export default function CoopdeliKuchikomiPage() {
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：コープの宅配弁当（コープデリ）はこんな人に向いています</p>
+          <p className="font-bold text-base mb-3">コープの宅配弁当（コープデリ）が向いている方</p>
           <p className="text-sm leading-relaxed mb-4">
             コープデリの夕食宅配は、<strong>「東京都や千葉・埼玉など対象エリアで、冷蔵のお弁当を配達料なしで平日に届けてほしい人」</strong>に向いたサービスです。口コミでは「冷凍じゃないから味が落ちない」「品数が多くて安い」という評価が目立つ一方、薄味・味の単調さ・量の少なさは注意点として挙がっています。「まずい」という声は特定メニューへの不満が中心です（<a href="#mazui" className="text-accent underline">検証セクションへ</a>）。
           </p>
@@ -573,7 +573,7 @@ export default function CoopdeliKuchikomiPage() {
         <SectionHeading id="bad-reviews">コープデリ夕食宅配の悪い口コミ・評判（出典付き）</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          ネガティブな意見も出典付きで正直に紹介します。加入前に知っておくべき注意点です。
+          否定的な意見も出典付きで掲載しています。加入前にご確認いただきたい注意点です。
         </p>
 
         {badReviewCategories.map((category) => (
@@ -690,7 +690,7 @@ export default function CoopdeliKuchikomiPage() {
 
         <SubHeading>かかる費用は「商品代のみ」</SubHeading>
         <p className="text-sm mb-2 leading-relaxed">
-          夕食宅配デイリーコープは<strong>配達手数料が無料</strong>のため、支払いは商品代のみです（2026年10月16日公式確認）。舞菜弁当（680円）を週5日×4週利用した場合の月額目安は約13,600円。2食以上の同時注文で対象コースは1食24円（税抜）引きになるため、舞菜弁当を2人分・週5日×4週なら月あたり約1,000円の割引です。
+          夕食宅配デイリーコープは<strong>配達手数料が無料</strong>のため、支払いは商品代のみです（2026年10月16日公式確認）。舞菜弁当（680円）を週5日×4週利用した場合の月額目安は約13,600円です。2食以上の同時注文で対象コースは1食24円（税抜）引きになるため、舞菜弁当を2人分・週5日×4週なら月あたり約1,000円の割引です。
         </p>
         <p className="text-xs text-warm-gray mb-6">
           ※参考: 通常宅配のウイークリーコープは別体系（東京都の場合、基本手数料88円＋配達手数料110円＝週198円税込。1回6,000円税抜以上で無料等の減免あり）。夕食宅配のみの利用なら手数料はかかりません。
@@ -728,7 +728,7 @@ export default function CoopdeliKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-4">
-          ※出典: <a href="https://daily.coopdeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="underline">デイリーコープ</a>／<a href="https://efriends.coopdeli.jp/docreq/kuruco-d/index.html" target="_blank" rel="noopener noreferrer nofollow" className="underline">コープデリにいがた 夕食宅配</a>／<a href="https://www.maici.coop/course/" target="_blank" rel="noopener noreferrer nofollow" className="underline">夕食宅配Maici コース紹介</a>／<a href="https://www.sapporo.coop/service/dinner-delivery/" target="_blank" rel="noopener noreferrer nofollow" className="underline">コープさっぽろ 夕食宅配サービス</a>／<a href="https://www.fcoop.or.jp/shopping/service/dinner-delivery/" target="_blank" rel="noopener noreferrer nofollow" className="underline">エフコープ 夕食宅配</a>（いずれも2026年10月16日確認）。「−」は今回の確認範囲で配達料の記載を確かめられなかったもの。パルシステム・コープこうべ・みやぎ生協などは今回、公式ページで料金を確認しきれなかったため載せていません。
+          ※出典: <a href="https://daily.coopdeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="underline">デイリーコープ</a>／<a href="https://efriends.coopdeli.jp/docreq/kuruco-d/index.html" target="_blank" rel="noopener noreferrer nofollow" className="underline">コープデリにいがた 夕食宅配</a>／<a href="https://www.maici.coop/course/" target="_blank" rel="noopener noreferrer nofollow" className="underline">夕食宅配Maici コース紹介</a>／<a href="https://www.sapporo.coop/service/dinner-delivery/" target="_blank" rel="noopener noreferrer nofollow" className="underline">コープさっぽろ 夕食宅配サービス</a>／<a href="https://www.fcoop.or.jp/shopping/service/dinner-delivery/" target="_blank" rel="noopener noreferrer nofollow" className="underline">エフコープ 夕食宅配</a>（いずれも2026年10月16日確認）。「−」は今回の確認範囲で配達料の記載を確かめられなかったものです。パルシステム・コープこうべ・みやぎ生協などは今回、公式ページで料金を確認しきれなかったため載せていません。
         </p>
         <p className="text-sm mb-6 leading-relaxed">
           神奈川・静岡・山梨にお住まいなら<Link href="/articles/ouchi-coop-kuchikomi/" className="text-accent hover:text-accent-dark underline">おうちコープ（ユーコープ）マイシィの口コミ・評判</Link>、エリア外なら全国配送の冷凍弁当（<Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline">nosh</Link>や<Link href="/articles/magokoro-care-reviews/" className="text-accent hover:text-accent-dark underline">まごころケア食</Link>など）が比較先になります。冷蔵で毎日届く民間サービスなら<Link href="/articles/watami-reviews/" className="text-accent hover:text-accent-dark underline">ワタミの宅食</Link>も候補です。
@@ -746,7 +746,7 @@ export default function CoopdeliKuchikomiPage() {
           {
             num: 2,
             title: "配達手数料無料で1食464円〜のコスパ",
-            text: "毎日届けてもらえるのに配達手数料は無料。「え？いいの？ってくらい安いと思います」という実食者の声の通り、品数対比の価格満足度は高めです。2食以上の同時注文で1食24円（税抜）引きになるコースもあります。",
+            text: "毎日届けてもらえるのに配達手数料は無料です。「え？いいの？ってくらい安いと思います」という実食者の声の通り、品数対比の価格満足度は高めです。2食以上の同時注文で1食24円（税抜）引きになるコースもあります。",
           },
           {
             num: 3,
@@ -869,7 +869,7 @@ export default function CoopdeliKuchikomiPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link
             href="/articles/ouchi-coop-kuchikomi/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
@@ -901,7 +901,7 @@ export default function CoopdeliKuchikomiPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "夕食ネット(ヨシケイ)の口コミ・評判は？まずいって本当？シンプルミールの料金・配達エリアを出典付きで検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "夕食ネット(ヨシケイのネット注文専用サービス)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、冷凍弁当シンプルミール(3食セット税込1,290円・初回半額)の味の評判を正面から検証。送料無料(一部地域除く)・当日朝5時締切の仕組みと配達エリア(7都府県)も解説。【2026年10月更新】";
+  "夕食ネット(ヨシケイのネット注文専用サービス)は「まずい」って本当？良い口コミ・悪い口コミを出典付きで紹介し、冷凍弁当シンプルミール(3食セット税込1,290円・初回半額)の味の評判を検証します。送料無料(一部地域除く)・当日朝5時締切・配達エリア(7都府県)も解説します。【2026年10月更新】";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/yushoku-net-kuchikomi/";
 
@@ -427,7 +427,7 @@ export default function YushokuNetKuchikomiPage() {
             「夕食ネットって実際どうなの？」「シンプルミールはまずいって本当？」——夕食ネットは、食材宅配大手ヨシケイ（ヨシケイ開発株式会社）が運営する<strong>ネット注文限定・地域限定</strong>の宅配サービス。当日朝5時までの注文で当日届く冷凍弁当「シンプルミール」が看板商品です。
           </p>
           <p className="mb-3">
-            この記事では、<strong>公開されている実在のレビュー・利用者アンケートを出典付きで整理</strong>し、夕食ネットの良い口コミ・悪い口コミの両方を中立に検証。「まずい」と言われる理由にも正面から答えます。
+            この記事では、<strong>公開されている実在のレビュー・利用者アンケートを出典付きで整理</strong>し、夕食ネットの良い口コミ・悪い口コミの両方を中立に検証します。「まずい」と言われる理由についても解説します。
           </p>
           <p>
             さらに、<strong>料金（3食税込1,290円・初回半額）・送料無料の仕組み・配達エリア（7都府県）</strong>まで、2026年10月11日に公式サイトで確認した情報をもとに解説します。
@@ -436,7 +436,7 @@ export default function YushokuNetKuchikomiPage() {
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：夕食ネットはこんな人に向いています</p>
+          <p className="font-bold text-base mb-3">夕食ネットが向いている方</p>
           <p className="text-sm leading-relaxed mb-4">
             夕食ネットは、<strong>「対象エリア内で、必要な日だけ低価格の冷凍弁当・ミールキットを使いたい人」</strong>に向いたサービスです。口コミでは「当日朝5時まで注文・キャンセルできる手軽さ」「1食430円（初回約215円）の安さ」が高く評価される一方、量の少なさ・冷凍弁当ゆえの味の個人差・都度注文の手間は注意点として挙がっています。「まずい」という声は一部で、価格対比の満足度は高めです（<a href="#mazui" className="text-accent underline">検証セクションへ</a>）。
           </p>
@@ -482,7 +482,7 @@ export default function YushokuNetKuchikomiPage() {
           <Link href="/articles/yoshikei-reviews/" className="text-accent hover:text-accent-dark underline">
             ヨシケイ
           </Link>
-          が週単位のカタログ注文を基本とするのに対し、夕食ネットは<strong>当日朝5時までのネット注文で当日配達（無料）</strong>という即時性が最大の特徴。取扱商品は冷凍弁当「シンプルミール」、ミールキットの「日替わりメニュー」「キットde楽！」の3ラインに絞られています。
+          が週単位のカタログ注文を基本とするのに対し、夕食ネットは<strong>当日朝5時までのネット注文で当日配達（無料）</strong>という即時性が最大の特徴です。取扱商品は冷凍弁当「シンプルミール」、ミールキットの「日替わりメニュー」「キットde楽！」の3ラインに絞られています。
         </p>
 
         <SubHeading>夕食ネットの基本スペック</SubHeading>
@@ -545,7 +545,7 @@ export default function YushokuNetKuchikomiPage() {
         <SectionHeading id="bad-reviews">夕食ネットの悪い口コミ・評判（出典付き）</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          ネガティブな意見も出典付きで正直に紹介します。購入前に知っておくべき注意点です。
+          否定的な意見も出典付きで掲載しています。購入前にご確認いただきたい注意点です。
         </p>
 
         {badReviewCategories.map((category) => (
@@ -640,7 +640,7 @@ export default function YushokuNetKuchikomiPage() {
         </div>
 
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-1">編集部の結論：「まずい」は①冷凍への期待値②好みの相性に分解できる</p>
+          <p className="font-bold mb-1">編集部の見解：「まずい」は①冷凍への期待値②好みの相性に分解できる</p>
           <p>
             シンプルミールは1食430円（初回約215円）という価格帯であり、高価格帯の冷凍弁当（nosh・三ツ星ファーム等）と同じ土俵で味を比べるのはフェアではありません。「価格の割においしい」という評価が多数派で、強い酷評は冷凍おかず全般への期待値のズレが中心です。<strong>初回10セットまで半額</strong>なので、まず3食だけ試して自分の好みに合うか確かめるのが合理的です。
           </p>
@@ -685,7 +685,7 @@ export default function YushokuNetKuchikomiPage() {
           {
             num: 1,
             title: "送料込み1食430円の業界最安クラス",
-            text: "シンプルミールは3食1,290円（税込）・送料無料。初回は10セットまで半額の1食約215円で試せます。「３食セットで（略）かなり安い気がする」という口コミの通り、価格面の満足度は高めです。",
+            text: "シンプルミールは3食1,290円（税込）・送料無料です。初回は10セットまで半額の1食約215円で試せます。「３食セットで（略）かなり安い気がする」という口コミの通り、価格面の満足度は高めです。",
           },
           {
             num: 2,
@@ -807,7 +807,7 @@ export default function YushokuNetKuchikomiPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link
             href="/articles/yoshikei-reviews/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
@@ -839,7 +839,7 @@ export default function YushokuNetKuchikomiPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

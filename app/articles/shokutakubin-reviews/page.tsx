@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "食宅便の口コミ・評判は？まずいって本当？日清医療食品の宅配弁当を中立検証【2026年9月最新】";
 const ARTICLE_DESCRIPTION =
-  "食宅便（しょくたくびん）は「まずい」って本当？口コミ・評判を出典付きで徹底検証。日清医療食品が手がける宅配弁当の味・栄養・コスパを、実食レビューメディアの評価を引用しながら中立に解説。料金プラン・送料・全コースの特徴も整理します。【2026年9月更新】";
+  "食宅便（しょくたくびん）は「まずい」って本当？口コミ・評判を出典付きで検証します。日清医療食品が手がける宅配弁当の味・栄養・コスパを、実食レビューメディアの評価を引用しながら中立に解説します。料金プラン・送料・全コースの特徴も整理します。【2026年9月更新】";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/shokutakubin-reviews/";
 
@@ -47,7 +47,7 @@ const faqData = [
   {
     question: "食宅便とnoshの違いは？",
     answer:
-      "食宅便は日清医療食品（病院・介護施設給食大手）が運営し、管理栄養士1万人以上のノウハウを活かした栄養バランスが強み。一方、noshは自分でメニューを選べる自由度とアプリの使いやすさが特徴です。安心感・専門性なら食宅便、自由度・コスパならnoshがおすすめです。",
+      "食宅便は日清医療食品（病院・介護施設給食大手）が運営し、管理栄養士1万人以上のノウハウを活かした栄養バランスが強みです。一方、noshは自分でメニューを選べる自由度とアプリの使いやすさが特徴です。安心感・専門性なら食宅便、自由度・コスパならnoshがおすすめです。",
   },
   {
     question: "食宅便は介護食やムース食もある？",
@@ -173,19 +173,19 @@ export default function ShokutakubinReviewsPage() {
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
-            「食宅便って美味しいの？」「日清医療食品が作ってるって聞いたけど、病院食みたいな味？」——<strong>病院・介護施設向け給食で日本最大手の日清医療食品</strong>が手がける宅配弁当サービス「食宅便」。1万人以上の管理栄養士のノウハウが詰まったメニューが特徴です。
+            「食宅便って美味しいの？」「日清医療食品が作ってるって聞いたけど、病院食みたいな味？」——「食宅便」は、<strong>病院・介護施設向け給食で日本最大手の日清医療食品</strong>が手がける宅配弁当サービスです。1万人以上の管理栄養士のノウハウが詰まったメニューが特徴です。
           </p>
           <p className="mb-3">
-            この記事では、<strong>食宅便の口コミ・評判を徹底リサーチ</strong>。公開情報・利用者の口コミをもとに、「病院食っぽくないか」「味は本当に美味しいか」を検証しました。
+            この記事では、<strong>食宅便の口コミ・評判を調査しました</strong>。公開情報・利用者の口コミをもとに、「病院食っぽくないか」「味は本当に美味しいか」を検証しました。
           </p>
           <p>
-            <strong>全コースの料金・送料・特徴</strong>まで詳しく解説。食宅便が自分に合うかどうか、この記事で判断できます。
+            <strong>全コースの料金・送料・特徴</strong>まで詳しく解説します。食宅便が自分に合うかどうか、この記事で判断できます。
           </p>
         </div>
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：食宅便はこんな人に向いています</p>
+          <p className="font-bold text-base mb-3">食宅便が向いている方</p>
           <div className="grid sm:grid-cols-2 gap-3 text-sm leading-relaxed mb-4">
             <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>病院給食最大手・日清医療食品が運営する安心感</li><li>低糖質・塩分ケア・たんぱくケアなど制限食コースが豊富</li><li>1食あたり690円〜（おまかせ7食）で品数が多い</li></ul></div>
             <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>都度購入は送料がかかる（らくらく定期便で割引）</li><li>1品ずつの量は控えめでがっつり派には物足りない声も</li><li>冷凍便のため冷凍庫スペースの確保が必要</li></ul></div>
@@ -233,15 +233,15 @@ export default function ShokutakubinReviewsPage() {
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
-          おまかせコースは<strong>7食4,830円（1食あたり690円）</strong>で、らくらく定期便も通常便も同額です。低糖質セレクト・塩分&カロリーケア・たんぱくケア・やわらかい食事は7食5,180円（1食740円）。nosh（通常価格の最安は12食プランの612円・2026年10月10日・公式確認）より1食あたりやや高く、三ツ星ファーム（711円〜（2026年10月9日・公式確認））とほぼ同水準です。らくらく定期便にすると送料が1,330円→940円に下がります（2026年10月12日・公式確認）。
+          おまかせコースは<strong>7食4,830円（1食あたり690円）</strong>で、らくらく定期便も通常便も同額です。低糖質セレクト・塩分&カロリーケア・たんぱくケア・やわらかい食事は7食5,180円です（1食740円）。nosh（通常価格の最安は12食プランの612円・2026年10月10日・公式確認）より1食あたりやや高く、三ツ星ファーム（711円〜（2026年10月9日・公式確認））とほぼ同水準です。らくらく定期便にすると送料が1,330円→940円に下がります（2026年10月12日・公式確認）。
         </p>
 
         <SubHeading>食宅便の3つの特徴</SubHeading>
         <div className="space-y-3 mb-6">
           {[
             { title: "日清医療食品の圧倒的な信頼性", text: "全国約5,300の病院・介護施設に給食を提供する日本最大手の食事サービス企業。1万人以上の管理栄養士が在籍し、医療・介護現場で培った栄養管理のノウハウを個人向けサービスに転用しています。「信頼できる企業の宅配弁当を利用したい」という方に最適です。" },
-            { title: "品数が多く彩り豊かな献立", text: "1食あたり主菜1品＋副菜3〜4品の計4〜5品構成。少量ずつ多品目を食べられるので、自然と栄養バランスが整います。見た目の彩りにもこだわっており、食欲をそそる盛り付けが特徴。「冷凍弁当は味気ない」というイメージを覆す仕上がりです。" },
-            { title: "制限食コースが充実", text: "低糖質（糖質10g以下）、塩分ケア（塩分2.0g以下）、カロリーケア、たんぱくケアなど、医療現場のノウハウを活かした制限食コースが充実。ウェルネスダイニングと並び、制限食に強いサービスです。病院食として長年の実績があるだけに、制限食の完成度が非常に高いです。" },
+            { title: "品数が多く彩り豊かな献立", text: "1食あたり主菜1品＋副菜3〜4品の計4〜5品構成。少量ずつ多品目を食べられるので、自然と栄養バランスが整います。見た目の彩りにもこだわっており、食欲をそそる盛り付けが特徴です。「冷凍弁当は味気ない」というイメージを覆す仕上がりです。" },
+            { title: "制限食コースが充実", text: "低糖質（糖質10g以下）、塩分ケア（塩分2.0g以下）、カロリーケア、たんぱくケアなど、医療現場のノウハウを活かした制限食コースが充実しています。ウェルネスダイニングと並び、制限食に強いサービスです。病院食として長年の実績があるだけに、制限食の完成度が非常に高いです。" },
           ].map((item) => (
             <div key={item.title} className="bg-green-50 rounded-lg p-4">
               <p className="font-bold text-sm mb-1">{item.title}</p>
@@ -323,7 +323,7 @@ export default function ShokutakubinReviewsPage() {
             title: "量が少ないと感じる（特に男性）",
             reviews: [
               "OZmallのアンケートには「味は美味しくても量が少ないのが難点」（30代男性）「特に主菜はもう少しボリュームが欲しい」（60代女性）という回答があり、みんなのランキングも「量に関しては少ないという意見が目立ちました」としています。",
-              "HonNeの実食でも「ボリュームは少なめ」。一方でOZmallには「1人用には適量だと思う」（60代女性）という回答もあります。",
+              "HonNeの実食でも「ボリュームは少なめ」とされています。一方でOZmallには「1人用には適量だと思う」（60代女性）という回答もあります。",
             ],
             comment: "食宅便の1食あたりは約200g。品数が多い分、1品ずつの量は控えめです。ご飯・汁物を別途用意する前提で設計されています。ボリュームを求める方は、ご飯を大盛りにするか、もう1品簡単なおかずを追加するのがおすすめです。",
           },
@@ -332,7 +332,7 @@ export default function ShokutakubinReviewsPage() {
             reviews: [
               "マイベストは「都度は送料1,330円で割高」と指摘し、HonNeが紹介したX投稿にも「一食700円プラス送料かかるから、毎日は厳しい」という声があります。",
             ],
-            comment: "都度購入の送料1,330円は確かに高め。らくらく定期便なら940円に下がりますが、ウェルネスダイニング（定期14食以上で送料無料）と比べると見劣りします。7食セットの定期便にすれば1食あたりの送料負担は約134円に抑えられます。",
+            comment: "都度購入の送料1,330円は確かに高めです。らくらく定期便なら940円に下がりますが、ウェルネスダイニング（定期14食以上で送料無料）と比べると見劣りします。7食セットの定期便にすれば1食あたりの送料負担は約134円に抑えられます。",
           },
         ].map((category) => (
           <div key={category.title} className="mb-6">
@@ -350,10 +350,10 @@ export default function ShokutakubinReviewsPage() {
         {/* ===== まずい？検証 ===== */}
         <SectionHeading id="mazui">食宅便は「まずい」って本当？味の評判を検証</SectionHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          「食宅便 まずい」という検索候補が表示されることがありますが、<strong>当サイトが確認した範囲では、実食レビューメディアの評価はむしろ良好です</strong>。お試しセットを実食した宅食グルメは「まずい」という噂は当たらないと結論づけ、実食した3品すべてを<strong>「一定レベルの美味しさなので、ストレスなく食べられた」</strong>（<a href="https://meal.app-liv.jp/archive/138979/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">出典</a>）と評価。OZmallの実食レビューでも<strong>「万人に受け入れられるようなバランスのよい美味しさ」</strong>（<a href="https://www.ozmall.co.jp/healthcare/food/article/40177/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">出典</a>）と表現されています。
+          「食宅便 まずい」という検索候補が表示されることがありますが、<strong>当サイトが確認した範囲では、実食レビューメディアの評価はむしろ良好です</strong>。お試しセットを実食した宅食グルメは「まずい」という噂は当たらないと結論づけ、実食した3品すべてを<strong>「一定レベルの美味しさなので、ストレスなく食べられた」</strong>（<a href="https://meal.app-liv.jp/archive/138979/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">出典</a>）と評価しています。OZmallの実食レビューでも<strong>「万人に受け入れられるようなバランスのよい美味しさ」</strong>（<a href="https://www.ozmall.co.jp/healthcare/food/article/40177/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">出典</a>）と表現されています。
         </p>
         <p className="text-sm mb-6 leading-relaxed">
-          一方で「まずい」と感じる余地があるのは主に2つのケースです。1つは<strong>制限食コース（塩分ケア・たんぱくケアなど）</strong>で、栄養基準を守るぶん味付けが控えめになり、濃い味に慣れた人には物足りなく感じられること。もう1つは<strong>「派手さはない家庭的な味」</strong>という設計上、レストラン級の感動を期待すると肩透かしに感じることです。病院・介護給食最大手の日清医療食品が作る「毎日食べても飽きない安定した味」がコンセプトなので、味の方向性が合うかはおまかせコースの1回注文（都度購入）で確かめるのが確実です。
+          一方で「まずい」と感じる余地があるのは主に2つのケースです。1つは<strong>制限食コース（塩分ケア・たんぱくケアなど）</strong>で、栄養基準を守るぶん味付けが控えめになり、濃い味に慣れた人には物足りなく感じられることです。もう1つは<strong>「派手さはない家庭的な味」</strong>という設計上、レストラン級の感動を期待すると肩透かしに感じることです。病院・介護給食最大手の日清医療食品が作る「毎日食べても飽きない安定した味」がコンセプトなので、味の方向性が合うかはおまかせコースの1回注文（都度購入）で確かめるのが確実です。
         </p>
 
         {/* ===== メリット ===== */}
@@ -362,11 +362,11 @@ export default function ShokutakubinReviewsPage() {
         <p className="text-sm mb-6 leading-relaxed">口コミや公開情報から見えてくる食宅便のメリットを5つにまとめました。</p>
 
         {[
-          { num: 1, title: "多品目で栄養バランスが優秀", text: "1食4〜5品のおかずは宅配弁当業界でもトップクラスの品数。少量ずつ多品目を食べることで、自然と20品目以上の食材を摂取できます。自炊では難しい「1日30品目」の目標に近づけるのは、食宅便ならではの強みです。特に一人暮らしの方は、品数の多さが大きな価値になります。" },
-          { num: 2, title: "日清医療食品ブランドの圧倒的な安心感", text: "全国5,300以上の病院・介護施設に給食を提供する実績は、他のどの宅配弁当サービスにもない信頼性。1万人以上の管理栄養士の知見、HACCP準拠の衛生管理、原材料の品質管理——すべてにおいて医療レベルの基準を満たしています。「安心して食べられること」を最重視する方にとって、これ以上の選択肢はありません。" },
-          { num: 3, title: "低糖質コースの糖質10g以下が優秀", text: "食宅便の低糖質セレクトは糖質10g以下。nosh（30g以下）の3分の1、三ツ星ファーム（25g以下）の半分以下という厳しい制限値です。厳密な糖質制限が必要な方にとっては、業界トップクラスの低糖質コースです。味も単調ではなく、和洋中のバリエーションがあります。" },
+          { num: 1, title: "多品目で栄養バランスが優秀", text: "1食4〜5品のおかずは宅配弁当業界でもトップクラスの品数です。少量ずつ多品目を食べることで、自然と20品目以上の食材を摂取できます。自炊では難しい「1日30品目」の目標に近づけるのは、食宅便ならではの強みです。特に一人暮らしの方は、品数の多さが大きな価値になります。" },
+          { num: 2, title: "日清医療食品ブランドの圧倒的な安心感", text: "全国5,300以上の病院・介護施設に給食を提供する実績は、他のどの宅配弁当サービスにもない信頼性です。1万人以上の管理栄養士の知見、HACCP準拠の衛生管理、原材料の品質管理——すべてにおいて医療レベルの基準を満たしています。「安心して食べられること」を最重視する方にとって、これ以上の選択肢はありません。" },
+          { num: 3, title: "低糖質コースの糖質10g以下が優秀", text: "食宅便の低糖質セレクトは糖質10g以下です。nosh（30g以下）の3分の1、三ツ星ファーム（25g以下）の半分以下という厳しい制限値です。厳密な糖質制限が必要な方にとっては、業界トップクラスの低糖質コースです。味も単調ではなく、和洋中のバリエーションがあります。" },
           { num: 4, title: "おこのみセレクトでメニューの自由度がある", text: "食宅便には「おこのみセレクト」コースがあり、好きなメニューを自分で選んで注文できます。ウェルネスダイニングやまごころケア食のようなおまかせ制のみのサービスと違い、苦手な食材を避けたり、好みのメニューだけを注文したりできる自由度があります。" },
-          { num: 5, title: "解約がマイページから可能", text: "食宅便のらくらく定期便は、マイページから解約手続きが可能。ウェルネスダイニング（解約はフォーム・電話）と違い、マイページ上で完結します。noshほどスムーズではありませんが、ウェルネスダイニングよりは手軽。解約金もかからないので、気軽に始められます。" },
+          { num: 5, title: "解約がマイページから可能", text: "食宅便のらくらく定期便は、マイページから解約手続きが可能です。ウェルネスダイニング（解約はフォーム・電話）と違い、マイページ上で完結します。noshほどスムーズではありませんが、ウェルネスダイニングよりは手軽です。解約金もかからないので、気軽に始められます。" },
         ].map((merit) => (
           <div key={merit.num} className="flex gap-4 mb-5">
             <span className="flex-shrink-0 w-8 h-8 bg-accent text-white rounded-full flex items-center justify-center text-sm font-bold">{merit.num}</span>
@@ -383,8 +383,8 @@ export default function ShokutakubinReviewsPage() {
         <p className="text-sm mb-6 leading-relaxed">注意点も率直にお伝えします。</p>
 
         {[
-          { num: 1, title: "1品ずつのボリュームが控えめ", text: "品数が多い分、1品ずつの量は少なめです。トータルの重量は約200gで、nosh（約250g）より軽い。成人男性は確実に物足りなさを感じます。ご飯と汁物を別途用意する前提で考えましょう。ダイエット目的なら逆にちょうどよいサイズですが、がっつり食べたい方には不向きです。" },
-          { num: 2, title: "都度購入の送料が高い（1,330円）", text: "都度購入の送料1,330円は業界でもやや高め。5食セットだと1食あたりの送料負担が266円にもなります。らくらく定期便（940円）に切り替えるだけで送料を約30%カットできるので、継続利用する方は必ず定期便を選びましょう。ウェルネスダイニングの定期14食・21食送料無料と比べると見劣りしますが、nosh（関西1,023円〜・関東1,166円・2026年10月10日・公式確認）よりは安い水準です。" },
+          { num: 1, title: "1品ずつのボリュームが控えめ", text: "品数が多い分、1品ずつの量は少なめです。トータルの重量は約200gで、nosh（約250g）より軽いです。成人男性は確実に物足りなさを感じます。ご飯と汁物を別途用意する前提で考えましょう。ダイエット目的なら逆にちょうどよいサイズですが、がっつり食べたい方には不向きです。" },
+          { num: 2, title: "都度購入の送料が高い（1,330円）", text: "都度購入の送料1,330円は業界でもやや高めです。5食セットだと1食あたりの送料負担が266円にもなります。らくらく定期便（940円）に切り替えるだけで送料を約30%カットできるので、継続利用する方は必ず定期便を選びましょう。ウェルネスダイニングの定期14食・21食送料無料と比べると見劣りしますが、nosh（関西1,023円〜・関東1,166円・2026年10月10日・公式確認）よりは安い水準です。" },
           { num: 3, title: "送料込みの1食単価はnoshより高め", text: "おまかせコース7食4,830円＋らくらく定期便の送料940円で、送料込みの1食あたりは約824円です。nosh（12食・関東の送料込みで約709円）より1食100円以上高くなります。品数の多さと医療食品メーカーの安心感に価値を感じるかどうかが判断の分かれ目です。なお、公式の「食宅便アプリ」でも注文や配送スケジュールの変更ができます（2026年10月12日・公式確認）。" },
         ].map((demerit) => (
           <div key={demerit.num} className="flex gap-4 mb-5">
@@ -422,7 +422,7 @@ export default function ShokutakubinReviewsPage() {
         />
 
         <p className="text-sm mb-6 leading-relaxed">
-          <strong>送料のポイント：</strong>らくらく定期便を利用すれば送料は940円。おまかせコース7食なら1食あたりの送料負担は約134円で、送料込みの1食あたりは約824円。nosh（12食・関東の送料込みで約709円）、まごころケア食（21食・お得便の送料込みで約441円）と比べると高めですが、品数の多さと日清医療食品の信頼性を重視する人向けの価格です。
+          <strong>送料のポイント：</strong>らくらく定期便を利用すれば送料は940円です。おまかせコース7食なら1食あたりの送料負担は約134円で、送料込みの1食あたりは約824円です。nosh（12食・関東の送料込みで約709円）、まごころケア食（21食・お得便の送料込みで約441円）と比べると高めですが、品数の多さと日清医療食品の信頼性を重視する人向けの価格です。
         </p>
 
         <SubHeading>月額コストシミュレーション（おまかせコース・らくらく定期便）</SubHeading>
@@ -474,9 +474,9 @@ export default function ShokutakubinReviewsPage() {
         <SectionHeading id="comparison">他社との簡易比較</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          食宅便と主要な競合サービスを比較。
+          食宅便と主要な競合サービスを比較します。
           <Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark underline">【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link>
-          の記事も参考にしてください。制限食で比べるなら<Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark underline">ウェルネスダイニングの口コミ・評判</Link>もあわせてどうぞ。
+          の記事も参考にしてください。制限食で比べるなら<Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark underline">ウェルネスダイニングの口コミ・評判</Link>もあわせてご覧ください。
         </p>
 
         <ComparisonTable
@@ -569,7 +569,7 @@ export default function ShokutakubinReviewsPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline font-medium text-sm">nosh(ナッシュ)の口コミ・評判</Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/magokoro-care-reviews/" className="text-accent hover:text-accent-dark underline font-medium text-sm">まごころケア食の口コミ・評判</Link>
@@ -582,7 +582,7 @@ export default function ShokutakubinReviewsPage() {
             <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-accent font-bold text-lg">編</div>
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
-              <p className="text-xs text-warm-gray">宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。</p>
+              <p className="text-xs text-warm-gray">宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。</p>
             </div>
           </div>
         </div>
@@ -605,9 +605,9 @@ export default function ShokutakubinReviewsPage() {
         <section className="my-12">
           <h2 className="font-display text-2xl font-bold mb-3 text-foreground">主要15社の数値比較表（1食あたり）</h2>
           <p className="text-warm-gray text-sm mb-4">
-            主要宅食サービスのカロリー・糖質・タンパク質・塩分・価格を公式公開データから集約。1食あたりの栄養基準を公式に明記している社はその基準値（「以下」「以上」・コース別の場合は範囲）、メニューごとの値だけを公開している社（nosh・FIT FOOD HOME）は公式メニュー一覧の主菜の中央50%（四分位）の範囲を記載。
+            主要宅食サービスのカロリー・糖質・タンパク質・塩分・価格を公式公開データから集約しています。1食あたりの栄養基準を公式に明記している社はその基準値（「以下」「以上」・コース別の場合は範囲）、メニューごとの値だけを公開している社（nosh・FIT FOOD HOME）は公式メニュー一覧の主菜の中央50%（四分位）の範囲を記載しています。
             最新情報は各公式サイトでご確認ください。
-            <Link href="/methodology/" className="text-accent hover:underline">評価方法・データ源</Link> 参照。
+            <Link href="/methodology/" className="text-accent hover:underline">評価方法・データ源</Link>をご参照ください。
           </p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border border-warm-border bg-white rounded-lg overflow-hidden">

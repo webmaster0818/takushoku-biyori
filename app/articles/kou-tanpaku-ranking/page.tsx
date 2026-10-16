@@ -29,7 +29,7 @@ const faqData = [
   {
     question: "1食あたりタンパク質はどれくらい必要ですか？",
     answer:
-      "厚生労働省の食事摂取基準では、成人男性で1日65g、成人女性で50gが推奨量とされています。筋トレやボディメイクを行っている場合は、体重1kgあたり1.5〜2.0g(体重60kgなら90〜120g/日)が一般的な目安です。1日3食で割ると1食あたり25〜40g前後が必要。高タンパク宅配弁当では1食20g以上を確保しているものを選ぶのが効率的です。",
+      "厚生労働省の食事摂取基準では、成人男性で1日65g、成人女性で50gが推奨量とされています。筋トレやボディメイクを行っている場合は、体重1kgあたり1.5〜2.0g(体重60kgなら90〜120g/日)が一般的な目安です。1日3食で割ると1食あたり25〜40g前後が必要です。高タンパク宅配弁当では1食20g以上を確保しているものを選ぶのが効率的です。",
   },
   {
     question: "プロテインだけでは不十分ですか？",
@@ -39,17 +39,17 @@ const faqData = [
   {
     question: "ランキングはどう作成されていますか？",
     answer:
-      "本ランキングは、(1)1食あたりのタンパク質量、(2)PFCバランス(脂質・糖質も適切か)、(3)1食あたりの価格、(4)メニューの豊富さ、(5)継続のしやすさ(縛り・解約条件)、(6)送料を含む実質コスト、の6軸で総合評価しています。公式サイトの公開情報を基にしており、栄養成分・価格は2026年5月時点。最新情報は各公式でご確認ください。",
+      "本ランキングは、(1)1食あたりのタンパク質量、(2)PFCバランス(脂質・糖質も適切か)、(3)1食あたりの価格、(4)メニューの豊富さ、(5)継続のしやすさ(縛り・解約条件)、(6)送料を含む実質コスト、の6軸で総合評価しています。公式サイトの公開情報を基にしており、栄養成分・価格は2026年5月時点です。最新情報は各公式でご確認ください。",
   },
   {
     question: "1食タンパク質30g以上のおすすめは？",
     answer:
-      "30g以上を安定して確保したいなら【マッスルデリLEAN(30g以上)】【マッスルデリMAINTAIN(35g以上)】【マッスルデリGAIN(50g以上)】が筆頭候補。筋肉食堂DELI（コース平均31.8〜42.3g）やFIT FOOD HOMEのプロテイン特化メニューも20〜40g前後を確保しています（GOFOODは2025年6月30日にサービス終了）。noshや三ツ星ファームはメニューにより15〜25gが多く、30g以上の確保が難しい場合があります。",
+      "30g以上を安定して確保したいなら【マッスルデリLEAN(30g以上)】【マッスルデリMAINTAIN(35g以上)】【マッスルデリGAIN(50g以上)】が筆頭候補です。筋肉食堂DELI（コース平均31.8〜42.3g）やFIT FOOD HOMEのプロテイン特化メニューも20〜40g前後を確保しています（GOFOODは2025年6月30日にサービス終了）。noshや三ツ星ファームはメニューにより15〜25gが多く、30g以上の確保が難しい場合があります。",
   },
   {
     question: "コスパ重視で高タンパクなのは？",
     answer:
-      "高タンパク+コスパの両立を求めるなら【nosh(1食612円〜・タンパク質15-25g)】が最も現実的。タンパク質量はマッスルデリほど多くありませんが、価格は約半額。複数食を組み合わせれば必要量を確保できます。「マッスルデリは高すぎる、でも普通の冷凍弁当ではタンパク不足」という方の落としどころとしておすすめです。",
+      "高タンパク+コスパの両立を求めるなら【nosh(1食612円〜・タンパク質15-25g)】が最も現実的です。タンパク質量はマッスルデリほど多くありませんが、価格は約半額です。複数食を組み合わせれば必要量を確保できます。「マッスルデリは高すぎる、でも普通の冷凍弁当ではタンパク不足」という方の落としどころとしておすすめです。",
   },
 ];
 
@@ -165,7 +165,7 @@ const rankingItems = [
     protein: "20〜50g以上(プラン別)",
     price: "高め",
     score: 5,
-    summary: "ボディメイク特化型。LEAN/MAINTAIN/GAIN/LOW CARBの4プランで目的別にPFCを最適化。タンパク質量・栄養設計の精度では他社を圧倒する。",
+    summary: "ボディメイク特化型。LEAN/MAINTAIN/GAIN/LOW CARBの4プランで目的別にPFCを最適化。タンパク質量・栄養設計の精度では他社を圧倒します。",
     pros: ["LEAN・MAINTAIN・GAINはタンパク質30g以上（LOW CARBは20g以上）", "目的別4プランで減量・増量・糖質制限に対応", "メイン肉料理が満足感高い"],
     cons: ["1食単価が高め", "冷凍庫スペースを取る"],
     target: "本気でボディメイクするトレーニー / モデル / 俳優",
@@ -178,7 +178,7 @@ const rankingItems = [
     protein: "平均31.8〜42.3g（コース別）",
     price: "1食994〜1,480円＋送料",
     score: 4,
-    summary: "高たんぱくレストラン「筋肉食堂」の宅配版。ベーシック（たんぱく質平均33.0g）・ローカーボ（31.8g・糖質12.2g）・バルクアップ（42.3g）の3コースで、目的別にPFCを選べる（2026年10月10日公式確認）。※以前この順位で紹介していたGOFOODは、公式が2025年6月30日のサービス終了を告知しています。",
+    summary: "高たんぱくレストラン「筋肉食堂」の宅配版。ベーシック（たんぱく質平均33.0g）・ローカーボ（31.8g・糖質12.2g）・バルクアップ（42.3g）の3コースで、目的別にPFCを選べます（2026年10月10日公式確認）。※以前この順位で紹介していたGOFOODは、公式が2025年6月30日のサービス終了を告知しています。",
     pros: ["全コースでたんぱく質30g超（平均値）", "ローカーボは糖質平均12.2g", "回数縛りなし・7日前までマイページで停止"],
     cons: ["定期でも送料がかかる（関東7食1,640円〜）", "1食1,000円前後〜と高め"],
     target: "糖質制限+筋トレを並行する層 / 増量期のトレーニー",
@@ -191,7 +191,7 @@ const rankingItems = [
     protein: "18〜28g（主菜の中央50%）",
     price: "中〜高",
     score: 4,
-    summary: "管理栄養士監修。プロテインタイプ・低糖質タイプなど目的別メニューがあり、健康志向の高タンパク食として支持される。",
+    summary: "管理栄養士監修。プロテインタイプ・低糖質タイプなど目的別メニューがあり、健康志向の高タンパク食として支持されます。",
     pros: ["管理栄養士監修で安心", "添加物への配慮あり", "メニュー目的別に選べる"],
     cons: ["価格はnoshより高め", "メニュー数は中規模"],
     target: "添加物配慮+高タンパクを両立したい人",
@@ -216,7 +216,7 @@ const rankingItems = [
     protein: "14〜20g（主菜の中央50%）",
     price: "低〜中(1食612円〜)",
     score: 4,
-    summary: "コスパと自由度のバランスが最高。タンパク質量はマッスルデリほどではないが、価格が約半額で続けやすい。",
+    summary: "コスパと自由度のバランスが最高です。タンパク質量はマッスルデリほどではないが、価格が約半額で続けやすいです。",
     pros: ["1食612円〜（12食）の低単価", "メニュー100種類以上", "アプリ管理が高機能", "解約縛りなし"],
     cons: ["タンパク質はメニュー次第", "30g超は希少"],
     target: "コスパ最重視+ライトな筋トレ・ダイエット",
@@ -306,13 +306,13 @@ export default function KouTanpakuRankingPage() {
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
-            「筋トレしてるけど、毎日鶏むね茹でるのに飽きた」「ダイエット中だけどプロテインだけじゃ物足りない」——そんな筋トレ・ボディメイク中のあなたに役立つのが、<strong>高タンパク冷凍宅配弁当</strong>です。
+            「筋トレしてるけど、毎日鶏むね茹でるのに飽きた」「ダイエット中だけどプロテインだけじゃ物足りない」——そんな筋トレ・ボディメイク中の方に適しているのが、<strong>高タンパク冷凍宅配弁当</strong>です。
           </p>
           <p className="mb-3">
             この記事では、<strong>1食あたりタンパク質20g以上を確保している宅配弁当7社をランキング</strong>。マッスルデリ・筋肉食堂DELI・nosh・三ツ星ファームなどを、タンパク質量・PFCバランス・価格・続けやすさで総合評価しました。
           </p>
           <p>
-            数値はすべて公式情報ベース。<strong>「自分の目的・予算で最適なのはどれか」</strong>を判断できる内容にまとめています。
+            数値はすべて公式情報ベースです。<strong>「自分の目的・予算で最適なのはどれか」</strong>を判断できる内容にまとめています。
           </p>
         </div>
 
@@ -321,7 +321,7 @@ export default function KouTanpakuRankingPage() {
         <SectionHeading id="why">なぜ「高タンパク宅配弁当」が選ばれるのか</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          タンパク質は筋肉・髪・爪・皮膚・酵素などを構成する、人体に必須の栄養素です。トレーニングをしている人は<strong>体重1kgあたり1.5〜2.0g</strong>(体重60kgなら90〜120g/日)が一般的な目安。これを1日3食で割ると1食あたり25〜40gが必要になります。
+          タンパク質は筋肉・髪・爪・皮膚・酵素などを構成する、人体に必須の栄養素です。トレーニングをしている人は<strong>体重1kgあたり1.5〜2.0g</strong>(体重60kgなら90〜120g/日)が一般的な目安です。これを1日3食で割ると1食あたり25〜40gが必要になります。
         </p>
 
         <p className="text-sm mb-6 leading-relaxed">
@@ -329,13 +329,13 @@ export default function KouTanpakuRankingPage() {
         </p>
 
         <ul className="text-sm mb-6 list-disc list-inside space-y-1">
-          <li>鶏むね肉100gあたりタンパク質約23g。30g摂るには約130g必要。</li>
+          <li>鶏むね肉100gあたりタンパク質約23g。30g摂るには約130g必要です。</li>
           <li>サラダチキン1個あたりタンパク質約20〜25g。</li>
           <li>卵1個あたりタンパク質約6g。30gなら卵5個分。</li>
         </ul>
 
         <p className="text-sm mb-6 leading-relaxed">
-          自炊で毎日これを実現するのは時間的・金銭的に厳しい。だからこそ<strong>「温めるだけで1食タンパク質20〜50gが確保できる」高タンパク宅配弁当</strong>が、筋トレ・ダイエット層で人気を集めているわけです。
+          自炊で毎日これを実現するのは時間的・金銭的に厳しいです。だからこそ<strong>「温めるだけで1食タンパク質20〜50gが確保できる」高タンパク宅配弁当</strong>が、筋トレ・ダイエット層で人気を集めているわけです。
         </p>
 
         <SectionHeading id="criteria">ランキング評価基準</SectionHeading>
@@ -412,28 +412,28 @@ export default function KouTanpakuRankingPage() {
             ["ワンミール", "20〜30g", "20〜30g", "770〜840円", "バランス型"],
           ]}
         />
-        <p className="text-xs text-warm-gray mb-6">※2026年5月時点の公開情報（マッスルデリ・nosh・FIT FOOD HOMEのタンパク質・糖質は2026年10月14日に公式で再確認＝マッスルデリは4プランの基準値、nosh・FIT FOOD HOMEは公式メニュー一覧の主菜の中央50%の範囲。noshの糖質は公式基準）。栄養成分・価格はメニューにより変動。最新情報は各公式サイトでご確認ください。</p>
+        <p className="text-xs text-warm-gray mb-6">※2026年5月時点の公開情報（マッスルデリ・nosh・FIT FOOD HOMEのタンパク質・糖質は2026年10月14日に公式で再確認＝マッスルデリは4プランの基準値、nosh・FIT FOOD HOMEは公式メニュー一覧の主菜の中央50%の範囲。noshの糖質は公式基準）。栄養成分・価格はメニューにより変動します。最新情報は各公式サイトでご確認ください。</p>
 
         <SectionHeading id="howto-choose">目的別の選び方ガイド</SectionHeading>
 
         <SubHeading>増量・筋肥大したい男性</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          増量期は<strong>1食タンパク質40g以上+カロリー600kcal前後</strong>を確保したい。【マッスルデリGAIN】が最有力候補。プロテイン併用で1日150g以上のタンパク質摂取も現実的になります。
+          増量期は<strong>1食タンパク質40g以上+カロリー600kcal前後</strong>を確保したいです。【マッスルデリGAIN】が最有力候補です。プロテイン併用で1日150g以上のタンパク質摂取も現実的になります。
         </p>
 
         <SubHeading>減量・ダイエット中の女性</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          <strong>カロリーを抑えつつタンパク質30g以上</strong>を確保したいなら【マッスルデリLEAN】。価格を抑えたい場合は【nosh】を複数食組み合わせる方法も。<Link href="/articles/diet-osusume/" className="text-accent hover:text-accent-dark underline">ダイエット向け宅配弁当のおすすめ</Link>もあわせて参考にしてください。
+          <strong>カロリーを抑えつつタンパク質30g以上</strong>を確保したいなら【マッスルデリLEAN】。価格を抑えたい場合は【nosh】を複数食組み合わせる方法もあります。<Link href="/articles/diet-osusume/" className="text-accent hover:text-accent-dark underline">ダイエット向け宅配弁当のおすすめ</Link>もあわせて参考にしてください。
         </p>
 
         <SubHeading>糖質制限+筋トレ並行</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          糖質15g以下を維持しながら高タンパクを取りたいなら【マッスルデリLOW CARB】【筋肉食堂DELIローカーボ（糖質平均12.2g）】【サポートミール】が候補。<Link href="/articles/toushitsu-seigen-osusume/" className="text-accent hover:text-accent-dark underline">糖質制限おすすめ宅配</Link>も参考に。
+          糖質15g以下を維持しながら高タンパクを取りたいなら【マッスルデリLOW CARB】【筋肉食堂DELIローカーボ（糖質平均12.2g）】【サポートミール】が候補です。<Link href="/articles/toushitsu-seigen-osusume/" className="text-accent hover:text-accent-dark underline">糖質制限おすすめ宅配</Link>も参考にしてください。
         </p>
 
         <SubHeading>コスパ重視・続けやすさ重視</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          1食600円台で続けたいなら【nosh】が現実解。タンパク質量はマッスルデリほどではないですが、プロテイン併用や複数食組み合わせで十分対応可能。
+          1食600円台で続けたいなら【nosh】が現実解です。タンパク質量はマッスルデリほどではないですが、プロテイン併用や複数食組み合わせで十分対応可能です。
         </p>
 
         <SectionHeading id="cost-tip">高タンパク宅配のコスパ最適化テク</SectionHeading>
@@ -444,22 +444,22 @@ export default function KouTanpakuRankingPage() {
 
         <SubHeading>1. 「全食置き換え」せず「1日1食」だけ宅配にする</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          全食を高タンパク宅配にすると月額負担が大きい。<strong>最も栄養が偏りやすい1食(夕食 or 昼食)だけを宅配に置き換え</strong>、残りはプロテイン・サラダチキン・卵などでタンパク質補給するのが最もコスパが良い運用です。
+          全食を高タンパク宅配にすると月額負担が大きいです。<strong>最も栄養が偏りやすい1食(夕食 or 昼食)だけを宅配に置き換え</strong>、残りはプロテイン・サラダチキン・卵などでタンパク質補給するのが最もコスパが良い運用です。
         </p>
 
         <SubHeading>2. プロテインと併用してタンパク質単価を下げる</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          宅配弁当でタンパク質30g、プロテイン1杯で20gという組み合わせなら、1食でタンパク質50gを確保しつつ単価を抑えられます。プロテインのタンパク質単価(円/g)は宅配弁当より圧倒的に安いため、ハイブリッド運用が王道。
+          宅配弁当でタンパク質30g、プロテイン1杯で20gという組み合わせなら、1食でタンパク質50gを確保しつつ単価を抑えられます。プロテインのタンパク質単価(円/g)は宅配弁当より圧倒的に安いため、ハイブリッド運用が王道です。
         </p>
 
         <SubHeading>3. 定期購入の継続割引を活用する</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          多くのサービスが定期購入で5〜16%割引を提供しています。noshの「nosh club」は累計購入数に応じて1食単価が下がり、最高ランク（累計280食）なら12食プランで1食492円（2026年10月10日・公式確認）。長期で続けるなら継続割引制度のあるサービスを選ぶのが有利です。
+          多くのサービスが定期購入で5〜16%割引を提供しています。noshの「nosh club」は累計購入数に応じて1食単価が下がり、最高ランク（累計280食）なら12食プランで1食492円です（2026年10月10日・公式確認）。長期で続けるなら継続割引制度のあるサービスを選ぶのが有利です。
         </p>
 
         <SubHeading>4. 送料を含めた「実質1食単価」で比較する</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          送料は地域差が大きく、北海道・沖縄は2,000円超になるケースも。<strong>10食プランで送料を希薄化する</strong>のが効果的。1食単価+送料/食数で実質コストを計算する習慣をつけましょう。送料の安い宅配は<Link href="/articles/souryou-yasui-ranking/" className="text-accent hover:text-accent-dark underline">送料が安い宅配ランキング</Link>も参考に。
+          送料は地域差が大きく、北海道・沖縄は2,000円超になるケースもあります。<strong>10食プランで送料を希薄化する</strong>のが効果的。1食単価+送料/食数で実質コストを計算する習慣をつけましょう。送料の安い宅配は<Link href="/articles/souryou-yasui-ranking/" className="text-accent hover:text-accent-dark underline">送料が安い宅配ランキング</Link>も参考にしてください。
         </p>
 
         <SectionHeading id="faq">よくある質問(FAQ)</SectionHeading>
@@ -472,10 +472,10 @@ export default function KouTanpakuRankingPage() {
         <SectionHeading id="summary">まとめ:目的別に最適な1社を選ぼう</SectionHeading>
 
         <div className="bg-cream rounded-xl p-6 mb-8">
-          <p className="font-bold mb-3">本記事の結論</p>
+          <p className="font-bold mb-3">本記事の要点</p>
           <ul className="text-sm space-y-2 mb-4">
-            <li><strong>1位 マッスルデリ</strong>: ボディメイクガチ勢の本命。タンパク質量・プラン設計は他社を圧倒。</li>
-            <li><strong>2位 筋肉食堂DELI</strong>: ローカーボで糖質制限+筋トレ並行、バルクアップで増量にも対応。</li>
+            <li><strong>1位 マッスルデリ</strong>: 本格的にボディメイクに取り組む方に適しています。タンパク質量・プラン設計は他社を上回ります。</li>
+            <li><strong>2位 筋肉食堂DELI</strong>: ローカーボで糖質制限+筋トレ並行、バルクアップで増量にも対応しています。</li>
             <li><strong>3位 FIT FOOD HOME</strong>: 添加物配慮+高タンパクのバランス型。</li>
             <li><strong>4位 サポートミール</strong>: 糖質9.5〜12gの厳格設計。RIZAPメソッド志向。</li>
             <li><strong>5位 nosh</strong>: コスパ最重視で続けるなら間違いない選択肢。</li>
@@ -488,7 +488,7 @@ export default function KouTanpakuRankingPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link href="/articles/muscle-deli-reviews/" className="text-accent hover:text-accent-dark underline font-medium text-sm">マッスルデリ口コミ・評判</Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/diet-osusume/" className="text-accent hover:text-accent-dark underline font-medium text-sm">ダイエットおすすめ宅配</Link>
@@ -503,7 +503,7 @@ export default function KouTanpakuRankingPage() {
             <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-accent font-bold text-lg">編</div>
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
-              <p className="text-xs text-warm-gray">宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。</p>
+              <p className="text-xs text-warm-gray">宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。</p>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "DELIPICKS（デリピックス）のお試し・特徴まとめ【2026年版】高タンパク冷凍宅配はどんな人向け？";
 const ARTICLE_DESCRIPTION =
-  "DELIPICKS（デリピックス）はフレンチシェフ監修の冷凍宅配弁当。お試しの考え方・高タンパク低糖質といった特徴・向いている人を整理します。料金やお試し割引は変動するため、最新は公式サイトでご確認ください。";
+  "DELIPICKS（デリピックス）はフレンチシェフ監修の冷凍宅配弁当です。お試しの考え方・高タンパク低糖質といった特徴・向いている人を整理します。料金やお試し割引は変動するため、最新は公式サイトでご確認ください。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/delipicks-otameshi/";
 
 export const metadata: Metadata = {
@@ -81,7 +81,7 @@ function Breadcrumbs() {
 
 function TableOfContents() {
   const sections = [
-    { id: "summary-top", label: "結論：味重視で高タンパクを手軽に続けたい人向け" },
+    { id: "summary-top", label: "味重視で高タンパクを手軽に続けたい人向け" },
     { id: "overview", label: "DELIPICKS（デリピックス）とは" },
     { id: "tokucho", label: "DELIPICKSの主な特徴" },
     { id: "otameshi", label: "お試しの考え方（料金は公式で確認）" },
@@ -287,7 +287,7 @@ export default function DelipicksOtameshiPage() {
             「DELIPICKS（デリピックス）って実際どうなの？お試しから始めて大丈夫？」——そんな疑問に答える記事です。
           </p>
           <p className="mb-3">
-            DELIPICKSは、<strong>フレンチのミシュラン星付きレストランで経験を積んだシェフが監修する冷凍宅配弁当</strong>。電子レンジで温めるだけで、味にこだわった一皿を手軽に食べられるのが大きな特徴です。
+            DELIPICKSは、<strong>フレンチのミシュラン星付きレストランで経験を積んだシェフが監修する冷凍宅配弁当です</strong>。電子レンジで温めるだけで、味にこだわった一皿を手軽に食べられるのが大きな特徴です。
           </p>
           <p>
             この記事では、特徴・お試しの考え方・向いている人を整理します。<strong>料金やお試し割引は時期で変動</strong>するため具体額は断定せず、最新は公式サイトでご確認ください。
@@ -297,14 +297,14 @@ export default function DelipicksOtameshiPage() {
         <TableOfContents />
 
         {/* ===== 結論 ===== */}
-        <SectionHeading id="summary-top">結論：味重視で高タンパクを手軽に続けたい人向け</SectionHeading>
+        <SectionHeading id="summary-top">味重視で高タンパクを手軽に続けたい人向け</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
           DELIPICKSが向いているかどうかは、<strong>「味やクオリティを妥協せず、調理の手間なく栄養バランスを整えたいか」</strong>でほぼ決まります。ここがはっきりすると、お試しに進むかどうかを判断しやすくなります。
         </p>
 
         <ComparisonTable
-          headers={["あなたの希望", "DELIPICKSとの相性"]}
+          headers={["ご希望", "DELIPICKSとの相性"]}
           rows={[
             ["味やクオリティにこだわりたい", "◎ シェフ監修メニューが軸"],
             ["調理はせず温めるだけにしたい", "◎ 冷凍をレンジで温めるだけ"],
@@ -314,7 +314,7 @@ export default function DelipicksOtameshiPage() {
         />
 
         <div className="bg-green-50 rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-2">この記事の結論</p>
+          <p className="font-bold mb-2">この記事の要点</p>
           <ul className="list-disc list-inside space-y-1">
             <li>DELIPICKSは<strong>フレンチシェフ監修の冷凍宅配弁当</strong></li>
             <li><strong>温めるだけ</strong>で、味にこだわった食事を続けやすい</li>
@@ -470,7 +470,7 @@ export default function DelipicksOtameshiPage() {
             料金・お試し・キャンペーンは<strong>時期によって変動</strong>します。当サイトでは正確性を優先し、具体額やクーポンは断定しません。
           </p>
           <p>
-            迷ったら、まずは<strong>お試しセット</strong>で味・量・冷凍庫の収まり・手軽さを確認するのがおすすめ。最新・正確な情報は、必ず公式サイトでご確認ください。
+            迷ったら、まずは<strong>お試しセット</strong>で味・量・冷凍庫の収まり・手軽さを確認するのがおすすめです。最新・正確な情報は、必ず公式サイトでご確認ください。
           </p>
         </div>
 
@@ -487,7 +487,7 @@ export default function DelipicksOtameshiPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link href="/articles/otameshi-set-osusume/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
             宅配弁当のお試しセットおすすめ
           </Link>
@@ -513,7 +513,7 @@ export default function DelipicksOtameshiPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

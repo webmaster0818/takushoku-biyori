@@ -73,13 +73,13 @@ export function HakushoUnitPriceTable({ slugs, headingId }: { slugs: string[]; h
   return (
     <section className="my-12">
       <h2 id={headingId ?? "jisshitsu-tanka"} className="font-display text-2xl font-bold mb-3 text-foreground scroll-mt-20">
-        送料込みの「実質単価」で比べる（当サイト白書データ）
+        送料込みの実質単価の比較（当サイト白書データ）
       </h2>
       <p className="text-warm-gray text-sm mb-4">
         表示価格が安く見えても、送料を足すと逆転することがあります。下表は当サイトの
         <Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:underline">宅食料金白書</Link>
         （{checkedAt}に各社公式サイトから直接確認）をもとに、<strong>実質単価＝（プラン料金＋代表送料）÷食数</strong>
-        を機械計算した最安値です。安い順＝おすすめ順ではありません。
+        を機械計算した最安値です。掲載順は実質単価の安い順であり、おすすめ順ではありません。
       </p>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse border border-warm-border bg-white rounded-lg overflow-hidden">
@@ -118,10 +118,10 @@ export function HakushoUnitPriceTable({ slugs, headingId }: { slugs: string[]; h
         </table>
       </div>
       <p className="text-xs text-warm-gray mt-2">
-        ※{checkedAt}時点・税込。送料は地域・プランで変動するため代表値で計算しています。価格改定があるため、最新は各公式サイトでご確認ください。全{" "}
+        ※{checkedAt}時点・税込。送料は地域・プランで変動するため代表値で計算しています。価格が改定される場合がありますので、ご利用前に各社の公式サイトにて最新情報をご確認ください。全{" "}
         {(hakusho as { brands: Brand[] }).brands.length}社の詳細は
         <Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:underline">宅食料金白書</Link>
-        へ。サービス名のリンクは当サイトの口コミ検証記事です。
+        をご覧ください。サービス名のリンク先は当サイトの口コミ検証記事です。
       </p>
     </section>
   );

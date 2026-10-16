@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "GREEN SPOON(グリーンスプーン)の口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "GREEN SPOON(グリーンスプーン)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。野菜ゴロゴロの冷凍宅配食の料金（定期L BOX1食税込724円〜）、送料、解約の締切、メニューカテゴリも解説。【2026年10月更新】";
+  "GREEN SPOON(グリーンスプーン)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。野菜ゴロゴロの冷凍宅配食の料金（定期L BOX1食税込724円〜）、送料、解約の締切、メニューカテゴリも解説します。【2026年10月更新】";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/green-spoon-kuchikomi/";
 
@@ -441,16 +441,16 @@ export default function GreenSpoonKuchikomiPage() {
             「GREEN SPOON(グリーンスプーン)って実際どうなの？」「まずいって口コミは本当？」——ゴロゴロ野菜のスープやメインディッシュで人気の冷凍宅配食GREEN SPOON。2024年に江崎グリコのグループ入りし、コンビニ販売も始まるなど注目度が高まっています。
           </p>
           <p className="mb-3">
-            この記事では、<strong>公開されている実在のレビュー記事を出典付きで整理</strong>し、GREEN SPOONの良い口コミ・悪い口コミの両方を中立に検証。「まずい」と言われる理由にも正面から答えます。
+            この記事では、<strong>公開されている実在のレビュー記事を出典付きで整理</strong>し、GREEN SPOONの良い口コミ・悪い口コミの両方を中立に検証します。「まずい」と言われる理由についても解説します。
           </p>
           <p>
-            さらに、<strong>料金体系・送料・メニューカテゴリ・無添加方針</strong>まで詳しく解説。GREEN SPOONが自分に合うかどうか、この記事で判断できます。
+            さらに、<strong>料金体系・送料・メニューカテゴリ・無添加方針</strong>まで詳しく解説します。GREEN SPOONが自分に合うかどうか、この記事で判断できます。
           </p>
         </div>
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：GREEN SPOONはこんな人に向いています</p>
+          <p className="font-bold text-base mb-3">GREEN SPOONが向いている方</p>
           <p className="text-sm leading-relaxed mb-4">
             GREEN SPOONは、<strong>「野菜量と素材の質を重視して、健康的な食事を手軽に続けたい人」</strong>に向いた冷凍宅配食です。口コミでは「野菜ゴロゴロで食べ応えがある」「見た目がおしゃれで気分が上がる」という評価が目立つ一方、価格の高さ・量の控えめさ・冷凍庫スペースは注意点として挙がっています。「まずい」という声は一部メニューへの評価が中心で、感じ方には個人差があります（<a href="#mazui" className="text-accent underline">検証セクションへ</a>）。
           </p>
@@ -535,15 +535,15 @@ export default function GreenSpoonKuchikomiPage() {
           {[
             {
               title: "ゴロゴロ野菜×管理栄養士監修のレシピ",
-              text: "公式サイトによると「カラダにいい栄養の組み合わせを管理栄養士がとことん考え抜いたオリジナルレシピ」で、急速冷凍した120種類以上の素材を使用。一般的な冷凍弁当と比べて野菜の存在感が強く、「野菜不足の解消」を軸に選ばれています。",
+              text: "公式サイトによると「カラダにいい栄養の組み合わせを管理栄養士がとことん考え抜いたオリジナルレシピ」で、急速冷凍した120種類以上の素材を使用しています。一般的な冷凍弁当と比べて野菜の存在感が強く、「野菜不足の解消」を軸に選ばれています。",
             },
             {
               title: "特定添加物不使用の「GREEN PROMISE」",
-              text: "独自ガイドラインに基づき、保存料・甘味料・着色料・発色剤・漂白剤を使用しない方針を公表。HACCP・FSSC22000/JFS-B認証工場での製造など、素材と製造品質へのこだわりが明確です。",
+              text: "独自ガイドラインに基づき、保存料・甘味料・着色料・発色剤・漂白剤を使用しない方針を公表しています。HACCP・FSSC22000/JFS-B認証工場での製造など、素材と製造品質へのこだわりが明確です。",
             },
             {
               title: "弁当型に縛られない6カテゴリ構成",
-              text: "「今日はスープだけ」「朝はスムージー」など、弁当型サービスではできない使い方が可能。デリ弁当・メインディッシュからサラダ・スムージーまで、生活シーンに合わせて組み合わせられるのが独自の強みです。",
+              text: "「今日はスープだけ」「朝はスムージー」など、弁当型サービスではできない使い方が可能です。デリ弁当・メインディッシュからサラダ・スムージーまで、生活シーンに合わせて組み合わせられるのが独自の強みです。",
             },
           ].map((item) => (
             <div key={item.title} className="bg-green-50 rounded-lg p-4">
@@ -575,7 +575,7 @@ export default function GreenSpoonKuchikomiPage() {
         <SectionHeading id="bad-reviews">GREEN SPOONの悪い口コミ・評判（出典付き）</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          ネガティブな意見も出典付きで正直に紹介します。購入前に知っておくべき注意点です。
+          否定的な意見も出典付きで掲載しています。購入前にご確認いただきたい注意点です。
         </p>
 
         {badReviewCategories.map((category) => (
@@ -639,7 +639,7 @@ export default function GreenSpoonKuchikomiPage() {
           <div className="bg-red-50 rounded-lg p-4 text-sm leading-relaxed">
             <p className="font-bold mb-1">3. 電子レンジの加熱ムラ</p>
             <p className="mb-1.5">
-              料理家による8品実食レビュー（meal-navi）は、スープの調味料のかたまりが具材になじまない加熱ムラが「味が薄い」と感じる一因になると指摘。利用者からも「美味しいのとまずいのの差が激しいんだけど、（略）鍋に水分追加して煮るか、炊飯器で調理モードでほっておくとすっごく美味くなった」（meal-navi掲載のX投稿）と、<strong>加熱方法の工夫で改善した</strong>報告があります。
+              料理家による8品実食レビュー（meal-navi）は、スープの調味料のかたまりが具材になじまない加熱ムラが「味が薄い」と感じる一因になると指摘しています。利用者からも「美味しいのとまずいのの差が激しいんだけど、（略）鍋に水分追加して煮るか、炊飯器で調理モードでほっておくとすっごく美味くなった」（meal-navi掲載のX投稿）と、<strong>加熱方法の工夫で改善した</strong>報告があります。
             </p>
             <p className="text-xs text-warm-gray">
               出典:{" "}
@@ -678,7 +678,7 @@ export default function GreenSpoonKuchikomiPage() {
         </div>
 
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-1">編集部の結論：「まずい」は①一部メニュー②薄味の好み③加熱ムラの3因に分解できる</p>
+          <p className="font-bold mb-1">編集部の見解：「まずい」は①一部メニュー②薄味の好み③加熱ムラの3因に分解できる</p>
           <p>
             強い酷評は特定メニュー（魚系など）への外れ体験が中心で、同じレビュアーが他メニューを高く評価しているケースが目立ちます。<strong>濃い味・大盛り志向の人には合いにくい</strong>一方、素材の味・野菜量を重視する人の満足度は高い傾向です。スープ系は加熱後によく混ぜる・鍋で温めるなどの工夫でムラが解消できるというレビューもあるため、初回は評判の良い定番メニューから試すのが失敗しにくい方法です。
           </p>
@@ -695,17 +695,17 @@ export default function GreenSpoonKuchikomiPage() {
           {
             num: 1,
             title: "野菜量の多さは冷凍宅配食でも屈指",
-            text: "「ゴロゴロとたっぷり入った野菜」（OZmall）という評価に代表される通り、野菜の存在感が最大の強みです。急速冷凍した素材を使い、一般的な冷凍弁当で不足しがちな野菜をしっかり摂れる設計。野菜不足を自覚している一人暮らし・共働き世帯に選ばれています。",
+            text: "「ゴロゴロとたっぷり入った野菜」（OZmall）という評価に代表される通り、野菜の存在感が最大の強みです。急速冷凍した素材を使い、一般的な冷凍弁当で不足しがちな野菜をしっかり摂れる設計です。野菜不足を自覚している一人暮らし・共働き世帯に選ばれています。",
           },
           {
             num: 2,
             title: "特定添加物不使用×認証工場製造の安心感",
-            text: "保存料・甘味料・着色料・発色剤・漂白剤を使わない独自基準「GREEN PROMISE」を公表し、HACCP・FSSC22000/JFS-B認証工場で製造。素材や添加物が気になる人にとって、方針が明文化されているのは選びやすいポイントです。",
+            text: "保存料・甘味料・着色料・発色剤・漂白剤を使わない独自基準「GREEN PROMISE」を公表し、HACCP・FSSC22000/JFS-B認証工場で製造しています。素材や添加物が気になる人にとって、方針が明文化されているのは選びやすいポイントです。",
           },
           {
             num: 3,
             title: "スープ・スムージーなど使い方の自由度が高い",
-            text: "弁当型に限定されず、「夜はメインディッシュ、朝はスムージー、小腹にスープ」という使い分けが可能。「風邪をひいたとき、冷凍庫にグリーンスプーンの野菜スープがあって大変幸せな気持ちに」（掲載X投稿）のように、体調が悪い時の備えとしても評価されています。",
+            text: "弁当型に限定されず、「夜はメインディッシュ、朝はスムージー、小腹にスープ」という使い分けが可能です。「風邪をひいたとき、冷凍庫にグリーンスプーンの野菜スープがあって大変幸せな気持ちに」（掲載X投稿）のように、体調が悪い時の備えとしても評価されています。",
           },
           {
             num: 4,
@@ -733,7 +733,7 @@ export default function GreenSpoonKuchikomiPage() {
         <SectionHeading id="demerits">注意すべきデメリット3つ</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          メリットだけでなく、「ここは正直イマイチ」というポイントも率直にお伝えします。
+          メリットだけでなく、注意が必要な点もあわせてご説明します。
         </p>
 
         {[
@@ -777,7 +777,7 @@ export default function GreenSpoonKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: GREEN SPOON公式サイト（2026年10月10日確認）。送料込み単価は全国送料（税込1,089円）で編集部が試算。2回目以降は8〜28食で変更可能・カテゴリごとの単価制です。最新は公式サイトでご確認ください。
+          ※出典: GREEN SPOON公式サイト（2026年10月10日確認）。送料込み単価は全国送料（税込1,089円）で編集部が試算しています。2回目以降は8〜28食で変更可能・カテゴリごとの単価制です。最新は公式サイトでご確認ください。
         </p>
 
         <SubHeading>送料（2025年9月改定後・税込）</SubHeading>
@@ -790,10 +790,10 @@ export default function GreenSpoonKuchikomiPage() {
           ]}
         />
         <p className="text-sm mb-2 leading-relaxed">
-          <strong>送料のポイント：</strong>送料は注文ごとにかかるため、<strong>1回の食数を増やして配送回数を減らす</strong>のが実質単価を下げるコツです。L BOX（20食）なら送料負担は1食あたり約54円。S BOX（8食）だと約136円になります。
+          <strong>送料のポイント：</strong>送料は注文ごとにかかるため、<strong>1回の食数を増やして配送回数を減らす</strong>のが実質単価を下げるコツです。L BOX（20食）なら送料負担は1食あたり約54円です。S BOX（8食）だと約136円になります。
         </p>
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: GREEN SPOON公式「特定商取引法に基づく表示」で送料の範囲（税込1,089円〜3,289円）を2026年10月10日に確認。北海道・沖縄の内訳は2026年7月確認値です（公式FAQがアクセス制限で今回は閲覧できず）。なお公式トップの注記には「定期購入は全国一律税込990円」との記載も残っており、公式内で表記が分かれています。最新の送料は注文画面でご確認ください。
+          ※出典: GREEN SPOON公式「特定商取引法に基づく表示」で送料の範囲（税込1,089円〜3,289円）を2026年10月10日に確認しています。北海道・沖縄の内訳は2026年7月確認値です（公式FAQがアクセス制限で今回は閲覧できず）。なお公式トップの注記には「定期購入は全国一律税込990円」との記載も残っており、公式内で表記が分かれています。最新の送料は注文画面でご確認ください。
         </p>
 
         {/* ===== おすすめな人・おすすめしない人 ===== */}
@@ -864,7 +864,7 @@ export default function GreenSpoonKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※各社公式サイトの公開情報をもとに編集部作成（GREEN SPOONは2026年10月10日、nosh・三ツ星ファームの料金は2026年10月9日、それ以外は2026年7月時点の確認）。最新情報は各公式サイトでご確認ください。
+          ※各社公式サイトの公開情報をもとに編集部が作成しています（GREEN SPOONは2026年10月10日、nosh・三ツ星ファームの料金は2026年10月9日、それ以外は2026年7月時点の確認）。最新情報は各公式サイトでご確認ください。
         </p>
 
         {/* ===== FAQ ===== */}
@@ -891,7 +891,7 @@ export default function GreenSpoonKuchikomiPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link
             href="/articles/nosh-reviews/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
@@ -923,7 +923,7 @@ export default function GreenSpoonKuchikomiPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

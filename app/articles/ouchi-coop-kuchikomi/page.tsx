@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "おうちコープ夕食宅配マイシィの口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "おうちコープの夕食宅配「マイシィ」(神奈川・静岡・山梨)は「まずい」って本当？公式の利用者の声と公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。きらくコース1食税込740円〜の料金と配達料無料の仕組みも解説。最新の料金は公式でご確認ください。【2026年10月更新】";
+  "おうちコープの夕食宅配「マイシィ」(神奈川・静岡・山梨)は「まずい」って本当？公式の利用者の声と公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。きらくコース1食税込740円〜の料金と配達料無料の仕組みも解説します。最新の料金は公式でご確認ください。【2026年10月更新】";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/ouchi-coop-kuchikomi/";
 
@@ -414,7 +414,7 @@ export default function OuchiCoopKuchikomiPage() {
             「おうちコープの夕食宅配って実際どうなの？」「マイシィはまずいって本当？」——マイシィは、生協ユーコープが<strong>神奈川・静岡・山梨</strong>で展開する夕食宅配サービス。日替わりの夕食を<strong>配達料無料</strong>で自宅まで届けてくれます。
           </p>
           <p className="mb-3">
-            この記事では、<strong>公式サイトの利用者の声と、公開されている第三者レビューを出典付きで整理</strong>し、良い口コミ・悪い口コミの両方を中立に検証。「まずい」と言われる理由にも正面から答えます。
+            この記事では、<strong>公式サイトの利用者の声と、公開されている第三者レビューを出典付きで整理</strong>し、良い口コミ・悪い口コミの両方を中立に検証します。「まずい」と言われる理由についても解説します。
           </p>
           <p>
             さらに、<strong>3コースの料金（1食税込740円〜）・配達料無料の仕組み・おためし情報</strong>まで、2026年10月9日に公式サイトで確認した情報をもとに解説します。
@@ -423,7 +423,7 @@ export default function OuchiCoopKuchikomiPage() {
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：マイシィはこんな人に向いています</p>
+          <p className="font-bold text-base mb-3">マイシィが向いている方</p>
           <p className="text-sm leading-relaxed mb-4">
             マイシィは、<strong>「神奈川・静岡・山梨で、冷蔵の夕食を配達料なしで平日（週5日または週3日）届けてほしい人」</strong>に向いたサービスです。口コミでは「品数が多くヘルシー」「味付けが工夫されていて飽きない」という評価が目立つ一方、薄味・魚メニューの好みなどの指摘もあります。「まずい」と断じる声は調査した範囲では確認できませんでした（<a href="#mazui" className="text-accent underline">検証セクションへ</a>）。
           </p>
@@ -531,7 +531,7 @@ export default function OuchiCoopKuchikomiPage() {
         <SectionHeading id="bad-reviews">マイシィの悪い口コミ・評判（出典付き）</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          ネガティブな意見も出典付きで正直に紹介します。加入前に知っておくべき注意点です。
+          否定的な意見も出典付きで掲載しています。加入前にご確認いただきたい注意点です。
         </p>
 
         {badReviewCategories.map((category) => (
@@ -595,7 +595,7 @@ export default function OuchiCoopKuchikomiPage() {
         </div>
 
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-1">編集部の結論：「まずい」という強い酷評は確認できず。薄味への好みが評価の分かれ目</p>
+          <p className="font-bold mb-1">編集部の見解：「まずい」という強い酷評は確認できませんでした。薄味への好みが評価の分かれ目</p>
           <p>
             管理栄養士の実食レビューが「７～８品目のおかずの味付けが工夫されていて飽きない」と評価する通り、品数と味付けの工夫はマイシィの強みです。一方で薄味・家庭的な献立という性格上、外食系の濃い味を求める人には合いません。冷蔵で毎日届く形式は味の劣化が少なく、「冷凍弁当の食感が苦手」な人にはむしろ有力な選択肢です。
           </p>
@@ -606,10 +606,10 @@ export default function OuchiCoopKuchikomiPage() {
 
         <SubHeading>かかる費用は「商品代のみ」</SubHeading>
         <p className="text-sm mb-2 leading-relaxed">
-          マイシィは<strong>配達料無料</strong>と公式に明記されているため（2026年10月9日確認）、支払いは商品代のみです。きらくコース（740円・ご飯付き）を週5日×4週利用した場合の月額目安は約14,800円。2食以上の注文なら1食20円引きが毎回効きます。
+          マイシィは<strong>配達料無料</strong>と公式に明記されているため（2026年10月9日確認）、支払いは商品代のみです。きらくコース（740円・ご飯付き）を週5日×4週利用した場合の月額目安は約14,800円です。2食以上の注文なら1食20円引きが毎回効きます。
         </p>
         <p className="text-xs text-warm-gray mb-6">
-          ※参考: 週1回宅配の「おうちコープ」は別体系（神奈川県の宅配サービス料は週110円〜198円・利用額による減免、子育て割0円等あり）。マイシィのみの利用なら配達料はかかりません。
+          ※参考: 週1回宅配の「おうちコープ」は別体系です（神奈川県の宅配サービス料は週110円〜198円・利用額による減免、子育て割0円等あり）。マイシィのみの利用なら配達料はかかりません。
         </p>
 
         <SubHeading>利用条件・おためし</SubHeading>
@@ -639,7 +639,7 @@ export default function OuchiCoopKuchikomiPage() {
           {
             num: 2,
             title: "配達料無料で1食740円〜・2食以上で割引",
-            text: "平日に届けてもらえるのに配達料は無料。にぎわい898円・おかず785円・きらく740円（税込・2026年10月9日確認）で、2食以上なら1食20円引き。冷蔵の毎日配達型としては手頃な水準です。",
+            text: "平日に届けてもらえるのに配達料は無料です。にぎわい898円・おかず785円・きらく740円（税込・2026年10月9日確認）で、2食以上なら1食20円引きです。冷蔵の毎日配達型としては手頃な水準です。",
           },
           {
             num: 3,
@@ -756,7 +756,7 @@ export default function OuchiCoopKuchikomiPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link
             href="/articles/coopdeli-kuchikomi/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
@@ -788,7 +788,7 @@ export default function OuchiCoopKuchikomiPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

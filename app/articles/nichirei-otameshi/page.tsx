@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "ニチレイフーズダイレクトのお試しセット【2026年版】内容・送料・申し込みの流れ";
 const ARTICLE_DESCRIPTION =
-  "ニチレイフーズダイレクトのお試しセットについて、内容のタイプ・送料の考え方・申し込みの流れ・注意点をわかりやすく解説。冷凍弁当を初めて試す人向けに選び方も紹介します。価格・送料・キャンペーンは変動するため、最新は公式サイトでご確認ください。";
+  "ニチレイフーズダイレクトのお試しセットについて、内容のタイプ・送料の考え方・申し込みの流れ・注意点をわかりやすく解説します。冷凍弁当を初めて試す人向けに選び方も紹介します。価格・送料・キャンペーンは変動するため、最新は公式サイトでご確認ください。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/nichirei-otameshi/";
 
 export const metadata: Metadata = {
@@ -81,7 +81,7 @@ function Breadcrumbs() {
 
 function TableOfContents() {
   const sections = [
-    { id: "summary-top", label: "結論：まずは公式のお試しセットで味を確認" },
+    { id: "summary-top", label: "まずは公式のお試しセットで味を確認" },
     { id: "what", label: "ニチレイフーズダイレクトとは" },
     { id: "naiyo", label: "お試しセットの内容タイプ" },
     { id: "souryo", label: "送料の考え方（具体額は公式で確認）" },
@@ -297,14 +297,14 @@ export default function NichireiOtameshiPage() {
         <TableOfContents />
 
         {/* ===== 結論 ===== */}
-        <SectionHeading id="summary-top">結論：まずは公式のお試しセットで味を確認</SectionHeading>
+        <SectionHeading id="summary-top">まずは公式のお試しセットで味を確認</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
           冷凍弁当・冷凍食品は、味や量の好みが分かれやすいジャンルです。だからこそ、<strong>いきなり定期購入する前にお試しセットで確かめる</strong>のが失敗しにくい進め方です。
         </p>
 
         <div className="bg-green-50 rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-2">この記事の結論</p>
+          <p className="font-bold mb-2">この記事の要点</p>
           <ul className="list-disc list-inside space-y-1">
             <li>お試しセットは<strong>味・量を確かめる入口</strong>として便利</li>
             <li>価格・送料・内容は<strong>時期により変動</strong>するため公式で要確認</li>
@@ -374,7 +374,7 @@ export default function NichireiOtameshiPage() {
         {[
           { num: 1, title: "公式サイトにアクセス", text: "ニチレイフーズダイレクトの公式サイトで、お試し対象のセット・商品ページを開きます。" },
           { num: 2, title: "お試しセット・商品を選ぶ", text: "内容(品目・食数)・価格・送料の条件を確認し、目的に合うセットを選択します。" },
-          { num: 3, title: "「単発か定期か」を確認", text: "単発購入なのか、定期コースの初回扱いなのかを必ず確認します。定期の場合は継続条件・解約方法もチェック。" },
+          { num: 3, title: "「単発か定期か」を確認", text: "単発購入なのか、定期コースの初回扱いなのかを必ず確認します。定期の場合は継続条件・解約方法もご確認ください。" },
           { num: 4, title: "配送先・受け取り日時を指定", text: "冷凍便のため、冷凍庫の空きを確保できる日時を指定するとスムーズです。" },
           { num: 5, title: "支払い情報を登録し、合計金額を確認して確定", text: "確認画面で送料込みの合計金額を確認してから注文を確定します。" },
         ].map((step) => (
@@ -470,7 +470,7 @@ export default function NichireiOtameshiPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link href="/articles/otameshi-set-osusume/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
             お試しセットおすすめ
           </Link>
@@ -498,7 +498,7 @@ export default function NichireiOtameshiPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

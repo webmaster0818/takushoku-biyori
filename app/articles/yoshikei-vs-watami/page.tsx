@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "ヨシケイ vs ワタミの宅食 徹底比較【2026年版】料金・宅配方式・向いている人";
 const ARTICLE_DESCRIPTION =
-  "ヨシケイとワタミの宅食を、宅配方式・メニュータイプ・向いている人の観点で徹底比較。ミールキット中心のヨシケイと、おかず宅配のワタミの宅食、どちらが自分に合うかを整理します。料金・キャンペーンは変動するため、最新は各公式サイトでご確認ください。";
+  "ヨシケイとワタミの宅食を、宅配方式・メニュータイプ・向いている人の観点で比較します。ミールキット中心のヨシケイと、おかず宅配のワタミの宅食、どちらが自分に合うかを整理します。料金・キャンペーンは変動するため、最新は各公式サイトでご確認ください。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/yoshikei-vs-watami/";
 
 export const metadata: Metadata = {
@@ -81,7 +81,7 @@ function Breadcrumbs() {
 
 function TableOfContents() {
   const sections = [
-    { id: "summary-top", label: "結論：調理したいかどうかで選ぶ" },
+    { id: "summary-top", label: "調理したいかどうかで選ぶ" },
     { id: "overview", label: "ヨシケイとワタミの宅食の基本" },
     { id: "houshiki", label: "宅配方式の違い" },
     { id: "menu", label: "メニュー・コースタイプの違い" },
@@ -297,14 +297,14 @@ export default function YoshikeiVsWatamiPage() {
         <TableOfContents />
 
         {/* ===== 結論 ===== */}
-        <SectionHeading id="summary-top">結論：調理したいかどうかで選ぶ</SectionHeading>
+        <SectionHeading id="summary-top">調理したいかどうかで選ぶ</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
           ヨシケイとワタミの宅食を選ぶときの最大の分かれ目は、<strong>「自分で調理したいか/したくないか」</strong>です。ここがはっきりすると、迷わず選べます。
         </p>
 
         <ComparisonTable
-          headers={["あなたの希望", "向いているサービス"]}
+          headers={["ご希望", "向いているサービス"]}
           rows={[
             ["食材は届けてほしいが調理は自分でしたい", "ヨシケイ(ミールキット系)"],
             ["できるだけ調理したくない／温めるだけがいい", "ワタミの宅食(調理済みおかず)"],
@@ -314,7 +314,7 @@ export default function YoshikeiVsWatamiPage() {
         />
 
         <div className="bg-green-50 rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-2">この記事の結論</p>
+          <p className="font-bold mb-2">この記事の要点</p>
           <ul className="list-disc list-inside space-y-1">
             <li>ヨシケイは<strong>ミールキット・食材宅配が中心</strong>(完成品コースもあり)</li>
             <li>ワタミの宅食は<strong>調理済みのおかず・弁当が中心</strong></li>
@@ -328,12 +328,12 @@ export default function YoshikeiVsWatamiPage() {
 
         <SubHeading>ヨシケイとは</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          ヨシケイは、<strong>食材とレシピをセットで届けるミールキット(料理キット)を中心に展開する宅配サービス</strong>です。献立を考える手間や買い物の手間を省きつつ、自分で調理する楽しさを残せるのが特徴。手間を抑えたい人向けに、カットや下ごしらえ済みの時短コース、温めるだけ・盛り付けるだけの完成品コースなど、幅広いコースが用意されています。
+          ヨシケイは、<strong>食材とレシピをセットで届けるミールキット(料理キット)を中心に展開する宅配サービス</strong>です。献立を考える手間や買い物の手間を省きつつ、自分で調理する楽しさを残せるのが特徴です。手間を抑えたい人向けに、カットや下ごしらえ済みの時短コース、温めるだけ・盛り付けるだけの完成品コースなど、幅広いコースが用意されています。
         </p>
 
         <SubHeading>ワタミの宅食とは</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          ワタミの宅食は、<strong>調理済みのおかず・弁当を届ける宅食サービス</strong>です。栄養バランスに配慮した日替わりの献立が中心で、基本的に温めるだけ・そのまま食べられる手軽さが魅力。地域によっては自社スタッフ(まごころスタッフ)による手渡し・置き配の対応があり、毎日の食事を手間なく整えたい層に支持されています。
+          ワタミの宅食は、<strong>調理済みのおかず・弁当を届ける宅食サービス</strong>です。栄養バランスに配慮した日替わりの献立が中心で、基本的に温めるだけ・そのまま食べられる手軽さが魅力です。地域によっては自社スタッフ(まごころスタッフ)による手渡し・置き配の対応があり、毎日の食事を手間なく整えたい層に支持されています。
         </p>
 
         {/* ===== 宅配方式 ===== */}
@@ -458,7 +458,7 @@ export default function YoshikeiVsWatamiPage() {
             料金・お試し・対応地域は<strong>時期や地域で変動</strong>します。当サイトでは正確性を優先し、価格は断定しません。
           </p>
           <p>
-            迷ったら、まずは少ない日数・食数のお試しで、味・量・配送の使い勝手を比べてみるのがおすすめ。最新・正確な情報は、必ず各公式サイトでご確認ください。
+            迷ったら、まずは少ない日数・食数のお試しで、味・量・配送の使い勝手を比べてみるのがおすすめです。最新・正確な情報は、必ず各公式サイトでご確認ください。
           </p>
         </div>
 
@@ -475,7 +475,7 @@ export default function YoshikeiVsWatamiPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link href="/articles/watami-reviews/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
             ワタミの宅食の口コミ・評判
           </Link>
@@ -501,7 +501,7 @@ export default function YoshikeiVsWatamiPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

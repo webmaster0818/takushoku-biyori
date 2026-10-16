@@ -28,20 +28,20 @@ export default function ContentPolicyPage() {
         </p>
 
         <section>
-          <h2 className="text-lg font-bold mb-3 border-b border-warm-border pb-2">ユーザーファーストであり続けます</h2>
+          <h2 className="text-lg font-bold mb-3 border-b border-warm-border pb-2">利用者の立場に立った情報提供を行います</h2>
           <p className="mb-3">
-            宅食びよりは、宅配弁当・栄養食サービスを探しているユーザーにとって、最適なサービスが見つかることを第一に考えています。
+            当サイトでは、宅配弁当・栄養食サービスをお探しの方が、目的に沿ったサービスを選べるよう情報を提供しています。
           </p>
           <p className="mb-3">
-            一人暮らし、産後、ダイエット中、高齢者の食事サポートなど、宅食サービスの利用目的は人によってさまざまです。それぞれのニーズに合った最適なサービスが見つかるよう、多角的な視点から情報を整理・比較してお届けします。
+            一人暮らし、産後、ダイエット中、高齢者の食事サポートなど、宅食サービスの利用目的は人によってさまざまです。それぞれのニーズに沿ったサービスを選べるよう、複数の観点から情報を整理・比較して掲載しています。
           </p>
           <p>
-            広告主の意向に左右されることなく、常にユーザーにとって有益な情報を優先します。
+            広告主の意向に左右されることなく、利用者にとって有益な情報を優先します。
           </p>
         </section>
 
         <section>
-          <h2 className="text-lg font-bold mb-3 border-b border-warm-border pb-2">正確且つ最新な情報発信に努めます</h2>
+          <h2 className="text-lg font-bold mb-3 border-b border-warm-border pb-2">正確かつ最新の情報提供に努めます</h2>
           <p className="mb-3">
             宅食サービスの料金プラン・メニュー内容・配送エリア・キャンペーン情報などは頻繁に変更されます。宅食びよりでは、掲載情報の正確性を維持するため、定期的に各サービスの公式サイトを確認し、情報を更新しています。
           </p>
@@ -54,7 +54,7 @@ export default function ContentPolicyPage() {
         </section>
 
         <section>
-          <h2 className="text-lg font-bold mb-3 border-b border-warm-border pb-2">操作のない口コミ情報を発信いたします</h2>
+          <h2 className="text-lg font-bold mb-3 border-b border-warm-border pb-2">口コミ情報は操作・捏造を行わずに掲載します</h2>
           <p className="mb-3">
             宅食びよりでは、実際に宅食サービスを利用したユーザーの口コミ・評判を紹介しています。口コミ情報は、以下のソースから収集しています。
           </p>
@@ -62,26 +62,25 @@ export default function ContentPolicyPage() {
             <li>各サービスの公式サイトに掲載されたレビュー</li>
             <li>SNS（X、Instagram等）上の投稿</li>
             <li>口コミサイトの投稿</li>
-            <li>編集部独自のアンケート調査</li>
           </ul>
           <p className="mb-3">
             口コミの選定においては、良い口コミだけでなく、悪い口コミも含めて中立的に紹介することを方針としています。口コミの操作・捏造は一切行いません。
           </p>
           <p>
-            口コミの引用元は可能な限り明記し、情報の透明性を確保します。
+            口コミの引用元を明記し、情報の透明性の確保に努めます。
           </p>
         </section>
 
         <section>
-          <h2 className="text-lg font-bold mb-3 border-b border-warm-border pb-2">分かりやすさを追求し続けます</h2>
+          <h2 className="text-lg font-bold mb-3 border-b border-warm-border pb-2">分かりやすい情報提供に努めます</h2>
           <p className="mb-3">
             宅食サービスの選び方は、料金・味・栄養バランス・配送頻度・対応エリアなど比較ポイントが多く、初めての方には分かりにくいことがあります。
           </p>
           <p className="mb-3">
-            宅食びよりでは、比較表・ランキング・チャート・図解などを活用し、ひと目で違いが分かるコンテンツづくりを心がけています。
+            宅食びよりでは、比較表・ランキング・チャート・図解などを活用し、各サービスの違いが分かりやすいコンテンツの制作に努めています。
           </p>
           <p>
-            専門用語はできる限り避け、誰にでも理解しやすい表現を使用します。
+            専門用語はできる限り避け、理解しやすい表現を使用します。
           </p>
         </section>
 
@@ -91,7 +90,7 @@ export default function ContentPolicyPage() {
             <div>
               <h3 className="font-bold mb-2">1. 記事の企画設計</h3>
               <p>
-                ユーザーが何を知りたいのか、どのような悩みを抱えているのかを徹底的に調査し、記事のテーマと構成を設計します。検索キーワードの分析や競合記事の調査を行い、ユーザーにとって最も価値のある情報を整理します。
+                利用者が何を知りたいのか、どのような悩みを抱えているのかを調査し、記事のテーマと構成を設計します。検索キーワードの分析や競合記事の調査を行い、利用者にとって有益な情報を整理します。
               </p>
             </div>
             <div>
@@ -109,7 +108,7 @@ export default function ContentPolicyPage() {
             <div>
               <h3 className="font-bold mb-2">4. 記事の更新</h3>
               <p>
-                公開後も定期的に情報を見直し、料金変更・新メニュー追加・キャンペーン情報などを反映して記事を更新します。古い情報のまま放置しないことを徹底しています。
+                公開後も定期的に情報を見直し、料金変更・新メニュー追加・キャンペーン情報などを反映して記事を更新します。古い情報を放置しないよう努めています。
               </p>
             </div>
           </div>

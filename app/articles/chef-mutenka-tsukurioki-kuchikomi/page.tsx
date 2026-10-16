@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "シェフの無添つくりおきの口コミ・評判は？まずいって本当？料金と正直な注意点を検証【2026年9月最新】";
+  "シェフの無添つくりおきの口コミ・評判は？まずいって本当？料金と注意点を検証【2026年9月最新】";
 const ARTICLE_DESCRIPTION =
-  "シェフの無添つくりおき（AIVICK）の口コミ・評判を出典付きで検証。「まずい」「味が薄い」という声は本当か、実食レビューメディアの評価を引用しながら中立に解説。プラン内容・料金の目安・冷蔵ならではの注意点も整理しました。最新の料金は公式サイトでご確認ください。";
+  "シェフの無添つくりおき（AIVICK）の口コミ・評判を出典付きで検証します。「まずい」「味が薄い」という声は本当か、実食レビューメディアの評価を引用しながら中立に解説します。プラン内容・料金の目安・冷蔵ならではの注意点も整理しました。最新の料金は公式サイトでご確認ください。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/chef-mutenka-tsukurioki-kuchikomi/";
 
@@ -187,14 +187,14 @@ export default function ChefMutenkaTsukuriokiKuchikomiPage() {
         </header>
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
-          <p className="mb-3">「シェフの無添つくりおきって美味しいの？」「無添加＝味が薄くてまずいのでは？」——冷蔵で届く手作りおかずの宅配サービス「シェフの無添つくりおき」。化学調味料などを使わない<strong>無添加調理</strong>を掲げ、子育て世帯を中心に注目を集めています。</p>
-          <p className="mb-3">この記事では、<strong>第三者メディアの実食レビューを出典付きで引用</strong>しながら、良い評判・悪い評判の両方を中立に検証。「まずい」という検索候補が出る理由にも正面から答えます。</p>
+          <p className="mb-3">「シェフの無添つくりおきって美味しいの？」「無添加＝味が薄くてまずいのでは？」——「シェフの無添つくりおき」は、冷蔵で届く手作りおかずの宅配サービスです。化学調味料などを使わない<strong>無添加調理</strong>を掲げ、子育て世帯を中心に注目を集めています。</p>
+          <p className="mb-3">この記事では、<strong>第三者メディアの実食レビューを出典付きで引用</strong>しながら、良い評判・悪い評判の両方を中立に検証します。「まずい」という検索候補が出る理由にも正面から答えます。</p>
           <p>プラン内容・料金の目安・冷蔵ならではの注意点まで整理したので、自分の家庭に合うかどうかをこの記事で判断できます。</p>
         </div>
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：シェフの無添つくりおきはこんな人に向いています</p>
+          <p className="font-bold text-base mb-3">シェフの無添つくりおきが向いている方</p>
           <p className="text-sm leading-relaxed mb-4">シェフの無添つくりおきは、<strong>「子どもに安心して食べさせられる夕食を、調理なしで用意したい共働き・子育て世帯」</strong>に向いた冷蔵おかず宅配です。実食レビューでは「無添加とは思えないほどちょうど良い味付け」という評価がある一方、優しい味付けゆえに「物足りない」と感じる声や、1人1食換算では割高という指摘もあります。冷蔵のため消費期限が短い点も要注意です。</p>
           <div className="grid md:grid-cols-2 gap-4 mb-4 text-sm">
             <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>無添加調理でも味の評価が高い実食レビューが多い</li><li>温めるだけで家族の夕食が完成する時短効果</li><li>管理栄養士監修の週替わり献立で栄養バランスが整う</li></ul></div>
@@ -277,7 +277,7 @@ export default function ChefMutenkaTsukuriokiKuchikomiPage() {
         </div>
 
         <SectionHeading id="bad-reviews">シェフの無添つくりおきの悪い口コミ・評判（出典付き）</SectionHeading>
-        <p className="text-sm mb-6 leading-relaxed">ネガティブな評価も正直に紹介します。主に「味の薄さ」と「価格」に集中しています。</p>
+        <p className="text-sm mb-6 leading-relaxed">否定的な評価も掲載しています。主に「味の薄さ」と「価格」に集中しています。</p>
 
         <div className="space-y-2 mb-3">
           <SourcedReview
@@ -328,7 +328,7 @@ export default function ChefMutenkaTsukuriokiKuchikomiPage() {
         <SectionHeading id="merits">メリット4つ</SectionHeading>
         <div className="space-y-3 mb-6">
           {[
-            { title: "無添加調理でも「美味しい」という実食評価", text: "複数の実食レビューが「無添加とは思えないほどちょうど良い味付け」と評価。子どもと同じおかずを取り分けられる安心感は、冷凍弁当にはない強みです。" },
+            { title: "無添加調理でも「美味しい」という実食評価", text: "複数の実食レビューが「無添加とは思えないほどちょうど良い味付け」と評価しています。子どもと同じおかずを取り分けられる安心感は、冷凍弁当にはない強みです。" },
             { title: "夕食づくりの時間がほぼゼロになる", text: "献立決め・買い物・調理・片付けが「温めるだけ」に短縮されます。「家族との時間が増えた」という声が象徴的で、共働き世帯の平日の負担軽減効果は大きいです。" },
             { title: "管理栄養士監修の週替わり献立", text: "主菜＋副菜の組み合わせで自然と品目数が増え、栄養バランスが整います。献立を考える精神的な負担がなくなるのも隠れたメリットです。" },
             { title: "回数縛りなしで始めやすい", text: "定期便ですが回数の縛りはなく、スキップも可能とされています。初回特典で1回だけ試して判断する、という使い方ができます。" },
@@ -417,7 +417,7 @@ export default function ChefMutenkaTsukuriokiKuchikomiPage() {
             <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-accent font-bold text-lg">編</div>
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
-              <p className="text-xs text-warm-gray">宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。</p>
+              <p className="text-xs text-warm-gray">宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。</p>
             </div>
           </div>
         </div>

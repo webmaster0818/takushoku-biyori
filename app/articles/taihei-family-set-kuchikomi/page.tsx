@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "タイヘイファミリーセットの口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "タイヘイファミリーセットは「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。1880年創業の老舗タイヘイの宅配健康食の料金（ヘルシー御膳1食税込775円〜）、送料（定期は全国無料・最低3回）、制限食コースも解説。【2026年10月更新】";
+  "タイヘイファミリーセットは「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。1880年創業の老舗タイヘイの宅配健康食の料金（ヘルシー御膳1食税込775円〜）、送料（定期は全国無料・最低3回）、制限食コースも解説します。【2026年10月更新】";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/taihei-family-set-kuchikomi/";
 
@@ -419,19 +419,19 @@ export default function TaiheiFamilySetKuchikomiPage() {
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
-            「タイヘイファミリーセットって実際どうなの？」「まずいって口コミは本当？」——1880年（明治13年）創業の老舗タイヘイが手がける宅配健康食「ファミリーセット」。1972年に企画が始まり、1974年から全国展開してきた宅配食の草分け的存在です。
+            「タイヘイファミリーセットって実際どうなの？」「まずいって口コミは本当？」——「ファミリーセット」は、1880年（明治13年）創業の老舗タイヘイが手がける宅配健康食です。1972年に企画が始まり、1974年から全国展開してきた宅配食の草分け的存在です。
           </p>
           <p className="mb-3">
-            この記事では、<strong>公開されている実在のレビュー・口コミを出典付きで整理</strong>し、タイヘイファミリーセットの良い口コミ・悪い口コミの両方を中立に検証。「まずい」と言われる理由にも正面から答えます。
+            この記事では、<strong>公開されている実在のレビュー・口コミを出典付きで整理</strong>し、タイヘイファミリーセットの良い口コミ・悪い口コミの両方を中立に検証します。「まずい」と言われる理由についても解説します。
           </p>
           <p>
-            さらに、<strong>ヘルシー御膳・彩ごころなどコース別の料金・送料（定期は全国無料）・制限食の設計</strong>まで詳しく解説。タイヘイファミリーセットが自分や家族に合うかどうか、この記事で判断できます。
+            さらに、<strong>ヘルシー御膳・彩ごころなどコース別の料金・送料（定期は全国無料）・制限食の設計</strong>まで詳しく解説します。タイヘイファミリーセットが自分や家族に合うかどうか、この記事で判断できます。
           </p>
         </div>
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：タイヘイファミリーセットはこんな人に向いています</p>
+          <p className="font-bold text-base mb-3">タイヘイファミリーセットが向いている方</p>
           <p className="text-sm leading-relaxed mb-4">
             タイヘイファミリーセットは、<strong>「医師・管理栄養士監修の制限食を、定期の送料無料で続けたい人」</strong>に向いた宅配健康食です。口コミでは「味付けやボリュームに満足」「栄養が考えられていて気軽に頼める」という評価がある一方、制限食設計ゆえの薄味・量の控えめさは注意点として挙がっています。「まずい」という声の実態は薄味・量への評価が中心で、感じ方には個人差があります（<a href="#mazui" className="text-accent underline">検証セクションへ</a>）。
           </p>
@@ -518,15 +518,15 @@ export default function TaiheiFamilySetKuchikomiPage() {
           {[
             {
               title: "医師×管理栄養士による本格的な制限食設計",
-              text: "主力のヘルシー御膳は、糖尿病専門医による設計と管理栄養士による献立作成で、約200kcal・塩分2.2g以下に統一。カロリー・塩分・糖質・たんぱく質など、健康状態に合わせてコースを選べるのが最大の強みです。",
+              text: "主力のヘルシー御膳は、糖尿病専門医による設計と管理栄養士による献立作成で、約200kcal・塩分2.2g以下に統一されています。カロリー・塩分・糖質・たんぱく質など、健康状態に合わせてコースを選べるのが最大の強みです。",
             },
             {
               title: "定期・継続購入は全国送料無料",
-              text: "冷凍宅配弁当は送料が実質コストを押し上げがちですが、タイヘイは定期・継続購入なら全国どこでも配送料無料。長く続けるほど他社との差が出やすい料金構造です。",
+              text: "冷凍宅配弁当は送料が実質コストを押し上げがちですが、タイヘイは定期・継続購入なら全国どこでも配送料無料です。長く続けるほど他社との差が出やすい料金構造です。",
             },
             {
               title: "1974年から続く宅配食の草分けの実績",
-              text: "1880年創業の食品老舗タイヘイが、1972年の企画開始・1974年の全国展開以来50年以上続けてきたサービス。介護食（ソフト御膳）やたんぱく調整食まで揃うラインナップの広さは、歴史の長さゆえです。",
+              text: "1880年創業の食品老舗タイヘイが、1972年の企画開始・1974年の全国展開以来50年以上続けてきたサービスです。介護食（ソフト御膳）やたんぱく調整食まで揃うラインナップの広さは、歴史の長さゆえです。",
             },
           ].map((item) => (
             <div key={item.title} className="bg-green-50 rounded-lg p-4">
@@ -558,7 +558,7 @@ export default function TaiheiFamilySetKuchikomiPage() {
         <SectionHeading id="bad-reviews">タイヘイファミリーセットの悪い口コミ・評判（出典付き）</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          ネガティブな意見も出典付きで正直に紹介します。購入前に知っておくべき注意点です。
+          否定的な意見も出典付きで掲載しています。購入前にご確認いただきたい注意点です。
         </p>
 
         {badReviewCategories.map((category) => (
@@ -605,7 +605,7 @@ export default function TaiheiFamilySetKuchikomiPage() {
           <div className="bg-red-50 rounded-lg p-4 text-sm leading-relaxed">
             <p className="font-bold mb-1">2. 冷凍ゆえの食感の弱点がメニューによってはある</p>
             <p className="mb-1.5">
-              管理栄養士が実食したレビュー（おいしい宅食）では、ビーフカレーについて「冷凍じゃがいも特有のパサパサ感がありました」と具体的な弱点を指摘。一方で同じレビューはハンバーグについて「思わず『おいしい！』の声がでました」と評価しており、<strong>メニューによる当たり外れ</strong>が「まずい」印象の一因になっています。
+              管理栄養士が実食したレビュー（おいしい宅食）では、ビーフカレーについて「冷凍じゃがいも特有のパサパサ感がありました」と具体的な弱点を指摘しています。一方で同じレビューはハンバーグについて「思わず『おいしい！』の声がでました」と評価しており、<strong>メニューによる当たり外れ</strong>が「まずい」印象の一因になっています。
             </p>
             <p className="text-xs text-warm-gray">
               出典:{" "}
@@ -661,7 +661,7 @@ export default function TaiheiFamilySetKuchikomiPage() {
         </div>
 
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-1">編集部の結論：「まずい」は①制限食の薄味②冷凍の食感③量の設計の3因に分解できる</p>
+          <p className="font-bold mb-1">編集部の見解：「まずい」は①制限食の薄味②冷凍の食感③量の設計の3因に分解できる</p>
           <p>
             「まずい」と正面から断じた実食レビューは今回の調査では確認できず、実態は制限食設計（塩分・カロリー）への感じ方の問題が中心です。<strong>健康管理目的で「薄味に慣れたい」人には設計通りの味</strong>であり、濃い味・大盛り志向の人には合いません。初めてならお試しセット（6食4,280円）で味と量を確かめてから定期に進むのが失敗しない方法です。
           </p>
@@ -678,12 +678,12 @@ export default function TaiheiFamilySetKuchikomiPage() {
           {
             num: 1,
             title: "定期・継続購入なら全国送料無料",
-            text: "冷凍宅配弁当は毎回の送料が実質コストを大きく押し上げますが、タイヘイは定期・継続購入で全国どこでも配送料無料。都度購入でも冷凍のみ・本体5,400円以上・同日時指定などの条件で無料にできます。長期利用ほど効くメリットです。",
+            text: "冷凍宅配弁当は毎回の送料が実質コストを大きく押し上げますが、タイヘイは定期・継続購入で全国どこでも配送料無料です。都度購入でも冷凍のみ・本体5,400円以上・同日時指定などの条件で無料にできます。長期利用ほど効くメリットです。",
           },
           {
             num: 2,
             title: "糖尿病専門医設計の制限食を1食775円〜で続けられる",
-            text: "ヘルシー御膳は糖尿病専門医の設計＋管理栄養士の献立作成で、約200kcal・塩分2.2g以下。医療的な配慮が必要な食事管理を、外注できる価格帯で提供しているのが本質的な価値です。",
+            text: "ヘルシー御膳は糖尿病専門医の設計＋管理栄養士の献立作成で、約200kcal・塩分2.2g以下です。医療的な配慮が必要な食事管理を、外注できる価格帯で提供しているのが本質的な価値です。",
           },
           {
             num: 3,
@@ -716,7 +716,7 @@ export default function TaiheiFamilySetKuchikomiPage() {
         <SectionHeading id="demerits">注意すべきデメリット3つ</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          メリットだけでなく、「ここは正直イマイチ」というポイントも率直にお伝えします。
+          メリットだけでなく、注意が必要な点もあわせてご説明します。
         </p>
 
         {[
@@ -858,7 +858,7 @@ export default function TaiheiFamilySetKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※各社公式サイトの公開情報をもとに編集部作成（タイヘイとウェルネスダイニングの送料は2026年10月10日、他社は2026年7月時点の確認）。最新情報は各公式サイトでご確認ください。
+          ※各社公式サイトの公開情報をもとに編集部が作成しています（タイヘイとウェルネスダイニングの送料は2026年10月10日、他社は2026年7月時点の確認）。最新情報は各公式サイトでご確認ください。
         </p>
 
         {/* ===== FAQ ===== */}
@@ -885,7 +885,7 @@ export default function TaiheiFamilySetKuchikomiPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link
             href="/articles/wellness-dining-reviews/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
@@ -917,7 +917,7 @@ export default function TaiheiFamilySetKuchikomiPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

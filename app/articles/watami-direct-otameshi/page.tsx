@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "ワタミの宅食ダイレクト お試しセット完全ガイド【2026年版】内容・送料・申込手順を解説";
 const ARTICLE_DESCRIPTION =
-  "ワタミの宅食ダイレクトのお試しセットを徹底解説。いつでも三菜/五菜/二菜の内容、料金、送料、申込手順、定期購入(おまかせセット5%OFF/選べるセット3%OFF)の仕組みを公式情報ベースで丁寧に紹介。初めての方が迷わず始められる完全ガイドです。";
+  "ワタミの宅食ダイレクトのお試しセットを解説します。いつでも三菜/五菜/二菜の内容、料金、送料、申込手順、定期購入(おまかせセット5%OFF/選べるセット3%OFF)の仕組みを公式情報ベースで丁寧に紹介します。初めての方が迷わず始められる完全ガイドです。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/watami-direct-otameshi/";
 
 export const metadata: Metadata = {
@@ -217,10 +217,10 @@ export default function WatamiDirectOtameshiPage() {
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
-            「ワタミの宅食ダイレクトを試してみたいけど、お試しセットって何が届くの？」「定期購入と都度購入はどう違う？」「送料はいくらかかる？」——初めての方が抱きがちな疑問を、このガイドで全部解決します。
+            「ワタミの宅食ダイレクトを試してみたいけど、お試しセットって何が届くの？」「定期購入と都度購入はどう違う？」「送料はいくらかかる？」——初めての方が抱きがちな疑問を、本ガイドで解説します。
           </p>
           <p className="mb-3">
-            この記事では、<strong>ワタミの宅食ダイレクトのお試しセット・申込手順・料金・送料</strong>を公式情報ベースで完全解説。<strong>「いつでも三菜」「いつでも五菜」「いつでも二菜」</strong>の3つのコース比較から、定期購入の割引(おまかせセット5%OFF / 選べるセット3%OFF)の仕組みまで詳しく紹介します。
+            この記事では、<strong>ワタミの宅食ダイレクトのお試しセット・申込手順・料金・送料</strong>を公式情報ベースで解説します。<strong>「いつでも三菜」「いつでも五菜」「いつでも二菜」</strong>の3つのコース比較から、定期購入の割引(おまかせセット5%OFF / 選べるセット3%OFF)の仕組みまで詳しく紹介します。
           </p>
           <p>
             初めて宅配冷凍弁当を頼む方が、<strong>失敗せずに最適なセットを選べる</strong>内容にまとめました。
@@ -265,17 +265,17 @@ export default function WatamiDirectOtameshiPage() {
 
         <SubHeading>いつでも二菜(1食360円〜)</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          主菜1品+副菜1品のシンプルな構成。<strong>ライトな食事や朝食用・少食の方</strong>におすすめ。価格が最安なので「とりあえず試したい」「ちょい足し用にストック」したい方に向く構成です。
+          主菜1品+副菜1品のシンプルな構成。<strong>ライトな食事や朝食用・少食の方</strong>におすすめです。価格が最安なので「とりあえず試したい」「ちょい足し用にストック」したい方に向く構成です。
         </p>
 
         <SubHeading>いつでも三菜(1食399円〜)</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          主菜1品+副菜2品の<strong>標準コース</strong>。熱量は約150〜220kcal、食塩相当量は約1.0〜2.1g、たんぱく質は約8〜12g前後の設計(メニューにより変動)。塩分・カロリーが抑えめなので、健康志向の方や高齢者に支持される構成です。
+          主菜1品+副菜2品の<strong>標準コース</strong>。熱量は約150〜220kcal、食塩相当量は約1.0〜2.1g、たんぱく質は約8〜12g前後の設計です(メニューにより変動)。塩分・カロリーが抑えめなので、健康志向の方や高齢者に支持される構成です。
         </p>
 
         <SubHeading>いつでも五菜(1食499円〜)</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          主菜1品+副菜4品の<strong>充実コース</strong>。熱量は約300〜400kcal程度で、三菜より食べごたえがあります。「副菜が多いほうが嬉しい」「栄養素のバリエーションが欲しい」方におすすめ。
+          主菜1品+副菜4品の<strong>充実コース</strong>。熱量は約300〜400kcal程度で、三菜より食べごたえがあります。「副菜が多いほうが嬉しい」「栄養素のバリエーションが欲しい」方におすすめです。
         </p>
 
         <ComparisonTable
@@ -286,7 +286,7 @@ export default function WatamiDirectOtameshiPage() {
             ["いつでも五菜", "主菜1+副菜4", "499円〜", "約300〜400kcal", "充実型・食べごたえ重視"],
           ]}
         />
-        <p className="text-xs text-warm-gray mb-6">※2026年5月時点の公開情報。栄養成分・価格はメニューにより変動。最新情報は公式でご確認ください。</p>
+        <p className="text-xs text-warm-gray mb-6">※2026年5月時点の公開情報。栄養成分・価格はメニューにより変動します。最新情報は公式でご確認ください。</p>
 
         <SectionHeading id="price">料金・定期割引の仕組み</SectionHeading>
 
@@ -353,7 +353,7 @@ export default function WatamiDirectOtameshiPage() {
 
         <SubHeading>Step 3: 都度/定期を選ぶ</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          試したいだけなら都度購入、続ける前提なら定期購入(おまかせ5%OFF / 選べる3%OFF)を選択。定期の場合は配送間隔(週/隔週など)も指定します。
+          試したいだけなら都度購入、続ける前提なら定期購入(おまかせ5%OFF / 選べる3%OFF)を選択できます。定期の場合は配送間隔(週/隔週など)も指定します。
         </p>
 
         <SubHeading>Step 4: 住所・支払い情報を入力</SubHeading>
@@ -371,11 +371,11 @@ export default function WatamiDirectOtameshiPage() {
         <SectionHeading id="merits">ワタミの宅食ダイレクトのメリット5つ</SectionHeading>
 
         {[
-          { num: 1, title: "1食360円〜と業界トップクラスの安さ", text: "「いつでも二菜」は1食360円から、標準の「いつでも三菜」も399円〜と、宅配冷凍弁当の中でもトップクラスのコスパ。毎日の食事代として現実的な価格帯です。" },
-          { num: 2, title: "ワタミグループの管理栄養士監修で安心感が高い", text: "外食大手として長年食品事業を展開してきたワタミの管理栄養士が献立を設計。塩分・カロリーが抑えめで、健康志向の方や高齢者にも適した設計です。" },
-          { num: 3, title: "全国どこでも注文可能", text: "冷凍宅配便（佐川急便）での全国配送に対応（離島など一部地域を除く）。「ワタミの宅食」が冷蔵で地域限定なのに対し、ダイレクトは冷凍で全国カバー。地方在住でも問題ありません。" },
+          { num: 1, title: "1食360円〜と業界トップクラスの安さ", text: "「いつでも二菜」は1食360円から、標準の「いつでも三菜」も399円〜と、宅配冷凍弁当の中でもトップクラスのコスパです。毎日の食事代として現実的な価格帯です。" },
+          { num: 2, title: "ワタミグループの管理栄養士監修で安心感が高い", text: "外食大手として長年食品事業を展開してきたワタミの管理栄養士が献立を設計しています。塩分・カロリーが抑えめで、健康志向の方や高齢者にも適した設計です。" },
+          { num: 3, title: "全国どこでも注文可能", text: "冷凍宅配便（佐川急便）での全国配送に対応（離島など一部地域を除く）。「ワタミの宅食」が冷蔵で地域限定なのに対し、ダイレクトは冷凍で全国カバーです。地方在住でも問題ありません。" },
           { num: 4, title: "定期購入で最大5%OFF+受取が楽", text: "定期おまかせセットなら5%OFFで毎回自動配送。注文の手間も省け、メニュー選びに迷うこともありません。「とにかく続けたい」人に最適です。" },
-          { num: 5, title: "3コースから自分の食事量に合わせて選べる", text: "二菜・三菜・五菜の3コースがあり、食事量や健康状態に合わせて柔軟に選択可能。同じワタミブランド内で切り替えられるのは継続性が高い。" },
+          { num: 5, title: "3コースから自分の食事量に合わせて選べる", text: "二菜・三菜・五菜の3コースがあり、食事量や健康状態に合わせて柔軟に選択可能です。同じワタミブランド内で切り替えられるのは継続性が高いです。" },
         ].map((merit) => (
           <div key={merit.num} className="flex gap-4 mb-5">
             <span className="flex-shrink-0 w-8 h-8 bg-accent text-white rounded-full flex items-center justify-center text-sm font-bold">{merit.num}</span>
@@ -390,7 +390,7 @@ export default function WatamiDirectOtameshiPage() {
 
         {[
           { num: 1, title: "1食あたりの量はやや少なめ", text: "三菜の熱量は約150〜220kcal、五菜でも約300〜400kcal程度と、ボリューム重視の男性には物足りない可能性があります。ご飯や汁物の追加が前提と考えるのが現実的です。" },
-          { num: 2, title: "メニュー選択の自由度はnoshより低い", text: "noshのような100種類以上から好きに選ぶスタイルではなく、コース制+おまかせ/選べるという構造。「好きな主菜だけ選びたい」ニーズには合いません。" },
+          { num: 2, title: "メニュー選択の自由度はnoshより低い", text: "noshのような100種類以上から好きに選ぶスタイルではなく、コース制+おまかせ/選べるという構造です。「好きな主菜だけ選びたい」ニーズには合いません。" },
           { num: 3, title: "送料込みの実質単価は地域差あり", text: "本州は安いものの、北海道・沖縄は送料が高くなる可能性があります。1食360〜499円の安さに惹かれて注文しても、送料込みだと割高になるケースもあるので必ず総額を確認しましょう。" },
         ].map((demerit) => (
           <div key={demerit.num} className="flex gap-4 mb-5">
@@ -483,7 +483,7 @@ export default function WatamiDirectOtameshiPage() {
         <CTAButton href="https://www.watami-takushoku-direct.jp/">ワタミの宅食ダイレクト公式サイトをチェック</CTAButton>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link href="/articles/watami-reviews/" className="text-accent hover:text-accent-dark underline font-medium text-sm">ワタミの宅食 口コミ・評判</Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/souryou-yasui-ranking/" className="text-accent hover:text-accent-dark underline font-medium text-sm">送料が安い宅配ランキング</Link>
@@ -496,7 +496,7 @@ export default function WatamiDirectOtameshiPage() {
             <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-accent font-bold text-lg">編</div>
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
-              <p className="text-xs text-warm-gray">宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。</p>
+              <p className="text-xs text-warm-gray">宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。</p>
             </div>
           </div>
         </div>

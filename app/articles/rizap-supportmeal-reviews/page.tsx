@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "ライザップ サポートミールの口コミ・評判【2026年最新】低糖質宅配の実力を徹底レビュー";
 const ARTICLE_DESCRIPTION =
-  "ライザップ サポートミールの口コミ・評判を徹底調査。1食あたり糖質9.5〜12gという厳格な低糖質設計、料金(7食¥6,180/14食¥12,200・定期割引あり)、味・続けやすさ・解約条件を公式情報ベースで解説します。";
+  "ライザップ サポートミールの口コミ・評判を調査しました。1食あたり糖質9.5〜12gという厳格な低糖質設計、料金(7食¥6,180/14食¥12,200・定期割引あり)、味・続けやすさ・解約条件を公式情報ベースで解説します。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/rizap-supportmeal-reviews/";
 
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ const faqData = [
   {
     question: "1週間セットと2週間セットはどちらを選ぶべき？",
     answer:
-      "1週間セット(7食)は通常価格6,180円、2週間セット(14食)は通常価格12,200円(いずれも公式サイト2026年5月時点)。1食あたり単価はほぼ同等です。冷凍庫スペースに余裕があり継続前提なら2週間セットの方が受取回数が減って楽。試したい方は1週間セットから始めるのが無難です。",
+      "1週間セット(7食)は通常価格6,180円、2週間セット(14食)は通常価格12,200円です(いずれも公式サイト2026年5月時点)。1食あたり単価はほぼ同等です。冷凍庫スペースに余裕があり継続前提なら2週間セットの方が受取回数が減って楽です。試したい方は1週間セットから始めるのが無難です。",
   },
   {
     question: "定期購入の縛りはありますか？解約はできますか？",
@@ -220,7 +220,7 @@ export default function RizapSupportMealReviewsPage() {
             「RIZAPのジムは高いし通えないけど、メソッドに基づいた食事は試してみたい」「糖質を一気に絞れる宅配弁当を探している」——そんな方に注目されているのが、RIZAPプロデュースの低糖質冷凍宅配弁当<strong>サポートミール</strong>です。
           </p>
           <p className="mb-3">
-            この記事では、<strong>ライザップ サポートミールの口コミ・評判を徹底リサーチ</strong>。1食あたり糖質9.5〜12gという厳格な低糖質設計を、公式情報ベースで解説します。
+            この記事では、<strong>ライザップ サポートミールの口コミ・評判を調査しました</strong>。1食あたり糖質9.5〜12gという厳格な低糖質設計を、公式情報ベースで解説します。
           </p>
           <p>
             <strong>料金は本当にお得か、定期購入の縛りはどうか、味と続けやすさ</strong>を公平に評価し、自分に合うかを判断できる内容にまとめました。
@@ -229,7 +229,7 @@ export default function RizapSupportMealReviewsPage() {
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：RIZAPサポートミールはこんな人に向いています</p>
+          <p className="font-bold text-base mb-3">RIZAPサポートミールが向いている方</p>
           <div className="grid sm:grid-cols-2 gap-3 text-sm leading-relaxed mb-4">
             <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>1食糖質9.5〜12gの厳格な低糖質設計（他社で再現しにくい）</li><li>RIZAPメソッド準拠の栄養設計でタンパク質を意識した構成</li><li>洋食系メニューの味のクオリティが高く満足感がある</li></ul></div>
             <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>1食800円台と宅配弁当としては価格が高め</li><li>糖質制限が不要な人やコスパ重視の人には割高</li><li>主食を抑えた設計のためボリュームに物足りなさを感じる場合がある</li></ul></div>
@@ -267,7 +267,7 @@ export default function RizapSupportMealReviewsPage() {
         <SubHeading>サポートミールの3つの特徴</SubHeading>
         <div className="space-y-3 mb-6">
           {[
-            { title: "1食糖質9.5〜12gの厳格な低糖質設計", text: "市販冷凍弁当の中でもトップクラスに低い糖質量。一般的な低糖質宅配弁当は糖質20〜30g程度なので、サポートミールはその約半分以下。ケトジェニックや厳しい糖質制限を実践したい方に適しています。" },
+            { title: "1食糖質9.5〜12gの厳格な低糖質設計", text: "市販冷凍弁当の中でもトップクラスに低い糖質量です。一般的な低糖質宅配弁当は糖質20〜30g程度なので、サポートミールはその約半分以下です。ケトジェニックや厳しい糖質制限を実践したい方に適しています。" },
             { title: "RIZAPメソッド準拠の栄養設計", text: "結果にコミット®のRIZAPが培ったボディメイク食のノウハウが反映されています。タンパク質を意識した構成で、ダイエットだけでなくボディメイクにも活用しやすい設計です。" },
             { title: "オンラインで誰でも購入可能", text: "RIZAPジム会員でなくても、公式ショップから注文できます。パーソナルトレーニングと組み合わせなくても、食事メソッドだけ取り入れたい方に最適です。" },
           ].map((item) => (
@@ -291,7 +291,7 @@ export default function RizapSupportMealReviewsPage() {
         <p className="text-xs text-warm-gray mb-6">※出典: RIZAP公式オンラインショップ。最新の価格・送料は公式サイトでご確認ください。</p>
 
         <p className="text-sm mb-6 leading-relaxed">
-          サポートミールは、宅配弁当としては<strong>1食あたり800円台の中〜高価格帯</strong>に位置します。noshの612円〜（2026年10月10日・公式確認）と比べると割高ですが、糖質9.5〜12gという低糖質設計は他社には真似できない強み。「糖質を確実に絞りたい」目的なら価格に見合う価値があります。
+          サポートミールは、宅配弁当としては<strong>1食あたり800円台の中〜高価格帯</strong>に位置します。noshの612円〜（2026年10月10日・公式確認）と比べると割高ですが、糖質9.5〜12gという低糖質設計は他社には真似できない強みです。「糖質を確実に絞りたい」目的なら価格に見合う価値があります。
         </p>
 
         <SubHeading>定期購入のポイント</SubHeading>
@@ -325,7 +325,7 @@ export default function RizapSupportMealReviewsPage() {
 
         <SubHeading>3. RIZAPブランドの安心感</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          「結果にコミットする®」で培われた食事管理ノウハウが反映されているという信頼感から、「<strong>RIZAPが作っているなら間違いない</strong>」という心理的安心感も大きな要素。ダイエットを真剣に行いたい層から選ばれる理由になっています。
+          「結果にコミットする®」で培われた食事管理ノウハウが反映されているという信頼感から、「<strong>RIZAPが作っているなら間違いない</strong>」という心理的安心感も大きな要素です。ダイエットを真剣に行いたい層から選ばれる理由になっています。
         </p>
 
         <SubHeading>4. 主菜+副菜のバランスが良い</SubHeading>
@@ -347,16 +347,16 @@ export default function RizapSupportMealReviewsPage() {
 
         <SubHeading>3. 量が少なく感じる場合がある</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          糖質制限の設計上、糖質源となる主食(ご飯・パン)を抑えているため、<strong>「ボリュームに物足りなさを感じることがある」</strong>という声も。サラダや汁物を追加するか、おかずをご飯とセットで食べるのではなく単体で食べる前提で運用するのがおすすめです。
+          糖質制限の設計上、糖質源となる主食(ご飯・パン)を抑えているため、<strong>「ボリュームに物足りなさを感じることがある」</strong>という声もあります。サラダや汁物を追加するか、おかずをご飯とセットで食べるのではなく単体で食べる前提で運用するのがおすすめです。
         </p>
 
         <SectionHeading id="merits">口コミから分かるメリット5つ</SectionHeading>
 
         {[
-          { num: 1, title: "糖質9.5〜12gは他社で再現困難", text: "他社の低糖質宅配は糖質20〜30g程度が中心。サポートミールの9.5〜12gは群を抜いています。ケトジェニックや糖質制限を本気でやる方には、この一点だけで選ぶ価値があります。" },
-          { num: 2, title: "メイン料理の味付けが本格的", text: "洋食系メニューの完成度が高く、「健康食=味気ない」のイメージを覆します。デミグラス・トマトソース・チーズなど、糖質制限中に食べづらいメニューも糖質を抑えながら再現されている点が秀逸。" },
+          { num: 1, title: "糖質9.5〜12gは他社で再現困難", text: "他社の低糖質宅配は糖質20〜30g程度が中心です。サポートミールの9.5〜12gは群を抜いています。ケトジェニックや糖質制限を本気でやる方には、この一点だけで選ぶ価値があります。" },
+          { num: 2, title: "メイン料理の味付けが本格的", text: "洋食系メニューの完成度が高く、「健康食=味気ない」のイメージを覆します。デミグラス・トマトソース・チーズなど、糖質制限中に食べづらいメニューも糖質を抑えながら再現されている点が秀逸です。" },
           { num: 3, title: "セットの組み合わせを選べる", text: "セットA/B/AB/AD/BDなど複数のラインナップから自分の好みに合うメニューを選択可能。「全部和食」「全部洋食」と偏らず、バリエーション豊富に楽しめます。" },
-          { num: 4, title: "RIZAPメソッドへの信頼感", text: "ダイエット業界における実績ある企業のメソッドが反映されているため、食事管理に迷いがあった方ほど安心感が高い。「指示通りに食べていれば結果が出る」という心理的支柱になります。" },
+          { num: 4, title: "RIZAPメソッドへの信頼感", text: "ダイエット業界における実績ある企業のメソッドが反映されているため、食事管理に迷いがあった方ほど安心感が高いです。「指示通りに食べていれば結果が出る」という心理的支柱になります。" },
           { num: 5, title: "パッケージが小さめで冷凍庫を圧迫しにくい", text: "1週間セット210×180mm、2週間セット210×360mmと比較的コンパクト。家庭用冷凍庫でも複数週分をストックしやすいサイズ感です。" },
         ].map((merit) => (
           <div key={merit.num} className="flex gap-4 mb-5">
@@ -372,7 +372,7 @@ export default function RizapSupportMealReviewsPage() {
 
         {[
           { num: 1, title: "1食単価が高め(800円台)", text: "コスパ重視の方には負担が大きいです。「全食置き換え」よりも「夕食だけ」「平日5日だけ」など部分置き換えで運用すると財布へのダメージを抑えられます。" },
-          { num: 2, title: "定期購入は3回継続条件", text: "定期割引を受けるには3回継続が原則。試したい場合は都度購入で1セット試してから定期に移行するのが安全です。短期で離脱したい人は注意。" },
+          { num: 2, title: "定期購入は3回継続条件", text: "定期割引を受けるには3回継続が原則です。試したい場合は都度購入で1セット試してから定期に移行するのが安全です。短期で離脱したい人は注意が必要です。" },
           { num: 3, title: "送料・配送条件は公式確認必須", text: "送料は地域により異なります。北海道・沖縄など離島地域は割高になる可能性が高いため、申込前に正確な総額を公式で確認してください。" },
         ].map((demerit) => (
           <div key={demerit.num} className="flex gap-4 mb-5">
@@ -493,7 +493,7 @@ export default function RizapSupportMealReviewsPage() {
         <CTAButton href="https://shop.rizap.jp/shop/pages/supportmeal_c.aspx">サポートミール公式サイトをチェック</CTAButton>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link href="/articles/diet-osusume/" className="text-accent hover:text-accent-dark underline font-medium text-sm">ダイエットおすすめ宅配</Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/toushitsu-seigen-osusume/" className="text-accent hover:text-accent-dark underline font-medium text-sm">糖質制限おすすめ宅配</Link>
@@ -515,7 +515,7 @@ export default function RizapSupportMealReviewsPage() {
             <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-accent font-bold text-lg">編</div>
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
-              <p className="text-xs text-warm-gray">宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。</p>
+              <p className="text-xs text-warm-gray">宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。</p>
             </div>
           </div>
         </div>

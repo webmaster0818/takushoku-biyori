@@ -15,7 +15,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "ミールタイムの料金・送料・管理栄養士の無料相談を公式情報で整理｜腎臓病食と糖尿病食の宅配【2026年9月最新】";
 const ARTICLE_DESCRIPTION =
-  "ミールタイム（株式会社ファンデリー）は、ヘルシー食・低たんぱく食・やわらか食を扱う食事療法向けの宅配食です。公式のプラン例では1食646〜862円（税込）。管理栄養士への栄養相談が無料で、4,980円以上で送料無料と記載されています。公式で確認できた内容と、確認できなかった点をそのまま整理しました。";
+  "ミールタイム（株式会社ファンデリー）は、ヘルシー食・低たんぱく食・やわらか食を扱う食事療法向けの宅配食です。公式のプラン例では1食646〜862円です（税込）。管理栄養士への栄養相談が無料で、4,980円以上で送料無料と記載されています。公式で確認できた内容と、確認できなかった点をそのまま整理しました。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/mealtime-kuchikomi/";
 const CHECKED = "2026年9月18日";
 
@@ -66,7 +66,7 @@ const faqData = [
   {
     question: "ミールタイムの口コミ・評判はどうですか？",
     answer:
-      "当サイトでは、出典を確認できるミールタイムの口コミをまだ収集できていません。編集部による実食レビューも実施していないため、味や満足度についての評価は掲載していません。確認できた事実だけを載せる方針のため、口コミが集まり次第このページに追記します。",
+      "当サイトでは、出典を確認できるミールタイムの口コミを現在掲載しておりません。編集部による実食レビューも実施していないため、味や満足度についての評価は掲載していません。確認できた事実のみを掲載する方針のため、出典を確認できる口コミが得られた時点で本ページに追記します。",
   },
 ];
 
@@ -131,7 +131,7 @@ export default function Page() {
         <p className="mt-3 text-xs text-gray-500">最終更新：{CHECKED}／公式サイトで確認した情報のみ掲載</p>
 
         <div className="mt-6 rounded-xl border-l-4 border-accent bg-cream p-5">
-          <p className="text-sm font-bold mb-2">先に結論</p>
+          <p className="text-sm font-bold mb-2">この記事の要点</p>
           <ul className="space-y-2 text-sm leading-relaxed">
             <li>・<strong>食事療法に振り切ったサービス</strong>です。糖尿病食・腎臓病食（低たんぱく食）・やわらか食が主軸で、一般的な「おいしい冷凍弁当」とは目的が違います。</li>
             <li>・公式のプラン例では<strong>1食646〜862円（税込）</strong>。おかずのみか、ごはん付きかで差が出ます。</li>
@@ -224,11 +224,11 @@ export default function Page() {
           にまとめています。
         </p>
 
-        <h2 className="mt-10 text-xl font-bold border-b pb-2">⚠️ 口コミを載せていない理由</h2>
+        <h2 className="mt-10 text-xl font-bold border-b pb-2">口コミ・評判の掲載状況</h2>
         <p className="mt-4 text-sm leading-relaxed">
-          当サイトは<strong>出典を確認できる口コミだけ</strong>を扱っています。
-          ミールタイムについては未収集で、編集部による実食レビューも実施していません。
-          そのため味や満足度の評価はこのページにありません。出所の分からない感想を並べることはしません。
+          当サイトでは、<strong>出典を確認できる口コミのみ</strong>を掲載しています。
+          ミールタイムについては現在掲載しておらず、編集部による実食レビューも実施していません。
+          そのため、味や満足度の評価は本ページに掲載していません。出所を確認できない感想は掲載しません。
           方針は<Link href="/methodology/" className="text-accent underline">評価方法</Link>に記載しています。
         </p>
 

@@ -14,7 +14,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "goodeli(グーデリ)とは？料金・送料・GOFOOD(ゴーフード)との違いを公式情報で整理【2026年9月最新】";
 const ARTICLE_DESCRIPTION =
-  "goodeli(グーデリ)は主菜＋副菜が入った冷凍宅配食。14食1食896円・21食1食842円（税込）、送料1,100円（北海道・沖縄2,750円）を公式で確認しました。名前が似ているGOFOOD(ゴーフード)とは別サービスです。両者の違いと、申し込み前に確認したい解約条件をまとめます。";
+  "goodeli(グーデリ)は主菜＋副菜が入った冷凍宅配食です。14食1食896円・21食1食842円（税込）、送料1,100円（北海道・沖縄2,750円）を公式で確認しました。名前が似ているGOFOOD(ゴーフード)とは別サービスです。両者の違いと、申し込み前に確認したい解約条件をまとめます。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/goodeli-kuchikomi/";
 const CHECKED = "2026年9月6日";
 
@@ -65,7 +65,7 @@ const faqData = [
   {
     question: "goodeliの口コミ・評判はどうですか？",
     answer:
-      "当サイトでは、出典を確認できるgoodeliの口コミをまだ収集できていません。編集部による実食レビューも実施していないため、味や満足度についての評価は掲載していません。確認できた事実だけを掲載する方針のため、口コミが集まり次第このページに追記します。",
+      "当サイトでは、出典を確認できるgoodeliの口コミを現在掲載しておりません。編集部による実食レビューも実施していないため、味や満足度についての評価は掲載していません。確認できた事実のみを掲載する方針のため、出典を確認できる口コミが得られた時点で本ページに追記します。",
   },
 ];
 
@@ -124,11 +124,11 @@ export default function Page() {
 
         {/* 結論ファースト */}
         <div className="mt-6 rounded-xl border-l-4 border-accent bg-cream p-5">
-          <p className="text-sm font-bold mb-2">先に結論</p>
+          <p className="text-sm font-bold mb-2">この記事の要点</p>
           <ul className="space-y-2 text-sm leading-relaxed">
             <li>・goodeli（グーデリ）と GOFOOD（ゴーフード）は<strong>別のサービス</strong>です。名前が似ているだけで、運営も価格体系も違います。なお GOFOOD は2025年6月30日にサービスを終了しています（公式お知らせ）。</li>
             <li>・料金は<strong>14食で1食896円（税込）、21食で1食842円（税込）</strong>。まとめ買いほど1食あたりが下がります。</li>
-            <li>・送料は<strong>通常1,100円・北海道と沖縄は2,750円（税込）</strong>。1食あたりで比べるときはここを足してください。</li>
+            <li>・送料は<strong>通常1,100円・北海道と沖縄は2,750円です（税込）</strong>。1食あたりで比べるときはここを足してください。</li>
             <li>・<strong>初回購入分は解約・キャンセルができません</strong>。ここは申し込み前に必ず確認してください。</li>
           </ul>
         </div>
@@ -177,7 +177,7 @@ export default function Page() {
           </table>
         </div>
         <p className="mt-3 text-xs text-gray-500">
-          goodeliの数値は公式サイト（goodeli.jp）で{CHECKED}に確認。GOFOODの数値は
+          goodeliの数値は公式サイト（goodeli.jp）で{CHECKED}に確認しています。GOFOODの数値は
           <Link href="/articles/gofood-kuchikomi/" className="text-accent underline">GOFOODの記事</Link>
           に記載の公式確認値（サービス終了前の価格）です。最新の料金は各公式サイトでご確認ください。
         </p>
@@ -232,14 +232,14 @@ export default function Page() {
           1食平均の糖質を12.2gに抑えた筋肉食堂DELIのローカーボコース（2026年10月10日公式確認）など、基準そのものが違うサービスと比べるのが分かりやすいです（以前ここで挙げていたGOFOODは2025年6月30日にサービス終了）。
         </p>
 
-        <h2 className="mt-10 text-xl font-bold border-b pb-2">口コミ・評判について（現時点で書けること）</h2>
+        <h2 className="mt-10 text-xl font-bold border-b pb-2">口コミ・評判の掲載状況</h2>
         <div className="mt-4 rounded-lg border p-4 text-sm leading-relaxed" style={{ borderColor: "#dde3eb" }}>
           <p>
-            <strong>当サイトは、goodeliについて出典を確認できる口コミをまだ収集できていません。</strong>
+            <strong>当サイトでは、goodeliについて出典を確認できる口コミを現在掲載しておりません。</strong>
             編集部による実食レビューも実施していないため、味や満足度の評価は掲載していません。
           </p>
           <p className="mt-2">
-            出所の分からない感想を「口コミ」として並べることはしない方針です。確認できた口コミが集まり次第、
+            出所を確認できない感想は、口コミとして掲載しない方針です。出典を確認できる口コミが得られた時点で、
             出典付きでこのページに追記します。現時点では、公式サイトで確認できた料金・送料・解約条件・栄養基準のみを掲載しています。
           </p>
         </div>

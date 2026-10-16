@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "ヨシケイの口コミ・評判｜弁当はまずい？冷凍弁当シンプルミールとミールキットの料金・新コースを公式で確認【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "ヨシケイの弁当はまずい？冷凍弁当シンプルミール・ミールキットの口コミを出典付きで整理。量が少ない・薄味などの声と公式の対策、2025年9月の新コース（Smile & table）の料金、お試し5days、配達条件を公式で確認。【2026年10月更新】";
+  "ヨシケイの弁当はまずい？冷凍弁当シンプルミール・ミールキットの口コミを出典付きで整理します。量が少ない・薄味などの声と公式の対策、2025年9月の新コース（Smile & table）の料金、お試し5days、配達条件を公式で確認しています。【2026年10月更新】";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/yoshikei-reviews/";
 
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ const faqData = [
   {
     question: "ヨシケイの冷凍弁当はどれ？いくら？",
     answer:
-      "ヨシケイの冷凍弁当は「シンプルミール」（ワンプレートにおかず3品）と「ベジミール」（おかず4品・1食で1日の野菜目標量の約2/3）です。ヨシケイ東京の公式サイトではシンプルミール1回3食セット1,290円、ベジミール1回2食セット1,490円（2026年10月16日確認）。ヨシケイの通販サイト「夕食ネット」のシンプルミールは3食セット1,290円〜1,350円（販売期間・セットにより異なる）で、初回注文は10セットまで半額です。電子レンジ約4分（500W）で温めます。",
+      "ヨシケイの冷凍弁当は「シンプルミール」（ワンプレートにおかず3品）と「ベジミール」（おかず4品・1食で1日の野菜目標量の約2/3）です。ヨシケイ東京の公式サイトではシンプルミール1回3食セット1,290円、ベジミール1回2食セット1,490円です（2026年10月16日確認）。ヨシケイの通販サイト「夕食ネット」のシンプルミールは3食セット1,290円〜1,350円（販売期間・セットにより異なる）で、初回注文は10セットまで半額です。電子レンジ約4分（500W）で温めます。",
   },
   {
     question: "ヨシケイはお試しできる？定期購入になる？",
@@ -52,14 +52,14 @@ const faqData = [
       "公式FAQは「入会金や食材の配達料はいただいておりません」としています（夕食ネットは東京23区の一部で送料110円の場合あり）。支払い方法は地域の会社ごとに違い、たとえばヨシケイ東京は口座振替かヨシケイNICOSカードのみ（ほかのクレジットカードは不可）、ヨシケイ埼玉は現金払い不可です。申し込む地域の公式サイトで確認してください。",
   },
   {
-    question: "プチママやLovyuはもう無い？",
+    question: "プチママやLovyuは現在も注文できる？",
     answer:
       "2025年9月29日号でメニューが全面リニューアルされ、メニューブック名は「すまいるごはん」から「Smile & table」に変わりました。現在の公式メニュー紹介にプチママ・定番のコース名はなく、プチママとカットミールの離乳食とりわけレシピ・プチママのレシピ動画は2025年9月27日で終了しています（離乳食レシピは公式の検索サイトで提供）。Lovyuのバリエーションダイニングは2026年9月28日号で販売を終了し、現在はクイックダイニングのみです。",
   },
   {
     question: "ヨシケイとnoshはどう違う？",
     answer:
-      "ヨシケイの主力はミールキット（食材とレシピが届き自分で調理）で、配達料は無料。ヨシケイ東京の通常価格目安では2人用5日分 約6,830〜9,200円（1人前あたり約683〜920円）です。noshは調理済みの冷凍弁当で1食612〜719円、送料は1回1,023〜1,992円（地域・食数による）。「少し料理したい・配達料をかけたくない」ならヨシケイ、「調理せず好きなメニューを選んでストックしたい」ならnoshが合います。",
+      "ヨシケイの主力はミールキット（食材とレシピが届き自分で調理）で、配達料は無料です。ヨシケイ東京の通常価格目安では2人用5日分 約6,830〜9,200円（1人前あたり約683〜920円）です。noshは調理済みの冷凍弁当で1食612〜719円、送料は1回1,023〜1,992円です（地域・食数による）。「少し料理したい・配達料をかけたくない」ならヨシケイ、「調理せず好きなメニューを選んでストックしたい」ならnoshが合います。",
   },
 ];
 
@@ -170,8 +170,8 @@ export default function YoshikeiReviewsPage() {
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：ヨシケイはこんな人に向いています</p>
-          <p className="text-sm leading-relaxed mb-4">ヨシケイは、<strong>「配達料をかけずに、献立と買い物の手間を減らしたい人」</strong>に向いたサービスです。口コミでは「献立を考えなくてよい」「食材の無駄が減った」という声が多く、味は「無難においしい」という評価が中心。冷凍弁当のシンプルミールは1食430円前後と手頃な一方、<strong>「量が少ない」という声が最も多い不満</strong>です。料金・支払い方法・締切は地域の会社ごとに違います。</p>
+          <p className="font-bold text-base mb-3">ヨシケイが向いている方</p>
+          <p className="text-sm leading-relaxed mb-4">ヨシケイは、<strong>「配達料をかけずに、献立と買い物の手間を減らしたい人」</strong>に向いたサービスです。口コミでは「献立を考えなくてよい」「食材の無駄が減った」という声が多く、味は「無難においしい」という評価が中心です。冷凍弁当のシンプルミールは1食430円前後と手頃な一方、<strong>「量が少ない」という声が最も多い不満</strong>です。料金・支払い方法・締切は地域の会社ごとに違います。</p>
           <div className="grid md:grid-cols-2 gap-4 mb-4 text-sm">
             <div className="bg-cream rounded-lg p-3">
               <p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p>
@@ -233,7 +233,7 @@ export default function YoshikeiReviewsPage() {
         <p className="text-sm mb-2 leading-relaxed">オリコン顧客満足度ランキングの利用者コメント、App Storeの公式アプリレビュー、第三者メディアの実食・SNS調査から、多い意見をテーマ別に整理しました。口コミ本文の創作や、当サイトが独自に聞き取った声ではありません。</p>
         <p className="text-xs text-gray-500 mb-6 leading-relaxed">参考にした媒体: <a href="https://life.oricon.co.jp/rank-food-delivery/meal-kit/kinki/company/yoshikei-dvlp/" target="_blank" rel="noopener noreferrer nofollow" className="underline">オリコン顧客満足度ランキング ヨシケイ（ミールキット 近畿・調査2,381人・コメント18件）</a>／<a href="https://apps.apple.com/jp/app/id867325589" target="_blank" rel="noopener noreferrer nofollow" className="underline">App Store「ヨシケイ」公式アプリ（評価4.45・12,789件）</a>／<a href="https://exidea.co.jp/blog/meal/home-meal/yoshikei/" target="_blank" rel="noopener noreferrer nofollow" className="underline">HonNe（カットミール5日間の実食・2026年10月2日更新）</a>／<a href="https://moov.ooo/article/5fb0f0e1304fca656c6206ef" target="_blank" rel="noopener noreferrer nofollow" className="underline">Moovoo（X投稿501件の分析・2023年）</a>／<a href="https://moov.ooo/article/60e7a7c396675a483c8fc974" target="_blank" rel="noopener noreferrer nofollow" className="underline">Moovoo（5日間のお試しレビュー・2023年）</a>／<a href="https://meal-navi.com/yoshikei-simple-meal-review/" target="_blank" rel="noopener noreferrer nofollow" className="underline">プロの宅食さがし（シンプルミール5品の実食・2026年10月12日公開）</a>／<a href="https://home-deli.net/simple-meal/not-tasty.html" target="_blank" rel="noopener noreferrer nofollow" className="underline">美味しい♪ホームデリ専門サイト（シンプルミールの実食）</a>／<a href="https://meal.app-liv.jp/archive/143125/" target="_blank" rel="noopener noreferrer nofollow" className="underline">アプリブ（カットミール5日間の実食）</a>／<a href="https://ryourigakirai.com/yoshikei-kuchikomi/" target="_blank" rel="noopener noreferrer nofollow" className="underline">ryourigakirai.com（ミールキットの実食）</a>／<a href="https://www.okagekk.com/column/column-4296/" target="_blank" rel="noopener noreferrer nofollow" className="underline">okagekk.com（カットミール3日間の実食・X投稿の紹介）</a>。宅食・ミールキットの比較サイトにはアフィリエイト広告を掲載する媒体を含みます。みん評は当サイトから閲覧できず、引用していません。</p>
         {[
-          { title: "献立を考えなくて済む", reviews: ["オリコンの利用者コメントに「献立を考えなくてよい。買い物に行かなくて良い。」「献立に悩まなくてよいので助かっています」という声があります。", "MoovooのX投稿の分析では「7割程度が「買い物の手間が省けた」「献立を考えなくてすむのは便利」」。App Storeのレビューにも「献立を考えることが苦痛なので、それをやってくれて」という声があります。"] },
+          { title: "献立を考えなくて済む", reviews: ["オリコンの利用者コメントに「献立を考えなくてよい。買い物に行かなくて良い。」「献立に悩まなくてよいので助かっています」という声があります。", "MoovooのX投稿の分析では「7割程度が「買い物の手間が省けた」「献立を考えなくてすむのは便利」」とされています。App Storeのレビューにも「献立を考えることが苦痛なので、それをやってくれて」という声があります。"] },
           { title: "味は「無難においしい」という評価が中心", reviews: ["ミールキットを実食したアプリブ（meal.app-liv.jp）は「味は濃すぎず薄すぎず、文句なしに美味しかった」、ryourigakirai.com は「ヨシケイのおかずは無難に美味しいです」と書いています。", "冷凍弁当のシンプルミールも、美味しい♪ホームデリ専門サイトの実食で「ごく普通においしい」、紹介されたX投稿には「味がしょっぱくないの助かった」という声があります。"] },
           { title: "余計な買い物が減る（配達料は無料）", reviews: ["App Storeのレビューに「余分な買い物してしまう事がなくなり、経済的」、Moovooの分析にも「買いすぎや食べ過ぎを防げる」という声があります。食材の配達料はかかりません（公式FAQ）。", "一方で、オリコンの利用者コメントやMoovooの分析には「割高」と感じる声もあります。"] },
           { title: "食材の無駄が出ない", reviews: ["オリコンの利用者コメントに「食材の無駄が減った。」「食材のロスがなくなった」という声があります。", "Moovooが紹介したX投稿にも「その日使う分だけ届くから食材が溜まらない、余らない」という声があります。"] },
@@ -266,7 +266,7 @@ export default function YoshikeiReviewsPage() {
           </div>
           <div className="bg-red-50 rounded-lg p-4 text-sm leading-relaxed">
             <p className="font-bold mb-1">2. 薄味と感じる人、濃いと感じる人がいる（献立による差）</p>
-            <p className="mb-1.5">シンプルミールの実食では「全体的に薄味で、食材そのものの味を感じやすい仕上がりでした」（プロの宅食さがし）。一方、ミールキットについてはオリコンの利用者コメントに「ソースが一緒に入っているメニューは全体的に味が濃い。」という声もあります。<strong>公式の案内:</strong> ヨシケイ東京の公式FAQは、カット野菜を「煮物など汁気のあるメニューにご使用の際は味が濃くなってしまう場合がございますので、一度水にさらしてからのご使用をおすすめします」としています。ミールキットは自分で仕上げるので、ソースや調味料の量で好みに寄せられます。</p>
+            <p className="mb-1.5">シンプルミールの実食では「全体的に薄味で、食材そのものの味を感じやすい仕上がりでした」と評価されています（プロの宅食さがし）。一方、ミールキットについてはオリコンの利用者コメントに「ソースが一緒に入っているメニューは全体的に味が濃い。」という声もあります。<strong>公式の案内:</strong> ヨシケイ東京の公式FAQは、カット野菜を「煮物など汁気のあるメニューにご使用の際は味が濃くなってしまう場合がございますので、一度水にさらしてからのご使用をおすすめします」としています。ミールキットは自分で仕上げるので、ソースや調味料の量で好みに寄せられます。</p>
           </div>
           <div className="bg-red-50 rounded-lg p-4 text-sm leading-relaxed">
             <p className="font-bold mb-1">3. 献立による当たり外れ</p>
@@ -296,10 +296,10 @@ export default function YoshikeiReviewsPage() {
         <div className="space-y-3 mb-6">
           {[
             { title: "配達料・入会金が無料", text: "公式FAQは「入会金や食材の配達料はいただいておりません」としています。冷凍弁当のnoshは1回1,023〜1,992円の送料がかかる（地域・食数による）ので、毎週頼むほど差が出ます。" },
-            { title: "献立を考える手間が減る", text: "メニューブックから選ぶだけ。メニューは管理栄養士20名を含む29名の栄養士が、栄養バランスや季節感、ボリュームを考えて作っています（公式）。" },
+            { title: "献立を考える手間が減る", text: "メニューブックから選ぶだけです。メニューは管理栄養士20名を含む29名の栄養士が、栄養バランスや季節感、ボリュームを考えて作っています（公式）。" },
             { title: "食材の無駄が出にくい", text: "その日使う分だけ届くため、「食材のロスがなくなった」（オリコン利用者コメント）という声があります。" },
-            { title: "お試しが割安で定期縛りなし", text: "お試し5daysは1食約280〜670円（コースにより約30〜50%OFF）。公式は「定期縛りもなく」としています。夕食ネットのシンプルミールは初回10セットまで半額です。" },
-            { title: "冷凍弁当が手頃", text: "シンプルミールは3食セット1,290円（1食430円）。ベジミールは1食で1日の野菜目標量の約2/3がとれます。" },
+            { title: "お試しが割安で定期縛りなし", text: "お試し5daysは1食約280〜670円です（コースにより約30〜50%OFF）。公式は「定期縛りもなく」としています。夕食ネットのシンプルミールは初回10セットまで半額です。" },
+            { title: "冷凍弁当が手頃", text: "シンプルミールは3食セット1,290円です（1食430円）。ベジミールは1食で1日の野菜目標量の約2/3がとれます。" },
           ].map((item) => (
             <div key={item.title} className="bg-green-50 rounded-lg p-4">
               <p className="font-bold text-sm mb-1">{item.title}</p>
@@ -370,7 +370,7 @@ export default function YoshikeiReviewsPage() {
           <p className="text-warm-gray text-sm mb-4">
             主要宅食サービスのカロリー・糖質・タンパク質・塩分・価格を公式公開データから集約。1食あたりの栄養基準を公式に明記している社はその基準値（「以下」「以上」・コース別の場合は範囲）、メニューごとの値だけを公開している社（nosh・FIT FOOD HOME）は公式メニュー一覧の主菜の中央50%（四分位）の範囲を記載。
             最新情報は各公式サイトでご確認ください。
-            <Link href="/methodology/" className="text-accent hover:underline">評価方法・データ源</Link> 参照。
+            <Link href="/methodology/" className="text-accent hover:underline">評価方法・データ源</Link>をご参照ください。
           </p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border border-warm-border bg-white rounded-lg overflow-hidden">

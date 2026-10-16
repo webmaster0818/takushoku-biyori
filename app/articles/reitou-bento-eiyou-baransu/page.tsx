@@ -37,7 +37,7 @@ const faqData = [
   {
     question: "栄養成分表示はどこを見ればいい？",
     answer:
-      "まずはエネルギー(kcal)、たんぱく質、脂質、炭水化物(糖質・食物繊維)、食塩相当量の5項目を確認しましょう。目的に応じて見る順番を変えると分かりやすくなります。たとえば体重管理ならカロリーと脂質、筋肉量の維持ならたんぱく質、塩分が気になるなら食塩相当量、というように。表示は「1食(1包装)あたり」か「100gあたり」かで数値の意味が変わるため、どちらの基準かも必ず確認してください。具体的な数値は各商品の栄養成分表示でご確認ください。",
+      "まずはエネルギー(kcal)、たんぱく質、脂質、炭水化物(糖質・食物繊維)、食塩相当量の5項目を確認しましょう。目的に応じて見る順番を変えると分かりやすくなります。たとえば体重管理ならカロリーと脂質、筋肉量の維持ならたんぱく質、塩分が気になるなら食塩相当量を確認します。表示は「1食(1包装)あたり」か「100gあたり」かで数値の意味が変わるため、どちらの基準かも必ず確認してください。具体的な数値は各商品の栄養成分表示でご確認ください。",
   },
   {
     question: "塩分はどのくらいが目安？",
@@ -82,7 +82,7 @@ function Breadcrumbs() {
 
 function TableOfContents() {
   const sections = [
-    { id: "summary-top", label: "結論：正しく選べば心配しすぎなくてよい" },
+    { id: "summary-top", label: "正しく選べば心配しすぎなくてよい" },
     { id: "reitou-eiyou", label: "「冷凍＝栄養が落ちる」は本当か" },
     { id: "hyouji", label: "栄養成分表示の見方（PFC・塩分・カロリー）" },
     { id: "tenkabutsu", label: "添加物との付き合い方" },
@@ -288,7 +288,7 @@ export default function ReitouBentoEiyouBaransuPage() {
             「冷凍の宅配弁当って、栄養が落ちていそう」「添加物がたくさん入っていそうで心配」——そんなイメージを持つ人は少なくありません。
           </p>
           <p className="mb-3">
-            結論から言うと、その多くは<strong>誤解や思い込みが含まれた不安</strong>です。一方で、塩分やカロリーなど「自分で見ておくべきポイント」も確かにあります。
+            その多くは<strong>誤解や思い込みが含まれた不安</strong>です。一方で、塩分やカロリーなど「自分で見ておくべきポイント」も確かにあります。
           </p>
           <p>
             この記事では、冷凍と栄養の関係、栄養成分表示(PFC・塩分・カロリー)の見方、添加物との付き合い方を中立・正確に整理します。特定商品の成分は断定せず、<strong>各商品の栄養成分表示で確認する</strong>視点を持てるよう解説します。
@@ -298,7 +298,7 @@ export default function ReitouBentoEiyouBaransuPage() {
         <TableOfContents />
 
         {/* ===== 結論 ===== */}
-        <SectionHeading id="summary-top">結論：正しく選べば心配しすぎなくてよい</SectionHeading>
+        <SectionHeading id="summary-top">正しく選べば心配しすぎなくてよい</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
           冷凍の宅配弁当に対する不安は、<strong>「冷凍＝栄養が落ちる」「添加物＝危険」という思い込み</strong>が大きな割合を占めています。実際には、押さえるべきポイントを知っておけば、過度に心配する必要はありません。
@@ -315,7 +315,7 @@ export default function ReitouBentoEiyouBaransuPage() {
         />
 
         <div className="bg-green-50 rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-2">この記事の結論</p>
+          <p className="font-bold mb-2">この記事の要点</p>
           <ul className="list-disc list-inside space-y-1">
             <li>冷凍で<strong>たんぱく質・脂質・炭水化物はほぼ減らない</strong></li>
             <li>添加物は<strong>国の基準内で使用</strong>され、表示で確認できる</li>
@@ -362,7 +362,7 @@ export default function ReitouBentoEiyouBaransuPage() {
         <SubHeading>まず見る5項目</SubHeading>
         <ul className="text-sm space-y-2 mb-6 list-disc list-inside leading-relaxed">
           <li><strong>エネルギー(kcal)</strong>：1食あたりのカロリー。体重管理の基本指標</li>
-          <li><strong>たんぱく質(P)</strong>：筋肉・体づくりに関わる。高齢者は不足に注意</li>
+          <li><strong>たんぱく質(P)</strong>：筋肉・体づくりに関わります。高齢者は不足に注意</li>
           <li><strong>脂質(F)</strong>：エネルギー源。摂りすぎはカロリー過多につながる</li>
           <li><strong>炭水化物(C)</strong>：糖質＋食物繊維。糖質制限中は内訳を確認</li>
           <li><strong>食塩相当量</strong>：塩分の指標。1日合計でバランスを見る</li>
@@ -493,7 +493,7 @@ export default function ReitouBentoEiyouBaransuPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link href="/articles/diet-osusume/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
             ダイエット向け宅配弁当のおすすめ
           </Link>
@@ -519,7 +519,7 @@ export default function ReitouBentoEiyouBaransuPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

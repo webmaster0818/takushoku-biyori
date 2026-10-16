@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "【2026年最新】nosh(ナッシュ)クーポン・割引コード完全ガイド｜初回最大3,000円OFFの全手順";
 const ARTICLE_DESCRIPTION =
-  "nosh(ナッシュ)で使えるクーポン・割引コード・キャンペーンを公式情報ベースで整理。初回最大3,000円OFFの内訳、nosh club継続割引、友達紹介の仕組みと申込手順、注意点まで丁寧に解説します。";
+  "nosh(ナッシュ)で使えるクーポン・割引コード・キャンペーンを公式情報ベースで整理します。初回最大3,000円OFFの内訳、nosh club継続割引、友達紹介の仕組みと申込手順、注意点まで丁寧に解説します。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/nosh-coupon/";
 
 export const metadata: Metadata = {
@@ -41,7 +41,7 @@ const faqData = [
   {
     question: "クーポンが使えない・適用されない時は？",
     answer:
-      "考えられる原因は3つあります。(1)過去にnoshを利用したアカウントで再登録した（初回割引は新規アカウントのみ）。(2)既にキャンペーン期間が終了している。(3)別のキャンペーンと併用できない。クーポンが反映されない場合は、注文確定前に「ご注文確認画面」で割引額を確認し、適用されていない場合はnoshカスタマーサポートに問い合わせるのが確実です。",
+      "考えられる原因は3つあります。(1)過去にnoshを利用したアカウントで再登録しました（初回割引は新規アカウントのみ）。(2)既にキャンペーン期間が終了しています。(3)別のキャンペーンと併用できません。クーポンが反映されない場合は、注文確定前に「ご注文確認画面」で割引額を確認し、適用されていない場合はnoshカスタマーサポートに問い合わせるのが確実です。",
   },
   {
     question: "nosh clubと初回割引は併用できる？",
@@ -81,7 +81,7 @@ function Breadcrumbs() {
 
 function TableOfContents() {
   const sections = [
-    { id: "summary-top", label: "結論：noshの現行クーポン早見表（2026年5月時点）" },
+    { id: "summary-top", label: "noshの現行クーポン早見表（2026年5月時点）" },
     { id: "initial", label: "初回〜3回目の自動割引｜合計3,000円OFFの内訳" },
     { id: "how-to", label: "クーポン適用の申込手順（5ステップ）" },
     { id: "nosh-club", label: "nosh club｜継続するほど安くなる仕組み" },
@@ -309,7 +309,7 @@ export default function NoshCouponPage() {
             「nosh(ナッシュ)を始めたいけど、クーポンや割引コードはあるの？」「初回いくら安くなる？」——人気の冷凍宅配弁当noshには複数の割引制度があり、上手に使えば<strong>初回最大3,000円OFF</strong>で始められます。
           </p>
           <p className="mb-3">
-            この記事では、<strong>2026年5月時点のnosh公式キャンペーン情報</strong>をもとに、自動割引・nosh club・友達紹介の3つの仕組みを丁寧に整理。クーポンコードの真偽、適用手順、注意点まで初心者にもわかりやすく解説します。
+            この記事では、<strong>2026年5月時点のnosh公式キャンペーン情報</strong>をもとに、自動割引・nosh club・友達紹介の3つの仕組みを丁寧に整理します。クーポンコードの真偽、適用手順、注意点まで初心者にもわかりやすく解説します。
           </p>
           <p>
             「裏技クーポンコード」「秘密の割引」といった怪しい情報に惑わされず、公式の最大値で安心してお得に始めるための完全ガイドです。
@@ -319,10 +319,10 @@ export default function NoshCouponPage() {
         <TableOfContents />
 
         {/* ===== 結論早見表 ===== */}
-        <SectionHeading id="summary-top">結論：noshの現行クーポン早見表（2026年5月時点）</SectionHeading>
+        <SectionHeading id="summary-top">noshの現行クーポン早見表（2026年5月時点）</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          まず結論から。2026年5月時点でnosh公式が提供している割引制度は<strong>3種類</strong>あります。クーポンコードを手入力する必要はなく、公式サイト経由で新規登録すれば自動的に適用されるのが基本です。
+          2026年5月時点でnosh公式が提供している割引制度は<strong>3種類</strong>あります。クーポンコードを手入力する必要はなく、公式サイト経由で新規登録すれば自動的に適用されるのが基本です。
         </p>
 
         <ComparisonTable
@@ -375,7 +375,7 @@ export default function NoshCouponPage() {
         />
 
         <p className="text-sm mb-6 leading-relaxed">
-          ※上記は2026年10月10日に公式で確認した税込料金で計算。送料は別途かかります（地域別送料は<Link href="/articles/nosh-reviews/" className="text-accent underline">nosh口コミ・評判記事</Link>で詳しく解説）。
+          ※上記は2026年10月10日に公式で確認した税込料金で計算しています。送料は別途かかります（地域別送料は<Link href="/articles/nosh-reviews/" className="text-accent underline">nosh口コミ・評判記事</Link>で詳しく解説）。
         </p>
 
         <SubHeading>初回の1食単価はプランでどう変わる？</SubHeading>
@@ -418,17 +418,17 @@ export default function NoshCouponPage() {
           {
             num: 3,
             title: "好きなメニューを選ぶ",
-            text: "100種類以上のメニューから、糖質・カロリーを見ながら自由に選択。「初心者ランキング」「人気TOP10」などのフィルタも使えます。",
+            text: "100種類以上のメニューから、糖質・カロリーを確認しながら自由に選択できます。「初心者ランキング」「人気TOP10」などのフィルタも使えます。",
           },
           {
             num: 4,
             title: "配送頻度・配送先・支払い方法を入力",
-            text: "配送間隔は1週/2週/3週から選択。冷凍庫の在庫状況に合わせて2週間に1回が無難。支払いはクレジットカード、Amazon Pay、代金引換が利用できます。",
+            text: "配送間隔は1週/2週/3週から選択できます。冷凍庫の在庫状況に合わせて2週間に1回が無難です。支払いはクレジットカード、Amazon Pay、代金引換が利用できます。",
           },
           {
             num: 5,
             title: "注文確認画面で割引額を確認",
-            text: "「初回1,500円OFF」が金額欄に表示されているかを必ずチェック。表示されていれば適用済みです。表示されない場合はカスタマーサポートに問い合わせを。",
+            text: "「初回1,500円OFF」が金額欄に表示されているかを必ずご確認ください。表示されていれば適用済みです。表示されない場合はカスタマーサポートにお問い合わせください。",
           },
         ].map((step) => (
           <div key={step.num} className="flex gap-4 mb-5">
@@ -466,7 +466,7 @@ export default function NoshCouponPage() {
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-2">nosh club活用のコツ</p>
           <ul className="list-disc list-inside space-y-1">
-            <li>「解約」するとランクがリセットされる。一時休止したい時は<strong>「スキップ」や「プラン停止」</strong>を選ぶ</li>
+            <li>「解約」するとランクがリセットされます。一時休止したい時は<strong>「スキップ」や「プラン停止」</strong>を選ぶ</li>
             <li>10食プランで2週間に1回配送 → 28回（約13ヶ月）で最高ランク（累計280食）に到達（算出）</li>
             <li>最高ランクの12食プラン（1食492円）+ 関東送料1,166円なら、送料込みで約589円/食（算出）</li>
             <li>新規割引（初回〜3回目）とnosh clubは時系列で順に適用される</li>
@@ -491,8 +491,8 @@ export default function NoshCouponPage() {
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">友達紹介の注意点</p>
           <ul className="list-disc list-inside space-y-1">
-            <li>紹介リンク経由 + 通常の新規割引の<strong>併用可否</strong>はキャンペーン時期により異なる。公式案内を確認</li>
-            <li>SNSで赤の他人の紹介リンクを使うとトラブルの元。信頼できる知人のリンクのみを利用</li>
+            <li>紹介リンク経由 + 通常の新規割引の<strong>併用可否</strong>はキャンペーン時期により異なります。公式案内を確認</li>
+            <li>SNSで面識のない方の紹介リンクを使うと、トラブルの原因になる場合があります。信頼できる知人のリンクのみを利用</li>
             <li>紹介クーポンには<strong>有効期限</strong>が設定されていることが多い</li>
           </ul>
         </div>
@@ -503,7 +503,7 @@ export default function NoshCouponPage() {
         {[
           {
             title: "1. 過去にnoshを利用したアカウントでは新規割引が使えない",
-            text: "「初回〜3回目の3,000円OFF」は新規アカウントが対象。過去に登録歴があると、メールアドレスを変えても利用できないケースがあります。家族で利用する場合は、利用者ごとに別アカウントで登録するのが原則ですが、世帯単位で見ると新規割引は1度きりと考えておくのが安全です。",
+            text: "「初回〜3回目の3,000円OFF」は新規アカウントが対象です。過去に登録歴があると、メールアドレスを変えても利用できないケースがあります。家族で利用する場合は、利用者ごとに別アカウントで登録するのが原則ですが、世帯単位で見ると新規割引は1度きりと考えておくのが安全です。",
           },
           {
             title: "2. 送料は割引対象外",
@@ -515,7 +515,7 @@ export default function NoshCouponPage() {
           },
           {
             title: "4. クーポンが反映されない時の対処",
-            text: "注文確認画面で割引額が表示されない場合、(1)別ブラウザのシークレットモードで再アクセス、(2)Cookieを削除して再試行、(3)それでも解決しない場合はnoshカスタマーサポートに問い合わせ、の順で対処を。注文確定後の事後適用は基本的に難しいため、必ず確定前に確認してください。",
+            text: "注文確認画面で割引額が表示されない場合、(1)別ブラウザのシークレットモードで再アクセス、(2)Cookieを削除して再試行、(3)それでも解決しない場合はnoshカスタマーサポートに問い合わせ、の順で対処してください。注文確定後の事後適用は基本的に難しいため、必ず確定前に確認してください。",
           },
         ].map((item, i) => (
           <div key={i} className="bg-cream rounded-lg p-4 mb-4 text-sm leading-relaxed">
@@ -573,7 +573,7 @@ export default function NoshCouponPage() {
         />
 
         <p className="text-sm mb-6 leading-relaxed">
-          noshの「3,000円OFF」は割引額単体では業界トップクラス。とくに10食プランで使うと1食あたりの実質単価がぐっと下がるため、コスパ重視ならまずnoshを候補に入れるのがおすすめです。サービス全体の比較は<Link href="/articles/nosh-reviews/" className="text-accent underline">nosh口コミ・評判の徹底レビュー</Link>もあわせてご確認ください。
+          noshの「3,000円OFF」は割引額単体では業界トップクラスです。とくに10食プランで使うと1食あたりの実質単価がぐっと下がるため、コスパ重視ならまずnoshを候補に入れるのがおすすめです。サービス全体の比較は<Link href="/articles/nosh-reviews/" className="text-accent underline">nosh口コミ・評判の徹底レビュー</Link>もあわせてご確認ください。
         </p>
 
         {/* ===== FAQ ===== */}
@@ -596,7 +596,7 @@ export default function NoshCouponPage() {
             nosh(ナッシュ)のクーポン・割引コードは、<strong>2026年10月10日時点で公式が提供する「初回1,500円・2回目1,000円・3回目500円OFF（合計3,000円）」</strong>が最大値です。クーポンコードの手入力は不要で、公式サイト経由で新規登録するだけで自動的に適用されます。
           </p>
           <p className="mb-3">
-            さらに、3回分の新規割引終了後は<strong>nosh club</strong>が引き継ぎ、累計購入数に応じて1食単価が自動で下がっていく仕組み（最高ランクで12食プラン1食492円）。継続利用する人ほどお得になる設計なので、「合うかどうか」をまず初回3,000円OFFで試して、合えば長期で続けるのが最適解です。
+            さらに、3回分の新規割引終了後は<strong>nosh club</strong>が引き継ぎ、累計購入数に応じて1食単価が自動で下がっていく仕組みです（最高ランクで12食プラン1食492円）。継続利用する人ほどお得になる設計なので、「合うかどうか」をまず初回3,000円OFFで試して、合えば長期で続けるのが最適解です。
           </p>
           <p>
             「秘密のクーポンコード」「裏技5,000円オフ」といった怪しい情報は無視して、公式情報のとおりに進めるのが結果的に最もお得かつ安全です。最新のキャンペーン情報は必ず公式サイトで確認してから申し込んでください。
@@ -617,7 +617,7 @@ export default function NoshCouponPage() {
 
         {/* ===== 関連記事 ===== */}
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link
             href="/articles/nosh-reviews/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
@@ -656,7 +656,7 @@ export default function NoshCouponPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

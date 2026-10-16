@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "三ツ星ファームの口コミ・評判は？まずいって本当？料金・解約条件を公式で確認【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "三ツ星ファームの口コミ・評判を楽天・App Store・利用者2,078名の顧客満足度調査・第三者の実食レビューなど出典付きで整理。「まずい」の声の中身、料金（1食711円〜）・送料・解約手数料・停止の締切を公式で確認。【2026年10月更新】";
+  "三ツ星ファームの口コミ・評判を楽天・App Store・利用者2,078名の顧客満足度調査・第三者の実食レビューなど出典付きで整理します。「まずい」の声の中身、料金（1食711円〜）・送料・解約手数料・停止の締切を公式で確認しています。【2026年10月更新】";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/mitsuboshi-farm-reviews/";
 
@@ -316,19 +316,19 @@ export default function MitsuboshiFarmReviewsPage() {
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
-            「三ツ星ファームって本当に美味しいの？」「まずいって口コミがあるけど大丈夫？」——一流シェフ監修の冷凍宅配弁当として注目を集める三ツ星ファーム。口コミでは味やメニューの多さを評価する声が目立つ一方、「値段が高い」「量が少ない」「解約の条件がわかりにくい」という不満も見られます。
+            「三ツ星ファームって本当に美味しいの？」「まずいって口コミがあるけど大丈夫？」——三ツ星ファームは、一流シェフ監修の冷凍宅配弁当として注目を集めています。口コミでは味やメニューの多さを評価する声が目立つ一方、「値段が高い」「量が少ない」「解約の条件がわかりにくい」という不満も見られます。
           </p>
           <p className="mb-3">
-            そこでこの記事では、<strong>三ツ星ファームの口コミ・評判を徹底的にリサーチ</strong>。楽天・Yahoo!ショッピングの公開レビューや第三者メディアの実食レビューを出典付きで整理し、料金・送料・解約条件は公式サイトで確認しました（2026年10月9日）。
+            そこでこの記事では、<strong>三ツ星ファームの口コミ・評判を調査しました</strong>。楽天・Yahoo!ショッピングの公開レビューや第三者メディアの実食レビューを出典付きで整理し、料金・送料・解約条件は公式サイトで確認しました（2026年10月9日）。
           </p>
           <p>
-            さらに、<strong>料金プラン・送料・メニューの特徴</strong>まで詳しく解説。三ツ星ファームが自分に合うかどうか、この記事を読めば判断できます。
+            さらに、<strong>料金プラン・送料・メニューの特徴</strong>まで詳しく解説します。三ツ星ファームが自分に合うかどうか、この記事を読めば判断できます。
           </p>
         </div>
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：三ツ星ファームはこんな人に向いています</p>
+          <p className="font-bold text-base mb-3">三ツ星ファームが向いている方</p>
           <p className="text-sm leading-relaxed mb-4">三ツ星ファームは、<strong>「価格よりも味とメニューの満足度を重視したい人」</strong>に向いた宅配弁当です。口コミでは味のレベルの高さやメニューの豊富さを評価する声が多い一方、1食あたりの価格は他の低価格サービスより高めで、送料も別途かかる点は押さえておきたいポイントです。「まずい」という声もありますが、価格帯を踏まえた評価は分かれており、味の感じ方には個人差があります。</p>
           <div className="grid md:grid-cols-2 gap-4 mb-4 text-sm">
             <div className="bg-cream rounded-lg p-3">
@@ -401,7 +401,7 @@ export default function MitsuboshiFarmReviewsPage() {
             },
             {
               title: "急速冷凍で、レンジ約5分で食べられる",
-              text: "公式サイトでは「素材の味をそのまま、急速冷凍」と説明しており、具材感や彩りにこだわった仕上がりをうたっています。食べるときは電子レンジで約5分温めるだけ。冷凍で届き、賞味期限は製造から1年なので、忙しい日のストックとして置いておけます。",
+              text: "公式サイトでは「素材の味をそのまま、急速冷凍」と説明しており、具材感や彩りにこだわった仕上がりをうたっています。食べるときは電子レンジで約5分温めるだけです。冷凍で届き、賞味期限は製造から1年なので、忙しい日のストックとして置いておけます。",
             },
           ].map((item) => (
             <div key={item.title} className="bg-green-50 rounded-lg p-4">
@@ -510,7 +510,7 @@ export default function MitsuboshiFarmReviewsPage() {
         </SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          ネガティブな意見も同じ媒体から整理しました。48件を論点別に数え直した tokyolucci の記事では、口コミ投稿サイトの不満のうち約4割が「やめ方（電話・回数の約束・違約金）」、約3割が「味・量と料金の釣り合い」、約3割が「売り切れと差し替え」だったとしています。「まずい」という声の多くは、全部ではなく一部のメニュー（特に副菜）に向けられています。
+          ネガティブな意見も同じ媒体から整理しました。48件を論点別に数え直した tokyolucci の記事では、口コミ投稿サイトの不満のうち約4割が「やめ方（電話・回数の約束・違約金）」、約3割が「味・量と料金の釣り合い」、約3割が「売り切れと差し替え」だったとしています。「まずい」という声の多くは、すべてではなく一部のメニュー（特に副菜）に向けられています。
         </p>
 
         {[
@@ -518,7 +518,7 @@ export default function MitsuboshiFarmReviewsPage() {
             title: "値段が高い（1食711円〜927円＋送料）",
             reviews: [
               "味は認めつつ「この量でこの値段なら続かない」という趣旨の声が、集計記事（tokyolucci）で不満の約3割を占めています。",
-              "宅食グルメの記事は、家族3人で14食を食べたうえで、継続を見送った理由を正直に書いています。",
+              "宅食グルメの記事は、家族3人で14食を食べたうえで、継続を見送った理由も記載しています。",
             ],
             comment:
               "通常の定期便は1食711円〜927円で、2回目以降は毎回送料990円がかかります。noshの通常価格（1食612円〜）より高めです。費用を抑えるなら21食コース（送料込みで1食約758円）か、回数の約束がある長期継続応援プラン（21食で1食約603円）が選択肢ですが、長期継続応援プランは6回未満で解約すると7,700円の手数料がかかる点に注意しましょう。",
@@ -650,7 +650,7 @@ export default function MitsuboshiFarmReviewsPage() {
           {
             num: 3,
             title: "たんぱく質の下限まで決めた栄養基準",
-            text: "おかずプレートは350kcal以下・糖質25g以下・たんぱく質15g以上（一部商品を除く）。noshは糖質30g以下・塩分2.5g以下の基準ですが、たんぱく質の下限は設けていません。カロリーと糖質を抑えながらたんぱく質もとりたい人には、三ツ星ファームの基準が合います。",
+            text: "おかずプレートは350kcal以下・糖質25g以下・たんぱく質15g以上です（一部商品を除く）。noshは糖質30g以下・塩分2.5g以下の基準ですが、たんぱく質の下限は設けていません。カロリーと糖質を抑えながらたんぱく質もとりたい人には、三ツ星ファームの基準が合います。",
           },
           {
             num: 4,
@@ -680,14 +680,14 @@ export default function MitsuboshiFarmReviewsPage() {
         <SectionHeading id="demerits">注意すべきデメリット3つ</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          口コミと公式情報から見えた、契約前に知っておきたい注意点です。
+          口コミと公式情報から見えた、契約前にご確認いただきたい注意点です。
         </p>
 
         {[
           {
             num: 1,
             title: "送料込みだと1食あたりの単価は高め",
-            text: "通常の定期便で最も安い21食コースでも、送料990円を加えると1食あたり約758円。7食コースは送料込みで約1,068円です。noshの10食プラン（関東）は送料込みで約737円なので、通常の定期便同士では三ツ星ファームがやや高くなります。毎日使うより、平日の夕食など回数を決めて使うほうが費用は読みやすくなります。",
+            text: "通常の定期便で最も安い21食コースでも、送料990円を加えると1食あたり約758円です。7食コースは送料込みで約1,068円です。noshの10食プラン（関東）は送料込みで約737円なので、通常の定期便同士では三ツ星ファームがやや高くなります。毎日使うより、平日の夕食など回数を決めて使うほうが費用は読みやすくなります。",
           },
           {
             num: 2,
@@ -728,7 +728,7 @@ export default function MitsuboshiFarmReviewsPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6 leading-relaxed">
-          ※料金・1食あたりは公式サイト表記（2026年10月9日確認）。送料込みは本州の送料990円を加えて編集部が計算。14食・21食コースの初回は送料無料です。
+          ※料金・1食あたりは公式サイト表記です（2026年10月9日確認）。送料込みは本州の送料990円を加えて編集部が計算しています。14食・21食コースの初回は送料無料です。
         </p>
 
         <SubHeading>長期継続応援プラン・冷凍庫プレゼントプラン</SubHeading>
@@ -762,7 +762,7 @@ export default function MitsuboshiFarmReviewsPage() {
 
         <p className="text-sm mb-6 leading-relaxed">
           <strong>送料のポイント：</strong>
-          三ツ星ファームの送料は北海道・沖縄以外なら一律990円（北海道・沖縄は2,500円）。noshは地域別で、4〜12食なら最安の関西でも1,023円・関東1,166円なので、北海道・沖縄以外では1回あたりの送料は三ツ星ファームのほうが安くなります。ただし1食あたりの料金はnoshのほうが安いため、送料込みの総額で比べるのが確実です。送料込みの1食実質単価で18社を横並び比較した<Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark underline">宅食料金白書2026</Link>（編集部の公式サイト一次調査）も参考にしてください。
+          三ツ星ファームの送料は北海道・沖縄以外なら一律990円です（北海道・沖縄は2,500円）。noshは地域別で、4〜12食なら最安の関西でも1,023円・関東1,166円なので、北海道・沖縄以外では1回あたりの送料は三ツ星ファームのほうが安くなります。ただし1食あたりの料金はnoshのほうが安いため、送料込みの総額で比べるのが確実です。送料込みの1食実質単価で18社を横並び比較した<Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark underline">宅食料金白書2026</Link>（編集部の公式サイト一次調査）も参考にしてください。
         </p>
 
         <SubHeading>会員ランク制度の仕組み</SubHeading>
@@ -1020,7 +1020,7 @@ export default function MitsuboshiFarmReviewsPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link
             href="/articles/nosh-vs-mitsuboshi-vs-wellness/"
             className="text-accent hover:text-accent-dark underline font-medium text-sm"
@@ -1052,7 +1052,7 @@ export default function MitsuboshiFarmReviewsPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。公開情報や利用者の口コミをもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。公開情報や利用者の口コミをもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>
@@ -1101,9 +1101,9 @@ export default function MitsuboshiFarmReviewsPage() {
         <section className="my-12">
           <h2 className="font-display text-2xl font-bold mb-3 text-foreground">主要15社の数値比較表（1食あたり）</h2>
           <p className="text-warm-gray text-sm mb-4">
-            主要宅食サービスのカロリー・糖質・タンパク質・塩分・価格を公式公開データから集約。1食あたりの栄養基準を公式に明記している社はその基準値（「以下」「以上」・コース別の場合は範囲）、メニューごとの値だけを公開している社（nosh・FIT FOOD HOME）は公式メニュー一覧の主菜の中央50%（四分位）の範囲を記載。
+            主要宅食サービスのカロリー・糖質・タンパク質・塩分・価格を公式公開データから集約しています。1食あたりの栄養基準を公式に明記している社はその基準値（「以下」「以上」・コース別の場合は範囲）、メニューごとの値だけを公開している社（nosh・FIT FOOD HOME）は公式メニュー一覧の主菜の中央50%（四分位）の範囲を記載しています。
             最新情報は各公式サイトでご確認ください。
-            <Link href="/methodology/" className="text-accent hover:underline">評価方法・データ源</Link> 参照。
+            <Link href="/methodology/" className="text-accent hover:underline">評価方法・データ源</Link>をご参照ください。
           </p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border border-warm-border bg-white rounded-lg overflow-hidden">

@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "置き配対応の冷凍宅配弁当 — 不在時受け取りの方法と各社対応一覧【2026年版】";
 const ARTICLE_DESCRIPTION =
-  "冷凍宅配弁当の置き配対応状況を徹底調査。冷凍便（クール宅急便）の置き配可否、不在票・再配達の対応、宅配ボックスや指定場所での受け取り方法まで、各社公式情報をもとに解説します。";
+  "冷凍宅配弁当の置き配対応状況を調査しました。冷凍便（クール宅急便）の置き配可否、不在票・再配達の対応、宅配ボックスや指定場所での受け取り方法まで、各社公式情報をもとに解説します。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/okihai-taiou-takuhai-bento/";
 
@@ -255,7 +255,7 @@ export default function OkihaiTaiouTakuhaiBentoPage() {
             「日中は仕事で家にいないので置き配したい」「冷凍便って置き配できるの？」——共働き・一人暮らしユーザーから多く寄せられる質問です。
           </p>
           <p className="mb-3">
-            結論から言うと、<strong>冷凍宅配弁当は温度管理が必要なため、置き配対応は基本的に対象外となるケースが多い</strong>のが現状です。一方で、配送時間帯の細かい指定や、ヤマト運輸の各種サービス（営業所留め・コンビニ受け取り・宅急便受取場所変更）を活用すれば、不在時でも確実に受け取る方法はあります。
+            <strong>冷凍宅配弁当は温度管理が必要なため、置き配対応は基本的に対象外となるケースが多い</strong>のが現状です。一方で、配送時間帯の細かい指定や、ヤマト運輸の各種サービス（営業所留め・コンビニ受け取り・宅急便受取場所変更）を活用すれば、不在時でも確実に受け取る方法はあります。
           </p>
           <p>
             この記事では、各社の公式情報をもとに置き配対応の現状をまとめ、不在時に確実に受け取るための実践テクニックを解説します。
@@ -409,7 +409,7 @@ export default function OkihaiTaiouTakuhaiBentoPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
             一人暮らしにおすすめの宅食ランキング
           </Link>
@@ -427,7 +427,7 @@ export default function OkihaiTaiouTakuhaiBentoPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。各社公式情報をもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。各社公式情報をもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

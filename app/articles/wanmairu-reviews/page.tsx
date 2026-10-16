@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "わんまいるの口コミ・評判は？まずいって本当？国産食材100%・湯煎解凍の実力を出典付きで検証【2026年7月最新】";
 const ARTICLE_DESCRIPTION =
-  "わんまいるは「まずい」って本当？公開レビューの良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。国産食材100%の冷凍おかず「健幸ディナー」の料金（定期5食6,280円・2026年7月4日公式確認）・送料・湯煎解凍の手間も詳しく解説します。";
+  "わんまいるは「まずい」って本当？公開レビューの良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。国産食材100%の冷凍おかず「健幸ディナー」の料金（定期5食6,280円・2026年7月4日公式確認）・送料・湯煎解凍の手間も詳しく解説します。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/wanmairu-reviews/";
 
 export const metadata: Metadata = {
@@ -292,14 +292,14 @@ export default function WanmairuReviewsPage() {
         </header>
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
-          <p className="mb-3">「わんまいるって美味しいの？」「国産食材100%って本当？」「湯煎って面倒じゃない？」——冷凍宅食の中でも「味」と「素材」にとことんこだわるわんまいる。</p>
-          <p className="mb-3">この記事では、<strong>わんまいるの口コミ・評判を徹底リサーチ</strong>。国産食材100%・手作り調理の実力、湯煎解凍の手間、そして気になる料金まで詳しく解説します。</p>
+          <p className="mb-3">「わんまいるって美味しいの？」「国産食材100%って本当？」「湯煎って面倒じゃない？」——冷凍宅食の中でも「味」と「素材」にとことんこだわるわんまいるです。</p>
+          <p className="mb-3">この記事では、<strong>わんまいるの口コミ・評判を調査しました</strong>。国産食材100%・手作り調理の実力、湯煎解凍の手間、そして気になる料金まで詳しく解説します。</p>
           <p>「冷凍弁当の味に妥協したくない」「安心できる食材の宅食を探している」という方は、ぜひ参考にしてください。</p>
         </div>
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：わんまいるはこんな人に向いています</p>
+          <p className="font-bold text-base mb-3">わんまいるが向いている方</p>
           <div className="grid sm:grid-cols-2 gap-3 text-sm leading-relaxed mb-4">
             <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>国産食材100%・無添加で安心感がある</li><li>手作り調理で家庭料理のような味わい（煮魚・煮物が特に好評）</li><li>湯煎解凍でしっとり美味しく仕上がる</li></ul></div>
             <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>1食約1,256円〜（定期5食6,280円）と価格が高め</li><li>湯煎の手間がかかる（レンジで完結しない）</li><li>送料が高め（本州1,080円・北海道/沖縄2,645円）</li></ul></div>
@@ -312,7 +312,7 @@ export default function WanmairuReviewsPage() {
         <TableOfContents />
 
         <SectionHeading id="about">わんまいるとは？基本情報まとめ</SectionHeading>
-        <p className="text-sm mb-6 leading-relaxed">わんまいるは、株式会社ファミリーネットワークシステムズが運営する冷凍おかず宅配サービスです。大阪に本社を置き、<strong>国産食材100%</strong>を掲げる数少ないサービスの1つ。宮崎県産黒毛和牛や大山豚、日南どりなど、地域のブランド食材を積極的に使用しています。</p>
+        <p className="text-sm mb-6 leading-relaxed">わんまいるは、株式会社ファミリーネットワークシステムズが運営する冷凍おかず宅配サービスです。大阪に本社を置き、<strong>国産食材100%</strong>を掲げる数少ないサービスの1つです。宮崎県産黒毛和牛や大山豚、日南どりなど、地域のブランド食材を積極的に使用しています。</p>
 
         <ComparisonTable
           headers={["項目", "内容"]}
@@ -334,7 +334,7 @@ export default function WanmairuReviewsPage() {
           {[
             { title: "国産食材100%のこだわり", text: "すべての食材を国産に限定。産地や生産者まで確認できるトレーサビリティを確保しています。宮崎県産黒毛和牛、鳥取県大山豚、宮崎県日南どりなど、ご当地ブランド食材を使ったメニューも特徴です。添加物も極力排除し、合成保存料・合成着色料は不使用です。", color: "bg-green-50" },
             { title: "手作り調理で出来立ての美味しさ", text: "社内調理場と提携先の調理センターで、一つひとつ手作りで調理。大量生産の工場ラインとは異なる「家庭料理の温かみ」が口コミで高評価を得ています。煮物や煮魚など、手間のかかる和食メニューが特に美味しいと評判です。", color: "bg-amber-50" },
-            { title: "湯煎・流水解凍で素材の味を活かす", text: "電子レンジではなく湯煎で解凍するのがわんまいるの特徴。お鍋でお湯を沸かし、袋のまま5〜10分温めるだけ。湯煎のほうが食材に均一に熱が伝わり、パサつきや加熱ムラが起きにくいため、出来立てのような味わいを楽しめます。副菜は流水解凍のものも多いです。", color: "bg-blue-50" },
+            { title: "湯煎・流水解凍で素材の味を活かす", text: "電子レンジではなく湯煎で解凍するのがわんまいるの特徴です。お鍋でお湯を沸かし、袋のまま5〜10分温めるだけです。湯煎のほうが食材に均一に熱が伝わり、パサつきや加熱ムラが起きにくいため、出来立てのような味わいを楽しめます。副菜は流水解凍のものも多いです。", color: "bg-blue-50" },
           ].map((item) => (
             <div key={item.title} className={`${item.color} rounded-lg p-4`}>
               <p className="font-bold text-sm mb-1">{item.title}</p>
@@ -360,7 +360,7 @@ export default function WanmairuReviewsPage() {
 
         <SectionHeading id="bad-reviews">悪い口コミ・評判（出典付き）</SectionHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          ネガティブな意見も出典付きで正直に紹介します。購入前に知っておくべき注意点です。
+          否定的な意見も出典付きで掲載しています。購入前にご確認いただきたい注意点です。
         </p>
         {badReviewCategories.map((category) => (
           <div key={category.title} className="mb-6">
@@ -415,7 +415,7 @@ export default function WanmairuReviewsPage() {
           />
         </div>
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-1">編集部の結論：「まずい」は一部メニューの外れ体験と薄味の好みに分解できる</p>
+          <p className="font-bold mb-1">編集部の見解：「まずい」は一部メニューの外れ体験と薄味の好みに分解できる</p>
           <p>
             酷評は「がんもの煮付け」のような特定メニューへの外れ体験が中心で、同じ調査内でも全体評価は「上品な味」「ほっこりする美味しさ」が優勢です。健康志向の控えめな塩加減のため、濃い味・こってり系が好きな人には物足りない可能性があります。和食・煮物・魚料理を好む人ほど満足度が高い傾向です。感じ方には個人差があるため、まずは少量セットで試すのが確実です。
           </p>
@@ -444,10 +444,10 @@ export default function WanmairuReviewsPage() {
         <SectionHeading id="howto">湯煎解凍の手順と美味しく食べるコツ</SectionHeading>
         <div className="space-y-3 mb-6">
           {[
-            { step: "1", text: "大きめの鍋にたっぷりのお湯を沸かす。袋が浸かる量が目安です。" },
-            { step: "2", text: "沸騰したら火を弱め、冷凍パックをそのまま入れる。主菜は5〜10分、副菜は3〜5分が目安です。" },
-            { step: "3", text: "時間になったらパックを取り出し、お皿に盛り付ける。副菜は流水解凍のものもあるため、パッケージの表示を確認してください。" },
-            { step: "4", text: "盛り付けたら完成。湯煎後すぐに食べるのが最も美味しいタイミングです。" },
+            { step: "1", text: "大きめの鍋にたっぷりのお湯を沸かします。袋が浸かる量が目安です。" },
+            { step: "2", text: "沸騰したら火を弱め、冷凍パックをそのまま入れます。主菜は5〜10分、副菜は3〜5分が目安です。" },
+            { step: "3", text: "時間になったらパックを取り出し、お皿に盛り付けます。副菜は流水解凍のものもあるため、パッケージの表示を確認してください。" },
+            { step: "4", text: "盛り付けたら完成です。湯煎後すぐに食べるのが最も美味しいタイミングです。" },
           ].map((item) => (
             <div key={item.step} className="flex items-start gap-3 text-sm">
               <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-accent/10 text-accent font-bold flex-shrink-0">{item.step}</span>
@@ -497,17 +497,17 @@ export default function WanmairuReviewsPage() {
           <p className="font-bold text-sm mb-3">わんまいる まとめ</p>
           <div className="space-y-2 text-sm leading-relaxed">
             <p>わんまいるは<strong>国産食材100%・手作り調理</strong>にこだわった、冷凍宅食の中でもプレミアムなサービスです。</p>
-            <p>1食約1,256円〜（定期5食6,280円・2026年7月4日公式確認）と価格は高めですが、「ほっこりする美味しさ」「上品な味」といった出典付きの実食評価は他社にない魅力。特に煮魚や煮物などの和食は、口コミで高い評価を得ています。</p>
-            <p>湯煎解凍は慣れれば10〜15分で完了。レンジ加熱とは仕上がりの差を実感できるはずです。最新のお試し・キャンペーン情報は公式サイトで確認のうえ、まずは1回分でその味を確かめてみてください。</p>
+            <p>1食約1,256円〜（定期5食6,280円・2026年7月4日公式確認）と価格は高めですが、「ほっこりする美味しさ」「上品な味」といった出典付きの実食評価は他社にない魅力です。特に煮魚や煮物などの和食は、口コミで高い評価を得ています。</p>
+            <p>湯煎解凍は慣れれば10〜15分で完了します。レンジ加熱とは仕上がりの差を実感できるはずです。最新のお試し・キャンペーン情報は公式サイトで確認のうえ、まずは1回分でその味を確かめてみてください。</p>
           </div>
         </div>
       
         <section className="my-12">
           <h2 className="font-display text-2xl font-bold mb-3 text-foreground">主要15社の数値比較表（1食あたり）</h2>
           <p className="text-warm-gray text-sm mb-4">
-            主要宅食サービスのカロリー・糖質・タンパク質・塩分・価格を公式公開データから集約。1食あたりの栄養基準を公式に明記している社はその基準値（「以下」「以上」・コース別の場合は範囲）、メニューごとの値だけを公開している社（nosh・FIT FOOD HOME）は公式メニュー一覧の主菜の中央50%（四分位）の範囲を記載。
+            主要宅食サービスのカロリー・糖質・タンパク質・塩分・価格を公式公開データから集約しています。1食あたりの栄養基準を公式に明記している社はその基準値（「以下」「以上」・コース別の場合は範囲）、メニューごとの値だけを公開している社（nosh・FIT FOOD HOME）は公式メニュー一覧の主菜の中央50%（四分位）の範囲を記載しています。
             最新情報は各公式サイトでご確認ください。
-            <Link href="/methodology/" className="text-accent hover:underline">評価方法・データ源</Link> 参照。
+            <Link href="/methodology/" className="text-accent hover:underline">評価方法・データ源</Link>をご参照ください。
           </p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border border-warm-border bg-white rounded-lg overflow-hidden">

@@ -9,13 +9,13 @@ export const metadata: Metadata = {
 const categories = [
   {
     title: "宅食比較",
-    description: "人気サービスを価格・味・栄養で徹底比較",
+    description: "主要サービスを価格・味・栄養で比較",
     image: "/images/category-compare.png",
     href: "/articles/#hikaku",
   },
   {
     title: "目的別ガイド",
-    description: "ダイエット・高齢者・産後など目的に合った選び方",
+    description: "ダイエット・高齢者・産後など目的別の選び方",
     image: "/images/category-guide.png",
     href: "/articles/#mokuteki",
   },
@@ -27,7 +27,7 @@ const categories = [
   },
   {
     title: "口コミ・評判",
-    description: "実際のユーザーのリアルな声を集約",
+    description: "出典付きの利用者の口コミを掲載",
     image: "/images/category-review.png",
     href: "/articles/#kuchikomi",
   },
@@ -49,20 +49,20 @@ export default function Home() {
                 宅配弁当・栄養食の比較ガイド
               </p>
               <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-5">
-                毎日の食卓を、
+                公式情報にもとづく
                 <br />
-                もっと豊かに。
+                宅配弁当の比較
               </h1>
               <p className="text-warm-gray text-base md:text-lg leading-relaxed mb-8 max-w-lg">
-                各社の公式サイトで料金・送料を一次確認し、出典付きの口コミとあわせて
-                nosh・三ツ星ファーム・ウェルネスダイニングなどを比較。
-                忙しいあなたにぴったりの一食が見つかります。
+                当サイトでは、各社の公式サイトで料金・送料を確認し、出典付きの口コミとあわせて
+                nosh・三ツ星ファーム・ウェルネスダイニングなどの宅配弁当を比較しています。
+                目的や予算に沿ったサービス選びにご活用ください。
               </p>
               <Link
                 href="/articles/nosh-vs-mitsuboshi-vs-wellness/"
                 className="inline-flex items-center gap-2 bg-accent text-white font-medium px-7 py-3.5 rounded-full hover:bg-accent-dark transition-colors shadow-md hover:shadow-lg"
               >
-                人気3社の比較を見る
+                主要3社の比較を見る
                 <svg
                   className="w-4 h-4"
                   fill="none"
@@ -83,7 +83,7 @@ export default function Home() {
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
                   src="/images/hero.png"
-                  alt="管理栄養士が笑顔で宅配弁当を紹介するイラスト"
+                  alt="宅配弁当を紹介するイラスト"
                   width={800}
                   height={450}
                   className="w-full h-auto"
@@ -150,8 +150,7 @@ export default function Home() {
                   【3社徹底比較】nosh・三ツ星ファーム・ウェルネスダイニング
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-4">
-                  価格・味・メニュー数・栄養・目的別コース・キャンペーン・継続しやすさの7項目で徹底比較。
-                  あなたに最適な宅配弁当が見つかります。
+                  価格・味・メニュー数・栄養・目的別コース・キャンペーン・継続しやすさの7項目で比較しています。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["nosh", "三ツ星ファーム", "ウェルネスダイニング", "価格比較"].map(
@@ -182,8 +181,8 @@ export default function Home() {
                   nosh(ナッシュ)の口コミ・評判を徹底調査
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  「まずい」は本当？良い口コミ・悪い口コミを出典付きで検証。料金・送料・nosh
-                  club割引まで徹底解説。
+                  「まずい」という評判は本当か、良い口コミ・悪い口コミを出典付きで検証しています。料金・送料・nosh
+                  club割引についても解説します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["nosh", "口コミ", "評判", "料金"].map((tag) => (
@@ -210,7 +209,7 @@ export default function Home() {
                   一人暮らしにおすすめの宅食・宅配弁当TOP5
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  一人暮らし向けの宅食を総合ランキング。女性向け・男性向け・シニア向けの目的別おすすめや月額コストシミュレーションも。
+                  一人暮らし向けの宅食を総合ランキングで紹介しています。女性向け・男性向け・シニア向けの目的別のおすすめや、月額費用の試算も掲載しています。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["一人暮らし", "ランキング", "コスパ", "宅食"].map((tag) => (
@@ -239,7 +238,7 @@ export default function Home() {
                   三ツ星ファームの口コミ・評判を徹底調査
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  一流シェフ監修の冷凍弁当の実力は？まずいは本当？料金プラン・送料・メニューの特徴を公式情報と出典付きの口コミで解説。
+                  料理人監修の冷凍弁当の特徴と「まずい」という評判について、料金プラン・送料・メニューとあわせて公式情報と出典付きの口コミで解説します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["三ツ星ファーム", "口コミ", "評判", "料金"].map((tag) => (
@@ -266,7 +265,7 @@ export default function Home() {
                   ウェルネスダイニングの口コミ・評判を徹底調査
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  制限食の専門サービスの実力とは？管理栄養士への無料相談、全6コースの料金・送料を徹底解説。
+                  制限食を専門とするサービスの特徴、管理栄養士への無料相談、全6コースの料金・送料を解説します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["ウェルネスダイニング", "口コミ", "制限食", "料金"].map((tag) => (
@@ -295,7 +294,7 @@ export default function Home() {
                   まごころケア食の口コミ・評判を徹底調査
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  1食390円台のコスパ最強サービスの実力は？初回90円のお試しや冷凍庫レンタルなど特徴を解説。
+                  1食390円台からの低価格帯のサービスです。初回90円のお試しや冷凍庫レンタルなどの特徴を解説します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["まごころケア食", "口コミ", "コスパ", "安い"].map((tag) => (
@@ -322,7 +321,7 @@ export default function Home() {
                   食宅便の口コミ・評判を徹底調査
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  日清医療食品が手がける宅配弁当の実力とは？管理栄養士1万人のノウハウが詰まった全コースを解説。
+                  日清医療食品が手がける宅配弁当です。管理栄養士1万人のノウハウを活かした全コースを解説します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["食宅便", "口コミ", "日清医療食品", "品数"].map((tag) => (
@@ -351,7 +350,7 @@ export default function Home() {
                   つくりおき.jp(ツクリオ)の口コミ・評判を徹底調査
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  冷蔵の手作りおかず宅配は「まずい」？出典付きの口コミで検証。料金・対応エリア・LINE注文の仕組みも解説。
+                  冷蔵の手作りおかず宅配が「まずい」という評判を、出典付きの口コミで検証しています。料金・対応エリア・LINE注文の仕組みも解説します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["つくりおき.jp", "口コミ", "冷蔵おかず", "共働き"].map((tag) => (
@@ -378,7 +377,7 @@ export default function Home() {
                   GREEN SPOONの口コミ・評判を徹底調査
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  野菜ゴロゴロの冷凍宅配食は「まずい」？出典付きの口コミで検証。料金・送料・無添加方針の実態も解説。
+                  具材の大きい野菜が特徴の冷凍宅配食が「まずい」という評判を、出典付きの口コミで検証しています。料金・送料・無添加方針も解説します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["GREEN SPOON", "口コミ", "野菜", "スープ"].map((tag) => (
@@ -408,7 +407,7 @@ export default function Home() {
                   ダイエット向け宅配弁当おすすめランキングTOP5
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  低糖質・低カロリーの宅配弁当を徹底比較。置き換えダイエットの成功のコツも解説。
+                  低糖質・低カロリーの宅配弁当を比較しています。置き換えダイエットを続けるためのポイントも解説します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["ダイエット", "低糖質", "カロリー制限", "ランキング"].map((tag) => (
@@ -435,7 +434,7 @@ export default function Home() {
                   高齢者向け宅配弁当おすすめランキングTOP5
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  やわらか食・制限食も徹底比較。離れて暮らすご家族からの注文方法も解説。
+                  やわらか食・制限食を比較しています。離れて暮らすご家族からの注文方法も解説します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["高齢者", "シニア", "やわらか食", "制限食"].map((tag) => (
@@ -464,7 +463,7 @@ export default function Home() {
                   産後におすすめの宅配弁当ランキングTOP5
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  産褥期の栄養管理と時短を両立。授乳中の栄養補給や出産前ストックも解説。
+                  産褥期の栄養管理と家事負担の軽減に役立つサービスを紹介しています。授乳中の栄養補給や出産前の備え方も解説します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["産後", "授乳中", "産褥期", "ママ向け"].map((tag) => (
@@ -491,7 +490,7 @@ export default function Home() {
                   糖質制限におすすめの宅配弁当ランキングTOP5
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  低糖質・糖質オフの宅食を徹底比較。ロカボからケトジェニックまで対応。
+                  低糖質・糖質オフの宅食を比較しています。ロカボからケトジェニックまでの目的別に紹介します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["糖質制限", "低糖質", "ケトジェニック", "ロカボ"].map((tag) => (
@@ -521,7 +520,7 @@ export default function Home() {
                   コープデリ vs パルシステム 徹底比較
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  料金・配送エリア・安全基準・品揃え・離乳食を7項目で比較。あなたに合う生協宅配が見つかります。
+                  料金・配送エリア・安全基準・品揃え・離乳食など7項目で比較しています。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["コープデリ", "パルシステム", "比較", "生協"].map((tag) => (
@@ -543,7 +542,7 @@ export default function Home() {
                   宅配弁当 vs コンビニ弁当 どっちがお得？
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  栄養・価格・手軽さ・添加物の4項目で徹底比較。nosh・三ツ星ファーム vs コンビニ3社を具体データで解説。
+                  栄養・価格・手軽さ・添加物の4項目で比較しています。nosh・三ツ星ファームとコンビニ3社を具体的なデータで解説します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["宅配弁当", "コンビニ", "比較", "栄養"].map((tag) => (
@@ -567,7 +566,7 @@ export default function Home() {
                   冷凍弁当がまずい？美味しく食べる7つのコツ
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  まずいと感じる原因と対策、解凍テクニック、美味しいサービスランキングTOP5を紹介。
+                  まずいと感じる原因と対策、解凍方法、味の評価が高いサービスのランキングTOP5を紹介しています。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["冷凍弁当", "解凍方法", "美味しく", "コツ"].map((tag) => (
@@ -589,7 +588,7 @@ export default function Home() {
                   送料が安い宅配弁当ランキングTOP10
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  送料込み総額で比較。送料無料のサービス一覧、地域別送料比較、送料を抑えるコツも解説。
+                  送料込みの総額で比較しています。送料無料のサービス一覧、地域別の送料比較、送料を抑える方法も解説します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["送料無料", "ランキング", "コスパ", "比較"].map((tag) => (
@@ -608,13 +607,13 @@ export default function Home() {
             >
               <div className="p-6 flex flex-col justify-center">
                 <span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
-                  独自調査データ
+                  比較・料金データ
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
                   宅食料金白書2026｜18社の料金・送料・1食実質単価を正規化比較
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  18社の料金・送料・初回割引・解約条件を全て公式サイトで直接確認し、送料込みの1食実質単価に正規化して比較（2026年7月調査）。送料の地域差・定期縛りの罠も一覧化。
+                  18社の料金・送料・初回割引・解約条件を各社の公式サイトで確認し、送料込みの1食実質単価に換算して比較しています（2026年10月再調査）。送料の地域差や定期購入の継続条件も一覧で掲載しています。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["料金比較", "送料込み", "実質単価", "18社", "一次データ"].map((tag) => (
@@ -639,7 +638,7 @@ export default function Home() {
                   ワタミの宅食の口コミ・評判を徹底調査
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  冷蔵（まごころ弁当）と冷凍（ダイレクト）の違い、送料無料の冷蔵タイプの特徴を解説。
+                  冷蔵（まごころ弁当）と冷凍（ダイレクト）の違い、送料無料の冷蔵タイプの特徴を解説します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["ワタミの宅食", "口コミ", "送料無料", "安否確認"].map((tag) => (
@@ -661,7 +660,7 @@ export default function Home() {
                   ヨシケイの口コミ・評判を徹底調査
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  ミールキット（カットミール/プチママ）と冷凍弁当の違い。送料無料・初回半額のお得情報も。
+                  ミールキットと冷凍弁当の違い、配達料無料・初回半額などの料金条件を解説します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["ヨシケイ", "口コミ", "ミールキット", "送料無料"].map((tag) => (
@@ -685,7 +684,7 @@ export default function Home() {
                   わんまいるの口コミ・評判を徹底調査
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  国産食材100%・手作りの実力は？湯煎解凍の手間と味のクオリティを詳しく解説。
+                  国産食材100%・手作りの宅配おかずです。湯煎解凍の手間と味の評価を解説します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["わんまいる", "口コミ", "国産食材", "湯煎"].map((tag) => (
@@ -707,7 +706,7 @@ export default function Home() {
                   Dr.つるかめキッチンの口コミ・評判を徹底調査
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  専門医＋管理栄養士W監修の制限食5コース。定期購入で28%OFF＋全国送料無料の仕組みを解説。
+                  専門医と管理栄養士がダブル監修する制限食5コースです。定期購入の割引と送料無料の条件を解説します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["つるかめキッチン", "口コミ", "制限食", "送料無料"].map((tag) => (
@@ -731,7 +730,7 @@ export default function Home() {
                   シェフの無添つくりおきの口コミ・評判は？まずいって本当？
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  無添加調理×冷蔵手作りおかず。第三者メディアの実食レビューを出典付きで検証し、料金と注意点を整理。
+                  無添加調理の冷蔵手作りおかずです。第三者メディアの実食レビューを出典付きで検証し、料金と注意点を整理しています。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["シェフの無添つくりおき", "口コミ", "無添加", "つくりおき"].map((tag) => (
@@ -753,7 +752,7 @@ export default function Home() {
                   ライフミールの口コミ・評判は？まずいって本当？
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  1食490円台〜の低価格冷凍弁当。第三者メディアの実食レビューを出典付きで検証し、冷凍庫無料レンタルの条件も解説。
+                  1食490円台からの低価格帯の冷凍弁当です。第三者メディアの実食レビューを出典付きで検証し、冷凍庫無料レンタルの条件も解説します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["ライフミール", "口コミ", "コスパ", "冷凍弁当"].map((tag) => (
@@ -777,7 +776,7 @@ export default function Home() {
                   ワタミの宅食ダイレクトの口コミ・評判は？まずいって本当？
                 </h3>
                 <p className="text-sm text-warm-gray leading-relaxed">
-                  出典付きの実際の口コミと料金・注意点を中立に検証しています。
+                  出典付きの口コミと料金・注意点を中立的な立場で検証しています。
                 </p>
               </div>
             </Link>
@@ -793,7 +792,7 @@ export default function Home() {
                   コープデリの宅配弁当の口コミ・評判は？まずいって本当？
                 </h3>
                 <p className="text-sm text-warm-gray leading-relaxed">
-                  出典付きの実際の口コミと料金・注意点を中立に検証しています。
+                  出典付きの口コミと料金・注意点を中立的な立場で検証しています。
                 </p>
               </div>
             </Link>
@@ -809,7 +808,7 @@ export default function Home() {
                   おうちコープの宅配弁当の口コミ・評判は？まずいって本当？
                 </h3>
                 <p className="text-sm text-warm-gray leading-relaxed">
-                  出典付きの実際の口コミと料金・注意点を中立に検証しています。
+                  出典付きの口コミと料金・注意点を中立的な立場で検証しています。
                 </p>
               </div>
             </Link>
@@ -825,7 +824,7 @@ export default function Home() {
                   夕食ネットの口コミ・評判は？まずいって本当？
                 </h3>
                 <p className="text-sm text-warm-gray leading-relaxed">
-                  出典付きの実際の口コミと料金・注意点を中立に検証しています。
+                  出典付きの口コミと料金・注意点を中立的な立場で検証しています。
                 </p>
               </div>
             </Link>
@@ -841,7 +840,7 @@ export default function Home() {
                   メディミールの口コミ・評判は？まずいって本当？
                 </h3>
                 <p className="text-sm text-warm-gray leading-relaxed">
-                  出典付きの実際の口コミと料金・注意点を中立に検証しています。
+                  出典付きの口コミと料金・注意点を中立的な立場で検証しています。
                 </p>
               </div>
             </Link>
@@ -857,7 +856,7 @@ export default function Home() {
                   筋肉食堂DELIの口コミ・評判は？まずいって本当？
                 </h3>
                 <p className="text-sm text-warm-gray leading-relaxed">
-                  出典付きの実際の口コミと料金・注意点を中立に検証しています。
+                  出典付きの口コミと料金・注意点を中立的な立場で検証しています。
                 </p>
               </div>
             </Link>
@@ -873,7 +872,7 @@ export default function Home() {
                   FIT FOOD HOMEの口コミ・評判は？まずいって本当？
                 </h3>
                 <p className="text-sm text-warm-gray leading-relaxed">
-                  出典付きの実際の口コミと料金・注意点を中立に検証しています。
+                  出典付きの口コミと料金・注意点を中立的な立場で検証しています。
                 </p>
               </div>
             </Link>
@@ -889,7 +888,7 @@ export default function Home() {
                   ニチレイフーズダイレクトの口コミ・評判は？まずいって本当？
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  冷凍食品大手の宅配食「きくばりごぜん」。第三者メディアの実食レビューを出典付きで検証し、料金と送料無料条件を整理。
+                  冷凍食品大手の宅配食「きくばりごぜん」について、第三者メディアの実食レビューを出典付きで検証し、料金と送料無料の条件を整理しています。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["ニチレイ", "口コミ", "きくばりごぜん", "健康設計"].map((tag) => (
@@ -911,7 +910,7 @@ export default function Home() {
                   GOFOOD(ゴーフード)の口コミ・評判は？まずいって本当？
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  全メニュー糖質20g以下・タンパク質20g以上の低糖質弁当。第三者メディアの実食レビューを出典付きで検証。
+                  2025年6月30日にサービスを終了した低糖質弁当です。当時の第三者メディアの実食レビューを出典付きで振り返ります。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["GOFOOD", "口コミ", "低糖質", "高タンパク"].map((tag) => (
@@ -935,7 +934,7 @@ export default function Home() {
                   ダイエティシャンの口コミ・評判は？販売終了の真相も解説
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  2025年11月に販売終了した高タンパク宅配食。当時の口コミを出典付きで振り返り、代替サービスも紹介。
+                  2025年11月に販売を終了した高たんぱく宅配食です。当時の口コミを出典付きで振り返り、代替サービスも紹介します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["ダイエティシャン", "口コミ", "販売終了", "代替サービス"].map((tag) => (
@@ -957,7 +956,7 @@ export default function Home() {
                   タイヘイファミリーセットの口コミ・評判は？まずいって本当？
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  1880年創業の老舗の宅配健康食。医師監修の制限食と定期送料無料の仕組みを口コミとあわせて解説。
+                  1880年創業の老舗による宅配健康食です。医師監修の制限食と定期購入の送料無料の条件を、口コミとあわせて解説します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["タイヘイ", "口コミ", "制限食", "送料無料"].map((tag) => (
@@ -977,7 +976,7 @@ export default function Home() {
             カテゴリから探す
           </h2>
           <p className="text-warm-gray text-sm text-center mb-8">
-            あなたの目的に合わせて、最適な宅食情報をお届けします
+            目的に応じて記事をお選びいただけます
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
             {categories.map((cat) => (
@@ -1015,13 +1014,13 @@ export default function Home() {
           宅食びよりの使い方
         </h2>
         <p className="text-warm-gray text-sm text-center mb-10">
-          3ステップであなたにぴったりの宅食が見つかります
+          3つのステップで宅食サービスを比較・検討いただけます
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { step: "01", title: "比較記事を読む", desc: "プロが厳選した人気サービスを料金・味・栄養で比較。違いがひと目でわかります。" },
-            { step: "02", title: "目的で絞り込む", desc: "ダイエット・一人暮らし・高齢者向けなど、あなたの目的に合ったサービスが見つかります。" },
-            { step: "03", title: "体験を申し込む", desc: "気になるサービスの初回お試しセットで、味と量を実際に確認。納得してから本契約。" },
+            { step: "01", title: "比較記事を読む", desc: "主要サービスを料金・味・栄養で比較し、各社の違いを一覧で掲載しています。" },
+            { step: "02", title: "目的で絞り込む", desc: "ダイエット・一人暮らし・高齢者向けなど、目的別に適したサービスを紹介しています。" },
+            { step: "03", title: "お試しで確認する", desc: "初回お試しセットのあるサービスでは、味と量をご確認のうえで定期購入をご検討いただけます。" },
           ].map((item) => (
             <div key={item.step} className="text-center">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent font-display font-bold text-lg mb-4">
@@ -1042,48 +1041,48 @@ export default function Home() {
           目的別で探す
         </h2>
         <p className="text-warm-gray text-sm text-center mb-8">
-          あなたの目的に合った宅食サービスがすぐに見つかります
+          目的に応じた宅食サービスの選び方を紹介しています
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
           {[
             {
               title: "ダイエット目的",
-              desc: "全メニュー糖質30g以下。noshの低糖質メニューで無理なく続けるダイエット。",
+              desc: "全メニュー糖質30g以下のnoshなど、低糖質メニューを継続しやすいサービスを紹介しています。",
               image: "/images/icon-diet.png",
               color: "bg-green-50 border-green-200",
               href: "/articles/diet-osusume/",
             },
             {
               title: "一人暮らし向け",
-              desc: "1食499円〜のコスパとアプリで完結する手軽さ。一人暮らしの強い味方。",
+              desc: "1食あたりの価格とアプリで完結する注文のしやすさを中心に、一人暮らし向けのサービスを紹介しています。",
               image: "/images/icon-single.png",
               color: "bg-amber-50 border-amber-200",
               href: "/articles/hitorigurashi-osusume/",
             },
             {
               title: "高齢者向け",
-              desc: "やわらか食・塩分制限・たんぱく質調整。ウェルネスダイニングの専門コース。",
+              desc: "やわらか食・塩分制限・たんぱく質調整など、ウェルネスダイニングなどの専門コースを紹介しています。",
               image: "/images/icon-elderly.png",
               color: "bg-blue-50 border-blue-200",
               href: "/articles/koureisha-osusume/",
             },
             {
               title: "産後・授乳中",
-              desc: "栄養バランスと手軽さを両立。添加物の少ない安心メニューで産後ケア。",
+              desc: "栄養バランスと手軽さを重視した、産後・授乳中の食事に役立つサービスを紹介しています。",
               image: "/images/icon-postpartum.png",
               color: "bg-pink-50 border-pink-200",
               href: "/articles/sango-osusume/",
             },
             {
               title: "糖質制限",
-              desc: "糖質10g〜30g以下の専門コース。ロカボからケトジェニックまで対応。",
+              desc: "糖質10g〜30g以下の専門コースを、ロカボからケトジェニックまでの目的別に紹介しています。",
               image: "/images/icon-muscle.png",
               color: "bg-purple-50 border-purple-200",
               href: "/articles/toushitsu-seigen-osusume/",
             },
             {
               title: "グルメ・味重視",
-              desc: "プロの料理人監修のレストラン品質。三ツ星ファームで自宅がレストランに。",
+              desc: "料理人監修のメニューを提供する三ツ星ファームなど、味を重視する方向けのサービスを紹介しています。",
               image: "/images/icon-gourmet.png",
               color: "bg-orange-50 border-orange-200",
               href: "/articles/nosh-vs-mitsuboshi-vs-wellness/#purpose",
@@ -1113,12 +1112,12 @@ export default function Home() {
       <section className="bg-gradient-to-b from-cream to-background py-16">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-display text-xl md:text-2xl font-bold mb-4">
-            まずは人気3社の比較から
+            主要3社の比較
           </h2>
           <p className="text-warm-gray mb-8 text-sm md:text-base leading-relaxed">
             nosh・三ツ星ファーム・ウェルネスダイニングの違いを
             <br className="md:hidden" />
-            7項目で徹底解説。読めば自分に合う宅食がわかります。
+            7項目で比較しています。
           </p>
           <Link
             href="/articles/nosh-vs-mitsuboshi-vs-wellness/"

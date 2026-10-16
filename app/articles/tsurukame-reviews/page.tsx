@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "Dr.つるかめキッチンの口コミ・評判は？まずいって本当？制限食5コースの料金・味を出典付きで検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "Dr.つるかめキッチンは「まずい」って本当？公開レビューの良い口コミ・悪い口コミを出典付きで紹介し、味の評判を正面から検証。専門医・管理栄養士W監修の制限食5コース（糖質制限/塩分制限/たんぱく質制限/カロリー制限/バランス栄養）の料金・送料も2026年10月11日確認の公式データで解説します。";
+  "Dr.つるかめキッチンは「まずい」って本当？公開レビューの良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。専門医・管理栄養士W監修の制限食5コース（糖質制限/塩分制限/たんぱく質制限/カロリー制限/バランス栄養）の料金・送料も2026年10月11日確認の公式データで解説します。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/tsurukame-reviews/";
 
 export const metadata: Metadata = {
@@ -49,7 +49,7 @@ const faqData = [
   {
     question: "Dr.つるかめキッチンと食宅便・ウェルネスダイニングの違いは？",
     answer:
-      "3社とも制限食を扱っていますが、Dr.つるかめキッチンは「専門医＋管理栄養士のW監修」が最大の特徴。糖尿病専門医、腎臓病専門医などの各分野の専門医が監修しています。食宅便は日清医療食品の大規模な製造体制が強み、ウェルネスダイニングは管理栄養士への電話相談が無料で利用できる点が差別化ポイントです。",
+      "3社とも制限食を扱っていますが、Dr.つるかめキッチンは「専門医＋管理栄養士のW監修」が最大の特徴です。糖尿病専門医、腎臓病専門医などの各分野の専門医が監修しています。食宅便は日清医療食品の大規模な製造体制が強み、ウェルネスダイニングは管理栄養士への電話相談が無料で利用できる点が差別化ポイントです。",
   },
   {
     question: "定期購入の解約方法は？",
@@ -294,14 +294,14 @@ export default function TsurukameReviewsPage() {
         </header>
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
-          <p className="mb-3">「Dr.つるかめキッチンって実際どうなの？」「制限食なのに美味しいって本当？」——糖尿病・腎臓病・高血圧などの食事制限が必要な方に向けた宅配弁当サービス、Dr.つるかめキッチン。</p>
-          <p className="mb-3">この記事では、<strong>Dr.つるかめキッチンの口コミ・評判を徹底リサーチ</strong>。専門医・管理栄養士がW監修する5つの制限食コースの内容、料金、そして定期購入で全国送料無料になる仕組みを詳しく解説します。</p>
+          <p className="mb-3">「Dr.つるかめキッチンって実際どうなの？」「制限食なのに美味しいって本当？」——糖尿病・腎臓病・高血圧などの食事制限が必要な方に向けた宅配弁当サービス、Dr.つるかめキッチンです。</p>
+          <p className="mb-3">この記事では、<strong>Dr.つるかめキッチンの口コミ・評判を調査しました</strong>。専門医・管理栄養士がW監修する5つの制限食コースの内容、料金、そして定期購入で全国送料無料になる仕組みを詳しく解説します。</p>
           <p>「制限食を探しているけど、味が心配」「他社の制限食と何が違うの？」という方は、ぜひ参考にしてください。</p>
         </div>
 
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">結論：Dr.つるかめキッチンはこんな人に向いています</p>
+          <p className="font-bold text-base mb-3">Dr.つるかめキッチンが向いている方</p>
           <div className="grid sm:grid-cols-2 gap-3 text-sm leading-relaxed mb-4">
             <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>専門医＋管理栄養士のW監修で、医学的根拠に基づいた制限食という安心感</li><li>糖質・塩分・たんぱく質・カロリー・バランスの制限食コースから選べる</li><li>「制限食なのに美味しい」との口コミが多く、持病・健康管理層に向く</li></ul></div>
             <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>1食あたりの単価が他社よりやや高めと感じる声がある</li><li>都度購入は送料がかかる（定期購入は全国送料無料）</li><li>メニューは選べず完全おまかせのため、好き嫌い・味の好み差が出る</li></ul></div>
@@ -381,7 +381,7 @@ export default function TsurukameReviewsPage() {
 
         <SectionHeading id="bad-reviews">悪い口コミ・評判（出典付き）</SectionHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          ネガティブな意見も出典付きで正直に紹介します。購入前に知っておくべき注意点です。
+          否定的な意見も出典付きで掲載しています。購入前にご確認いただきたい注意点です。
         </p>
         {badReviewCategories.map((category) => (
           <div key={category.title} className="mb-6">
@@ -445,7 +445,7 @@ export default function TsurukameReviewsPage() {
           />
         </div>
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-1">編集部の結論：評価は「制限食としての期待値」で分かれる</p>
+          <p className="font-bold mb-1">編集部の見解：評価は「制限食としての期待値」で分かれる</p>
           <p>
             酷評は「一般の弁当と同じ物差し」で見た場合に出やすく、実食メディアの多くは「塩分・糖質制限下の食事としては味がしっかりしている」という評価で一致しています。糖質15g以下・塩分2.0g以下という制約の中の味付けである以上、濃い味・ボリューム重視の人には合いません。逆に、制限食を自炊してきた人ほど満足度が高い傾向です。感じ方には個人差があるため、回数縛りのない定期（1回で解約可）でまず7食を試すのが現実的です。
           </p>
@@ -485,10 +485,10 @@ export default function TsurukameReviewsPage() {
         <SectionHeading id="merits">メリット4つ</SectionHeading>
         <div className="space-y-3 mb-6">
           {[
-            { title: "専門医＋管理栄養士のW監修", text: "糖尿病専門医、腎臓病専門医など各分野の専門医が栄養設計を監修。医学的根拠に基づいた制限食は他社にない強みです。" },
-            { title: "定期購入で全国送料無料", text: "北海道・沖縄を含む全国どこでも送料無料。送料が高い地域にお住まいの方には特に大きなメリットです。" },
-            { title: "定期購入の縛りなし", text: "購入回数の条件や解約金は一切なし。1回だけ注文して解約することも可能なため、実質お試し感覚で利用できます。" },
-            { title: "制限食でも美味しい味付け", text: "出汁・香辛料・酢・レモンなどを活用し、減塩・低糖質でも満足感のある味付け。「制限食＝まずい」のイメージを覆す品質です。" },
+            { title: "専門医＋管理栄養士のW監修", text: "糖尿病専門医、腎臓病専門医など各分野の専門医が栄養設計を監修しています。医学的根拠に基づいた制限食は他社にない強みです。" },
+            { title: "定期購入で全国送料無料", text: "北海道・沖縄を含む全国どこでも送料無料です。送料が高い地域にお住まいの方には特に大きなメリットです。" },
+            { title: "定期購入の縛りなし", text: "購入回数の条件や解約金は一切はありません。1回だけ注文して解約することも可能なため、実質お試し感覚で利用できます。" },
+            { title: "制限食でも美味しい味付け", text: "出汁・香辛料・酢・レモンなどを活用し、減塩・低糖質でも満足感のある味付けです。「制限食＝まずい」のイメージを覆す品質です。" },
           ].map((item) => (
             <div key={item.title} className="bg-green-50 rounded-lg p-4">
               <p className="font-bold text-sm mb-1">{item.title}</p>
@@ -500,8 +500,8 @@ export default function TsurukameReviewsPage() {
         <SectionHeading id="demerits">デメリット3つ</SectionHeading>
         <div className="space-y-3 mb-6">
           {[
-            { title: "メニューが選べない（完全おまかせ）", text: "栄養制限値を厳密に管理するため、メニューは全ておまかせ。公式FAQによると、主菜に使われる苦手な食材は抜いてもらえますが、副菜・調味料は対応外で、アレルギーへの完全対応もありません。好き嫌いが多い方には不向きです。" },
-            { title: "1食あたりの価格がやや高め", text: "定期購入でも1食663〜787円と、nosh（通常612〜719円・nosh club最高ランクで492円／2026年10月10日・公式確認）やまごころケア食（お得便で1食394〜426円・送料980円別／2026年10月12日・公式確認）と比較するとやや高め。ただし制限食の品質と送料無料を考慮すると妥当な価格帯です。" },
+            { title: "メニューが選べない（完全おまかせ）", text: "栄養制限値を厳密に管理するため、メニューはすべておまかせです。公式FAQによると、主菜に使われる苦手な食材は抜いてもらえますが、副菜・調味料は対応外で、アレルギーへの完全対応もありません。好き嫌いが多い方には不向きです。" },
+            { title: "1食あたりの価格がやや高め", text: "定期購入でも1食663〜787円と、nosh（通常612〜719円・nosh club最高ランクで492円／2026年10月10日・公式確認）やまごころケア食（お得便で1食394〜426円・送料980円別／2026年10月12日・公式確認）と比較するとやや高めです。ただし制限食の品質と送料無料を考慮すると妥当な価格帯です。" },
             { title: "解約は連絡が必要", text: "解約・休止は「お届け予定日の6日前までにご連絡」が公式の案内で、窓口はカスタマーセンター（電話・平日9〜17時）とお問い合わせフォームです。公式FAQにマイページで解約を完結する手順の記載はなく、noshのようにマイページで手続きできるサービスと比べるとやや手間です。" },
           ].map((item) => (
             <div key={item.title} className="bg-red-50 rounded-lg p-4">
@@ -548,16 +548,16 @@ export default function TsurukameReviewsPage() {
           <div className="space-y-2 text-sm leading-relaxed">
             <p>Dr.つるかめキッチンは<strong>専門医＋管理栄養士のW監修</strong>による制限食専門の冷凍宅配弁当サービスです。</p>
             <p>糖質制限・塩分制限・たんぱく質制限・カロリー制限・バランス栄養の5コースを展開。定期購入なら28%OFFかつ全国送料無料で、1食あたり663〜787円で利用できます。</p>
-            <p>「制限食なのに美味しい」という口コミが多数。定期購入に縛りがないため、実質お試し感覚で始められます。食事制限が必要な方や、ご家族の健康管理をサポートしたい方におすすめのサービスです。</p>
+            <p>「制限食なのに美味しい」という口コミが多数です。定期購入に縛りがないため、実質お試し感覚で始められます。食事制限が必要な方や、ご家族の健康管理をサポートしたい方におすすめのサービスです。</p>
           </div>
         </div>
       
         <section className="my-12">
           <h2 className="font-display text-2xl font-bold mb-3 text-foreground">主要15社の数値比較表（1食あたり）</h2>
           <p className="text-warm-gray text-sm mb-4">
-            主要宅食サービスのカロリー・糖質・タンパク質・塩分・価格を公式公開データから集約。1食あたりの栄養基準を公式に明記している社はその基準値（「以下」「以上」・コース別の場合は範囲）、メニューごとの値だけを公開している社（nosh・FIT FOOD HOME）は公式メニュー一覧の主菜の中央50%（四分位）の範囲を記載。
+            主要宅食サービスのカロリー・糖質・タンパク質・塩分・価格を公式公開データから集約しています。1食あたりの栄養基準を公式に明記している社はその基準値（「以下」「以上」・コース別の場合は範囲）、メニューごとの値だけを公開している社（nosh・FIT FOOD HOME）は公式メニュー一覧の主菜の中央50%（四分位）の範囲を記載しています。
             最新情報は各公式サイトでご確認ください。
-            <Link href="/methodology/" className="text-accent hover:underline">評価方法・データ源</Link> 参照。
+            <Link href="/methodology/" className="text-accent hover:underline">評価方法・データ源</Link>をご参照ください。
           </p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border border-warm-border bg-white rounded-lg overflow-hidden">

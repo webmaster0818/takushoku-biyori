@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "スーパーの冷凍弁当 vs 宅配冷凍弁当 — 価格・栄養・利便性を徹底比較【2026年版】";
 const ARTICLE_DESCRIPTION =
-  "スーパーで買える冷凍弁当と宅配の冷凍弁当を、価格・栄養成分・利便性・味の観点で徹底比較。1食あたりの実質コスト、糖質・塩分・たんぱく質の違い、買い物の手間まで含めた総合判断ができる比較記事です。";
+  "スーパーで買える冷凍弁当と宅配の冷凍弁当を、価格・栄養成分・利便性・味の観点で比較します。1食あたりの実質コスト、糖質・塩分・たんぱく質の違い、買い物の手間まで含めた総合判断ができる比較記事です。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/super-vs-takuhai-reitou-bento/";
 
@@ -30,7 +30,7 @@ const faqData = [
   {
     question: "スーパーの冷凍弁当と宅配冷凍弁当、どっちが安い？",
     answer:
-      "1食あたりの本体価格はスーパーの冷凍弁当のほうが安いケースが多いです（300〜500円程度）。一方、宅配冷凍弁当は1食あたり500〜800円が中心。ただし「買い物に行く時間・交通費・冷凍庫スペース」を含めた実質コストで比較すると、宅配の方が手間が少ないぶん総合的なコスパは拮抗します。買い物が苦にならない人はスーパー、時間を節約したい人は宅配が向いています。",
+      "1食あたりの本体価格はスーパーの冷凍弁当のほうが安いケースが多いです（300〜500円程度）。一方、宅配冷凍弁当は1食あたり500〜800円が中心です。ただし「買い物に行く時間・交通費・冷凍庫スペース」を含めた実質コストで比較すると、宅配の方が手間が少ないぶん総合的なコスパは拮抗します。買い物が苦にならない人はスーパー、時間を節約したい人は宅配が向いています。",
   },
   {
     question: "栄養面ではどちらが優れている？",
@@ -45,7 +45,7 @@ const faqData = [
   {
     question: "冷凍庫スペースが少ない場合はどっち？",
     answer:
-      "「都度買い」ができるスーパーのほうが冷凍庫に優しい場合もあります。宅配冷凍弁当は一度に6〜10食届くため、配送日には冷凍庫の整理が必要です。一方、スーパーで都度買いすれば「冷凍庫に空きがある時に1〜2食ずつ買う」運用が可能。冷凍庫が小さい家庭の選び方は別記事もご参照ください。",
+      "「都度買い」ができるスーパーのほうが冷凍庫に優しい場合もあります。宅配冷凍弁当は一度に6〜10食届くため、配送日には冷凍庫の整理が必要です。一方、スーパーで都度買いすれば「冷凍庫に空きがある時に1〜2食ずつ買う」運用が可能です。冷凍庫が小さい家庭の選び方は別記事もご参照ください。",
   },
   {
     question: "両方を併用するのはアリ？",
@@ -85,7 +85,7 @@ function TableOfContents() {
     { id: "taste", label: "味のクオリティ比較" },
     { id: "menu", label: "メニューの多様性" },
     { id: "compare-table", label: "総合比較表" },
-    { id: "user-type", label: "あなたはどっちが向いている？" },
+    { id: "user-type", label: "タイプ別の向き・不向き" },
     { id: "tips", label: "賢い併用テクニック" },
     { id: "faq", label: "よくある質問（FAQ）" },
     { id: "summary", label: "まとめ" },
@@ -255,13 +255,13 @@ export default function SuperVsTakuhaiReitouBentoPage() {
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
-            「スーパーで売ってる冷凍弁当でいいのでは？」「宅配は高そうだから手を出しにくい」——この記事を読んでくださっている方は、おそらくそんな疑問をお持ちのはず。
+            「スーパーで売ってる冷凍弁当でいいのでは？」「宅配は高そうだから手を出しにくい」——この記事を読んでくださっている方は、このような疑問をお持ちの方も多いのではないでしょうか。
           </p>
           <p className="mb-3">
             たしかに、スーパーの冷凍食品コーナーには魅力的な冷凍弁当が並んでいます。一方で、近年は宅配冷凍弁当のクオリティ・コスパも飛躍的に向上し、選択肢は多様化しています。
           </p>
           <p>
-            この記事では、<strong>スーパーの冷凍弁当と宅配の冷凍弁当を価格・栄養・利便性・味の4軸で比較</strong>。あなたのライフスタイルに最適な選び方が見つかるよう、徹底的に解説します。
+            この記事では、<strong>スーパーの冷凍弁当と宅配の冷凍弁当を価格・栄養・利便性・味の4軸で比較します</strong>。ライフスタイルに合った選び方の参考となるよう、各項目を解説します。
           </p>
         </div>
 
@@ -271,7 +271,7 @@ export default function SuperVsTakuhaiReitouBentoPage() {
 
         <SubHeading>スーパーの冷凍弁当とは</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          イオン・西友・ライフ・コープなどの大手スーパーや、業務スーパーで購入できる冷凍弁当のことです。大手食品メーカー（ニチレイ・味の素冷凍食品・ニッスイ・マルハニチロなど）が製造し、1食300〜500円程度の価格帯が中心。レンジで温めるだけで食べられる完成品です。
+          イオン・西友・ライフ・コープなどの大手スーパーや、業務スーパーで購入できる冷凍弁当のことです。大手食品メーカー（ニチレイ・味の素冷凍食品・ニッスイ・マルハニチロなど）が製造し、1食300〜500円程度の価格帯が中心です。レンジで温めるだけで食べられる完成品です。
         </p>
 
         <SubHeading>宅配冷凍弁当とは</SubHeading>
@@ -309,7 +309,7 @@ export default function SuperVsTakuhaiReitouBentoPage() {
 
         <SubHeading>宅配冷凍弁当の栄養設計</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          宅配冷凍弁当の大きな強みが<strong>「目的別に厳密に栄養設計されている」</strong>こと。たとえば以下のような商品があります（具体的な数値は各社公式の最新情報を確認してください）。
+          宅配冷凍弁当の大きな強みが<strong>「目的別に厳密に栄養設計されている」</strong>ことです。たとえば以下のような商品があります（具体的な数値は各社公式の最新情報を確認してください）。
         </p>
 
         <ul className="list-disc list-inside space-y-1 text-sm mb-6">
@@ -333,7 +333,7 @@ export default function SuperVsTakuhaiReitouBentoPage() {
 
         <SubHeading>買い物の手間</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          スーパーは「自分で店に行って商品を選ぶ」必要があります。重い冷凍弁当を何個も持ち帰るのは体力的な負担も大きいです。一方、宅配は<strong>自宅まで届くため買い物が一切不要</strong>。雨の日も猛暑日も悪天候を気にせず食事ができます。
+          スーパーは「自分で店に行って商品を選ぶ」必要があります。重い冷凍弁当を何個も持ち帰るのは体力的な負担も大きいです。一方、宅配は<strong>自宅まで届くため買い物が一切不要です</strong>。雨の日も猛暑日も悪天候を気にせず食事ができます。
         </p>
 
         <SubHeading>冷凍庫の保管</SubHeading>
@@ -343,7 +343,7 @@ export default function SuperVsTakuhaiReitouBentoPage() {
 
         <SubHeading>温め方の手間</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          どちらも電子レンジで温めるだけで食べられる点は同じです。所要時間は3〜7分程度。温め方のコツは関連記事の冷凍弁当の温め方ガイドで詳しく解説しています。
+          どちらも電子レンジで温めるだけで食べられる点は同じです。所要時間は3〜7分程度です。温め方のコツは関連記事の冷凍弁当の温め方ガイドで詳しく解説しています。
         </p>
 
         <SubHeading>定期配送の手続き</SubHeading>
@@ -355,7 +355,7 @@ export default function SuperVsTakuhaiReitouBentoPage() {
 
         <SubHeading>スーパー冷凍弁当の味</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          大手食品メーカーの本格的なレシピで、「定番のおいしさ」を期待できます。ハンバーグ・チャーハン・パスタなど、しっかり味付けされたメニューが中心。「冷凍食品らしいおいしさ」をしっかり楽しめます。
+          大手食品メーカーの本格的なレシピで、「定番のおいしさ」を期待できます。ハンバーグ・チャーハン・パスタなど、しっかり味付けされたメニューが中心です。「冷凍食品らしいおいしさ」をしっかり楽しめます。
         </p>
 
         <SubHeading>宅配冷凍弁当の味</SubHeading>
@@ -398,7 +398,7 @@ export default function SuperVsTakuhaiReitouBentoPage() {
           ]}
         />
 
-        <SectionHeading id="user-type">あなたはどっちが向いている？</SectionHeading>
+        <SectionHeading id="user-type">タイプ別の向き・不向き</SectionHeading>
 
         <SubHeading>スーパーが向いている人</SubHeading>
         <div className="bg-green-50 rounded-xl p-5 mb-6">
@@ -473,7 +473,7 @@ export default function SuperVsTakuhaiReitouBentoPage() {
 
         <div className="bg-cream rounded-xl p-6 mb-8">
           <p className="text-sm leading-relaxed mb-4">
-            スーパーの冷凍弁当と宅配冷凍弁当は、それぞれ強みと弱みがあります。「どちらが優れている」のではなく、<strong>あなたのライフスタイル・健康目的・冷凍庫スペース・予算</strong>によって最適解が変わります。
+            スーパーの冷凍弁当と宅配冷凍弁当は、それぞれ強みと弱みがあります。「どちらが優れている」のではなく、<strong>ライフスタイル・健康目的・冷凍庫スペース・予算</strong>によって適した選択肢が変わります。
           </p>
           <ul className="list-disc list-inside space-y-2 text-sm mb-4">
             <li><strong>本体価格・買い物が苦にならない</strong> → スーパー</li>
@@ -491,7 +491,7 @@ export default function SuperVsTakuhaiReitouBentoPage() {
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
-          <p className="font-bold mb-2">あわせて読みたい</p>
+          <p className="font-bold mb-2">関連記事</p>
           <Link href="/articles/reitou-bento-mazui/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
             冷凍弁当がまずい？原因と美味しく食べる7つのコツ
           </Link>
@@ -513,7 +513,7 @@ export default function SuperVsTakuhaiReitouBentoPage() {
             <div>
               <p className="font-bold text-sm">宅食・栄養食編集部</p>
               <p className="text-xs text-warm-gray">
-                宅配弁当・栄養食の専門ライターチーム。各社公式情報をもとに、公平な比較情報をお届けします。
+                宅配弁当・栄養食を専門とする編集チームです。各社公式情報をもとに、公平な比較情報の提供に努めます。
               </p>
             </div>
           </div>

@@ -22,7 +22,7 @@ const zenMaruGothic = Zen_Maru_Gothic({
 const SITE_NAME = "宅食びより";
 const SITE_URL = "https://takushoku-biyori.com";
 const SITE_DESCRIPTION =
-  "宅食びよりは、宅配弁当・栄養食を徹底比較するガイドサイトです。nosh・三ツ星ファーム・ウェルネスダイニングなど人気サービスを価格・味・栄養で比較し、あなたに最適な1社が見つかります。";
+  "宅食びよりは、宅配弁当・栄養食の比較ガイドサイトです。nosh・三ツ星ファーム・ウェルネスダイニングなどの主要サービスを、公式情報にもとづく料金・送料・栄養成分と出典付きの口コミで比較しています。";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -197,9 +197,9 @@ function Footer() {
               {SITE_NAME}
             </p>
             <p className="text-sm text-white/70 leading-relaxed">
-              宅配弁当・栄養食を徹底比較。
+              宅配弁当・栄養食の比較情報を掲載しています。
               <br />
-              あなたに最適な1社が見つかります。
+              ご利用前に、各社の公式サイトにて最新情報をご確認ください。
             </p>
           </div>
           <div>
