@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "【2026年最新】糖質制限におすすめの宅配弁当ランキングTOP5｜低糖質・糖質オフの宅食を比較";
+  "糖質制限の宅配弁当ランキングTOP5【2026年10月】｜9社の糖質制限コースの糖質量を公式値で比較";
 const ARTICLE_DESCRIPTION =
-  "糖質制限におすすめの宅配弁当を公式情報と出典付きの口コミで比較します。nosh・食宅便・ウェルネスダイニングなど人気5社を糖質量・価格・味で比較し、ランキングTOP5を紹介します。糖質制限のレベル別おすすめ、1日の糖質量の目安、ケトジェニック向けメニューまで解説します。";
+  "糖質制限向けの宅配弁当を、各社が公式に公表する1食あたりの糖質の基準と税込価格で比較します。食宅便・ウェルネスダイニング・つるかめ・まごころケア食・nosh・三ツ星ファームなど9社の糖質制限コースの比較表、選定基準、送料込み1食単価の計算方法、ランキングTOP5を掲載します（2026年10月17日更新）。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/toushitsu-seigen-osusume/";
 
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-16T00:00:00+09:00",
-    modifiedTime: "2026-10-16T00:00:00+09:00",
+    modifiedTime: "2026-10-17T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -32,12 +32,12 @@ const faqData = [
   {
     question: "糖質制限は1日何g以下にすればいいですか？",
     answer:
-      "糖質制限には3つのレベルがあります。ロカボ（緩やかな糖質制限）は1日70〜130g、スタンダード糖質制限は1日50〜100g、スーパー糖質制限（ケトジェニック）は1日20〜50gが目安です。初めて糖質制限をする方はロカボ（1食20〜40g）からスタートし、体調を見ながら徐々に減らすのがおすすめです。noshの全メニュー糖質30g以下はスタンダード糖質制限レベルで、無理なく続けられます。",
+      "よく使われる目安は、一般社団法人 食・楽・健康協会が提唱する「ロカボ」で、1食20〜40g・デザート10g以下・1日70〜130gです（locabo.net「ロカボとは」・2026年10月17日確認）。これより厳しい制限は、持病の有無や体質によって適切な量が変わるため、医師や管理栄養士に相談して決めてください。noshの全メニュー糖質30g以下は、ロカボの1食の範囲に収まる基準です。",
   },
   {
     question: "糖質制限の宅配弁当は美味しいですか？味が薄くないですか？",
     answer:
-      "糖質制限の宅配弁当は「低糖質＝味が薄い」というイメージと異なり、むしろ味付けがしっかりしている商品が多い傾向があります。糖質を減らす代わりに脂質やたんぱく質で旨味を出すため、満足感があります。特にnoshや三ツ星ファームはプロの料理人が監修しており、「低糖質とは思えない美味しさ」という口コミが多数です。食宅便の低糖質セレクトも日清医療食品の調理技術で、糖質10g以下ながら物足りなさを感じにくい工夫がされています。",
+      "糖質制限の宅配弁当は「低糖質＝味が薄い」というイメージと異なり、むしろ味付けがしっかりしている商品が多い傾向があります。糖質を減らす代わりに脂質やたんぱく質で旨味を出すため、満足感があります。低糖質セレクトを実食したROOMIEは「品数が多くて、どれもボリュームがあること」を評価しています。味の感じ方には個人差があるため、各社のお試しや少ない食数のセットで確かめるのがおすすめです。",
   },
   {
     question: "糖質制限で頭がぼーっとするのは大丈夫ですか？",
@@ -176,7 +176,7 @@ export default function ToushitsuSeigenOsusumePage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-16T00:00:00+09:00",
-    dateModified: "2026-10-16T00:00:00+09:00",
+    dateModified: "2026-10-17T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -199,8 +199,8 @@ export default function ToushitsuSeigenOsusumePage() {
     itemListOrder: "https://schema.org/ItemListOrderDescending",
     numberOfItems: 5,
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "nosh（ナッシュ）", description: "全メニュー糖質30g以下。100種類以上から自由に選べてアプリで糖質量を確認しながら注文可能です。", url: "https://nosh.jp/" },
-      { "@type": "ListItem", position: 2, name: "食宅便（低糖質セレクト）", description: "糖質10g以下の業界最厳の糖質制限。日清医療食品の管理栄養士設計。ケトジェニックにも対応。", url: "https://shokutakubin.com/" },
+      { "@type": "ListItem", position: 1, name: "nosh（ナッシュ）", description: "全メニュー糖質30g以下。約100種類から自由に選べ、公式メニュー一覧で各メニューの糖質量を確認できます。", url: "https://nosh.jp/" },
+      { "@type": "ListItem", position: 2, name: "食宅便（低糖質セレクト）", description: "低糖質セレクトは糖質10g以下。日清医療食品が運営。", url: "https://shokutakubin.com/" },
       { "@type": "ListItem", position: 3, name: "三ツ星ファーム", description: "糖質25g以下・たんぱく質15g以上。プロの料理人が監修し、低糖質と味の両立を図っています。", url: "https://mitsuboshifarm.jp/" },
       { "@type": "ListItem", position: 4, name: "ウェルネスダイニング", description: "糖質＆カロリー制限気配り宅配食（糖質15g以下）。管理栄養士への無料相談があります。糖尿病の方にも。", url: "https://www.wellness-dining.com/" },
       { "@type": "ListItem", position: 5, name: "まごころケア食", description: "糖質制限食（糖質15g以下）を1食394円〜（21食・お得便）で提供。送料980円込みでも1食約441円です。", url: "https://magokoro-care-shoku.com/" },
@@ -226,6 +226,7 @@ export default function ToushitsuSeigenOsusumePage() {
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-04-16">公開: 2026年4月16日</time>
+            <time dateTime="2026-10-17">更新: 2026年10月17日</time>
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
@@ -260,7 +261,7 @@ export default function ToushitsuSeigenOsusumePage() {
           {
             icon: "&#127860;",
             title: "低糖質なのに美味しい。糖質制限の「我慢」が減る",
-            text: "自分で低糖質料理を作ると、味が単調になりがちで飽きて挫折するケースが少なくありません。宅配弁当はプロの料理人や管理栄養士が「低糖質でも美味しい」レシピを開発しており、60〜160種類以上のメニューから選べます。noshの低糖質ドーナツ（糖質13.4g）やロールケーキ（糖質4.7g）など、スイーツまで低糖質で楽しめるのは宅配弁当ならではの特徴です。「我慢しないで糖質制限」が実現できます。",
+            text: "自分で低糖質料理を作ると、味が単調になりがちで飽きて挫折するケースが少なくありません。宅配弁当はプロの料理人や管理栄養士が「低糖質でも美味しい」レシピを開発しており、60〜160種類以上のメニューから選べます。noshにはスイーツもあり、たとえば「しっとりかぼちゃケーキ(3個)」は糖質8.3gです（nosh公式メニュー一覧・2026年10月17日確認）。「我慢しないで糖質制限」が実現できます。",
           },
           {
             icon: "&#9201;",
@@ -270,7 +271,7 @@ export default function ToushitsuSeigenOsusumePage() {
           {
             icon: "&#128202;",
             title: "PFCバランスが最適化されており、筋肉を落とさずに糖質制限できる",
-            text: "糖質制限で最も注意すべきは「糖質を減らした分のカロリーをどこで補うか」です。たんぱく質と良質な脂質で補わないと、筋肉量が減り基礎代謝が下がってリバウンドします。宅配弁当はPFC（たんぱく質・脂質・炭水化物）のバランスが計算されており、noshの平均たんぱく質は約20g、三ツ星ファームは15g以上です。糖質を抑えながらたんぱく質をしっかり確保する設計で、「筋肉を維持しながら体脂肪を減らす」理想的な糖質制限をサポートします。",
+            text: "糖質制限で最も注意すべきは「糖質を減らした分のカロリーをどこで補うか」です。たんぱく質と良質な脂質で補わないと、筋肉量が減り基礎代謝が下がってリバウンドします。宅配弁当はPFC（たんぱく質・脂質・炭水化物）のバランスが計算されており、noshの主菜87品のたんぱく質は平均17.9g（nosh公式メニュー一覧・2026年10月17日確認）、三ツ星ファームは基準が15g以上です。糖質を抑えながらたんぱく質をしっかり確保する設計で、「筋肉を維持しながら体脂肪を減らす」理想的な糖質制限をサポートします。",
           },
         ].map((item) => (
           <div key={item.title} className="flex gap-4 mb-5">
@@ -291,9 +292,9 @@ export default function ToushitsuSeigenOsusumePage() {
 
         {[
           { num: 1, title: "1食あたりの糖質量（自分の制限レベルに合っているか）", text: "宅配弁当の糖質量は、nosh（30g以下）、三ツ星ファーム（25g以下）、ウェルネスダイニング（15g以下）、食宅便の低糖質セレクト（10g以下）と大きく異なります。ロカボ（緩やかな糖質制限）ならnoshで対応できます。スタンダード糖質制限なら三ツ星ファームかウェルネスダイニングが適しています。ケトジェニック（スーパー糖質制限）なら食宅便の低糖質セレクトが適しています。自分の糖質制限レベルに合った糖質量のサービスを選ぶことが最も重要です。" },
-          { num: 2, title: "たんぱく質量（糖質を減らした分、たんぱく質で補えるか）", text: "糖質制限では、糖質を減らした分のカロリーをたんぱく質と脂質で補う必要があります。1食あたりたんぱく質15g以上を確保することをおすすめします。nosh（平均20g）、三ツ星ファーム（15g以上）は十分です。食宅便の低糖質セレクトは糖質10g以下のストイックさですが、たんぱく質は約15gで合格ラインです。ウェルネスダイニングは約15gとバランス型です。たんぱく質が不足すると筋肉量が減るため、必ずご確認ください。" },
-          { num: 3, title: "メニューの豊富さ（糖質制限でも飽きずに続けられるか）", text: "糖質制限の挫折理由で最も多いのは「飽きる」ことです。毎日サラダチキンとゆで卵では続きません。noshは100種類以上（低糖質スイーツ含む）、三ツ星ファームは125種類以上（2026年10月9日・公式確認）、食宅便は160種類以上とメニューが豊富です。毎週新メニューが追加されるnoshは、長期の糖質制限でも飽きにくい点が特長です。低糖質のドーナツやロールケーキがあるのも、甘いもの好きの方には嬉しいポイントです。" },
-          { num: 4, title: "価格（糖質制限は長期戦。続けられるコストか）", text: "糖質制限は最低3ヶ月、理想的には6ヶ月以上続けて初めて効果が定着します。1食あたりnosh 612円〜（12食・2026年10月10日・公式確認）、食宅便 740円（低糖質セレクト7食・2026年10月12日・公式確認）、まごころケア食 394円〜（21食・お得便・送料980円別）。週5回利用で月額は9,254円（まごころケア食・送料込み）〜18,360円です（食宅便 低糖質セレクト7食×3回・定期送料込み）。3ヶ月で約2.8〜5.5万円。この金額を無理なく続けられるかをご確認ください。nosh clubは累計購入数に応じた割引で、最高ランク（累計280食）なら12食で1食492円まで下がります。" },
+          { num: 2, title: "たんぱく質量（糖質を減らした分、たんぱく質で補えるか）", text: "糖質制限では、糖質を減らした分のカロリーをたんぱく質と脂質で補う必要があります。1食あたりたんぱく質15g以上を確保することをおすすめします。nosh（主菜87品の平均17.9g）、三ツ星ファーム（基準15g以上）は公式の値で確認できます。食宅便の低糖質セレクト・ウェルネスダイニングの糖質＆カロリー制限は、たんぱく質の基準を公表していないため、商品ごとの栄養表示で確認してください。たんぱく質が不足すると筋肉量が減るため、必ずご確認ください。" },
+          { num: 3, title: "メニューの豊富さ（糖質制限でも飽きずに続けられるか）", text: "同じものばかりでは続けにくいため、メニュー数と選べるかどうかを確認します。noshは約100種類（主菜87品＋スイーツ等・2026年10月17日・公式確認）、三ツ星ファームは125種類以上（2026年10月9日・公式確認）から自分で選べます。食宅便の低糖質セレクト・ウェルネスダイニング・まごころケア食はおまかせのセットです。" },
+          { num: 4, title: "価格（糖質制限は長期戦。続けられるコストか）", text: "糖質制限は続けることが前提になるため、月額で考えることが大切です。1食あたりnosh 612円〜（12食・2026年10月10日・公式確認）、食宅便 740円（低糖質セレクト7食・2026年10月12日・公式確認）、まごころケア食 394円〜（21食・お得便・送料980円別）。週5回利用で月額は9,254円（まごころケア食・送料込み）〜18,360円です（食宅便 低糖質セレクト7食×3回・定期送料込み）。3ヶ月で約2.8〜5.5万円。この金額を無理なく続けられるかをご確認ください。nosh clubは累計購入数に応じた割引で、最高ランク（累計280食）なら12食で1食492円まで下がります。" },
         ].map((point) => (
           <div key={point.num} className="flex gap-4 mb-5">
             <span className="flex-shrink-0 w-8 h-8 bg-accent text-white rounded-full flex items-center justify-center text-sm font-bold">{point.num}</span>
@@ -320,8 +321,19 @@ export default function ToushitsuSeigenOsusumePage() {
         <SectionHeading id="ranking">【ランキング】糖質制限におすすめの宅配弁当TOP5</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          糖質量・たんぱく質・味・メニューの豊富さ・価格の5項目で総合評価し、糖質制限におすすめの宅配弁当TOP5を選出しました。
+          糖質量・たんぱく質・メニューの選びやすさ・価格の4項目で総合評価し、糖質制限におすすめの宅配弁当TOP5を選出しました。
         </p>
+
+        <div className="border border-warm-border rounded-xl p-5 mb-8 text-sm leading-relaxed">
+          <p className="font-bold mb-2">選定基準と調査方法</p>
+          <ul className="list-disc list-inside space-y-1 mb-2">
+            <li><strong>対象:</strong> 全国に配送する冷凍の宅配弁当のうち、1食あたりの糖質の基準（「○g以下」）を公式サイトで公表しているコースがあるサービス</li>
+            <li><strong>糖質量:</strong> 各社の公式表記をそのまま掲載します。「以下」は上限値、「平均」は平均値で、意味が違うため並べて比べる際は注意してください</li>
+            <li><strong>価格:</strong> 公式サイトの税込価格。送料込みの1食単価は「（セット価格＋定期便の送料）÷食数」で計算しています</li>
+            <li><strong>確認日:</strong> 各数値の横または表の注記に、公式サイトで確認した日付を記載しています</li>
+          </ul>
+          <p className="text-xs text-warm-gray">順位は宅食びより編集部が上記の項目で評価したもので、広告掲載の有無は順位に影響させていません。実食による評価は行っていないため、味については出典を明記した第三者の実食レビューを参照しています。</p>
+        </div>
 
         <RankingCard
           rank={1}
@@ -331,25 +343,25 @@ export default function ToushitsuSeigenOsusumePage() {
           features={[
             "全メニュー糖質30g以下・塩分2.5g以下",
             "100種類以上（スイーツ含む）から自由に選択",
-            "アプリで糖質量をフィルタリング",
+            "公式メニュー一覧で全メニューの糖質量を確認できる",
             "nosh club割引（最高ランクで12食1食492円）",
           ]}
           price="612円〜（12食プラン）"
           shipping="1,166円（関東・4〜12食）"
           pros={[
-            "アプリで「糖質の低い順」にソートして選べる",
-            "低糖質スイーツ（ドーナツ・ロールケーキ等）あり",
-            "100種類以上のメニューで飽きにくい構成です。毎週新メニュー追加",
+            "メニューを自分で選べる（主菜87品の糖質7.7〜29.7g）",
+            "低糖質スイーツあり（しっとりかぼちゃケーキ(3個) 糖質8.3g など）",
+            "約100種類（主菜87品＋スイーツ等）から選べて飽きにくい",
             "nosh club最高ランクで1食492円（12食）",
           ]}
           cons={[
             "糖質30g以下は「ロカボ」レベルです。厳密な制限には物足りない場合も",
-            "メニューによって糖質量にばらつき（5g〜30g）",
+            "メニューによって糖質量に差がある（主菜87品で7.7〜29.7g・中央値20.2g）",
             "送料が地域差大",
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
-          糖質制限で最もおすすめなのがnosh。全メニュー糖質30g以下のロカボ〜スタンダード糖質制限に対応し、アプリの糖質フィルター機能で「糖質の低い順」にメニューをソートできるのが圧倒的に便利です。糖質5g台の超低糖質メニューもあり、選び方次第でケトジェニックレベルの糖質制限も可能です。低糖質ドーナツ（糖質13.4g）やロールケーキ（糖質4.7g）など、スイーツまで低糖質なのは他社にない強みです。詳しくは<Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline">nosh(ナッシュ)の口コミ・評判を徹底調査</Link>をご覧ください。
+          noshは全メニュー糖質30g以下で、ロカボ（1食20〜40g）の範囲に収まります。メニューを自分で選べるため、公式メニュー一覧で糖質量を見て低いものを選べば、さらに抑えられます。2026年10月17日の公式メニュー一覧では、主菜87品の糖質は7.7〜29.7g（中央値20.2g）で、最も低いのは「シビれる辛味のスタミナ豚しゃぶ」の7.7gです。詳しくは<Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline">nosh(ナッシュ)の口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
 
         <RankingCard
@@ -360,25 +372,25 @@ export default function ToushitsuSeigenOsusumePage() {
           features={[
             "全メニュー糖質10g以下",
             "日清医療食品の管理栄養士設計",
-            "約160種類以上のメニュー",
+            "7食5,180円（1食740円）",
             "らくらく定期便は送料940円（都度便1,330円）",
           ]}
           price="740円（低糖質セレクト7食5,180円）"
           shipping="940円（定期）／1,330円（都度）"
           pros={[
-            "糖質10g以下は業界最厳です。ケトジェニックに最適",
+            "糖質10g以下は、この記事で比べたコースで最も低い上限",
             "日清医療食品の医療レベル栄養管理",
             "公式アプリで注文・配送スケジュール変更ができる",
-            "メニュー数160種類以上で飽きにくい",
+            "7食単位で頼める",
           ]}
           cons={[
             "メニューが自分で選べない（セット制）",
-            "味はnosh・三ツ星ファームに劣る",
+            "たんぱく質の基準は公表されていない",
             "送料込みでは1食約874円（定期）とnoshより高め",
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
-          本格的なケトジェニックダイエットや、糖尿病で厳密な糖質管理が必要な方には食宅便の低糖質セレクトです。糖質10g以下はnosh（30g以下）の3分の1で、1食のご飯なし＋低糖質セレクトなら糖質10g以下の超低糖質食が実現しています。医療食品メーカーの信頼感も安心材料です。詳しくは<Link href="/articles/shokutakubin-reviews/" className="text-accent hover:text-accent-dark underline">食宅便の口コミ・評判を徹底調査</Link>をご覧ください。
+          1食の糖質をできるだけ低く抑えたい方には食宅便の低糖質セレクトです。糖質10g以下は、nosh（30g以下）の3分の1の上限です。運営は施設給食大手の日清医療食品です。詳しくは<Link href="/articles/shokutakubin-reviews/" className="text-accent hover:text-accent-dark underline">食宅便の口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
 
         <RankingCard
@@ -395,7 +407,7 @@ export default function ToushitsuSeigenOsusumePage() {
           price="711円〜（21食・通常の定期便）"
           shipping="990円（北海道・沖縄2,500円）"
           pros={[
-            "低糖質なのに味のクオリティが業界トップ",
+            "プロの料理人が監修したメニュー",
             "糖質25g以下はスタンダード糖質制限に最適",
             "たんぱく質15g以上の基準で食事管理しやすい",
           ]}
@@ -430,11 +442,11 @@ export default function ToushitsuSeigenOsusumePage() {
           cons={[
             "メニューが自分で選べない",
             "味は素朴（レストラン品質ではない）",
-            "解約が電話のみ",
+            "休止・解約の締切がお届け予定日の7日前と早め",
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
-          糖尿病の食事管理や、医師から糖質制限を指示された方にはウェルネスダイニングです。糖質15g以下・塩分2.0g以下で、管理栄養士に「自分のHbA1cの数値に合った食事量」を無料で相談できるのは他社にない安心感です。詳しくは<Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark underline">ウェルネスダイニングの口コミ・評判を徹底調査</Link>をご覧ください。
+          糖尿病の食事管理や、医師から糖質制限を指示された方にはウェルネスダイニングです。糖質15g以下・塩分2.0g以下で、管理栄養士に無料で相談できる点も安心材料です。詳しくは<Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark underline">ウェルネスダイニングの口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
 
         <RankingCard
@@ -470,12 +482,12 @@ export default function ToushitsuSeigenOsusumePage() {
 
         <SubHeading>nosh - 糖質制限の総合力No.1</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          noshが糖質制限で1位の理由は「選ぶ楽しさ」と「続けやすさ」です。アプリの糖質フィルター機能で、自分の制限レベルに合ったメニューだけを表示して選べます。糖質5g台の超低糖質メニュー（例：チキンのバジルオイル焼き 糖質4.3g）を選べばケトジェニックにも対応可能です。低糖質スイーツまであるのはnoshだけの特権で、「甘いものが食べたい」ストレスを低糖質で解消できます。nosh clubの継続割引で長期利用ほどお得になるため、「3ヶ月以上の糖質制限」を計画している方に最適です。
+          noshが糖質制限で1位の理由は「選ぶ楽しさ」と「続けやすさ」です。公式メニュー一覧に全メニューの糖質量が載っているため、自分の制限レベルに合ったメニューを選べます。糖質が10g未満の主菜もあります（例：シビれる辛味のスタミナ豚しゃぶ 7.7g・2026年10月17日確認）。スイーツも糖質30g以下の基準で作られており、「甘いものが食べたい」ときの選択肢になります。nosh clubの継続割引で長期利用ほどお得になるため、「3ヶ月以上の糖質制限」を計画している方に最適です。
         </p>
 
         <SubHeading>食宅便 - ケトジェニックの最適解</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          食宅便の低糖質セレクトは、全メニュー糖質10g以下という業界最厳の糖質制限です。ケトジェニックダイエット（1日の糖質20〜50g）を実践する方にとって、1食の糖質を10g以下に確実に抑えられるのは大きな利点です。日清医療食品の管理栄養士が設計しており、糖質を極限まで抑えながらも必要な栄養素はしっかり確保しています。価格は7食5,180円（1食740円）で、らくらく定期便の送料940円を含めると1食約874円です（2026年10月12日・公式確認）。糖尿病で医師から厳密な糖質管理を指示されている方にも安心して利用できます。
+          食宅便の低糖質セレクトは、全メニュー糖質10g以下で、この記事で比べた糖質制限コースの中で最も低い上限です。1食の糖質を確実に10g以下に抑えたい方に向いています。価格は7食5,180円（1食740円）で、らくらく定期便の送料940円を含めると1食約874円です（2026年10月12日・公式確認）。糖尿病などで食事の指示を受けている方は、主治医や管理栄養士に相談したうえでご利用ください。
         </p>
 
         <SubHeading>三ツ星ファーム - 美味しさNo.1の糖質制限</SubHeading>
@@ -485,7 +497,7 @@ export default function ToushitsuSeigenOsusumePage() {
 
         <SubHeading>ウェルネスダイニング - 糖尿病対応の安心感</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          ウェルネスダイニングの糖質＆カロリー制限気配り宅配食は、糖質15g以下・塩分2.0g以下・カロリー240kcal±10%。管理栄養士への無料電話相談で「HbA1cが7.0なのですが、どのコースがいい？」といった医療レベルの相談にも対応しています。糖尿病の食事管理で「病院の栄養指導に近い品質」を自宅で受けられるのは、ウェルネスダイニングならではの強みです。送料は定期注文の14食・21食なら無料、7食は440円です（2026年10月10日・公式確認）。
+          ウェルネスダイニングの糖質＆カロリー制限気配り宅配食は、糖質15g以下・塩分2.0g以下・カロリー240kcal±10%。管理栄養士に無料で相談でき、コース選びの相談にも使えます。休止・解約はWebフォーム・マイページ・電話で、お届け予定日の7日前までに手続きします（2026年10月10日・公式確認）。送料は定期注文の14食・21食なら無料、7食は440円です（2026年10月10日・公式確認）。
         </p>
 
         <SubHeading>まごころケア食 - 低コストで続ける糖質制限</SubHeading>
@@ -496,15 +508,34 @@ export default function ToushitsuSeigenOsusumePage() {
         {/* ===== 料金比較 ===== */}
         <SectionHeading id="price-compare">料金比較表</SectionHeading>
 
-        <SubHeading>5社の糖質量・料金比較一覧</SubHeading>
+        <SubHeading>糖質制限コースの公式基準 9社比較（糖質の低い順）</SubHeading>
+        <p className="text-sm mb-4 leading-relaxed">ランキングの5社以外も含め、糖質制限向けのコースを持つ9社の公式の基準を並べました。</p>
+        <ComparisonTable
+          headers={["サービス・コース", "1食の糖質", "熱量", "塩分", "1食（税込）", "送料", "確認日"]}
+          rows={[
+            ["食宅便 低糖質セレクト", "10g以下", "−", "−", "740円（7食5,180円）", "定期940円／都度1,330円", "2026/10/12"],
+            ["筋肉食堂DELI ローカーボ", "平均12.2g", "平均269kcal", "−", "994〜1,048円（定期21〜7食）", "関東1,640〜1,840円", "2026/10/17"],
+            ["ウェルネスダイニング 糖質＆カロリー制限", "15g以下", "240kcal±10%", "2.0g以下", "約770円〜（定期21食）", "定期14・21食無料（7食440円）", "2026/10/10・10/15"],
+            ["Dr.つるかめキッチン 糖質制限気づかい御膳", "15g以下", "240kcal±10%", "2.0g以下", "約741円（定期7食5,184円）", "定期は無料", "2026/10/14"],
+            ["まごころケア食 糖質制限食", "15g以下", "−", "2.0g以下", "394〜426円（お得便）", "980円（沖縄・離島1,480円）", "2026/10/12・10/16"],
+            ["Muscle Deli LOW CARB", "15g以下", "350kcal以上", "−", "−（4プランで1,109〜1,557円）", "−", "2026/10/14"],
+            ["タイヘイ ヘルシー御膳 糖質少なめ", "17.0g以下", "−", "2.2g以下", "783円〜", "条件を満たすと無料", "2026/10/10"],
+            ["三ツ星ファーム", "25g以下（一部除く）", "350kcal以下", "−", "711円〜（21食・定期）", "990円", "2026/10/9"],
+            ["nosh（ナッシュ）", "30g以下（主菜87品は7.7〜29.7g）", "−", "2.5g以下", "612〜719円", "1,023円〜（地域・食数別）", "2026/10/10・10/17"],
+          ]}
+        />
+        <p className="text-xs text-warm-gray -mt-4 mb-4">※「−」は公式サイトでそのコースの基準を確認できなかった項目です。筋肉食堂DELIは上限ではなく公式のコース平均値です。Muscle Deliは4プランの単品価格（税込）÷食数の範囲で、LOW CARB単独の価格は記載していません。</p>
+        <p className="text-sm mb-6 leading-relaxed">各社の詳しい料金・口コミは<Link href="/articles/shokutakubin-reviews/" className="text-accent underline">食宅便</Link>・<Link href="/articles/kinnikushokudo-deli-kuchikomi/" className="text-accent underline">筋肉食堂DELI</Link>・<Link href="/articles/wellness-dining-reviews/" className="text-accent underline">ウェルネスダイニング</Link>・<Link href="/articles/tsurukame-reviews/" className="text-accent underline">Dr.つるかめキッチン</Link>・<Link href="/articles/magokoro-care-reviews/" className="text-accent underline">まごころケア食</Link>・<Link href="/articles/muscle-deli-reviews/" className="text-accent underline">Muscle Deli</Link>・<Link href="/articles/taihei-family-set-kuchikomi/" className="text-accent underline">タイヘイ</Link>・<Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent underline">三ツ星ファーム</Link>・<Link href="/articles/nosh-reviews/" className="text-accent underline">nosh</Link>の各記事にまとめています。</p>
+
+        <SubHeading>ランキング5社の糖質量・料金比較一覧</SubHeading>
         <ComparisonTable
           headers={["サービス", "1食あたり", "送料", "糖質量", "たんぱく質", "メニュー数"]}
           rows={[
-            ["nosh", "612円〜", "1,023円〜（地域別）", "30g以下", "平均20g", "100種類以上"],
-            ["食宅便（低糖質セレクト）", "740円", "940円（定期）／1,330円（都度）", "10g以下", "約15g", "160種類以上"],
+            ["nosh", "612円〜", "1,023円〜（地域別）", "30g以下", "主菜87品の平均17.9g", "主菜87品＋スイーツ等"],
+            ["食宅便（低糖質セレクト）", "740円", "940円（定期）／1,330円（都度）", "10g以下", "基準の公表なし", "おまかせ（7食単位）"],
             ["三ツ星ファーム", "711円〜", "990円", "25g以下（一部除く）", "15g以上（一部除く）", "125種類以上"],
-            ["ウェルネスダイニング", "約770円〜", "定期14・21食無料（7食440円）", "15g以下", "平均13.2g", "お任せ（選べない）"],
-            ["まごころケア食", "394円〜（21食・お得便）", "980円（沖縄・離島1,480円）", "15g以下", "約12g", "コース制"],
+            ["ウェルネスダイニング", "約770円〜", "定期14・21食無料（7食440円）", "15g以下", "基準の公表なし", "お任せ（選べない）"],
+            ["まごころケア食", "394円〜（21食・お得便）", "980円（沖縄・離島1,480円）", "15g以下", "基準の公表なし", "コース制"],
           ]}
         />
 
@@ -539,29 +570,30 @@ export default function ToushitsuSeigenOsusumePage() {
           各サービスの低糖質メニューを具体的に紹介します。「実際にどの程度の糖質量で、どんなメニューが食べられるのか」をイメージしていただけます。
         </p>
 
-        <SubHeading>nosh - 超低糖質メニューTOP5</SubHeading>
+        <SubHeading>nosh - 糖質の低い主菜TOP5（2026年10月17日・公式メニュー一覧）</SubHeading>
         <ComparisonTable
-          headers={["メニュー名", "糖質", "カロリー", "たんぱく質"]}
+          headers={["メニュー名", "糖質", "カロリー", "たんぱく質", "塩分"]}
           rows={[
-            ["チキンのバジルオイル焼き", "4.3g", "480kcal", "29.1g"],
-            ["焼き鳥の柚子胡椒", "5.4g", "429kcal", "25.8g"],
-            ["鮭の南蛮漬け", "8.2g", "198kcal", "16.8g"],
-            ["ロールケーキ（プレーン）", "4.7g", "161kcal", "3.2g"],
-            ["チョコレートドーナツ", "13.4g", "155kcal", "3.1g"],
+            ["シビれる辛味のスタミナ豚しゃぶ", "7.7g", "253kcal", "10.4g", "2.4g"],
+            ["鶏もも肉の炭火焼き〜極〜", "8.7g", "266kcal", "17.4g", "2.2g"],
+            ["鶏もも肉のとろみ白湯スープ", "9.4g", "254kcal", "17.1g", "2.5g"],
+            ["ふっくら白身魚のトマトチーズかけ", "9.7g", "220kcal", "18.8g", "2.2g"],
+            ["痺れる旨辛よだれ鶏", "10.2g", "329kcal", "18.3g", "2.4g"],
           ]}
         />
+        <p className="text-xs text-warm-gray -mt-4 mb-6">※nosh公式メニュー一覧（nosh.jp/menu）に掲載の主菜87品の栄養成分から、糖質の低い順に5品を掲載しています。メニューは入れ替わるため、注文時に公式サイトでご確認ください。</p>
 
         <SubHeading>糖質制限レベル別1日食事プラン例</SubHeading>
 
-        <p className="font-bold text-sm mt-6 mb-2">ロカボ（1日130g以下）- nosh利用</p>
+        <p className="font-bold text-sm mt-6 mb-2">ロカボ（1日70〜130g）- nosh利用</p>
         <ComparisonTable
           headers={["食事", "メニュー例", "糖質"]}
           rows={[
             ["朝食", "トースト1枚+チーズ+サラダ", "約30g"],
             ["昼食", "おにぎり1個+サラダチキン+味噌汁", "約40g"],
-            ["夕食", "nosh「チリハンバーグ」（ご飯なし）", "17.9g"],
-            ["間食", "nosh「ロールケーキ」", "4.7g"],
-            ["合計", "", "約92.6g"],
+            ["夕食", "nosh「チリハンバーグステーキ」（ご飯なし）", "18.8g"],
+            ["間食", "nosh「しっとりかぼちゃケーキ(3個)」", "8.3g"],
+            ["合計", "", "約97.1g"],
           ]}
         />
 
@@ -577,7 +609,7 @@ export default function ToushitsuSeigenOsusumePage() {
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
-          ケトジェニックは1日の糖質を50g以下に抑える高レベルの糖質制限です。食宅便の低糖質セレクト（10g以下）を夕食に使えば、残りの食事で40gの糖質枠があり、比較的余裕を持ってケトジェニックを実践できます。
+          1日50g以下のような厳しい糖質制限は、体調や持病によって向き不向きがあるため、医師に相談してから行ってください。食宅便の低糖質セレクト（10g以下）を夕食に使えば、残りの食事の糖質の枠を広く取れます。
         </p>
 
         {/* ===== FAQ ===== */}
@@ -639,7 +671,7 @@ export default function ToushitsuSeigenOsusumePage() {
           </div>
 
           <p className="text-sm leading-relaxed mb-4">
-            糖質制限初心者は<strong>nosh</strong>からスタートするのがおすすめです。全メニュー糖質30g以下のロカボレベルで無理なく始められ、アプリで糖質量を確認しながらメニューを選べます。
+            糖質制限初心者は<strong>nosh</strong>からスタートするのがおすすめです。全メニュー糖質30g以下でロカボ（1食20〜40g）の範囲に収まり、公式メニュー一覧で糖質量を確認しながらメニューを選べます。
           </p>
           <p className="text-sm leading-relaxed mb-4">
             厳密な糖質制限やケトジェニックを実践する方は<strong>食宅便の低糖質セレクト</strong>（糖質10g以下）。糖尿病の食事管理なら<strong>ウェルネスダイニング</strong>（管理栄養士に相談可能）が安心です。
@@ -694,6 +726,7 @@ export default function ToushitsuSeigenOsusumePage() {
             最新情報は各公式サイトでご確認ください。
             <Link href="/methodology/" className="text-accent hover:underline">評価方法・データ源</Link>をご参照ください。
           </p>
+          <p className="text-xs text-warm-gray mb-3">※ヨシケイ・コープデリの行は2026年10月16日に公式サイトで再確認した値です（表の下の注記にある両社の栄養値の記述より新しい情報です）。ヨシケイの1食はヨシケイ東京の冷凍弁当（シンプルミール3食1,290円＝430円・ベジミール2食1,490円＝745円）と、2025年9月のコース刷新後のミールキット等（2人用5日分の通常価格目安6,830〜9,200円÷10食＝約683〜920円）の範囲です。kcalの基準はバランスミール（1食400kcal以下）のみ公表されており、糖質・タンパク質・塩分は1食あたりの公表がないため「−」としています。コープデリは夕食宅配（舞菜）6コースの税込価格（舞菜ミニ弁当464円〜舞菜御膳・エネルギー塩分調整食842円）で、2食以上の同時注文で1食24円（税抜）引きになるのは舞菜弁当・舞菜おかず・舞菜しっかりおかず・舞菜御膳の4コースのみです。kcal・塩分は公式の献立表サンプル（2026年3月の1週間）の範囲で、糖質・タンパク質は公表がないため「−」としています。</p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border border-warm-border bg-white rounded-lg overflow-hidden">
               <thead className="bg-cream">
@@ -714,8 +747,8 @@ export default function ToushitsuSeigenOsusumePage() {
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ワタミの宅食</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">250-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-35以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">1.5-4.0以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">470-790</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://shokutakubin.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">食宅便</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">200-450</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">10-30</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0未満（ケア系）</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">690-740</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://muscledeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">Muscle Deli</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-750</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-75以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">20-50以上</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">1,109-1,557</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://yoshikei-dvlp.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ヨシケイ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.0</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">597-750</td></tr>
-<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.coopdeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">コープデリ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">350-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-3.5</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">550-700</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://yoshikei-dvlp.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ヨシケイ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">400以下（バランスミールのみ）</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">−</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">−</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">−</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">430-920</td></tr>
+<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.coopdeli.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">コープデリ</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">229-496</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">−</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">−</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">1.2-3.8</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">464-842</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://www.pal-system.co.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">パルシステム</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">300-500</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30-50</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15-25</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">580-720</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">ナッシュclub（割引）</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">260-400</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">30以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">14-20</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">492〜（最高ランク）</td></tr>
 <tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap"><a href="https://tsurukame-kitchen.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">つるかめキッチン</a></td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">240-300</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">15以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">13</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center">2.0-2.5以下</td><td className="border-b border-warm-border px-3 py-2 text-sm text-center font-semibold">663-787</td></tr>

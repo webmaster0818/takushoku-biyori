@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "筋肉食堂DELIの口コミ・評判は？まずいって本当？高たんぱく宅配食の味・料金を出典付きで中立検証【2026年10月最新】";
+  "筋肉食堂DELIはまずい？口コミ・評判と「しょっぱい・量が少ない」の声、料金を出典付きで検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
   "筋肉食堂DELIは「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。レストラン「筋肉食堂」発の高たんぱく冷凍宅配食の料金（ベーシック7食7,560円・2026年10月10日公式確認）・地域別送料・解約締切・マッスルデリとの違いも解説します。";
 const ARTICLE_URL =
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-10T00:00:00+09:00",
+    modifiedTime: "2026-10-17T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -42,7 +42,7 @@ const faqData = [
   {
     question: "筋肉食堂DELIに初回割引やお試しセットはある？",
     answer:
-      "2026年10月10日に編集部が公式サイトを確認した時点では、コース詳細ページに初回限定割引の表記はありませんでした（定期購入が単品比15%オフ、継続で会員ランクが上がり最大15%割引になる常設の仕組みはあり）。公式トップには「期間限定 1食805円～（税抜）」などの表示がありますが、適用条件は確認できませんでした。比較サイトに掲載されている「初回50%OFF」等の情報は公式で確認できなかったため、最新のキャンペーンは必ず公式サイトでご確認ください。",
+      "2026年10月10日に編集部が公式サイトを確認した時点では、コース詳細ページに初回限定割引の表記はありませんでした（定期購入が単品比13〜17%オフ（ローカーボ13%・ベーシック15%・バルクアップ17%）、継続で会員ランクが上がり最大15%割引になる常設の仕組みはあり）。公式トップには「期間限定 1食805円～（税抜）」などの表示がありますが、適用条件は確認できませんでした。比較サイトに掲載されている「初回50%OFF」等の情報は公式で確認できなかったため、最新のキャンペーンは必ず公式サイトでご確認ください。",
   },
   {
     question: "筋肉食堂DELIの送料は高い？",
@@ -350,7 +350,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-10-10T00:00:00+09:00",
+    dateModified: "2026-10-17T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -423,7 +423,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
-            <time dateTime="2026-10-10">更新: 2026年10月10日（公式で再確認）</time>
+            <time dateTime="2026-10-17">更新: 2026年10月17日（公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -506,7 +506,8 @@ export default function KinnikushokudoDeliKuchikomiPage() {
             ["実店舗", "高たんぱくレストラン「筋肉食堂」都内3店舗＋テイクアウト店"],
             ["主なコース", "ベーシック / ローカーボ / バルクアップ ほか単品セットあり"],
             ["食数", "7食・14食・21食から選択"],
-            ["定期割引", "単品購入よりいつでも15%オフ（公式表記）"],
+            ["定期割引", "単品購入よりいつでも13〜17%オフ（ローカーボ13%・ベーシック15%・バルクアップ17%。公式表記）"],
+            ["メニュー選択", "おまかせ（21種から管理栄養士監修で組み合わせ）／えらべる（28種から自分で選ぶ）"],
             ["送料", "地域・食数で変動（関東7食1,640円〜）。定期でも送料無料にならず"],
             ["お届け間隔", "1週間・2週間・3週間・4週間ごと"],
             ["解約", "回数縛り・解約金なし。7日前までにマイページから停止"],
@@ -587,7 +588,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
         <SectionHeading id="mazui">筋肉食堂DELIはまずい？味の評判を検証</SectionHeading>
 
         <p className="text-sm mb-4 leading-relaxed">
-          「筋肉食堂DELI まずい」と検索されることがあります。公開レビューを確認すると、<strong>複数の媒体が独立に「まずいという声が見当たらない」と報告している</strong>、宅配食としては珍しい結果でした。
+          「筋肉食堂DELI まずい」と検索されることがあります。公開レビューを確認すると、<strong>複数の媒体が「まずいという声は見当たらない」と報告</strong>しています。一方で、実食した媒体からは「しょっぱい」「量が少ない」「鶏むね肉が硬い」といった具体的な不満も出ています。
         </p>
 
         <SubHeading>「まずい」の声を探した調査結果（出典付き）</SubHeading>
@@ -616,6 +617,51 @@ export default function KinnikushokudoDeliKuchikomiPage() {
         <div className="space-y-2 mb-6">
           <SourcedReview
             review={{
+              text: "味は正直しょっぱかったです。",
+              meta: "ZENBヌードル たっぷりキノコと鶏肉の和風ソースの実食（同記事の品質表示は塩分2.0g）",
+              sourceName: "うちらいふ（元料理人の実食レビュー）",
+              sourceUrl: "https://uchilife.actlever.co.jp/kinnnikusyokudou-deli/",
+            }}
+            tone="bad"
+          />
+          <SourcedReview
+            review={{
+              text: "ボリュームは130gしかないということで、1食分としては物足りなかった。",
+              meta: "同じメニューの実食",
+              sourceName: "うちらいふ（元料理人の実食レビュー）",
+              sourceUrl: "https://uchilife.actlever.co.jp/kinnnikusyokudou-deli/",
+            }}
+            tone="bad"
+          />
+          <SourcedReview
+            review={{
+              text: "鶏むね肉はパサついてはなかったが、すこし硬かった。",
+              meta: "鶏むね肉のメニューの実食",
+              sourceName: "うちらいふ（元料理人の実食レビュー）",
+              sourceUrl: "https://uchilife.actlever.co.jp/kinnnikusyokudou-deli/",
+            }}
+            tone="bad"
+          />
+          <SourcedReview
+            review={{
+              text: "ごはんが進む味ですが、ごはんの量が少なめなので物足りなさを感じてしまいました。",
+              meta: "編集部の試食（よだれ鶏）",
+              sourceName: "HonNe（EXIDEA運営・2026年10月2日更新）",
+              sourceUrl: "https://exidea.co.jp/blog/meal/home-meal/kinnikushokudo/",
+            }}
+            tone="bad"
+          />
+          <SourcedReview
+            review={{
+              text: "個人的には味付けが少ししょっぱいように感じました。",
+              meta: "記事掲載の利用者の回答",
+              sourceName: "HonNe（EXIDEA運営）",
+              sourceUrl: "https://exidea.co.jp/blog/meal/home-meal/kinnikushokudo/",
+            }}
+            tone="bad"
+          />
+          <SourcedReview
+            review={{
               text: "味付けはかなり本格的で満足度は高い一方、鶏肉のクセが気になる人には合わないと感じる部分もありました。",
               meta: "料理家の7食実食による留保付き評価",
               sourceName: "プロの宅食さがし（meal-navi）",
@@ -626,10 +672,11 @@ export default function KinnikushokudoDeliKuchikomiPage() {
         </div>
 
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-1">編集部の見解：味の評価は高水準で安定です。不満は「価格」に集中</p>
+          <p className="font-bold mb-1">編集部の見解：「まずい」という声は少なく、不満は「価格」「塩味」「量」</p>
           <p>
-            レストラン運営で培った調理が背景にあるためか、味に関する酷評は編集部の確認範囲では見つかりませんでした。高たんぱく食にありがちな「パサつき」への不満が少ないのも特徴です。一方で、鶏肉中心のメニューが続くとクセや飽きを感じる人はいます。<strong>実質的な検討ポイントは味よりも「1食1,300円前後（送料込み）を継続できるか」</strong>です。
+            レストラン運営で培った調理が背景にあるためか、味に関する酷評は編集部の確認範囲では見つかりませんでした。一方で、実食した媒体からは「しょっぱい」「量が少ない（130gのメニューもある）」「鶏むね肉が少し硬い」という声があり、鶏肉中心のメニューが続くとクセや飽きを感じる人もいます。<strong>実質的な検討ポイントは味よりも「1食1,300円前後（送料込み）を継続できるか」</strong>です。
           </p>
+          <p className="mt-2"><strong>公式の対策（2026年10月17日・公式FAQ）:</strong> 好みが合わないメニューを避けたい場合は、28種から自分で選べる「えらべる」コースがあります（「おまかせ」は21種から管理栄養士監修で組み合わせ。料金は同じ）。量が足りない場合は、1食平均554.9kcal・たんぱく質42.3gのバルクアップを選ぶ方法があります。表示どおりに電子レンジで温めてもまだ凍っている場合は、1分ずつ追加で温めるよう案内されています。</p>
         </div>
 
         {/* ===== メリット ===== */}
@@ -716,7 +763,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
           ]}
         />
         <p className="text-sm mb-2 leading-relaxed">
-          定期購入は単品購入より<strong>いつでも15%オフ</strong>（公式表記）。1食あたりはローカーボ21食の994円が最安、バルクアップ7食の1,480円が最高です。
+          定期購入は単品購入より<strong>いつでも13〜17%オフ</strong>（ローカーボ13%・ベーシック15%・バルクアップ17%。2026年10月17日・各コースページで確認）。1食あたりはローカーボ21食の994円が最安、バルクアップ7食の1,480円が最高です。
         </p>
 
         <SubHeading>送料（地域・食数で変動）</SubHeading>

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-10T00:00:00+09:00",
+    modifiedTime: "2026-10-17T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -333,7 +333,7 @@ export default function DieticianKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-10-10T00:00:00+09:00",
+    dateModified: "2026-10-17T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -406,7 +406,7 @@ export default function DieticianKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
-            <time dateTime="2026-10-10">更新: 2026年10月10日（公式で再確認）</time>
+            <time dateTime="2026-10-17">更新: 2026年10月17日（公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -439,7 +439,7 @@ export default function DieticianKuchikomiPage() {
         <div className="border-2 border-red-300 rounded-xl p-5 mb-8 bg-red-50">
           <p className="font-bold text-base mb-3">Dieticianは販売を終了しており、現在は注文できません</p>
           <p className="text-sm leading-relaxed mb-3">
-            公式サイトには2025年10月31日付で<strong>「＜重要＞商品終売のお知らせ　Dieticianは11月28日出荷をもちまして、終売させて頂きました。」</strong>という告知が掲載されました（公式サイトのインターネットアーカイブで確認）。2026年10月10日時点でも公式サイトには接続できず、新規注文・再開の告知はありません。
+            公式サイトには2025年10月31日付で<strong>「＜重要＞商品終売のお知らせ　Dieticianは11月28日出荷をもちまして、終売させて頂きました。」</strong>という告知が掲載されました（公式サイトのインターネットアーカイブで確認）。2026年10月17日時点でも公式サイト（dietician-family.jp）はドメインの名前解決ができず接続できず、新規注文・再開の告知はありません。
           </p>
           <p className="text-sm leading-relaxed mb-4">
             運営していたのは病態食・健康食の専門メーカーである<strong>メディカルフードサービス株式会社</strong>（2004年創業・横浜市）。2021年9月のサービス開始から約4年での終売でした。口コミの評価は決して低くなかったため、「気になっていたのに終わっていた」という人は、後半の<a href="#alternatives" className="text-accent underline">代替サービス3選</a>を参考にしてください。
@@ -529,6 +529,11 @@ export default function DieticianKuchikomiPage() {
         <p className="text-sm mb-4 leading-relaxed">
           「ダイエティシャン まずい」と検索されることがあります。販売当時の公開レビューを確認すると、<strong>確認できた実食メディア4媒体すべてが総評は「まずくない・むしろ美味しい部類」</strong>で、「まずい」評の実態は低脂質設計に由来する2点に集約されていました。
         </p>
+
+        <div className="bg-green-50 rounded-lg p-3 text-sm leading-relaxed mb-6">
+          <p className="mb-1.5">「制限食ってまずいのでは?と考えてしまいがちですが、実際はかなりおいしかったです。」（SMALL・MEDIUMを実食した宅配弁当ブログの総評。同記事は2026年時点で「ダイエティシャンは現在は販売停止中です」と明記）</p>
+          <p className="text-xs text-warm-gray">出典: <a href="https://www.single-meallife.com/dietician-delivery/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">ひとり暮らしの宅配食生活</a></p>
+        </div>
 
         <SubHeading>「まずい」と言われた主な理由2つ</SubHeading>
         <div className="space-y-3 mb-6">
@@ -634,7 +639,7 @@ export default function DieticianKuchikomiPage() {
           <div className="bg-green-50 rounded-lg p-4 text-sm leading-relaxed">
             <p className="font-bold mb-1">① PFC設計・ボディメイク特化を引き継ぐなら → マッスルデリ</p>
             <p className="mb-2">
-              目的別プランでタンパク質30g以上の食事を管理栄養士監修で提供する、Dieticianに最も設計思想が近いサービスです。メニュー数も50種類以上と豊富です。
+              目的別の4プラン（LEAN・MAINTAIN・GAIN・LOW CARB）でタンパク質の基準（LOW CARB 20g以上〜GAIN 50g以上）を設けた、Dieticianに設計思想が近いサービスです。1食は4プランの単品価格（税込）÷食数で1,109〜1,557円です（2026年10月14日・公式確認）。
             </p>
             <Link href="/articles/muscle-deli-reviews/" className="text-accent hover:text-accent-dark underline font-medium">
               マッスルデリの口コミ・評判を見る →
@@ -663,15 +668,15 @@ export default function DieticianKuchikomiPage() {
         <ComparisonTable
           headers={["項目", "Dietician（終売）", "マッスルデリ", "筋肉食堂DELI ローカーボ", "nosh"]}
           rows={[
-            ["タンパク質", "30〜50g", "30g以上（プランによる）", "平均31.8g", "基準なし"],
-            ["糖質", "35〜45g以下", "プランによる", "平均12.2g", "30g以下"],
-            ["1食あたり目安（税込）", "968円〜（送料込・当時）", "約1,000円〜", "994円〜＋送料", "612円〜＋送料"],
-            ["メニュー選択", "不可（おまかせ）", "可", "可", "可"],
+            ["タンパク質", "30〜50g", "20g以上〜50g以上（プランによる）", "平均31.8g", "基準なし"],
+            ["糖質", "35〜45g以下", "プランによる（LOW CARB 15g以下・LEAN 35g以下）", "平均12.2g", "30g以下"],
+            ["1食あたり目安（税込）", "968円〜（送料込・当時）", "1,109〜1,557円", "994〜1,048円（定期21〜7食）＋送料", "612円〜＋送料"],
+            ["メニュー選択", "不可（おまかせ）", "可", "可（えらべる28種）／おまかせ（21種）", "可"],
             ["現在の販売", "終売", "販売中", "販売中", "販売中"],
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※各社公式サイトの公開情報をもとに編集部が作成しています（筋肉食堂DELIは2026年10月10日、noshは2026年10月9日、マッスルデリは2026年7月時点の確認）。最新情報は各公式サイトでご確認ください。
+          ※各社公式サイトの公開情報をもとに編集部が作成しています（筋肉食堂DELIは2026年10月17日、マッスルデリは2026年10月14日、noshは2026年10月10日に確認）。最新情報は各公式サイトでご確認ください。
         </p>
 
         {/* ===== FAQ ===== */}
