@@ -26,7 +26,6 @@ SERVICES = [
     {"name": "パルシステム", "kcal": "300-500", "carb": "30-50", "protein": "15-25", "salt": "2.5以下", "price_per_meal": "580-720", "url": "https://www.pal-system.co.jp/"},
     {"name": "ナッシュclub（割引）", "kcal": "300-500", "carb": "20-35", "protein": "15-25", "salt": "2.5以下", "price_per_meal": "499-624", "url": "https://nosh.jp/"},
     {"name": "つるかめキッチン", "kcal": "240", "carb": "15", "protein": "13", "salt": "2.0以下", "price_per_meal": "660-815", "url": "https://tsurukame-kitchen.com/"},
-    {"name": "ワンミール", "kcal": "300-450", "carb": "20-30", "protein": "20-30", "salt": "2.5以下", "price_per_meal": "770-840", "url": "https://1meal.life/"},
     {"name": "FIT FOOD HOME", "kcal": "350-500", "carb": "20-40", "protein": "20-35", "salt": "2.0-3.0", "price_per_meal": "750-1,080", "url": "https://fitfoodhome.tabeyoukai.com/"},
     {"name": "GOFOOD", "kcal": "200-400", "carb": "10-20", "protein": "20-40", "salt": "2.5以下", "price_per_meal": "898-1,148", "url": "https://gofood.jp/"},
 ]

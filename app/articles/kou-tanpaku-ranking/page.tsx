@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const ARTICLE_TITLE =
-  "高タンパク質 冷凍宅配弁当ランキング【2026年版】筋トレ・ダイエット向け7選";
+  "高タンパク質 冷凍宅配弁当ランキング【2026年版】筋トレ・ダイエット向け6選";
 const ARTICLE_DESCRIPTION =
-  "高タンパク質の冷凍宅配弁当を比較します。筋トレ・ダイエット・ボディメイク向けに、1食タンパク質20g以上の宅配弁当7社をランキングで紹介します。マッスルデリ・筋肉食堂DELI・nosh・三ツ星ファームなどをタンパク質量・価格・PFCバランスで評価します。";
+  "高タンパク質の冷凍宅配弁当を比較します。筋トレ・ダイエット・ボディメイク向けに、1食タンパク質20g以上の宅配弁当6社をランキングで紹介します。マッスルデリ・筋肉食堂DELI・nosh・三ツ星ファームなどをタンパク質量・価格・PFCバランスで評価します。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/kou-tanpaku-ranking/";
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-05-28T00:00:00+09:00",
-    modifiedTime: "2026-10-14T00:00:00+09:00",
+    modifiedTime: "2026-10-17T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -71,8 +71,8 @@ function TableOfContents() {
   const sections = [
     { id: "why", label: "なぜ「高タンパク宅配弁当」が選ばれるのか" },
     { id: "criteria", label: "ランキング評価基準" },
-    { id: "ranking", label: "高タンパク冷凍宅配弁当ランキングTOP7" },
-    { id: "compare-table", label: "主要7社の数値比較表" },
+    { id: "ranking", label: "高タンパク冷凍宅配弁当ランキングTOP6" },
+    { id: "compare-table", label: "主要6社の数値比較表" },
     { id: "howto-choose", label: "目的別の選び方ガイド" },
     { id: "cost-tip", label: "高タンパク宅配のコスパ最適化テク" },
     { id: "faq", label: "よくある質問(FAQ)" },
@@ -235,18 +235,6 @@ const rankingItems = [
     target: "味のクオリティを最優先する筋トレ層",
     reviewLink: "/articles/mitsuboshi-farm-reviews/",
   },
-  {
-    rank: 7,
-    name: "ワンミール",
-    url: "https://1meal.life/",
-    protein: "20〜30g",
-    price: "中〜高(770〜840円)",
-    score: 3,
-    summary: "タンパク質20〜30g×糖質20〜30gのバランス型。低糖質と高タンパクの両立を目指す中庸路線。",
-    pros: ["PFCバランスが安定", "コンパクトな容器"],
-    cons: ["価格はやや高め", "メニュー数は中規模"],
-    target: "バランス重視+続けやすさ重視の人",
-  },
 ];
 
 export default function KouTanpakuRankingPage() {
@@ -257,7 +245,7 @@ export default function KouTanpakuRankingPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-10-14T00:00:00+09:00",
+    dateModified: "2026-10-17T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -309,7 +297,7 @@ export default function KouTanpakuRankingPage() {
             「筋トレしてるけど、毎日鶏むね茹でるのに飽きた」「ダイエット中だけどプロテインだけじゃ物足りない」——そんな筋トレ・ボディメイク中の方に適しているのが、<strong>高タンパク冷凍宅配弁当</strong>です。
           </p>
           <p className="mb-3">
-            この記事では、<strong>1食あたりタンパク質20g以上を確保している宅配弁当7社をランキング</strong>。マッスルデリ・筋肉食堂DELI・nosh・三ツ星ファームなどを、タンパク質量・PFCバランス・価格・続けやすさで総合評価しました。
+            この記事では、<strong>1食あたりタンパク質20g以上を確保している宅配弁当6社をランキング</strong>。マッスルデリ・筋肉食堂DELI・nosh・三ツ星ファームなどを、タンパク質量・PFCバランス・価格・続けやすさで総合評価しました。
           </p>
           <p>
             数値はすべて公式情報ベースです。<strong>「自分の目的・予算で最適なのはどれか」</strong>を判断できる内容にまとめています。
@@ -356,7 +344,7 @@ export default function KouTanpakuRankingPage() {
           ]}
         />
 
-        <SectionHeading id="ranking">高タンパク冷凍宅配弁当ランキングTOP7</SectionHeading>
+        <SectionHeading id="ranking">高タンパク冷凍宅配弁当ランキングTOP6</SectionHeading>
 
         {rankingItems.map((item) => (
           <div key={item.rank} className="border border-warm-border rounded-xl p-5 mb-6 bg-white">
@@ -394,10 +382,10 @@ export default function KouTanpakuRankingPage() {
           </div>
         ))}
 
-        <SectionHeading id="compare-table">主要7社の数値比較表</SectionHeading>
+        <SectionHeading id="compare-table">主要6社の数値比較表</SectionHeading>
 
         <p className="text-sm mb-4 leading-relaxed">
-          一目で比較できるよう、主要7社の数値を表にまとめました。
+          一目で比較できるよう、主要6社の数値を表にまとめました。
         </p>
 
         <ComparisonTable
@@ -409,7 +397,6 @@ export default function KouTanpakuRankingPage() {
             ["サポートミール", "意識した設計", "9.5〜12g", "828〜883円", "セット制"],
             ["nosh", "14〜20g", "30g以下", "612〜719円", "自由選択"],
             ["三ツ星ファーム", "15g以上（一部除く）", "25g以下（一部除く）", "711〜927円", "自由選択"],
-            ["ワンミール", "20〜30g", "20〜30g", "770〜840円", "バランス型"],
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">※2026年5月時点の公開情報（マッスルデリ・nosh・FIT FOOD HOMEのタンパク質・糖質は2026年10月14日に公式で再確認＝マッスルデリは4プランの基準値、nosh・FIT FOOD HOMEは公式メニュー一覧の主菜の中央50%の範囲。noshの糖質は公式基準）。栄養成分・価格はメニューにより変動します。最新情報は各公式サイトでご確認ください。</p>
@@ -480,7 +467,6 @@ export default function KouTanpakuRankingPage() {
             <li><strong>4位 サポートミール</strong>: 糖質9.5〜12gの厳格設計。RIZAPメソッド志向。</li>
             <li><strong>5位 nosh</strong>: コスパ最重視で続けるなら間違いない選択肢。</li>
             <li><strong>6位 三ツ星ファーム</strong>: 味のクオリティ+高タンパクを両立。</li>
-            <li><strong>7位 ワンミール</strong>: バランス型の中庸路線。</li>
           </ul>
           <p className="text-sm leading-relaxed">
             目的・予算・続けやすさを踏まえて、自分にもっとも合う1社を選びましょう。タンパク質量や価格は変更される可能性があるため、申込前に必ず各公式サイトで最新情報をご確認ください。
