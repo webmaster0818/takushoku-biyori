@@ -304,3 +304,4 @@ GSC診断(28d 6/3-7/1): クリック2・表示738(前月391→1.9倍)・平均20
 - **kinnikushokudo-deli-kuchikomi**: 定期割引「いつでも15%オフ」→ 13/15/17%（ローカーボ/ベーシック/バルクアップ・各コースページ）、えらべる28種/おまかせ21種（同一料金・公式FAQ）、「パサつきへの不満が少ない」→ 実食媒体の具体的不満（うちらいふ「しょっぱかった」「130gしかない」「すこし硬かった」、HonNe「ごはんの量が少なめ」「少ししょっぱい」＝本文で語句照合）と公式の対策
 - **dietician-kuchikomi**: 10/17 も dietician-family.jp は名前解決不可を確認。代替比較表の Muscle Deli「約1,000円〜」「30g以上」→ 1,109〜1,557円・20g以上〜50g以上（10/14確認値）、筋肉食堂DELIのメニュー選択、ひとり暮らしの宅配食生活の実食総評を追加
 - wellness-dining-reviews（最終クロール 9/26）: sitemap lastmod は実変更日（generate-sitemap.mjs が git 日付）、TOP（12番目のリンク・カード）と /articles/ から直リンク済み → 変更なし。TOP の最終クロールも 10/12
+- source 19d10b5 / deploy 76eb46b4・precheck 全項目OK・wip との merge-tree 衝突0。**Indexing 21本は全件 429（クォータ）＝未送信**。次回送信対象: 15社表19記事＋dietician・kinnikushokudo
