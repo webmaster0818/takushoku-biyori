@@ -272,3 +272,26 @@ GSC診断(28d 6/3-7/1): クリック2・表示738(前月391→1.9倍)・平均20
 ### 2026-10-17 期限切れ情報の最適化（MediaXAI「期限切れは、最適化して」）
 - 期限切れの特典・キャンペーンの記載: **該当なし**。ソース（app/data/components/lib）と out/ を grep し、nosh（nosh.jp：初回1,500円／2回目1,000円／3回目500円OFF、終了日の記載なし）・筋肉食堂DELI（deli.kinnikushokudo.jp：「期間限定 1食805円～」の表示が継続、終了日なし）・ライフミール（初回10食1,900円が継続）を公式で確認。GREEN SPOON のスタート応援プランは公式トップでは確認できず、本文は据え置き（未確認）。
 - コーディネーター規則「古い月ラベル」: 今回公式と再照合していない10記事の title／h1／description／OG／JSON-LD headline から【2026年9月最新】【2026年9月更新】【2026年7月最新】を削除（watami-reviews, shokutakubin-reviews, mealtime-kuchikomi, magokoro-care-reviews, watami-direct-kuchikomi, wanmairu-reviews, takuhai-cook123-kuchikomi, lifemeal-kuchikomi, chef-mutenka-tsukurioki-kuchikomi, goodeli-kuchikomi）。【2026年10月】へ更新した記事は0件。本文の「2026年X月X日 公式確認」などの確認日表記はそのまま。source f2e6487。アフィリエイトURL 4件は変更前後で一致、precheck 全項目OK。
+
+### 2026-10-17 朝ルーチン（続き）期限切れ・未確認のキャンペーン記載を公式で確認して更新 ✅（source 9b719e5 / deploy 6cb26299・precheck 全項目OK）
+- 朝の一次対応（f2e6487）で「該当なし」とした後、具体値のあるキャンペーン記載を全件公式と照合し直した。確認先と結果:
+  - Dr.つるかめキッチン: 白書の「初回限定10%OFF（常設かは不明）」は、お知らせ news/post-921 で **2026/3/12〜3/31 の期間限定（クーポン research10）と判明＝終了**。定期28%OFF（2回目以降も・送料無料）は menu/post-123 で継続を確認 → 白書 first_discount を更新
+  - まごころケア食: TOP カードの「初回90円」は誤り。公式（トップ meta・products/detail/47 の first_price_per_unit=190・14食2,660円）で初回1食190円が継続 → TOP を修正
+  - コープデリ: 旧おためし導線（efriends look/webtrial）は冷凍食品10品のおためし（docreq/onecoin・1,980円・送料無料・1世帯1回）へ転送。www.coopdeli.jp トップは「WEB新規加入で最大3,000円分クーポン」「秋のご加入キャンペーン 最大5,000円分（1,000円×5回）」。「加入後5週間おすすめ商品50%OFF」「8週間手数料無料」は確認できず削除（白書・coopdeli-vs-palsystem の入会特典表）
+  - パルシステム: /introduction/ で「合計3,000円分クーポンなど」「秋の4大加入特典 最大5ヵ月配送料0円（12/1 10:00まで）」「おためし宅配（3週間・手数料無料）」
+  - GREEN SPOON「スタート応援プラン（初回2食無料＋5%OFF）」: 公式トップ・news で確認できず → 条件を削除し「公式サイトでご確認ください」に（2か所）
+  - nosh: 1,500/1,000/500円OFF をトップで確認。友達紹介は公式FAQ answer/124 に「双方にクーポン付与」のみで金額なし → nosh-vs-mitsuboshi「友達紹介で3,000円OFF」を金額なしに。nosh-coupon の「2026年5月時点」4か所を10/17に
+  - ワタミの宅食 初回割引（category/firstfree・3,450→2,760円）は継続 → watami-reviews の確認日を 7/4→10/17
+  - ワタミの宅食ダイレクト: 「いきなり○食セット」は公式に存在せず（現行はお試し10食セット3,900円・送料別 990円〜）→ otameshi-set-osusume・reitouko-chiisai の記載を更新、「いきなり3食セットで送料無料の場合」を削除
+  - DELIPICKS（deli-picks.com）: 公式FAQ「お試しセットの送料はキャンペーン中につき無料」「お試しセットを注文しただけでは定期購入にはなりません」→ otameshi-set-osusume で「定期申し込み型」としていたのを単発に訂正（FAQ・本文・表）
+  - オイシックス: www.oisix.com は今日も応答なし。faq.oisix.com に「おためしセット」の項目のみ確認 → oisix-vs-nosh の「期間限定で大幅割引」を一般化
+  - 継続を確認（変更なし）: 夕食ネット 初回半額（you-shoku.net・3食1,290→645円。⚠️10/12〜の新メニューは3食1,350円）、ツクリオ RC-2026WELCOME 6,690円、おうちコープ ワンコイン、メディミール 初回送料無料（トップの「3月末まで初回500円引き」はHTMLコメント内＝非表示）、シェフの無添 初回送料無料
+- 月ラベル: 朝の対応で全記事【2026年10月】か年のみ。今回は1〜数行の照合のため title への【2026年10月】付与はしていない
+- アフィリエイト（felmat 2URL×84）は修正前 deploy と完全一致。heading-lint 既存1件のみ
+
+### 2026-10-17 P1 ワンミール削除 wip を最新 main の上に作り直し（本番未反映）
+- `wip/remove-onemeal-1017` = main 9b719e5 + 9d37b3d（本体）+ 9426e65（sitemap）。旧 wip（117b06b・0402b5d）はローカル `wip-onemeal-old-1016` に退避して force-with-lease で置換
+- 方法: cherry-pick ではなく main の文面にスクリプトで同じ変更を適用（15社表19記事の 1meal.life 行削除・脚注「パルシステム・ワンミール・GOFOOD」→「パルシステム・GOFOOD」、kou-tanpaku 7選→6選/TOP6/主要6社・7位カード/表行/まとめ削除・dateModified 2026-10-17、add-comparison-table.py）
+- 検証: build OK・precheck 全項目OK・out/ のワンミール 0・1meal 0・アフィリエイト集合一致・main は wip の祖先（fast-forward 可）
+- **10/18 の手順**: `git checkout main && git pull && git merge --ff-only wip/remove-onemeal-1017`（main が進んでいたら wip を main の上に作り直す）→ build → precheck → deploy → Indexing（20記事）
+- ローカル out/ は main で再ビルド済み（ワンミール20ページ＝本番と同じ）
