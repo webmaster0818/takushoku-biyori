@@ -81,7 +81,7 @@ function Breadcrumbs() {
 
 function TableOfContents() {
   const sections = [
-    { id: "summary-top", label: "noshの現行クーポン早見表（2026年5月時点）" },
+    { id: "summary-top", label: "noshの現行クーポン早見表（2026年10月17日時点）" },
     { id: "initial", label: "初回〜3回目の自動割引｜合計3,000円OFFの内訳" },
     { id: "how-to", label: "クーポン適用の申込手順（5ステップ）" },
     { id: "nosh-club", label: "nosh club｜継続するほど安くなる仕組み" },
@@ -300,7 +300,7 @@ export default function NoshCouponPage() {
 
         {/* PR Disclosure */}
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 text-xs leading-relaxed">
-          <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。リンク経由でのお申込みにより当サイトに収益が発生する場合がありますが、評価・記載内容は公平を期しています。料金・キャンペーン情報は本記事公開時点の<strong>2026年5月時点の公式情報</strong>に基づきます。最新情報は必ず<a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">nosh公式サイト</a>でご確認ください。
+          <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。リンク経由でのお申込みにより当サイトに収益が発生する場合がありますが、評価・記載内容は公平を期しています。料金・キャンペーン情報は<strong>2026年10月17日時点の公式情報</strong>に基づきます。最新情報は必ず<a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">nosh公式サイト</a>でご確認ください。
         </div>
 
         {/* Lead */}
@@ -309,7 +309,7 @@ export default function NoshCouponPage() {
             「nosh(ナッシュ)を始めたいけど、クーポンや割引コードはあるの？」「初回いくら安くなる？」——人気の冷凍宅配弁当noshには複数の割引制度があり、上手に使えば<strong>初回最大3,000円OFF</strong>で始められます。
           </p>
           <p className="mb-3">
-            この記事では、<strong>2026年5月時点のnosh公式キャンペーン情報</strong>をもとに、自動割引・nosh club・友達紹介の3つの仕組みを丁寧に整理します。クーポンコードの真偽、適用手順、注意点まで初心者にもわかりやすく解説します。
+            この記事では、<strong>2026年10月17日時点のnosh公式サイトの情報</strong>をもとに、自動割引・nosh club・友達紹介の3つの仕組みを丁寧に整理します。クーポンコードの真偽、適用手順、注意点まで初心者にもわかりやすく解説します。
           </p>
           <p>
             「裏技クーポンコード」「秘密の割引」といった怪しい情報に惑わされず、公式の最大値で安心してお得に始めるためのガイドです。
@@ -319,10 +319,10 @@ export default function NoshCouponPage() {
         <TableOfContents />
 
         {/* ===== 結論早見表 ===== */}
-        <SectionHeading id="summary-top">noshの現行クーポン早見表（2026年5月時点）</SectionHeading>
+        <SectionHeading id="summary-top">noshの現行クーポン早見表（2026年10月17日時点）</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          2026年5月時点でnosh公式が提供している割引制度は<strong>3種類</strong>あります。クーポンコードを手入力する必要はなく、公式サイト経由で新規登録すれば自動的に適用されるのが基本です。
+          2026年10月17日時点でnosh公式が提供している割引制度は<strong>3種類</strong>あります。クーポンコードを手入力する必要はなく、公式サイト経由で新規登録すれば自動的に適用されるのが基本です。
         </p>
 
         <ComparisonTable
@@ -528,7 +528,7 @@ export default function NoshCouponPage() {
         <SectionHeading id="fake">「裏ワザクーポンコード」「裏技」に要注意</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          ネット上には「nosh限定クーポンコード」「秘密の裏技で5,000円オフ」といった煽り文句のブログやSNS投稿が散見されます。しかし、<strong>2026年5月時点のnosh公式が提供している新規割引は「合計3,000円OFF（1,500+1,000+500）」のみ</strong>です。
+          ネット上には「nosh限定クーポンコード」「秘密の裏技で5,000円オフ」といった煽り文句のブログやSNS投稿が散見されます。しかし、<strong>2026年10月17日時点でnosh公式が提供している新規割引は「合計3,000円OFF（1,500+1,000+500）」のみ</strong>です。
         </p>
 
         <SubHeading>注意すべきパターン</SubHeading>
@@ -559,7 +559,7 @@ export default function NoshCouponPage() {
         <SectionHeading id="compare">他社の初回割引キャンペーンとの比較</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          noshの3,000円OFFが他社と比べてどの程度お得なのか、主要冷凍宅配弁当サービスの初回キャンペーンを比較しました。表中の金額は2026年5月時点の公式情報で、変動の可能性があります。
+          noshの3,000円OFFが他社と比べてどの程度お得なのか、主要冷凍宅配弁当サービスの初回キャンペーンを比較しました。表中の金額は2026年10月12日〜17日に各社の公式サイトで確認した情報で、変動の可能性があります。
         </p>
 
         <ComparisonTable

@@ -630,7 +630,7 @@ export default function ArticlePage() {
             <p className="font-bold mb-2">nosh</p>
             <ul className="list-disc list-inside space-y-1">
               <li>初回1,500円・2回目1,000円・3回目500円OFF（合計3,000円）</li>
-              <li>友達紹介で3,000円OFFクーポン</li>
+              <li>友達紹介クーポン（紹介した側・された側の双方に付与。金額は公式サイトでご確認ください）</li>
               <li>nosh club（最高ランクで12食1食492円）</li>
             </ul>
           </div>

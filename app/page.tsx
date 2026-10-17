@@ -294,7 +294,7 @@ export default function Home() {
                   まごころケア食の口コミ・評判を徹底調査
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed mb-3">
-                  1食390円台からの低価格帯のサービスです。初回90円のお試しや冷凍庫レンタルなどの特徴を解説します。
+                  1食390円台からの低価格帯のサービスです。初回限定セット（1食190円）や冷凍庫レンタルなどの特徴を解説します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["まごころケア食", "口コミ", "コスパ", "安い"].map((tag) => (

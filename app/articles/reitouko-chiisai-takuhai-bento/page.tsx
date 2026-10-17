@@ -377,7 +377,7 @@ export default function ReitoukoChiisaiTakuhaiBentoPage() {
 
         <SubHeading>代替案1: 単発購入できるサービスを選ぶ</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          ワタミの宅食ダイレクトのような「いきなり○食セット」は、定期申し込みではなく単発で頼める単発購入型のお試しプランがあります。<strong>冷凍庫が空いたタイミングで都度頼める</strong>ので、定期配送のプレッシャーがありません。
+          ワタミの宅食ダイレクトには、定期申し込みではなく単発で頼めるお試し10食セット（1回限り）があります。<strong>冷凍庫が空いたタイミングで都度頼める</strong>ので、定期配送のプレッシャーがありません。
         </p>
 
         <SubHeading>代替案2: 冷蔵タイプ（常温）の宅配弁当を検討</SubHeading>
