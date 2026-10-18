@@ -311,4 +311,5 @@ GSC診断(28d 6/3-7/1): クリック2・表示738(前月391→1.9倍)・平均20
 - `wip/remove-onemeal-1017` を main（adbe7e6＝夕食ネット 58dabe5・C工程 19d10b5 を含む）にマージ＝衝突0（80214a7）。追加: 15社表脚注の「ヨシケイ・コープデリ・パルシステム・GOFOODの栄養値は…5月時点の値のまま」→「パルシステム・GOFOOD」（10/17 に公式値へ更新済みのため・19記事 7b0fa78）、kou-tanpaku dateModified 2026-10-18（601825b）、sitemap 22 URL lastmod（1766ccd）
 - main で再ビルド→precheck 全項目OK→deploy ed51dccd。out/ ワンミール・1meal 0（旧 deploy 124）、kou-tanpaku 6選/TOP6/主要6社・7選0。アフィリエイト（84件）は旧 deploy と集合・件数一致
 - P2: 公式 /products/detail/2,4,7,10,13,53（Inertia data-page の description）= 健康バランス 300kcal以下・カロリー調整 240±10%・糖質制限 240±10%・塩分制限 300kcal以下・たんぱく調整 300kcal以上・ムース食 kcal 記載なし → 15社表19記事の kcal「300以下」→「300以下（たんぱく調整食は300以上）」、add-comparison-table.py のまごころ行を表の現行値に（3b54488 / deploy fc1b4731）
+- 本番確認（?cb=）: 68ページでワンミール・1meal 0、「たんぱく調整食は300以上」19ページ、アフィリエイト84件（不変）、sitemap kou-tanpaku lastmod 2026-10-18。Indexing 10/10（kou-tanpaku・nosh・magokoro・diet・koureisha・hitorigurashi・toushitsu・wellness・mitsuboshi・yoshikei）。未送信＝15社表の残り10記事
 - `wip/remove-onemeal-1017` はマージ済み（削除してよい）
