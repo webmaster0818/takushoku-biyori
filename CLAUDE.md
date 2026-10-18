@@ -305,3 +305,10 @@ GSC診断(28d 6/3-7/1): クリック2・表示738(前月391→1.9倍)・平均20
 - **dietician-kuchikomi**: 10/17 も dietician-family.jp は名前解決不可を確認。代替比較表の Muscle Deli「約1,000円〜」「30g以上」→ 1,109〜1,557円・20g以上〜50g以上（10/14確認値）、筋肉食堂DELIのメニュー選択、ひとり暮らしの宅配食生活の実食総評を追加
 - wellness-dining-reviews（最終クロール 9/26）: sitemap lastmod は実変更日（generate-sitemap.mjs が git 日付）、TOP（12番目のリンク・カード）と /articles/ から直リンク済み → 変更なし。TOP の最終クロールも 10/12
 - source 19d10b5 / deploy 76eb46b4・precheck 全項目OK・wip との merge-tree 衝突0。**Indexing 21本は全件 429（クォータ）＝未送信**。次回送信対象: 15社表19記事＋dietician・kinnikushokudo
+
+### 2026-10-18 P1 ワンミール削除を本番反映（既定案実行・MediaXAI 回答なし）＋P2 まごころ kcal
+- 再確認（10/18）: 1meal.life / www.1meal.life NXDOMAIN、onemeal.jp は http でエックスサーバー初期ページ（https は証明書不一致）、WebSearch でも公式なし
+- `wip/remove-onemeal-1017` を main（adbe7e6＝夕食ネット 58dabe5・C工程 19d10b5 を含む）にマージ＝衝突0（80214a7）。追加: 15社表脚注の「ヨシケイ・コープデリ・パルシステム・GOFOODの栄養値は…5月時点の値のまま」→「パルシステム・GOFOOD」（10/17 に公式値へ更新済みのため・19記事 7b0fa78）、kou-tanpaku dateModified 2026-10-18（601825b）、sitemap 22 URL lastmod（1766ccd）
+- main で再ビルド→precheck 全項目OK→deploy ed51dccd。out/ ワンミール・1meal 0（旧 deploy 124）、kou-tanpaku 6選/TOP6/主要6社・7選0。アフィリエイト（84件）は旧 deploy と集合・件数一致
+- P2: 公式 /products/detail/2,4,7,10,13,53（Inertia data-page の description）= 健康バランス 300kcal以下・カロリー調整 240±10%・糖質制限 240±10%・塩分制限 300kcal以下・たんぱく調整 300kcal以上・ムース食 kcal 記載なし → 15社表19記事の kcal「300以下」→「300以下（たんぱく調整食は300以上）」、add-comparison-table.py のまごころ行を表の現行値に（3b54488 / deploy fc1b4731）
+- `wip/remove-onemeal-1017` はマージ済み（削除してよい）
