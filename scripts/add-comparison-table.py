@@ -17,7 +17,7 @@ SERVICES = [
     {"name": "nosh（ナッシュ）", "kcal": "300-500", "carb": "20-35", "protein": "15-25", "salt": "2.5以下", "price_per_meal": "599-748", "url": "https://nosh.jp/"},
     {"name": "三ツ星ファーム", "kcal": "350-500", "carb": "25以下", "protein": "20-30", "salt": "2.5以下", "price_per_meal": "626-842", "url": "https://mitsuboshi-farm.jp/"},
     {"name": "ウェルネスダイニング", "kcal": "240-300", "carb": "15-25", "protein": "12-18", "salt": "2.0以下", "price_per_meal": "663-880", "url": "https://www.wellness-dining.com/"},
-    {"name": "まごころケア食", "kcal": "300-350", "carb": "30-40", "protein": "15-20", "salt": "2.5以下", "price_per_meal": "462-580", "url": "https://magokoro-care-shoku.com/"},
+    {"name": "まごころケア食", "kcal": "300以下（たんぱく調整食は300以上）", "carb": "15以下（糖質制限食のみ）", "protein": "10以下（たんぱく調整食のみ）", "salt": "2.0-2.5以下", "price_per_meal": "394-426", "url": "https://magokoro-care-shoku.com/"},
     {"name": "ワタミの宅食", "kcal": "350-400", "carb": "40-50", "protein": "15-20", "salt": "3.0以下", "price_per_meal": "590-680", "url": "https://www.watami-takushoku.co.jp/"},
     {"name": "食宅便", "kcal": "200-450", "carb": "10-50", "protein": "10-30", "salt": "2.0以下", "price_per_meal": "560-700", "url": "https://shoutakubin.com/"},
     {"name": "Muscle Deli", "kcal": "350-500", "carb": "30-60", "protein": "30-50", "salt": "2.5以下", "price_per_meal": "1,098-1,490", "url": "https://muscledeli.jp/"},
