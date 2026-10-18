@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-05-28T00:00:00+09:00",
-    modifiedTime: "2026-10-17T00:00:00+09:00",
+    modifiedTime: "2026-10-18T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -245,7 +245,7 @@ export default function KouTanpakuRankingPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-10-17T00:00:00+09:00",
+    dateModified: "2026-10-18T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
