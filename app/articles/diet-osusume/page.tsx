@@ -538,7 +538,7 @@ export default function DietOsusumePage() {
           cons={[
             "送料が地域差大（北海道1,713円・4〜12食）",
             "おかずのみ（ご飯なし）",
-            "メニューによってカロリーが200〜450kcalとばらつきあり",
+            "メニューによってカロリーにばらつきあり（主菜87品で199〜770kcal・中央50%は260〜400kcal／2026年10月19日公式メニュー一覧）",
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
