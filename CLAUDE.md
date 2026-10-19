@@ -324,3 +324,8 @@ GSC診断(28d 6/3-7/1): クリック2・表示738(前月391→1.9倍)・平均20
 - アフィリエイト（felmat 84件）は旧 deploy と集合一致
 - 範囲外で見つけた未対応: watami-direct-otameshi の「三菜 約150〜220kcal／五菜 約300〜400kcal」（公式の三菜セット掲載メニューは206〜296kcal）・「三菜399円〜/五菜499円〜」（トップ表記どおりだが商品一覧の最安は465/564円）、takuhai-vs-conveni の「nosh（平均）200〜450kcal」（15社表は 260-400）
 - 本番確認（?cb=・09:41 反映＝push から約17分）: 21ページで 15-20以上/245-310/9-24 各19、旧値（>15-20< >200-450< >10-30<・「通常価格から800円」「公式参考表記」「JS描画のため未取得」）0、felmat 80件（ローカル out と一致）。**Indexing 10/10**（15社表の残り10本: coopdeli-vs-palsystem nosh-vs-mitsuboshi-vs-wellness reitou-bento-mazui sango shokutakubin souryou-yasui takuhai-vs-conveni tsurukame wanmairu watami-reviews）。⚠️ zsh で `$U` に URL を空白連結して渡し、1回だけ不正URL1件として送信（クォータ1消費）→ 配列展開で送り直し。未送信: watami-direct-kuchikomi（今日変更）・dietician・kinnikushokudo（10/17分）
+- **（続き・コーディネーター指示）** source b229bcb・3671867・21340fd / deploy 35799dc2・06426c1f・precheck 全項目OK・felmat 84件 集合一致
+  - watami-direct-otameshi: 三菜「約150〜220kcal・食塩約1.0〜2.1g・たんぱく質約8〜12g」→ **173〜296kcal・1.1〜2.6g**（3dishes の全セット掲載24メニュー）、たんぱく質は公式に記載なし→削除。五菜「約300〜400kcal」→ **231〜355kcal**（25メニュー）。表・デメリット文・脚注（「2026年5月時点」→価格はトップ表記・熱量は10/19商品一覧）。参考: 二菜は133〜208kcal（14メニュー・記事は「比較的軽め」のまま）。「三菜399円〜／五菜499円〜」はトップ表記どおりなので据え置き
+  - nosh（nosh.jp/menu の data-* 属性・主菜 category=3 の87品、10/19）: kcal 199〜770・中央50% 263〜396、たんぱく質 中央50% 13.8〜19.8 → 15社表の 260-400 / 14-20 は維持。takuhai-vs-conveni の「nosh（平均）200〜450kcal・たんぱく質15〜30g」と nosh vs セブンの「200〜450kcal」→ 260〜400kcal・14〜20g（主菜の中央50%）＋注記。同じ「200〜450kcal」が diet-osusume（cons）・hitorigurashi-osusume（1位カード）にもあり同値に修正。全 out で 200〜450kcal 0件
+  - add-comparison-table.py の nosh・ナッシュclub 行を表の現行値に（他の古い行＝三ツ星・ウェルネス・Muscle Deli・パルシステム・つるかめ・FFH・GOFOOD は未修正。表は直接編集で更新済みなのでスクリプトは再実行しない）
+  - ⚠️ nosh 公式トップの「メニュー数 約90種類」が記事の「100種類以上」と食い違う（未対応・メニュー一覧は100品＝主菜87＋その他13）
