@@ -246,7 +246,7 @@ export default function TakuhaiVsConveniPage() {
         <ComparisonTable
           headers={["サービス/商品", "カロリー", "糖質", "塩分", "たんぱく質"]}
           rows={[
-            ["nosh（平均）", "200〜450kcal", "30g以下", "2.5g以下", "15〜30g"],
+            ["nosh（主菜の中央50%）", "260〜400kcal", "30g以下", "2.5g以下", "14〜20g"],
             ["三ツ星ファーム（平均）", "350kcal以下", "25g以下", "2.5g以下", "15g以上"],
             ["ウェルネスダイニング", "240〜330kcal（コース別）", "15g以下（糖質＆カロリー制限）", "2.0〜2.5g以下", "コースによる"],
             ["セブン 幕の内弁当", "約700〜800kcal", "約90〜110g", "約3.5〜4.5g", "約20〜25g"],
@@ -254,6 +254,7 @@ export default function TakuhaiVsConveniPage() {
             ["ファミマ 親子丼", "約650〜700kcal", "約85〜95g", "約3.5〜4.0g", "約22〜28g"],
           ]}
         />
+        <p className="text-xs text-warm-gray mb-6">※noshのカロリー・たんぱく質は、公式メニュー一覧の主菜87品（2026年10月19日確認）の中央50%の範囲です。糖質・塩分は公式の全メニュー基準（糖質30g・塩分2.5g以下）です。</p>
 
         <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
           <p className="font-bold text-sm mb-2">注目すべき差：糖質量</p>
@@ -356,7 +357,7 @@ export default function TakuhaiVsConveniPage() {
           headers={["比較項目", "nosh", "セブンイレブン"]}
           rows={[
             ["1食あたり価格", "612〜719円（club最高ランク492円）", "400〜700円"],
-            ["カロリー", "200〜450kcal", "500〜800kcal"],
+            ["カロリー", "260〜400kcal（主菜の中央50%）", "500〜800kcal"],
             ["糖質", "30g以下", "70〜110g"],
             ["メニュー数", "100種類以上", "弁当20〜30種類（店舗により異なる）"],
             ["購入方法", "ネット注文→冷凍宅配", "店頭購入"],

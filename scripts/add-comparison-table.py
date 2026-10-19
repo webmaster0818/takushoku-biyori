@@ -14,7 +14,7 @@ ARTICLES_DIR = ROOT / "app" / "articles"
 # 主要宅食サービスの数値データ（各社公式発表値を集約）
 # 1食あたりの平均値（メニューにより変動あり）
 SERVICES = [
-    {"name": "nosh（ナッシュ）", "kcal": "300-500", "carb": "20-35", "protein": "15-25", "salt": "2.5以下", "price_per_meal": "599-748", "url": "https://nosh.jp/"},
+    {"name": "nosh（ナッシュ）", "kcal": "260-400", "carb": "30以下", "protein": "14-20", "salt": "2.5以下", "price_per_meal": "612-719", "url": "https://nosh.jp/"},
     {"name": "三ツ星ファーム", "kcal": "350-500", "carb": "25以下", "protein": "20-30", "salt": "2.5以下", "price_per_meal": "626-842", "url": "https://mitsuboshi-farm.jp/"},
     {"name": "ウェルネスダイニング", "kcal": "240-300", "carb": "15-25", "protein": "12-18", "salt": "2.0以下", "price_per_meal": "663-880", "url": "https://www.wellness-dining.com/"},
     {"name": "まごころケア食", "kcal": "300以下（たんぱく調整食は300以上）", "carb": "15以下（糖質制限食のみ）", "protein": "10以下（たんぱく調整食のみ）", "salt": "2.0-2.5以下", "price_per_meal": "394-426", "url": "https://magokoro-care-shoku.com/"},
@@ -24,7 +24,7 @@ SERVICES = [
     {"name": "ヨシケイ", "kcal": "400以下（バランスミールのみ）", "carb": "−", "protein": "−", "salt": "−", "price_per_meal": "430-920", "url": "https://yoshikei-dvlp.co.jp/"},
     {"name": "コープデリ", "kcal": "229-496", "carb": "−", "protein": "−", "salt": "1.2-3.8", "price_per_meal": "464-842", "url": "https://www.coopdeli.jp/"},
     {"name": "パルシステム", "kcal": "300-500", "carb": "30-50", "protein": "15-25", "salt": "2.5以下", "price_per_meal": "580-720", "url": "https://www.pal-system.co.jp/"},
-    {"name": "ナッシュclub（割引）", "kcal": "300-500", "carb": "20-35", "protein": "15-25", "salt": "2.5以下", "price_per_meal": "499-624", "url": "https://nosh.jp/"},
+    {"name": "ナッシュclub（割引）", "kcal": "260-400", "carb": "30以下", "protein": "14-20", "salt": "2.5以下", "price_per_meal": "492〜（最高ランク）", "url": "https://nosh.jp/"},
     {"name": "つるかめキッチン", "kcal": "240", "carb": "15", "protein": "13", "salt": "2.0以下", "price_per_meal": "660-815", "url": "https://tsurukame-kitchen.com/"},
     {"name": "FIT FOOD HOME", "kcal": "350-500", "carb": "20-40", "protein": "20-35", "salt": "2.0-3.0", "price_per_meal": "750-1,080", "url": "https://fitfoodhome.tabeyoukai.com/"},
     {"name": "GOFOOD", "kcal": "200-400", "carb": "10-20", "protein": "20-40", "salt": "2.5以下", "price_per_meal": "898-1,148", "url": "https://gofood.jp/"},
