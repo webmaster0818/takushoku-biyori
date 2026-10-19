@@ -323,3 +323,4 @@ GSC診断(28d 6/3-7/1): クリック2・表示738(前月391→1.9倍)・平均20
   - 白書: JSON の note にセット価格を記録。**代表プラン（plans[1]）の price_jpy は null のまま**＝実質単価表には未掲載（都度/定期のどちらを代表にするか判断待ち）。MISSING_REASON の「JS描画のため未取得」を実態に合わせて書き換え
 - アフィリエイト（felmat 84件）は旧 deploy と集合一致
 - 範囲外で見つけた未対応: watami-direct-otameshi の「三菜 約150〜220kcal／五菜 約300〜400kcal」（公式の三菜セット掲載メニューは206〜296kcal）・「三菜399円〜/五菜499円〜」（トップ表記どおりだが商品一覧の最安は465/564円）、takuhai-vs-conveni の「nosh（平均）200〜450kcal」（15社表は 260-400）
+- 本番確認（?cb=・09:41 反映＝push から約17分）: 21ページで 15-20以上/245-310/9-24 各19、旧値（>15-20< >200-450< >10-30<・「通常価格から800円」「公式参考表記」「JS描画のため未取得」）0、felmat 80件（ローカル out と一致）。**Indexing 10/10**（15社表の残り10本: coopdeli-vs-palsystem nosh-vs-mitsuboshi-vs-wellness reitou-bento-mazui sango shokutakubin souryou-yasui takuhai-vs-conveni tsurukame wanmairu watami-reviews）。⚠️ zsh で `$U` に URL を空白連結して渡し、1回だけ不正URL1件として送信（クォータ1消費）→ 配列展開で送り直し。未送信: watami-direct-kuchikomi（今日変更）・dietician・kinnikushokudo（10/17分）
