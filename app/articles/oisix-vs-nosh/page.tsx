@@ -277,7 +277,7 @@ export default function OisixVsNoshPage() {
           <ul className="list-disc list-inside space-y-1">
             <li>調理ゼロ（電子レンジで6〜7分）</li>
             <li>全メニュー糖質30g以下・塩分2.5g以下</li>
-            <li>100種類以上から自由にメニュー選択</li>
+            <li>約90種類から自由にメニュー選択</li>
             <li>nosh clubで継続するほど安くなる</li>
           </ul>
         </div>
@@ -372,7 +372,7 @@ export default function OisixVsNoshPage() {
 
         <SubHeading>noshのバリエーション</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          noshは常時<strong>100種類以上のメニュー</strong>から選択可能で、毎週新メニューが追加されます。和洋中の主菜に加えて、低糖質のスイーツやパンもラインナップです。すべて<strong>1人前完結</strong>の弁当形式なので、家族で違うメニューを楽しめる一方、ボリュームのある食事を求める人や食材の購入をしたい人には別途食材調達が必要です。
+          noshは常時<strong>約90種類のメニュー</strong>から選択可能で、毎週新メニューが追加されます。和洋中の主菜に加えて、低糖質のスイーツやパンもラインナップです。すべて<strong>1人前完結</strong>の弁当形式なので、家族で違うメニューを楽しめる一方、ボリュームのある食事を求める人や食材の購入をしたい人には別途食材調達が必要です。
         </p>
 
         {/* ===== ライフスタイル ===== */}

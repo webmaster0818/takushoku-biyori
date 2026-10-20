@@ -15,19 +15,19 @@ ARTICLES_DIR = ROOT / "app" / "articles"
 # 1食あたりの平均値（メニューにより変動あり）
 SERVICES = [
     {"name": "nosh（ナッシュ）", "kcal": "260-400", "carb": "30以下", "protein": "14-20", "salt": "2.5以下", "price_per_meal": "612-719", "url": "https://nosh.jp/"},
-    {"name": "三ツ星ファーム", "kcal": "350-500", "carb": "25以下", "protein": "20-30", "salt": "2.5以下", "price_per_meal": "626-842", "url": "https://mitsuboshi-farm.jp/"},
-    {"name": "ウェルネスダイニング", "kcal": "240-300", "carb": "15-25", "protein": "12-18", "salt": "2.0以下", "price_per_meal": "663-880", "url": "https://www.wellness-dining.com/"},
+    {"name": "三ツ星ファーム", "kcal": "350以下", "carb": "25以下", "protein": "15以上", "salt": "−", "price_per_meal": "711-927", "url": "https://t.felmat.net/fmcl?ak=M5863L.1.M98647P.B1357443"},
+    {"name": "ウェルネスダイニング", "kcal": "240-330", "carb": "14-24（平均）", "protein": "9-13（平均）", "salt": "2.0-2.5以下", "price_per_meal": "752-1,165", "url": "https://t.felmat.net/fmcl?ak=W3533K.1.T697112.B1357443"},
     {"name": "まごころケア食", "kcal": "300以下（たんぱく調整食は300以上）", "carb": "15以下（糖質制限食のみ）", "protein": "10以下（たんぱく調整食のみ）", "salt": "2.0-2.5以下", "price_per_meal": "394-426", "url": "https://magokoro-care-shoku.com/"},
     {"name": "ワタミの宅食", "kcal": "250-500", "carb": "20-35以下", "protein": "15-20以上", "salt": "1.5-4.0以下", "price_per_meal": "470-790", "url": "https://www.watami-takushoku.co.jp/"},
     {"name": "食宅便", "kcal": "245-310", "carb": "10-50", "protein": "9-24", "salt": "2.0未満（ケア系）", "price_per_meal": "690-740", "url": "https://shokutakubin.com/"},
-    {"name": "Muscle Deli", "kcal": "350-500", "carb": "30-60", "protein": "30-50", "salt": "2.5以下", "price_per_meal": "1,098-1,490", "url": "https://muscledeli.jp/"},
+    {"name": "Muscle Deli", "kcal": "350-750", "carb": "15-75以下", "protein": "20-50以上", "salt": "2.5以下", "price_per_meal": "1,109-1,557", "url": "https://muscledeli.jp/"},
     {"name": "ヨシケイ", "kcal": "400以下（バランスミールのみ）", "carb": "−", "protein": "−", "salt": "−", "price_per_meal": "430-920", "url": "https://yoshikei-dvlp.co.jp/"},
     {"name": "コープデリ", "kcal": "229-496", "carb": "−", "protein": "−", "salt": "1.2-3.8", "price_per_meal": "464-842", "url": "https://www.coopdeli.jp/"},
     {"name": "パルシステム", "kcal": "300-500", "carb": "30-50", "protein": "15-25", "salt": "2.5以下", "price_per_meal": "580-720", "url": "https://www.pal-system.co.jp/"},
     {"name": "ナッシュclub（割引）", "kcal": "260-400", "carb": "30以下", "protein": "14-20", "salt": "2.5以下", "price_per_meal": "492〜（最高ランク）", "url": "https://nosh.jp/"},
-    {"name": "つるかめキッチン", "kcal": "240", "carb": "15", "protein": "13", "salt": "2.0以下", "price_per_meal": "660-815", "url": "https://tsurukame-kitchen.com/"},
-    {"name": "FIT FOOD HOME", "kcal": "350-500", "carb": "20-40", "protein": "20-35", "salt": "2.0-3.0", "price_per_meal": "750-1,080", "url": "https://fitfoodhome.tabeyoukai.com/"},
-    {"name": "GOFOOD", "kcal": "200-400", "carb": "10-20", "protein": "20-40", "salt": "2.5以下", "price_per_meal": "898-1,148", "url": "https://gofood.jp/"},
+    {"name": "つるかめキッチン", "kcal": "240-300", "carb": "15以下", "protein": "13", "salt": "2.0-2.5以下", "price_per_meal": "663-787", "url": "https://tsurukame-kitchen.com/"},
+    {"name": "FIT FOOD HOME", "kcal": "310-420", "carb": "16-27", "protein": "18-28", "salt": "1.4-2.1", "price_per_meal": "1,188-1,308", "url": "https://store.tavenal.com/"},
+    {"name": "GOFOOD", "note": "（2025年6月30日にサービス終了）", "kcal": "200-400", "carb": "10-20", "protein": "20-40", "salt": "2.5以下", "price_per_meal": "サービス終了", "url": "https://gofood.jp/"},
 ]
 
 
@@ -35,7 +35,7 @@ def build_comparison_table_jsx() -> str:
     rows = "\n".join([
         f'<tr><td className="border-b border-warm-border px-3 py-2 font-medium text-sm whitespace-nowrap">'
         f'<a href="{s["url"]}" target="_blank" rel="noopener noreferrer nofollow" '
-        f'className="text-accent hover:underline">{s["name"]}</a></td>'
+        f'className="text-accent hover:underline">{s["name"]}</a>{s.get("note", "")}</td>'
         f'<td className="border-b border-warm-border px-3 py-2 text-sm text-center">{s["kcal"]}</td>'
         f'<td className="border-b border-warm-border px-3 py-2 text-sm text-center">{s["carb"]}</td>'
         f'<td className="border-b border-warm-border px-3 py-2 text-sm text-center">{s["protein"]}</td>'

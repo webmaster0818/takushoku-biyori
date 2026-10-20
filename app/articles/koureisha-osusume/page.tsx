@@ -247,7 +247,7 @@ export default function KoureishaOsusumePage() {
       { "@type": "ListItem", position: 1, name: "ウェルネスダイニング", description: "気配り宅配食6コース（塩分制限・たんぱく＆塩分調整等）＋別シリーズのやわらか宅配食。管理栄養士に無料相談可。高齢者の食事制限に最も幅広く対応しています。", url: "https://www.wellness-dining.com/" },
       { "@type": "ListItem", position: 2, name: "まごころケア食", description: "1食394円〜（21食・お得便）、送料980円込みでも1食約441円です。シルバーライフ運営の高齢者特化サービス。やわらか食・ムース食対応。", url: "https://magokoro-care-shoku.com/" },
       { "@type": "ListItem", position: 3, name: "食宅便", description: "日清医療食品が運営。病院・介護施設への給食実績があります。やわらかい食事コース完備。約160種類のメニュー。", url: "https://shokutakubin.com/" },
-      { "@type": "ListItem", position: 4, name: "nosh（ナッシュ）", description: "100種類以上のメニューから自由に選べます。全メニュー糖質30g以下。元気なシニアのバランス食に。", url: "https://nosh.jp/" },
+      { "@type": "ListItem", position: 4, name: "nosh（ナッシュ）", description: "約90種類のメニューから自由に選べます。全メニュー糖質30g以下。元気なシニアのバランス食に。", url: "https://nosh.jp/" },
       { "@type": "ListItem", position: 5, name: "Dr.つるかめキッチン", description: "専門医・管理栄養士のダブル監修。糖尿病食・腎臓病食・高血圧食に特化した制限食専門サービス。", url: "https://tsurukame-kitchen.com/" },
     ],
   };
@@ -453,7 +453,7 @@ export default function KoureishaOsusumePage() {
           tagline="元気なシニアに。メニュー自由度No.1の宅配弁当"
           color="bg-green-50"
           features={[
-            "100種類以上から自由に選べる",
+            "約90種類から自由に選べる",
             "全メニュー糖質30g以下・塩分2.5g以下",
             "スマホアプリ対応",
             "nosh club割引（最高ランクで12食1食492円）",
@@ -523,7 +523,7 @@ export default function KoureishaOsusumePage() {
 
         <SubHeading>nosh - アクティブシニアの自由な食生活に</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          noshは「やわらか食」「ムース食」がないため、咀嚼・嚥下機能に問題のある方には向きません。しかし、元気なシニアにとっては100種類以上のメニューから自由に選べる楽しさが最大の魅力です。全メニュー糖質30g以下・塩分2.5g以下で、意識しなくても生活習慣病予防に適した食事が取れます。お孫さんと一緒にアプリでメニューを選ぶ楽しみがあり、「食を通じた家族のコミュニケーション」にもなります。
+          noshは「やわらか食」「ムース食」がないため、咀嚼・嚥下機能に問題のある方には向きません。しかし、元気なシニアにとっては約90種類のメニューから自由に選べる楽しさが最大の魅力です。全メニュー糖質30g以下・塩分2.5g以下で、意識しなくても生活習慣病予防に適した食事が取れます。お孫さんと一緒にアプリでメニューを選ぶ楽しみがあり、「食を通じた家族のコミュニケーション」にもなります。
         </p>
 
         <SubHeading>Dr.つるかめキッチン - 専門医監修の安心感</SubHeading>

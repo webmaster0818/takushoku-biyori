@@ -200,7 +200,7 @@ export default function SangoOsusumePage() {
     itemListOrder: "https://schema.org/ItemListOrderDescending",
     numberOfItems: 5,
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "nosh（ナッシュ）", description: "100種類以上から自由に選べます。糖質30g以下で産後の栄養管理に最適。アプリで簡単注文。", url: "https://nosh.jp/" },
+      { "@type": "ListItem", position: 1, name: "nosh（ナッシュ）", description: "約90種類から自由に選べます。糖質30g以下で産後の栄養管理に最適。アプリで簡単注文。", url: "https://nosh.jp/" },
       { "@type": "ListItem", position: 2, name: "三ツ星ファーム", description: "料理人監修のメニュー125種類以上。たんぱく質15g以上の基準で産後のご褒美に。", url: "https://mitsuboshifarm.jp/" },
       { "@type": "ListItem", position: 3, name: "ウェルネスダイニング", description: "管理栄養士に産後の食事を無料相談。気配り宅配食は栄養バランス・塩分制限など6コースです。", url: "https://www.wellness-dining.com/" },
       { "@type": "ListItem", position: 4, name: "わんまいる", description: "国産食材100%。湯煎調理で手作り感のある食事。添加物が気になるママに。", url: "https://www.onemile.jp/" },
@@ -323,7 +323,7 @@ export default function SangoOsusumePage() {
           tagline="栄養管理 × 家族利用 × コスパ。産後の万能選手"
           color="bg-yellow-50"
           features={[
-            "100種類以上から自由に選べる",
+            "約90種類から自由に選べる",
             "全メニュー糖質30g以下・塩分2.5g以下",
             "たんぱく質平均約20g",
             "20食プランで家族利用に最適",

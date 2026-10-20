@@ -657,7 +657,7 @@ export default function DieticianKuchikomiPage() {
           <div className="bg-green-50 rounded-lg p-4 text-sm leading-relaxed">
             <p className="font-bold mb-1">③ 続けやすさ・メニューの豊富さなら → nosh</p>
             <p className="mb-2">
-              全品糖質30g以下・100種類以上のメニューで、アプリからの管理も手軽です。厳密なPFC管理より「ゆるく長く」続けたい人に向きます。
+              全品糖質30g以下・約90種類のメニューで、アプリからの管理も手軽です。厳密なPFC管理より「ゆるく長く」続けたい人に向きます。
             </p>
             <Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline font-medium">
               noshの口コミ・評判を見る →
