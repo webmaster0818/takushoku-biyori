@@ -329,3 +329,10 @@ GSC診断(28d 6/3-7/1): クリック2・表示738(前月391→1.9倍)・平均20
   - nosh（nosh.jp/menu の data-* 属性・主菜 category=3 の87品、10/19）: kcal 199〜770・中央50% 263〜396、たんぱく質 中央50% 13.8〜19.8 → 15社表の 260-400 / 14-20 は維持。takuhai-vs-conveni の「nosh（平均）200〜450kcal・たんぱく質15〜30g」と nosh vs セブンの「200〜450kcal」→ 260〜400kcal・14〜20g（主菜の中央50%）＋注記。同じ「200〜450kcal」が diet-osusume（cons）・hitorigurashi-osusume（1位カード）にもあり同値に修正。全 out で 200〜450kcal 0件
   - add-comparison-table.py の nosh・ナッシュclub 行を表の現行値に（他の古い行＝三ツ星・ウェルネス・Muscle Deli・パルシステム・つるかめ・FFH・GOFOOD は未修正。表は直接編集で更新済みなのでスクリプトは再実行しない）
   - ⚠️ nosh 公式トップの「メニュー数 約90種類」が記事の「100種類以上」と食い違う（未対応・メニュー一覧は100品＝主菜87＋その他13）
+
+### 2026-10-20 朝ルーチン: 10/19 未送信の Indexing 7本・nosh メニュー数・add-comparison-table.py
+- **Indexing 7/7**（1件ずつ別リクエスト・growth/okina/tools/idx.py）: watami-direct-kuchikomi dietician-kuchikomi kinnikushokudo-deli-kuchikomi watami-direct-otameshi takuhai-vs-conveni diet-osusume hitorigurashi-osusume（10/19 の続き分＋10/17分。growth/indexing-pending-20261019.txt には takushoku 分なし→CLAUDE.md と git log から特定）
+- **nosh メニュー数**（nosh.jp トップ 2026-10-20：「メニュー数 約90種類」「約90種類から、好きなものを選ぶだけ」・meta description も約90種類。/menu の掲載は99品＝主菜 category=3 が86品）: 「100種類以上」「約100種類」→「約90種類」20記事52か所（toushitsu の「約100種類（主菜87品＋スイーツ等・10/17）」→「約90種類（2026年10月20日・公式確認）」）。
+  - 触っていないもの: watami-reviews（ワタミ冷凍 100種類以上×3）・lifemeal-kuchikomi（ライフミール 100種類以上×3）・wellness-dining-reviews（ウェルネス「FAQでは100種類以上」）・nosh-vs-mitsuboshi / nosh-reviews のウェルネス「100種類」＝nosh 以外。takuhai-vs-conveni の一般論「宅配弁当（冷凍）：60〜100種類から事前に選択」「宅配弁当：事前にネットで選ぶ（100種類以上）」＝nosh 個別ではないので据え置き
+- **add-comparison-table.py**: 三ツ星・ウェルネス（href も表と同じ felmat）・Muscle Deli・つるかめ・FFH（store.tavenal.com）・GOFOOD（「（2025年6月30日にサービス終了）」を note キーで </a> の後に・価格「サービス終了」）を15社表の現行値に。パルシステム行は元から表と同値（表側も5月値のまま）。生成される行が18記事の表と完全一致（差は nosh-reviews のナッシュclub 価格「492-714」1セルのみ＝他18記事は「492〜（最高ランク）」）。前置き・脚注の文面はスクリプトが古いまま（記事側は直接編集済み）
+- source e09e758・1d3addc / deploy c9610b94・precheck 全項目OK・felmat 84件 集合一致
