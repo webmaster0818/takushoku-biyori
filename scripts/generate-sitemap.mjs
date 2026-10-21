@@ -23,10 +23,12 @@ const TODAY = new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toIS
 const FILE_DATES = (() => {
   const m = new Map()
   let date = ''
-  const log = execFileSync('git', ['log', '--format=@%cs', '--name-only', '--', 'app', 'data', 'lib'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28 })
+  // 件名に [no-lastmod] を含むコミット（デザインだけの変更＝本文は不変）は日付に数えない。
+  // 2026-10-21 デザイン刷新で67ページ全部の lastmod がマージ日になるのを避けるため（見せかけの鮮度にしない）。
+  const log = execFileSync('git', ['log', '--format=@%cs %s', '--name-only', '--', 'app', 'data', 'lib'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28 })
   for (const line of log.split('\n')) {
-    if (line.startsWith('@')) date = line.slice(1)
-    else if (line && !m.has(line)) m.set(line, date)
+    if (line.startsWith('@')) date = line.includes('[no-lastmod]') ? '' : line.slice(1, 11)
+    else if (line && date && !m.has(line)) m.set(line, date)
   }
   const dirty = execFileSync('git', ['status', '--porcelain', '--', 'app', 'data', 'lib'], { cwd: ROOT, encoding: 'utf8' })
   for (const line of dirty.split('\n')) if (line) m.set(line.slice(3).trim(), TODAY)
