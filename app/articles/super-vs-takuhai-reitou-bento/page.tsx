@@ -194,7 +194,7 @@ export default function SuperVsTakuhaiReitouBentoPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-05-28T00:00:00+09:00",
+    dateModified: "2026-10-21T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -377,7 +377,7 @@ export default function SuperVsTakuhaiReitouBentoPage() {
 
         <SubHeading>宅配: 定期的に新メニューが追加</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          多くの宅配サービスは<strong>毎週〜毎月、新メニューが追加される</strong>仕組みです。たとえばnoshは「毎週新メニュー追加」を打ち出しており、3ヶ月続けてもまだ食べていないメニューがある、という状態を維持できます。飽きにくいのが大きな利点です。
+          多くの宅配サービスは<strong>毎週〜毎月、新メニューが追加される</strong>仕組みです。たとえばnoshは公式サイトで「毎週メニューが新登場」と打ち出しており、3ヶ月続けてもまだ食べていないメニューがある、という状態を維持できます。飽きにくいのが大きな利点です。
         </p>
 
         <SectionHeading id="compare-table">総合比較表</SectionHeading>
