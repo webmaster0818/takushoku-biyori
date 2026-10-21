@@ -1,20 +1,22 @@
 import type { Metadata, Viewport } from "next";
-import { Noto_Sans_JP, Zen_Maru_Gothic } from "next/font/google";
+import { BIZ_UDPGothic, Zen_Old_Mincho } from "next/font/google";
 import Link from "next/link";
+import { LogoWordmark } from "@/components/Logo";
 import "./globals.css";
 
-const notoSansJP = Noto_Sans_JP({
-  variable: "--font-noto-sans-jp",
+/* デザイン「食卓」（2026-10-21）: 本文＝BIZ UDPGothic（UD書体・数字が読みやすい）、見出し＝Zen Old Mincho */
+const bizUD = BIZ_UDPGothic({
+  variable: "--font-biz-ud",
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["400", "700"],
   display: "swap",
   preload: true,
 });
 
-const zenMaruGothic = Zen_Maru_Gothic({
-  variable: "--font-zen-maru-gothic",
+const zenOldMincho = Zen_Old_Mincho({
+  variable: "--font-zen-old-mincho",
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["600", "700"],
   display: "swap",
   preload: true,
 });
@@ -96,18 +98,13 @@ function JsonLd() {
 
 function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-warm-border">
-      <nav className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-        <Link
-          href="/"
-          className="font-display text-xl font-bold text-accent-dark tracking-tight flex items-center gap-2"
-        >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/logo.png" alt="" className="w-16 h-16 rounded" />
-          {SITE_NAME}
+    <header className="sticky top-0 z-50 bg-[#f8f6f1]/95 backdrop-blur border-b border-rule">
+      <nav className="max-w-5xl mx-auto px-4 h-[68px] flex items-center justify-between">
+        <Link href="/" aria-label={SITE_NAME} className="flex items-center">
+          <LogoWordmark name={SITE_NAME} />
         </Link>
         {/* Desktop nav */}
-        <ul className="hidden md:flex items-center gap-6 text-sm font-medium text-foreground/80">
+        <ul className="hidden md:flex items-center gap-7 text-[13.5px] tracking-[0.06em] text-foreground/85">
           <li>
             <Link href="/" className="hover:text-accent transition-colors">
               ホーム
@@ -137,7 +134,7 @@ function Header() {
         </ul>
         {/* Mobile hamburger */}
         <details className="md:hidden relative group">
-          <summary className="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-cream transition-colors">
+          <summary className="flex items-center justify-center w-10 h-10 text-accent">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -145,15 +142,10 @@ function Header() {
               viewBox="0 0 24 24"
               aria-label="メニューを開く"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
+              <path strokeLinecap="round" strokeWidth={1.6} d="M4 9h16M4 15h16" />
             </svg>
           </summary>
-          <div className="absolute right-0 mt-2 w-48 bg-white border border-warm-border rounded-lg shadow-lg py-2 z-50">
+          <div className="absolute right-0 mt-2 w-52 bg-[#fffefb] border border-rule py-2 z-50">
             <Link
               href="/"
               className="block px-4 py-2 text-sm hover:bg-cream transition-colors"
@@ -191,10 +183,8 @@ function Footer() {
       <div className="max-w-5xl mx-auto px-4 py-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <p className="font-display text-lg font-bold mb-2 flex items-center gap-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/logo.png" alt="" className="w-14 h-14 rounded" />
-              {SITE_NAME}
+            <p className="mb-4">
+              <LogoWordmark name={SITE_NAME} light />
             </p>
             <p className="text-sm text-white/70 leading-relaxed">
               宅配弁当・栄養食の比較情報を掲載しています。
@@ -276,7 +266,7 @@ export default function RootLayout({
   return (
     <html
       lang="ja"
-      className={`${notoSansJP.variable} ${zenMaruGothic.variable} h-full antialiased`}
+      className={`${bizUD.variable} ${zenOldMincho.variable} h-full antialiased`}
     >
       <head>
         <meta

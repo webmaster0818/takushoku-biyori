@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "ワタミの宅食ダイレクト お試しセットガイド【2026年版】内容・送料・申込手順を解説";
@@ -201,6 +202,7 @@ export default function WatamiDirectOtameshiPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-otameshi.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-otameshi-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -214,6 +216,7 @@ export default function WatamiDirectOtameshiPage() {
             PR: 本記事には広告(アフィリエイトリンク)が含まれます。価格・お試しセット内容は変更される場合があるため、最新情報は必ず<a href="https://www.watami-takushoku-direct.jp/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">公式サイト</a>でご確認ください。
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
@@ -230,6 +233,7 @@ export default function WatamiDirectOtameshiPage() {
         <TableOfContents />
 
         <SectionHeading id="about">ワタミの宅食ダイレクトとは</SectionHeading>
+        <ServiceCapture id="watami-direct" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           ワタミの宅食ダイレクトは、居酒屋「ワタミ」でおなじみのワタミグループが運営する<strong>冷凍宅配弁当のECサービス</strong>です。地域限定で日替わり冷蔵弁当を配達する「ワタミの宅食」とは別ブランドで、冷凍宅配便（佐川急便）で<strong>全国</strong>に届きます（離島など一部地域を除く）。

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCaptureGrid from "@/components/ServiceCaptureGrid";
 
 const ARTICLE_TITLE =
   "高タンパク質 冷凍宅配弁当ランキング【2026年版】筋トレ・ダイエット向け6選";
@@ -278,6 +279,7 @@ export default function KouTanpakuRankingPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-kou-tanpaku.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-kou-tanpaku-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -291,6 +293,7 @@ export default function KouTanpakuRankingPage() {
             PR: 本記事には広告(アフィリエイトリンク)が含まれます。価格・栄養成分は変更される場合があるため、最新情報は必ず各公式サイトでご確認ください。
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
@@ -493,6 +496,7 @@ export default function KouTanpakuRankingPage() {
             </div>
           </div>
         </div>
+        <ServiceCaptureGrid ids={["nosh", "muscledeli", "kinnikushokudo", "mitsuboshi"]} label="この記事で取り上げている主なサービスの公式サイト" />{/* svc-cap-202610 */}
               {/* eeat-links-202607 */}
         <div className="mt-10 rounded-lg border p-4 text-xs leading-relaxed" style={{ borderColor: "#dde3eb", color: "#6b7785" }}>
           この記事は宅食びより編集部が「<Link href="/methodology/" className="underline">評価方法・データ源</Link>」に基づき、各社公式サイトの一次確認と出典付きの口コミ集約のみで作成しています（編集部による実食レビューは現在未実施・導入準備中）。編集体制は「<Link href="/author/" className="underline">編集部の体制と役割</Link>」をご覧ください。内容の誤りにお気づきの場合は<Link href="/editorial/" className="underline">編集部</Link>までご指摘ください。

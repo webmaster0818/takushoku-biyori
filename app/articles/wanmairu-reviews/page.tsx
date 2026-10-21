@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "わんまいるの口コミ・評判は？まずいって本当？国産食材100%・湯煎解凍の実力を出典付きで検証";
@@ -282,6 +283,7 @@ export default function WanmairuReviewsPage() {
       
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-atatame.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-atatame-m.webp)" }}>
         <Breadcrumbs />
         <header className="mb-8">
           <div className="flex items-center gap-3 mb-4"><span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">口コミ・評判</span><span className="text-[10px] text-gray-400">PR掲載も含みます</span></div>
@@ -290,6 +292,7 @@ export default function WanmairuReviewsPage() {
             <time dateTime="2026-04-21">公開: 2026年4月21日</time><span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">「わんまいるって美味しいの？」「国産食材100%って本当？」「湯煎って面倒じゃない？」——冷凍宅食の中でも「味」と「素材」にとことんこだわるわんまいるです。</p>
@@ -312,6 +315,7 @@ export default function WanmairuReviewsPage() {
         <TableOfContents />
 
         <SectionHeading id="about">わんまいるとは？基本情報まとめ</SectionHeading>
+        <ServiceCapture id="wanmairu" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">わんまいるは、株式会社ファミリーネットワークシステムズが運営する冷凍おかず宅配サービスです。大阪に本社を置き、<strong>国産食材100%</strong>を掲げる数少ないサービスの1つです。宮崎県産黒毛和牛や大山豚、日南どりなど、地域のブランド食材を積極的に使用しています。</p>
 
         <ComparisonTable

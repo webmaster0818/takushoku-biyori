@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "nosh(ナッシュ)の口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
@@ -423,6 +424,7 @@ export default function NoshReviewsPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-reitou-a.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-reitou-a-m.webp)" }}>
         <Breadcrumbs />
 
         {/* Title */}
@@ -451,6 +453,7 @@ export default function NoshReviewsPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -507,6 +510,7 @@ export default function NoshReviewsPage() {
 
         {/* ===== 基本情報 ===== */}
         <SectionHeading id="about">nosh(ナッシュ)とは？基本情報まとめ</SectionHeading>
+        <ServiceCapture id="nosh" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           nosh(ナッシュ)は、ナッシュ株式会社（大阪市北区）が運営する冷凍宅配弁当サービスです。「手軽に健康的な食事を」というコンセプトで急成長し、<strong>累計販売食数は1.5億食を突破しています</strong>（2025年12月時点・公式発表）。冷凍宅配弁当業界ではトップクラスの知名度を誇ります。

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "ニチレイフーズダイレクトの口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
@@ -406,6 +407,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-reitou-a.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-reitou-a-m.webp)" }}>
         <Breadcrumbs />
 
         {/* Title */}
@@ -434,6 +436,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -490,6 +493,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
 
         {/* ===== 基本情報 ===== */}
         <SectionHeading id="about">ニチレイフーズダイレクトとは？基本情報まとめ</SectionHeading>
+        <ServiceCapture id="nichirei" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           ニチレイフーズダイレクトは、株式会社ニチレイフーズ（2005年設立・ニチレイグループの冷凍食品事業会社）が運営する公式通販サービスです。主力は管理栄養士監修の冷凍おかずセット<strong>「きくばりごぜん」（旧・気くばり御膳）</strong>で、カロリー300kcal以下・塩分2.0g以下・野菜100g以上（生鮮換算）という設計。ほかに高たんぱくの「パワーデリ」、おかず＋ごはんの「きくばり まめなごはん」、糖質・塩分などを控えたい人向けの栄養成分別セットも展開しています。

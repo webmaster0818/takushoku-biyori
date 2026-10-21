@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "Dr.つるかめキッチンの口コミ・評判は？まずいって本当？制限食5コースの料金・味を出典付きで検証【2026年10月最新】";
@@ -284,6 +285,7 @@ export default function TsurukameReviewsPage() {
       
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-seigen.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-seigen-m.webp)" }}>
         <Breadcrumbs />
         <header className="mb-8">
           <div className="flex items-center gap-3 mb-4"><span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">口コミ・評判</span><span className="text-[10px] text-gray-400">PR掲載も含みます</span></div>
@@ -292,6 +294,7 @@ export default function TsurukameReviewsPage() {
             <time dateTime="2026-04-21">公開: 2026年4月21日</time><time dateTime="2026-10-11">更新: 2026年10月11日（公式で再確認）</time><span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">「Dr.つるかめキッチンって実際どうなの？」「制限食なのに美味しいって本当？」——糖尿病・腎臓病・高血圧などの食事制限が必要な方に向けた宅配弁当サービス、Dr.つるかめキッチンです。</p>
@@ -313,6 +316,7 @@ export default function TsurukameReviewsPage() {
         <TableOfContents />
 
         <SectionHeading id="about">Dr.つるかめキッチンとは？基本情報</SectionHeading>
+        <ServiceCapture id="tsurukame" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">Dr.つるかめキッチンは、株式会社クロスエッジが運営する制限食専門の冷凍宅配弁当サービスです。最大の特徴は<strong>各分野の専門医と管理栄養士によるW監修</strong>。糖尿病専門医、ダイエット専門医、腎臓病専門医などがそれぞれのコースの栄養設計を監修しているため、医学的な根拠に基づいた食事管理ができます。</p>
 
         <ComparisonTable

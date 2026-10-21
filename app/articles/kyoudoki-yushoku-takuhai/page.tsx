@@ -260,6 +260,7 @@ export default function KyoudokiYushokuTakuhaiPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-kyoudoki.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-kyoudoki-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -279,6 +280,7 @@ export default function KyoudokiYushokuTakuhaiPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 text-xs leading-relaxed">
           <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。本記事は宅配弁当の一般的な選び方・運用方法を解説するものです。<strong>料金・キャンペーン・配送方法・対応エリアは時期や地域で変動</strong>するため、具体的な内容は断定せず、最新・正確な情報は各サービスの公式サイトでご確認ください。

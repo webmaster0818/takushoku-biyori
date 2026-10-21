@@ -170,6 +170,7 @@ export default function MagokoroCareReviewsPage() {
       
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-koureisha-a.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-koureisha-a-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -181,6 +182,7 @@ export default function MagokoroCareReviewsPage() {
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">

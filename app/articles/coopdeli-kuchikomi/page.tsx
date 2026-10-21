@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "コープ（生協）の宅配弁当の口コミ・評判｜まずいって本当？コープデリ夕食宅配「舞菜」の料金・カロリーを公式で確認【2026年10月最新】";
@@ -413,6 +414,7 @@ export default function CoopdeliKuchikomiPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-coop.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-coop-m.webp)" }}>
         <Breadcrumbs />
 
         {/* Title */}
@@ -441,6 +443,7 @@ export default function CoopdeliKuchikomiPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -497,6 +500,7 @@ export default function CoopdeliKuchikomiPage() {
 
         {/* ===== 基本情報 ===== */}
         <SectionHeading id="about">コープデリの夕食宅配（デイリーコープ）とは？基本情報</SectionHeading>
+        <ServiceCapture id="coopdeli" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           コープデリの夕食宅配は、コープデリ連合会（コープみらい等・関東信越の生協）が運営する<strong>平日毎日お届け型の夕食宅配</strong>です。日替わりの「舞菜」シリーズ（お弁当・おかず）を月〜金に冷蔵で届けます。公式は<strong>「管理栄養士がカロリーや塩分を管理し、栄養バランスを考えた」</strong>献立と説明しており、それを配達手数料無料で自宅で受け取れるのが特徴です。利用には生協への加入（出資金・脱退時返還）が必要です。

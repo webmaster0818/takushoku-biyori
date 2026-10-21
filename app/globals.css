@@ -1,14 +1,31 @@
 @import "tailwindcss";
 
+/*
+  デザイン「食卓」（2026-10-21 MediaXAI「デザイン改修・他サイトでやった通り」）
+  - 色は3系統: 白磁の紙 #f8f6f1 / 松葉色（深い緑）#24493d / 柿 #b84d27（差し色・CTA）。罫は 1px（#ddd6c8）。
+    gold（生成り×真鍮）・gakki（チャコール×アンバー）と被らない、食の「おいしそう」と健康・信頼の両立。
+  - 角は小さく（4px まで）。影・装飾のグラデーションは使わない。カードは罫で区切る。
+  - 見出しは明朝（Zen Old Mincho）、本文・UI は UD ゴシック（BIZ UDPGothic＝数字・料金表が読みやすい／高齢の読者にも配慮）。
+  - 既存のクラス名（accent / cream / warm-gray / warm-border …）は値だけを差し替えて全ページを一括で再配色する。
+    記事で使っている Tailwind の色（green-50＝良い口コミ、red-50＝注意点、yellow-50＝補足 など）も @theme で同じ系統に寄せた。
+*/
 :root {
-  --background: #faf8f5;
-  --foreground: #2d2a26;
-  --accent: #4a7c59;
-  --accent-light: #6ba368;
-  --accent-dark: #3a6147;
-  --cream: #f5f0e8;
-  --warm-gray: #8a8478;
-  --warm-border: #e8e2d8;
+  --background: #f8f6f1;
+  --foreground: #1f2a26;
+  --accent: #24493d;
+  --accent-light: #4d7a68;
+  --accent-dark: #183328;
+  --cream: #f0ece3;
+  --warm-gray: #5c645e;
+  --warm-border: #e0dacd;
+  --persimmon: #b84d27;
+  --persimmon-dark: #9a3d1c;
+  --persimmon-tint: #f8ece5;
+  --sage-tint: #ecf1ec;
+  --card: #fffefb;
+  --band: #efeade;
+  --rule: #ddd6c8;
+  --rule-strong: #c2b8a5;
 }
 
 @theme inline {
@@ -20,28 +37,116 @@
   --color-cream: var(--cream);
   --color-warm-gray: var(--warm-gray);
   --color-warm-border: var(--warm-border);
-  --font-sans: var(--font-noto-sans-jp);
-  --font-display: var(--font-zen-maru-gothic);
+  --color-persimmon: var(--persimmon);
+  --color-persimmon-dark: var(--persimmon-dark);
+  --color-card: var(--card);
+  --color-band: var(--band);
+  --color-rule: var(--rule);
+  --font-sans: var(--font-biz-ud), "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", sans-serif;
+  --font-display: var(--font-zen-old-mincho), "Hiragino Mincho ProN", "Yu Mincho", serif;
+}
+
+/* 角丸・影はサイト全体で控えめに（記事60本の rounded-xl / shadow-lg をトークンで一括に）。
+   記事で使っている Tailwind の色は「食卓」の系統へ（意味は同じ: 緑＝良い点、赤＝注意点、黄＝補足）。 */
+@theme {
+  --radius-sm: 2px;
+  --radius-md: 3px;
+  --radius-lg: 4px;
+  --radius-xl: 4px;
+  --radius-2xl: 6px;
+  --radius-3xl: 6px;
+  --shadow-sm: 0 0 #0000;
+  --shadow: 0 0 #0000;
+  --shadow-md: 0 0 #0000;
+  --shadow-lg: 0 0 #0000;
+  --shadow-xl: 0 0 #0000;
+
+  --color-green-50: #eef3ee;
+  --color-green-100: #e1eae2;
+  --color-green-200: #cbd9ce;
+  --color-green-300: #a9c2b0;
+  --color-green-700: #2c5a48;
+  --color-emerald-100: #e1eae2;
+  --color-emerald-700: #2c5a48;
+  --color-red-50: #faefe9;
+  --color-red-100: #f4ddd2;
+  --color-red-200: #ebc6b4;
+  --color-red-300: #dfa98f;
+  --color-red-400: #cf7d5b;
+  --color-red-500: #b84d27;
+  --color-red-600: #9a3d1c;
+  --color-orange-50: #faf1ea;
+  --color-orange-100: #f4e1d2;
+  --color-orange-200: #ead0b8;
+  --color-orange-300: #ddb592;
+  --color-orange-400: #cf9566;
+  --color-orange-600: #a85126;
+  --color-orange-700: #8e431f;
+  --color-yellow-50: #faf5e7;
+  --color-yellow-200: #eadcb2;
+  --color-yellow-300: #dfc98c;
+  --color-yellow-500: #c39a3e;
+  --color-amber-50: #faf5e7;
+  --color-amber-200: #eadcb2;
+  --color-amber-300: #dfc98c;
+  --color-amber-600: #9c7426;
+  --color-blue-50: #eef2f2;
+  --color-blue-100: #e0e8e8;
+  --color-blue-200: #ccd9da;
+  --color-blue-300: #aebfc1;
+  --color-blue-700: #33565c;
+  --color-purple-50: #f3f0f1;
+  --color-purple-100: #e8e1e4;
+  --color-purple-200: #d8ccd1;
+  --color-purple-700: #5e4652;
+  --color-pink-50: #f8eff0;
+  --color-pink-100: #f0dfe1;
+  --color-pink-200: #e5c9cd;
+  --color-pink-700: #8a4650;
+  --color-gray-50: #f4f2ec;
+  --color-gray-200: #e0dacd;
+  --color-gray-300: #cfc8b9;
+  --color-gray-400: #858b85;
+  --color-gray-500: #646b65;
+  --color-gray-600: #535a54;
+  --color-gray-700: #3d443f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-noto-sans-jp), sans-serif;
+  font-family: var(--font-biz-ud), "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-feature-settings: "palt" 1;
+  letter-spacing: 0.02em;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+.font-display {
+  font-family: var(--font-zen-old-mincho), "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-feature-settings: "palt" 1;
+  letter-spacing: 0.04em;
+  font-weight: 600;
 }
+
+/* 見出し帯・写真の全幅要素が横スクロールを生まないように */
+main {
+  overflow-x: clip;
+}
+
+/* 枠線 2px → 1px（細い罫に統一）。左の太罫（border-l-4）は 3px に */
+.border-2 { border-width: 1px; }
+.border-b-2 { border-bottom-width: 1px; }
+.border-l-4 { border-left-width: 3px; }
 
 /* Star rating colors */
-.star-filled {
-  color: #e8a838;
-}
-.star-empty {
-  color: #d4cfc7;
-}
+.star-filled { color: #c8902f; }
+.star-empty { color: #d8d1c3; }
 
 /* FAQ details animation */
 details summary {
@@ -66,7 +171,301 @@ details[open] summary .faq-arrow {
 
 /* Breadcrumb separator */
 .breadcrumb-sep::before {
-  content: ">";
+  content: "/";
   margin: 0 0.5rem;
+  color: var(--rule-strong);
+}
+
+/* ===== 共通部品 ===== */
+/* 罫の矩形ボタン（TOP） */
+.btn-line {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-height: 3.1rem;
+  padding: 0.8rem 1.9rem;
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  color: var(--accent);
+  background: transparent;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  letter-spacing: 0.05em;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+.btn-line:hover {
+  background: var(--accent);
+  color: #fff;
+}
+.btn-line--solid {
+  background: var(--accent);
+  color: #fff;
+}
+.btn-line--solid:hover {
+  background: var(--accent-dark);
+  border-color: var(--accent-dark);
+}
+
+/* セクション見出しの上の柿色の短い罫 */
+.rule-mark::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: var(--persimmon);
+  margin: 0 auto 1rem;
+}
+.rule-mark.text-left::before {
+  margin-left: 0;
+}
+
+/* 公式サイトへのボタン（rel=sponsored の塗りボタン）は柿色＝この画面で押す場所が1つに見えるように。文言・リンクは不変 */
+a[rel~="sponsored"]:is(.bg-accent, [class*="bg-accent "]) {
+  background-color: var(--persimmon);
+  color: #fff;
+}
+a[rel~="sponsored"]:is(.bg-accent, [class*="bg-accent "]):hover {
+  background-color: var(--persimmon-dark);
+  opacity: 1;
+}
+
+/* 影の代わりに、カード型リンクは罫の色で反応させる */
+a.block.border:hover,
+a.block[class*="border-"]:hover {
+  border-color: var(--accent-light);
+}
+
+/* カテゴリのラベル（塗りの丸いバッジ）は小さな矩形に */
+span.inline-block.rounded-full.bg-accent,
+span.inline-block.rounded-full[class*="bg-accent/"] {
+  border-radius: 2px;
+  letter-spacing: 0.06em;
+}
+
+/* ===== 配下ページの見出し帯（2026-10-21）=====
+   「パンくず＋h1（＋カテゴリ・更新日）」を全幅の帯にする。
+   - 記事・非記事とも、帯の要素は <div className="subhead"> で包んである（scripts/add-subhero-images-202610.py が冪等に付ける）。
+   - 全幅の塗りは ::before（100vw）。写真は ::after（style の --subhero / --subhero-m があるページだけ）。横あふれは main の overflow-x: clip で切る。
+   - 包んでいない新しい記事でも崩れないよう、帯を持たないページの h1 は通常のまま（下の .subhead 以外のスタイルは当たらない）。 */
+:is(article, div, main):has(> .subhead) {
+  padding-top: 0 !important;
+}
+:is(article, div, main):has(> .subhead) > :first-child:not(.subhead) {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.subhead {
+  position: relative;
+  isolation: isolate;
+  padding: 1.15rem 0 2rem;
+  margin-bottom: 2.5rem;
+}
+.subhead::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 50vw);
+  width: 100vw;
+  background: var(--band);
+  border-bottom: 1px solid var(--rule);
+}
+.subhead > * {
+  position: relative;
+}
+.subhead > nav:first-child {
+  margin-bottom: 1.4rem !important;
+  color: var(--warm-gray) !important;
+}
+.subhead > nav:first-child a {
   color: var(--warm-gray);
 }
+.subhead > nav:first-child :is(span, li > span) {
+  color: var(--foreground);
+}
+.subhead > header {
+  margin-bottom: 0 !important;
+}
+.subhead h1 {
+  font-family: var(--font-zen-old-mincho), "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.5 !important;
+  color: var(--foreground) !important;
+  margin-bottom: 0.9rem !important;
+  margin-top: 0 !important;
+}
+.subhead h1::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: var(--persimmon);
+  margin-bottom: 1rem;
+}
+.subhead > :last-child {
+  margin-bottom: 0 !important;
+}
+.subhead p,
+.subhead time,
+.subhead header div {
+  color: var(--warm-gray);
+}
+.subhead .bg-accent.text-white {
+  background: transparent;
+  color: var(--accent) !important;
+  border: 1px solid var(--accent);
+}
+
+/* ===== 見出し帯のテーマ写真（2026-10-21・Nano Banana Pro）=====
+   style="--subhero:url(…);--subhero-m:url(…)" があるページだけ（付けるのは scripts/add-subhero-images-202610.py）。
+   - PC: 写真は帯の右側。左（文字側）へ帯の色に溶かす。題名は写真に被りすぎないよう幅を抑える。
+   - スマホ: 帯の一番上に写真の面（-m＝右側を切り出した版）、その下にパンくずと題名。 */
+.subhead[style*="--subhero"]::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 1px;
+  right: calc(50% - 50vw);
+  width: min(56vw, 880px);
+  background: var(--subhero) right 58% / cover no-repeat;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgb(0 0 0 / 0.28) 18%, rgb(0 0 0 / 0.8) 42%, #000 62%);
+  mask-image: linear-gradient(90deg, transparent 0%, rgb(0 0 0 / 0.28) 18%, rgb(0 0 0 / 0.8) 42%, #000 62%);
+  pointer-events: none;
+}
+@media (min-width: 768px) {
+  .subhead[style*="--subhero"] {
+    padding-top: 1.4rem;
+    padding-bottom: 2.6rem;
+    min-height: 300px;
+  }
+  .subhead[style*="--subhero"] > * {
+    max-width: min(100%, 35rem);
+  }
+  .subhead[style*="--subhero"] > nav:first-child {
+    max-width: min(100%, 44rem);
+  }
+}
+@media (max-width: 767px) {
+  .subhead[style*="--subhero"] {
+    --sh-mh: min(52vw, 260px);
+    padding-top: calc(var(--sh-mh) + 1rem);
+  }
+  .subhead[style*="--subhero"]::after {
+    bottom: auto;
+    right: auto;
+    left: calc(50% - 50vw);
+    width: 100vw;
+    height: var(--sh-mh);
+    background-image: var(--subhero-m, var(--subhero));
+    background-position: center 58%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 72%, transparent 100%);
+    mask-image: linear-gradient(180deg, #000 0%, #000 72%, transparent 100%);
+  }
+}
+
+/* ===== 記事本文 ===== */
+/* h2（SectionHeading 等）: 明朝・細い下罫、左端だけ柿色 */
+article h2:not(.text-center):not([class*="text-white"]) {
+  font-family: var(--font-zen-old-mincho), "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.55;
+  color: var(--foreground);
+  position: relative;
+}
+article h2[class*="border-b"] {
+  border-bottom: 1px solid var(--rule) !important;
+  padding-bottom: 0.7rem;
+}
+article h2[class*="border-b"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 3rem;
+  height: 2px;
+  background: var(--persimmon);
+}
+/* h3 の左罫（SubHeading）は松葉色の細罫に */
+article h3[class*="border-l-4"] {
+  border-left: 3px solid var(--accent);
+  padding-left: 0.75rem;
+}
+article strong {
+  color: inherit;
+}
+
+/* 目次 */
+nav[aria-label="目次"] {
+  background: var(--card) !important;
+  border: 1px solid var(--rule) !important;
+  border-top: 2px solid var(--accent) !important;
+  border-radius: 0 !important;
+  padding: 1.25rem 1.4rem !important;
+}
+nav[aria-label="目次"] > p:first-child {
+  font-family: var(--font-zen-old-mincho), "Hiragino Mincho ProN", "Yu Mincho", serif;
+  letter-spacing: 0.08em;
+}
+nav[aria-label="目次"] a {
+  color: var(--foreground);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+nav[aria-label="目次"] a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent-light);
+}
+
+/* 表: 見出し行は帯の色、罫は細く、偶数行はごく淡く */
+article table {
+  background: var(--card);
+}
+article table th {
+  background: var(--band);
+  color: var(--foreground);
+  border-color: var(--rule) !important;
+  border-bottom-color: var(--rule-strong) !important;
+}
+article table td {
+  border-color: var(--rule) !important;
+}
+article table thead tr {
+  background: var(--band) !important;
+}
+article table tbody tr:nth-child(even) {
+  background: #faf8f3;
+}
+article .table-wrapper,
+article .overflow-x-auto:has(> table) {
+  border: 1px solid var(--rule);
+  background: var(--card);
+}
+article .table-wrapper > table,
+article .overflow-x-auto > table {
+  border-style: hidden;
+  margin-bottom: 0;
+}
+
+/* 要点・CTA の箱（bg-accent/10・bg-cream）は罫の箱に */
+article [class*="bg-accent/10"]:is(div, section) {
+  background: var(--sage-tint);
+  border: 1px solid #d3ded5;
+}
+
+/* 公式サイトのキャプチャ */
+.service-capture img {
+  border: 1px solid var(--rule);
+  background: #fff;
+}
+
+/* 旧デザインの直書き色（style 属性・記事末尾の信頼性ブロック 58 本・author / editorial）を「食卓」の色に寄せる。文言は不変 */
+[style*="#dde3eb"] { border-color: var(--rule) !important; }
+[style*="#6b7785"] { color: var(--warm-gray) !important; }
+[style*="#1e2a38"] { color: var(--foreground) !important; }
+[style*="#fff5eb"] { background: var(--persimmon-tint) !important; }
+[style*="#d97737"] { color: var(--persimmon) !important; }

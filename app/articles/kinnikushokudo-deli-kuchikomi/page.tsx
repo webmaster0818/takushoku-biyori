@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "筋肉食堂DELIはまずい？口コミ・評判と「しょっぱい・量が少ない」の声、料金を出典付きで検証【2026年10月最新】";
@@ -408,6 +409,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-kou-tanpaku.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-kou-tanpaku-m.webp)" }}>
         <Breadcrumbs />
 
         {/* Title */}
@@ -436,6 +438,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -492,6 +495,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
 
         {/* ===== 基本情報 ===== */}
         <SectionHeading id="about">筋肉食堂DELIとは？基本情報まとめ</SectionHeading>
+        <ServiceCapture id="kinnikushokudo" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           筋肉食堂DELIは、TANPAC株式会社が運営する高たんぱく冷凍宅配食サービスです。同社は都内で高たんぱくグリルダイニング「筋肉食堂」を3店舗（六本木・渋谷・銀座）展開しており、<strong>実店舗レストランの調理ノウハウをそのまま宅配食に落とし込んでいる</strong>のが最大の特徴。目的別にベーシック・ローカーボ・バルクアップなどのコースが用意されています。
@@ -521,7 +525,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
         <SectionHeading id="difference">マッスルデリとの違い（混同注意）</SectionHeading>
 
         <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6">
-          <p className="font-bold text-sm mb-2">⚠️ 「筋肉食堂DELI」と「マッスルデリ」は別サービスです</p>
+          <p className="font-bold text-sm mb-2">「筋肉食堂DELI」と「マッスルデリ」は別サービスです</p>
           <p className="text-sm text-foreground/80 leading-relaxed">
             どちらも高たんぱく宅配食で名前が似ていますが、<strong>筋肉食堂DELI（TANPAC株式会社・deli.kinnikushokudo.jp）</strong>と<strong>マッスルデリ（株式会社Muscle Deli・muscledeli.jp）</strong>は運営会社も商品も異なる別サービスです。本記事は筋肉食堂DELIについての記事です。マッスルデリについては
             <Link href="/articles/muscle-deli-reviews/" className="text-accent hover:text-accent-dark underline">

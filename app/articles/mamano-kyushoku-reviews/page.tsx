@@ -201,6 +201,7 @@ export default function MamanoKyushokuReviewsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-sango.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-sango-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -214,6 +215,7 @@ export default function MamanoKyushokuReviewsPage() {
             PR: 本記事には広告(アフィリエイトリンク)が含まれます。価格・プラン内容は変更される場合があるため、最新情報は必ず<a href="https://mamanokyushoku.com/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">公式サイト</a>でご確認ください。
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">

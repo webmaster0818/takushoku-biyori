@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 /*
   宅配クック123（株式会社シニアライフクリエイト）の受け皿ページ。
@@ -125,6 +126,7 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <article className="mx-auto max-w-3xl px-5 py-10">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-koureisha-a.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-koureisha-a-m.webp)" }}>
         <nav aria-label="パンくずリスト" className="text-xs text-gray-500">
           <ol className="flex flex-wrap items-center gap-1">
             <li><Link href="/" className="hover:underline">ホーム</Link></li>
@@ -139,6 +141,7 @@ export default function Page() {
           宅配クック123の料金・配達料・安否確認を公式情報で整理
         </h1>
         <p className="mt-3 text-xs text-gray-500">最終更新：{CHECKED}／公式サイトで確認した情報のみ掲載</p>
+        </div>{/* /subhead */}
 
         <div className="mt-6 rounded-xl border-l-4 border-accent bg-cream p-5">
           <p className="text-sm font-bold mb-2">この記事の要点</p>
@@ -152,6 +155,7 @@ export default function Page() {
         </div>
 
         <h2 className="mt-10 text-xl font-bold border-b pb-2">まず、他社と何が違うのか</h2>
+        <ServiceCapture id="cook123" />{/* svc-cap-202610 */}
         <p className="mt-4 text-sm leading-relaxed">
           当サイトで扱っている宅配食の多くは、<strong>冷凍でまとめて届き、送料が別にかかる</strong>タイプです。
           宅配クック123はそこが違います。毎日その日のぶんを手渡しで届ける形で、

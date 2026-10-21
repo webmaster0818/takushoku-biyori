@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "三ツ星ファームのクーポン・キャンペーン【2026年版】初回割引の探し方と注意点";
@@ -259,6 +260,7 @@ export default function MitsuboshiCouponPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-otameshi.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-otameshi-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -278,6 +280,7 @@ export default function MitsuboshiCouponPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 text-xs leading-relaxed">
           <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。<strong>2026年6月時点の各社公式情報に基づき記述</strong>しています。料金・キャンペーンは変動するため、最新は<a href="https://mitsuboshifarm.jp/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">三ツ星ファーム公式サイト</a>でご確認ください。
@@ -299,6 +302,7 @@ export default function MitsuboshiCouponPage() {
 
         {/* ===== 結論 ===== */}
         <SectionHeading id="summary-top">クーポンは公式キャンペーンページが基本</SectionHeading>
+        <ServiceCapture id="mitsuboshi" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           三ツ星ファームをお得に始める一番確実な方法は、<strong>公式サイトのキャンペーンページから新規申し込みすること</strong>です。初回向けの割引はコード不要で適用されることも多く、まずは公式の最新案内を確認するのが近道です。

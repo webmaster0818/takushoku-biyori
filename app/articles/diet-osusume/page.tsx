@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { HakushoUnitPriceTable } from "@/components/HakushoUnitPriceTable";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "【2026年最新】ダイエット向け宅配弁当おすすめランキングTOP5｜低糖質・低カロリーで無理なく痩せる";
@@ -395,6 +396,7 @@ export default function DietOsusumePage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-diet.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-diet-m.webp)" }}>
         <Breadcrumbs />
 
         {/* Title */}
@@ -410,6 +412,7 @@ export default function DietOsusumePage() {
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -541,6 +544,7 @@ export default function DietOsusumePage() {
             "メニューによってカロリーにばらつきあり（主菜87品で199〜770kcal・中央50%は260〜400kcal／2026年10月19日公式メニュー一覧）",
           ]}
         />
+        <ServiceCapture id="nosh" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           ダイエット向け宅配弁当で最もおすすめなのがnosh。全メニュー糖質30g以下で、アプリで糖質・カロリー・たんぱく質を確認しながらメニューを選べるのが最大の強みです。「低糖質なのに美味しい」と口コミでも高評価です。初回は1,500円OFF（10食なら6,206円→4,706円）、2回目1,000円・3回目500円OFFの割引があります（2026年10月10日・公式確認）。詳しくは<Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline">nosh(ナッシュ)の口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
@@ -569,6 +573,7 @@ export default function DietOsusumePage() {
             "メニュー変更の自由度がnoshほど高くない",
           ]}
         />
+        <ServiceCapture id="mitsuboshi" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           「ダイエット食でも妥協なく美味しいものが食べたい」方には三ツ星ファームです。350kcal以下・糖質25g以下・たんぱく質15g以上の三ツ星基準で、プロの料理人が監修したメニューは「ダイエット食とは思えない」クオリティです。詳しくは<Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark underline">三ツ星ファームの口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
@@ -597,6 +602,7 @@ export default function DietOsusumePage() {
             "送料込みでは1食約874円（定期）とnoshより高め",
           ]}
         />
+        <ServiceCapture id="shokutakubin" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           短期集中で体重を落としたい方、厳密な糖質管理が必要な方には食宅便の低糖質セレクトがおすすめです。1食あたり糖質10g以下はnosh（30g以下）の3分の1以下で、スーパー糖質制限に対応しています。日清医療食品の管理栄養士が設計しているため栄養バランスも安心です。詳しくは<Link href="/articles/shokutakubin-reviews/" className="text-accent hover:text-accent-dark underline">食宅便の口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
@@ -625,6 +631,7 @@ export default function DietOsusumePage() {
             "変更・休止・解約はお届け予定日の7日前まで（フォーム・電話）",
           ]}
         />
+        <ServiceCapture id="wellness" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           糖尿病予備群などで医師から食事制限を指示されている方、プロに相談しながらダイエットしたい方にはウェルネスダイニングです。管理栄養士に無料で「自分に合った糖質量やカロリー量」を相談できるのは他社にない強みです。詳しくは<Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark underline">ウェルネスダイニングの口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
@@ -653,6 +660,7 @@ export default function DietOsusumePage() {
             "メニュー数がnoshほど多くない",
           ]}
         />
+        <ServiceCapture id="kinnikushokudo" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           筋トレやジム通いをしながらダイエットしている方には筋肉食堂DELI。たんぱく質30g以上の高たんぱくメニューで、ダイエット中の筋肉量維持をサポートします。PFCバランスに特化した設計はアスリートやパーソナルトレーナーからも高評価です。
         </p>

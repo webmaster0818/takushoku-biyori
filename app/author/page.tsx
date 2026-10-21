@@ -65,6 +65,7 @@ export default function AuthorPage() {
     <div className="max-w-3xl mx-auto px-4 py-10 md:py-16">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
 
+      <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-editorial.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-editorial-m.webp)" }}>
       <nav className="text-xs mb-6" style={{ color: "#6b7785" }}>
         <Link href="/" className="hover:underline">ホーム</Link>
         <span className="mx-2">&gt;</span>
@@ -75,6 +76,7 @@ export default function AuthorPage() {
 
       <h1 className="font-display text-3xl md:text-4xl font-bold mb-2" style={{ color: "#1e2a38" }}>宅食びより 編集部の体制と役割</h1>
       <p className="text-sm mb-8" style={{ color: "#6b7785" }}>最終更新: 2026年7月28日</p>
+      </div>{/* /subhead */}
 
       <section>
         <p className="text-base leading-relaxed mb-6" style={{ color: "#1e2a38" }}>

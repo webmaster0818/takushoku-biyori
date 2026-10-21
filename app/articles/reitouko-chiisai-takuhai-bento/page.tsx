@@ -228,6 +228,7 @@ export default function ReitoukoChiisaiTakuhaiBentoPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-reitouko.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-reitouko-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -242,6 +243,7 @@ export default function ReitoukoChiisaiTakuhaiBentoPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6 text-xs leading-relaxed">
           <p className="font-bold mb-1">本記事の注意点</p>

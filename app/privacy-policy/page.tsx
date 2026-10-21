@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-10 md:py-16">
+      <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-editorial.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-editorial-m.webp)" }}>
       <nav aria-label="パンくずリスト" className="text-xs text-warm-gray mb-6">
         <ol className="flex items-center gap-1">
           <li>
@@ -21,6 +22,7 @@ export default function PrivacyPolicyPage() {
       </nav>
 
       <h1 className="text-2xl md:text-3xl font-bold mb-8">プライバシーポリシー</h1>
+      </div>{/* /subhead */}
 
       <div className="space-y-8 text-sm leading-relaxed">
         <p>

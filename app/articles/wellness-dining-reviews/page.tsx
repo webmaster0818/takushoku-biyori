@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "ウェルネスダイニングの口コミ・評判は？まずいって本当？制限食6コースの料金・解約を公式で確認【2026年10月最新】";
@@ -240,6 +241,7 @@ export default function WellnessDiningReviewsPage() {
       
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-seigen.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-seigen-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -251,6 +253,7 @@ export default function WellnessDiningReviewsPage() {
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
@@ -287,6 +290,7 @@ export default function WellnessDiningReviewsPage() {
 
         {/* ===== 基本情報 ===== */}
         <SectionHeading id="about">ウェルネスダイニングとは？基本情報まとめ</SectionHeading>
+        <ServiceCapture id="wellness" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           ウェルネスダイニングは、ウェルネスダイニング株式会社が運営する<strong>制限食専門の冷凍宅配弁当サービス</strong>です。たんぱく＆塩分調整・糖質＆カロリー制限・塩分制限・脂質制限・栄養バランス・厳選栄養バランスの6コースを用意しています（2026年10月10日・公式確認）。管理栄養士が栄養バランスを設計し、無料で食事相談ができるのも大きな特徴です。糖尿病・腎臓病・高血圧など、医師から食事制限を指示されている方や高齢者に特に支持されています。

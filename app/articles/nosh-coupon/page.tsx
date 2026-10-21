@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "【2026年最新】nosh(ナッシュ)クーポン・割引コードガイド｜初回最大3,000円OFFの全手順";
@@ -272,6 +273,7 @@ export default function NoshCouponPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-otameshi.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-otameshi-m.webp)" }}>
         <Breadcrumbs />
 
         {/* Title */}
@@ -297,6 +299,7 @@ export default function NoshCouponPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         {/* PR Disclosure */}
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 text-xs leading-relaxed">
@@ -320,6 +323,7 @@ export default function NoshCouponPage() {
 
         {/* ===== 結論早見表 ===== */}
         <SectionHeading id="summary-top">noshの現行クーポン早見表（2026年10月17日時点）</SectionHeading>
+        <ServiceCapture id="nosh" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           2026年10月17日時点でnosh公式が提供している割引制度は<strong>3種類</strong>あります。クーポンコードを手入力する必要はなく、公式サイト経由で新規登録すれば自動的に適用されるのが基本です。

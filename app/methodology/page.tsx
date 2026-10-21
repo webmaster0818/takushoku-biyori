@@ -24,6 +24,7 @@ const criteria = [
 export default function MethodologyPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-10 md:py-16">
+      <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-editorial.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-editorial-m.webp)" }}>
       <nav className="text-xs text-gray-500 mb-6">
         <Link href="/" className="hover:underline">ホーム</Link>
         <span className="mx-2">&gt;</span>
@@ -32,6 +33,7 @@ export default function MethodologyPage() {
 
       <h1 className="font-display text-3xl md:text-4xl font-bold mb-2">評価方法・データ源</h1>
       <p className="text-gray-500 text-sm mb-8">最終更新: 2026年5月21日</p>
+      </div>{/* /subhead */}
 
       <section className="prose max-w-none">
         <h2 className="font-display text-2xl font-bold mb-4">5項目評価基準</h2>

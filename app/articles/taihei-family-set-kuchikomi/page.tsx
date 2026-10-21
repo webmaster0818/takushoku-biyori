@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "タイヘイファミリーセットの口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
@@ -387,6 +388,7 @@ export default function TaiheiFamilySetKuchikomiPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-koureisha-b.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-koureisha-b-m.webp)" }}>
         <Breadcrumbs />
 
         {/* Title */}
@@ -415,6 +417,7 @@ export default function TaiheiFamilySetKuchikomiPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -471,6 +474,7 @@ export default function TaiheiFamilySetKuchikomiPage() {
 
         {/* ===== 基本情報 ===== */}
         <SectionHeading id="about">タイヘイファミリーセットとは？基本情報まとめ</SectionHeading>
+        <ServiceCapture id="taihei" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           タイヘイファミリーセットは、タイヘイ株式会社（1880年創業・本社千葉県匝瑳市）が運営する宅配健康食サービスです。醤油醸造から始まった食品の老舗で、公式沿革によると1972年に「ファミリーセット」の企画を開始し、1974年に全国展開をスタート。<strong>50年以上の歴史を持つ宅配食の草分け</strong>です。現在はカロリー・塩分を抑えた冷凍弁当「ヘルシー御膳」を中心に、ソフト御膳・たんぱく調整食など<strong>介護食・制限食まで7系統のコース</strong>を展開しています。

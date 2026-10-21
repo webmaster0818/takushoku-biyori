@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "GOFOOD(ゴーフード)の口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
@@ -405,6 +406,7 @@ export default function GofoodKuchikomiPage() {
           <Link href="/articles/goodeli-kuchikomi/" className="underline">goodeli(グーデリ)の料金・送料・違いはこちら</Link>
         </div>
 
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-toushitsu.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-toushitsu-m.webp)" }}>
         <Breadcrumbs />
 
         {/* Title */}
@@ -433,6 +435,7 @@ export default function GofoodKuchikomiPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -497,6 +500,7 @@ export default function GofoodKuchikomiPage() {
 
         {/* ===== 基本情報 ===== */}
         <SectionHeading id="about">GOFOOD(ゴーフード)とは？基本情報まとめ</SectionHeading>
+        <ServiceCapture id="gofood" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           GOFOOD(ゴーフード)は、ゴーフード株式会社（2019年設立・東京都港区）が運営する低糖質冷凍宅配弁当です。最大の特徴は<strong>全メニューが「糖質20g以下・タンパク質20g以上」で統一</strong>されていることです。白米の代わりに大豆食品「ダイズライス」を使うメニューや、糖質2.5g・たんぱく質35.1gの看板商品「ブロチキ」（ブロッコリー＆チキン）など、糖質制限・ボディメイク特化の設計です。

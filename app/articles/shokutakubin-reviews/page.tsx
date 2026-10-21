@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "食宅便の口コミ・評判は？まずいって本当？日清医療食品の宅配弁当を中立検証";
@@ -159,6 +160,7 @@ export default function ShokutakubinReviewsPage() {
       
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-reitou-c.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-reitou-c-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -170,6 +172,7 @@ export default function ShokutakubinReviewsPage() {
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
@@ -198,6 +201,7 @@ export default function ShokutakubinReviewsPage() {
 
         {/* ===== 基本情報 ===== */}
         <SectionHeading id="about">食宅便とは？基本情報まとめ</SectionHeading>
+        <ServiceCapture id="shokutakubin" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           食宅便（しょくたくびん）は、<strong>日清医療食品株式会社</strong>が運営する冷凍宅配弁当サービスです。日清医療食品は全国約5,300の病院・介護施設に給食を提供する業界最大手企業で、<strong>1万人以上の管理栄養士</strong>が在籍。その豊富なノウハウを個人向けに展開したのが食宅便です。栄養バランス・安全性・美味しさの三拍子が揃ったサービスとして、特に健康意識の高い中高年層に支持されています。

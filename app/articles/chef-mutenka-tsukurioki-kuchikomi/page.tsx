@@ -175,6 +175,7 @@ export default function ChefMutenkaTsukuriokiKuchikomiPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-tsukurioki.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-tsukurioki-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -185,6 +186,7 @@ export default function ChefMutenkaTsukuriokiKuchikomiPage() {
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">「シェフの無添つくりおきって美味しいの？」「無添加＝味が薄くてまずいのでは？」——「シェフの無添つくりおき」は、冷蔵で届く手作りおかずの宅配サービスです。化学調味料などを使わない<strong>無添加調理</strong>を掲げ、子育て世帯を中心に注目を集めています。</p>

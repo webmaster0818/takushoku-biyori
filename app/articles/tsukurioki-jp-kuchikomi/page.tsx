@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "つくりおき.jp(現ツクリオ)の口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
@@ -418,6 +419,7 @@ export default function TsukuriokiJpKuchikomiPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-tsukurioki.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-tsukurioki-m.webp)" }}>
         <Breadcrumbs />
 
         {/* Title */}
@@ -446,6 +448,7 @@ export default function TsukuriokiJpKuchikomiPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -502,6 +505,7 @@ export default function TsukuriokiJpKuchikomiPage() {
 
         {/* ===== 基本情報 ===== */}
         <SectionHeading id="about">つくりおき.jp（ツクリオ）とは？基本情報まとめ</SectionHeading>
+        <ServiceCapture id="tsukurioki" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           つくりおき.jp（現ツクリオ）は、株式会社Antway（2018年創業・東京都千代田区）が運営する<strong>手作りおかずの週次宅配サービス</strong>です。栄養士が監修したレシピをプロの調理スタッフが手作りし、<strong>冷凍せず冷蔵のまま</strong>週1回届けるのが最大の特徴です。2026年1月時点で累計提供食数3,000万食を突破し、2026年3月17日にサービス名を「ツクリオ」へ変更しました（公式プレスリリースより）。

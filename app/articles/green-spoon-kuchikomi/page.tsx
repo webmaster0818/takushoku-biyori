@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "GREEN SPOON(グリーンスプーン)の口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
@@ -406,6 +407,7 @@ export default function GreenSpoonKuchikomiPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-eiyou.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-eiyou-m.webp)" }}>
         <Breadcrumbs />
 
         {/* Title */}
@@ -434,6 +436,7 @@ export default function GreenSpoonKuchikomiPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -490,6 +493,7 @@ export default function GreenSpoonKuchikomiPage() {
 
         {/* ===== 基本情報 ===== */}
         <SectionHeading id="about">GREEN SPOON(グリーンスプーン)とは？基本情報まとめ</SectionHeading>
+        <ServiceCapture id="greenspoon" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           GREEN SPOON(グリーンスプーン)は、株式会社Greenspoon（2019年設立・東京都渋谷区）が運営する冷凍宅配食サービスです。パーソナルスムージーからスタートし、現在は<strong>デリ弁当・メインディッシュ・ライス&パスタ・スープ・サラダ・スムージーの6カテゴリ</strong>を展開。2024年6月に江崎グリコのグループ入りし（累計会員数15万人突破・当時の公式発表）、2025年11月にはセブン-イレブン約300店でのスープ販売も始まりました。

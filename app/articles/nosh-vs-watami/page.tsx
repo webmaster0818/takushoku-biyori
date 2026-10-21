@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCaptureGrid from "@/components/ServiceCaptureGrid";
 
 const ARTICLE_TITLE =
   "nosh（ナッシュ）vs ワタミの宅食 比較【2026年版】メニュー・配達方式・向いている人";
@@ -258,6 +259,7 @@ export default function NoshVsWatamiPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-compare.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-compare-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -277,6 +279,7 @@ export default function NoshVsWatamiPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 text-xs leading-relaxed">
           <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。<strong>2026年6月時点の各社公式情報に基づき記述</strong>しています。料金・キャンペーンは変動するため、最新は<a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">nosh（ナッシュ）公式サイト</a>・<a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">ワタミの宅食公式サイト</a>でご確認ください。
@@ -298,6 +301,7 @@ export default function NoshVsWatamiPage() {
 
         {/* ===== 結論 ===== */}
         <SectionHeading id="summary-top">食事管理かラクさかで選ぶ</SectionHeading>
+        <ServiceCaptureGrid ids={["nosh", "watami"]} />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           noshとワタミの宅食を選ぶときの分かれ目は、<strong>「低糖質などの食事管理を重視したいか」</strong>と<strong>「受け取りやすさ・手間の少なさを重視したいか」</strong>です。ここがはっきりすると、迷わず選べます。

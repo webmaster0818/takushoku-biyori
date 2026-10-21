@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "おうちコープ夕食宅配マイシィの口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
@@ -379,6 +380,7 @@ export default function OuchiCoopKuchikomiPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-coop.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-coop-m.webp)" }}>
         <Breadcrumbs />
 
         {/* Title */}
@@ -407,6 +409,7 @@ export default function OuchiCoopKuchikomiPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -463,6 +466,7 @@ export default function OuchiCoopKuchikomiPage() {
 
         {/* ===== 基本情報 ===== */}
         <SectionHeading id="about">おうちコープの夕食宅配「マイシィ」とは？基本情報</SectionHeading>
+        <ServiceCapture id="maici" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           マイシィ（Maici）は、生活協同組合ユーコープが運営する<strong>夕食宅配サービス</strong>です。おうちコープ（週1回の食材宅配）と同じユーコープのサービスですが、マイシィは<strong>日替わりの夕食（おかず・弁当）を冷蔵で平日（週5日または週3日）届ける</strong>のが特徴。神奈川・静岡・山梨の3県で展開されており、利用にはユーコープへの加入（出資金・脱退時返還）が必要です。

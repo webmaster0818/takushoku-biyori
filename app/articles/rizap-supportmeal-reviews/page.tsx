@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "ライザップ サポートミールの口コミ・評判【2026年最新】低糖質宅配の実力を徹底レビュー";
@@ -201,6 +202,7 @@ export default function RizapSupportMealReviewsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-toushitsu.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-toushitsu-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -214,6 +216,7 @@ export default function RizapSupportMealReviewsPage() {
             PR: 本記事には広告(アフィリエイトリンク)が含まれます。価格・プラン内容は変更される場合があるため、最新情報は必ず<a href="https://shop.rizap.jp/shop/pages/supportmeal_c.aspx" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">公式サイト</a>でご確認ください。
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
@@ -241,6 +244,7 @@ export default function RizapSupportMealReviewsPage() {
         <TableOfContents />
 
         <SectionHeading id="about">ライザップ サポートミールとは？基本情報</SectionHeading>
+        <ServiceCapture id="rizap" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           サポートミールは、結果にコミットする®でおなじみの<strong>RIZAP(ライザップ)</strong>が監修・販売する低糖質冷凍宅配弁当です。RIZAPメソッドの食事管理ノウハウを反映し、1食あたりの糖質を厳格に設計。ジム会員でなくても、公式オンラインショップから誰でも購入できます。

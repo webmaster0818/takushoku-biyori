@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import hakusho from "@/data/ryokin-hakusho-2026-07.json";
+import ServiceCaptureGrid from "@/components/ServiceCaptureGrid";
 
 const ARTICLE_TITLE =
   "宅食料金白書2026｜18社の料金・送料・1食あたり実質単価を正規化比較【2026年10月再調査】";
@@ -386,6 +387,7 @@ export default function TakushokuRyokinHakushoPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       <article className="max-w-4xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-ryokin.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-ryokin-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -397,6 +399,7 @@ export default function TakushokuRyokinHakushoPage() {
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
@@ -722,6 +725,7 @@ export default function TakushokuRyokinHakushoPage() {
             </div>
           </div>
         </div>
+        <ServiceCaptureGrid ids={["nosh", "mitsuboshi", "tsukurioki", "wellness"]} label="この記事で取り上げている主なサービスの公式サイト" />{/* svc-cap-202610 */}
               {/* eeat-links-202607 */}
         <div className="mt-10 rounded-lg border p-4 text-xs leading-relaxed" style={{ borderColor: "#dde3eb", color: "#6b7785" }}>
           この記事は宅食びより編集部が「<Link href="/methodology/" className="underline">評価方法・データ源</Link>」に基づき、各社公式サイトの一次確認と出典付きの口コミ集約のみで作成しています（編集部による実食レビューは現在未実施・導入準備中）。編集体制は「<Link href="/author/" className="underline">編集部の体制と役割</Link>」をご覧ください。内容の誤りにお気づきの場合は<Link href="/editorial/" className="underline">編集部</Link>までご指摘ください。

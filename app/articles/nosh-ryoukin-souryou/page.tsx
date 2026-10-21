@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "nosh（ナッシュ）の料金・送料の仕組みをわかりやすく解説【2026年版】";
@@ -259,6 +260,7 @@ export default function NoshRyoukinSouryouPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-ryokin.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-ryokin-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -278,6 +280,7 @@ export default function NoshRyoukinSouryouPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 text-xs leading-relaxed">
           <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。<strong>2026年6月時点の公式情報に基づき記述</strong>しています。料金・送料・割引の内容は変動するため、最新・正確な金額は<a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">nosh（ナッシュ）公式サイト</a>でご確認ください。
@@ -299,6 +302,7 @@ export default function NoshRyoukinSouryouPage() {
 
         {/* ===== 結論 ===== */}
         <SectionHeading id="summary-top">noshの料金は「食数×継続割引×送料」で決まる</SectionHeading>
+        <ServiceCapture id="nosh" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           noshの料金を理解するうえで一番大事なのは、<strong>「1食単価＝固定ではない」</strong>という点です。次の3つの要素が組み合わさって、最終的に支払う金額が決まります。

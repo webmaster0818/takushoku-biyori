@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCaptureGrid from "@/components/ServiceCaptureGrid";
 
 const ARTICLE_TITLE =
   "【2026年最新】コープデリとパルシステムの違いを比較｜料金・安全性・品揃え・配送エリアで選ぶならどっち？";
@@ -235,6 +236,7 @@ export default function CoopdeliVsPalsystemPage() {
       
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-coop.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-coop-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -249,6 +251,7 @@ export default function CoopdeliVsPalsystemPage() {
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
@@ -266,6 +269,7 @@ export default function CoopdeliVsPalsystemPage() {
 
         {/* ===== 基本情報 ===== */}
         <SectionHeading id="overview">コープデリ・パルシステムとは？基本情報</SectionHeading>
+        <ServiceCaptureGrid ids={["coopdeli", "palsystem"]} />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           コープデリとパルシステムは、どちらも生活協同組合（生協）が運営する食材宅配サービスです。週1回、決まった曜日に自宅まで届けてくれる仕組みは同じですが、運営母体が異なるため、商品の方向性や価格帯に違いがあります。

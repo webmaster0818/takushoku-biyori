@@ -115,6 +115,7 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <article className="mx-auto max-w-3xl px-5 py-10">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-seigen.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-seigen-m.webp)" }}>
         <nav aria-label="パンくずリスト" className="text-xs text-gray-500">
           <ol className="flex flex-wrap items-center gap-1">
             <li><Link href="/" className="hover:underline">ホーム</Link></li>
@@ -129,6 +130,7 @@ export default function Page() {
           ミールタイムの料金・送料・管理栄養士の無料相談を公式情報で整理
         </h1>
         <p className="mt-3 text-xs text-gray-500">最終更新：{CHECKED}／公式サイトで確認した情報のみ掲載</p>
+        </div>{/* /subhead */}
 
         <div className="mt-6 rounded-xl border-l-4 border-accent bg-cream p-5">
           <p className="text-sm font-bold mb-2">この記事の要点</p>
@@ -160,7 +162,7 @@ export default function Page() {
 
         <h2 className="mt-10 text-xl font-bold border-b pb-2">料金（公式サイトのプラン例）</h2>
         <p className="mt-4 text-sm leading-relaxed">
-          🚨 <strong>公式サイトには「1食いくら」の単価表がありません。</strong>
+          <strong>公式サイトには「1食いくら」の単価表がありません。</strong>
           掲載されているのは、利用パターンごとの月額と1食あたりの例です。
           当サイトで単価表を作ると公式にない数字を提示することになるため、
           <strong>公式の例示をそのまま</strong>掲載します。
@@ -204,7 +206,7 @@ export default function Page() {
           そこを相談できる窓口が料金の中にあるかどうかは、味や価格とは別の軸で効いてきます。
         </p>
         <p className="mt-4 text-sm leading-relaxed">
-          ⚠️ ただし、<strong>相談は医師の指示に代わるものではありません</strong>。
+          ただし、<strong>相談は医師の指示に代わるものではありません</strong>。
           制限の数値そのものは主治医の指示に従ってください。
         </p>
 
@@ -216,7 +218,7 @@ export default function Page() {
           <li>・<strong>最短翌日配達</strong>、冷凍での保存に言及あり</li>
         </ul>
         <p className="mt-4 text-sm leading-relaxed">
-          🚨 <strong>4,980円に満たない場合の送料額は、公式サイト上で見つけられませんでした。</strong>
+          <strong>4,980円に満たない場合の送料額は、公式サイト上で見つけられませんでした。</strong>
           当サイトは金額を推測で書かない方針のため、ここは空欄のままにしています。
           注文前にご自身で確認してください。
           送料まで含めた他社との比べ方は

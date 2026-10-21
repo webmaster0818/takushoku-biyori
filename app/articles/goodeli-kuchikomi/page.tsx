@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 /*
   goodeli（グーデリ）の受け皿ページ。
@@ -107,6 +108,7 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <article className="mx-auto max-w-3xl px-5 py-10">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-reitou-b.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-reitou-b-m.webp)" }}>
         <nav aria-label="パンくずリスト" className="text-xs text-gray-500">
           <ol className="flex flex-wrap items-center gap-1">
             <li><Link href="/" className="hover:underline">ホーム</Link></li>
@@ -121,6 +123,7 @@ export default function Page() {
           goodeli(グーデリ)とは？料金・送料・GOFOOD(ゴーフード)との違いを公式情報で整理
         </h1>
         <p className="mt-3 text-xs text-gray-500">最終更新：{CHECKED}／公式サイトで確認した情報のみ掲載</p>
+        </div>{/* /subhead */}
 
         {/* 結論ファースト */}
         <div className="mt-6 rounded-xl border-l-4 border-accent bg-cream p-5">
@@ -134,6 +137,7 @@ export default function Page() {
         </div>
 
         <h2 className="mt-10 text-xl font-bold border-b pb-2">GOFOOD（ゴーフード）と混同されやすい</h2>
+        <ServiceCapture id="goodeli" />{/* svc-cap-202610 */}
         <p className="mt-4 text-sm leading-relaxed">
           「グーデリ」と検索する人の多くが、名前の近い GOFOOD（ゴーフード）のページにたどり着いています。
           読み方が似ているうえ、どちらも冷凍の宅配食だからです。ただし中身は別物です。

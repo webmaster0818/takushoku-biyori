@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "マッスルデリの口コミ・評判【2026年最新】高タンパク冷凍宅配の実力を徹底レビュー";
@@ -281,6 +282,7 @@ export default function MuscleDeliReviewsPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-kou-tanpaku.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-kou-tanpaku-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -298,6 +300,7 @@ export default function MuscleDeliReviewsPage() {
             PR: 本記事には広告(アフィリエイトリンク)が含まれます。価格・プラン内容は変更される場合があるため、最新情報は必ず<a href="https://muscledeli.jp/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">公式サイト</a>でご確認ください。
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
@@ -325,6 +328,7 @@ export default function MuscleDeliReviewsPage() {
         <TableOfContents />
 
         <SectionHeading id="about">マッスルデリとは？基本情報まとめ</SectionHeading>
+        <ServiceCapture id="muscledeli" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           マッスルデリ(Muscle Deli)は、株式会社Muscle Deliが運営する、ボディメイク・ダイエット向けの高タンパク冷凍宅配弁当サービスです。「<strong>目的別に栄養設計された食事を、温めるだけで食べられる</strong>」というコンセプトで、トレーニー・モデル・俳優・経営者など、体づくりに本気で取り組む層から支持を集めています。

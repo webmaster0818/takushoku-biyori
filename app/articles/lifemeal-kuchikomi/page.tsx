@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "ライフミールの口コミ・評判は？まずいって本当？料金と実力を中立検証";
@@ -175,6 +176,7 @@ export default function LifemealKuchikomiPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-reitou-c.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-reitou-c-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -185,6 +187,7 @@ export default function LifemealKuchikomiPage() {
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">「ライフミールって安いけど味は大丈夫？」「まずいって噂は本当？」——1食490円台からという<strong>業界最安クラスの価格</strong>で注目される冷凍宅配弁当「ライフミール（LifeMeal）」。まごころケア食と同じ株式会社シルバーライフが手がける、若い世代向けのサービスです。</p>
@@ -208,6 +211,7 @@ export default function LifemealKuchikomiPage() {
         <TableOfContents />
 
         <SectionHeading id="about">ライフミールとは？基本情報まとめ</SectionHeading>
+        <ServiceCapture id="lifemeal" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           ライフミール（LifeMeal）は、<strong>株式会社シルバーライフ</strong>が運営する冷凍宅配弁当サービスです。シルバーライフは高齢者向け配食「まごころ弁当」や冷凍弁当「<Link href="/articles/magokoro-care-reviews/" className="text-accent hover:text-accent-dark underline">まごころケア食</Link>」を長年手がけてきた配食の専門企業で、そのノウハウを<strong>忙しい20〜40代でも続けやすい価格・メニュー</strong>に落とし込んだのがライフミールです。国内の自社工場で製造され、管理栄養士監修のメニューは100種類以上です。レンジで温めるだけで主菜＋副菜の食事が完成します。
         </p>

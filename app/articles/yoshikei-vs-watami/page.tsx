@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCaptureGrid from "@/components/ServiceCaptureGrid";
 
 const ARTICLE_TITLE =
   "ヨシケイ vs ワタミの宅食 比較【2026年版】料金・宅配方式・向いている人";
@@ -258,6 +259,7 @@ export default function YoshikeiVsWatamiPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-compare.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-compare-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -277,6 +279,7 @@ export default function YoshikeiVsWatamiPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 text-xs leading-relaxed">
           <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。<strong>2026年6月時点の各社公式情報に基づき記述</strong>しています。料金・キャンペーンは変動するため、最新は<a href="https://www.yoshikei-dvlp.co.jp/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">ヨシケイ公式サイト</a>・<a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">ワタミの宅食公式サイト</a>でご確認ください。
@@ -298,6 +301,7 @@ export default function YoshikeiVsWatamiPage() {
 
         {/* ===== 結論 ===== */}
         <SectionHeading id="summary-top">調理したいかどうかで選ぶ</SectionHeading>
+        <ServiceCaptureGrid ids={["yoshikei", "watami"]} />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           ヨシケイとワタミの宅食を選ぶときの最大の分かれ目は、<strong>「自分で調理したいか/したくないか」</strong>です。ここがはっきりすると、迷わず選べます。

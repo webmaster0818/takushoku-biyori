@@ -10,25 +10,25 @@ const categories = [
   {
     title: "宅食比較",
     description: "主要サービスを価格・味・栄養で比較",
-    image: "/images/category-compare.png",
+    image: "/images/subhero/topic-compare-m.webp",
     href: "/articles/#hikaku",
   },
   {
     title: "目的別ガイド",
     description: "ダイエット・高齢者・産後など目的別の選び方",
-    image: "/images/category-guide.png",
+    image: "/images/subhero/topic-diet-m.webp",
     href: "/articles/#mokuteki",
   },
   {
     title: "栄養食",
     description: "糖質制限・塩分制限・たんぱく質調整の専門食",
-    image: "/images/category-nutrition.png",
+    image: "/images/subhero/topic-seigen-m.webp",
     href: "/articles/toushitsu-seigen-osusume/",
   },
   {
     title: "口コミ・評判",
     description: "出典付きの利用者の口コミを掲載",
-    image: "/images/category-review.png",
+    image: "/images/subhero/topic-reitou-b-m.webp",
     href: "/articles/#kuchikomi",
   },
 ];
@@ -36,114 +36,98 @@ const categories = [
 export default function Home() {
   return (
     <>
-      <div className="bg-gray-50 border-b border-gray-200 py-1">
-        <p className="max-w-5xl mx-auto px-4 text-[10px] text-gray-400">PR掲載も含みます</p>
+      <div className="border-b border-rule">
+        <p className="max-w-5xl mx-auto px-4 py-1 text-[10px] text-warm-gray">PR掲載も含みます</p>
       </div>
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-cream via-background to-background">
-        <div className="max-w-5xl mx-auto px-4 py-12 md:py-20">
-          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-            {/* Text */}
-            <div className="flex-1 text-center md:text-left">
-              <p className="text-accent font-medium text-sm mb-3 tracking-wider">
+      {/* Hero（2026-10-21 デザイン「食卓」: 左に文字・右に額装の写真。写真は家庭の食卓の情景＝特定サービスの商品ではない） */}
+      <section className="relative">
+        <div className="max-w-5xl mx-auto px-4 pt-10 pb-12 md:pt-16 md:pb-20">
+          <div className="grid md:grid-cols-[1fr_1.08fr] items-center gap-10 md:gap-14">
+            <div>
+              <p className="text-persimmon-dark text-[13px] font-bold tracking-[0.16em] mb-5 flex items-center gap-3">
+                <span aria-hidden="true" className="inline-block w-7 h-[2px] bg-persimmon" />
                 宅配弁当・栄養食の比較ガイド
               </p>
-              <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-5">
+              <h1 className="font-display text-[1.95rem] sm:text-[2.3rem] md:text-[2.35rem] lg:text-[2.85rem] leading-[1.42] tracking-[0.04em] md:whitespace-nowrap text-foreground mb-6">
                 公式情報にもとづく
                 <br />
                 宅配弁当の比較
               </h1>
-              <p className="text-warm-gray text-base md:text-lg leading-relaxed mb-8 max-w-lg">
+              <p className="text-warm-gray text-[15px] md:text-base leading-[1.95] mb-9 max-w-lg">
                 当サイトでは、各社の公式サイトで料金・送料を確認し、出典付きの口コミとあわせて
                 nosh・三ツ星ファーム・ウェルネスダイニングなどの宅配弁当を比較しています。
                 目的や予算に沿ったサービス選びにご活用ください。
               </p>
-              <Link
-                href="/articles/nosh-vs-mitsuboshi-vs-wellness/"
-                className="inline-flex items-center gap-2 bg-accent text-white font-medium px-7 py-3.5 rounded-full hover:bg-accent-dark transition-colors shadow-md hover:shadow-lg"
-              >
+              <Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="btn-line btn-line--solid">
                 主要3社の比較を見る
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.6} d="M5 12h14M13 6l6 6-6 6" />
                 </svg>
               </Link>
             </div>
             {/* Hero Image */}
-            <div className="flex-1 max-w-md md:max-w-lg">
-              <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <Image
-                  src="/images/hero.png"
-                  alt="宅配弁当を紹介するイラスト"
-                  width={800}
-                  height={450}
-                  className="w-full h-auto"
-                  priority
+            <figure className="border border-rule bg-card p-2 md:p-3">
+              <picture>
+                <source media="(max-width: 767px)" srcSet="/images/hero-shokutaku-m.webp" />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/hero-shokutaku.webp"
+                  alt="家庭の食卓のイメージ写真"
+                  width={1600}
+                  height={1200}
+                  fetchPriority="high"
+                  className="block w-full h-auto"
                 />
-              </div>
-            </div>
+              </picture>
+            </figure>
           </div>
         </div>
-        {/* Decorative watercolor blobs */}
-        <div className="absolute top-0 right-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-48 h-48 bg-accent-light/5 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4 pointer-events-none" />
       </section>
 
       {/* Trust Badges */}
-      <section className="border-y border-warm-border bg-white">
-        <div className="max-w-5xl mx-auto px-4 py-5">
-          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 text-xs md:text-sm text-warm-gray">
-            <span className="flex items-center gap-1.5">
-              <svg className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
-              公式サイトで一次確認
-            </span>
-            <span className="flex items-center gap-1.5">
-              <svg className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
-              出典付きの口コミのみ
-            </span>
-            <span className="flex items-center gap-1.5">
-              <svg className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
-              確認日を明記
-            </span>
-            <span className="flex items-center gap-1.5">
-              <svg className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
-              利用者の声300件以上
-            </span>
-          </div>
-        </div>
+      <section className="border-y border-rule bg-card">
+        <ul className="max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 text-[12.5px] md:text-[13.5px] tracking-[0.05em] text-foreground/85">
+          <li className="py-4 text-center md:border-l border-rule first:md:border-l-0 flex items-center justify-center gap-2">
+            <span aria-hidden="true" className="w-1.5 h-1.5 bg-persimmon" />
+            <span>公式サイトで一次確認</span>
+          </li>
+          <li className="py-4 text-center md:border-l border-rule first:md:border-l-0 flex items-center justify-center gap-2">
+            <span aria-hidden="true" className="w-1.5 h-1.5 bg-persimmon" />
+            <span>出典付きの口コミのみ</span>
+          </li>
+          <li className="py-4 text-center md:border-l border-rule first:md:border-l-0 flex items-center justify-center gap-2">
+            <span aria-hidden="true" className="w-1.5 h-1.5 bg-persimmon" />
+            <span>確認日を明記</span>
+          </li>
+          <li className="py-4 text-center md:border-l border-rule first:md:border-l-0 flex items-center justify-center gap-2">
+            <span aria-hidden="true" className="w-1.5 h-1.5 bg-persimmon" />
+            <span>利用者の声300件以上</span>
+          </li>
+        </ul>
       </section>
 
       {/* Featured Article */}
       <section className="max-w-5xl mx-auto px-4 py-14">
-        <h2 className="font-display text-xl md:text-2xl font-bold mb-8 text-center">
+        <h2 className="rule-mark font-display text-xl md:text-[1.65rem] font-bold tracking-[0.06em] mb-8 text-center">
           注目の記事
         </h2>
         <div className="space-y-5">
           <Link
             href="/articles/nosh-vs-mitsuboshi-vs-wellness/"
-            className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+            className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
           >
             <div className="flex flex-col md:flex-row">
               <div className="md:w-2/5 relative">
                 <Image
-                  src="/images/article-thumb.png"
+                  src="/images/subhero/topic-compare-m.webp"
                   alt="nosh・三ツ星ファーム・ウェルネスダイニング 3社比較"
                   width={500}
                   height={500}
-                  className="w-full h-48 md:h-full object-cover"
+                  className="w-full h-48 md:h-full object-cover object-right"
                 />
               </div>
               <div className="md:w-3/5 p-6 md:p-8 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-4 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-4 w-fit">
                   比較記事
                 </span>
                 <h3 className="text-lg md:text-xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors leading-snug">
@@ -157,7 +141,7 @@ export default function Home() {
                     (tag) => (
                       <span
                         key={tag}
-                        className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                        className="bg-cream text-warm-gray text-[11px] px-2 py-0.5"
                       >
                         {tag}
                       </span>
@@ -171,10 +155,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <Link
               href="/articles/nosh-reviews/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -188,7 +172,7 @@ export default function Home() {
                   {["nosh", "口コミ", "評判", "料金"].map((tag) => (
                     <span
                       key={tag}
-                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                      className="bg-cream text-warm-gray text-[11px] px-2 py-0.5"
                     >
                       {tag}
                     </span>
@@ -199,10 +183,10 @@ export default function Home() {
 
             <Link
               href="/articles/hitorigurashi-osusume/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   目的別ガイド
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -215,7 +199,7 @@ export default function Home() {
                   {["一人暮らし", "ランキング", "コスパ", "宅食"].map((tag) => (
                     <span
                       key={tag}
-                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                      className="bg-cream text-warm-gray text-[11px] px-2 py-0.5"
                     >
                       {tag}
                     </span>
@@ -228,10 +212,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
             <Link
               href="/articles/mitsuboshi-farm-reviews/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -244,7 +228,7 @@ export default function Home() {
                   {["三ツ星ファーム", "口コミ", "評判", "料金"].map((tag) => (
                     <span
                       key={tag}
-                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                      className="bg-cream text-warm-gray text-[11px] px-2 py-0.5"
                     >
                       {tag}
                     </span>
@@ -255,10 +239,10 @@ export default function Home() {
 
             <Link
               href="/articles/wellness-dining-reviews/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -271,7 +255,7 @@ export default function Home() {
                   {["ウェルネスダイニング", "口コミ", "制限食", "料金"].map((tag) => (
                     <span
                       key={tag}
-                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                      className="bg-cream text-warm-gray text-[11px] px-2 py-0.5"
                     >
                       {tag}
                     </span>
@@ -284,10 +268,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
             <Link
               href="/articles/magokoro-care-reviews/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -300,7 +284,7 @@ export default function Home() {
                   {["まごころケア食", "口コミ", "コスパ", "安い"].map((tag) => (
                     <span
                       key={tag}
-                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                      className="bg-cream text-warm-gray text-[11px] px-2 py-0.5"
                     >
                       {tag}
                     </span>
@@ -311,10 +295,10 @@ export default function Home() {
 
             <Link
               href="/articles/shokutakubin-reviews/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -327,7 +311,7 @@ export default function Home() {
                   {["食宅便", "口コミ", "日清医療食品", "品数"].map((tag) => (
                     <span
                       key={tag}
-                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                      className="bg-cream text-warm-gray text-[11px] px-2 py-0.5"
                     >
                       {tag}
                     </span>
@@ -340,10 +324,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
             <Link
               href="/articles/tsukurioki-jp-kuchikomi/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -356,7 +340,7 @@ export default function Home() {
                   {["つくりおき.jp", "口コミ", "冷蔵おかず", "共働き"].map((tag) => (
                     <span
                       key={tag}
-                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                      className="bg-cream text-warm-gray text-[11px] px-2 py-0.5"
                     >
                       {tag}
                     </span>
@@ -367,10 +351,10 @@ export default function Home() {
 
             <Link
               href="/articles/green-spoon-kuchikomi/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -383,7 +367,7 @@ export default function Home() {
                   {["GREEN SPOON", "口コミ", "野菜", "スープ"].map((tag) => (
                     <span
                       key={tag}
-                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                      className="bg-cream text-warm-gray text-[11px] px-2 py-0.5"
                     >
                       {tag}
                     </span>
@@ -397,10 +381,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
             <Link
               href="/articles/diet-osusume/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   目的別ガイド
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -413,7 +397,7 @@ export default function Home() {
                   {["ダイエット", "低糖質", "カロリー制限", "ランキング"].map((tag) => (
                     <span
                       key={tag}
-                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                      className="bg-cream text-warm-gray text-[11px] px-2 py-0.5"
                     >
                       {tag}
                     </span>
@@ -424,10 +408,10 @@ export default function Home() {
 
             <Link
               href="/articles/koureisha-osusume/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   目的別ガイド
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -440,7 +424,7 @@ export default function Home() {
                   {["高齢者", "シニア", "やわらか食", "制限食"].map((tag) => (
                     <span
                       key={tag}
-                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                      className="bg-cream text-warm-gray text-[11px] px-2 py-0.5"
                     >
                       {tag}
                     </span>
@@ -453,10 +437,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
             <Link
               href="/articles/sango-osusume/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-pink-100 text-pink-700 text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   目的別ガイド
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -469,7 +453,7 @@ export default function Home() {
                   {["産後", "授乳中", "産褥期", "ママ向け"].map((tag) => (
                     <span
                       key={tag}
-                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                      className="bg-cream text-warm-gray text-[11px] px-2 py-0.5"
                     >
                       {tag}
                     </span>
@@ -480,10 +464,10 @@ export default function Home() {
 
             <Link
               href="/articles/toushitsu-seigen-osusume/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-purple-100 text-purple-700 text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   目的別ガイド
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -496,7 +480,7 @@ export default function Home() {
                   {["糖質制限", "低糖質", "ケトジェニック", "ロカボ"].map((tag) => (
                     <span
                       key={tag}
-                      className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full"
+                      className="bg-cream text-warm-gray text-[11px] px-2 py-0.5"
                     >
                       {tag}
                     </span>
@@ -510,10 +494,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
             <Link
               href="/articles/coopdeli-vs-palsystem/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   比較記事
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -524,7 +508,7 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["コープデリ", "パルシステム", "比較", "生協"].map((tag) => (
-                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                    <span key={tag} className="bg-cream text-warm-gray text-[11px] px-2 py-0.5">{tag}</span>
                   ))}
                 </div>
               </div>
@@ -532,10 +516,10 @@ export default function Home() {
 
             <Link
               href="/articles/takuhai-vs-conveni/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   比較記事
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -546,7 +530,7 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["宅配弁当", "コンビニ", "比較", "栄養"].map((tag) => (
-                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                    <span key={tag} className="bg-cream text-warm-gray text-[11px] px-2 py-0.5">{tag}</span>
                   ))}
                 </div>
               </div>
@@ -556,10 +540,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
             <Link
               href="/articles/reitou-bento-mazui/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-orange-100 text-orange-700 text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   ハウツー
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -570,7 +554,7 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["冷凍弁当", "解凍方法", "美味しく", "コツ"].map((tag) => (
-                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                    <span key={tag} className="bg-cream text-warm-gray text-[11px] px-2 py-0.5">{tag}</span>
                   ))}
                 </div>
               </div>
@@ -578,10 +562,10 @@ export default function Home() {
 
             <Link
               href="/articles/souryou-yasui-ranking/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   ランキング
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -592,7 +576,7 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["送料無料", "ランキング", "コスパ", "比較"].map((tag) => (
-                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                    <span key={tag} className="bg-cream text-warm-gray text-[11px] px-2 py-0.5">{tag}</span>
                   ))}
                 </div>
               </div>
@@ -603,10 +587,10 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-5 mt-5">
             <Link
               href="/articles/takushoku-ryokin-hakusho/"
-              className="block bg-white border-2 border-accent/40 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-accent overflow-hidden transition-colors hover:border-accent-dark group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   比較・料金データ
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -617,7 +601,7 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["料金比較", "送料込み", "実質単価", "18社", "一次データ"].map((tag) => (
-                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                    <span key={tag} className="bg-cream text-warm-gray text-[11px] px-2 py-0.5">{tag}</span>
                   ))}
                 </div>
               </div>
@@ -628,10 +612,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
             <Link
               href="/articles/watami-reviews/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -642,7 +626,7 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["ワタミの宅食", "口コミ", "送料無料", "安否確認"].map((tag) => (
-                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                    <span key={tag} className="bg-cream text-warm-gray text-[11px] px-2 py-0.5">{tag}</span>
                   ))}
                 </div>
               </div>
@@ -650,10 +634,10 @@ export default function Home() {
 
             <Link
               href="/articles/yoshikei-reviews/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -664,7 +648,7 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["ヨシケイ", "口コミ", "ミールキット", "送料無料"].map((tag) => (
-                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                    <span key={tag} className="bg-cream text-warm-gray text-[11px] px-2 py-0.5">{tag}</span>
                   ))}
                 </div>
               </div>
@@ -674,10 +658,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
             <Link
               href="/articles/wanmairu-reviews/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -688,7 +672,7 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["わんまいる", "口コミ", "国産食材", "湯煎"].map((tag) => (
-                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                    <span key={tag} className="bg-cream text-warm-gray text-[11px] px-2 py-0.5">{tag}</span>
                   ))}
                 </div>
               </div>
@@ -696,10 +680,10 @@ export default function Home() {
 
             <Link
               href="/articles/tsurukame-reviews/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -710,7 +694,7 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["つるかめキッチン", "口コミ", "制限食", "送料無料"].map((tag) => (
-                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                    <span key={tag} className="bg-cream text-warm-gray text-[11px] px-2 py-0.5">{tag}</span>
                   ))}
                 </div>
               </div>
@@ -720,10 +704,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
             <Link
               href="/articles/chef-mutenka-tsukurioki-kuchikomi/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -734,7 +718,7 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["シェフの無添つくりおき", "口コミ", "無添加", "つくりおき"].map((tag) => (
-                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                    <span key={tag} className="bg-cream text-warm-gray text-[11px] px-2 py-0.5">{tag}</span>
                   ))}
                 </div>
               </div>
@@ -742,10 +726,10 @@ export default function Home() {
 
             <Link
               href="/articles/lifemeal-kuchikomi/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -756,7 +740,7 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["ライフミール", "口コミ", "コスパ", "冷凍弁当"].map((tag) => (
-                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                    <span key={tag} className="bg-cream text-warm-gray text-[11px] px-2 py-0.5">{tag}</span>
                   ))}
                 </div>
               </div>
@@ -766,10 +750,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
             <Link
               href="/articles/watami-direct-kuchikomi/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -782,10 +766,10 @@ export default function Home() {
             </Link>
             <Link
               href="/articles/coopdeli-kuchikomi/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -798,10 +782,10 @@ export default function Home() {
             </Link>
             <Link
               href="/articles/ouchi-coop-kuchikomi/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -814,10 +798,10 @@ export default function Home() {
             </Link>
             <Link
               href="/articles/yushoku-net-kuchikomi/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -830,10 +814,10 @@ export default function Home() {
             </Link>
             <Link
               href="/articles/medimeal-kuchikomi/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -846,10 +830,10 @@ export default function Home() {
             </Link>
             <Link
               href="/articles/kinnikushokudo-deli-kuchikomi/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -862,10 +846,10 @@ export default function Home() {
             </Link>
             <Link
               href="/articles/fitfoodhome-kuchikomi/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -878,10 +862,10 @@ export default function Home() {
             </Link>
             <Link
               href="/articles/nichirei-foods-direct-kuchikomi/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -892,7 +876,7 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["ニチレイ", "口コミ", "きくばりごぜん", "健康設計"].map((tag) => (
-                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                    <span key={tag} className="bg-cream text-warm-gray text-[11px] px-2 py-0.5">{tag}</span>
                   ))}
                 </div>
               </div>
@@ -900,10 +884,10 @@ export default function Home() {
 
             <Link
               href="/articles/gofood-kuchikomi/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -914,7 +898,7 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["GOFOOD", "口コミ", "低糖質", "高タンパク"].map((tag) => (
-                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                    <span key={tag} className="bg-cream text-warm-gray text-[11px] px-2 py-0.5">{tag}</span>
                   ))}
                 </div>
               </div>
@@ -924,10 +908,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
             <Link
               href="/articles/dietician-kuchikomi/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -938,7 +922,7 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["ダイエティシャン", "口コミ", "販売終了", "代替サービス"].map((tag) => (
-                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                    <span key={tag} className="bg-cream text-warm-gray text-[11px] px-2 py-0.5">{tag}</span>
                   ))}
                 </div>
               </div>
@@ -946,10 +930,10 @@ export default function Home() {
 
             <Link
               href="/articles/taihei-family-set-kuchikomi/"
-              className="block bg-white border border-warm-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
+              className="block bg-card border border-rule overflow-hidden transition-colors hover:border-accent-light group"
             >
               <div className="p-6 flex flex-col justify-center">
-                <span className="inline-block bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+                <span className="inline-block border border-accent/40 text-accent text-[11px] font-bold tracking-[0.08em] px-2.5 py-0.5 mb-3 w-fit">
                   口コミ・評判
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
@@ -960,7 +944,7 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["タイヘイ", "口コミ", "制限食", "送料無料"].map((tag) => (
-                    <span key={tag} className="bg-cream text-warm-gray text-xs px-3 py-1 rounded-full">{tag}</span>
+                    <span key={tag} className="bg-cream text-warm-gray text-[11px] px-2 py-0.5">{tag}</span>
                   ))}
                 </div>
               </div>
@@ -970,9 +954,9 @@ export default function Home() {
       </section>
 
       {/* Categories */}
-      <section className="bg-cream py-14">
+      <section className="bg-band border-y border-rule py-14 md:py-16">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="font-display text-xl md:text-2xl font-bold mb-3 text-center">
+          <h2 className="rule-mark font-display text-xl md:text-[1.65rem] font-bold tracking-[0.06em] mb-3 text-center">
             カテゴリから探す
           </h2>
           <p className="text-warm-gray text-sm text-center mb-8">
@@ -983,7 +967,7 @@ export default function Home() {
               <Link
                 key={cat.title}
                 href={cat.href}
-                className="bg-white rounded-xl overflow-hidden border border-warm-border hover:border-accent/30 hover:shadow-md transition-all group"
+                className="bg-card overflow-hidden border border-rule hover:border-accent-light transition-colors group"
               >
                 <div className="aspect-square relative overflow-hidden">
                   <Image
@@ -1010,7 +994,7 @@ export default function Home() {
 
       {/* How it works */}
       <section className="max-w-5xl mx-auto px-4 py-14">
-        <h2 className="font-display text-xl md:text-2xl font-bold mb-3 text-center">
+        <h2 className="rule-mark font-display text-xl md:text-[1.65rem] font-bold tracking-[0.06em] mb-3 text-center">
           宅食びよりの使い方
         </h2>
         <p className="text-warm-gray text-sm text-center mb-10">
@@ -1023,7 +1007,7 @@ export default function Home() {
             { step: "03", title: "お試しで確認する", desc: "初回お試しセットのあるサービスでは、味と量をご確認のうえで定期購入をご検討いただけます。" },
           ].map((item) => (
             <div key={item.step} className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent font-display font-bold text-lg mb-4">
+              <div className="font-display text-[2rem] leading-none text-accent mb-3 tracking-[0.08em] after:block after:w-6 after:h-[2px] after:bg-persimmon after:mx-auto after:mt-3">
                 {item.step}
               </div>
               <h3 className="font-bold mb-2">{item.title}</h3>
@@ -1037,7 +1021,7 @@ export default function Home() {
 
       {/* 目的別で探す */}
       <section className="max-w-5xl mx-auto px-4 py-14">
-        <h2 className="font-display text-xl md:text-2xl font-bold mb-3 text-center">
+        <h2 className="rule-mark font-display text-xl md:text-[1.65rem] font-bold tracking-[0.06em] mb-3 text-center">
           目的別で探す
         </h2>
         <p className="text-warm-gray text-sm text-center mb-8">
@@ -1048,70 +1032,66 @@ export default function Home() {
             {
               title: "ダイエット目的",
               desc: "全メニュー糖質30g以下のnoshなど、低糖質メニューを継続しやすいサービスを紹介しています。",
-              image: "/images/icon-diet.png",
-              color: "bg-green-50 border-green-200",
-              href: "/articles/diet-osusume/",
+              image: "/images/subhero/topic-diet-m.webp",
+                            href: "/articles/diet-osusume/",
             },
             {
               title: "一人暮らし向け",
               desc: "1食あたりの価格とアプリで完結する注文のしやすさを中心に、一人暮らし向けのサービスを紹介しています。",
-              image: "/images/icon-single.png",
-              color: "bg-amber-50 border-amber-200",
-              href: "/articles/hitorigurashi-osusume/",
+              image: "/images/subhero/topic-hitorigurashi-m.webp",
+                            href: "/articles/hitorigurashi-osusume/",
             },
             {
               title: "高齢者向け",
               desc: "やわらか食・塩分制限・たんぱく質調整など、ウェルネスダイニングなどの専門コースを紹介しています。",
-              image: "/images/icon-elderly.png",
-              color: "bg-blue-50 border-blue-200",
-              href: "/articles/koureisha-osusume/",
+              image: "/images/subhero/topic-koureisha-a-m.webp",
+                            href: "/articles/koureisha-osusume/",
             },
             {
               title: "産後・授乳中",
               desc: "栄養バランスと手軽さを重視した、産後・授乳中の食事に役立つサービスを紹介しています。",
-              image: "/images/icon-postpartum.png",
-              color: "bg-pink-50 border-pink-200",
-              href: "/articles/sango-osusume/",
+              image: "/images/subhero/topic-sango-m.webp",
+                            href: "/articles/sango-osusume/",
             },
             {
               title: "糖質制限",
               desc: "糖質10g〜30g以下の専門コースを、ロカボからケトジェニックまでの目的別に紹介しています。",
-              image: "/images/icon-muscle.png",
-              color: "bg-purple-50 border-purple-200",
-              href: "/articles/toushitsu-seigen-osusume/",
+              image: "/images/subhero/topic-toushitsu-m.webp",
+                            href: "/articles/toushitsu-seigen-osusume/",
             },
             {
               title: "グルメ・味重視",
               desc: "料理人監修のメニューを提供する三ツ星ファームなど、味を重視する方向けのサービスを紹介しています。",
-              image: "/images/icon-gourmet.png",
-              color: "bg-orange-50 border-orange-200",
-              href: "/articles/nosh-vs-mitsuboshi-vs-wellness/#purpose",
+              image: "/images/subhero/topic-articles-m.webp",
+                            href: "/articles/nosh-vs-mitsuboshi-vs-wellness/#purpose",
             },
           ].map((item) => (
             <Link
               key={item.title}
               href={item.href}
-              className={`${item.color} border rounded-xl p-5 hover:shadow-md transition-all group block`}
+              className="bg-card border border-rule hover:border-accent-light transition-colors group block"
             >
-              <div className="w-16 h-16 mb-3 rounded-lg overflow-hidden">
+              <div className="aspect-[16/9] overflow-hidden">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+                <img src={item.image} alt={item.title} loading="lazy" className="w-full h-full object-cover object-right" />
               </div>
-              <h3 className="font-bold text-sm mb-2 group-hover:text-accent transition-colors">
-                {item.title}
-              </h3>
-              <p className="text-warm-gray text-xs leading-relaxed">
-                {item.desc}
-              </p>
+              <div className="p-5">
+                <h3 className="font-bold text-sm mb-2 group-hover:text-accent transition-colors">
+                  {item.title}
+                </h3>
+                <p className="text-warm-gray text-xs leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
             </Link>
           ))}
         </div>
       </section>
 
       {/* CTA */}
-      <section className="bg-gradient-to-b from-cream to-background py-16">
+      <section className="bg-band border-t border-rule py-16">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="font-display text-xl md:text-2xl font-bold mb-4">
+          <h2 className="rule-mark font-display text-xl md:text-[1.65rem] font-bold tracking-[0.06em] mb-4">
             主要3社の比較
           </h2>
           <p className="text-warm-gray mb-8 text-sm md:text-base leading-relaxed">
@@ -1121,7 +1101,7 @@ export default function Home() {
           </p>
           <Link
             href="/articles/nosh-vs-mitsuboshi-vs-wellness/"
-            className="inline-flex items-center gap-2 bg-accent text-white font-medium px-7 py-3.5 rounded-full hover:bg-accent-dark transition-colors shadow-md hover:shadow-lg"
+            className="btn-line btn-line--solid"
           >
             比較記事を読む
             <svg

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "ヨシケイの口コミ・評判｜弁当はまずい？冷凍弁当シンプルミールとミールキットの料金・新コースを公式で確認【2026年10月最新】";
@@ -153,6 +154,7 @@ export default function YoshikeiReviewsPage() {
       
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-mealkit.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-mealkit-m.webp)" }}>
         <Breadcrumbs />
         <header className="mb-8">
           <div className="flex items-center gap-3 mb-4"><span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">口コミ・評判</span><span className="text-[10px] text-gray-400">PR掲載も含みます</span></div>
@@ -161,6 +163,7 @@ export default function YoshikeiReviewsPage() {
             <time dateTime="2026-04-21">公開: 2026年4月21日</time><time dateTime="2026-10-16">更新: 2026年10月16日（公式で再確認）</time><span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">「ヨシケイの弁当はまずい？」「冷凍弁当の口コミは？」「評判はどう？」——ヨシケイは1975年創業（2025年に50周年）の食材宅配で、公式によると全国64社・292営業所（2026年4月現在）で約50万世帯に届けています。主力はミールキット（食材＋レシピ）ですが、レンジで温めるだけの<strong>冷凍弁当「シンプルミール」「ベジミール」</strong>もあります。</p>
@@ -190,6 +193,7 @@ export default function YoshikeiReviewsPage() {
         <TableOfContents />
 
         <SectionHeading id="about">ヨシケイとは？基本情報まとめ</SectionHeading>
+        <ServiceCapture id="yoshikei" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">ヨシケイは、1975年に静岡県で生まれた食材宅配で、ヨシケイ開発株式会社（1978年創業）を本部に、全国の地域の会社がフランチャイズで運営しています。<strong>スマイルスタッフが毎日、保冷BOXで届ける</strong>のが特徴で、公式FAQは「入会金や食材の配達料はいただいておりません」としています。メニューは管理栄養士20名を含む29名の栄養士が作成しています（公式）。</p>
 
         <ComparisonTable

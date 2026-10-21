@@ -257,6 +257,7 @@ export default function Shoku200YenDaiPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-ryokin.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-ryokin-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -276,6 +277,7 @@ export default function Shoku200YenDaiPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 text-xs leading-relaxed">
           <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。<strong>2026年6月時点の一般的な情報に基づき記述</strong>しています。料金・送料・キャンペーンは各社・時期・地域で変動するため、<strong>具体的な金額は断定せず、最新は各公式サイト</strong>でご確認ください。架空の口コミや評価は掲載していません。

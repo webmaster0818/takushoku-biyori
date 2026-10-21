@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "メディミールの口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
@@ -409,6 +410,7 @@ export default function MedimealKuchikomiPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-seigen.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-seigen-m.webp)" }}>
         <Breadcrumbs />
 
         {/* Title */}
@@ -437,6 +439,7 @@ export default function MedimealKuchikomiPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -493,6 +496,7 @@ export default function MedimealKuchikomiPage() {
 
         {/* ===== 基本情報 ===== */}
         <SectionHeading id="about">メディミールとは？基本情報まとめ</SectionHeading>
+        <ServiceCapture id="medimeal" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           メディミールは、介護・リハビリ事業を手がけるベストリハ株式会社（東京都荒川区）が運営する制限食専門の冷凍宅配食サービスです。公式サイトによると、管理栄養士による「監修」にとどまらず、<strong>商品開発から調理まですべて管理栄養士が担当し、電話オペレーターもすべて管理栄養士</strong>という体制が最大の特徴。カロリー制限食・たんぱく質＆塩分制限食など6コースを展開しています。

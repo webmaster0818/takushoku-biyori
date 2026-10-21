@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "DELIPICKS（デリピックス）のお試し・特徴まとめ【2026年版】高タンパク冷凍宅配はどんな人向け？";
@@ -258,6 +259,7 @@ export default function DelipicksOtameshiPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-kou-tanpaku.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-kou-tanpaku-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -277,6 +279,7 @@ export default function DelipicksOtameshiPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 text-xs leading-relaxed">
           <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。<strong>2026年6月時点の公式情報に基づき記述</strong>しています。料金・お試し・キャンペーンは変動するため、最新は<a href="https://deli-picks.com/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">DELIPICKS公式サイト</a>でご確認ください。
@@ -298,6 +301,7 @@ export default function DelipicksOtameshiPage() {
 
         {/* ===== 結論 ===== */}
         <SectionHeading id="summary-top">味重視で高タンパクを手軽に続けたい人向け</SectionHeading>
+        <ServiceCapture id="delipicks" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           DELIPICKSが向いているかどうかは、<strong>「味やクオリティを妥協せず、調理の手間なく栄養バランスを整えたいか」</strong>でほぼ決まります。ここがはっきりすると、お試しに進むかどうかを判断しやすくなります。

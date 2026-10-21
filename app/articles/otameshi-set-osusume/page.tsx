@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCaptureGrid from "@/components/ServiceCaptureGrid";
 
 const ARTICLE_TITLE =
   "宅配弁当のお試しセットおすすめ7選【2026年版】初回限定価格・送料無料を比較";
@@ -247,6 +248,7 @@ export default function OtameshiSetOsusumePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-otameshi.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-otameshi-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -263,6 +265,7 @@ export default function OtameshiSetOsusumePage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6 text-xs leading-relaxed">
           <p className="font-bold mb-1">広告・PR表示について</p>
@@ -550,6 +553,7 @@ export default function OtameshiSetOsusumePage() {
             </div>
           </div>
         </div>
+        <ServiceCaptureGrid ids={["nosh", "mitsuboshi", "delipicks", "wellness"]} label="この記事で取り上げている主なサービスの公式サイト" />{/* svc-cap-202610 */}
               {/* eeat-links-202607 */}
         <div className="mt-10 rounded-lg border p-4 text-xs leading-relaxed" style={{ borderColor: "#dde3eb", color: "#6b7785" }}>
           この記事は宅食びより編集部が「<Link href="/methodology/" className="underline">評価方法・データ源</Link>」に基づき、各社公式サイトの一次確認と出典付きの口コミ集約のみで作成しています（編集部による実食レビューは現在未実施・導入準備中）。編集体制は「<Link href="/author/" className="underline">編集部の体制と役割</Link>」をご覧ください。内容の誤りにお気づきの場合は<Link href="/editorial/" className="underline">編集部</Link>までご指摘ください。

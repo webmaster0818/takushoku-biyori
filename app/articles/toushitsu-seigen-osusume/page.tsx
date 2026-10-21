@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "糖質制限の宅配弁当ランキングTOP5【2026年10月】｜9社の糖質制限コースの糖質量を公式値で比較";
@@ -219,6 +220,7 @@ export default function ToushitsuSeigenOsusumePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-toushitsu.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-toushitsu-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -230,6 +232,7 @@ export default function ToushitsuSeigenOsusumePage() {
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
@@ -360,6 +363,7 @@ export default function ToushitsuSeigenOsusumePage() {
             "送料が地域差大",
           ]}
         />
+        <ServiceCapture id="nosh" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           noshは全メニュー糖質30g以下で、ロカボ（1食20〜40g）の範囲に収まります。メニューを自分で選べるため、公式メニュー一覧で糖質量を見て低いものを選べば、さらに抑えられます。2026年10月17日の公式メニュー一覧では、主菜87品の糖質は7.7〜29.7g（中央値20.2g）で、最も低いのは「シビれる辛味のスタミナ豚しゃぶ」の7.7gです。詳しくは<Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline">nosh(ナッシュ)の口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
@@ -389,6 +393,7 @@ export default function ToushitsuSeigenOsusumePage() {
             "送料込みでは1食約874円（定期）とnoshより高め",
           ]}
         />
+        <ServiceCapture id="shokutakubin" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           1食の糖質をできるだけ低く抑えたい方には食宅便の低糖質セレクトです。糖質10g以下は、nosh（30g以下）の3分の1の上限です。運営は施設給食大手の日清医療食品です。詳しくは<Link href="/articles/shokutakubin-reviews/" className="text-accent hover:text-accent-dark underline">食宅便の口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
@@ -417,6 +422,7 @@ export default function ToushitsuSeigenOsusumePage() {
             "糖質量のフィルタリング機能がない",
           ]}
         />
+        <ServiceCapture id="mitsuboshi" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           「糖質制限でも美味しさは妥協したくない」方には三ツ星ファームです。糖質25g以下・たんぱく質15g以上・350kcal以下の三ツ星基準で、プロの料理人監修メニューは「低糖質とは思えない」クオリティです。メニューは125種類以上から毎回選べます。詳しくは<Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark underline">三ツ星ファームの口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
@@ -445,6 +451,7 @@ export default function ToushitsuSeigenOsusumePage() {
             "休止・解約の締切がお届け予定日の7日前と早め",
           ]}
         />
+        <ServiceCapture id="wellness" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           糖尿病の食事管理や、医師から糖質制限を指示された方にはウェルネスダイニングです。糖質15g以下・塩分2.0g以下で、管理栄養士に無料で相談できる点も安心材料です。詳しくは<Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark underline">ウェルネスダイニングの口コミ・評判を徹底調査</Link>をご覧ください。
         </p>

@@ -81,6 +81,7 @@ export default function EditorialPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
       />
 
+      <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-editorial.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-editorial-m.webp)" }}>
       <nav className="text-xs text-gray-500 mb-6">
         <Link href="/" className="hover:underline">ホーム</Link>
         <span className="mx-2">&gt;</span>
@@ -89,6 +90,7 @@ export default function EditorialPage() {
 
       <h1 className="font-display text-3xl md:text-4xl font-bold mb-2">宅食びより 編集部紹介</h1>
       <p className="text-gray-500 text-sm mb-8">最終更新: 2026年7月28日</p>
+      </div>{/* /subhead */}
 
       <section className="prose max-w-none">
         <p className="text-base leading-relaxed mb-6">

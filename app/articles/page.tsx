@@ -83,6 +83,7 @@ export default function ArticlesIndexPage() {
       </div>
 
       <div className="max-w-5xl mx-auto px-4 py-10">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-articles.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-articles-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -93,6 +94,7 @@ export default function ArticlesIndexPage() {
             宅食びよりで公開中の全{articles.length}記事をカテゴリ別にまとめています。各記事の料金・送料は各社の公式サイトで一次確認し、口コミは出典付きのものだけを掲載しています。
           </p>
         </header>
+        </div>{/* /subhead */}
 
         {/* カテゴリ絞り込み（ページ内ジャンプ） */}
         <nav aria-label="カテゴリ" className="mb-10">

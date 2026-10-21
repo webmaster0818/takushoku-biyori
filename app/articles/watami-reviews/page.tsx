@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "ワタミの宅食の口コミ・評判は？まずいって本当？まごころ商品の料金・配送を出典付きで検証";
@@ -168,6 +169,7 @@ export default function WatamiReviewsPage() {
       
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-koureisha-b.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-koureisha-b-m.webp)" }}>
         <Breadcrumbs />
         <header className="mb-8">
           <div className="flex items-center gap-3 mb-4"><span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">口コミ・評判</span><span className="text-[10px] text-gray-400">PR掲載も含みます</span></div>
@@ -178,6 +180,7 @@ export default function WatamiReviewsPage() {
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">「ワタミの宅食って実際どうなの？」「ひどいって口コミは本当？」——病院・介護施設向け給食で培ったノウハウを活かし、一般家庭にも宅配弁当を届けるワタミの宅食です。</p>
@@ -203,6 +206,7 @@ export default function WatamiReviewsPage() {
         <TableOfContents />
 
         <SectionHeading id="about">ワタミの宅食とは？基本情報まとめ</SectionHeading>
+        <ServiceCapture id="watami" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">ワタミの宅食は、ワタミ株式会社が運営する宅配弁当サービスです。外食チェーン「和民」で知られるワタミグループが、病院・介護施設向け給食事業で培ったノウハウを活かし、一般家庭向けに展開しています。<strong>宅配弁当の売上高は業界トップクラス</strong>で、累計7億食以上を届けた実績があります。</p>
 
         <SubHeading>基本スペック</SubHeading>

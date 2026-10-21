@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "【2026年最新】一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5｜コスパ・味・栄養で比較";
@@ -396,6 +397,7 @@ export default function HitorigurashiOsusumePage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-hitorigurashi.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-hitorigurashi-m.webp)" }}>
         <Breadcrumbs />
 
         {/* Title */}
@@ -411,6 +413,7 @@ export default function HitorigurashiOsusumePage() {
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -542,6 +545,7 @@ export default function HitorigurashiOsusumePage() {
             "メニューによって当たり外れあり",
           ]}
         />
+        <ServiceCapture id="nosh" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           一人暮らしに最もおすすめなのがnosh。1食612円〜（12食）のコスパの良さ、約90種類のメニューから自分で選べる自由度、アプリの使いやすさ、解約の簡単さ——一人暮らしに必要な要素をすべて高水準で満たしています。初回1,500円・2回目1,000円・3回目500円OFFの割引でお得に始められます。詳しくは<Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline">nosh(ナッシュ)の口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
@@ -570,6 +574,7 @@ export default function HitorigurashiOsusumePage() {
             "お得なプランは途中解約に手数料（7,700円〜）",
           ]}
         />
+        <ServiceCapture id="mitsuboshi" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           「冷凍弁当でもおいしさは妥協したくない」という方には三ツ星ファームです。プロの料理人が監修したメニューは、「冷凍弁当とは思えない」と口コミで高評価です。定期便とは別に1個から買える都度購入もあるので、まずは味を確認してから判断できます（2026年10月9日・公式確認）。良い口コミ・悪い口コミと解約条件は<Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark underline">三ツ星ファームの口コミ・評判</Link>で整理しています。
         </p>
@@ -598,6 +603,7 @@ export default function HitorigurashiOsusumePage() {
             "変更・休止・解約はお届け予定日の7日前まで",
           ]}
         />
+        <ServiceCapture id="wellness" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           糖尿病・高血圧・腎臓病などで食事制限が必要な一人暮らしの方には、ウェルネスダイニングが最適です。管理栄養士に電話で無料相談できるのは、一人暮らしで食事管理に不安がある方にとって大きな安心感です。利用者の口コミと全6コースの料金は<Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark underline">ウェルネスダイニングの口コミ・評判</Link>、3社の詳しい比較は<Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark underline">【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link>をご覧ください。
         </p>
@@ -654,6 +660,7 @@ export default function HitorigurashiOsusumePage() {
             "送料込みでは1食約824円（定期）",
           ]}
         />
+        <ServiceCapture id="shokutakubin" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           「突出した強みはないが、弱点もない」というバランス型が食宅便です。日清医療食品が運営しているため信頼性が高く、管理栄養士監修の約160種類のメニューは業界でもトップクラスの品数です。「とりあえず宅配弁当を試してみたい」という方のエントリーモデルとしておすすめです。
         </p>

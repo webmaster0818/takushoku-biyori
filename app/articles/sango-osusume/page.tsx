@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { HakushoUnitPriceTable } from "@/components/HakushoUnitPriceTable";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "【2026年最新】産後におすすめの宅配弁当ランキングTOP5｜産褥期の栄養管理と時短を両立";
@@ -220,6 +221,7 @@ export default function SangoOsusumePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-sango.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-sango-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -230,6 +232,7 @@ export default function SangoOsusumePage() {
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
@@ -342,6 +345,7 @@ export default function SangoOsusumePage() {
             "上の子向けのキッズメニューはない",
           ]}
         />
+        <ServiceCapture id="nosh" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           産後のママに最もおすすめなのがnosh。たんぱく質平均20gで授乳中の栄養補給に適し、20食プランなら夫婦で10日分の夕食をカバーしています。アプリで片手操作できるため、授乳中や赤ちゃんを抱っこしながらでも注文・メニュー選びが可能です。初回1,500円・2回目1,000円・3回目500円OFFの割引があります（2026年10月10日・公式確認）。詳しくは<Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline">nosh(ナッシュ)の口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
@@ -370,6 +374,7 @@ export default function SangoOsusumePage() {
             "メニュー自由度がnoshほど高くない",
           ]}
         />
+        <ServiceCapture id="mitsuboshi" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           料理人監修のメニューを「産後の自分へのご褒美」にしたいママには三ツ星ファームです。おかずプレートはたんぱく質15g以上（一部商品を除く）で、通常の定期便は21食で1食711円、長期継続応援プラン（6回約束・途中解約7,700円）なら1食約603円です（2026年10月9日・公式確認）。詳しくは<Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark underline">三ツ星ファームの口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
@@ -398,6 +403,7 @@ export default function SangoOsusumePage() {
             "家族で大量注文するにはやや割高",
           ]}
         />
+        <ServiceCapture id="wellness" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           「授乳中の栄養管理が不安」という方にはウェルネスダイニングです。管理栄養士に電話で「授乳中におすすめのコースは？」「貧血気味なのですが...」と無料で相談できるのは、初めての出産で食事に不安があるママにとって大きな安心材料です。詳しくは<Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark underline">ウェルネスダイニングの口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
@@ -426,6 +432,7 @@ export default function SangoOsusumePage() {
             "メニュー数がnoshほど多くない",
           ]}
         />
+        <ServiceCapture id="wanmairu" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           「添加物ゼロ・国産食材だけ」を最優先するママにはわんまいるです。北海道産の鮭、九州産の鶏肉など、全メニュー国産食材100%使用。湯煎で温める手間はありますが、冷凍弁当とは思えない「手作り感」があり、「お惣菜を手作りしたような味」と好評です。副菜2品付きで1食の品数が多いのも産後の栄養補給に嬉しいポイントです。
         </p>
@@ -454,6 +461,7 @@ export default function SangoOsusumePage() {
             "時間指定ができない",
           ]}
         />
+        <ServiceCapture id="yoshikei" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           コスパ最優先の方にはヨシケイ（夕食ネット）のシンプルミールです。3食セット1,290円〜1,350円（1食430〜450円）で配達料は原則無料と、産後の出費が多い時期に嬉しい価格設定です。初めての方は初回10セットまで半額です（3食645〜675円・1食約215〜225円）。不在時は宅配BOXや玄関前に置き配してもらえるので、赤ちゃんが寝ている間でも受け取れます（2026年10月17日・公式確認）。
         </p>

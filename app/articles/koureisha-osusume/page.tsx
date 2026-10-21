@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { HakushoUnitPriceTable } from "@/components/HakushoUnitPriceTable";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "【2026年最新】高齢者向け宅配弁当おすすめランキングTOP5｜やわらか食・制限食も比較";
@@ -264,6 +265,7 @@ export default function KoureishaOsusumePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-koureisha-a.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-koureisha-a-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -274,6 +276,7 @@ export default function KoureishaOsusumePage() {
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
@@ -387,6 +390,7 @@ export default function KoureishaOsusumePage() {
             "変更・休止・解約はお届け予定日の7日前まで（フォーム・電話）",
           ]}
         />
+        <ServiceCapture id="wellness" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           高齢者に最もおすすめなのがウェルネスダイニングです。塩分制限・糖質＆カロリー制限・たんぱく＆塩分調整・脂質制限のコースに加え、別シリーズのやわらか宅配食もあり、高齢者に必要な制限食を網羅しています。管理栄養士への無料電話相談で「父は糖尿病で腎臓も悪いのですが、どのコースがいい？」といった複雑な相談もできます。詳しくは<Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark underline">ウェルネスダイニングの口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
@@ -443,6 +447,7 @@ export default function KoureishaOsusumePage() {
             "注文がWebメイン（高齢者本人には難しい場合も）",
           ]}
         />
+        <ServiceCapture id="shokutakubin" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           医療食品メーカーの信頼感を重視する方には食宅便です。日清医療食品は全国約5,300の病院・介護施設に給食を提供しており、医療レベルの栄養管理ノウハウが冷凍弁当にも活かされています。詳しくは<Link href="/articles/shokutakubin-reviews/" className="text-accent hover:text-accent-dark underline">食宅便の口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
@@ -471,6 +476,7 @@ export default function KoureishaOsusumePage() {
             "アプリ操作が高齢者には難しい場合がある",
           ]}
         />
+        <ServiceCapture id="nosh" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           噛む力・飲み込む力に問題のない元気なシニアにはnoshもおすすめです。全メニュー糖質30g以下・塩分2.5g以下で、意識しなくても糖質・塩分制限ができます。メニューを自分で選べる楽しさがあり、「食の自由」を大切にしたいアクティブシニアに人気です。詳しくは<Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline">nosh(ナッシュ)の口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
@@ -499,6 +505,7 @@ export default function KoureishaOsusumePage() {
             "メニュー数がやや少ない",
           ]}
         />
+        <ServiceCapture id="tsurukame" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           糖尿病・腎臓病・高血圧などの持病があり、医師の指導のもと食事管理が必要な方にはDr.つるかめキッチンです。糖尿病専門医や腎臓病専門医が監修しており、医療レベルの制限食を自宅で手軽に食べられます。定期便は送料無料で、費用面でも優れています。
         </p>

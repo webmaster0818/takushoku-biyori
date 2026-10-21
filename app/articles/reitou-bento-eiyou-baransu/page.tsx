@@ -259,6 +259,7 @@ export default function ReitouBentoEiyouBaransuPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-eiyou.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-eiyou-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -278,6 +279,7 @@ export default function ReitouBentoEiyouBaransuPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 text-xs leading-relaxed">
           <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。本記事は一般的な栄養に関する情報提供を目的としており、特定商品の効果や健康効果を保証・断定するものではありません。<strong>具体的な栄養成分値は各商品の栄養成分表示</strong>を、健康上の不安がある場合は医師・管理栄養士にご相談ください。

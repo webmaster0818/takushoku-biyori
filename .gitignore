@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# デザイン案・生成画像の原本（2026-10-21）
+/design-proposals/
+__pycache__/

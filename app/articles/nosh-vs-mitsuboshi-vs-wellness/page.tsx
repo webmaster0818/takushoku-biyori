@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCaptureGrid from "@/components/ServiceCaptureGrid";
 
 const ARTICLE_TITLE =
   "【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング｜あなたに最適な宅配弁当はどれ？";
@@ -373,6 +374,7 @@ export default function ArticlePage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-compare.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-compare-m.webp)" }}>
         <Breadcrumbs />
 
         {/* Title */}
@@ -389,6 +391,7 @@ export default function ArticlePage() {
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -407,6 +410,7 @@ export default function ArticlePage() {
 
         {/* ===== 結論 ===== */}
         <SectionHeading id="conclusion">3社の特徴と最適な人</SectionHeading>
+        <ServiceCaptureGrid ids={["nosh", "mitsuboshi", "wellness"]} />{/* svc-cap-202610 */}
 
         <SubHeading>30秒早見表</SubHeading>
         <ComparisonTable

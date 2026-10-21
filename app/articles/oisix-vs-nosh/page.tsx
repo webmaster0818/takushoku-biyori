@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCaptureGrid from "@/components/ServiceCaptureGrid";
 
 const ARTICLE_TITLE =
   "オイシックス vs nosh(ナッシュ)比較｜ミールキットと冷凍弁当はどっちが向いている？";
@@ -190,6 +191,7 @@ export default function OisixVsNoshPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-compare.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-compare-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -205,6 +207,7 @@ export default function OisixVsNoshPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 text-xs leading-relaxed">
           <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。料金・キャンペーン情報は<strong>2026年5月時点の公式サイト記載情報</strong>に基づきます。最新情報は<a href="https://www.oisix.com/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">Oisix公式</a>・<a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">nosh公式</a>でご確認ください。
@@ -226,6 +229,7 @@ export default function OisixVsNoshPage() {
 
         {/* ===== 結論 ===== */}
         <SectionHeading id="summary-top">「料理する派」はオイシックス、「時短派」はnosh</SectionHeading>
+        <ServiceCaptureGrid ids={["oisix", "nosh"]} />{/* svc-cap-202610 */}
 
         <ComparisonTable
           headers={["こんな人には", "おすすめ"]}

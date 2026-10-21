@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCaptureGrid from "@/components/ServiceCaptureGrid";
 
 const ARTICLE_TITLE =
   "ダイエティシャン(Dietician)の口コミ・評判は？まずいって本当？販売終了の事実と代替サービスまで解説【2026年10月最新】";
@@ -391,6 +392,7 @@ export default function DieticianKuchikomiPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-diet.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-diet-m.webp)" }}>
         <Breadcrumbs />
 
         {/* Title */}
@@ -419,6 +421,7 @@ export default function DieticianKuchikomiPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -777,6 +780,7 @@ export default function DieticianKuchikomiPage() {
             </li>
           </ul>
         </div>
+        <ServiceCaptureGrid ids={["nosh", "muscledeli", "kinnikushokudo", "gofood"]} label="この記事で取り上げている主なサービスの公式サイト" />{/* svc-cap-202610 */}
               {/* eeat-links-202607 */}
         <div className="mt-10 rounded-lg border p-4 text-xs leading-relaxed" style={{ borderColor: "#dde3eb", color: "#6b7785" }}>
           この記事は宅食びより編集部が「<Link href="/methodology/" className="underline">評価方法・データ源</Link>」に基づき、各社公式サイトの一次確認と出典付きの口コミ集約のみで作成しています（編集部による実食レビューは現在未実施・導入準備中）。編集体制は「<Link href="/author/" className="underline">編集部の体制と役割</Link>」をご覧ください。内容の誤りにお気づきの場合は<Link href="/editorial/" className="underline">編集部</Link>までご指摘ください。

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "夕食ネット(ヨシケイ)の口コミ・評判は？まずいって本当？シンプルミールの料金・配達エリアを出典付きで検証【2026年10月最新】";
@@ -392,6 +393,7 @@ export default function YushokuNetKuchikomiPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-reitou-a.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-reitou-a-m.webp)" }}>
         <Breadcrumbs />
 
         {/* Title */}
@@ -420,6 +422,7 @@ export default function YushokuNetKuchikomiPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -476,6 +479,7 @@ export default function YushokuNetKuchikomiPage() {
 
         {/* ===== 基本情報 ===== */}
         <SectionHeading id="about">夕食ネットとは？ヨシケイとの違いと基本情報</SectionHeading>
+        <ServiceCapture id="yushoku" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           夕食ネットは、ヨシケイ開発株式会社が運営する<strong>ネット限定・地域限定</strong>の食材宅配サービスです。通常の

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "ワタミの宅食ダイレクトの口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証";
@@ -386,6 +387,7 @@ export default function WatamiDirectKuchikomiPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-reitou-c.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-reitou-c-m.webp)" }}>
         <Breadcrumbs />
 
         {/* Title */}
@@ -413,6 +415,7 @@ export default function WatamiDirectKuchikomiPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -469,6 +472,7 @@ export default function WatamiDirectKuchikomiPage() {
 
         {/* ===== 基本情報 ===== */}
         <SectionHeading id="about">ワタミの宅食ダイレクトとは？基本情報まとめ</SectionHeading>
+        <ServiceCapture id="watami-direct" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           ワタミの宅食ダイレクトは、ワタミ株式会社が運営する<strong>冷凍おかずセットの宅配サービス</strong>です。冷蔵弁当を毎日届ける「

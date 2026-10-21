@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "三ツ星ファームの口コミ・評判は？まずいって本当？料金・解約条件を公式で確認【2026年10月最新】";
@@ -296,6 +297,7 @@ export default function MitsuboshiFarmReviewsPage() {
       
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-reitou-b.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-reitou-b-m.webp)" }}>
         <Breadcrumbs />
 
         {/* Title */}
@@ -312,6 +314,7 @@ export default function MitsuboshiFarmReviewsPage() {
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -349,6 +352,7 @@ export default function MitsuboshiFarmReviewsPage() {
 
         {/* ===== 基本情報 ===== */}
         <SectionHeading id="about">三ツ星ファームとは？基本情報まとめ</SectionHeading>
+        <ServiceCapture id="mitsuboshi" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           三ツ星ファームは、株式会社イングリウッド（東京都渋谷区）が運営する冷凍宅配食サービスです。公式サイトでは、ミシュラン1つ星を7年連続獲得した和食割烹「鈴なり」店主・村田明彦氏の監修メニューや、<strong>おかずプレートをカロリー350kcal以下・糖質25g以下・たんぱく質15g以上にそろえる「三ツ星基準」</strong>（一部商品を除く）を打ち出しています。電子レンジで約5分温めるだけで食べられ、メニューは125種類以上から選べます（いずれも公式サイト・2026年10月9日確認）。

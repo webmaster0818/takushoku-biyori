@@ -405,6 +405,7 @@ export default function FitFoodHomeKuchikomiPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-reitou-b.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-reitou-b-m.webp)" }}>
         <Breadcrumbs />
 
         {/* Title */}
@@ -433,6 +434,7 @@ export default function FitFoodHomeKuchikomiPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">

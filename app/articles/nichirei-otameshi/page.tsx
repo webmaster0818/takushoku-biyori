@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "ニチレイフーズダイレクトのお試しセット【2026年版】内容・送料・申し込みの流れ";
@@ -258,6 +259,7 @@ export default function NichireiOtameshiPage() {
       />
 
       <article className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+        <div className="subhead" style={{ ["--subhero" as string]: "url(/images/subhero/topic-otameshi.webp)", ["--subhero-m" as string]: "url(/images/subhero/topic-otameshi-m.webp)" }}>
         <Breadcrumbs />
 
         <header className="mb-8">
@@ -277,6 +279,7 @@ export default function NichireiOtameshiPage() {
             </span>
           </div>
         </header>
+        </div>{/* /subhead */}
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 text-xs leading-relaxed">
           <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。<strong>2026年6月時点の各社公式情報に基づき記述</strong>しています。料金・キャンペーンは変動するため、最新は<a href="https://www.nichireifoods.co.jp/npd/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">ニチレイフーズダイレクト公式サイト</a>でご確認ください。
@@ -298,6 +301,7 @@ export default function NichireiOtameshiPage() {
 
         {/* ===== 結論 ===== */}
         <SectionHeading id="summary-top">まずは公式のお試しセットで味を確認</SectionHeading>
+        <ServiceCapture id="nichirei" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           冷凍弁当・冷凍食品は、味や量の好みが分かれやすいジャンルです。だからこそ、<strong>いきなり定期購入する前にお試しセットで確かめる</strong>のが失敗しにくい進め方です。
