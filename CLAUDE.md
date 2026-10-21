@@ -361,3 +361,4 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - **SEO 不変の確認**（out/ と deploy repo の全71 HTML を比較）: title/meta description/canonical/robots/og・twitter/JSON-LD/h1〜h3/href 集合の差分 **0 ページ**。本文で消えた文字列は装飾の絵文字（🚨・⚠️、mealtime・kinnikushokudo の地の文）のみ。引用内の絵文字（😭🍱😆）と h2「⚠️ 公式で確認できなかったこと」（takuhai-cook123）は残した。
 - ⚠️ sitemap の lastmod はページの最終コミット日（generate-sitemap.mjs）なので、このブランチを main に入れると **67ページの lastmod がマージ日になる**（public/sitemap.xml はこのブランチではコミットしていない）。
 - 未対応・判断待ち: TOP バッジ「利用者の声300件以上」（10/16 ログで出典付き引用は約190件と記録＝文言を変えない制約のため据え置き）。
+- ✅ 本番反映（10/21 夜・source 923c2dd / deploy aa8697b4）。デザインのコミットは件名に `[no-lastmod]` を付け、generate-sitemap.mjs はそのコミットを lastmod に数えない（sitemap は本番と完全一致＝67ページの日付は動いていない）。**今後もデザインだけの変更はコミット件名に [no-lastmod] を付ける**。SEO照合 71/71 差分0・felmat 84 一致・precheck 全項目OK
