@@ -480,6 +480,7 @@ export default function ToushitsuSeigenOsusumePage() {
             "栄養相談はウェルネスダイニングほど手厚くない",
           ]}
         />
+        <ServiceCapture id="magokoro" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           糖質制限を最安コストで続けたい方にはまごころケア食です。糖質15g以下の糖質制限食が1食394円〜（21食・お得便）で、送料980円を含めても月約9,254円です（21食）。この記事で比べた5社の中で最も安い計算です（2026年10月12日・公式確認）。詳しくは<Link href="/articles/magokoro-care-reviews/" className="text-accent hover:text-accent-dark underline">まごころケア食の口コミ・評判を徹底調査</Link>をご覧ください。
         </p>

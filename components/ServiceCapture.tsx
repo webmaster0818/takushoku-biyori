@@ -2,7 +2,7 @@
  * サービス紹介の見出し直下に置く、公式サイトのファーストビューのキャプチャ（2026-10-21・gold / gakki と同じ部品）。
  * 画像は public/images/services/{id}.webp（1280×800・2026-10-21 に公式ドメインのトップを撮影。ASP の計測リンクは開いていない）。
  * リンクは付けない（記事のリンク構成を変えないため）。挿入は scripts/add-service-captures-202610.py（冪等）。
- * ⚠️ 撮り直したら CAPTURED_ON を更新。撮れていないサービス（メンテナンス中・ドメイン失効など）はここに載せない。
+ * ⚠️ 撮り直したら、そのサービスに capturedOn を付ける（既定値 CAPTURED_ON は 10/21 撮影分）。撮れていないサービス（メンテナンス中・ドメイン失効など）はここに載せない。
  */
 export const SERVICE_CAPTURES = {
   nosh: { name: "nosh（ナッシュ）", domain: "nosh.jp" },
@@ -32,11 +32,15 @@ export const SERVICE_CAPTURES = {
   rizap: { name: "RIZAP サポートミール", domain: "shop.rizap.jp" },
   cook123: { name: "宅配クック123", domain: "takuhaicook123.jp" },
   oisix: { name: "オイシックス", domain: "www.oisix.com" },
+  // 10/21 は公式がメンテナンス中で撮れず、10/23 に撮影（capturedOn をサービスごとに持たせる）
+  magokoro: { name: "まごころケア食", domain: "magokoro-care-shoku.com", capturedOn: "2026年10月23日" },
+  fitfoodhome: { name: "FIT FOOD HOME", domain: "store.tavenal.com", capturedOn: "2026年10月23日" },
+  "chef-mutenka": { name: "シェフの無添つくりおき", domain: "store.tavenal.com/tsukurioki", capturedOn: "2026年10月23日" },
 } as const;
 
 export type ServiceCaptureId = keyof typeof SERVICE_CAPTURES;
 
-/** 撮影日（撮り直したらここを更新） */
+/** 撮影日の既定値（capturedOn を持たないサービス＝10/21 撮影分。撮り直したサービスには capturedOn を付ける） */
 const CAPTURED_ON = "2026年10月21日";
 
 export default function ServiceCapture({
@@ -46,7 +50,7 @@ export default function ServiceCapture({
   id: ServiceCaptureId;
   className?: string;
 }) {
-  const c = SERVICE_CAPTURES[id];
+  const c: { name: string; domain: string; capturedOn?: string } = SERVICE_CAPTURES[id];
   return (
     <figure className={`service-capture not-prose ${className}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -60,7 +64,7 @@ export default function ServiceCapture({
         className="block w-full h-auto"
       />
       <figcaption className="mt-1.5 text-[11px] leading-relaxed text-warm-gray">
-        画像：{c.name} 公式サイト（{c.domain}）{CAPTURED_ON}時点
+        画像：{c.name} 公式サイト（{c.domain}）{c.capturedOn ?? CAPTURED_ON}時点
       </figcaption>
     </figure>
   );

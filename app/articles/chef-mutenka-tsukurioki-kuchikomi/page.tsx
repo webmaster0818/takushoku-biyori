@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "シェフの無添つくりおきの口コミ・評判は？まずいって本当？料金と注意点を検証";
@@ -210,6 +211,7 @@ export default function ChefMutenkaTsukuriokiKuchikomiPage() {
         <TableOfContents />
 
         <SectionHeading id="about">シェフの無添つくりおきとは？基本情報まとめ</SectionHeading>
+        <ServiceCapture id="chef-mutenka" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           シェフの無添つくりおきは、<strong>株式会社AIVICK</strong>（宅配食「FIT FOOD HOME」の運営元）が手がける、<strong>冷蔵で届く手作りおかずの定期宅配サービス</strong>です。冷凍弁当ではなく「つくりおきおかず」が週単位で届くスタイルで、化学調味料や保存料などを使わない<strong>無添加調理</strong>が最大の特徴。献立は管理栄養士監修の週替わりで、温めるだけで家族分の夕食が完成します。
         </p>

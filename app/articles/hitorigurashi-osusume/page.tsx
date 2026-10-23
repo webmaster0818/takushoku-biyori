@@ -632,6 +632,7 @@ export default function HitorigurashiOsusumePage() {
             "若い世代向けのメニューが少ない",
           ]}
         />
+        <ServiceCapture id="magokoro" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           コスパ最重視の一人暮らし、特にシニアの一人暮らしにおすすめなのがまごころケア食です。1食394円〜（21食・お得便）で、送料980円を含めても1食約441円という安さが魅力です。やわらか食やたんぱく調整食もあり、高齢の一人暮らしの食事サポートに最適です。味は素朴で家庭的ですが、「毎日食べても飽きない安心感のある味」と評価されています。
         </p>

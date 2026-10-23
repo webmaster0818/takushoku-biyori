@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "まごころケア食の口コミ・評判は？まずいって本当？良い・悪い評価を中立検証";
@@ -238,6 +239,7 @@ export default function MagokoroCareReviewsPage() {
 
         {/* ===== 基本情報 ===== */}
         <SectionHeading id="about">まごころケア食とは？基本情報まとめ</SectionHeading>
+        <ServiceCapture id="magokoro" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           まごころケア食は、株式会社シルバーライフが運営する冷凍宅配弁当サービスです。<strong>1食390円台から</strong>という業界最安クラスの価格設定が最大の特徴です。管理栄養士が監修した栄養バランスの良いメニューを、低価格で提供しています。健康バランス・糖質制限・塩分制限・たんぱく質調整・カロリー調整の5コースを展開し、幅広いニーズに対応しています。

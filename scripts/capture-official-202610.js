@@ -1,7 +1,12 @@
 // 公式サイトのファーストビュー撮影（1280×800 dpr2）。ASP・解析リクエストはブロック。計測リンクは開かない（公式ドメインの素の URL のみ）。
-// usage: node cap.js OUTDIR [id,id,...]
-const p = require('/private/tmp/claude-501/-Users-takashi-hasegawa/714192b7-f8fb-4b39-a2ba-e6de5ad6f2a2/scratchpad/pt/node_modules/puppeteer-core');
-const T = require('./targets.json');
+// usage: node scripts/capture-official-202610.js OUTDIR [id,id,...]
+// puppeteer-core はリポの依存に入れていない。PUPPETEER_CORE（node_modules/puppeteer-core のパス）→ 通常の require → 10/21 の scratchpad の順に探す。
+// 無ければ: mkdir -p /tmp/pt && (cd /tmp/pt && npm i puppeteer-core) && PUPPETEER_CORE=/tmp/pt/node_modules/puppeteer-core node scripts/capture-official-202610.js OUTDIR id
+const PT_CANDIDATES = [process.env.PUPPETEER_CORE, 'puppeteer-core', '/private/tmp/claude-501/-Users-takashi-hasegawa/714192b7-f8fb-4b39-a2ba-e6de5ad6f2a2/scratchpad/pt/node_modules/puppeteer-core'].filter(Boolean);
+let p = null;
+for (const c of PT_CANDIDATES) { try { p = require(c); break; } catch (e) {} }
+if (!p) { console.error('puppeteer-core が見つかりません（PUPPETEER_CORE を指定）'); process.exit(1); }
+const T = require('./capture-targets-202610.json'); // [id, url, 待機ms]
 const BLOCK = /felmat|a8\.net|moshimo|rentracks|afi-b|google|accesstrade|valuecommerce|doubleclick|facebook|clarity|hotjar|criteo|tiktok|yahoo.*(ads|retarget)|bing\.com\/(bat|action)|line-scdn.*tag|karte|ptengine|smartnews-ads|twitter.*(ads|analytics)/i;
 (async () => {
   const b = await p.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless: 'new' });

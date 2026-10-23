@@ -420,6 +420,7 @@ export default function KoureishaOsusumePage() {
             "栄養相談はウェルネスダイニングほど手厚くない",
           ]}
         />
+        <ServiceCapture id="magokoro" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
           コストを最優先する高齢者にはまごころケア食です。1食394円〜（21食・お得便）で、送料980円を含めても1食約441円は、年金生活の方でも無理なく続けやすい価格設定です。高齢者向け配食サービスを専門とするシルバーライフが運営しており、優しい味付けと食べやすさに定評があります。冷凍庫が小さい方向けに冷凍庫の無料レンタル（条件あり）もあるのは高齢者に嬉しいサービスです。詳しくは<Link href="/articles/magokoro-care-reviews/" className="text-accent hover:text-accent-dark underline">まごころケア食の口コミ・評判を徹底調査</Link>をご覧ください。
         </p>

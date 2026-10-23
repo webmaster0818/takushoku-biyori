@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
   "FIT FOOD HOME(フィットフードホーム)の口コミ・評判は？まずいって本当？無添加調理の実力を出典付きで中立検証【2026年10月最新】";
@@ -491,6 +492,7 @@ export default function FitFoodHomeKuchikomiPage() {
 
         {/* ===== 基本情報 ===== */}
         <SectionHeading id="about">FIT FOOD HOME(フィットフードホーム)とは？基本情報まとめ</SectionHeading>
+        <ServiceCapture id="fitfoodhome" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
           FIT FOOD HOME(フィットフードホーム)は、株式会社AIVICK（京都市南区）が運営する冷凍おかず・お弁当の宅配サービスです。公式ストア「tavenal」で販売され、<strong>「“カラダに不必要な成分は一切使用しない”という考え方」に基づく無添加調理</strong>を掲げているのが最大の特徴です。国産無添加シリーズや冷凍おかずシリーズ、大容量サイズなどを展開しています。
