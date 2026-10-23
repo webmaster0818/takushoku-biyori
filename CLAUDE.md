@@ -368,3 +368,10 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - **三ツ星ファーム「毎週新メニュー」**（公式トップをヘッドレスChromeで描画・計測/解析リクエストは abort）: 公式に「毎週」の記載なし。トップのお知らせは新商品をまとめて発売（2026-10-02「新商品(13種類)とワケあり商品(3種類)」、ほかはワケあり商品のみ）、「季節限定商品」の記載あり。→ diet-osusume の「nosh は約90種類、三ツ星ファームは125種類以上…毎週新メニューが追加されます」（三ツ星にもかかる読み方）を、nosh＝公式「毎週メニューが新登場」／三ツ星＝新商品をまとめて発売（お知らせ 10/2 に13種類）に書き分け。nosh-vs-mitsuboshi の「三ツ星…季節限定メニューがあります」は公式どおりで据え置き。hitorigurashi・reitou-bento-mazui の「毎週新メニュー」は nosh だけにかかるので据え置き
 - **TOP「利用者の声300件以上」の実数（10/22 数え直し・文言は判断待ちで据え置き）**: 個別の出典付き引用＝ `sourceName` 付きオブジェクト 203件（同文の重複を除くと191件＝10/16 の「約190件」はこの数）＋ `sourceUrl=` 属性の引用 15件（chef-mutenka）＝ **218件（19記事）**。別に、媒体の評価をまとめた要約文（`reviews: [...]` の文）が22記事に725文あり、うち文中の「」引用は99か所。どの数え方でも300件に届かない
 - source a2e64b3・2ba450a / deploy b8f243bc・precheck 全項目OK・SEO 照合: 変化は diet-osusume の modifiedTime/dateModified（→10/22）と /articles/ の並び順（更新日順・見出しと href の集合は一致）のみ・felmat 84件 集合一致
+
+### 2026-10-23 朝ルーチン: 公式キャプチャ3社（まごころケア食・FIT FOOD HOME・シェフの無添つくりおき）を掲載
+- 10/23 09:15 に3社とも公式復旧を確認（curl 200・メンテ文言なし／tavenal は「メンテナンスの完了のお知らせ」）→ `node scripts/capture-official-202610.js /tmp/tk-cap magokoro,fitfoodhome,chef-mutenka`（10/21 と同条件・ASP/解析/google は abort）→ PIL で 1280×800 webp（q80・method6）を public/images/services/ に
+- スクリプト修正: puppeteer-core を `PUPPETEER_CORE` → require → 10/21 scratchpad の順に探す（無ければ /tmp に npm i する手順をコメントに）、targets は `scripts/capture-targets-202610.json`（10/21 scratchpad から退避）
+- `components/ServiceCapture.tsx`: SERVICE_CAPTURES に3社＋ `capturedOn: "2026年10月23日"`（キャプションはサービス別。無い社は既定 CAPTURED_ON＝10/21）。chef-mutenka の domain は store.tavenal.com/tsukurioki
+- `add-service-captures-202610.py` 再実行: 1社記事3本（magokoro-care-reviews・fitfoodhome-kuchikomi・chef-mutenka-tsukurioki-kuchikomi）、ランキング3本（hitorigurashi・koureisha・toushitsu）のまごころカード直後、言及上位4社グリッドの4本（okihai・souryou-yasui・super-vs-takuhai・takuhai-vs-conveni）でまごころが入った（watami-direct/yoshikei/shokutakubin が押し出された・1本は3→4社）。FFH・シェフは ALIASES 未登録のまま（FFH は15社表脚注で19記事に出るため、登録するとグリッドが大きく変わる）
+- source 921389f [no-lastmod] / deploy d6cd81fa・precheck 全項目OK・SEO照合（title/meta/canonical/h1-3/href/JSON-LD）差分0ページ・計測リンク84件 旧 deploy と完全一致・sitemap 変化なし
