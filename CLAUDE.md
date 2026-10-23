@@ -389,3 +389,5 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - mamano-kyushoku-reviews: 旧公式URL mamanokyushoku.com（NXDOMAIN＝リンク切れ）5か所 → テキストリンク、要点直後に 300x250、まとめ直後に PC 468x60／SP 320x100＋テキスト＋imp。マーカー `felmat-mamano-202610`
 - sango-osusume: ランキング（5社）の後・詳細レビューの前に「妊娠中・産後に特化した宅食なら：ママの休食」枠（250x250＋テキスト＋口コミ記事リンク）
 - 既存の計測リンク84件は集合一致（R4568K 以外 84 件のまま）
+- （続き）MOGUMOGUおやつ便 `mogumogu-oyatsubin-kuchikomi` を追加（MediaXAI「片方は記事化できてないよね？」・felmat こどもケアの案件）。この定期便の第三者の利用体験は見つからず → 口コミは公式掲載の声＋MOGUMOGUいもの楽天/Amazonレビュー＋解説記事の注意点（体験ではないと明記）
+- 🚨 訂正: MOGUMOGUいも記事の「公式サイト・定期便は SOLD OUT」は誤り。定期便（mogumoguoyatsu-002_first）は購入ボタン有効・schema InStock。単品（mogumoguimo-01）は描画後に購入ボタンが disabled だが品切れとは断定できない → 品切れ表記を削除。**在庫は「[SOLD OUT] 再入荷お知らせ」の文言がHTMLにあるだけでは判断しない（display:none）。描画後のボタン状態で見る**
