@@ -41,6 +41,7 @@ TOPIC = {
     "chef-mutenka-tsukurioki-kuchikomi": "tsukurioki", "mamano-kyushoku-reviews": "sango",
     # 幼児食・離乳食・ベビーおやつ（2026-10-23）
     "mogumo-kuchikomi": "sango", "tedemogu-kuchikomi": "sango", "mogumoguimo-kuchikomi": "sango",
+    "mogumogu-oyatsubin-kuchikomi": "sango",
     # 目的別・ランキング
     "diet-osusume": "diet", "koureisha-osusume": "koureisha-a", "sango-osusume": "sango",
     "hitorigurashi-osusume": "hitorigurashi", "toushitsu-seigen-osusume": "toushitsu", "kou-tanpaku-ranking": "kou-tanpaku",
