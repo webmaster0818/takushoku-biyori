@@ -375,3 +375,11 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - `components/ServiceCapture.tsx`: SERVICE_CAPTURES に3社＋ `capturedOn: "2026年10月23日"`（キャプションはサービス別。無い社は既定 CAPTURED_ON＝10/21）。chef-mutenka の domain は store.tavenal.com/tsukurioki
 - `add-service-captures-202610.py` 再実行: 1社記事3本（magokoro-care-reviews・fitfoodhome-kuchikomi・chef-mutenka-tsukurioki-kuchikomi）、ランキング3本（hitorigurashi・koureisha・toushitsu）のまごころカード直後、言及上位4社グリッドの4本（okihai・souryou-yasui・super-vs-takuhai・takuhai-vs-conveni）でまごころが入った（watami-direct/yoshikei/shokutakubin が押し出された・1本は3→4社）。FFH・シェフは ALIASES 未登録のまま（FFH は15社表脚注で19記事に出るため、登録するとグリッドが大きく変わる）
 - source 921389f [no-lastmod] / deploy d6cd81fa・precheck 全項目OK・SEO照合（title/meta/canonical/h1-3/href/JSON-LD）差分0ページ・計測リンク84件 旧 deploy と完全一致・sitemap 変化なし
+
+### 2026-10-23 新規記事3本（MediaXAI「以下で未掲載のものあれば作成して」＝felmat 宅配食品の未提携9案件リスト）✅本番反映（source 0500a52＋sitemap / deploy 33e8e882・precheck 全項目OK・Indexing 3/3）
+- リスト9件のうち既存記事あり6件（筋肉食堂DELI・GREEN SPOON・ワタミの宅食ダイレクト×2・nosh・ママの休食・わんまいる）。未掲載＝モグモ・TEDEMOGU・MOGUMOGUいも → `mogumo-kuchikomi` / `tedemogu-kuchikomi` / `mogumoguimo-kuchikomi`
+- 生成: `scripts/gen-kids-articles-202610.py`（データ＝`scripts/kids-articles/<slug>.py`）。⚠️再生成すると subhead の包みが消えるので、生成後に `add-subhero-images-202610.py`（TOPIC に3本＝sango を登録済み）を再実行
+- 3社とも未提携 → 公式リンクは sponsored なし＋「広告ではありません」注記。提携後に差し替え
+- 公式キャプチャ: mogumo・tedemogu（10/23・TEDEMOGU は初回クーポンのポップアップを閉じて撮影）。MOGUMOGUいもは公式カートが SOLD OUT のため無し
+- 確認値の要点: モグモ＝2026-06-01 約10%値上げ後 8食5,110/12食7,260/18食9,810/24食12,410円・送料 関東1,100/1,190円・締切10日前・応援コースは6回縛り。TEDEMOGU＝運営 株式会社ハーシー（旧 Eatbyhand）・shop.eatbyhand.co.jp・ハンバーグ1袋1,690円/おにぎり1,580円・送料一律1,100円（1万円以上無料）・定期10%OFF（締切の記載なし）。MOGUMOGUいも＝公式1袋799円・定期2,980円とも SOLD OUT（10/23）・楽天/Amazon「九州マルシェ」で購入可。こども家庭庁・消費者庁の窒息事故の指針を出典付きで掲載
+- 公式内の食い違い（記事に併記）: モグモのメニュー数（40／50以上／一覧63品）、MOGUMOGUいもの製法（天日干し／機械干し併用）・送料（330円／送料無料）、TEDEMOGU のパッケージ寸法
