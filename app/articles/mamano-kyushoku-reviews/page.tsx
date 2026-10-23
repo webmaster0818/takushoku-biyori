@@ -29,7 +29,7 @@ const faqData = [
   {
     question: "ママの休食は妊娠中でも食べられますか？",
     answer:
-      "ママの休食は、妊娠中・産後・授乳期の女性をメインターゲットに設計された冷凍宅配弁当です。葉酸・鉄・カルシウム・タンパク質といった、妊娠期〜授乳期に不足しやすい栄養素を意識したメニュー構成が特徴です。ただし個別のアレルギーや医師からの食事指導がある場合は、必ず担当医に相談してから利用してください。最新の栄養設計と原材料は公式サイト(https://mamanokyushoku.com/)でご確認ください。",
+      "ママの休食は、妊娠中・産後・授乳期の女性をメインターゲットに設計された冷凍宅配弁当です。葉酸・鉄・カルシウム・タンパク質といった、妊娠期〜授乳期に不足しやすい栄養素を意識したメニュー構成が特徴です。ただし個別のアレルギーや医師からの食事指導がある場合は、必ず担当医に相談してから利用してください。最新の栄養設計と原材料は公式サイトでご確認ください。",
   },
   {
     question: "産後すぐ・退院直後でも届けてもらえる？",
@@ -39,7 +39,7 @@ const faqData = [
   {
     question: "料金はどれくらい？noshより高い？",
     answer:
-      "ママの休食は管理栄養士監修・産後特化型のため、一般的なコスパ重視型の冷凍宅配弁当(noshの612円〜など・2026年10月10日公式確認)より1食単価は高めの設計です。具体的な料金プランは食数や定期/都度購入で変動するため、最新の正確な価格は公式サイト(https://mamanokyushoku.com/)でご確認ください。栄養設計の専門性に価値を感じるかで判断するのが妥当です。",
+      "ママの休食は管理栄養士監修・産後特化型のため、一般的なコスパ重視型の冷凍宅配弁当(noshの612円〜など・2026年10月10日公式確認)より1食単価は高めの設計です。具体的な料金プランは食数や定期/都度購入で変動するため、最新の正確な価格は公式サイトでご確認ください。栄養設計の専門性に価値を感じるかで判断するのが妥当です。",
   },
   {
     question: "解約は簡単にできますか？",
@@ -212,7 +212,7 @@ export default function MamanoKyushokuReviewsPage() {
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link></span>
           </div>
           <div className="mt-3 text-xs text-warm-gray bg-yellow-50 border border-yellow-200 rounded p-2">
-            PR: 本記事には広告(アフィリエイトリンク)が含まれます。価格・プラン内容は変更される場合があるため、最新情報は必ず<a href="https://mamanokyushoku.com/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">公式サイト</a>でご確認ください。
+            PR: 本記事には広告(アフィリエイトリンク)が含まれます。価格・プラン内容は変更される場合があるため、最新情報は必ず<a href="https://t.felmat.net/fmcl?ak=R4568K.1.O82687A.B1357443" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">公式サイト</a>でご確認ください。
           </div>
         </header>
         </div>{/* /subhead */}
@@ -237,7 +237,13 @@ export default function MamanoKyushokuReviewsPage() {
             <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>特化型のため1食単価が一般的な宅配弁当より高め</li><li>メニュー数は大手(nosh・三ツ星ファーム)より少なめ</li><li>量は女性向けで、アレルギー・原材料は事前確認が必要</li></ul></div>
           </div>
           <p className="text-xs text-warm-gray mb-4">※料金・送料・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。</p>
-          <a href="https://mamanokyushoku.com/" target="_blank" rel="noopener noreferrer sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">ママの休食 公式サイトで最新の料金・お試しを見る →</a>
+          <a href="https://t.felmat.net/fmcl?ak=R4568K.1.O82687A.B1357443" target="_blank" rel="noopener noreferrer sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">ママの休食 公式サイトで最新の料金・お試しを見る →</a>
+        </div>
+
+        {/* felmat-mamano-202610 */}
+        <div className="my-8 text-center">
+          <a href="https://t.felmat.net/fmcl?ak=R4568K.1.T82814Q.B1357443" target="_blank" rel="nofollow noopener sponsored"><img src="https://t.felmat.net/fmimg/R4568K.T82814Q.B1357443" width={300} height={250} alt="ママの休食" style={{ border: 0, maxWidth: "100%", height: "auto" }} /></a>
+          <p className="text-[10px] text-gray-400 mt-1">PR</p>
         </div>
 
         <TableOfContents />
@@ -257,7 +263,7 @@ export default function MamanoKyushokuReviewsPage() {
             ["重視している栄養素", "葉酸・鉄・カルシウム・タンパク質など"],
             ["配送形態", "冷凍便(電子レンジ加熱)"],
             ["購入形態", "都度購入 / 定期購入"],
-            ["公式サイト", "https://mamanokyushoku.com/"],
+            ["公式サイト", "本記事の公式サイトへのリンクからご確認ください"],
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">※出典: ママの休食公式サイト(2026年5月時点)。最新情報・正確な栄養成分・料金は公式サイトでご確認ください。</p>
@@ -276,7 +282,7 @@ export default function MamanoKyushokuReviewsPage() {
           ))}
         </div>
 
-        <CTAButton href="https://mamanokyushoku.com/">ママの休食 公式サイトを見る</CTAButton>
+        <CTAButton href="https://t.felmat.net/fmcl?ak=R4568K.1.O82687A.B1357443">ママの休食 公式サイトを見る</CTAButton>
 
         <SectionHeading id="target">想定ターゲット(妊娠中・産後・授乳期)</SectionHeading>
 
@@ -478,11 +484,16 @@ export default function MamanoKyushokuReviewsPage() {
             ママの休食は、<strong>「妊娠中・産後・授乳期の女性」という明確なターゲットに最適化された、唯一無二の宅配サービス</strong>です。一般的なコスパ重視の宅配と比べると価格は高めですが、その特化性に対価を払う価値は十分あります。
           </p>
           <p className="text-sm leading-relaxed">
-            産後の特に大変な時期(退院後1〜2ヶ月)に集中利用、または出産祝いギフトとしての贈答利用が特におすすめです。料金・プラン詳細は変更される可能性があるため、申込前に必ず<a href="https://mamanokyushoku.com/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">公式サイト</a>で最新情報をご確認ください。
+            産後の特に大変な時期(退院後1〜2ヶ月)に集中利用、または出産祝いギフトとしての贈答利用が特におすすめです。料金・プラン詳細は変更される可能性があるため、申込前に必ず<a href="https://t.felmat.net/fmcl?ak=R4568K.1.O82687A.B1357443" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">公式サイト</a>で最新情報をご確認ください。
           </p>
         </div>
 
-        <CTAButton href="https://mamanokyushoku.com/">ママの休食 公式サイトをチェック</CTAButton>
+        <div className="my-6 text-center">
+          <div className="hidden md:block"><a href="https://t.felmat.net/fmcl?ak=R4568K.1.082819I.B1357443" target="_blank" rel="nofollow noopener sponsored"><img src="https://t.felmat.net/fmimg/R4568K.082819I.B1357443" width={468} height={60} alt="ママの休食" style={{ border: 0, maxWidth: "100%", height: "auto" }} /></a></div>
+          <div className="md:hidden"><a href="https://t.felmat.net/fmcl?ak=R4568K.1.L82817H.B1357443" target="_blank" rel="nofollow noopener sponsored"><img src="https://t.felmat.net/fmimg/R4568K.L82817H.B1357443" width={320} height={100} alt="ママの休食" style={{ border: 0, maxWidth: "100%", height: "auto" }} /></a></div>
+          <p className="text-sm mt-3"><a href="https://t.felmat.net/fmcl?ak=R4568K.1.O82687A.B1357443" target="_blank" rel="nofollow noopener sponsored" className="text-accent underline">ママの休食「妊娠期のママのための冷凍お弁当」</a><img src="https://t.felmat.net/fmimp/R4568K.O82687A.B1357443" width={1} height={1} alt="" style={{ border: "none" }} /></p>
+        </div>
+        <CTAButton href="https://t.felmat.net/fmcl?ak=R4568K.1.O82687A.B1357443">ママの休食 公式サイトをチェック</CTAButton>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
           <p className="font-bold mb-2">関連記事</p>

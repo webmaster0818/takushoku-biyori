@@ -467,6 +467,19 @@ export default function SangoOsusumePage() {
         </p>
 
         {/* ===== 詳細レビュー ===== */}
+        {/* felmat-mamano-202610: ランキング外の産後特化型として案内 */}
+        <div className="border border-warm-border rounded-xl p-5 mb-10 bg-white">
+          <p className="font-bold text-sm mb-2">妊娠中・産後に特化した宅食なら：ママの休食</p>
+          <p className="text-sm leading-relaxed mb-4">
+            ランキングは一般向けの5社ですが、妊娠期〜授乳期のママ向けに管理栄養士が監修した冷凍弁当に絞りたい方には、ママの休食という選択肢もあります。特徴と注意点は<Link href="/articles/mamano-kyushoku-reviews/" className="text-accent underline">ママの休食の口コミ・評判</Link>をご覧ください。
+          </p>
+          <div className="text-center">
+            <a href="https://t.felmat.net/fmcl?ak=R4568K.1.S82815A.B1357443" target="_blank" rel="nofollow noopener sponsored"><img src="https://t.felmat.net/fmimg/R4568K.S82815A.B1357443" width={250} height={250} alt="ママの休食" style={{ border: 0, maxWidth: "100%", height: "auto" }} /></a>
+            <p className="text-sm mt-2"><a href="https://t.felmat.net/fmcl?ak=R4568K.1.O82687A.B1357443" target="_blank" rel="nofollow noopener sponsored" className="text-accent underline">ママの休食「妊娠期のママのための冷凍お弁当」</a></p>
+            <p className="text-[10px] text-gray-400 mt-1">PR</p>
+          </div>
+        </div>
+
         <SectionHeading id="detail-review">各サービスの詳細レビュー</SectionHeading>
 
         <SubHeading>nosh - 産後の家族まるごとサポート</SubHeading>
