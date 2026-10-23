@@ -36,6 +36,9 @@ export const SERVICE_CAPTURES = {
   magokoro: { name: "まごころケア食", domain: "magokoro-care-shoku.com", capturedOn: "2026年10月23日" },
   fitfoodhome: { name: "FIT FOOD HOME", domain: "store.tavenal.com", capturedOn: "2026年10月23日" },
   "chef-mutenka": { name: "シェフの無添つくりおき", domain: "store.tavenal.com/tsukurioki", capturedOn: "2026年10月23日" },
+  // 2026-10-23 新規記事（幼児食・離乳食）
+  mogumo: { name: "モグモ", domain: "mogumo.jp", capturedOn: "2026年10月23日" },
+  tedemogu: { name: "TEDEMOGU（てでもぐ）", domain: "shop.eatbyhand.co.jp", capturedOn: "2026年10月23日" },
 } as const;
 
 export type ServiceCaptureId = keyof typeof SERVICE_CAPTURES;
