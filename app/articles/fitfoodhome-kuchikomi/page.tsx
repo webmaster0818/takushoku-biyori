@@ -868,7 +868,7 @@ export default function FitFoodHomeKuchikomiPage() {
                 産後・子育て世帯におすすめの宅食
               </Link>
             </li>
-            <li><Link href="/articles/mamano-kyushoku-reviews/" className="text-accent hover:text-accent-dark transition-colors">ママの休食の口コミ・評判は？産後・授乳期向け冷凍宅配を中立検証</Link></li>
+            <li><Link href="/articles/mamano-kyushoku-reviews/" className="text-accent hover:text-accent-dark transition-colors">ママの休食の口コミ・評判｜2026年10月改定後の料金・送料</Link></li>
           </ul>
         </div>
               {/* eeat-links-202607 */}

@@ -458,7 +458,7 @@ export default function ReitouBentoEiyouBaransuPage() {
 
         <ul className="text-sm space-y-2 mb-6 list-disc list-inside leading-relaxed">
           <li><strong>持病・治療中の方</strong>：腎臓病・糖尿病などで食事制限がある場合は、医師・管理栄養士の指導に沿って選ぶ</li>
-          <li><strong>妊娠中・授乳中の方</strong>：必要な栄養が増えるため、不足しないよう全体で調整する</li>
+          <li><strong>妊娠中・授乳中の方</strong>：必要な栄養が増えるため、不足しないよう全体で調整する（妊娠中・授乳期向けに栄養を設計した冷凍弁当の例：<Link href="/articles/mamano-kyushoku-reviews/" className="text-accent underline">ママの休食の口コミ・評判</Link>）</li>
           <li><strong>アレルギーがある方</strong>：原材料名・アレルゲン表示を必ず確認する</li>
           <li><strong>「これだけ」で済ませがちな方</strong>：1商品に頼りきらず、生活全体で栄養を整える</li>
         </ul>

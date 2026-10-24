@@ -6,7 +6,7 @@ import ServiceCapture from "@/components/ServiceCapture";
 const ARTICLE_TITLE =
   "【2026年最新】産後におすすめの宅配弁当ランキングTOP5｜産褥期の栄養管理と時短を両立";
 const ARTICLE_DESCRIPTION =
-  "産後・産褥期におすすめの宅配弁当を公式情報と出典付きの口コミで比較します。nosh・ママの休食・ウェルネスダイニングなど人気5社を栄養バランス・添加物・価格で比較します。授乳中の栄養管理、上の子も一緒に食べられるサービス、里帰りなしの食事問題まで解説します。";
+  "産後・産褥期におすすめの宅配弁当を公式情報と出典付きの口コミで比較します。nosh・三ツ星ファーム・ウェルネスダイニングなど人気5社を栄養バランス・添加物・価格で比較し、妊娠中・産後に特化したママの休食も紹介します。授乳中の栄養管理、上の子も一緒に食べられるサービス、里帰りなしの食事問題まで解説します。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/sango-osusume/";
 
@@ -471,7 +471,7 @@ export default function SangoOsusumePage() {
         <div className="border border-warm-border rounded-xl p-5 mb-10 bg-white">
           <p className="font-bold text-sm mb-2">妊娠中・産後に特化した宅食なら：ママの休食</p>
           <p className="text-sm leading-relaxed mb-4">
-            ランキングは一般向けの5社ですが、妊娠期〜授乳期のママ向けに管理栄養士が監修した冷凍弁当に絞りたい方には、ママの休食という選択肢もあります。特徴と注意点は<Link href="/articles/mamano-kyushoku-reviews/" className="text-accent underline">ママの休食の口コミ・評判</Link>をご覧ください。
+            ランキングは一般向けの5社ですが、妊娠期〜授乳期のママ向けに管理栄養士・産婦人科医が監修した冷凍弁当に絞りたい方には、ママの休食という選択肢もあります。プレママ向け・育児ママ向けなどプラン別に葉酸・鉄などを重点化しており、1食は1,310〜1,370円（通常購入・送料別・2026年10月改定後）です（2026年10月24日・公式確認）。口コミ・料金・送料は<Link href="/articles/mamano-kyushoku-reviews/" className="text-accent underline">ママの休食の口コミ・評判</Link>をご覧ください。
           </p>
           <div className="text-center">
             <a href="https://t.felmat.net/fmcl?ak=R4568K.1.S82815A.B1357443" target="_blank" rel="nofollow noopener sponsored"><img src="https://t.felmat.net/fmimg/R4568K.S82815A.B1357443" width={250} height={250} alt="ママの休食" style={{ border: 0, maxWidth: "100%", height: "auto" }} /></a>
@@ -678,7 +678,7 @@ export default function SangoOsusumePage() {
             <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link></li>
             <li><Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark transition-colors">一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5</Link></li>
             <li><Link href="/articles/diet-osusume/" className="text-accent hover:text-accent-dark transition-colors">ダイエット向け宅配弁当おすすめランキングTOP5</Link></li>
-            <li><Link href="/articles/mamano-kyushoku-reviews/" className="text-accent hover:text-accent-dark transition-colors">ママの休食の口コミ・評判は？産後・授乳期向け冷凍宅配を中立検証</Link></li>
+            <li><Link href="/articles/mamano-kyushoku-reviews/" className="text-accent hover:text-accent-dark transition-colors">ママの休食の口コミ・評判｜2026年10月改定後の料金・送料</Link></li>
           </ul>
         </div>
       

@@ -39,6 +39,8 @@ export const SERVICE_CAPTURES = {
   // 2026-10-23 新規記事（幼児食・離乳食）
   mogumo: { name: "モグモ", domain: "mogumo.jp", capturedOn: "2026年10月23日" },
   tedemogu: { name: "TEDEMOGU（てでもぐ）", domain: "shop.eatbyhand.co.jp", capturedOn: "2026年10月23日" },
+  // 旧 mamanokyushoku.com は NXDOMAIN。公式は shop.mamakyu.com（2026-10-24 撮影）
+  mamano: { name: "ママの休食", domain: "shop.mamakyu.com", capturedOn: "2026年10月24日" },
 } as const;
 
 export type ServiceCaptureId = keyof typeof SERVICE_CAPTURES;
