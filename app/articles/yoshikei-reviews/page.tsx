@@ -35,7 +35,7 @@ const faqData = [
   {
     question: "ヨシケイの冷凍弁当はどれ？いくら？",
     answer:
-      "ヨシケイの冷凍弁当は「シンプルミール」（ワンプレートにおかず3品）と「ベジミール」（おかず4品・1食で1日の野菜目標量の約2/3）です。ヨシケイ東京の公式サイトではシンプルミール1回3食セット1,290円、ベジミール1回2食セット1,490円です（2026年10月16日確認）。ヨシケイの通販サイト「夕食ネット」のシンプルミールは3食セット1,290円〜1,350円（販売期間・セットにより異なる）で、初回注文は10セットまで半額です。電子レンジ約4分（500W）で温めます。",
+      "ヨシケイの冷凍弁当は「シンプルミール」（ワンプレートにおかず3品）と「ベジミール」（おかず4品・1食で1日の野菜目標量の約2/3）です。ヨシケイ東京の公式サイトではシンプルミール1回3食セット1,290円、ベジミール1回2食セット1,490円です（2026年10月16日確認）。ヨシケイの通販サイト「夕食ネット」のシンプルミールは3食セット1,350円で、初回注文は10セットまで半額です。電子レンジ約4分（500W）で温めます。",
   },
   {
     question: "ヨシケイはお試しできる？定期購入になる？",
@@ -230,7 +230,7 @@ export default function YoshikeiReviewsPage() {
         <p className="text-xs text-warm-gray mb-6">※出典: <a href="https://yoshikei-tokyo.co.jp/service.php" target="_blank" rel="noopener noreferrer nofollow" className="underline">ヨシケイ東京 サービス概要</a>（2026年10月16日確認。1人前あたりは2人用5日分÷10食で当サイトが算出）、<a href="https://yoshikei-dvlp.co.jp/news/press/2025/929_2.php" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式リリース（2025年9月リニューアル）</a>、<a href="https://yoshikei-dvlp.co.jp/news/info/2026/lovyu_1.php" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式お知らせ（Lovyu販売終了）</a>、<a href="https://yoshikei-dvlp.co.jp/news/info/2025/post_350.php" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式お知らせ（離乳食とりわけレシピ終了）</a>。公式本部のお試しページでは「お住まいの地域・ご注文週によって価格が異なる」とされています。</p>
 
         <SubHeading>冷凍弁当「シンプルミール」は2か所で買える</SubHeading>
-        <p className="text-sm mb-4 leading-relaxed">「ヨシケイの弁当」「ヨシケイの冷凍弁当」として口コミが多いのはシンプルミールです。買い方は2つあり、<strong>地域のヨシケイで他のメニューと一緒に頼む</strong>方法（ヨシケイ東京は月・水・金のお届けで1回3食セット1,290円）と、<strong>ヨシケイの通販サイト「夕食ネット」で頼む</strong>方法があります。夕食ネットのシンプルミールは販売期間ごとの3食セット（1,290円〜1,350円）から選ぶ方式で、1品ずつは選べません。初回注文は10セットまで半額、電子レンジ約4分（500W）で温めます。夕食ネットの対象は埼玉・千葉・東京・大阪・奈良・兵庫・徳島の7都府県です（2026年10月16日・公式確認）。夕食ネット側の口コミは<Link href="/articles/yushoku-net-kuchikomi/" className="text-accent underline">夕食ネット（ヨシケイ）の口コミ・評判</Link>にまとめています。</p>
+        <p className="text-sm mb-4 leading-relaxed">「ヨシケイの弁当」「ヨシケイの冷凍弁当」として口コミが多いのはシンプルミールです。買い方は2つあり、<strong>地域のヨシケイで他のメニューと一緒に頼む</strong>方法（ヨシケイ東京は月・水・金のお届けで1回3食セット1,290円）と、<strong>ヨシケイの通販サイト「夕食ネット」で頼む</strong>方法があります。夕食ネットのシンプルミールは販売期間ごとの3食セット（1,350円）から選ぶ方式で、1品ずつは選べません。初回注文は10セットまで半額、電子レンジ約4分（500W）で温めます。夕食ネットの対象は埼玉・千葉・東京・大阪・奈良・兵庫・徳島の7都府県です（2026年10月16日・公式確認）。夕食ネット側の口コミは<Link href="/articles/yushoku-net-kuchikomi/" className="text-accent underline">夕食ネット（ヨシケイ）の口コミ・評判</Link>にまとめています。</p>
         <p className="text-xs text-warm-gray mb-6">※出典: <a href="https://www.you-shoku.net/" target="_blank" rel="noopener noreferrer nofollow" className="underline">夕食ネット</a>・<a href="https://yoshikei-dvlp.co.jp/menu/one/" target="_blank" rel="noopener noreferrer nofollow" className="underline">ヨシケイ公式 冷凍弁当</a>（2026年10月16日確認）</p>
 
         <SectionHeading id="good-reviews">良い口コミ・評判</SectionHeading>
@@ -303,7 +303,7 @@ export default function YoshikeiReviewsPage() {
             { title: "献立を考える手間が減る", text: "メニューブックから選ぶだけです。メニューは管理栄養士20名を含む29名の栄養士が、栄養バランスや季節感、ボリュームを考えて作っています（公式）。" },
             { title: "食材の無駄が出にくい", text: "その日使う分だけ届くため、「食材のロスがなくなった」（オリコン利用者コメント）という声があります。" },
             { title: "お試しが割安で定期縛りなし", text: "お試し5daysは1食約280〜670円です（コースにより約30〜50%OFF）。公式は「定期縛りもなく」としています。夕食ネットのシンプルミールは初回10セットまで半額です。" },
-            { title: "冷凍弁当が手頃", text: "シンプルミールはヨシケイ東京で3食セット1,290円（1食430円）、夕食ネットで1,290円〜1,350円です（2026年10月17日確認）。ベジミールは1食で1日の野菜目標量の約2/3がとれます。" },
+            { title: "冷凍弁当が手頃", text: "シンプルミールはヨシケイ東京で3食セット1,290円（1食430円）、夕食ネットで1,350円です（ヨシケイ東京は2026年10月17日、夕食ネットは10月24日確認）。ベジミールは1食で1日の野菜目標量の約2/3がとれます。" },
           ].map((item) => (
             <div key={item.title} className="bg-green-50 rounded-lg p-4">
               <p className="font-bold text-sm mb-1">{item.title}</p>
