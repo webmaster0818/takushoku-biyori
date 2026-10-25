@@ -406,3 +406,8 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - 訂正: 重視栄養素「葉酸・鉄・カルシウム」（カルシウムはお子さま向け）、監修「管理栄養士」→管理栄養士・産婦人科医、比較表ワタミ「590〜680円」→470〜790円（10/13 確認値）、「唯一無二」等。sango-osusume の description「nosh・ママの休食・ウェルネスなど人気5社」→ママの休食は5社に入っていないため修正
 - 内部リンク: nosh-vs-mitsuboshi-vs-wellness（産後カード）・reitou-bento-eiyou-baransu（妊娠中・授乳中の注意）から追加、sango の案内枠に料金を追記。公式キャプチャ mamano.webp（capturedOn 10/24・capture-targets の URL を shop.mamakyu.com に）
 - 計測リンク: out/ の href/src 集計 63件・12種（R4568K 21）＝作業前 deploy と完全一致。precheck 全項目OK
+
+### 2026-10-25 TOP「利用者の声300件以上」から件数を外す（既定案B・10/24宣言どおり回答なしで実行）✅本番反映済み
+- TOP バッジ `利用者の声300件以上` → `利用者の声を多数掲載`（実数218件＝10/22数え直し。218件への置換ではなく件数を外す）。ソース・out とも「300件」の同種主張は TOP の1か所のみ（他ページ・FAQ・metadata なし）
+- build EXIT0・precheck 全項目OK・deploy c38d3fa8（source 5f18bfa）・本番 `?cb=` で旧文言0件／新文言あり
+- これで 252/363/369 行の「TOP 300件」未対応は解消。残る未対応＝TOP まごころ「初回90円」・nosh-coupon title「初回最大3,000円OFF」・お問い合わせ窓口の記載
