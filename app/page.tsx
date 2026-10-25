@@ -101,7 +101,7 @@ export default function Home() {
           </li>
           <li className="py-4 text-center md:border-l border-rule first:md:border-l-0 flex items-center justify-center gap-2">
             <span aria-hidden="true" className="w-1.5 h-1.5 bg-persimmon" />
-            <span>利用者の声300件以上</span>
+            <span>利用者の声を多数掲載</span>
           </li>
         </ul>
       </section>
