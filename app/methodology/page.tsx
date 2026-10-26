@@ -32,7 +32,7 @@ export default function MethodologyPage() {
       </nav>
 
       <h1 className="font-display text-3xl md:text-4xl font-bold mb-2">評価方法・データ源</h1>
-      <p className="text-gray-500 text-sm mb-8">最終更新: 2026年5月21日</p>
+      <p className="text-gray-500 text-sm mb-8">最終更新: 2026年10月26日</p>
       </div>{/* /subhead */}
 
       <section className="prose max-w-none">
@@ -87,8 +87,8 @@ export default function MethodologyPage() {
 
         <h2 className="font-display text-2xl font-bold mb-4">読者からのフィードバック</h2>
         <p className="mb-6">
-          記事内容に誤りや古い情報がある場合、お問い合わせフォームよりご連絡ください。
-          確認のうえ、3営業日以内に修正いたします。
+          記事内容に誤りや古い情報がある場合は、<Link href="/privacy-policy/" className="text-orange-600 underline">プライバシーポリシー</Link>の「お問い合わせ窓口」記載の運営会社までご連絡ください。
+          確認のうえ、速やかに訂正いたします。
         </p>
 
         <h2 className="font-display text-2xl font-bold mb-4">関連ページ</h2>

@@ -3,9 +3,9 @@ import Link from "next/link";
 import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
-  "【2026年最新】nosh(ナッシュ)クーポン・割引コードガイド｜初回最大3,000円OFFの全手順";
+  "【2026年最新】nosh(ナッシュ)クーポン・割引コードガイド｜初回1,500円OFF・3回分の合計3,000円OFFの全手順";
 const ARTICLE_DESCRIPTION =
-  "nosh(ナッシュ)で使えるクーポン・割引コード・キャンペーンを公式情報ベースで整理します。初回最大3,000円OFFの内訳、nosh club継続割引、友達紹介の仕組みと申込手順、注意点まで丁寧に解説します。";
+  "nosh(ナッシュ)で使えるクーポン・割引コード・キャンペーンを公式情報ベースで整理します。初回1,500円・2回目1,000円・3回目500円OFF（3回分の合計3,000円）の内訳、nosh club継続割引、友達紹介の仕組みと申込手順、注意点まで丁寧に解説します。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/nosh-coupon/";
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-05-28T00:00:00+09:00",
-    modifiedTime: "2026-10-12T00:00:00+09:00",
+    modifiedTime: "2026-10-26T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -35,7 +35,7 @@ const faqData = [
       "nosh公式サイト経由で新規登録すると、3回分の自動割引（初回1,500円OFF、2回目1,000円OFF、3回目500円OFFの合計3,000円OFF）が自動適用されます。クーポンコードを手入力する必要はありません。また、既存利用者からの友達紹介リンクを経由した場合は、友達紹介限定の割引（紹介された側にもクーポン）が付与されます。怪しいクーポンコード掲載サイトは公式情報ではないため、必ず公式サイトから確認してください。",
   },
   {
-    question: "初回3,000円OFFは10食プランにも適用される？",
+    question: "新規割引（3回分の合計3,000円OFF）は10食プランにも適用される？",
     answer:
       "はい。公式サイトでは6食・8食・10食・12食の各プランに初回1,500円OFFの「初回特別価格」が表示されています。割引額は1,500円OFF（初回）+ 1,000円OFF（2回目）+ 500円OFF（3回目）の合計3,000円分（合計は算出）で、食数に関わらず定額です。初回の1食あたりは8食プランが税込457.1円と最も低くなります（2026年10月10日・公式確認）。",
   },
@@ -211,7 +211,7 @@ export default function NoshCouponPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-10-12T00:00:00+09:00",
+    dateModified: "2026-10-26T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -286,7 +286,7 @@ export default function NoshCouponPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-05-28">公開: 2026年5月28日</time>
-            <time dateTime="2026-10-10">更新: 2026年10月10日（料金・送料・nosh clubを公式で再確認）</time>
+            <time dateTime="2026-10-26">更新: 2026年10月26日（新規割引の表記を公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -309,7 +309,7 @@ export default function NoshCouponPage() {
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
-            「nosh(ナッシュ)を始めたいけど、クーポンや割引コードはあるの？」「初回いくら安くなる？」——人気の冷凍宅配弁当noshには複数の割引制度があり、上手に使えば<strong>初回最大3,000円OFF</strong>で始められます。
+            「nosh(ナッシュ)を始めたいけど、クーポンや割引コードはあるの？」「初回いくら安くなる？」——人気の冷凍宅配弁当noshには複数の割引制度があり、初回は<strong>1,500円OFF</strong>、2回目1,000円・3回目500円OFFと続き、<strong>3回分の合計で3,000円OFF</strong>になります。
           </p>
           <p className="mb-3">
             この記事では、<strong>2026年10月17日時点のnosh公式サイトの情報</strong>をもとに、自動割引・nosh club・友達紹介の3つの仕組みを丁寧に整理します。クーポンコードの真偽、適用手順、注意点まで初心者にもわかりやすく解説します。
@@ -364,7 +364,7 @@ export default function NoshCouponPage() {
         <SectionHeading id="initial">初回〜3回目の自動割引｜合計3,000円OFFの内訳</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          noshの新規登録者向け割引は、<strong>3回に分けて段階的に適用</strong>される仕組みです。「初回だけ大きく割引」ではなく、合計3,000円分を3回に分散させているのが特徴で、継続利用しないと割引の総額を受け取れない設計になっています。
+          noshの新規登録者向け割引は、<strong>3回に分けて段階的に適用</strong>される仕組みです。「初回だけ大きく割引」ではなく、合計3,000円分を3回に分散させているのが特徴で、継続利用しないと割引の総額を受け取れない設計になっています。公式サイトの表記は「初回 ¥1,500 OFF」と「1回目 ¥1,500 OFF／2回目 ¥1,000 OFF／3回目 ¥500 OFF」で、合計額は記載されていません（合計3,000円は当サイトの算出。2026年10月26日・公式確認）。
         </p>
 
         <SubHeading>3回分の割引内訳</SubHeading>
@@ -405,7 +405,7 @@ export default function NoshCouponPage() {
         <SectionHeading id="how-to">クーポン適用の申込手順（5ステップ）</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          初回3,000円OFFを確実に適用するための手順を、画面の流れに沿って解説します。最も大事なのは「<strong>公式サイトを経由すること</strong>」。比較サイトや個人ブログのリンクからでも同じ割引が適用されますが、信頼できる公式ドメイン（nosh.jp）を踏むことが重要です。
+          新規割引（初回1,500円OFF〜3回目）を確実に適用するための手順を、画面の流れに沿って解説します。最も大事なのは「<strong>公式サイトを経由すること</strong>」。比較サイトや個人ブログのリンクからでも同じ割引が適用されますが、信頼できる公式ドメイン（nosh.jp）を踏むことが重要です。
         </p>
 
         {[
@@ -563,7 +563,7 @@ export default function NoshCouponPage() {
         <SectionHeading id="compare">他社の初回割引キャンペーンとの比較</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          noshの3,000円OFFが他社と比べてどの程度お得なのか、主要冷凍宅配弁当サービスの初回キャンペーンを比較しました。表中の金額は2026年10月12日〜17日に各社の公式サイトで確認した情報で、変動の可能性があります。
+          noshの新規割引（3回分の合計3,000円OFF）が他社と比べてどの程度お得なのか、主要冷凍宅配弁当サービスの初回キャンペーンを比較しました。表中の金額は2026年10月12日〜17日に各社の公式サイトで確認した情報で、変動の可能性があります。
         </p>
 
         <ComparisonTable
@@ -577,7 +577,7 @@ export default function NoshCouponPage() {
         />
 
         <p className="text-sm mb-6 leading-relaxed">
-          noshの「3,000円OFF」は割引額単体では業界トップクラスです。とくに10食プランで使うと1食あたりの実質単価がぐっと下がるため、コスパ重視ならまずnoshを候補に入れるのがおすすめです。サービス全体の比較は<Link href="/articles/nosh-reviews/" className="text-accent underline">nosh口コミ・評判の徹底レビュー</Link>もあわせてご確認ください。
+          noshの「3回分の合計3,000円OFF」は割引額の合計では業界トップクラスです。とくに10食プランで使うと1食あたりの実質単価がぐっと下がるため、コスパ重視ならまずnoshを候補に入れるのがおすすめです。サービス全体の比較は<Link href="/articles/nosh-reviews/" className="text-accent underline">nosh口コミ・評判の徹底レビュー</Link>もあわせてご確認ください。
         </p>
 
         {/* ===== FAQ ===== */}
@@ -600,7 +600,7 @@ export default function NoshCouponPage() {
             nosh(ナッシュ)のクーポン・割引コードは、<strong>2026年10月10日時点で公式が提供する「初回1,500円・2回目1,000円・3回目500円OFF（合計3,000円）」</strong>が最大値です。クーポンコードの手入力は不要で、公式サイト経由で新規登録するだけで自動的に適用されます。
           </p>
           <p className="mb-3">
-            さらに、3回分の新規割引終了後は<strong>nosh club</strong>が引き継ぎ、累計購入数に応じて1食単価が自動で下がっていく仕組みです（最高ランクで12食プラン1食492円）。継続利用する人ほどお得になる設計なので、「合うかどうか」をまず初回3,000円OFFで試して、合えば長期で続けるのが最適解です。
+            さらに、3回分の新規割引終了後は<strong>nosh club</strong>が引き継ぎ、累計購入数に応じて1食単価が自動で下がっていく仕組みです（最高ランクで12食プラン1食492円）。継続利用する人ほどお得になる設計なので、「合うかどうか」をまず初回1,500円OFFで試して、合えば長期で続けるのが最適解です。
           </p>
           <p>
             「秘密のクーポンコード」「裏技5,000円オフ」といった怪しい情報は無視して、公式情報のとおりに進めるのが結果的に最もお得かつ安全です。最新のキャンペーン情報は必ず公式サイトで確認してから申し込んでください。

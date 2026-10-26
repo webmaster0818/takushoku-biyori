@@ -75,7 +75,7 @@ export default function AuthorPage() {
       </nav>
 
       <h1 className="font-display text-3xl md:text-4xl font-bold mb-2" style={{ color: "#1e2a38" }}>宅食びより 編集部の体制と役割</h1>
-      <p className="text-sm mb-8" style={{ color: "#6b7785" }}>最終更新: 2026年7月28日</p>
+      <p className="text-sm mb-8" style={{ color: "#6b7785" }}>最終更新: 2026年10月26日</p>
       </div>{/* /subhead */}
 
       <section>
@@ -120,7 +120,7 @@ export default function AuthorPage() {
         <p className="leading-relaxed mb-8" style={{ color: "#1e2a38" }}>
           宅食びより編集部は、個人名ではなく<strong>編集部全体の合議制</strong>で記事を作成・公開しています。
           記事内の数値情報は、リサーチ担当の一次確認とファクトチェック担当の照合を経て公開され、情報の時点を明記します。
-          誤りを見つけた場合は<Link href="/editorial/" className="underline" style={{ color: "#d97737" }}>編集部紹介ページ</Link>記載の窓口までご指摘ください。確認のうえ速やかに訂正します。
+          誤りを見つけた場合は<Link href="/privacy-policy/" className="underline" style={{ color: "#d97737" }}>プライバシーポリシー</Link>の「お問い合わせ窓口」記載の運営会社までご指摘ください。確認のうえ速やかに訂正します。
         </p>
 
         <h2 className="font-display text-2xl font-bold mt-10 mb-4" style={{ color: "#1e2a38" }}>関連ページ</h2>
