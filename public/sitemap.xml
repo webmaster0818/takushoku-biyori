@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://takushoku-biyori.com/</loc><lastmod>2026-10-25</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://takushoku-biyori.com/articles/</loc><lastmod>2026-10-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://takushoku-biyori.com/</loc><lastmod>2026-10-26</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://takushoku-biyori.com/articles/</loc><lastmod>2026-10-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://takushoku-biyori.com/privacy-policy/</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://takushoku-biyori.com/terms-of-service/</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://takushoku-biyori.com/content-policy/</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://takushoku-biyori.com/editorial/</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://takushoku-biyori.com/author/</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://takushoku-biyori.com/methodology/</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://takushoku-biyori.com/author/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://takushoku-biyori.com/methodology/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/1shoku-200yen-dai/</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/chef-mutenka-tsukurioki-kuchikomi/</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/coopdeli-kuchikomi/</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -38,8 +38,8 @@
   <url><loc>https://takushoku-biyori.com/articles/muscle-deli-reviews/</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/nichirei-foods-direct-kuchikomi/</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/nichirei-otameshi/</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://takushoku-biyori.com/articles/nosh-coupon/</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://takushoku-biyori.com/articles/nosh-reviews/</loc><lastmod>2026-10-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://takushoku-biyori.com/articles/nosh-coupon/</loc><lastmod>2026-10-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://takushoku-biyori.com/articles/nosh-reviews/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/nosh-ryoukin-souryou/</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/nosh-vs-mitsuboshi-vs-wellness/</loc><lastmod>2026-10-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/nosh-vs-watami/</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
