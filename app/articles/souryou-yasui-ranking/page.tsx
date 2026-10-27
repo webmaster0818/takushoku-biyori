@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-21T00:00:00+09:00",
-    modifiedTime: "2026-10-16T00:00:00+09:00",
+    modifiedTime: "2026-10-27T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -147,7 +147,7 @@ export default function SouryouYasuiRankingPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-21T00:00:00+09:00",
-    dateModified: "2026-10-21T00:00:00+09:00",
+    dateModified: "2026-10-27T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -234,7 +234,7 @@ export default function SouryouYasuiRankingPage() {
             ["7位", "ウェルネスダイニング（栄養バランス14食・定期）", "約770円", "無料（定期14・21食）", "約770円"],
             ["8位", "食宅便（おまかせ7食・らくらく定期便）", "690円", "940円", "約824円"],
             ["9位", "三ツ星ファーム（14食）", "819円", "990円", "約889円"],
-            ["10位", "わんまいる（5食）", "約1,050円", "1,080円（北海道・沖縄2,645円）", "約1,266円"],
+            ["10位", "わんまいる（定期5食6,280円）", "約1,256円", "1,080円（北海道・沖縄2,645円）", "約1,472円"],
           ]}
         />
 
