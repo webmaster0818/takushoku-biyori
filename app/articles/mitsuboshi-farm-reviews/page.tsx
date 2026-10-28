@@ -3,9 +3,9 @@ import Link from "next/link";
 import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
-  "三ツ星ファームの口コミ・評判は？まずいって本当？料金・解約条件を公式で確認【2026年10月最新】";
+  "三ツ星ファームの口コミ・評判は？まずいって本当？料金（1食711円〜）と解約の仕方【2026年10月】";
 const ARTICLE_DESCRIPTION =
-  "三ツ星ファームの口コミ・評判を楽天・App Store・利用者2,078名の顧客満足度調査・第三者の実食レビューなど出典付きで整理します。「まずい」の声の中身、料金（1食711円〜）・送料・解約手数料・停止の締切を公式で確認しています。【2026年10月更新】";
+  "三ツ星ファームの口コミ・評判を楽天・App Store・2,078名の満足度調査・SNS集計など出典付きで整理。「まずい」の声の中身、料金（1食711円〜）・送料、アプリ・LINE・電話での解約の仕方と締切を公式で確認しました。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/mitsuboshi-farm-reviews/";
 
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-16T00:00:00+09:00",
-    modifiedTime: "2026-10-16T00:00:00+09:00",
+    modifiedTime: "2026-10-28T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -31,6 +31,11 @@ export const metadata: Metadata = {
 
 const faqData = [
   {
+    question: "三ツ星ファームはまずいって本当？",
+    answer:
+      "味の評価は高めです。宅食利用者2,078名のGMO顧客満足度ランキング（2025年）で「商品のおいしさ」は8社中1位、Xの投稿を集計したMoovoo（2022年7〜8月）では利用の感想60件のうち味が42件で、味を評価しない声は4件でした。「まずい」という声は、薄味の主菜や副菜など一部のメニューへの不満が中心です。メニューは毎回自分で選べるので、合わなかったものは次から外せます。",
+  },
+  {
     question: "三ツ星ファームの最低注文回数は？すぐ解約できる？",
     answer:
       "通常の定期便（よりどりプラン）には受け取り回数の約束や解約手数料の記載はなく、2回目以降は停止できます。ただし初回分は解約・キャンセル・変更ができません。お得な「長期継続応援プラン」は合計6回の受け取りが条件で途中解約は7,700円（税込）、「冷凍庫プレゼントプラン」は合計12回が条件で途中解約は16,500円（税込）の手数料がかかり、どちらも途中解約は電話のみです（公式サイト・各プランページ、2026年10月9日確認）。まずはよりどりプランで味と量を確かめてから切り替えるのが安全です。",
@@ -38,7 +43,7 @@ const faqData = [
   {
     question: "定期便の停止・解約はどこから？締切はいつ？",
     answer:
-      "公式FAQ「定期プランの停止について」によると、停止は公式アプリ（24時間）、公式LINE（24時間）、電話（0120-39-3244・9:00〜18:00・年末年始除く）で受け付けています。次回お届け予定日の7日前（遠方地域は8日前）に注文が確定して出荷手配に入るため、それまでにマイページに表示される「変更締切日」までの手続きが必要です。長期継続応援プラン・冷凍庫プレゼントプラン契約中は、アプリ・LINEでの停止はできず電話になります（2026年10月9日確認）。",
+      "公式FAQ「定期プランの停止について」によると、停止は公式アプリ（24時間・マイページの「登録情報変更」→「プラン停止」）、公式LINE（24時間・ID連携後に「プランを停止したい」と送信）、電話（0120-39-3244・9:00〜18:00・年末年始除く）で受け付けています。次回お届け予定日の7日前（遠方地域は8日前）に注文が確定して出荷手配に入るため、それまでにマイページに表示される「変更締切日」までの手続きが必要です。長期継続応援プラン・冷凍庫プレゼントプラン契約中は、アプリ・LINEでの停止はできず電話になります（2026年10月28日確認）。",
   },
   {
     question: "三ツ星ファームの賞味期限はどれくらい？",
@@ -116,12 +121,13 @@ function TableOfContents() {
     { id: "about", label: "三ツ星ファームとは？基本情報まとめ" },
     { id: "good-reviews", label: "三ツ星ファームの良い口コミ・評判" },
     { id: "bad-reviews", label: "三ツ星ファームの悪い口コミ・評判" },
+    { id: "mazui", label: "「まずい」って本当？出典別に見た味の評価" },
     { id: "satisfaction", label: "利用者2,078名の顧客満足度調査での評価（GMO・2025年）" },
     { id: "caution", label: "口コミを読むときの注意点（消費者庁の確約計画認定）" },
     { id: "merits", label: "口コミと公式情報からわかったメリット5つ" },
     { id: "demerits", label: "注意すべきデメリット3つ" },
     { id: "price", label: "三ツ星ファームの料金・送料を解説" },
-    { id: "cancel", label: "解約・停止の方法と締切（公式で確認）" },
+    { id: "cancel", label: "解約の仕方（アプリ・LINE・電話の手順）と締切" },
     { id: "recommend", label: "おすすめな人・おすすめしない人" },
     { id: "comparison", label: "他社との簡易比較" },
     { id: "faq", label: "よくある質問（FAQ）" },
@@ -257,7 +263,7 @@ export default function MitsuboshiFarmReviewsPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-16T00:00:00+09:00",
-    dateModified: "2026-10-21T00:00:00+09:00",
+    dateModified: "2026-10-28T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -310,7 +316,7 @@ export default function MitsuboshiFarmReviewsPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-04-16">公開: 2026年4月16日</time>
-            <time dateTime="2026-10-14">更新: 2026年10月14日（料金・解約は10月9日に公式で確認、レビュー件数・満足度調査は10月14日に確認）</time>
+            <time dateTime="2026-10-28">更新: 2026年10月28日（料金・送料・解約の手順は10月28日に公式で確認、レビュー件数・満足度調査は10月14日に確認）</time>
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
@@ -318,14 +324,14 @@ export default function MitsuboshiFarmReviewsPage() {
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
-          <p className="mb-3">
-            「三ツ星ファームって本当に美味しいの？」「まずいって口コミがあるけど大丈夫？」——三ツ星ファームは、一流シェフ監修の冷凍宅配弁当として注目を集めています。口コミでは味やメニューの多さを評価する声が目立つ一方、「値段が高い」「量が少ない」「解約の条件がわかりにくい」という不満も見られます。
-          </p>
-          <p className="mb-3">
-            そこでこの記事では、<strong>三ツ星ファームの口コミ・評判を調査しました</strong>。楽天・Yahoo!ショッピングの公開レビューや第三者メディアの実食レビューを出典付きで整理し、料金・送料・解約条件は公式サイトで確認しました（2026年10月9日）。
-          </p>
+          <p className="font-bold mb-2">結論：口コミの傾向（出典付きの要約）</p>
+          <ul className="list-disc list-inside space-y-1 mb-3">
+            <li><strong>味</strong>：評価は高めです。宅食利用者2,078名のGMO顧客満足度ランキング（2025年）で「商品のおいしさ」は8社中1位でした。Xの投稿を集計した Moovoo（2022年7〜8月）では、利用の感想のべ60件のうち味についてが42件で、味を評価しない声は4件でした。</li>
+            <li><strong>「まずい」の中身</strong>：メニュー全体ではなく、一部のメニューや副菜への不満が中心です。48件を集計した tokyolucci では、不満の約3割が「味・量と料金の釣り合い」でした。</li>
+            <li><strong>料金・解約</strong>：通常の定期便は1食711円〜927円（税込）＋送料990円です。停止はアプリ・公式LINE（24時間）か電話で、マイページの「変更締切日」（原則次回お届け予定日の7日前）までに手続きします。初回分はキャンセルできません（公式・2026年10月28日確認）。</li>
+          </ul>
           <p>
-            さらに、<strong>料金プラン・送料・メニューの特徴</strong>まで詳しく解説します。三ツ星ファームが自分に合うかどうか、この記事を読めば判断できます。
+            当サイトは実食していません。口コミは各節に出典を載せ、料金・送料・手続きは公式サイトで確認した値だけを載せています。
           </p>
         </div>
 
@@ -589,6 +595,30 @@ export default function MitsuboshiFarmReviewsPage() {
           </div>
         ))}
 
+        {/* ===== まずいって本当？ ===== */}
+        <SectionHeading id="mazui">「まずい」って本当？出典別に見た味の評価</SectionHeading>
+        <p className="text-sm mb-4 leading-relaxed">
+          「三ツ星ファーム まずい」で検索して出てくる記事が、味についてどう書いているかを出典ごとに並べました。件数や点数は各媒体の表記どおりです。
+        </p>
+        <ComparisonTable
+          headers={["出典", "調べ方", "味についての記載"]}
+          rows={[
+            ["Moovoo（2023年7月3日公開）", "Xで「三ツ星ファーム」を含む投稿約180件（2022年7月26日〜8月26日）から利用の感想のべ60件を集計", "味が42件（70.0%）で最多。そのうち味を評価しない声は4件"],
+            ["GMO顧客満足度ランキング（2025年）", "宅食利用者2,078名へのネット調査（8社）", "「商品のおいしさ」72.13点で8社中1位。男性の部門は8社中8位"],
+            ["tokyolucci", "口コミ48件を論点別に集計", "不満の約3割が「味・量と料金の釣り合い」。「メインは美味しいが副菜に当たり外れがある」という声が複数の媒体にあると指摘"],
+            ["HonNe（EXIDEA・2026年10月2日更新）", "14食コースを注文し約1ヶ月で7種類を実食＋Xの投稿14件を引用", "全体は「味が良い」評価。蒸し鶏系の主菜は薄味で物足りなかったとし、「まずい」は薄味のメニューに当たった人の声ではないかとしている"],
+            ["ROOMIE（2024年5月31日更新）", "7食コースを注文して全7食を実食", "調査時点ではSNSに「まずい」という口コミはほぼ見られず、「おいしい」という声が大半と記載"],
+            ["プロの宅食さがし", "料理家が14食を実食", "「期待以上においしい」と評価しつつ、「おいしくないと感じている人がいるのも事実」と両面を記載"],
+          ]}
+        />
+        <p className="text-xs text-warm-gray mb-6 leading-relaxed">
+          出典: <a href="https://moov.ooo/article/630c48601eb3c658ec442fa5" target="_blank" rel="noopener noreferrer nofollow" className="underline">Moovoo「三ツ星ファームの口コミ・評判は？ネット投稿をリサーチ」</a>／<a href="https://r-portal.gmo-research.ai/ranking/columns/compare-homemeal/" target="_blank" rel="noopener noreferrer nofollow" className="underline">GMO顧客満足度ランキング</a>（2026年10月14日確認）／<a href="https://tokyolucci.jp/food/mitsuboshi-farm-kuchikomi" target="_blank" rel="noopener noreferrer nofollow" className="underline">tokyolucci</a>（2026年10月9日確認）／<a href="https://exidea.co.jp/blog/meal/home-meal/mitsuboshifarm/" target="_blank" rel="noopener noreferrer nofollow" className="underline">HonNe「三ツ星ファームの口コミは本当？1ヶ月実食でまずい評判を検証」</a>／<a href="https://www.roomie.jp/2023/05/1008619/" target="_blank" rel="noopener noreferrer nofollow" className="underline">ROOMIE「三ツ星ファーム実食」</a>／<a href="https://meal-navi.com/mitsuboshi-farm-report/" target="_blank" rel="noopener noreferrer nofollow" className="underline">プロの宅食さがし</a>（2026年10月9日確認）。Moovoo・HonNe・ROOMIE は2026年10月28日に確認しました。いずれもアフィリエイト広告を含む記事で、評価は各媒体の主観です。HonNe・ROOMIE の料金やキャンペーンの記載は掲載時点のもので、現行の料金はこの記事の「料金・送料」の節を参照してください。
+        </p>
+        <div className="bg-cream rounded-lg p-4 text-sm leading-relaxed mb-8">
+          <p className="font-bold mb-1">編集部の整理</p>
+          <p>出典をまたいで見ると、<strong>味の評価は高めで、「まずい」はメニュー全体ではなく一部のメニュー（薄味の主菜や副菜）への声</strong>が中心です。量への不満は、GMO調査で男性の評価が8社中8位だったことと重なります。三ツ星ファームはメニューを毎回自分で選べるので、合わなかったメニューは次から外せます。公式アプリには苦手食材の登録と、欠品したときの代替商品の設定があります。</p>
+        </div>
+
         {/* ===== 顧客満足度調査 ===== */}
         <SectionHeading id="satisfaction">利用者2,078名の顧客満足度調査での評価（GMO・2025年）</SectionHeading>
         <p className="text-sm mb-4 leading-relaxed">
@@ -824,9 +854,9 @@ export default function MitsuboshiFarmReviewsPage() {
         />
 
         {/* ===== 解約・停止 ===== */}
-        <SectionHeading id="cancel">解約・停止の方法と締切（公式で確認）</SectionHeading>
+        <SectionHeading id="cancel">解約の仕方（アプリ・LINE・電話の手順）と締切</SectionHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          口コミの不満で最も多いのが「やめ方」です。公式FAQと特定商取引法に基づく表記（2026年10月9日確認）をもとに、プラン別に整理しました。
+          口コミの不満で最も多いのが「やめ方」です。公式FAQと特定商取引法に基づく表記（2026年10月28日確認）をもとに、窓口ごとの手順とプラン別の条件を整理しました。公式では定期便の解約を「プラン停止」と表記しています。
         </p>
         <ComparisonTable
           headers={["項目", "内容"]}
@@ -841,8 +871,24 @@ export default function MitsuboshiFarmReviewsPage() {
             ["一時的に休みたいとき", "停止せずに、お届け日を最大2週間先まで延ばせる（4週ごとの人は受け取り日から最大42日先まで）"],
           ]}
         />
+        <SubHeading>窓口ごとの手順（公式FAQ「定期プランの停止について」）</SubHeading>
+        <ComparisonTable
+          headers={["窓口", "受付時間", "手順"]}
+          rows={[
+            ["公式アプリ", "24時間", "マイページの「登録情報変更」→「プラン停止」から手続きする。長期継続などで約束の受け取り回数が残っている場合、「プラン停止」の項目は表示されない"],
+            ["公式LINE", "24時間", "LINEとのID連携をしたうえで、「プランを停止したい」と公式LINEに送ると停止の手続きに進む。定期プランが複数ある・次回のお届けが7日以内・お届け頻度が毎週／2週間／3週間／4週間以外・長期継続応援プランか冷凍庫プレゼントプランを契約中、のいずれかに当てはまる場合はLINEでは手続きできない"],
+            ["電話 0120-39-3244", "9:00〜18:00（年末年始を除く）", "お客様センターに電話して停止を申し出る。長期継続応援プラン・冷凍庫プレゼントプランの途中解約はこの窓口"],
+          ]}
+        />
+        <SubHeading>締切の確認方法と、止めずに休む方法</SubHeading>
+        <p className="text-sm mb-4 leading-relaxed">
+          締切（変更締切日）は、アプリなら下部メニューの「お届け」、Webならマイページの「配送スケジュール」のカレンダーで確認できます。三ツ星ファームでは次回お届け予定日の7日前（遠方地域は8日前）に注文が確定して出荷手配に入り、それ以降は停止・変更・スキップができません。お届け日を直近に早める変更をすると締切も前倒しになるため、公式FAQは「メニューの変更などを先に行い、最後にお届け日を変更する」よう案内しています。
+        </p>
+        <p className="text-sm mb-4 leading-relaxed">
+          解約せずに少し休みたい場合は、お届け日の変更で受け取りを先に延ばせます。アプリでは「お届け」→「次回お届け日変更」→「お届け日」を選んで日付と時間帯を選び「変更する」、Webではマイページの「お届け日時の変更」→「次回お届け日時を変更」から選びます（最大2週間先まで。4週間ごとの人は受け取り日から最大42日先まで）。
+        </p>
         <p className="text-xs text-gray-500 mb-6 leading-relaxed">
-          出典: <a href="https://faq.mitsuboshifarm.jp/" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式よくある質問</a>（「定期プランの停止について」「注文情報の変更期限について」「お届けを一時的に休止したい」）／<a href="https://terms.inglewood.co.jp/n09mnby078/commercial-transactions/" target="_blank" rel="noopener noreferrer nofollow" className="underline">特定商取引法に基づく表記</a>（2026年7月24日改定版）。公式トップページの注記では「次回出荷予定日の4日前まで」と表現されています。
+          出典: <a href="https://faq.mitsuboshifarm.jp/" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式よくある質問</a>（「定期プランの停止について」「注文情報の変更期限について」「お届けを一時的に休止したい」）／<a href="https://terms.inglewood.co.jp/n09mnby078/commercial-transactions/" target="_blank" rel="noopener noreferrer nofollow" className="underline">特定商取引法に基づく表記</a>（2026年7月24日改定版）。いずれも2026年10月28日に確認しました。特定商取引法に基づく表記では、変更可能日は「原則次回配送日の7日前（配送地域や休業日により前後）」、解約の窓口は「公式アプリ、公式サイト、公式LINE又はお電話」とされています。公式トップページの注記では「次回出荷予定日の4日前までに公式アプリ・公式LINEのいずれかでお手続き、またはお電話」と表現されています（お届け日ではなく出荷予定日が基準）。締切はマイページの表示で確認するのが確実です。
         </p>
 
         {/* ===== おすすめな人・おすすめしない人 ===== */}

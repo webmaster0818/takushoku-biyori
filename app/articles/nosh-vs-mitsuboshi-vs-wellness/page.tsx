@@ -1034,6 +1034,9 @@ export default function ArticlePage() {
             </div>
           ))}
         </div>
+        <p className="text-sm mb-6 leading-relaxed">
+          解約・休止の画面操作と締切の確認方法は、各社の口コミ記事にまとめています：<Link href="/articles/mitsuboshi-farm-reviews/#cancel" className="text-accent underline">三ツ星ファームの解約の仕方（アプリ・LINE・電話）</Link>／<Link href="/articles/wellness-dining-reviews/#cancel" className="text-accent underline">ウェルネスダイニングの休止（解約）の手順</Link>。「まずい」という口コミの中身も、各記事で出典ごとに整理しています。
+        </p>
 
         {/* ===== FAQ ===== */}
         <SectionHeading id="faq">よくある質問（FAQ）</SectionHeading>
@@ -1121,7 +1124,7 @@ export default function ArticlePage() {
                 【2026年最新】一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5
               </Link>
             </li>
-            <li><Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark transition-colors">ウェルネスダイニングの口コミ・評判は？まずいって本当？制限食宅配を中立検証</Link></li>
+            <li><Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark transition-colors">ウェルネスダイニングの口コミ・評判は？まずいって本当？気配り宅配食の料金と解約方法</Link></li>
             <li><Link href="/articles/koureisha-osusume/" className="text-accent hover:text-accent-dark transition-colors">【2026年最新】高齢者向け宅配弁当おすすめランキングTOP5｜やわらか食・制限食も比較</Link></li>
             <li><Link href="/articles/mitsuboshi-coupon/" className="text-accent hover:text-accent-dark transition-colors">三ツ星ファームのクーポン・キャンペーン｜初回割引の探し方と注意点</Link></li>
             <li><Link href="/articles/nosh-ryoukin-souryou/" className="text-accent hover:text-accent-dark transition-colors">nosh（ナッシュ）の料金・送料の仕組みをわかりやすく解説</Link></li>

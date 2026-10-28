@@ -3,9 +3,9 @@ import Link from "next/link";
 import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
-  "ウェルネスダイニングの口コミ・評判は？まずいって本当？制限食6コースの料金・解約を公式で確認【2026年10月最新】";
+  "ウェルネスダイニングの口コミ・評判は？まずいって本当？気配り宅配食6コースの料金と解約方法【2026年10月】";
 const ARTICLE_DESCRIPTION =
-  "ウェルネスダイニングの口コミ・評判を、みん評・第三者メディアの実食レビュー・App Storeなど出典付きで整理します。「まずい」の声の中身、制限食6コースの料金・送料・解約の締切、添加物やお届け日数まで公式FAQで確認しました。【2026年10月更新】";
+  "ウェルネスダイニング（気配り宅配食）の口コミ・評判を出典付きで整理。「まずい」の声の中身と各コースの平均栄養価、6コースの料金・送料、休止（解約）の手順と締切を公式で確認しました。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/wellness-dining-reviews/";
 
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-16T00:00:00+09:00",
-    modifiedTime: "2026-10-16T00:00:00+09:00",
+    modifiedTime: "2026-10-28T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -30,6 +30,11 @@ export const metadata: Metadata = {
 /* ---------- FAQ data ---------- */
 
 const faqData = [
+  {
+    question: "ウェルネスダイニングはまずいって本当？",
+    answer:
+      "確認した範囲では「まずい」とはっきり書いた口コミは少数です。実食した第三者メディア3媒体はいずれも「制限食としては薄すぎない」と評価し、HonNe（2026年10月2日更新）はSNS調査で「まずい」という投稿は見られなかったとしています。多いのは「味が薄め」「量が少ない」「価格が高め」という声です。公式の栄養価の目安では、どのコースも食塩相当量が1食平均2g前後です（2026年10月28日確認）。",
+  },
   {
     question: "ウェルネスダイニングはお試し注文できる？",
     answer:
@@ -116,10 +121,12 @@ function TableOfContents() {
     { id: "about", label: "ウェルネスダイニングとは？基本情報まとめ" },
     { id: "good-reviews", label: "ウェルネスダイニングの良い口コミ・評判" },
     { id: "bad-reviews", label: "ウェルネスダイニングの悪い口コミ・評判" },
+    { id: "mazui", label: "「まずい」って本当？口コミの中身と公式の栄養価" },
     { id: "third-party", label: "第三者メディアの実食レビューでの評価" },
     { id: "merits", label: "口コミと公式情報からわかったメリット5つ" },
     { id: "demerits", label: "注意すべきデメリット3つ" },
     { id: "price", label: "ウェルネスダイニングの料金・送料を解説" },
+    { id: "cancel", label: "休止（解約）・一時休止の手順と締切" },
     { id: "recommend", label: "おすすめな人・おすすめしない人" },
     { id: "comparison", label: "他社との簡易比較" },
     { id: "faq", label: "よくある質問（FAQ）" },
@@ -214,7 +221,7 @@ export default function WellnessDiningReviewsPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-16T00:00:00+09:00",
-    dateModified: "2026-10-21T00:00:00+09:00",
+    dateModified: "2026-10-28T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -249,21 +256,21 @@ export default function WellnessDiningReviewsPage() {
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-04-16">公開: 2026年4月16日</time>
-            <time dateTime="2026-10-14">更新: 2026年10月14日（料金・送料・コースは10月10日、アプリ・お届け・添加物は10月14日に公式で確認）</time>
+            <time dateTime="2026-10-28">更新: 2026年10月28日（料金・平均栄養価・休止（解約）の手順は10月28日、アプリ・お届け・添加物は10月14日に公式で確認）</time>
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
         </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
-          <p className="mb-3">
-            「ウェルネスダイニングの制限食って美味しいの？」「他の宅配弁当と何が違うの？」——ウェルネスダイニングは、糖質制限・塩分制限・たんぱく質調整など、<strong>制限食の専門サービス</strong>として知られています。管理栄養士が設計した栄養バランスが特徴ですが、実際の味や使い勝手はどうなのでしょうか。
-          </p>
-          <p className="mb-3">
-            この記事では、<strong>ウェルネスダイニングの口コミ・評判を調査しました</strong>。公開されている利用者の口コミや公式情報をもとに、良い口コミ・悪い口コミの両方を整理して検証しました。
-          </p>
+          <p className="font-bold mb-2">結論：口コミの傾向（出典付きの要約）</p>
+          <ul className="list-disc list-inside space-y-1 mb-3">
+            <li><strong>味</strong>：実食した第三者メディア3媒体は、いずれも「制限食としては薄すぎない」と評価しています。15名で7種類を食べた HonNe（2026年10月2日更新）は、SNS調査で「まずい」という投稿は見られなかったとしています。</li>
+            <li><strong>不満の中心は量・価格・メニューを選べないこと</strong>：わんまいる運営メディアの利用者321人アンケート、みんなのランキング（6件・57.9点）とも、低評価の理由は主にこの3点でした。みん評には腎臓病食が期待外れだったという低評価の投稿もあります。</li>
+            <li><strong>解約</strong>：契約期間の縛りはありません。お届け予定日の7日前までに、マイページ（1回休止）・Webフォーム（複数回休止・解約）・電話で手続きします（公式・2026年10月28日確認）。</li>
+          </ul>
           <p>
-            <strong>全6コースの料金・送料・特徴</strong>まで詳しく解説します。ウェルネスダイニングが自分に合うかどうか、この記事で判断できます。
+            当サイトは実食していません。口コミは下の各節に出典を載せ、料金・平均栄養価・手続きは公式サイトで確認した値だけを載せています。「気配り宅配食」は、ウェルネスダイニングの制限食6コースの商品名です。
           </p>
         </div>
 
@@ -296,6 +303,11 @@ export default function WellnessDiningReviewsPage() {
           ウェルネスダイニングは、ウェルネスダイニング株式会社が運営する<strong>制限食専門の冷凍宅配弁当サービス</strong>です。たんぱく＆塩分調整・糖質＆カロリー制限・塩分制限・脂質制限・栄養バランス・厳選栄養バランスの6コースを用意しています（2026年10月10日・公式確認）。管理栄養士が栄養バランスを設計し、無料で食事相談ができるのも大きな特徴です。糖尿病・腎臓病・高血圧など、医師から食事制限を指示されている方や高齢者に特に支持されています。
         </p>
 
+        <SubHeading>「気配り宅配食」とは</SubHeading>
+        <p className="text-sm mb-6 leading-relaxed">
+          「気配り宅配食」は、ウェルネスダイニングの制限食・栄養バランス食6コース（たんぱく＆塩分調整／糖質＆カロリー制限／塩分制限／脂質制限／栄養バランス／厳選栄養バランス）の商品名です。「気配り宅配食 口コミ」で検索して出てくる声は、この記事で扱うウェルネスダイニングの口コミと同じものです。公式サイトでは、気配り宅配食のほかに、やわらか宅配食（容易にかめる／歯ぐきでつぶせる／舌でつぶせるの3段階）・おもいで彩り宅配食・脂質調整食・フレイルケア宅配食・野菜を楽しむスープ食なども販売しています（公式サイトの商品一覧・2026年10月28日確認）。この記事の料金・栄養価・口コミは、気配り宅配食6コースについての内容です。
+        </p>
+
         <SubHeading>ウェルネスダイニングの基本スペック</SubHeading>
         <ComparisonTable
           headers={["項目", "内容"]}
@@ -309,7 +321,7 @@ export default function WellnessDiningReviewsPage() {
             ["アプリ", "公式アプリあり（App Store・販売元 WELLNESS DINING CORPORATION.）。配送カレンダー・管理栄養士への相談窓口・定期注文の配送スキップ・再注文・プッシュ通知"],
             ["添加物", "品質保持のため最小限の日持ち向上剤を使用。ハム・ベーコン等の加工品由来の添加物を含む場合あり（公式FAQ）"],
             ["食材の産地", "できる限り国産。食材・時期により一部外国産（厳選栄養バランスは国産食材。加工品は国内加工、調味料は一部外国産を含む）"],
-            ["配送間隔", "毎週1回・2週間に1回・毎月1回など（10日に1回・2ヶ月に1回も相談可）"],
+            ["配送間隔", "毎週1回・2週に1回・3週に1回・毎月1回（公式「定期注文の変更・休止」2026年10月28日確認。10日に1回・2ヶ月に1回も相談可）"],
             ["支払い方法", "クレジットカード・AmazonPay・代金引換（手数料330円）・後払い（手数料330円）"],
             ["変更・休止・解約", "お届け予定日の7日前まで。1回休止はマイページ、複数回休止・解約はフォーム、電話0120-503-999。解約金・回数縛りなし"],
             ["賞味期限", "商品到着後、冷凍（-18℃以下）で3ヵ月以上"],
@@ -470,6 +482,48 @@ export default function WellnessDiningReviewsPage() {
           </div>
         ))}
 
+        {/* ===== まずいって本当？ ===== */}
+        <SectionHeading id="mazui">「まずい」って本当？口コミの中身と公式の栄養価</SectionHeading>
+        <p className="text-sm mb-4 leading-relaxed">
+          「ウェルネスダイニング まずい」で検索すると、口コミサイトや比較メディアの記事が並びます。各記事が「まずい」についてどう書いているかを、出典ごとに並べました（みん評以外は2026年10月28日に各ページで確認）。
+        </p>
+        <ComparisonTable
+          headers={["出典", "調べ方", "「まずい」についての記載"]}
+          rows={[
+            ["HonNe（EXIDEA・2026年10月2日更新）", "男女15名で冷凍弁当7種類を実食＋X（旧Twitter）の投稿を引用", "SNS調査では「まずい」という口コミは見られなかった。味付けが薄めという声はあるが、試食では「そこまで味が薄いとは感じなかった」"],
+            ["Moovoo（2023年9月1日公開）", "Xで「ウェルネスダイニング」を含む投稿1,020件（2022年4月1日〜12月25日）から利用の感想のべ53件を集計", "内訳は味17件（32.1%）・使い勝手15件・量7件・その他14件。記事中の否定的な味の声は「麻婆豆腐はイマイチ」の1件"],
+            ["みんなのランキング（ranking.net）", "利用者の投稿（6件・57.9点）", "「制限食なのに薄味と感じない」という声と、「病院食のよう」「成人男性には量が足りない」という声の両方"],
+            ["宅食レビュー通信 byわんまいる（2026年1月13日）", "筆者の実食＋利用者321人へのアンケート（2025年10月）", "低評価は量・定期便の料金・メニューを選べない・解約やスキップの仕組みの4点で、味そのものへの低評価は挙がっていない"],
+            ["みん評", "利用者の投稿（20件台・2026年10月8日確認）", "腎臓病食を注文して期待外れだったという低評価の投稿がある（10月28日は当サイトから閲覧できず、件数は10月8日時点）"],
+          ]}
+        />
+        <p className="text-xs text-warm-gray mb-6 leading-relaxed">
+          出典: <a href="https://exidea.co.jp/blog/meal/home-meal/wellness-dining/" target="_blank" rel="noopener noreferrer nofollow" className="underline">HonNe</a>／<a href="https://moov.ooo/article/5f72bd8a84034a0d5f7481ad" target="_blank" rel="noopener noreferrer nofollow" className="underline">Moovoo「ウェルネスダイニングの口コミ・評判をリサーチ」</a>／<a href="https://ranking.net/items/473973" target="_blank" rel="noopener noreferrer nofollow" className="underline">みんなのランキング「ウェルネスダイニング」</a>／<a href="https://www.onemile.jp/column/wellness-dining-reputation/" target="_blank" rel="noopener noreferrer nofollow" className="underline">宅食レビュー通信 byわんまいる</a>／<a href="https://minhyo.jp/wellness-dining" target="_blank" rel="noopener noreferrer nofollow" className="underline">みん評</a>。評価や件数は各媒体の表記どおりで、当サイトが独自に集めた口コミではありません。
+        </p>
+
+        <SubHeading>コース別の平均栄養価（公式の1食あたり目安）</SubHeading>
+        <p className="text-sm mb-4 leading-relaxed">
+          「味が薄い」と感じるかどうかは、どのコースを選ぶかでも変わります。公式の各コースページに載っている1食あたりの栄養価の目安です。
+        </p>
+        <ComparisonTable
+          headers={["コース", "エネルギー", "たんぱく質", "糖質", "食塩相当量", "カリウム"]}
+          rows={[
+            ["たんぱく＆塩分調整", "平均307kcal", "平均9.1g", "平均23.6g", "平均1.9g", "平均387mg"],
+            ["糖質＆カロリー制限", "平均233kcal", "平均13.2g", "平均13.9g", "平均1.9g", "平均482mg"],
+            ["塩分制限", "平均275kcal", "平均12.5g", "平均20.7g", "平均1.9g", "平均484mg"],
+            ["栄養バランス", "平均276kcal", "平均12.8g", "平均20.4g", "平均2.2g", "平均489mg"],
+            ["厳選栄養バランス", "平均276kcal", "平均13.1g", "公表なし", "平均1.8g", "公表なし"],
+            ["脂質制限", "330kcal以下", "9g以上", "27g以下", "2.0g以下", "平均160mg"],
+          ]}
+        />
+        <p className="text-xs text-warm-gray mb-4 leading-relaxed">
+          ※公式の各コースページ「栄養価の目安（1食あたり）」の表記です（2026年10月28日確認）。脂質制限は平均値ではなく基準値（ほかに脂質10g以下・コレステロール70mg以下）で表示されています。
+        </p>
+        <div className="bg-cream rounded-lg p-4 text-sm leading-relaxed mb-8">
+          <p className="font-bold mb-1">編集部の整理</p>
+          <p>確認した範囲では、「まずい」とはっきり書いた口コミは少なく、多いのは<strong>「味が薄め」「量が少ない」「価格が高め」</strong>という声です。どのコースも食塩相当量は1食平均2g前後で、濃い味に慣れている人ほど薄く感じやすい設計です。公式サイトは、一から調合した調味料で味付けしていること、糖質＆カロリー制限コースの唐揚げは皮を取り除いた鶏もも肉に大豆粉の衣を使っていることなどを紹介しています（2026年10月28日確認）。量が気になる方は、公式FAQのとおりご飯は付かないので主食を足す前提で考えてください。医師から制限の指示がある場合は、指示された値と上の栄養価を見比べてコースを選びます。</p>
+        </div>
+
         {/* ===== 第三者メディアの実食レビュー ===== */}
         <SectionHeading id="third-party">第三者メディアの実食レビューでの評価</SectionHeading>
 
@@ -582,6 +636,29 @@ export default function WellnessDiningReviewsPage() {
             ["月1回（21食×1回）", "21食", "15,800円", "0円", "15,800円", "約752円"],
           ]}
         />
+
+        {/* ===== 休止（解約）の手順 ===== */}
+        <SectionHeading id="cancel">休止（解約）・一時休止の手順と締切</SectionHeading>
+        <p className="text-sm mb-4 leading-relaxed">
+          公式サイトの「定期注文の変更・休止（解約）方法のご案内」と「気配り宅配食 よくあるご質問」（いずれも2026年10月28日確認）の手順です。公式では定期注文の解約を「休止（解約）」と表記しています。<strong>どの手続きも、お届け予定日の7日前までに連絡が必要</strong>です。公式FAQでは契約期間の縛りはないと案内されています。
+        </p>
+        <ComparisonTable
+          headers={["やりたいこと", "窓口", "手順（公式の案内どおり）"]}
+          rows={[
+            ["1回だけお休みする（一時休止）", "マイページ", "①ログイン後「定期注文変更手続き」を選ぶ → ②変更したい定期注文の「変更手続きはこちら」を選ぶ → ③そのお届け予定日の「1回休止する」を選ぶ"],
+            ["何回かお休みする（複数回休止）", "Webフォーム", "①【複数回休止】を選ぶ → ②必須事項を書いて「確認画面へ」 → ③内容を確認して「送信する」"],
+            ["定期注文をやめる（休止（解約））", "Webフォーム", "①【変更内容】を記入する → ②必須事項を書いて「確認画面へ」 → ③内容を確認して「送信する」"],
+            ["お届けペース・食数を変える", "Webフォーム", "①【お届けペース・食数の変更】を選ぶ → ②③は上と同じ。ペースは毎週1回・2週に1回・3週に1回・毎月1回、食数は7・14・21食"],
+            ["どれも電話で頼みたい", "電話 0120-503-999（通話料無料）", "月〜金曜（土日祝を除く）。受付時間は同じページの上部に9:30〜12:30・14:00〜17:00、下部に9:30〜13:00・14:00〜18:00とあり、表記が2通りです"],
+          ]}
+        />
+        <p className="text-xs text-warm-gray mb-4 leading-relaxed">
+          出典: <a href="https://www.wellness-dining.com/modification/" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式「定期注文の変更・休止（解約）方法のご案内」</a>／<a href="https://www.wellness-dining.com/faq/kikubari/" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式「気配り宅配食 よくあるご質問」</a>（2026年10月28日確認）。FAQの「解約の方法が知りたいです」には、電話またはメールで、次回お届け予定日の1週間前までに連絡すれば受け付けると書かれています。再開も電話・メールで受け付けています。入院などの場合は、回数ではなく期間を決めたお休みもできると案内されています。
+        </p>
+        <div className="bg-cream rounded-lg p-4 text-sm leading-relaxed mb-8">
+          <p className="font-bold mb-1">編集部の整理</p>
+          <p>口コミにある「解約がわかりにくい」という不満は、<strong>1回休止はマイページ、複数回休止と解約はフォーム</strong>と窓口が分かれていることと、締切が7日前と早めであることが原因と考えられます。マイページで完結するのは1回休止だけです。やめるかどうか迷っている場合は、まずマイページで1回休止し、その間に決める方法もあります。</p>
+        </div>
 
         {/* ===== おすすめな人・おすすめしない人 ===== */}
         <SectionHeading id="recommend">おすすめな人・おすすめしない人</SectionHeading>

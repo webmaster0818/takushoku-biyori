@@ -408,7 +408,8 @@ export default function ReitouBentoMazuiPage() {
         <div className="space-y-2 mb-6">
           {[
             { href: "/articles/nosh-reviews/", label: "nosh(ナッシュ)の口コミ・評判を徹底調査" },
-            { href: "/articles/mitsuboshi-farm-reviews/", label: "三ツ星ファームの口コミ・評判を徹底調査" },
+            { href: "/articles/mitsuboshi-farm-reviews/#mazui", label: "三ツ星ファームはまずい？出典別に見た味の評価と口コミ" },
+            { href: "/articles/wellness-dining-reviews/#mazui", label: "ウェルネスダイニング（制限食）はまずい？口コミの中身と公式の栄養価" },
             { href: "/articles/wanmairu-reviews/", label: "わんまいるの口コミ・評判を徹底調査" },
             { href: "/articles/takuhai-vs-conveni/", label: "宅配弁当 vs コンビニ弁当 どっちがお得？" },
             { href: "/articles/souryou-yasui-ranking/", label: "送料が安い宅配弁当ランキング" },
