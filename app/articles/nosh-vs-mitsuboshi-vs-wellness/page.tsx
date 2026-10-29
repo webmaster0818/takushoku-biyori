@@ -296,7 +296,7 @@ export default function ArticlePage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-11T00:00:00+09:00",
-    dateModified: "2026-10-21T00:00:00+09:00",
+    dateModified: "2026-10-29T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -510,7 +510,7 @@ export default function ArticlePage() {
         <ComparisonTable
           headers={["サービス", "容器サイズ（目安）", "10食あたりの占有スペース"]}
           rows={[
-            ["nosh", "18×18×4.5cm", "冷凍庫中段ほぼ1段"],
+            ["nosh", "横18×縦16.5×高さ4.5cm（公式・2026年10月29日確認）", "冷凍庫中段ほぼ1段"],
             ["三ツ星ファーム", "17.7×18×4cm（公式FAQ）", "noshとほぼ同等"],
             ["ウェルネスダイニング", "縦15×横20×高さ3cm（公式FAQ）", "最もコンパクト"],
           ]}

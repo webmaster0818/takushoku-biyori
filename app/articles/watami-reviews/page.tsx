@@ -148,7 +148,7 @@ function SourcedReview({ review, tone }: { review: SourcedReviewItem; tone: "goo
 export default function WatamiReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-10-21T00:00:00+09:00",
+    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-10-29T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -259,7 +259,7 @@ export default function WatamiReviewsPage() {
         <ComparisonTable
           headers={["コース名", "内容", "価格の目安（税込）"]}
           rows={[
-            ["お試し割: いつでも三菜10食", "主菜1品＋副菜2品", "3,900円（1食390円・1回限り）"],
+            ["お試し割: いつでも三菜10食", "主菜1品＋副菜2品", "3,990円（1食399円・1回限り・2026年10月29日 公式で確認）"],
             ["いつでも三菜（都度）", "主菜1品＋副菜2品", "7食4,023円（575円）／10食4,890円（489円）"],
             ["いつでも三菜（定期おまかせ・5%OFF）", "主菜1品＋副菜2品", "7食3,821円（546円）／10・14・20食は1食465円"],
             ["いつでも五菜（都度）", "主菜1品＋副菜4品", "7食4,828円（690円）／10食5,930円（593円）"],
