@@ -442,3 +442,11 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - カニバリ: 同KWを title で狙う別ページなし。nosh-vs-mitsuboshi-vs-wellness に両記事 #cancel への導線＋旧タイトルのリンク文言更新、reitou-bento-mazui に両記事 #mazui へのリンク
 - 公式値（10/28）: ウェルネス税込価格は全6コース記事どおり、三ツ星 6,485/11,458/14,918円・送料990/2,500円は記事どおり
 - ⚠️ Indexing 0/2（429）。未送信: wellness-dining-reviews mitsuboshi-farm-reviews → 明日送信
+
+### 2026-10-29 朝ルーチン: ワタミダイレクト お試し割の価格・nosh 容器サイズの旧値を訂正＋reitou-bento-atatame-kata を公式照合 ✅（source 9e6686c・a720104・ae518bb / deploy c998b433・837cc8ab）
+- 公式（10/29）: ワタミダイレクト 料金一覧 /shop/pages/prices「いつでも三菜 お試し割 10食 ￥3,990（1食￥399）・初回注文のみ」「都度→お試し割 900円お得」。**公式トップの「3,900円」は埋め込み Instagram 投稿（#PR・#watami202309/202310）で旧価格**＝10/17 の記録の出どころ。nosh 容器 横18.0×縦16.5×高さ4.5cm（/package・faq/answer/50）
+- 訂正: watami-direct-kuchikomi 10か所（3,900→3,990・390→399円・「990円安い」→900円・確認日10/29）／watami-reviews 料金表／souryou-yasui-ranking 2位行（390→399円・送料込み約489→約498円・順位不変）／nosh 容器 hitorigurashi 2・nosh-vs-mitsuboshi 表1・otameshi-set 2（「一般的には18×18前後」→nosh の公式値を例示）
+- otameshi-set-osusume には 3,900円の記載は既に無かった（価格を書いていない）
+- ⚠️ **未修正（判断待ちで触らない指示）**: takushoku-ryokin-hakusho の discountLabel「お試し割10食3,900円」と data/ryokin-hakusho-2026-07.json（price_jpy 3900・first_discount）。kinnikushokudo の「3,900円」は沖縄送料で無関係
+- reitou-bento-atatame-kata（5/28）照合: nosh FAQ answer/78「フタを左端から5cmほどはがし、フタ記載の時間で加熱・700W以上は容器破損のおそれ・電子レンジ以外の温めは非対応」、ワタミダイレクト FAQ「冷凍惣菜セットは電子レンジ対応・二菜/三菜/五菜/介護食は点線を切り袋のまま加熱・アラカルトは電子レンジ/湯煎など商品により異なる」を反映。出典の無い「500W・600W・1500Wなど」の例を削除。ワット数別早見表（一般的な目安）は出典が無いが今回は注記追加のみ（nosh は700W以上不可）。三ツ星・食宅便の加熱指示は未取得（食宅便は FAQ が取れず）
+- 検証: build EXIT0・precheck 72頁 全項目OK・計測リンク 126件 md5一致（作業前 deploy と同一）
