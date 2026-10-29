@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://takushoku-biyori.com/</loc><lastmod>2026-10-28</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://takushoku-biyori.com/articles/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://takushoku-biyori.com/</loc><lastmod>2026-10-29</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://takushoku-biyori.com/articles/</loc><lastmod>2026-10-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://takushoku-biyori.com/privacy-policy/</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://takushoku-biyori.com/terms-of-service/</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://takushoku-biyori.com/content-policy/</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
@@ -19,7 +19,7 @@
   <url><loc>https://takushoku-biyori.com/articles/gofood-kuchikomi/</loc><lastmod>2026-10-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/goodeli-kuchikomi/</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/green-spoon-kuchikomi/</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://takushoku-biyori.com/articles/hitorigurashi-osusume/</loc><lastmod>2026-10-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://takushoku-biyori.com/articles/hitorigurashi-osusume/</loc><lastmod>2026-10-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/kinnikushokudo-deli-kuchikomi/</loc><lastmod>2026-10-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/kou-tanpaku-ranking/</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/koureisha-osusume/</loc><lastmod>2026-10-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -41,11 +41,11 @@
   <url><loc>https://takushoku-biyori.com/articles/nosh-coupon/</loc><lastmod>2026-10-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/nosh-reviews/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/nosh-ryoukin-souryou/</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://takushoku-biyori.com/articles/nosh-vs-mitsuboshi-vs-wellness/</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://takushoku-biyori.com/articles/nosh-vs-mitsuboshi-vs-wellness/</loc><lastmod>2026-10-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/nosh-vs-watami/</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/oisix-vs-nosh/</loc><lastmod>2026-10-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/okihai-taiou-takuhai-bento/</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://takushoku-biyori.com/articles/otameshi-set-osusume/</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://takushoku-biyori.com/articles/otameshi-set-osusume/</loc><lastmod>2026-10-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/ouchi-coop-kuchikomi/</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/reitou-bento-atatame-kata/</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/reitou-bento-eiyou-baransu/</loc><lastmod>2026-10-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -54,7 +54,7 @@
   <url><loc>https://takushoku-biyori.com/articles/rizap-supportmeal-reviews/</loc><lastmod>2026-10-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/sango-osusume/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/shokutakubin-reviews/</loc><lastmod>2026-10-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://takushoku-biyori.com/articles/souryou-yasui-ranking/</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://takushoku-biyori.com/articles/souryou-yasui-ranking/</loc><lastmod>2026-10-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/super-vs-takuhai-reitou-bento/</loc><lastmod>2026-10-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/taihei-family-set-kuchikomi/</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/takuhai-cook123-kuchikomi/</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -65,9 +65,9 @@
   <url><loc>https://takushoku-biyori.com/articles/tsukurioki-jp-kuchikomi/</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/tsurukame-reviews/</loc><lastmod>2026-10-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/wanmairu-reviews/</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://takushoku-biyori.com/articles/watami-direct-kuchikomi/</loc><lastmod>2026-10-19</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://takushoku-biyori.com/articles/watami-direct-kuchikomi/</loc><lastmod>2026-10-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/watami-direct-otameshi/</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://takushoku-biyori.com/articles/watami-reviews/</loc><lastmod>2026-10-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://takushoku-biyori.com/articles/watami-reviews/</loc><lastmod>2026-10-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/wellness-dining-reviews/</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/yoshikei-reviews/</loc><lastmod>2026-10-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://takushoku-biyori.com/articles/yoshikei-vs-watami/</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
