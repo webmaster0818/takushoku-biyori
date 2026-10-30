@@ -458,3 +458,11 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - 「3,900円」の残り: ワタミ関連 0。残る2か所（kinnikushokudo 記事の表・data の筋肉食堂 shipping note）は筋肉食堂DELI 沖縄14食の送料で、公式 /shop/faq（10/30）で ¥3,900 と一致＝正しい値
 - 検証: build EXIT0・precheck 72頁 全項目OK・計測リンク集合 md5 作業前 deploy と一致（HTML内63件）・ファイル数1275／__next 501 は同数
 - Indexing 3/3: wellness-dining-reviews・mitsuboshi-farm-reviews（10/28 未送信分）・takushoku-ryokin-hakusho（idx.py は gsc-api/venv/bin/python3 で実行。システム python3 は google モジュールなし）
+
+### 2026-10-30 nosh-reviews: 広告主（ナッシュ）の表記チェック21件を反映（MediaXAI「こちらの内容修正して」・aun.app/3emreb）✅本番反映（source ca9544a / deploy 405cf10e・precheck 全項目OK・計測リンク126件 md5一致）
+- 指摘の取り出し方: aun.app → aun-mypage.tools/web/visual/show/<id> の HTML 内 JSON（visinst_comments の message・css_top/left）＋スクショPNG（S3）を座標で切り出して対象文を特定
+- NG表記: 「低糖質・低塩分」→「糖質30g以下・塩分2.5g以下」、「冷凍食品」→「冷凍弁当」、「糖質制限」→「糖質管理」（ただし2件は口コミ引用＝書き換え不可→引用ごと削除）、「低糖質のご飯」→主食の量で調整、運動の一文、温め時間の注記
+- メニュー数: 広告主の指定で「100種類以上」（⚠️ nosh.jp トップは 10/30 も「約90種類」＝他19記事は約90のまま）
+- クーポン: 広告主 LP の条件「総額3,000円OFF（1〜3回目購入時1,000円OFF）」に（⚠️公式サイトは1,500/1,000/500円・他5記事は公式表記のまま）。LP（csolution.jp c.neo/af＝計測URL）は開いていない
+- nosh club: 「※退会・会員資格を喪失した場合は除きます」＋nosh.jp/club リンクを3か所（表の※1・club節・メリット3）
+- 他記事をそろえるか MediaXAI に確認中
