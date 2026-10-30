@@ -450,3 +450,11 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - ⚠️ **未修正（判断待ちで触らない指示）**: takushoku-ryokin-hakusho の discountLabel「お試し割10食3,900円」と data/ryokin-hakusho-2026-07.json（price_jpy 3900・first_discount）。kinnikushokudo の「3,900円」は沖縄送料で無関係
 - reitou-bento-atatame-kata（5/28）照合: nosh FAQ answer/78「フタを左端から5cmほどはがし、フタ記載の時間で加熱・700W以上は容器破損のおそれ・電子レンジ以外の温めは非対応」、ワタミダイレクト FAQ「冷凍惣菜セットは電子レンジ対応・二菜/三菜/五菜/介護食は点線を切り袋のまま加熱・アラカルトは電子レンジ/湯煎など商品により異なる」を反映。出典の無い「500W・600W・1500Wなど」の例を削除。ワット数別早見表（一般的な目安）は出典が無いが今回は注記追加のみ（nosh は700W以上不可）。三ツ星・食宅便の加熱指示は未取得（食宅便は FAQ が取れず）
 - 検証: build EXIT0・precheck 72頁 全項目OK・計測リンク 126件 md5一致（作業前 deploy と同一）
+
+### 2026-10-30 朝ルーチン: 白書・data のワタミダイレクト お試し割 3,900→3,990円（価格のみ。A/B/C の判断部分は未変更）✅（source 0db334a / deploy b75fac35）
+- 公式（10/30 09:17・/shop/pages/prices を curl）: いつでも三菜 お試し割 10食 ￥3,990（1食￥399）・五菜 10食 ￥4,990・「お試し割は初回注文のみ」「都度→お試し割 900円お得」。都度 三菜10食4,890円・継続割（初回〜3回 各800円引き・最大2,400円）も記事どおり
+- 訂正: takushoku-ryokin-hakusho の discountLabel と MISSING_REASON の「10食3,900円」→3,990円／data/ryokin-hakusho-2026-07.json watami-direct plans[0] price_jpy 3900→3990・note（1食399円・900円安い）・first_discount・reverify_note（旧記録の 3,900円は誤りと明記）・source_urls に /shop/pages/prices 追加。verified/verified_at・REP_PLAN_INDEX・代表プラン未決の扱いは触らず。watami-direct は HakushoUnitPriceTable のどの slugs にも入っておらず表示順位への影響なし
+- 追加: watami-direct-kuchikomi に1か所残っていた「お試し割（1食390円・1回限り）」→399円（10/29 の取りこぼし）
+- 「3,900円」の残り: ワタミ関連 0。残る2か所（kinnikushokudo 記事の表・data の筋肉食堂 shipping note）は筋肉食堂DELI 沖縄14食の送料で、公式 /shop/faq（10/30）で ¥3,900 と一致＝正しい値
+- 検証: build EXIT0・precheck 72頁 全項目OK・計測リンク集合 md5 作業前 deploy と一致（HTML内63件）・ファイル数1275／__next 501 は同数
+- Indexing 3/3: wellness-dining-reviews・mitsuboshi-farm-reviews（10/28 未送信分）・takushoku-ryokin-hakusho（idx.py は gsc-api/venv/bin/python3 で実行。システム python3 は google モジュールなし）
