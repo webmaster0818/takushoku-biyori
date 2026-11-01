@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-06-04T00:00:00+09:00",
-    modifiedTime: "2026-10-31T00:00:00+09:00",
+    modifiedTime: "2026-11-01T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -32,7 +32,7 @@ const faqData = [
   {
     question: "ニチレイフーズダイレクトのお試しセットはいくら？",
     answer:
-      "公式のお試しセット特集では6種類が販売されています。人気No.1の「きくばりごぜん」お試し4食セットが3,300円、まめなごはん お試し4食セット（おかず＋主食）が3,800円、パワーデリ お試し4食セットが4,320円、きくばりごぜん 栄養成分別セット（糖質・塩分・脂質を控えたい方向け）が各3,550円です（いずれも税込・2026年10月31日公式で確認）。別途送料がかかります。",
+      "公式のお試しセット特集では7種類が販売されています。人気No.1の「きくばりごぜん」お試し4食セットが3,300円、まめなごはん お試し4食セット（おかず＋主食）が3,800円、パワーデリ お試し4食セットが4,320円、きくばりごぜん 栄養成分別セットが糖質・塩分・脂質を控えたい方向け各3,550円、たんぱく質を控えたい方向け3,200円です（いずれも税込・2026年10月31日公式で確認。たんぱく質を控えたい方向けは11月1日に確認）。別途送料がかかります。",
   },
   {
     question: "送料はかかる？",
@@ -210,7 +210,7 @@ export default function NichireiOtameshiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-06-04T00:00:00+09:00",
-    dateModified: "2026-10-31T00:00:00+09:00",
+    dateModified: "2026-11-01T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -271,7 +271,7 @@ export default function NichireiOtameshiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-06-04">公開: 2026年6月4日</time>
-            <time dateTime="2026-10-31">更新: 2026年10月31日（お試しセットの種類・価格・送料・配送を公式で確認）</time>
+            <time dateTime="2026-11-01">更新: 2026年11月1日（お試しセットの種類・価格・送料・配送を公式で確認。10月31日確認分に11月1日の再確認を反映）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -312,7 +312,7 @@ export default function NichireiOtameshiPage() {
           <p className="font-bold mb-2">この記事の要点</p>
           <ul className="list-disc list-inside space-y-1">
             <li>お試しセットは<strong>味・量を確かめる入口</strong>として便利</li>
-            <li>お試しセットは<strong>6種類・各4食で3,300〜4,320円</strong>（税込・送料別）</li>
+            <li>お試しセットは<strong>7種類・各4食で3,200〜4,320円</strong>（税込・送料別）</li>
             <li>冷凍で届くため<strong>冷凍庫の空き</strong>を確保しておく</li>
             <li>お試しセットは<strong>定期便ではなく1回限りの注文</strong>（本州・四国は5,000円未満で送料1,000円）</li>
           </ul>
@@ -333,7 +333,7 @@ export default function NichireiOtameshiPage() {
         <SectionHeading id="naiyo">お試しセットの内容タイプ</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          公式の「お試しセット特集」（2026年10月31日確認）で販売されているのは次の6種類で、どれも冷凍の4食入りです。
+          公式の「お試しセット特集」（2026年10月31日確認）で販売されているのは次の7種類で、どれも冷凍の4食入りです（たんぱく質を控えたい方向けは2026年11月1日に確認）。
         </p>
 
         <ComparisonTable
@@ -342,7 +342,7 @@ export default function NichireiOtameshiPage() {
             ["きくばりごぜん お試し4食（3,300円）", "人気No.1のおかずセット。4品平均192kcal・塩分1.7g・野菜100g以上", "カロリー・塩分に配慮したい人"],
             ["まめなごはん お試し4食（3,800円）", "主食とおかずのワンプレート。4品平均たんぱく質22.6g・400kcal・塩分2.3g", "ごはんまで用意したくない人"],
             ["パワーデリ お試し4食（4,320円）", "ボリュームのあるおかず。4品平均たんぱく質29.0g・370kcal・糖質16.8g", "たんぱく質をしっかりとりたい人"],
-            ["栄養成分別セット 各4食（各3,550円）", "糖質／塩分／脂質を控えたい方向けに管理栄養士が選んだおかず", "特定の栄養素を控えたい人"],
+            ["栄養成分別セット 各4食（糖質・塩分・脂質 各3,550円／たんぱく質 3,200円）", "糖質／塩分／脂質／たんぱく質を控えたい方向けに管理栄養士が選んだおかず", "特定の栄養素を控えたい人"],
           ]}
         />
 
@@ -367,7 +367,7 @@ export default function NichireiOtameshiPage() {
 
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">お試しセット1つだけなら送料1,000円（本州・四国）</p>
-          <p>お試しセットは3,300〜4,320円なので、1つだけの注文は5,000円未満の送料（本州・四国1,000円）がかかります。たとえば、きくばりごぜんのお試し4食セットは3,300円＋送料1,000円＝4,300円です。2セット以上や単品を合わせて5,000円・7,500円を超えると送料が下がります。送料の負担を抑えたい人は、<Link href="/articles/souryou-yasui-ranking/" className="text-accent underline">送料が安い冷凍弁当ランキング</Link>もあわせて参考にできます。</p>
+          <p>お試しセットは3,200〜4,320円なので、1つだけの注文は5,000円未満の送料（本州・四国1,000円）がかかります。たとえば、きくばりごぜんのお試し4食セットは3,300円＋送料1,000円＝4,300円です。2セット以上や単品を合わせて5,000円・7,500円を超えると送料が下がります。送料の負担を抑えたい人は、<Link href="/articles/souryou-yasui-ranking/" className="text-accent underline">送料が安い冷凍弁当ランキング</Link>もあわせて参考にできます。</p>
         </div>
 
         {/* ===== 申し込みの流れ ===== */}
@@ -456,7 +456,7 @@ export default function NichireiOtameshiPage() {
             ニチレイフーズダイレクトのお試しセットは、<strong>冷凍弁当を初めて試す入口</strong>として便利です。温めるだけの手軽さと、健康面に配慮したシリーズが特徴で、定期購入の前に味・量・使い勝手を確かめられます。
           </p>
           <p className="mb-3">
-            お試しセットは<strong>6種類・各4食で3,300〜4,320円</strong>（税込・送料別）で、定期便ではなく1回限りの注文です（2026年10月31日公式で確認）。
+            お試しセットは<strong>7種類・各4食で3,200〜4,320円</strong>（税込・送料別）で、定期便ではなく1回限りの注文です（2026年10月31日公式で確認）。
           </p>
           <p>
             申し込み時に確認しておきたい点は「どのセットにするか」「冷凍庫の空き」「合計金額(送料込み)」の3点です。最新・正確な情報は、必ずニチレイフーズダイレクト公式サイトでご確認ください。
