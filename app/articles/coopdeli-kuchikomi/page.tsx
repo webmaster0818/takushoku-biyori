@@ -3,9 +3,10 @@ import Link from "next/link";
 import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
-  "コープ（生協）の宅配弁当の口コミ・評判｜まずいって本当？コープデリ夕食宅配「舞菜」の料金・カロリーを公式で確認【2026年10月最新】";
+  "コープの宅配弁当はまずい？口コミ・評判で言われる理由と実際｜コープデリ夕食宅配「舞菜」の料金【2026年11月】";
 const ARTICLE_DESCRIPTION =
-  "コープの宅配弁当（コープデリ夕食宅配・舞菜）はまずい？薄味・量・飽きなど言われる理由を出典付きで整理します。1食464〜842円の料金、コース別kcal・塩分、24円引きの対象、届くエリア、他地域の生協の夕食宅配も公式で確認しています。【2026年10月更新】";
+  "コープの宅配弁当（コープデリ夕食宅配・舞菜）はまずい？口コミの不満は薄味・量・飽きが中心で、みんなのランキングの口コミ8件に「まずい」とする投稿はありません。1食464〜842円の料金、2食・3食の税込額、kcal・塩分、出資金を2026年11月1日に公式で確認しました。";
+const CHECKED = "2026年11月1日";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/coopdeli-kuchikomi/";
 
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-16T00:00:00+09:00",
+    modifiedTime: "2026-11-01T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -38,7 +39,12 @@ const faqData = [
   {
     question: "コープデリの夕食宅配の料金はいくら？",
     answer:
-      "2026年10月16日に公式サイトで確認した1食あたりの税込価格は、舞菜ミニ弁当464円・舞菜弁当680円・舞菜おかず702円・舞菜しっかりおかず756円・舞菜御膳842円・エネルギー塩分調整食（おかずのみ）842円です。1回のお届けで2食以上頼むと、舞菜おかず・舞菜弁当・舞菜しっかりおかず・舞菜御膳は1食24円（税抜）引きになります。ミニ弁当とエネルギー塩分調整食は割引の対象外です。",
+      "2026年11月1日に公式サイトで確認した1食あたりの税込価格は、舞菜ミニ弁当464円・舞菜弁当680円・舞菜おかず702円・舞菜しっかりおかず756円・舞菜御膳842円・エネルギー塩分調整食（おかずのみ）842円です。1回のお届けで2食以上頼むと、舞菜おかず・舞菜弁当・舞菜しっかりおかず・舞菜御膳は1食24円（税抜）引きになります。ミニ弁当とエネルギー塩分調整食は割引の対象外です。2食の税込額は舞菜弁当1,308円・舞菜おかず1,352円・舞菜しっかりおかず1,460円・舞菜御膳1,632円です（公式表示）。",
+  },
+  {
+    question: "コープデリの宅配弁当を始めるのに出資金はいくら？",
+    answer:
+      "生協への加入時に出資金を預けます。公式の「お届けまでの流れ」では各生協により500〜1,000円とされ、脱退時に返還されます。加入後約2〜3週間で組合員証が届き、デイリーコープは利用登録の翌々週の月曜日から配達できます（2026年11月1日 公式確認）。",
   },
   {
     question: "コープデリの夕食宅配に配達料はかかる？",
@@ -53,7 +59,7 @@ const faqData = [
   {
     question: "コープデリの夕食宅配はまずい？味の評判は？",
     answer:
-      "公開レビューでは「やさしい味で美味しい」「冷凍じゃないから味落ちない」という好意的な声が多く、宅配弁当の比較メディアも「「まずい」と言い切る声は多くありません」（LiPro）とまとめています。不満は①薄味②献立のローテーションによる飽き③量④苦手なメニューも届く、に集中しています。公式の基準は週平均でお弁当500kcal・塩分3g以下、おかず400kcal・塩分4g以下で、塩分を控えた設計です。濃い味が好みなら「しっかりとした味付け」の舞菜しっかりおかずを選ぶ手があります。",
+      "「まずい」と言い切る声は少数です。みんなのランキングの口コミ8件（2026年11月1日確認）には「まずい」とする投稿がなく、お弁当に触れた6件はいずれも味・栄養・価格・安全性のいずれかを評価しています。公開レビューでも「やさしい味で美味しい」「冷凍じゃないから味落ちない」という好意的な声が多く、宅配弁当の比較メディアも「「まずい」と言い切る声は多くありません」（LiPro）とまとめています。不満は①薄味②献立のローテーションによる飽き③量④苦手なメニューも届く、に集中しています。公式の基準は週平均でお弁当500kcal・塩分3g以下、おかず400kcal・塩分4g以下で、塩分を控えた設計です。濃い味が好みなら「しっかりとした味付け」の舞菜しっかりおかずを選ぶ手があります。",
   },
   {
     question: "コープデリの宅配弁当の消費期限は？",
@@ -299,6 +305,46 @@ const goodReviewCategories: {
       },
     ],
   },
+  {
+    title: "味付け・品数・家族の見守り（口コミサイトの投稿）",
+    reviews: [
+      {
+        text: "味付けも濃すぎず美味しいし、食品数が多いだけでなく栄養バランスのとれた内容なのも魅力です。温めればすぐに食べれる利便性の高さも気に入っています。",
+        meta: "口コミ投稿・一部",
+        sourceName: "みんなのランキング（デイリーコープ）",
+        sourceUrl: "https://ranking.net/items/e3d69e",
+      },
+      {
+        text: "舞菜御膳コースを注文しておりますが思っていた以上に味や種類がたくさんあり高齢の母は喜んでいますし日中軽くですが母のおしゃべり相手してくれるので私も喜んでいます。",
+        meta: "口コミ投稿・一部",
+        sourceName: "みんなのランキング（デイリーコープ）",
+        sourceUrl: "https://ranking.net/items/e3d69e",
+      },
+      {
+        text: "想像よりも味がしっかりしてて美味しいです。素材感もしっかりしています。お弁当は野菜が足りなくなりそうで心配でしたがバランスよく入っていて安心です。",
+        meta: "口コミ投稿・一部",
+        sourceName: "みんなのランキング（デイリーコープ）",
+        sourceUrl: "https://ranking.net/items/e3d69e",
+      },
+    ],
+  },
+  {
+    title: "公式サイトに掲載されている利用者の声（舞菜）",
+    reviews: [
+      {
+        text: "お魚のメニューがいつもとても楽しみで、おいしく頂いています。魚に骨がないので、安心して食べられます。",
+        meta: "70代・公式掲載（運営者が選んで掲載している声です）",
+        sourceName: "デイリーコープ公式サイト",
+        sourceUrl: "https://daily.coopdeli.jp/index.html",
+      },
+      {
+        text: "夫婦だけの生活では無駄が多くなり、これだけの品数を作るのは無理なので、すごく助かっています。",
+        meta: "70代・公式掲載（運営者が選んで掲載している声です）",
+        sourceName: "デイリーコープ公式サイト",
+        sourceUrl: "https://daily.coopdeli.jp/index.html",
+      },
+    ],
+  },
 ];
 
 const badReviewCategories: {
@@ -340,6 +386,12 @@ const badReviewCategories: {
         sourceName: "日仏家族の宅食レビュー",
         sourceUrl: "https://takushoku-repo.com/coopdelirepu/",
       },
+      {
+        text: "栄養のバランスはさすがコープ！と思います。彩もきれいに思いますし、季節の素材も考えてくれます。（略）ただ、我が家には圧倒的に量が少ないです。",
+        meta: "口コミ投稿・一部（評価は85点）",
+        sourceName: "みんなのランキング（デイリーコープ）",
+        sourceUrl: "https://ranking.net/items/e3d69e",
+      },
     ],
     comment:
       "公式の献立表サンプル（2026年3月の1週間）では、舞菜弁当は1食431〜496kcal（ご飯約150g込み）、舞菜おかずは342〜415kcalで、よく食べる人には物足りない可能性があります。公式で「ボリューム感のあるおかず」とされる舞菜しっかりおかず（税込756円）や、別売りのご飯150g（税込140円）・生野菜サラダ（税込116円）を足す方法があります。配達はルート配送のため時間指定はできませんが、留守の場合は保冷剤を入れた保冷容器で指定の場所に届けてくれます（公式FAQ）。",
@@ -356,7 +408,7 @@ export default function CoopdeliKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-10-16T00:00:00+09:00",
+    dateModified: "2026-11-01T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -430,7 +482,7 @@ export default function CoopdeliKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
-            <time dateTime="2026-10-16">更新: 2026年10月16日（公式で再確認）</time>
+            <time dateTime="2026-11-01">更新: 2026年11月1日（料金・利用条件を公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -445,6 +497,51 @@ export default function CoopdeliKuchikomiPage() {
         </header>
         </div>{/* /subhead */}
 
+        {/* 冒頭の答え：まずいと言われる理由と実際 */}
+        <section id="answer" className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
+          <h2 className="font-bold text-lg mb-3">結論：コープの宅配弁当は「まずい」より「薄味・量・飽き」の不満が中心です</h2>
+          <p className="text-sm leading-relaxed mb-3">
+            関東のコープの宅配弁当＝コープデリの夕食宅配「舞菜（まいさい）」について、公開されている口コミを確認すると、<strong>「まずい」と言い切る声は少数</strong>です。
+            みんなのランキングのデイリーコープ（コープデリ）の口コミ<strong>8件</strong>（{CHECKED}確認）のうち、お弁当に触れた6件はいずれも味・栄養・価格・安全性のいずれかを評価しており、<strong>「まずい」とする投稿は0件</strong>でした。不満の記載は「量が少ない」1件と「地区によって内容が変わる」1件です（残り2件はミールキット・宅配商品全般の感想）。
+          </p>
+          <div className="table-wrapper mb-3">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-accent/10">
+                  <th className="border border-warm-border px-3 py-2 text-left whitespace-nowrap">言われる理由</th>
+                  <th className="border border-warm-border px-3 py-2 text-left">実際（公式の情報・口コミ）</th>
+                  <th className="border border-warm-border px-3 py-2 text-left">合わないときの選び方</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-warm-border px-3 py-2 font-medium whitespace-nowrap">薄味</td>
+                  <td className="border border-warm-border px-3 py-2">公式の献立基準はお弁当が週平均で1食500kcal・塩分3g以下。「味付けも濃すぎず美味しい」「優しさを感じるお弁当」と評価する口コミもあります</td>
+                  <td className="border border-warm-border px-3 py-2">「しっかりとした味付け」の舞菜しっかりおかず（税込756円）</td>
+                </tr>
+                <tr>
+                  <td className="border border-warm-border px-3 py-2 font-medium whitespace-nowrap">量が少ない</td>
+                  <td className="border border-warm-border px-3 py-2">舞菜弁当はご飯約150g込みで1食431〜496kcal（公式献立表サンプル）。小食向けの舞菜ミニ弁当（464円）もあります</td>
+                  <td className="border border-warm-border px-3 py-2">舞菜御膳（842円）・しっかりおかず＋ご飯150g（税込140円）</td>
+                </tr>
+                <tr>
+                  <td className="border border-warm-border px-3 py-2 font-medium whitespace-nowrap">飽きる・選べない</td>
+                  <td className="border border-warm-border px-3 py-2">日替わり献立でメニューは選べません。翌週の献立はeフレンズか献立表で事前に確認できます</td>
+                  <td className="border border-warm-border px-3 py-2">コースを曜日で分ける・週3日にする・苦手な週は休止</td>
+                </tr>
+                <tr>
+                  <td className="border border-warm-border px-3 py-2 font-medium whitespace-nowrap">温め方で味が変わる</td>
+                  <td className="border border-warm-border px-3 py-2">冷蔵でその日に届き、消費期限はお届け当日の午後10時。公式も「レンジで温めると一層おいしい」と案内しています</td>
+                  <td className="border border-warm-border px-3 py-2">届いた日の夕食でレンジ加熱して食べる</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-warm-gray">
+            ※出典: <a href="https://ranking.net/items/e3d69e" target="_blank" rel="noopener noreferrer nofollow" className="underline">みんなのランキング「デイリーコープ（コープデリ）」</a>（口コミ8件・9人の評価・{CHECKED}確認）／<a href="https://daily.coopdeli.jp/index.html" target="_blank" rel="noopener noreferrer" className="underline">デイリーコープ公式サイト</a>（料金・{CHECKED}確認）／公式献立表サンプル（2026年3月23日〜27日分）・公式FAQ（献立基準・消費期限・2026年10月16日確認）。詳しい検証は<a href="#mazui" className="underline">「まずい」と言われる理由5つと対策</a>へ。
+          </p>
+        </section>
+
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
@@ -454,7 +551,7 @@ export default function CoopdeliKuchikomiPage() {
             この記事では、<strong>公開されている実在のレビュー記事を出典付きで整理</strong>し、良い口コミ・悪い口コミの両方を中立に検証します。「まずい」と言われる理由についても解説します。
           </p>
           <p>
-            さらに、<strong>1食あたりの料金・コース別のカロリーと塩分・届くエリア・週3日以上という利用条件</strong>を2026年10月16日に公式サイトで確認し、コープデリ以外の生協（ユーコープ・コープさっぽろ・エフコープ）の宅配弁当の料金も並べました。なお当サイトは実食をしておらず、味の評価はすべて出典付きの第三者レビューです。
+            さらに、<strong>1食あたりの料金・2食／3食の税込額・届くエリア・週3日以上という利用条件・出資金</strong>を{CHECKED}に公式サイトで再確認し、コース別のカロリーと塩分（公式献立表サンプル）、コープデリ以外の生協（ユーコープ・コープさっぽろ・エフコープ。2026年10月16日確認）の宅配弁当の料金も並べました。なお当サイトは実食をしておらず、味の評価はすべて出典付きの第三者レビューです。
           </p>
         </div>
 
@@ -527,7 +624,7 @@ export default function CoopdeliKuchikomiPage() {
           ※出典: コープデリ夕食宅配公式サイト・お届けエリア・公式FAQ（2026年10月16日確認）。最新情報は公式サイトでご確認ください。
         </p>
 
-        <SubHeading>コース一覧と1食のカロリー・塩分（2026年10月16日確認）</SubHeading>
+        <SubHeading>コース一覧と1食のカロリー・塩分（料金は{CHECKED}確認）</SubHeading>
         <ComparisonTable
           headers={["コース", "1食（税込）", "2食以上の24円引き", "熱量（kcal）", "食塩相当量（g）", "公式の説明"]}
           rows={[
@@ -540,7 +637,7 @@ export default function CoopdeliKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-4">
-          ※価格・割引の対象: デイリーコープ公式サイト（2026年10月16日確認）。熱量・食塩相当量は公式の献立表サンプル（2026年3月4回＝3月23日〜27日の5日分）の最小〜最大で、週ごとに変わります（公式注記「栄養表示は献立作成時の計算値」）。公式の献立基準は週平均の1食あたり「お弁当：500kcal・塩分3g以下／おかず：400kcal・塩分4g以下／御膳：500kcal・塩分4g以下」（公式FAQ）。
+          ※価格・割引の対象: デイリーコープ公式サイト（{CHECKED}再確認・2026年10月16日から変更なし）。熱量・食塩相当量は公式の献立表サンプル（2026年3月4回＝3月23日〜27日の5日分）の最小〜最大で、週ごとに変わります（公式注記「栄養表示は献立作成時の計算値」）。公式の献立基準は週平均の1食あたり「お弁当：500kcal・塩分3g以下／おかず：400kcal・塩分4g以下／御膳：500kcal・塩分4g以下」（公式FAQ）。
         </p>
         <p className="text-sm mb-2 leading-relaxed">
           1回のお届けで2食以上注文すると、対象の4コース（舞菜おかず・舞菜弁当・舞菜しっかりおかず・舞菜御膳）は<strong>1食24円（税抜）引き</strong>になります。夫婦2人での利用なら実質単価がさらに下がる仕組みです。18社の送料込み実質単価は
@@ -548,6 +645,36 @@ export default function CoopdeliKuchikomiPage() {
             宅食料金白書2026
           </Link>
           で比較できます。
+        </p>
+
+        <SubHeading>1日に2食・3食頼んだときの税込額（公式表示）</SubHeading>
+        <ComparisonTable
+          headers={["コース", "1食", "2食", "3食", "2食時の1食あたり"]}
+          rows={[
+            ["舞菜弁当", "680円", "1,308円", "1,963円", "654円"],
+            ["舞菜おかず", "702円", "1,352円", "2,028円", "676円"],
+            ["舞菜しっかりおかず", "756円", "1,460円", "2,190円", "730円"],
+            ["舞菜御膳", "842円", "1,632円", "2,449円", "816円"],
+            ["エネルギー塩分調整食（割引対象外）", "842円", "1,684円", "2,527円", "842円"],
+          ]}
+        />
+        <p className="text-xs text-warm-gray mb-4">
+          ※1食〜3食の額は<a href="https://daily.coopdeli.jp/index.html" target="_blank" rel="noopener noreferrer" className="underline">デイリーコープ公式サイト</a>の「1日あたり」の税込表示（{CHECKED}確認）。「2食時の1食あたり」は2食の額を2で割った当サイトの算出です。舞菜ミニ弁当（464円）は2食以上の価格表示がありません。
+        </p>
+
+        <SubHeading>一緒に頼めるもの（追加メニュー）</SubHeading>
+        <ComparisonTable
+          headers={["商品", "税込", "条件（公式の記載）"]}
+          rows={[
+            ["ご飯150g", "140円", "舞菜おかず・舞菜御膳・舞菜しっかりおかず・エネルギー塩分調整食と一緒に"],
+            ["もち麦入りご飯150g", "162円", "同上"],
+            ["生野菜サラダ（1袋）", "116円", "曜日ごとに1袋から。サラダのみのお届けは不可"],
+            ["日替わりサンドイッチ（1パック）", "291円", "種類は曜日ごとに固定。月〜金の好きな曜日に"],
+            ["冷凍おかず2個セット", "1,274円", "8種類を週替わりで。お届けは水曜または木曜"],
+          ]}
+        />
+        <p className="text-xs text-warm-gray mb-4">
+          ※出典: デイリーコープ公式サイト（{CHECKED}確認）。セットメニューはメインメニューのお届けがある日のみ利用できます。
         </p>
         <p className="text-xs text-warm-gray mb-6">
           ※出典: コープデリ夕食宅配公式サイト・公式FAQ（2026年10月16日確認）。パルシステムとの違いは
@@ -704,16 +831,16 @@ export default function CoopdeliKuchikomiPage() {
         <ComparisonTable
           headers={["項目", "内容"]}
           rows={[
-            ["加入", "生協への加入が必要（出資金は脱退時に返還）"],
-            ["最低利用", "週3日以上・1週間単位の定期"],
+            ["加入", "生協への加入が必要。出資金は各生協により500〜1,000円で、脱退時に返還。組合員証は加入後約2〜3週間で届く"],
+            ["最低利用", "月〜金のうち週3日以上（曜日は選べる）・1週間単位の定期"],
             ["開始", "利用登録の翌々週の月曜日から配達可能。利用は自動継続（1週間だけの利用も可）"],
             ["お試し", "夕食宅配（舞菜）専用のお試しは公式で見つからず（2026年10月16日）。案内中の「おためしセット」はウイークリーコープ向けの冷凍食品10品・税込1,980円"],
             ["中止・休み", "eフレンズでの休止・再開は配達前週の水曜午前2時まで（翌週・翌々週分）。注文変更はお届け曜日の5日前の午前2時まで。お届け週のキャンセルは不可。利用の中止は電話（0120-155-216・月〜金9:00〜19:30／土9:00〜17:00）"],
-            ["支払い", "登録口座からの引き落としのみ（クレジットカード・デビットカード不可）"],
+            ["支払い", "登録口座からの引き落とし（毎月5日以降の金融機関営業日）のみ。クレジットカード・デビットカード不可"],
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: コープデリ公式「デイリーコープ ご利用の流れ」・公式FAQ・おためしセット申込ページ（2026年10月16日確認）。
+          ※出典: <a href="https://www.coopdeli.jp/contents/daily/flow/index.html" target="_blank" rel="noopener noreferrer" className="underline">コープデリ公式「デイリーコープ お届けまでの流れ」</a>（加入・出資金・開始・自動継続・引き落とし・お届け週のキャンセル不可は{CHECKED}確認）・公式FAQ・おためしセット申込ページ（締切・電話受付・カード不可・お試しは2026年10月16日確認）。
         </p>
 
         {/* ===== 他の生協 ===== */}
