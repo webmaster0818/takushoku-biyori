@@ -244,7 +244,7 @@ const goodReviewCategories: {
     reviews: [
       {
         text: "お肉やお魚も臭みがなく、全体的に冷凍弁当を感じさせないおいしさがあります！",
-        meta: "記事執筆者の実食レビュー",
+        meta: "マイナビニュースの記事執筆者による実食レビュー",
         sourceName: "マイナビニュース 宅配弁当・宅食比較",
         sourceUrl: "https://delivery-lunch.news.mynavi.jp/kinnikushokudo/",
       },
@@ -256,7 +256,7 @@ const goodReviewCategories: {
       },
       {
         text: "つくねはお肉がギュッと詰まっており、軟骨入りで噛むほどに美味しく感じました",
-        meta: "編集部実食レビュー・つくねと鶏もも肉の特製W照り焼き",
+        meta: "HAPPINESS! magazine編集部の実食レビュー・つくねと鶏もも肉の特製W照り焼き",
         sourceName: "HAPPINESS! magazine（ティップネス運営）",
         sourceUrl:
           "https://online.tipness.co.jp/feature/home_meal/muscle-restaurant/",
@@ -649,7 +649,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
           <SourcedReview
             review={{
               text: "ごはんが進む味ですが、ごはんの量が少なめなので物足りなさを感じてしまいました。",
-              meta: "編集部の試食（よだれ鶏）",
+              meta: "HonNe編集部の試食（よだれ鶏）",
               sourceName: "HonNe（EXIDEA運営・2026年10月2日更新）",
               sourceUrl: "https://exidea.co.jp/blog/meal/home-meal/kinnikushokudo/",
             }}

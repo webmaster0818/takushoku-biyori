@@ -183,8 +183,8 @@ const goodReviewCategories: { title: string; reviews: SourcedReviewItem[] }[] = 
     reviews: [
       { text: "注文した料理は美味しくて栄養バランスも考えられていて、本当に驚きました。", meta: "★5・2022年12月11日の投稿", sourceName: "みん評", sourceUrl: MINHYO_URL },
       { text: "以前の冷凍食品のイメージとは異なり、かなり美味しかったです。", meta: "★4・2023年3月23日の投稿", sourceName: "みん評", sourceUrl: MINHYO_URL },
-      { text: "マカロニグラタンは、クリーミーながらしつこくなく、とても美味しかったです。", meta: "編集部の実食レビュー", sourceName: "HonNe（株式会社EXIDEA）", sourceUrl: HONNE_URL },
-      { text: "左上の切り干し大根は、大根がシャキシャキとしていて、野菜の旨みを感じられて美味しかったです。", meta: "編集部の実食レビュー", sourceName: "HonNe（株式会社EXIDEA）", sourceUrl: HONNE_URL },
+      { text: "マカロニグラタンは、クリーミーながらしつこくなく、とても美味しかったです。", meta: "HonNe編集部の実食レビュー", sourceName: "HonNe（株式会社EXIDEA）", sourceUrl: HONNE_URL },
+      { text: "左上の切り干し大根は、大根がシャキシャキとしていて、野菜の旨みを感じられて美味しかったです。", meta: "HonNe編集部の実食レビュー", sourceName: "HonNe（株式会社EXIDEA）", sourceUrl: HONNE_URL },
     ],
   },
   {
@@ -208,7 +208,7 @@ const badReviewCategories: { title: string; reviews: SourcedReviewItem[]; note: 
     title: "価格：「高い」という声が最も多い",
     reviews: [
       { text: "ただしお値段は自炊に比べると割高なので、我が家では定期的な利用はちょっと難しいです。", meta: "★4・2023年3月23日の投稿", sourceName: "みん評", sourceUrl: MINHYO_URL },
-      { text: "ママの休食の宅配弁当は、他社と比較して安い値段とは言えません。", meta: "編集部の実食レビュー", sourceName: "HonNe（株式会社EXIDEA）", sourceUrl: HONNE_URL },
+      { text: "ママの休食の宅配弁当は、他社と比較して安い値段とは言えません。", meta: "HonNe編集部の実食レビュー", sourceName: "HonNe（株式会社EXIDEA）", sourceUrl: HONNE_URL },
     ],
     note: "2026年10月1日の改定で、通常購入の1食は1,310〜1,370円（送料別）になりました。上記の投稿は改定前のものです。費用を抑える場合は、定期便（初回25%OFF・2回目以降10%OFF）と12食セットの組み合わせが最も1食あたりの負担が小さくなります（料金表を参照）。",
   },
