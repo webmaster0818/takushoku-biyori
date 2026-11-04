@@ -496,3 +496,10 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - 誤検知: 「監修: 宅食びより編集部 / 編集部メンバー」（実在しない個人名なし・/author/ に実食未実施と明記）、記事末尾の「編集部による実食レビューは現在未実施」（64頁共通の否定文）、cook123・mamano の「当サイトは実食していません」、/author/・/editorial/・/methodology/ の未実施の明言。hitorigurashi・souryou・kinniku 冒頭の「——」は読者の悩みの例示と会社紹介で、体験の語りではない
 - 同型の残り（未修正・件数のみ）: medimeal-kuchikomi「編集部の実食感想」(スマートフードナビ)1件。「記事筆者の実食」tsurukame 3・medimeal 1、wellness「筆者の実食」2 は媒体名が並記
 - P2 atatame-kata: 11/3 公式再確認＝食宅便FAQ「500Wで約5分・600Wで約4分」記載どおり／三ツ星はFAQ・/menu とも「ラベル（パッケージ）記載の時間」で数値の記載なし → 記事は 11/2 の記載のまま正しい（変更なし）
+
+### 2026-11-04 朝ルーチン: trust-audit C3（11ページ）を原文で1件ずつ点検 → green-spoon-kuchikomi の OZmall 帰属4件を明記（source 640768b / deploy 65660886・precheck 72頁 全項目OK・計測リンク126件 md5一致）
+- 直した: green-spoon-kuchikomi「編集部実食レビュー」×4（出典 OZmall 40172）→「OZmall編集部の実食レビュー」。当該記事の導入文「編集部独自のレビュー」で 11/4 確認。引用文面は不変
+- 誤検知: 残り10ページ。coopdeli・yoshikei「当サイトは実食をしておらず」、mealtime・author・editorial・methodology の未実施の明言、記事末尾の未実施の共通文、coopdeli「ミールキットガイド編集部の実食レビュー（当サイトの実食ではありません）」、ouchi-coop 等の出典つき第三者の実食
+- 同型の残り（未修正・件数のみ）: nichirei-foods-direct-kuchikomi「編集部実食」3（OZmall）、wanmairu-reviews「編集部実食」1（Appliv）・「編集長」3（食卓リスト）、medimeal「編集部の実食感想」1（スマートフードナビ）
+- nichirei「たんぱく質を控えたい方向け 3,200円」: wellness.nichirei.co.jp/shop/pages/trial_2010.aspx（cp932）で 11/4 確認＝一致。変更なし
+- ⚠️ `npm run build` の prebuild が [no-lastmod] で作った sitemap の lastmod を過去に戻すことがある（11/3→11/2 等4行）。今回は public/sitemap.xml を戻して本番と同一のまま出した
