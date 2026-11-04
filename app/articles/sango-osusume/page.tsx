@@ -201,7 +201,7 @@ export default function SangoOsusumePage() {
     itemListOrder: "https://schema.org/ItemListOrderDescending",
     numberOfItems: 5,
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "nosh（ナッシュ）", description: "約90種類から自由に選べます。糖質30g以下で産後の栄養管理に最適。アプリで簡単注文。", url: "https://nosh.jp/" },
+      { "@type": "ListItem", position: 1, name: "nosh（ナッシュ）", description: "100種類以上から自由に選べます。糖質30g以下で産後の栄養管理に最適。アプリで簡単注文。", url: "https://nosh.jp/" },
       { "@type": "ListItem", position: 2, name: "三ツ星ファーム", description: "料理人監修のメニュー125種類以上。たんぱく質15g以上の基準で産後のご褒美に。", url: "https://mitsuboshifarm.jp/" },
       { "@type": "ListItem", position: 3, name: "ウェルネスダイニング", description: "管理栄養士に産後の食事を無料相談。気配り宅配食は栄養バランス・塩分制限など6コースです。", url: "https://www.wellness-dining.com/" },
       { "@type": "ListItem", position: 4, name: "わんまいる", description: "国産食材100%。湯煎調理で手作り感のある食事。添加物が気になるママに。", url: "https://www.onemile.jp/" },
@@ -326,7 +326,7 @@ export default function SangoOsusumePage() {
           tagline="栄養管理 × 家族利用 × コスパ。産後の万能選手"
           color="bg-yellow-50"
           features={[
-            "約90種類から自由に選べる",
+            "100種類以上から自由に選べる",
             "全メニュー糖質30g以下・塩分2.5g以下",
             "たんぱく質平均約20g",
             "20食プランで家族利用に最適",
@@ -347,7 +347,7 @@ export default function SangoOsusumePage() {
         />
         <ServiceCapture id="nosh" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
-          産後のママに最もおすすめなのがnosh。たんぱく質平均20gで授乳中の栄養補給に適し、20食プランなら夫婦で10日分の夕食をカバーしています。アプリで片手操作できるため、授乳中や赤ちゃんを抱っこしながらでも注文・メニュー選びが可能です。初回1,500円・2回目1,000円・3回目500円OFFの割引があります（2026年10月10日・公式確認）。詳しくは<Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline">nosh(ナッシュ)の口コミ・評判を徹底調査</Link>をご覧ください。
+          産後のママに最もおすすめなのがnosh。たんぱく質平均20gで授乳中の栄養補給に適し、20食プランなら夫婦で10日分の夕食をカバーしています。アプリで片手操作できるため、授乳中や赤ちゃんを抱っこしながらでも注文・メニュー選びが可能です。1〜3回目に各1,000円OFF（総額3,000円OFF）の割引があります。詳しくは<Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline">nosh(ナッシュ)の口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
 
         <RankingCard
@@ -484,7 +484,7 @@ export default function SangoOsusumePage() {
 
         <SubHeading>nosh - 産後の家族まるごとサポート</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          noshが産後に最もおすすめな理由は「家族全員の食事を1つのサービスでカバーできる」ことです。20食プランなら夫婦で10日分の夕食が揃い、1食あたり612円とコスパ良好です。パパ用にはボリュームのあるハンバーグやチキン、ママ用にはたんぱく質豊富な魚メニュー、上の子用には辛くない煮物系と、家族それぞれのニーズに合わせてメニューを選び分けられます。アプリは片手操作に対応しているため、授乳中や抱っこ中でもメニュー選び・注文変更が可能です。初回1,500円・2回目1,000円・3回目500円OFFの割引で気軽に始められます。
+          noshが産後に最もおすすめな理由は「家族全員の食事を1つのサービスでカバーできる」ことです。20食プランなら夫婦で10日分の夕食が揃い、1食あたり612円とコスパ良好です。パパ用にはボリュームのあるハンバーグやチキン、ママ用にはたんぱく質豊富な魚メニュー、上の子用には辛くない煮物系と、家族それぞれのニーズに合わせてメニューを選び分けられます。アプリは片手操作に対応しているため、授乳中や抱っこ中でもメニュー選び・注文変更が可能です。1〜3回目に各1,000円OFF（総額3,000円OFF）の割引で気軽に始められます。
         </p>
 
         <SubHeading>三ツ星ファーム - 産後ママのご褒美食</SubHeading>
