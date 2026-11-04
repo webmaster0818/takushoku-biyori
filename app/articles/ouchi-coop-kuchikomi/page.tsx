@@ -3,9 +3,10 @@ import Link from "next/link";
 import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
-  "おうちコープ夕食宅配マイシィの口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
+  "おうちコープ「マイシィ」はまずい？口コミ・評判の中身と料金（1食740円〜）【2026年11月】";
 const ARTICLE_DESCRIPTION =
-  "おうちコープの夕食宅配「マイシィ」(神奈川・静岡・山梨)は「まずい」って本当？公式の利用者の声と公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。きらくコース1食税込740円〜の料金と配達料無料の仕組みも解説します。最新の料金は公式でご確認ください。【2026年10月更新】";
+  "おうちコープの夕食宅配「マイシィ」は「まずい」と断じる声は確認できず、不満の中心は薄味と魚料理でした。公式の塩分基準（1食約3.0〜4.5g）と3コースの料金（1食740円〜・配達料無料）、出資金や支払い条件も2026年11月に確認して整理しました。";
+const CHECKED = "2026年11月4日";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/ouchi-coop-kuchikomi/";
 
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
   title: ARTICLE_TITLE,
   description: ARTICLE_DESCRIPTION,
   keywords:
-    "おうちコープ 夕食宅配 口コミ, マイシィ 口コミ, マイシィ 評判, おうちコープ 弁当 まずい, おうちコープ 夕食宅配 料金, 生協 夕食宅配 神奈川, ユーコープ マイシィ",
+    "マイシィ, マイシィ まずい, マイシィ 口コミ, マイシィ 評判, マイシィ 値段, おうちコープ 夕食宅配 口コミ, おうちコープ 弁当 まずい, おうちコープ 夕食宅配 料金, 生協 夕食宅配 神奈川, ユーコープ マイシィ",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-09T00:00:00+09:00",
+    modifiedTime: "2026-11-04T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -33,27 +34,37 @@ const faqData = [
   {
     question: "おうちコープの夕食宅配「マイシィ」とは？",
     answer:
-      "生活協同組合ユーコープが神奈川・静岡・山梨で展開する夕食宅配サービスです。日替わりの夕食（弁当・おかず）を冷蔵で自宅まで届けてくれます。利用にはユーコープへの加入（出資金・脱退時返還）が必要です。コースは「にぎわい」「おかず」「きらく」の3種類です。",
+      "生活協同組合ユーコープが神奈川・静岡・山梨で展開する夕食宅配サービスです。日替わりの夕食（弁当・おかず）を冷蔵で自宅まで届けてくれます。利用にはユーコープへの加入が必要で、出資金は1口100円、加入時に500円（5口）です（脱退時に払い戻し）。コースは「にぎわい」「おかず」「きらく」の3種類です。",
   },
   {
     question: "マイシィの料金はいくら？",
     answer:
-      "2026年10月9日に公式サイトで確認した1食あたりの税込価格は、にぎわいコース898円（おかず7〜8種）・おかずコース785円（おかず6〜7種）・きらくコース740円（おかず5〜6種＋ご飯付き）です。2食以上の注文で1食20円引きになります。最新の価格は公式サイトでご確認ください。",
+      "2026年11月4日に公式サイトで確認した1食あたりの税込価格は、にぎわいコース898円（おかず7〜8種）・おかずコース785円（おかず6〜7種）・きらくコース740円（おかず5〜6種＋ご飯付き）です。2食以上の注文で1食20円引きになります。ごはんセットは1食140円、日替りサラダセットは1食156円の追加です。最新の価格は公式サイトでご確認ください。",
   },
   {
     question: "マイシィの配達料はかかる？",
     answer:
-      "夕食宅配マイシィは「配達料無料」と公式に明記されています（2026年10月9日確認）。なお、通常の週1回宅配「おうちコープ」は別体系で、神奈川県の場合は週110〜198円（利用額により変動・14,000円以上で0円、子育て割0円など減免あり）です。",
+      "夕食宅配マイシィは「配達料無料」と公式に明記されています（2026年11月4日確認）。なお、通常の週1回宅配「おうちコープ」は別体系で、神奈川県の場合は週110〜198円（利用額により変動・14,000円以上で0円、子育て割0円など減免あり・2026年10月9日確認）です。",
   },
   {
     question: "おうちコープのおためしはある？",
     answer:
-      "夕食宅配とは別に、神奈川・静岡・山梨在住の未利用者限定で「おためしワンコイン！時短料理」セット（6品・約2,000円相当が税込500円・1世帯1回限り）が提供されています（2026年10月9日確認）。マイシィ自体は週3回または週5回の利用が条件で、1回のみのおためし注文はできません。変更・キャンセルの連絡がない限り毎週自動継続され、コース・数量の変更やキャンセルは前週の水曜日20時までに連絡が必要です（公式FAQ・ご利用案内で2026年10月9日確認）。",
+      "夕食宅配とは別に、神奈川・静岡・山梨在住の未利用者限定で「おためしワンコイン！時短料理」セット（6品・約2,000円相当が税込500円・1世帯1回限り）が提供されています（2026年10月9日確認）。マイシィ自体は週3回または週5回の利用が条件で、1回のみのおためし注文はできません。変更・キャンセルの連絡がない限り毎週自動継続され、コース・数量の変更やキャンセルは前週の水曜日20時までに連絡が必要です（マイシィの条件は公式FAQ・ご利用案内で2026年11月4日確認）。",
   },
   {
     question: "マイシィはまずい？味の評判は？",
     answer:
-      "公開レビューを調査した範囲では「まずい」と断じる声は確認できず、「味付けが工夫されていて飽きない」「品数が多くヘルシー」という好意的な評価が中心でした。一方で「かなりの薄味だった」（春雨サラダ）「魚だけはイマイチ」という率直な指摘もあり、薄味設計が合うかどうかで評価が分かれます。",
+      "確認できた公開レビューの範囲では「まずい」と断じる声は見つかりませんでした。「味付けが工夫されていて飽きない」という評価がある一方、「想像したよりも、かなり薄味でした」（春雨サラダ）「魚だけは、イマイチかな」という指摘もあります。公式の基準塩分は週平均で1食約3.0〜4.5gで、減塩食は用意していないと公式FAQに記載されています。",
+  },
+  {
+    question: "マイシィの支払い方法は？",
+    answer:
+      "口座引き落としのみで、現金やクレジットカードは使えません。毎月第2金曜日に前月分が引き落とされます。ポイントサービスはありません（2026年11月4日 公式FAQ確認）。",
+  },
+  {
+    question: "マイシィは何時に届く？当日中に食べる必要はある？",
+    answer:
+      "配達は11〜18時で、時間の指定はできません。祝祭日も配達しますが、土日は休みです。受け取り後は冷蔵庫で保管し、お届け当日の22時までに食べる必要があります（2026年11月4日 公式FAQ確認）。",
   },
 ];
 
@@ -266,13 +277,13 @@ const goodReviewCategories: {
       },
       {
         text: "７～８品目のおかずの味付けが工夫されていて飽きない",
-        meta: "管理栄養士による実食レビュー",
+        meta: "管理栄養士の利用体験・2020年5月掲載",
         sourceName: "食材宅配ナビ",
         sourceUrl: "https://syokutaku-navi.com/maici/",
       },
       {
         text: "黒胡椒がピリッと効いていて、美味しいです。",
-        meta: "実食レビュー",
+        meta: "実食レビュー・2025年6月更新の記事",
         sourceName: "宅食まにあ",
         sourceUrl: "https://home-gohan.net/maici/",
       },
@@ -295,20 +306,20 @@ const badReviewCategories: {
         sourceUrl: "https://shoku.zenhp.co.jp/maisii.html",
       },
       {
-        text: "かなりの薄味でした。",
+        text: "想像したよりも、かなり薄味でした。",
         meta: "春雨サラダについての実食レビュー",
         sourceName: "宅食まにあ",
         sourceUrl: "https://home-gohan.net/maici/",
       },
       {
         text: "ドレッシングが付いていないのは、少し残念でしたね。",
-        meta: "実食レビュー",
+        meta: "実食レビュー・2025年6月更新の記事",
         sourceName: "宅食まにあ",
         sourceUrl: "https://home-gohan.net/maici/",
       },
     ],
     comment:
-      "マイシィは高齢者を含む幅広い世代向けの薄味・家庭的な献立設計です。「味付けが工夫されていて飽きない」という評価と「かなりの薄味」という指摘が併存しており、メニューや個人の好みによる差があります。濃い味に慣れている人は、物足りなさを感じる可能性を織り込んでおきましょう。",
+      "「味付けが工夫されていて飽きない」という評価と「かなり薄味」という指摘が併存しており、メニューや個人の好みによる差があります。同じレビューには別のメニューを「味が濃い中華味」と書いた箇所もあります。濃い味に慣れている人は、薄く感じる可能性があります。",
   },
 ];
 
@@ -322,7 +333,7 @@ export default function OuchiCoopKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-10-09T00:00:00+09:00",
+    dateModified: "2026-11-04T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -396,7 +407,7 @@ export default function OuchiCoopKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
-            <time dateTime="2026-10-09">更新: 2026年10月9日（公式で再確認）</time>
+            <time dateTime="2026-11-04">更新: {CHECKED}（公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -411,16 +422,72 @@ export default function OuchiCoopKuchikomiPage() {
         </header>
         </div>{/* /subhead */}
 
+        {/* 「まずい」への答え＋料金早見表（11/4 追加） */}
+        <section className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-2">結論：「まずい」と断じる声は確認できませんでした。不満の中心は薄味と魚料理です</p>
+          <p className="text-sm leading-relaxed mb-4">
+            マイシィは、生協ユーコープが<strong>神奈川・静岡・山梨</strong>で展開する夕食宅配です。確認できた公開レビューの否定的な声は次のとおりで、味全体を否定するものではありませんでした。
+          </p>
+          <div className="table-wrapper mb-4">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-accent/10">
+                  <th className="border border-warm-border px-3 py-2 text-left whitespace-nowrap">言われること</th>
+                  <th className="border border-warm-border px-3 py-2 text-left">実際の声</th>
+                  <th className="border border-warm-border px-3 py-2 text-left">公式の情報・選び方</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-warm-border px-3 py-2 font-medium whitespace-nowrap">薄味</td>
+                  <td className="border border-warm-border px-3 py-2">「想像したよりも、かなり薄味でした。」（春雨サラダ）</td>
+                  <td className="border border-warm-border px-3 py-2">基準塩分はきらく約3.0g・おかず約4.0g・にぎわい約4.5g（週平均・1食）。減塩食は用意していないと公式FAQに記載があります</td>
+                </tr>
+                <tr>
+                  <td className="border border-warm-border px-3 py-2 font-medium whitespace-nowrap">魚が合わない</td>
+                  <td className="border border-warm-border px-3 py-2">「ただ唯一魚だけは、イマイチかなという思いがしました」</td>
+                  <td className="border border-warm-border px-3 py-2">献立は各コース1種類の日替りで選べません。公式サイトの献立表（2週間分）で事前に確認できます</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="font-bold text-sm mb-2">料金の早見表（1食・税込・配達料無料）</p>
+          <div className="table-wrapper mb-3">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-accent/10">
+                  {["コース", "1食", "2食以上の1食", "週5回の週額（1食ずつ）", "おかず", "基準カロリー"].map((h) => (
+                    <th key={h} className="border border-warm-border px-3 py-2 text-left whitespace-nowrap">{h}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["にぎわい", "898円", "878円", "4,490円", "7〜8種", "約550kcal"],
+                  ["おかず", "785円", "765円", "3,925円", "6〜7種", "約450kcal"],
+                  ["きらく", "740円", "720円", "3,700円", "5〜6種＋ごはん約150g", "約550kcal"],
+                ].map((row) => (
+                  <tr key={row[0]}>
+                    {row.map((cell, j) => (
+                      <td key={j} className={`border border-warm-border px-3 py-2 ${j < 2 ? "font-bold whitespace-nowrap" : ""}`}>{cell}</td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-sm leading-relaxed mb-2">
+            追加はごはんセット1食140円（約180g・きらくは対象外）、日替りサラダセット1食156円です。週3回または週5回の利用で、加入時に出資金500円（脱退時に払い戻し）が必要です。
+          </p>
+          <p className="text-xs text-warm-gray">
+            ※出典: <a href="https://www.maici.coop/course/" target="_blank" rel="noopener noreferrer" className="underline">マイシィ公式 コース紹介</a>・<a href="https://www.maici.coop/faq/" target="_blank" rel="noopener noreferrer" className="underline">よくあるご質問</a>（{CHECKED}確認）。2食以上の1食・週額は公式の価格からの計算です。カロリー・塩分は献立企画時の計算値で、週平均の目安です。公式は<a href="https://www.maici.coop/news/4511/" target="_blank" rel="noopener noreferrer" className="underline">2025年5月19日に価格を改定</a>しており、他サイトには改定前の価格が残っている場合があります。口コミの出典は下の各節に示しています。
+          </p>
+        </section>
+
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
-          <p className="mb-3">
-            「おうちコープの夕食宅配って実際どうなの？」「マイシィはまずいって本当？」——マイシィは、生協ユーコープが<strong>神奈川・静岡・山梨</strong>で展開する夕食宅配サービス。日替わりの夕食を<strong>配達料無料</strong>で自宅まで届けてくれます。
-          </p>
-          <p className="mb-3">
-            この記事では、<strong>公式サイトの利用者の声と、公開されている第三者レビューを出典付きで整理</strong>し、良い口コミ・悪い口コミの両方を中立に検証します。「まずい」と言われる理由についても解説します。
-          </p>
           <p>
-            さらに、<strong>3コースの料金（1食税込740円〜）・配達料無料の仕組み・おためし情報</strong>まで、2026年10月9日に公式サイトで確認した情報をもとに解説します。
+            この記事では、<strong>公式サイトの利用者の声と、公開されている第三者レビューを出典付きで整理</strong>しています。料金・配達・支払いの条件は{CHECKED}に公式サイトで確認しました。
           </p>
         </div>
 
@@ -428,7 +495,7 @@ export default function OuchiCoopKuchikomiPage() {
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
           <p className="font-bold text-base mb-3">マイシィが向いている方</p>
           <p className="text-sm leading-relaxed mb-4">
-            マイシィは、<strong>「神奈川・静岡・山梨で、冷蔵の夕食を配達料なしで平日（週5日または週3日）届けてほしい人」</strong>に向いたサービスです。口コミでは「品数が多くヘルシー」「味付けが工夫されていて飽きない」という評価が目立つ一方、薄味・魚メニューの好みなどの指摘もあります。「まずい」と断じる声は調査した範囲では確認できませんでした（<a href="#mazui" className="text-accent underline">検証セクションへ</a>）。
+            マイシィは、<strong>「神奈川・静岡・山梨で、冷蔵の夕食を配達料なしで平日（週5日または週3日）届けてほしい人」</strong>に向いたサービスです。口コミでは「品数が多くヘルシー」「味付けが工夫されていて飽きない」という評価が目立つ一方、薄味・魚メニューの好みなどの指摘もあります（<a href="#mazui" className="text-accent underline">検証セクションへ</a>）。
           </p>
           <div className="grid md:grid-cols-2 gap-4 mb-4 text-sm">
             <div className="bg-cream rounded-lg p-3">
@@ -443,8 +510,8 @@ export default function OuchiCoopKuchikomiPage() {
               <p className="font-bold text-warm-gray mb-2">△ 注意したい点</p>
               <ul className="space-y-1 list-disc list-inside">
                 <li>エリアが神奈川・静岡・山梨のみ</li>
-                <li>薄味設計で濃い味好みには物足りない場合も</li>
-                <li>生協（ユーコープ）への加入が必要</li>
+                <li>メニューによって薄味と感じる声がある</li>
+                <li>生協（ユーコープ）への加入と口座引き落としが必要</li>
               </ul>
             </div>
           </div>
@@ -469,7 +536,7 @@ export default function OuchiCoopKuchikomiPage() {
         <ServiceCapture id="maici" />{/* svc-cap-202610 */}
 
         <p className="text-sm mb-6 leading-relaxed">
-          マイシィ（Maici）は、生活協同組合ユーコープが運営する<strong>夕食宅配サービス</strong>です。おうちコープ（週1回の食材宅配）と同じユーコープのサービスですが、マイシィは<strong>日替わりの夕食（おかず・弁当）を冷蔵で平日（週5日または週3日）届ける</strong>のが特徴。神奈川・静岡・山梨の3県で展開されており、利用にはユーコープへの加入（出資金・脱退時返還）が必要です。
+          マイシィ（Maici）は、生活協同組合ユーコープが運営する<strong>夕食宅配サービス</strong>です。おうちコープ（週1回の食材宅配）と同じユーコープのサービスですが、マイシィは<strong>日替わりの夕食（おかず・弁当）を冷蔵で平日（週5日または週3日）届ける</strong>のが特徴。神奈川・静岡・山梨の3県で展開されており、利用にはユーコープへの加入（出資金1口100円・加入時500円・脱退時に払い戻し）が必要です。
         </p>
 
         <SubHeading>基本スペック</SubHeading>
@@ -481,22 +548,22 @@ export default function OuchiCoopKuchikomiPage() {
             ["エリア", "神奈川県・静岡県・山梨県"],
             ["お届け", "日替わりの夕食を冷蔵で配達（不在時は保冷ボックス等で対応）"],
             ["配達料", "無料"],
-            ["利用条件", "ユーコープへの加入（出資金・脱退時返還）"],
+            ["利用条件", "ユーコープへの加入（出資金1口100円・加入時500円・脱退時に払い戻し）"],
             ["割引", "2食以上の注文で1食20円引き"],
             ["献立", "日替わり（メニュー選択は不可）"],
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: マイシィ公式サイト・おうちコープ公式サイト（2026年10月9日確認）。最新情報は公式サイトでご確認ください。
+          ※出典: マイシィ公式サイト（{CHECKED}確認）。最新情報は公式サイトでご確認ください。
         </p>
 
-        <SubHeading>コース一覧（1食あたり税込・2026年10月9日確認）</SubHeading>
+        <SubHeading>コース一覧（1食あたり税込・{CHECKED}確認）</SubHeading>
         <ComparisonTable
-          headers={["コース", "1食あたり（税込）", "内容"]}
+          headers={["コース", "1食あたり（税込）", "内容", "基準塩分（週平均）"]}
           rows={[
-            ["にぎわいコース", "898円", "おかず7〜8種の充実コース"],
-            ["おかずコース", "785円", "おかず6〜7種の定番コース"],
-            ["きらくコース", "740円", "おかず5〜6種＋ご飯付き"],
+            ["にぎわいコース", "898円", "おかず7〜8種", "約4.5g"],
+            ["おかずコース", "785円", "おかず6〜7種", "約4.0g"],
+            ["きらくコース", "740円", "おかず5〜6種＋ごはん約150g", "約3.0g"],
           ]}
         />
         <p className="text-sm mb-2 leading-relaxed">
@@ -507,7 +574,7 @@ export default function OuchiCoopKuchikomiPage() {
           で比較できます。
         </p>
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: マイシィ公式サイト（2026年10月9日確認）。
+          ※出典: マイシィ公式サイト（{CHECKED}確認）。
         </p>
 
         {/* ===== 良い口コミ ===== */}
@@ -557,15 +624,15 @@ export default function OuchiCoopKuchikomiPage() {
         <SectionHeading id="mazui">マイシィはまずい？味の評判を検証</SectionHeading>
 
         <p className="text-sm mb-4 leading-relaxed">
-          「おうちコープ 弁当 まずい」「マイシィ まずい」と検索されることがあります。編集部が取得できた公開レビューの範囲では、<strong>マイシィを「まずい」と断じる引用は確認できませんでした</strong>。実際に見つかった否定的評価は次の2系統です。
+          「おうちコープ 弁当 まずい」「マイシィ まずい」と検索されることがあります。編集部が確認できた公開レビューの範囲では、<strong>マイシィを「まずい」と断じる引用は確認できませんでした</strong>。実際に見つかった否定的評価は次の2系統です。
         </p>
 
         <SubHeading>否定的評価の実体は「薄味」と「魚メニューの好み」</SubHeading>
         <div className="space-y-3 mb-6">
           <div className="bg-red-50 rounded-lg p-4 text-sm leading-relaxed">
-            <p className="font-bold mb-1">1. 薄味設計が物足りなく感じられる</p>
+            <p className="font-bold mb-1">1. メニューによって薄味と感じられる</p>
             <p className="mb-1.5">
-              実食レビューでは春雨サラダについて「かなりの薄味でした。」という率直な指摘があります。幅広い世代向けの<strong>塩分・健康配慮の薄味設計</strong>のため、濃い味に慣れた人は最初は物足りなく感じる可能性があります。同じレビュアーは別メニューについて「黒胡椒がピリッと効いていて、美味しいです。」とも書いており、メニューによる差があるのが実態です。
+              実食レビューでは春雨サラダについて「想像したよりも、かなり薄味でした。」という指摘があります。ただし公式の基準塩分は週平均で1食約3.0〜4.5gで、<strong>減塩食は用意していないと公式FAQに記載があります</strong>。同じレビュアーは別メニューについて「黒胡椒がピリッと効いていて、美味しいです。」とも書いており、メニューによる差があるのが実態です。
             </p>
             <p className="text-xs text-warm-gray">
               出典:{" "}
@@ -582,7 +649,7 @@ export default function OuchiCoopKuchikomiPage() {
           <div className="bg-red-50 rounded-lg p-4 text-sm leading-relaxed">
             <p className="font-bold mb-1">2. 全体は「普通に美味しい」で、魚メニューに好みが分かれる</p>
             <p className="mb-1.5">
-              利用者口コミには「味は可もなく不可もなく、普通に美味しいというのが正直な感想です。ただ唯一魚だけは、イマイチかなという思いがしました」という声があります。<strong>全体評価は「普通に美味しい」で、特定ジャンル（魚）に好みの差が出る</strong>という、日替わり型宅配食に典型的なパターンです。
+              利用者口コミには「味は可もなく不可もなく、普通に美味しいというのが正直な感想です。ただ唯一魚だけは、イマイチかなという思いがしました」という声があります。<strong>全体の評価は「普通に美味しい」で、魚に不満が向いています</strong>。同じページには、横浜市在住の利用者が「味付けは高齢者向けで薄味」と感じたという紹介もあります。
             </p>
             <p className="text-xs text-warm-gray">
               出典:{" "}
@@ -599,9 +666,9 @@ export default function OuchiCoopKuchikomiPage() {
         </div>
 
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
-          <p className="font-bold mb-1">編集部の見解：「まずい」という強い酷評は確認できませんでした。薄味への好みが評価の分かれ目</p>
+          <p className="font-bold mb-1">編集部の見解：「まずい」という強い酷評は確認できませんでした。薄味と感じるかどうかが評価の分かれ目</p>
           <p>
-            管理栄養士の実食レビューが「７～８品目のおかずの味付けが工夫されていて飽きない」と評価する通り、品数と味付けの工夫はマイシィの強みです。一方で薄味・家庭的な献立という性格上、外食系の濃い味を求める人には合いません。冷蔵で毎日届く形式は味の劣化が少なく、「冷凍弁当の食感が苦手」な人にはむしろ有力な選択肢です。
+            管理栄養士の実食レビューが「７～８品目のおかずの味付けが工夫されていて飽きない」と評価する通り、品数と味付けの工夫を評価する声があります。一方で、「コンビニや外食に比べて薄味」という同じ筆者の記述もあり、濃い味を求める人には合わない場合があります。調理後に急速冷却して保冷で届く方式で冷凍ではないため、冷凍弁当の解凍が苦手な人の候補になります。なお、確認できたレビューの多くは2020〜2025年の掲載で、みん評のマイシィの口コミは閲覧できず確認に含めていません。
           </p>
         </div>
 
@@ -610,7 +677,7 @@ export default function OuchiCoopKuchikomiPage() {
 
         <SubHeading>かかる費用は「商品代のみ」</SubHeading>
         <p className="text-sm mb-2 leading-relaxed">
-          マイシィは<strong>配達料無料</strong>と公式に明記されているため（2026年10月9日確認）、支払いは商品代のみです。きらくコース（740円・ご飯付き）を週5日×4週利用した場合の月額目安は約14,800円です。2食以上の注文なら1食20円引きが毎回効きます。
+          マイシィは<strong>配達料無料</strong>と公式に明記されているため（{CHECKED}確認）、支払いは商品代のみです。きらくコース（740円・ご飯付き）を週5日×4週利用した場合の月額目安は約14,800円です。2食以上の注文なら1食20円引きが毎回効きます。
         </p>
         <p className="text-xs text-warm-gray mb-6">
           ※参考: 週1回宅配の「おうちコープ」は別体系です（神奈川県の宅配サービス料は週110円〜198円・利用額による減免、子育て割0円等あり）。マイシィのみの利用なら配達料はかかりません。
@@ -620,15 +687,18 @@ export default function OuchiCoopKuchikomiPage() {
         <ComparisonTable
           headers={["項目", "内容"]}
           rows={[
-            ["加入", "ユーコープへの加入が必要（出資金・脱退時返還）"],
+            ["加入", "ユーコープへの加入が必要（出資金1口100円・加入時500円・脱退時に払い戻し）。電話申込は不可で、スタッフが自宅を訪問して手続きし、利用開始まで2週間程度"],
             ["対象", "神奈川・静岡・山梨在住の組合員"],
             ["おためし", "「おためしワンコイン！時短料理」6品・税込500円（1世帯1回・未利用者限定）※夕食宅配とは別商品"],
             ["利用回数", "週5回（月〜金）または週3回。1回のみのおためし注文は不可。土日・年末年始・GW・お盆は配達休み"],
             ["休止・解約", "連絡がない限り毎週自動継続。コース・数量変更やキャンセルは前週の水曜日20時までに連絡（期日後のキャンセルは返金不可）"],
+            ["配達", "11〜18時（時間指定不可）。祝祭日も配達。不在時は保冷箱で指定の場所に置き配。お届け当日の22時までに食べる"],
+            ["支払い", "口座引き落としのみ（毎月第2金曜日に前月分）。現金・クレジットカード不可。ポイントサービスなし"],
+            ["アレルギー", "献立表に表示あり。個別対応はなし"],
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: マイシィ公式サイト「ご利用案内」「ご利用の流れ」「よくある質問」・おうちコープ公式サイト（2026年10月9日確認）。条件は変更される場合があるため、加入前に公式サイトでご確認ください。
+          ※出典: マイシィ公式サイト「コース紹介」「ご利用中の方へ」「よくある質問」（{CHECKED}確認）。おためしは、おうちコープ公式サイト（2026年10月9日確認）。条件は変更される場合があるため、加入前に公式サイトでご確認ください。
         </p>
 
         {/* ===== メリット ===== */}
@@ -643,7 +713,7 @@ export default function OuchiCoopKuchikomiPage() {
           {
             num: 2,
             title: "配達料無料で1食740円〜・2食以上で割引",
-            text: "平日に届けてもらえるのに配達料は無料です。にぎわい898円・おかず785円・きらく740円（税込・2026年10月9日確認）で、2食以上なら1食20円引きです。冷蔵の毎日配達型としては手頃な水準です。",
+            text: "平日に届けてもらえるのに配達料は無料です。にぎわい898円・おかず785円・きらく740円（税込・2026年11月4日確認）で、2食以上なら1食20円引きです。",
           },
           {
             num: 3,
@@ -683,8 +753,8 @@ export default function OuchiCoopKuchikomiPage() {
           },
           {
             num: 3,
-            title: "薄味設計が合わない人もいる",
-            text: "「かなりの薄味でした」という実食の指摘の通り、健康配慮の薄味が物足りない人もいます。濃い味重視ならnoshのような選択型冷凍弁当の方が満足度が高いでしょう。",
+            title: "薄味と感じる人もいる",
+            text: "「想像したよりも、かなり薄味でした」という実食の指摘があります。献立は選べないため、メニューを自分で選びたい人にはnoshのような選択型の冷凍弁当が候補になります。",
           },
         ].map((demerit) => (
           <div key={demerit.num} className="flex gap-4 mb-5">
@@ -749,10 +819,10 @@ export default function OuchiCoopKuchikomiPage() {
 
         <div className="bg-cream rounded-xl p-6 mb-8">
           <p className="text-sm leading-relaxed mb-4">
-            おうちコープの夕食宅配マイシィは、<strong>「冷蔵×平日配達×配達料無料」</strong>を神奈川・静岡・山梨で提供する、生協ならではの夕食宅配です。口コミでは品数の多さ・栄養バランス・「飽きない味付け」への評価が目立ち、「まずい」と断じる声は調査した範囲では確認できませんでした。
+            おうちコープの夕食宅配マイシィは、<strong>「冷蔵×平日配達×配達料無料」</strong>を神奈川・静岡・山梨で提供する、生協ならではの夕食宅配です。口コミでは品数の多さ・栄養バランス・「飽きない味付け」への評価が目立ち、「まずい」と断じる声は確認できた範囲では見つかりませんでした。
           </p>
           <p className="text-sm leading-relaxed mb-4">
-            否定的評価の実体は薄味への好みと魚メニューの当たり外れで、健康配慮設計とのトレードオフです。<strong>エリア限定・生協加入・メニュー選択不可という条件</strong>は事前に理解しておきましょう。
+            確認できた否定的な評価の中心は、薄味と感じる点と魚メニューへの好みです。<strong>エリア限定・生協加入・メニュー選択不可という条件</strong>は事前に理解しておきましょう。
           </p>
           <p className="text-sm leading-relaxed">
             エリア内にお住まいなら、公式サイトでコースと配達可否を確認し、まずは少ない日数から試して生活リズムに合うか確かめるのがおすすめです。
