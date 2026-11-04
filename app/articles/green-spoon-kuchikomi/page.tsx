@@ -244,7 +244,7 @@ const goodReviewCategories: {
     reviews: [
       {
         text: "ゴロゴロとたっぷり入った野菜がとてもうれしいです。食べ応えがあり、メインのおかずとしてしっかりと活躍しました。",
-        meta: "編集部実食レビュー",
+        meta: "OZmall編集部の実食レビュー",
         sourceName: "OZmall",
         sourceUrl: "https://www.ozmall.co.jp/healthcare/food/article/40172/",
       },
@@ -279,7 +279,7 @@ const goodReviewCategories: {
       },
       {
         text: "おしゃれなパッケージで、冷凍庫を開けるたびに「今日はどれにしようかな」と気分が盛り上がります。",
-        meta: "編集部実食レビュー",
+        meta: "OZmall編集部の実食レビュー",
         sourceName: "OZmall",
         sourceUrl: "https://www.ozmall.co.jp/healthcare/food/article/40172/",
       },
@@ -297,7 +297,7 @@ const badReviewCategories: {
     reviews: [
       {
         text: "割引率が最も高い20食プランでも、1食あたりの通常価格は811円。（略）金額重視の人にはミスマッチ。",
-        meta: "編集部実食レビュー",
+        meta: "OZmall編集部の実食レビュー",
         sourceName: "OZmall",
         sourceUrl: "https://www.ozmall.co.jp/healthcare/food/article/40172/",
       },
@@ -316,7 +316,7 @@ const badReviewCategories: {
     reviews: [
       {
         text: "1食あたりの量が200～250g程度と控えめ。食べ盛りの10代やガッツリ食べたい人には物足りないと感じられる可能性が。",
-        meta: "編集部実食レビュー",
+        meta: "OZmall編集部の実食レビュー",
         sourceName: "OZmall",
         sourceUrl: "https://www.ozmall.co.jp/healthcare/food/article/40172/",
       },
