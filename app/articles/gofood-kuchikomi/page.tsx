@@ -266,7 +266,7 @@ const goodReviewCategories: {
     reviews: [
       {
         text: "ご飯が進む味で箸が止まらない",
-        meta: "鶏チンジャオロースへの筆者実食評",
+        meta: "鶏チンジャオロースへの大豆ミートラボ筆者の実食評",
         sourceName: "大豆ミートラボ",
         sourceUrl: "https://soymeat-lab.com/gofood-review/",
       },
@@ -671,7 +671,7 @@ export default function GofoodKuchikomiPage() {
           <SourcedReview
             review={{
               text: "ご飯が進む味で箸が止まらない",
-              meta: "鶏チンジャオロースへの筆者実食評",
+              meta: "鶏チンジャオロースへの大豆ミートラボ筆者の実食評",
               sourceName: "大豆ミートラボ",
               sourceUrl: "https://soymeat-lab.com/gofood-review/",
             }}

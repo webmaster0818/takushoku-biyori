@@ -274,7 +274,7 @@ export default function WatamiReviewsPage() {
           {
             title: "味が美味しい・やさしい味付け",
             reviews: [
-              { text: "出汁が染みていて美味しかったです", meta: "編集部が「まごころおかず」5食を実食したレビュー", sourceName: "HonNe（EXIDEA運営）", sourceUrl: "https://exidea.co.jp/blog/meal/home-meal/watami-takushoku/" },
+              { text: "出汁が染みていて美味しかったです", meta: "HonNe編集部が「まごころおかず」5食を実食したレビュー", sourceName: "HonNe（EXIDEA運営）", sourceUrl: "https://exidea.co.jp/blog/meal/home-meal/watami-takushoku/" },
               { text: "塩分控えめなのに味はしっかり付いてて夫『美味しいよ〜』", meta: "記事内掲載のSNS投稿", sourceName: "HonNe（EXIDEA運営）", sourceUrl: "https://exidea.co.jp/blog/meal/home-meal/watami-takushoku/" },
               { text: "お試しでワタミの宅食頼んでみたけど、すっごく美味しい", meta: "記事内掲載のSNS投稿", sourceName: "HonNe（EXIDEA運営）", sourceUrl: "https://exidea.co.jp/blog/meal/home-meal/watami-takushoku/" },
             ] as SourcedReviewItem[],

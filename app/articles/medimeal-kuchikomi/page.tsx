@@ -614,7 +614,7 @@ export default function MedimealKuchikomiPage() {
           <SourcedReview
             review={{
               text: "制限食というのを忘れるくらい味付けがしっかり",
-              meta: "編集部の実食感想",
+              meta: "スマートフードナビの記事筆者の実食感想",
               sourceName: "スマートフードナビ",
               sourceUrl:
                 "https://smart-food-navi.jp/food-delivery/medimeal-testing-review/",

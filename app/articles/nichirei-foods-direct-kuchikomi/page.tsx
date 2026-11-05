@@ -267,13 +267,13 @@ const goodReviewCategories: {
     reviews: [
       {
         text: "この食べ応えで232Kcal、食塩相当量1.9gとは本当におどろきです",
-        meta: "編集部実食レビュー",
+        meta: "OZmall編集部の実食レビュー",
         sourceName: "OZmall",
         sourceUrl: "https://www.ozmall.co.jp/healthcare/food/article/40185/",
       },
       {
         text: "銀鮭はしっとり柔らかく、魚本来の甘みをしっかりと感じられます",
-        meta: "編集部実食レビュー",
+        meta: "OZmall編集部の実食レビュー",
         sourceName: "OZmall",
         sourceUrl: "https://www.ozmall.co.jp/healthcare/food/article/40185/",
       },
@@ -329,7 +329,7 @@ const badReviewCategories: {
     reviews: [
       {
         text: "お肉感の少なさが残念でした",
-        meta: "鶏からあげへの編集部実食レビュー",
+        meta: "鶏からあげへのOZmall編集部の実食レビュー",
         sourceName: "OZmall",
         sourceUrl: "https://www.ozmall.co.jp/healthcare/food/article/40185/",
       },
@@ -627,7 +627,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
           <div className="bg-red-50 rounded-lg p-4 text-sm leading-relaxed">
             <p className="font-bold mb-1">2. ボリュームは「腹七分目」程度</p>
             <p className="mb-1.5">
-              実食検証を行った宅食グルメ（Appliv）は、ボリュームを「『腹七分目』程度」と評価しています。おかずのみで300kcal以下の設計なので、<strong>一般食の感覚で食べると量の物足りなさが不満につながりやすい</strong>構図です。同記事の編集部実食判定では「『まずい』『美味しくない』と感じた料理はひとつもありません」と、味自体は高評価でした。
+              実食検証を行った宅食グルメ（Appliv）は、ボリュームを「『腹七分目』程度」と評価しています。おかずのみで300kcal以下の設計なので、<strong>一般食の感覚で食べると量の物足りなさが不満につながりやすい</strong>構図です。同記事（宅食グルメ）の実食判定では「『まずい』『美味しくない』と感じた料理はひとつもありません」と、味自体は高評価でした。
             </p>
             <p className="text-xs text-warm-gray">
               出典:{" "}

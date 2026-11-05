@@ -271,7 +271,7 @@ const goodReviewCategories: {
       },
       {
         text: "ご飯もお肉もしっかり食べられて、お腹いっぱいになり、大満足でした",
-        meta: "筆者実食レビュー",
+        meta: "食事宅配サービス比較サイト（shokuji-takuhai.com）の記事筆者の実食レビュー",
         sourceName: "食事宅配",
         sourceUrl: "https://shokuji-takuhai.com/dietician-review/",
       },
@@ -590,7 +590,7 @@ export default function DieticianKuchikomiPage() {
           <SourcedReview
             review={{
               text: "ご飯もお肉もしっかり食べられて、お腹いっぱいになり、大満足でした",
-              meta: "筆者実食レビュー",
+              meta: "食事宅配サービス比較サイト（shokuji-takuhai.com）の記事筆者の実食レビュー",
               sourceName: "食事宅配",
               sourceUrl: "https://shokuji-takuhai.com/dietician-review/",
             }}

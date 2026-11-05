@@ -177,8 +177,8 @@ const goodReviewCategories: {
       },
       {
         text: "しっかりとした味付けで、とっても美味しかったです。ご飯がすすむお味でした。",
-        meta: "編集長のお試しセット実食レビュー",
-        sourceName: "食卓リスト",
+        meta: "宅食リスト編集長のお試しセット実食レビュー",
+        sourceName: "宅食リスト",
         sourceUrl: "https://takusyokulist.com/wanmairu-review/",
       },
       {
@@ -194,7 +194,7 @@ const goodReviewCategories: {
     reviews: [
       {
         text: "鮭はパサついておらずホロホロとしていて、冷凍ではなかなか食べられない食感だと思いました",
-        meta: "編集部実食レビュー・湯煎解凍の仕上がり評",
+        meta: "宅食グルメ編集部の実食レビュー・湯煎解凍の仕上がり評",
         sourceName: "宅食グルメ（Appliv）",
         sourceUrl: "https://meal.app-liv.jp/archive/140336/",
       },
@@ -249,8 +249,8 @@ const badReviewCategories: {
       },
       {
         text: "電子レンジでチンするだけの冷凍宅配弁当と比較すると、どうしても致し方ない部分です。",
-        meta: "編集長・湯煎と後片付けの手間について",
-        sourceName: "食卓リスト",
+        meta: "宅食リスト編集長・湯煎と後片付けの手間について",
+        sourceName: "宅食リスト",
         sourceUrl: "https://takusyokulist.com/wanmairu-review/",
       },
     ],
@@ -413,8 +413,8 @@ export default function WanmairuReviewsPage() {
           <SourcedReview
             review={{
               text: "『まずい』だなんて、そんなことは決してありません！",
-              meta: "編集長の実食による検証結論",
-              sourceName: "食卓リスト",
+              meta: "宅食リスト編集長の実食による検証結論",
+              sourceName: "宅食リスト",
               sourceUrl: "https://takusyokulist.com/wanmairu-review/",
             }}
             tone="good"
