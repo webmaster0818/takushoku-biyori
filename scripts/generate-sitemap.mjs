@@ -35,6 +35,23 @@ const FILE_DATES = (() => {
   return m
 })()
 
+// ⚠️ lastmod を過去に戻さない（2026-11-05）。未コミットの状態で生成した日付（当日）を sitemap ごとコミットし、
+//    ページ側を [no-lastmod] でコミットすると、次の prebuild でページの最終コミット日に戻っていた（11/3→11/2 等）。
+//    HEAD の sitemap の日付を下限にする。作業ツリーの sitemap は見ない（試しビルドの当日付を固定しないため）。
+const COMMITTED = (() => {
+  const m = new Map()
+  try {
+    const xml = execFileSync('git', ['show', 'HEAD:public/sitemap.xml'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28, stdio: ['ignore', 'pipe', 'ignore'] })
+    for (const [, loc, d] of xml.matchAll(/<loc>([^<]+)<\/loc><lastmod>(\d{4}-\d{2}-\d{2})<\/lastmod>/g)) if (d <= TODAY) m.set(loc, d)
+  } catch { /* HEAD に sitemap が無いときは下限なし */ }
+  return m
+})()
+
+function notBeforeCommitted(url, lastmod) {
+  const committed = COMMITTED.get(url)
+  return committed && committed > lastmod ? committed : lastmod
+}
+
 function lastmodOf(dir, pageFile) {
   const rels = [dir]
   try {
@@ -96,7 +113,7 @@ function build() {
     const isTop = p.path === '/'
     const dir = isTop ? 'app/page.tsx' : `app${p.path.replace(/\/$/, '')}`
     const own = isTop ? lastmodOf(dir, dir) : lastmodOf(dir, `${dir}/page.tsx`)
-    const lastmod = (isTop || p.path === '/articles/') && newestArticle > own ? newestArticle : own
+    const lastmod = notBeforeCommitted(`${BASE}${p.path}`, (isTop || p.path === '/articles/') && newestArticle > own ? newestArticle : own)
     lines.push(
       `  <url><loc>${BASE}${p.path}</loc><lastmod>${lastmod}</lastmod><changefreq>${p.changefreq}</changefreq><priority>${p.priority}</priority></url>`
     )
@@ -106,7 +123,7 @@ function build() {
     const p = priorityFor(slug)
     const cf = p >= '0.8' ? 'weekly' : 'monthly'
     lines.push(
-      `  <url><loc>${BASE}/articles/${slug}/</loc><lastmod>${articleDates.get(slug)}</lastmod><changefreq>${cf}</changefreq><priority>${p}</priority></url>`
+      `  <url><loc>${BASE}/articles/${slug}/</loc><lastmod>${notBeforeCommitted(`${BASE}/articles/${slug}/`, articleDates.get(slug))}</lastmod><changefreq>${cf}</changefreq><priority>${p}</priority></url>`
     )
   }
 
