@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-17T00:00:00+09:00",
+    modifiedTime: "2026-11-06T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -33,7 +33,7 @@ const faqData = [
   {
     question: "筋肉食堂DELIはまずいって本当？",
     answer:
-      "公開レビューを確認すると、「『まずい』と口コミしている人は今のところ見当たらず、これは冷凍宅配弁当サービスの中でもかなり珍しい光景」（マイナビニュース）、「味付けに関して好みは別れましたが、まずいとの声はなかったです」（HonNe）と、複数媒体の調査で「まずい」の声が確認されていません。レストラン運営で培った調理ノウハウが背景にあると考えられます。ただし鶏肉のクセなど好みが分かれる部分はあり、感じ方には個人差があります。",
+      "公開レビューを確認すると、「『まずい』と口コミしている人は今のところ見当たらず、これは冷凍宅配弁当サービスの中でもかなり珍しい光景」（マイナビニュース）、「味付けに関して好みは分かれましたが、まずいとの声はなかったです」（HonNe）と、複数媒体の調査で「まずい」の声が確認されていません。レストラン運営で培った調理ノウハウが背景にあると考えられます。ただし鶏肉のクセなど好みが分かれる部分はあり、感じ方には個人差があります。",
   },
   {
     question: "筋肉食堂DELIとマッスルデリの違いは？",
@@ -351,7 +351,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-10-17T00:00:00+09:00",
+    dateModified: "2026-11-06T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -425,7 +425,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
-            <time dateTime="2026-10-17">更新: 2026年10月17日（公式で再確認）</time>
+            <time dateTime="2026-11-06">更新: 2026年11月6日（公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -449,7 +449,29 @@ export default function KinnikushokudoDeliKuchikomiPage() {
             この記事では、<strong>公開されている実在のレビュー記事を出典付きで整理</strong>し、筋肉食堂DELIの良い口コミ・悪い口コミの両方を中立に検証します。「まずい」という評判の有無についても調査しました。
           </p>
           <p>
-            さらに、<strong>料金体系・送料・よく混同されるマッスルデリとの違い</strong>まで、2026年10月10日確認の公式データで解説します。
+            さらに、<strong>料金体系・送料・よく混同されるマッスルデリとの違い</strong>まで、2026年11月6日確認の公式データで解説します。
+          </p>
+        </div>
+
+        {/* 早見表＋「まずい」の答え（2026-11-06） */}
+        <div className="border border-warm-border rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-3">筋肉食堂DELIの料金・送料の早見表（税込・2026年11月6日公式確認）</p>
+          <ComparisonTable
+            headers={["コース", "7食（定期）", "14食（定期）", "21食（定期）", "定期の1食あたり", "関東の送料込み1食（算出）"]}
+            rows={[
+              ["ローカーボ", "7,333円", "14,364円", "20,866円", "994〜1,048円", "約1,081〜1,282円"],
+              ["ベーシック", "7,560円", "14,818円", "21,546円", "1,026〜1,080円", "約1,114〜1,314円"],
+              ["バルクアップ", "10,357円", "20,412円", "29,938円", "1,426〜1,480円", "約1,513〜1,714円"],
+            ]}
+          />
+          <p className="text-sm leading-relaxed mb-3">
+            <strong>送料：</strong>定期でも無料にならず、関東は7食1,640円・14食1,780円・21食1,840円、沖縄は3,190円・3,900円・4,180円です（地域別の全額は料金の節）。7食のお試し購入はローカーボ8,424円・ベーシック8,694円・バルクアップ11,826円。公式トップには「期間限定 1食805円～（税抜・ローカーボ）」の表示がありますが、条件の記載が確認できないため、上の表には入れていません。注文画面でご確認ください。
+          </p>
+          <p className="text-sm leading-relaxed mb-3">
+            <strong>「まずい」の答え：</strong>HonNe編集部は男女14人の試食と利用者の声をもとに「味付けに関して好みは分かれましたが、まずいとの声はなかったです」と結論づけています。一方、うちらいふの実食レビューには、塩分2.0gのZENBヌードルのメニューについて「味は正直しょっぱかったです」、130gの量について「1食分としては物足りなかった」という記述があります。味そのものの酷評より、メニューごとの塩気と量が分かれ目です。
+          </p>
+          <p className="text-xs text-warm-gray">
+            ※出典: <a href="https://deli.kinnikushokudo.jp/shop/products/low-carb" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">筋肉食堂DELI公式 コースページ</a>・<a href="https://deli.kinnikushokudo.jp/shop/faq" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">よくあるご質問</a>／<a href="https://exidea.co.jp/blog/meal/home-meal/kinnikushokudo/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">HonNe（EXIDEA運営・2026年11月3日更新）</a>・<a href="https://uchilife.actlever.co.jp/kinnnikusyokudou-deli/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">うちらいふ</a>（いずれも2026年11月6日確認）。送料込み1食は（定期価格＋関東送料）÷食数で算出しました。当サイトは実食していません。
           </p>
         </div>
 
@@ -506,7 +528,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
           headers={["項目", "内容"]}
           rows={[
             ["運営会社", "TANPAC株式会社（外食・中食・宅食通販・アスリートサポート事業）"],
-            ["サービス形態", "高たんぱく冷凍宅配食（定期・都度どちらも可）"],
+            ["サービス形態", "高たんぱく冷凍宅配食（定期コースが基本。定期コースの単品購入は不可で、7食のお試し購入あり）"],
             ["実店舗", "高たんぱくレストラン「筋肉食堂」都内3店舗＋テイクアウト店"],
             ["主なコース", "ベーシック / ローカーボ / バルクアップ ほか単品セットあり"],
             ["食数", "7食・14食・21食から選択"],
@@ -599,7 +621,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
         <div className="space-y-2 mb-6">
           <SourcedReview
             review={{
-              text: "結論、味付けに関して好みは別れましたが、まずいとの声はなかったです",
+              text: "結論、味付けに関して好みは分かれましたが、まずいとの声はなかったです",
               meta: "独自アンケートに基づく検証結論",
               sourceName: "HonNe（EXIDEA運営）",
               sourceUrl: "https://exidea.co.jp/blog/meal/home-meal/kinnikushokudo/",
@@ -754,7 +776,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
         <SectionHeading id="price">筋肉食堂DELIの料金・送料を解説</SectionHeading>
 
         <p className="text-xs text-warm-gray mb-4">
-          ※本セクションの料金・送料は、編集部が2026年10月10日に筋肉食堂DELI公式サイト（各コースページ・FAQ）で直接確認した金額（税込）です。最新の金額は公式サイトでご確認ください。
+          ※本セクションの料金・送料は、編集部が2026年11月6日に筋肉食堂DELI公式サイト（各コースページ・FAQ）で直接確認した金額（税込）です。最新の金額は公式サイトでご確認ください。
         </p>
 
         <SubHeading>コース別料金（税込）</SubHeading>
@@ -767,7 +789,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
           ]}
         />
         <p className="text-sm mb-2 leading-relaxed">
-          定期購入は単品購入より<strong>いつでも13〜17%オフ</strong>（ローカーボ13%・ベーシック15%・バルクアップ17%。2026年10月17日・各コースページで確認）。1食あたりはローカーボ21食の994円が最安、バルクアップ7食の1,480円が最高です。
+          定期購入は単品購入より<strong>いつでも13〜17%オフ</strong>（ローカーボ13%・ベーシック15%・バルクアップ17%。2026年11月6日・各コースページで確認）。1食あたりはローカーボ21食の994円が最安、バルクアップ7食の1,480円が最高です。
         </p>
 
         <SubHeading>送料（地域・食数で変動）</SubHeading>

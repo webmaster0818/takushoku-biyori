@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-12T00:00:00+09:00",
+    modifiedTime: "2026-11-06T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -296,7 +296,7 @@ const badReviewCategories: {
     title: "薄味が濃い味好みに合わない",
     reviews: [
       {
-        text: "塩分少なめなとこが良いけど〔味は〕薄め。夫は濃い味好きなので気に入らなかったもよう",
+        text: "味はまぁまぁ。あと、薄味。夫は濃い味好きなので気に入らなかったもよう（略）塩分少なめなとこが良いけどリピートはないかな。残念。",
         meta: "HonNe掲載のX（旧Twitter）投稿",
         sourceName: "HonNe",
         sourceUrl: "https://exidea.co.jp/blog/meal/home-meal/nichirei/",
@@ -322,7 +322,7 @@ const badReviewCategories: {
       },
     ],
     comment:
-      "きくばりごぜんは8食セットで1食約875〜915円、単品なら1,080円と、冷凍宅配弁当の中では中〜高価格帯です。定期の月替わり8食コース（1食800円・送料無料）を使えば実質単価はかなり抑えられますが、食費最優先なら1食500円台の低価格帯サービスの方が向いています。",
+      "きくばりごぜんは8食セットで1食約875〜970円、単品なら860〜1,080円と、冷凍宅配弁当の中では中〜高価格帯です。定期の月替わり8食コース（1食800円・送料無料）を使えば実質単価はかなり抑えられますが、食費最優先なら1食500円台の低価格帯サービスの方が向いています。",
   },
   {
     title: "一部メニューに具材の物足りなさ",
@@ -349,7 +349,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-10-12T00:00:00+09:00",
+    dateModified: "2026-11-06T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -423,7 +423,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
-            <time dateTime="2026-10-09">更新: 2026年10月9日（公式で再確認）</time>
+            <time dateTime="2026-11-06">更新: 2026年11月6日（公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -448,6 +448,31 @@ export default function NichireiFoodsDirectKuchikomiPage() {
           </p>
           <p>
             さらに、<strong>コース別の料金・送料（本州・四国は7,500円以上で無料）・お試し4食セット</strong>まで詳しく解説します。ニチレイフーズダイレクトが自分に合うかどうか、この記事で判断できます。
+          </p>
+        </div>
+
+        {/* 早見表＋「まずい」の答え（2026-11-06） */}
+        <div className="border border-warm-border rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-3">ニチレイフーズダイレクトの料金・送料の早見表（税込・2026年11月6日公式確認）</p>
+          <ComparisonTable
+            headers={["コース", "価格", "1食あたり"]}
+            rows={[
+              ["【定期】きくばりごぜん月替わり8食", "6,400円（送料無料）", "800円"],
+              ["きくばりごぜん お試し4食セット", "3,300円", "825円"],
+              ["きくばりごぜん 8食セット", "7,000〜7,760円", "約875〜970円"],
+              ["きくばりごぜん 16食セット", "12,980〜15,020円", "約811〜939円"],
+              ["きくばりごぜん 単品", "—", "860〜1,080円"],
+              ["パワーデリ 5食セット", "5,400円", "1,080円"],
+            ]}
+          />
+          <p className="text-sm leading-relaxed mb-3">
+            <strong>送料（1回の注文金額別）：</strong>本州・四国は7,500円以上で無料、5,000〜7,499円で700円、5,000円未満で1,000円。北海道・九州は400円・1,100円・1,400円、沖縄は1,700円・2,400円・2,700円です。定期購入は全国で無料です。
+          </p>
+          <p className="text-sm leading-relaxed mb-3">
+            <strong>「まずい」の答え：</strong>HonNeは「『まずい』との意見はなく評価が高い傾向」とまとめており、宅食ラボの筆者も「副菜は全体的に薄い味付けですが、水っぽさもなくおいしく食べられました」と評価しています。一方で「味が薄い」という声は実際にあり、HonNe掲載のX投稿には「夫は濃い味好きなので気に入らなかったもよう」とあります。味の完成度より、塩分2.0g以下の薄味が好みに合うかどうかが分かれ目です。
+          </p>
+          <p className="text-xs text-warm-gray">
+            ※出典: <a href="https://wellness.nichirei.co.jp/shop/c/c1010/" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">ニチレイフーズダイレクト公式 きくばりごぜん</a>・<a href="https://wellness.nichirei.co.jp/shop/pages/guide02.aspx" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">送料・配送について</a>／<a href="https://exidea.co.jp/blog/meal/home-meal/nichirei/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">HonNe（2026年11月3日更新）</a>・<a href="https://takushoku-lab.com/nichirei-foods/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">宅食ラボ</a>（いずれも2026年11月6日確認）。当サイトは実食していません。
           </p>
         </div>
 
@@ -517,12 +542,12 @@ export default function NichireiFoodsDirectKuchikomiPage() {
           ※出典: ニチレイフーズダイレクト公式サイト・公式FAQ（2026年10月9日確認）。最新情報は公式サイトでご確認ください。
         </p>
 
-        <SubHeading>料金プラン概要（税込・2026年10月9日公式確認）</SubHeading>
+        <SubHeading>料金プラン概要（税込・2026年11月6日公式確認）</SubHeading>
         <ComparisonTable
           headers={["コース", "価格", "1食あたり"]}
           rows={[
-            ["きくばりごぜん 8食セット", "7,000〜7,320円", "約875〜915円"],
-            ["きくばりごぜん 16食セット", "12,980〜14,140円", "約812〜884円"],
+            ["きくばりごぜん 8食セット", "7,000〜7,760円", "約875〜970円"],
+            ["きくばりごぜん 16食セット", "12,980〜15,020円", "約811〜939円"],
             ["【定期】月替わり8食コース", "6,400円（送料無料）", "800円"],
             ["お試し4食セット", "3,300円", "825円"],
             ["パワーデリ 5食セット", "5,400円", "1,080円"],
@@ -532,7 +557,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
           最安級は<strong>定期の月替わり8食コース（1食800円・全国送料無料）</strong>です。初めてなら、お試し4食セット（3,300円）で味を確かめるのが定石です。
         </p>
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: ニチレイフーズダイレクト公式サイト各カテゴリページ・お試しセットページ（2026年10月9日確認）。最新のキャンペーンは公式サイトでご確認ください。
+          ※出典: ニチレイフーズダイレクト公式サイト各カテゴリページ・お試しセットページ（2026年11月6日確認）。最新のキャンペーンは公式サイトでご確認ください。
         </p>
 
         <SubHeading>ニチレイフーズダイレクトの3つの特徴</SubHeading>
@@ -610,7 +635,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
           <div className="bg-red-50 rounded-lg p-4 text-sm leading-relaxed">
             <p className="font-bold mb-1">1. 塩分2.0g以下の設計が濃い味好みに合わない</p>
             <p className="mb-1.5">
-              「塩分少なめなとこが良いけど〔味は〕薄め。夫は濃い味好きなので気に入らなかったもよう」（HonNe掲載のX投稿）のように、<strong>健康設計の薄味が家族内でも評価が割れる</strong>典型例があります。一方で「薄味だけど美味い」という肯定派の投稿もあり、健康管理目的かどうかで評価が分かれます。
+              「味はまぁまぁ。あと、薄味。夫は濃い味好きなので気に入らなかったもよう」（HonNe掲載のX投稿）のように、<strong>健康設計の薄味が家族内でも評価が割れる</strong>典型例があります。一方で「薄味だけど美味い」という肯定派の投稿もあり、健康管理目的かどうかで評価が分かれます。
             </p>
             <p className="text-xs text-warm-gray">
               出典:{" "}
@@ -772,12 +797,12 @@ export default function NichireiFoodsDirectKuchikomiPage() {
         {/* ===== 料金・送料 ===== */}
         <SectionHeading id="price">ニチレイフーズダイレクトの料金・送料を解説</SectionHeading>
 
-        <SubHeading>主要コースの料金（税込・2026年10月9日公式確認）</SubHeading>
+        <SubHeading>主要コースの料金（税込・2026年11月6日公式確認）</SubHeading>
         <ComparisonTable
           headers={["コース", "価格", "1食あたり", "栄養設計"]}
           rows={[
-            ["きくばりごぜん 8食セット", "7,000〜7,320円", "約875〜915円", "300kcal以下・塩分2.0g以下"],
-            ["きくばりごぜん 16食セット", "12,980〜14,140円", "約812〜884円", "同上"],
+            ["きくばりごぜん 8食セット", "7,000〜7,760円", "約875〜970円", "300kcal以下・塩分2.0g以下"],
+            ["きくばりごぜん 16食セット", "12,980〜15,020円", "約811〜939円", "同上"],
             ["【定期】月替わり8食コース", "6,400円", "800円", "同上・送料無料＋ポイント10倍"],
             ["お試し4食セット", "3,300円", "825円", "平均192kcal・塩分1.7g"],
             ["パワーデリ 5食セット", "5,400円", "1,080円", "たんぱく質25g以上"],
@@ -785,10 +810,10 @@ export default function NichireiFoodsDirectKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: ニチレイフーズダイレクト公式サイト（2026年10月9日確認）。単品は1,080円/食。最新価格は公式サイトでご確認ください。
+          ※出典: ニチレイフーズダイレクト公式サイト（2026年11月6日確認）。単品は860〜1,080円/食（メニューによる）。最新価格は公式サイトでご確認ください。
         </p>
 
-        <SubHeading>送料（税込・2026年10月9日公式確認）</SubHeading>
+        <SubHeading>送料（税込・2026年11月6日公式確認）</SubHeading>
         <ComparisonTable
           headers={["配送先", "7,500円以上", "5,000〜7,499円", "5,000円未満", "定期購入"]}
           rows={[
@@ -803,7 +828,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
           で比較できます。
         </p>
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: ニチレイフーズダイレクト公式「送料・配送について」ページ（2026年10月9日確認）。最新の送料は公式サイトでご確認ください。
+          ※出典: ニチレイフーズダイレクト公式「送料・配送について」ページ（2026年11月6日確認）。最新の送料は公式サイトでご確認ください。
         </p>
 
         {/* ===== おすすめな人・おすすめしない人 ===== */}

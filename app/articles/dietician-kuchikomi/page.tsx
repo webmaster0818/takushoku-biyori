@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-17T00:00:00+09:00",
+    modifiedTime: "2026-11-06T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -334,7 +334,7 @@ export default function DieticianKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-10-17T00:00:00+09:00",
+    dateModified: "2026-11-06T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -408,7 +408,7 @@ export default function DieticianKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
-            <time dateTime="2026-10-17">更新: 2026年10月17日（公式で再確認）</time>
+            <time dateTime="2026-11-06">更新: 2026年11月6日（公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -442,13 +442,13 @@ export default function DieticianKuchikomiPage() {
         <div className="border-2 border-red-300 rounded-xl p-5 mb-8 bg-red-50">
           <p className="font-bold text-base mb-3">Dieticianは販売を終了しており、現在は注文できません</p>
           <p className="text-sm leading-relaxed mb-3">
-            公式サイトには2025年10月31日付で<strong>「＜重要＞商品終売のお知らせ　Dieticianは11月28日出荷をもちまして、終売させて頂きました。」</strong>という告知が掲載されました（公式サイトのインターネットアーカイブで確認）。2026年10月17日時点でも公式サイト（dietician-family.jp）はドメインの名前解決ができず接続できず、新規注文・再開の告知はありません。
+            公式サイトには2025年10月31日付で<strong>「＜重要＞商品終売のお知らせ　Dieticianは11月28日出荷をもちまして、終売させて頂きました。」</strong>という告知が掲載されました（公式サイトのインターネットアーカイブで確認）。2026年11月6日時点でも公式サイト（dietician-family.jp）はドメインの名前解決ができず接続できず、新規注文・再開の告知はありません。
           </p>
           <p className="text-sm leading-relaxed mb-4">
             運営していたのは病態食・健康食の専門メーカーである<strong>メディカルフードサービス株式会社</strong>（2004年創業・横浜市）。2021年9月のサービス開始から約4年での終売でした。口コミの評価は決して低くなかったため、「気になっていたのに終わっていた」という人は、後半の<a href="#alternatives" className="text-accent underline">代替サービス3選</a>を参考にしてください。
           </p>
           <p className="text-xs text-warm-gray mb-4">
-            ※出典: Dietician公式サイト（dietician-family.jp）2025年12月10日時点のインターネットアーカイブ（2026年10月10日再確認）
+            ※出典: Dietician公式サイト（dietician-family.jp）2025年12月10日時点のインターネットアーカイブ（2026年11月6日再確認）
           </p>
           <Link
             href="/articles/kou-tanpaku-ranking/"
@@ -457,6 +457,29 @@ export default function DieticianKuchikomiPage() {
             代わりの高タンパク宅配弁当をランキングで見る →
           </Link>
           <p className="text-[10px] text-gray-400 text-center mt-2">※当サイト内の比較記事に移動します</p>
+        </div>
+
+        {/* 早見表＋「まずい」の答え（2026-11-06） */}
+        <div className="border border-warm-border rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-3">ダイエティシャンの料金と乗り換え先の早見表（税込）</p>
+          <ComparisonTable
+            headers={["サービス", "1食あたり", "送料", "状況"]}
+            rows={[
+              ["Dietician SMALL（初回）", "968〜1,066円", "商品代金に込み", "終売（当時の価格）"],
+              ["Dietician MEDIUM（初回）", "1,068〜1,166円", "商品代金に込み", "終売（当時の価格）"],
+              ["筋肉食堂DELI ローカーボ（定期）", "994〜1,048円", "別途（関東1,640円〜）", "販売中"],
+              ["nosh（通常価格）", "612〜719円", "別途", "販売中"],
+            ]}
+          />
+          <p className="text-sm leading-relaxed mb-3">
+            当時の価格は10食と5食の幅で、2026年7月4日に公式サイトのアーカイブで確認した値です。筋肉食堂DELIとnoshは2026年11月6日に各公式サイトで確認しました。マッスルデリを含む3社の比較は<a href="#alternatives" className="text-accent underline">代替サービス3選</a>にまとめています。
+          </p>
+          <p className="text-sm leading-relaxed mb-3">
+            <strong>「まずい」の答え：</strong>ひとり暮らしの宅配食生活の筆者はSMALL・MEDIUMの実食で「実際はかなりおいしかったです」と評価しており、確認した実食レビューの総評は肯定的です。不満が出ていたのは低脂質ゆえの食感と副菜の味で、宅食まにあの筆者は鶏肉について「ちょっと水っ気が足りなくてパサパサ感あるな」、和え物について「味があんまりしない」と書いています。
+          </p>
+          <p className="text-xs text-warm-gray">
+            ※出典: <a href="https://www.single-meallife.com/dietician-delivery/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">ひとり暮らしの宅配食生活</a>・<a href="https://home-gohan.net/dietician/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">宅食まにあ</a>（2026年11月6日確認）／<a href="https://deli.kinnikushokudo.jp/shop/products/low-carb" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">筋肉食堂DELI公式</a>・<a href="https://nosh.jp/plan" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">nosh公式</a>。当サイトは実食していません。
+          </p>
         </div>
 
         <TableOfContents />
@@ -679,7 +702,7 @@ export default function DieticianKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※各社公式サイトの公開情報をもとに編集部が作成しています（筋肉食堂DELIは2026年10月17日、マッスルデリは2026年10月14日、noshは2026年10月10日に確認）。最新情報は各公式サイトでご確認ください。
+          ※各社公式サイトの公開情報をもとに編集部が作成しています（筋肉食堂DELIとnoshの価格は2026年11月6日、マッスルデリは2026年10月14日に確認）。最新情報は各公式サイトでご確認ください。
         </p>
 
         {/* ===== FAQ ===== */}

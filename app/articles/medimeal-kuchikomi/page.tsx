@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-11T00:00:00+09:00",
+    modifiedTime: "2026-11-06T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -352,7 +352,7 @@ export default function MedimealKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-10-11T00:00:00+09:00",
+    dateModified: "2026-11-06T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -426,7 +426,7 @@ export default function MedimealKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
-            <time dateTime="2026-10-11">更新: 2026年10月11日（公式で再確認）</time>
+            <time dateTime="2026-11-06">更新: 2026年11月6日（公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -450,7 +450,28 @@ export default function MedimealKuchikomiPage() {
             この記事では、<strong>公開されている実在のレビュー記事を出典付きで整理</strong>し、メディミールの良い口コミ・悪い口コミの両方を中立に検証します。「まずい」と言われる理由についても解説します。
           </p>
           <p>
-            さらに、<strong>料金体系・送料・解約条件</strong>を2026年10月11日確認の公式データで解説します。メディミールが自分（またはご家族）に合うかどうか、この記事で判断できます。
+            さらに、<strong>料金体系・送料・解約条件</strong>を2026年11月6日確認の公式データで解説します。メディミールが自分（またはご家族）に合うかどうか、この記事で判断できます。
+          </p>
+        </div>
+
+        {/* 早見表＋「まずい」の答え（2026-11-06） */}
+        <div className="border border-warm-border rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-3">メディミールの料金・送料の早見表（税込・2026年11月6日公式確認）</p>
+          <ComparisonTable
+            headers={["コース", "7食", "14食", "21食", "定期便の1食あたり"]}
+            rows={[
+              ["カロリー制限食／たんぱく質＆塩分制限食／糖質制限食／塩分制限食", "5,270円", "9,698円", "14,018円", "約668〜753円"],
+              ["バランス健康食／ムースやわらか食", "4,622円", "9,158円", "13,478円", "約642〜660円"],
+            ]}
+          />
+          <p className="text-sm leading-relaxed mb-3">
+            <strong>送料：</strong>初回と定期便は無料。2回目以降の都度注文は7食・14食が880円（沖縄・離島は1,100円）、21食は無料です。定期便に最低利用回数の縛りはなく、お届けの7日前までの連絡で解約・一時休止ができます。
+          </p>
+          <p className="text-sm leading-relaxed mb-3">
+            <strong>「まずい」の答え：</strong>「まずい」と明言した口コミは、編集部の確認範囲では見つかりませんでした。スマートフードナビの記事筆者はカロリー制限食の実食で「制限食というのを忘れるくらい味付けがしっかりしている」、HAPPINESS! magazineは糖質制限食7食の実食で「糖質制限食とは思えないほどの美味しさでした」と評価しています。不満が出ているのは味より量で、スマートフードナビ掲載の利用者の声に「量が少な過ぎてうーんって感じでした」とあります。
+          </p>
+          <p className="text-xs text-warm-gray">
+            ※出典: <a href="https://medimeal.net/restricted/calorie/" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">メディミール公式 コースページ</a>・<a href="https://medimeal.net/QA/" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">よくある質問</a>／<a href="https://smart-food-navi.jp/food-delivery/medimeal-testing-review/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">スマートフードナビ</a>・<a href="https://online.tipness.co.jp/feature/home_meal/medimeal/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">HAPPINESS! magazine（ティップネス運営）</a>（いずれも2026年11月6日確認）。当サイトは実食していません。
           </p>
         </div>
 
@@ -701,7 +722,7 @@ export default function MedimealKuchikomiPage() {
         <SectionHeading id="price">メディミールの料金・送料を解説</SectionHeading>
 
         <p className="text-xs text-warm-gray mb-4">
-          ※本セクションの料金・送料は、編集部が2026年10月11日にメディミール公式サイトで直接確認した金額（税込）です。最新の金額は公式サイトでご確認ください。
+          ※本セクションの料金・送料は、編集部が2026年11月6日にメディミール公式サイトで直接確認した金額（税込）です。最新の金額は公式サイトでご確認ください。
         </p>
 
         <SubHeading>コース別料金（税込・初回/定期/都度とも同一価格）</SubHeading>
@@ -720,7 +741,7 @@ export default function MedimealKuchikomiPage() {
           糖質制限食・塩分制限食はカロリー制限食と、ムースやわらか食はバランス健康食と同じ価格です（各コースページで確認）。<strong>商品価格は注文方法によらず同一で、差が出るのは送料のみ</strong>です。
         </p>
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: メディミール公式サイト各コースページ（2026年10月11日確認）。
+          ※出典: メディミール公式サイト各コースページ（2026年11月6日確認）。
         </p>
 
         <SubHeading>送料</SubHeading>
