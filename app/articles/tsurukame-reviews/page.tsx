@@ -172,7 +172,7 @@ const goodReviewCategories: {
     reviews: [
       {
         text: "しっかりとした味付けで、ご飯がすすみました",
-        meta: "宅食比較サイト編集長の実食レビュー",
+        meta: "宅食リスト編集長の実食レビュー",
         sourceName: "宅食リスト",
         sourceUrl: "https://takusyokulist.com/tsurukame/",
       },
@@ -195,7 +195,7 @@ const goodReviewCategories: {
     reviews: [
       {
         text: "専門医監修で安心して食べられるのもよかったです",
-        meta: "宅食比較サイト編集長の実食レビュー",
+        meta: "宅食リスト編集長の実食レビュー",
         sourceName: "宅食リスト",
         sourceUrl: "https://takusyokulist.com/tsurukame/",
       },
@@ -432,7 +432,7 @@ export default function TsurukameReviewsPage() {
           <SourcedReview
             review={{
               text: "まずいなんてことはなく、とってもおいしかったです",
-              meta: "編集長実食による「まずい」検証の結論",
+              meta: "宅食リスト編集長の実食による「まずい」検証の結論",
               sourceName: "宅食リスト",
               sourceUrl: "https://takusyokulist.com/tsurukame/",
             }}

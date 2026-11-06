@@ -255,7 +255,7 @@ const goodReviewCategories: {
       },
       {
         text: "塩だれチキンハンバーグ（略）ゴーフードのメニュー中で一番おいしかった",
-        meta: "35食実食した筆者のレビュー",
+        meta: "ひとり暮らしの宅配食生活の筆者が35食を実食したレビュー",
         sourceName: "ひとり暮らしの宅配食生活",
         sourceUrl: "https://www.single-meallife.com/gofood-delivery/",
       },
@@ -309,13 +309,13 @@ const badReviewCategories: {
     reviews: [
       {
         text: "魚系メニューはイマイチ",
-        meta: "35食実食した筆者のレビュー",
+        meta: "ひとり暮らしの宅配食生活の筆者が35食を実食したレビュー",
         sourceName: "ひとり暮らしの宅配食生活",
         sourceUrl: "https://www.single-meallife.com/gofood-delivery/",
       },
       {
         text: "副菜の種類が少ないので飽きる",
-        meta: "35食実食した筆者のレビュー",
+        meta: "ひとり暮らしの宅配食生活の筆者が35食を実食したレビュー",
         sourceName: "ひとり暮らしの宅配食生活",
         sourceUrl: "https://www.single-meallife.com/gofood-delivery/",
       },
