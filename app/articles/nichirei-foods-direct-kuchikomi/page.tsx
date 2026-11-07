@@ -255,10 +255,10 @@ const goodReviewCategories: {
         sourceUrl: "https://exidea.co.jp/blog/meal/home-meal/nichirei/",
       },
       {
-        text: "子どもがおいしいと言って全部食べてくれたので、味はほぼ満点です",
-        meta: "利用者インタビュー",
+        text: "育ち盛りの子どもがおいしいと言って全部食べてくれたので、味はほぼ満点です。",
+        meta: "女性・年齢非公開の口コミ",
         sourceName: "宅食グルメ（Appliv）",
-        sourceUrl: "https://meal.app-liv.jp/archive/139185/",
+        sourceUrl: "https://meal.app-liv.jp/archive/138174/",
       },
     ],
   },

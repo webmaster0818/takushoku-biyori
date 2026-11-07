@@ -30,7 +30,7 @@ const faqData = [
   {
     question: "わんまいるはまずいって本当？",
     answer:
-      "公開レビューを確認すると、「がんもの煮付けは、正直まずいと思いました」（宅食グルメ掲載の口コミ）のような特定メニューへの否定評価は実在しますが、同じ調査でも「まずいと感じたメニューはなかった」という声があり、実食メディアの総評は「上品な味」「ほっこりする美味しさ」が優勢です。健康志向の控えめな塩加減のため、濃い味が好きな人には物足りない可能性があります。感じ方には個人差があるため、まずは少量で試すのが確実です。",
+      "公開レビューを確認すると、「がんもの煮付けは、正直まずいと思いました」（宅食グルメ掲載の口コミ）のような特定メニューへの否定評価は実在しますが、同じ媒体でも「まずいと感じたメニューはなかった」という声があり、実食メディアの総評は「上品な味」「ほっこりする美味しさ」が優勢です。健康志向の控えめな塩加減のため、濃い味が好きな人には物足りない可能性があります。感じ方には個人差があるため、まずは少量で試すのが確実です。",
   },
   {
     question: "わんまいるはお試しできる？",
@@ -170,10 +170,10 @@ const goodReviewCategories: {
     title: "手作り感のある家庭料理の味わい",
     reviews: [
       {
-        text: "わんまいるはおばあちゃんやお母さんに作ってもらったお惣菜のようなほっこりする美味しさがあります",
-        meta: "女性・35歳・主婦",
+        text: "「わんまいる」はおばあちゃんやお母さんに作ってもらったお惣菜のようなほっこりする美味しさがあります。",
+        meta: "女性・35歳の口コミ",
         sourceName: "宅食グルメ（Appliv）",
-        sourceUrl: "https://meal.app-liv.jp/archive/140336/",
+        sourceUrl: "https://meal.app-liv.jp/archive/139772/",
       },
       {
         text: "しっかりとした味付けで、とっても美味しかったです。ご飯がすすむお味でした。",
@@ -194,9 +194,9 @@ const goodReviewCategories: {
     reviews: [
       {
         text: "鮭はパサついておらずホロホロとしていて、冷凍ではなかなか食べられない食感だと思いました",
-        meta: "宅食グルメ編集部の実食レビュー・湯煎解凍の仕上がり評",
+        meta: "宅食グルメの実食レポート",
         sourceName: "宅食グルメ（Appliv）",
-        sourceUrl: "https://meal.app-liv.jp/archive/140336/",
+        sourceUrl: "https://meal.app-liv.jp/archive/139772/",
       },
       {
         text: "あまり濃すぎずに、全体として上品な味という印象でした",
@@ -392,9 +392,9 @@ export default function WanmairuReviewsPage() {
           <SourcedReview
             review={{
               text: "がんもの煮付けは、正直まずいと思いました。",
-              meta: "女性・39歳・会社員",
+              meta: "女性・39歳の口コミ",
               sourceName: "宅食グルメ（Appliv）",
-              sourceUrl: "https://meal.app-liv.jp/archive/140336/",
+              sourceUrl: "https://meal.app-liv.jp/archive/139772/",
             }}
             tone="bad"
           />
@@ -406,7 +406,7 @@ export default function WanmairuReviewsPage() {
               text: "それほど多くのメニューを口にはしていませんが、まずいと感じたメニューはなかったです",
               meta: "女性・30歳・主婦",
               sourceName: "宅食グルメ（Appliv）",
-              sourceUrl: "https://meal.app-liv.jp/archive/140336/",
+              sourceUrl: "https://meal.app-liv.jp/archive/146721/",
             }}
             tone="good"
           />
@@ -423,7 +423,7 @@ export default function WanmairuReviewsPage() {
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">編集部の見解：「まずい」は一部メニューの外れ体験と薄味の好みに分解できる</p>
           <p>
-            酷評は「がんもの煮付け」のような特定メニューへの外れ体験が中心で、同じ調査内でも全体評価は「上品な味」「ほっこりする美味しさ」が優勢です。健康志向の控えめな塩加減のため、濃い味・こってり系が好きな人には物足りない可能性があります。和食・煮物・魚料理を好む人ほど満足度が高い傾向です。感じ方には個人差があるため、まずは少量セットで試すのが確実です。
+            酷評は「がんもの煮付け」のような特定メニューへの外れ体験が中心で、同じ媒体でも全体評価は「上品な味」「ほっこりする美味しさ」が優勢です。健康志向の控えめな塩加減のため、濃い味・こってり系が好きな人には物足りない可能性があります。和食・煮物・魚料理を好む人ほど満足度が高い傾向です。感じ方には個人差があるため、まずは少量セットで試すのが確実です。
           </p>
         </div>
 

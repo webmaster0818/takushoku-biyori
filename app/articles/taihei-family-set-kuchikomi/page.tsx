@@ -243,10 +243,10 @@ const goodReviewCategories: {
     title: "味付け・ボリュームに満足という声",
     reviews: [
       {
-        text: "チキンが柔らかく、香ばしい醤油のタレ味がしっかりと聞いていて美味しかった",
+        text: "チキンが柔らかく、香ばしい醤油のタレ味がしっかりと効いていて美味しかったです。",
         meta: "40代女性の口コミ",
         sourceName: "宅食グルメ（Appliv）",
-        sourceUrl: "https://meal.app-liv.jp/archive/138918/",
+        sourceUrl: "https://meal.app-liv.jp/archive/141265/",
       },
       {
         text: "思いのほか使いやすく、味も美味しくて、ボリュームも満足しています",
@@ -646,10 +646,10 @@ export default function TaiheiFamilySetKuchikomiPage() {
         <div className="space-y-2 mb-6">
           <SourcedReview
             review={{
-              text: "チキンが柔らかく、香ばしい醤油のタレ味がしっかりと聞いていて美味しかった",
+              text: "チキンが柔らかく、香ばしい醤油のタレ味がしっかりと効いていて美味しかったです。",
               meta: "40代女性の口コミ",
               sourceName: "宅食グルメ（Appliv）",
-              sourceUrl: "https://meal.app-liv.jp/archive/138918/",
+              sourceUrl: "https://meal.app-liv.jp/archive/141265/",
             }}
             tone="good"
           />

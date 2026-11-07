@@ -242,16 +242,16 @@ const goodReviewCategories: {
     title: "手軽さ・使い勝手が良い（都度注文・当日キャンセル可）",
     reviews: [
       {
-        text: "仕事が忙しいときに食事を作るのが手間で、週に2〜3回の頻度で約2年ほど利用しています。注文時にある程度メニューを選べるのが高評価でした",
-        meta: "30代女性・利用者アンケート",
+        text: "仕事が忙しいときに食事を作るのが手間で、週に2〜3回の頻度で約2年ほど利用しています。さばの味噌煮や焼き魚などのメニューが好きです。味は美味しいと思います。注文時にある程度メニューを選べるのが高評価でした。",
+        meta: "30代前半の女性の口コミ",
         sourceName: "宅食グルメ（Appliv運営）",
-        sourceUrl: "https://meal.app-liv.jp/archive/138857/",
+        sourceUrl: "https://meal.app-liv.jp/archive/137031/",
       },
       {
         text: "簡単に注文・キャンセルができるので、必要な時にすぐ弁当を配達してもらえるのは、大変ありがたいサービスだと思いました",
-        meta: "30代男性・利用者アンケート",
+        meta: "30代後半の男性の口コミ",
         sourceName: "宅食グルメ（Appliv運営）",
-        sourceUrl: "https://meal.app-liv.jp/archive/138857/",
+        sourceUrl: "https://meal.app-liv.jp/archive/137031/",
       },
       {
         text: "調理時間不要、洗い物ほぼないから仕事の後、寝るまで自分の時間がかなり取れて【QOL爆上がり】な感じする。しかも普通に作るよりいろんな食材食べれるし",
@@ -295,10 +295,10 @@ const badReviewCategories: {
         sourceUrl: "https://meal-kit.net/yoshikei/yoshikei-bento-simplemeal",
       },
       {
-        text: "味付けが濃すぎて家庭の味とは程遠く、食べ慣れませんでした。肉料理系はイマイチでした",
-        meta: "20代女性・利用者アンケート",
+        text: "味付けが濃すぎて家庭の味とは程遠く、食べ慣れませんでした。魚はまだ食べられたのですが、肉料理系はイマイチでした。",
+        meta: "20代後半の女性の口コミ",
         sourceName: "宅食グルメ（Appliv運営）",
-        sourceUrl: "https://meal.app-liv.jp/archive/138857/",
+        sourceUrl: "https://meal.app-liv.jp/archive/137031/",
       },
     ],
     comment:
@@ -315,9 +315,9 @@ const badReviewCategories: {
       },
       {
         text: "毎回注文しないといけないのが手間でした。定期配送にも対応してほしいです",
-        meta: "20代女性・利用者アンケート",
+        meta: "20代後半の女性の口コミ",
         sourceName: "宅食グルメ（Appliv運営）",
-        sourceUrl: "https://meal.app-liv.jp/archive/138857/",
+        sourceUrl: "https://meal.app-liv.jp/archive/137031/",
       },
     ],
     comment:
@@ -610,7 +610,7 @@ export default function YushokuNetKuchikomiPage() {
               </a>
               ・
               <a
-                href="https://meal.app-liv.jp/archive/138857/"
+                href="https://meal.app-liv.jp/archive/137031/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 className="underline hover:text-accent"
@@ -694,7 +694,7 @@ export default function YushokuNetKuchikomiPage() {
           {
             num: 2,
             title: "当日朝5時まで注文・キャンセルできる即時性",
-            text: "「簡単に注文・キャンセルができるので、必要な時にすぐ弁当を配達してもらえるのは、大変ありがたい」（宅食グルメ掲載アンケート）という声の通り、当日の予定に合わせて使える柔軟さは他の宅配弁当にない強みです。",
+            text: "「簡単に注文・キャンセルができるので、必要な時にすぐ弁当を配達してもらえるのは、大変ありがたい」（宅食グルメ掲載の口コミ）という声の通り、当日の予定に合わせて使える柔軟さは他の宅配弁当にない強みです。",
           },
           {
             num: 3,
