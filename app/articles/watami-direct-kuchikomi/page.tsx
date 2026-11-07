@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-19T00:00:00+09:00",
+    modifiedTime: "2026-11-07T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -329,7 +329,7 @@ export default function WatamiDirectKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-10-29T00:00:00+09:00",
+    dateModified: "2026-11-07T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -403,6 +403,7 @@ export default function WatamiDirectKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
+            <time dateTime="2026-11-07">更新: 2026年11月7日（料金・送料は11月7日に公式で確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -419,14 +420,25 @@ export default function WatamiDirectKuchikomiPage() {
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
-          <p className="mb-3">
-            「ワタミの宅食ダイレクトって実際どうなの？」「まずいって口コミは本当？」——ワタミの宅食ダイレクトは、宅配弁当最大手ワタミグループの<strong>冷凍おかずセット</strong>。管理栄養士が設計した塩分・カロリー配慮のメニューを、全国に宅配便でまとめて届けてくれます。
-          </p>
-          <p className="mb-3">
-            この記事では、<strong>公開されている実在のレビュー記事を出典付きで整理</strong>し、良い口コミ・悪い口コミの両方を中立に検証します。「まずい」と言われる理由についても解説します。
+          <p className="font-bold mb-2">結論：ワタミの宅食ダイレクトの口コミの傾向（出典付きの要約）</p>
+          <ul className="list-disc list-inside space-y-1 mb-3">
+            <li><strong>味</strong>：HonNe が紹介するSNS投稿には塩分を抑えてもしっかりした味付けだという声があり、LiPro は味や品質は高評価が大半と結論づけています。</li>
+            <li><strong>不満</strong>：三菜の量の少なさ（HonNe）、温めムラ（つむぎのシングルデリBlog）、送料（LiPro）が中心です。</li>
+          </ul>
+          <ComparisonTable
+            headers={["料金（税込）", "セット", "1食あたり"]}
+            rows={[
+              ["お試し割（初回のみ）", "いつでも三菜 10食 3,990円", "399円"],
+              ["定期・おまかせ", "いつでも三菜 10食 4,645円", "465円"],
+              ["都度購入", "いつでも三菜 10食 4,890円", "489円"],
+              ["送料（1回あたり）", "本州・四国・九州 990円／北海道 1,320円／沖縄 2,420円", "−"],
+            ]}
+          />
+          <p className="text-xs text-warm-gray mb-3">
+            出典: <a href="https://www.watami-takushoku-direct.jp/shop/pages/prices" target="_blank" rel="noopener noreferrer nofollow" className="underline">ワタミの宅食ダイレクト公式 料金一覧</a>（2026年11月7日確認）。
           </p>
           <p>
-            さらに、<strong>お試し割（いつでも三菜10食3,990円）・送料・定期購入の仕組み</strong>まで、2026年7月4日に公式サイトで確認した情報をもとに解説します。
+            この記事は、宅配便で届く<strong>冷凍おかずセット</strong>（ダイレクト）の口コミです。お弁当やおかずを冷蔵で届ける「まごころ商品」の口コミは、<Link href="/articles/watami-reviews/" className="text-accent hover:underline">ワタミの宅食の口コミ・評判</Link>をご覧ください。当サイトは実食していません。
           </p>
         </div>
 

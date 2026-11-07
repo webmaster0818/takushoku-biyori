@@ -3,9 +3,9 @@ import Link from "next/link";
 import ServiceCaptureGrid from "@/components/ServiceCaptureGrid";
 
 const ARTICLE_TITLE =
-  "【2026年最新】冷凍弁当がまずい？原因と美味しく食べる7つのコツ｜おすすめサービスランキングも紹介";
+  "冷凍弁当がまずい・美味しくない原因は？加熱しすぎ・冷凍焼けの直し方【2026年11月】";
 const ARTICLE_DESCRIPTION =
-  "冷凍弁当がまずいと感じる5つの原因と、美味しく食べるための解凍テクニック7つを解説します。電子レンジのワット数・加熱時間・ラップの外し方まで具体的に紹介します。美味しいと評判の冷凍弁当サービスランキングTOP5も紹介しています。";
+  "冷凍弁当がまずい・美味しくないと感じる主な原因は、加熱のしすぎ、溶けてからの加熱、冷凍焼け、薄味の設計です。日本冷凍食品協会の資料と各社公式の温め方をもとに、症状別の直し方と、味の評判の調べ方を解説します。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/reitou-bento-mazui/";
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: ARTICLE_TITLE,
   description: ARTICLE_DESCRIPTION,
   keywords:
-    "冷凍弁当 まずい, 冷凍弁当 美味しく食べる, 冷凍弁当 解凍方法, 冷凍弁当 レンジ, 冷凍弁当 おすすめ, 宅配弁当 まずい",
+    "冷凍弁当 まずい, 冷凍弁当 美味しくない, 冷凍弁当 美味しく食べる, 冷凍弁当 解凍方法, 冷凍弁当 レンジ, 冷凍弁当 おすすめ, 宅配弁当 まずい",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-21T00:00:00+09:00",
-    modifiedTime: "2026-10-16T00:00:00+09:00",
+    modifiedTime: "2026-11-07T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -41,7 +41,7 @@ const faqData = [
   {
     question: "電子レンジのワット数による加熱時間の目安は？",
     answer:
-      "600Wの場合はパッケージ記載の時間が目安です。500Wなら記載時間の1.2倍、700Wなら0.85倍程度を目安にしてください。例えば、600Wで5分の指定なら、500Wでは約6分、700Wでは約4分15秒です。メーカーの推奨ワット数で温めるのが最も美味しく仕上がります。",
+      "パッケージに記載された時間で加熱します。日本冷凍食品協会は、自動ボタンを使わず手動で表示どおりに加熱すること、出力は500Wまたは600Wを推奨しています。時間はサービスごとに違い、たとえば食宅便の公式FAQはお弁当を500Wで約5分・600Wで約4分と案内しています（2026年11月7日確認）。",
   },
   {
     question: "冷凍弁当をお弁当として持参することはできる？",
@@ -146,7 +146,7 @@ export default function ReitouBentoMazuiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-21T00:00:00+09:00",
-    dateModified: "2026-10-21T00:00:00+09:00",
+    dateModified: "2026-11-07T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -181,20 +181,31 @@ export default function ReitouBentoMazuiPage() {
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-04-21">公開: 2026年4月21日</time>
+            <time dateTime="2026-11-07">更新: 2026年11月7日</time>
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
         </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
+          <p className="font-bold mb-2">結論：まず温め方と保管を確かめる（それでも合わなければ味の好みの問題）</p>
           <p className="mb-3">
-            「冷凍弁当を試してみたけど、なんか美味しくない...」「水っぽい」「一部が冷たいまま」——こんな経験はありませんか？
+            冷凍弁当がまずい・美味しくないと感じるとき、日本冷凍食品協会の資料が調理不良の原因に挙げているのは<strong>加熱のしすぎ・溶けてからの加熱・冷凍焼け</strong>です。薄味の設計が合わないこともあります。症状別に確かめる点は次のとおりです。
           </p>
-          <p className="mb-3">
-            実は、冷凍弁当がまずいと感じる原因の多くは<strong>解凍方法のミス</strong>にあります。正しいコツを知るだけで、同じ冷凍弁当でも驚くほど味が変わります。
+          <ComparisonTable
+            headers={["感じ方", "考えられる原因", "試すこと"]}
+            rows={[
+              ["硬い・パサパサ・焦げた", "加熱のしすぎ（自動ボタン、表示より長い時間、1000Wなどの高出力）", "自動ボタンを使わず、手動で表示どおりに加熱する（推奨は500Wか600W）"],
+              ["味や食感が落ちている", "溶けた状態で加熱した／冷凍庫の温度変化で乾燥した（冷凍焼け）", "冷凍のまま加熱する。家庭の冷凍室では未開封でも2〜3か月で食べるのが協会の目安"],
+              ["一部が冷たい", "加熱の不足・ムラ", "公式の案内を確認する。食宅便は底がまだ冷たければ10秒ずつ追加と案内"],
+              ["味が薄い・物足りない", "塩分を抑えた設計（例: ワタミの宅食ダイレクト いつでも三菜は食塩相当量2.0g以下）", "メニューを選べるサービスに替える。味の好みは温め方では変わらない"],
+            ]}
+          />
+          <p className="text-xs text-warm-gray mb-3">
+            出典: <a href="https://reishokukyo.or.jp/wp-content/uploads/pdf/claim_06.pdf" target="_blank" rel="noopener noreferrer nofollow" className="underline">日本冷凍食品協会「電子レンジで調理した冷凍食品の調理不良について」</a>／<a href="https://shokutakubin.com/shop/pages/faq.aspx" target="_blank" rel="noopener noreferrer nofollow" className="underline">食宅便 よくあるご質問</a>／<a href="https://www.watami-takushoku-direct.jp/" target="_blank" rel="noopener noreferrer nofollow" className="underline">ワタミの宅食ダイレクト公式</a>（いずれも2026年11月7日確認）。協会の資料は冷凍食品全般についてのもので、冷凍弁当に限りません。
           </p>
           <p>
-            この記事では、冷凍弁当がまずいと感じる<strong>5つの原因と美味しく食べる7つのコツ</strong>を解説します。さらに、「そもそも美味しい」と評判の冷凍弁当サービスTOP5もランキング形式で紹介します。
+            味の評判で選ぶなら、調査の例として<Link href="/articles/mitsuboshi-farm-reviews/#mazui" className="text-accent hover:underline">三ツ星ファーム</Link>はGMO顧客満足度ランキング（2025年・宅食利用者2,078名）の「商品のおいしさ」が8社中1位でした。当サイトは実食していません。この記事では、原因と直し方、サービスの選び方を紹介します。
           </p>
         </div>
 
@@ -204,7 +215,7 @@ export default function ReitouBentoMazuiPage() {
         <SectionHeading id="reasons">冷凍弁当がまずいと感じる5つの原因</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          冷凍弁当がまずいと感じる場合、サービスの品質よりも<strong>保存や解凍の方法</strong>に問題があるケースがほとんどです。よくある原因を5つ紹介します。
+          冷凍弁当がまずいと感じるときに確かめたい原因を5つ紹介します。<strong>保存や温め方</strong>は自分で直せるので、サービスを替える前に確認してみてください。
         </p>
 
         <div className="space-y-4 mb-6">
@@ -227,7 +238,7 @@ export default function ReitouBentoMazuiPage() {
             {
               num: "4",
               title: "味が薄い・物足りない",
-              text: "宅配弁当は健康を意識して塩分を2.0〜2.5g以下に抑えているサービスが多いため、普段コンビニ弁当や外食に慣れている方は最初は薄く感じることがあります。これは健康的な設計であり、1〜2週間で舌が慣れてくる方がほとんどです。",
+              text: "宅配弁当は健康を意識して塩分を2.0〜2.5g以下に抑えているサービスが多いため、普段コンビニ弁当や外食に慣れている方は最初は薄く感じることがあります。味の好みは人によって異なるため、合わなければメニューを選べるサービスも検討してください。",
             },
             {
               num: "5",
@@ -251,7 +262,7 @@ export default function ReitouBentoMazuiPage() {
         <SectionHeading id="tips">美味しく食べる7つのコツ</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          以下の7つのコツを実践するだけで、冷凍弁当の美味しさが格段にアップします。どれも簡単にできることばかりなので、ぜひ試してみてください。
+          温め方と保管で試せるコツを7つ紹介します。どれも今日からできます。
         </p>
 
         <div className="space-y-4 mb-6">
@@ -259,7 +270,7 @@ export default function ReitouBentoMazuiPage() {
             {
               num: "1",
               title: "パッケージ記載のワット数・時間を守る",
-              text: "各サービスが推奨するワット数と加熱時間は、テストを重ねて最適化された数値です。600W指定のものを700Wで温めると過加熱になります。500Wの場合は記載時間の1.2倍を目安にしてください。",
+              text: "各サービスが推奨するワット数と加熱時間は、テストを重ねて最適化された数値です。記載より高い出力や長い時間で温めると過加熱になります。自動ボタンは使わず、手動で設定してください（日本冷凍食品協会の推奨は500Wまたは600W）。",
             },
             {
               num: "2",

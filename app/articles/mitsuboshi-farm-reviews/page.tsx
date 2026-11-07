@@ -3,9 +3,9 @@ import Link from "next/link";
 import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
-  "三ツ星ファームの口コミ・評判は？まずいって本当？料金（1食711円〜）と解約の仕方【2026年10月】";
+  "三ツ星ファームの口コミ・評判は？まずいって本当？料金（1食711円〜）と解約の仕方【2026年11月】";
 const ARTICLE_DESCRIPTION =
-  "三ツ星ファームの口コミ・評判を楽天・App Store・2,078名の満足度調査・SNS集計など出典付きで整理。「まずい」の声の中身、料金（1食711円〜）・送料、アプリ・LINE・電話での解約の仕方と締切を公式で確認しました。";
+  "三ツ星ファームの口コミ・評判を、楽天925件・App Store 9,315件・Yahoo!18件・2,078名の満足度調査など媒体名と件数つきで整理。「まずい」の声の中身、料金（1食711円〜・送料込み約758円〜）、アプリ・LINE・電話での解約の仕方と締切を公式で確認しました。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/mitsuboshi-farm-reviews/";
 
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-16T00:00:00+09:00",
-    modifiedTime: "2026-10-28T00:00:00+09:00",
+    modifiedTime: "2026-11-07T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -88,7 +88,7 @@ const faqData = [
   {
     question: "楽天市場やアプリストアでの評価は？",
     answer:
-      "楽天市場の「三ツ星ファーム」ショップレビューは910件・平均4.67、App Storeの公式アプリは9,093件・平均4.2です（いずれも2026年10月14日確認）。楽天は配送・梱包への評価、アプリは使い勝手への評価が中心で、味の評価とは別物です。味については、利用者2,078名のGMO顧客満足度ランキング（2025年）で「商品のおいしさ」が宅食8社中1位でした。",
+      "楽天市場の「三ツ星ファーム」ショップレビューは925件・平均4.68、App Storeの公式アプリは9,315件・平均4.2です（いずれも2026年11月7日確認）。楽天は配送・梱包への評価、アプリは使い勝手への評価が中心で、味の評価とは別物です。味については、利用者2,078名のGMO顧客満足度ランキング（2025年）で「商品のおいしさ」が宅食8社中1位でした。",
   },
 ];
 
@@ -263,7 +263,7 @@ export default function MitsuboshiFarmReviewsPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-16T00:00:00+09:00",
-    dateModified: "2026-10-28T00:00:00+09:00",
+    dateModified: "2026-11-07T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -316,7 +316,7 @@ export default function MitsuboshiFarmReviewsPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-04-16">公開: 2026年4月16日</time>
-            <time dateTime="2026-10-28">更新: 2026年10月28日（料金・送料・解約の手順は10月28日に公式で確認、レビュー件数・満足度調査は10月14日に確認）</time>
+            <time dateTime="2026-11-07">更新: 2026年11月7日（料金・送料とレビュー件数は11月7日、解約の手順は10月28日に確認。満足度調査は2025年の結果）</time>
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
@@ -328,8 +328,28 @@ export default function MitsuboshiFarmReviewsPage() {
           <ul className="list-disc list-inside space-y-1 mb-3">
             <li><strong>味</strong>：評価は高めです。宅食利用者2,078名のGMO顧客満足度ランキング（2025年）で「商品のおいしさ」は8社中1位でした。Xの投稿を集計した Moovoo（2022年7〜8月）では、利用の感想のべ60件のうち味についてが42件で、味を評価しない声は4件でした。</li>
             <li><strong>「まずい」の中身</strong>：メニュー全体ではなく、一部のメニューや副菜への不満が中心です。48件を集計した tokyolucci では、不満の約3割が「味・量と料金の釣り合い」でした。</li>
-            <li><strong>料金・解約</strong>：通常の定期便は1食711円〜927円（税込）＋送料990円です。停止はアプリ・公式LINE（24時間）か電話で、マイページの「変更締切日」（原則次回お届け予定日の7日前）までに手続きします。初回分はキャンセルできません（公式・2026年10月28日確認）。</li>
+            <li><strong>料金・解約</strong>：通常の定期便は1食711円〜927円（税込）＋送料990円です（料金・送料は公式で2026年11月7日確認）。停止はアプリ・公式LINE（24時間）か電話で、マイページの「変更締切日」（原則次回お届け予定日の7日前）までに手続きします。初回分はキャンセルできません（手続きは公式で2026年10月28日確認）。</li>
           </ul>
+          <ComparisonTable
+            headers={["定期便（税込）", "料金", "1食あたり", "送料込み1食（2回目以降）"]}
+            rows={[
+              ["7食コース", "6,485円", "927円", "約1,068円"],
+              ["14食コース", "11,458円", "819円", "約889円"],
+              ["21食コース", "14,918円", "711円", "約758円"],
+            ]}
+          />
+          <ComparisonTable
+            headers={["媒体", "件数・評価", "何の評価か"]}
+            rows={[
+              ["楽天市場 ショップレビュー", "925件・平均4.68", "配送・梱包・対応が中心"],
+              ["App Store 公式アプリ", "9,315件・平均4.2", "アプリの使い勝手が中心（星のみの評価を含む）"],
+              ["Yahoo!ショッピング ストアレビュー", "18件・平均4.39", "件数が少なく参考程度"],
+              ["GMO顧客満足度ランキング 2025年", "利用者2,078名・総合3位", "「商品のおいしさ」は8社中1位"],
+            ]}
+          />
+          <p className="text-xs text-warm-gray mb-3">
+            料金は<a href="https://mitsuboshifarm.jp/" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式サイト</a>、送料は<a href="https://terms.inglewood.co.jp/n09mnby078/commercial-transactions/" target="_blank" rel="noopener noreferrer nofollow" className="underline">特定商取引法に基づく表記</a>で確認。送料込みは本州の送料990円を加えた当サイトの計算です。件数は<a href="https://review.rakuten.co.jp/shop/4/400530_400530/" target="_blank" rel="noopener noreferrer nofollow" className="underline">楽天</a>・App Store・<a href="https://shopping.yahoo.co.jp/store_rating/mitsuboshifarm/store/review/" target="_blank" rel="noopener noreferrer nofollow" className="underline">Yahoo!</a>の表示です（いずれも2026年11月7日確認）。みん評はこのサイトからは閲覧できず、数値は載せていません。
+          </p>
           <p>
             当サイトは実食していません。口コミは各節に出典を載せ、料金・送料・手続きは公式サイトで確認した値だけを載せています。
           </p>
@@ -434,10 +454,10 @@ export default function MitsuboshiFarmReviewsPage() {
         <ComparisonTable
           headers={["公開レビュー", "評価・件数", "内容の傾向"]}
           rows={[
-            ["楽天市場（ショップレビュー）", "4.67（910件・2026年10月14日）", "配送の早さ・梱包・対応への評価が中心"],
-            ["App Store 公式アプリ", "4.2（9,093件・2026年10月14日）", "星のみの評価を含む件数。アプリの使い勝手への評価で、味の評価とは別"],
+            ["楽天市場（ショップレビュー）", "4.68（925件・2026年11月7日）", "配送の早さ・梱包・対応への評価が中心"],
+            ["App Store 公式アプリ", "4.2（9,315件・2026年11月7日）", "星のみの評価を含む件数。アプリの使い勝手への評価で、味の評価とは別"],
             ["GMO顧客満足度ランキング（2025年・利用者2,078名）", "宅食8社中 総合3位（62.07点）", "「商品の品揃え」「商品のおいしさ」が1位、男性の評価は8位（下の表）"],
-            ["Yahoo!ショッピング（ストアレビュー）", "4.50（16件：星5が10件・星4が4件・星3が2件）", "件数が少なく参考程度"],
+            ["Yahoo!ショッピング（ストアレビュー）", "4.39（18件：星5が10件・星4が5件・星3が3件・2026年11月7日）", "件数が少なく参考程度"],
             ["みん評", "件数・平均点は未確認", "当サイトからは閲覧できず、数値は記載していません"],
           ]}
         />
@@ -478,7 +498,7 @@ export default function MitsuboshiFarmReviewsPage() {
           {
             title: "配送・梱包の対応が丁寧",
             reviews: [
-              "楽天市場のショップレビュー（910件・平均4.67・2026年10月14日確認）は、「予定通り届く」「梱包も問題ない」「配送時期を随時知らせてくれる」といった配送・対応への評価が中心です。",
+              "楽天市場のショップレビュー（925件・平均4.68・2026年11月7日確認）は、「予定通り届く」「梱包も問題ない」「配送時期を随時知らせてくれる」といった配送・対応への評価が中心です。",
             ],
           },
         ].map((category) => (
@@ -762,7 +782,7 @@ export default function MitsuboshiFarmReviewsPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6 leading-relaxed">
-          ※料金・1食あたりは公式サイト表記です（2026年10月9日確認）。送料込みは本州の送料990円を加えて編集部が計算しています。14食・21食コースの初回は送料無料です。
+          ※料金は公式サイト表記です（2026年11月7日確認）。送料込みは本州の送料990円を加えて編集部が計算しています。14食・21食コースの初回は送料無料です。
         </p>
 
         <SubHeading>長期継続応援プラン・冷凍庫プレゼントプラン</SubHeading>
@@ -1058,7 +1078,7 @@ export default function MitsuboshiFarmReviewsPage() {
 
           <p className="text-sm leading-relaxed mb-4">
             三ツ星ファームは<strong>「味の評判」「メニューの多さ」「たんぱく質まで決めた栄養基準」</strong>
-            が強みの冷凍宅配食です。楽天のショップレビューは910件で平均4.67（2026年10月14日確認）、実食した第三者メディアでも味を評価する声が目立ちます。一方で、量の少なさ・価格・副菜の当たり外れ・お得なプランの解約手数料を指摘する声もあります。食事の質を重視する人、筋トレやダイエットでたんぱく質を確保したい人に向いています。
+            が強みの冷凍宅配食です。楽天のショップレビューは925件で平均4.68（2026年11月14日確認）、実食した第三者メディアでも味を評価する声が目立ちます。一方で、量の少なさ・価格・副菜の当たり外れ・お得なプランの解約手数料を指摘する声もあります。食事の質を重視する人、筋トレやダイエットでたんぱく質を確保したい人に向いています。
           </p>
           <p className="text-sm leading-relaxed mb-4">
             一方、コスパを重視するならnosh、医療レベルの食事制限が必要ならウェルネスダイニングが向いています。

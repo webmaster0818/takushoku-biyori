@@ -5,7 +5,7 @@ import ServiceCapture from "@/components/ServiceCapture";
 const ARTICLE_TITLE =
   "食宅便の口コミ・評判は？まずいって本当？日清医療食品の宅配弁当を中立検証";
 const ARTICLE_DESCRIPTION =
-  "食宅便（しょくたくびん）は「まずい」って本当？口コミ・評判を出典付きで検証します。日清医療食品が手がける宅配弁当の味・栄養・コスパを、実食レビューメディアの評価を引用しながら中立に解説します。料金プラン・送料・全コースの特徴も整理します。";
+  "食宅便（しょくたくびん）は「まずい」って本当？口コミ・評判を出典付きで検証します。2025年4月の値上げ（おまかせ7食 4,173円→4,830円、定期の送料 390円→940円）と現在の料金・送料も、公式の記録で整理します。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/shokutakubin-reviews/";
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: ARTICLE_TITLE,
   description: ARTICLE_DESCRIPTION,
   keywords:
-    "食宅便 口コミ, 食宅便 評判, 食宅便 まずい, 食宅便 料金, 食宅便 送料, 日清医療食品, 宅配弁当 口コミ",
+    "食宅便 値上げ, 食宅便 口コミ, 食宅便 評判, 食宅便 まずい, 食宅便 料金, 食宅便 送料, 日清医療食品, 宅配弁当 口コミ",
   alternates: { canonical: ARTICLE_URL },
   openGraph: {
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-16T00:00:00+09:00",
-    modifiedTime: "2026-10-16T00:00:00+09:00",
+    modifiedTime: "2026-11-07T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -30,6 +30,11 @@ export const metadata: Metadata = {
 /* ---------- FAQ data ---------- */
 
 const faqData = [
+  {
+    question: "食宅便は値上げした？",
+    answer:
+      "公式サイトは2025年4月3日からの価格改定を告知していました。公式サイトの記録（Internet Archive）では、おまかせコース7食（定期）が4,173円から4,830円に、らくらく定期便の送料が390円から940円に、都度便の送料が780円から1,330円に上がっています（いずれも税込）。2026年11月7日の公式の金額も同じで、2026年に入ってからの改定は確認できませんでした。",
+  },
   {
     question: "食宅便のお試しセットはある？",
     answer:
@@ -138,7 +143,7 @@ function StarRating({ count }: { count: number }) {
 export default function ShokutakubinReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-16T00:00:00+09:00", dateModified: "2026-10-21T00:00:00+09:00",
+    datePublished: "2026-04-16T00:00:00+09:00", dateModified: "2026-11-07T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -168,7 +173,7 @@ export default function ShokutakubinReviewsPage() {
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-04-16">公開: 2026年4月16日</time>
-            <time dateTime="2026-07-04">更新: 2026年7月4日</time>
+            <time dateTime="2026-11-07">更新: 2026年11月7日（料金・送料は11月7日に公式で確認）</time>
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
@@ -183,6 +188,29 @@ export default function ShokutakubinReviewsPage() {
           </p>
           <p>
             <strong>全コースの料金・送料・特徴</strong>まで詳しく解説します。食宅便が自分に合うかどうか、この記事で判断できます。
+          </p>
+        </div>
+
+        {/* 値上げの早見表 */}
+        <div className="bg-white border border-warm-border rounded-xl p-5 mb-8 text-sm leading-relaxed">
+          <p className="font-bold mb-2" id="neage">食宅便は値上げした？：2025年4月3日に価格を改定（2026年の改定は確認できず）</p>
+          <p className="mb-3">
+            公式サイトは2025年3月の時点で「4月3日（木）からの価格改定」を告知していました。改定の前後で、らくらく定期便の7食セットと送料は次のように変わっています。現在の金額は2025年5月の記録と同じで、2026年3月・6月・7月の記録とも一致するため、2026年に入ってからの改定は確認できませんでした。
+          </p>
+          <ComparisonTable
+            headers={["税込", "2025年3月24日の記録", "2025年5月13日の記録", "現在（2026年11月7日）"]}
+            rows={[
+              ["おまかせコース 7食（定期）", "4,173円", "4,830円", "4,830円"],
+              ["低糖質セレクト 7食（定期）", "4,173円", "5,180円", "5,180円"],
+              ["塩分&カロリーケア 7食（定期）", "4,588円", "5,180円", "5,180円"],
+              ["たんぱくケア 7食（定期）", "4,588円", "5,180円", "5,180円"],
+              ["やわらかい食事 7食（定期）", "4,588円", "5,180円", "5,180円"],
+              ["送料（都度便・1梱包）", "780円", "1,330円", "1,330円"],
+              ["送料（らくらく定期便・1梱包）", "390円", "940円", "940円"],
+            ]}
+          />
+          <p className="text-xs text-warm-gray">
+            出典: 公式サイトの記録（Internet Archive）<a href="https://web.archive.org/web/20250324002737/https://shokutakubin.com/shop/default.aspx" target="_blank" rel="noopener noreferrer nofollow" className="underline">2025年3月24日</a>／<a href="https://web.archive.org/web/20250513184310/https://shokutakubin.com/shop/default.aspx" target="_blank" rel="noopener noreferrer nofollow" className="underline">2025年5月13日</a>／<a href="https://web.archive.org/web/20260310121923/https://shokutakubin.com/shop/default.aspx" target="_blank" rel="noopener noreferrer nofollow" className="underline">2026年3月10日</a>、現在の値は<a href="https://shokutakubin.com/shop/r/rmenuall/" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式の定期コース一覧</a>（2026年11月7日確認）。2025年3月の記録では5食セットの送料は780円で、都度便・定期とも同額でした。
           </p>
         </div>
 
@@ -409,10 +437,10 @@ export default function ShokutakubinReviewsPage() {
           rows={[
             ["おまかせコース", "3,450円", "4,830円", "690円"],
             ["おこのみセレクト", "メニューにより異なる", "メニューにより異なる", "−"],
-            ["低糖質セレクト", "−", "5,180円", "740円"],
-            ["塩分&カロリーケア", "−", "5,180円", "740円"],
-            ["たんぱくケア", "−", "5,180円", "740円"],
-            ["やわらかい食事", "−", "5,180円", "740円"],
+            ["低糖質セレクト", "3,700円", "5,180円", "740円"],
+            ["塩分&カロリーケア", "3,700円", "5,180円", "740円"],
+            ["たんぱくケア", "3,700円", "5,180円", "740円"],
+            ["やわらかい食事", "3,700円", "5,180円", "740円"],
           ]}
         />
 
