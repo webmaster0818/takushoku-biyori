@@ -64,6 +64,17 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.6} d="M5 12h14M13 6l6 6-6 6" />
                 </svg>
               </Link>
+              {/* top-shortcut-202611: 「宅食 口コミ」「宅配 弁当 口コミ」向けの導線（TOP固有部分のみ） */}
+              <ul className="mt-6 space-y-2 text-[13.5px] leading-relaxed text-foreground/85">
+                <li>
+                  ・料金を比べる：
+                  <Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent underline">宅食料金白書（18社の料金・送料・送料込みの1食単価を公式で確認）</Link>
+                </li>
+                <li>
+                  ・口コミを比べる：
+                  <Link href="/articles/#kuchikomi" className="text-accent underline">サービス別の口コミ・評判（媒体名・件数などの出典つき）</Link>
+                </li>
+              </ul>
             </div>
             {/* Hero Image */}
             <figure className="border border-rule bg-card p-2 md:p-3">
