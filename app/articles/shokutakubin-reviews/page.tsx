@@ -382,7 +382,7 @@ export default function ShokutakubinReviewsPage() {
         {/* ===== まずい？検証 ===== */}
         <SectionHeading id="mazui">食宅便は「まずい」って本当？味の評判を検証</SectionHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          「食宅便 まずい」という検索候補が表示されることがありますが、<strong>当サイトが確認した範囲では、実食レビューメディアの評価はむしろ良好です</strong>。お試しセットを実食した宅食グルメは「まずい」という噂は当たらないと結論づけ、実食した3品すべてを<strong>「一定レベルの美味しさなので、ストレスなく食べられた」</strong>（<a href="https://meal.app-liv.jp/archive/138979/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">出典</a>）と評価しています。OZmallの実食レビューでも<strong>「万人に受け入れられるようなバランスのよい美味しさ」</strong>（<a href="https://www.ozmall.co.jp/healthcare/food/article/40177/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">出典</a>）と表現されています。
+          「食宅便 まずい」という検索候補が表示されることがありますが、<strong>当サイトが確認した範囲では、実食レビューメディアの評価はむしろ良好です</strong>。3品を実食した宅食グルメは、そのうち「帆立のバター醤油」について<strong>「主菜・副菜がいずれも一定レベルの美味しさなので、『まずい』といったストレスなく食べられました」</strong>（<a href="https://meal.app-liv.jp/archive/138979/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">出典</a>）と書いています。OZmallの実食レビューでも<strong>「万人に受け入れられるようなバランスのよい美味しさ」</strong>（<a href="https://www.ozmall.co.jp/healthcare/food/article/40177/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">出典</a>）と表現されています。
         </p>
         <p className="text-sm mb-6 leading-relaxed">
           一方で「まずい」と感じる余地があるのは主に2つのケースです。1つは<strong>制限食コース（塩分ケア・たんぱくケアなど）</strong>で、栄養基準を守るぶん味付けが控えめになり、濃い味に慣れた人には物足りなく感じられることです。もう1つは<strong>「派手さはない家庭的な味」</strong>という設計上、レストラン級の感動を期待すると肩透かしに感じることです。病院・介護給食最大手の日清医療食品が作る「毎日食べても飽きない安定した味」がコンセプトなので、味の方向性が合うかはおまかせコースの1回注文（都度購入）で確かめるのが確実です。

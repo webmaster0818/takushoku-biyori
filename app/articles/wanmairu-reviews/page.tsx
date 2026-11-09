@@ -237,7 +237,7 @@ const badReviewCategories: {
     reviews: [
       {
         text: "湯煎での解凍調理は意外と面倒という印象です",
-        meta: "女性・39歳・会社員",
+        meta: "女性・36歳・主婦",
         sourceName: "宅食グルメ（Appliv）",
         sourceUrl: "https://meal.app-liv.jp/archive/140336/",
       },
