@@ -5,7 +5,8 @@ import ServiceCapture from "@/components/ServiceCapture";
 /*
   goodeli（グーデリ）の受け皿ページ。
   ⚠️ 作った理由: GSCで「グーデリ」20表示・平均5.6位・0クリックが
-     /articles/gofood-kuchikomi/（GOFOOD＝別会社の低糖質弁当）に着地していた。
+     /articles/gofood-kuchikomi/（GOFOOD＝同じゴーフード株式会社の、2025-06-30終了の低糖質弁当）に着地していた。
+     ⚠️ 2026-11-09 訂正: 当初「別会社」としていたが、両サイトの特商法表記で販売業者はともにゴーフード株式会社。
      goodeli.jp を確認して別サービスと確定したため、専用の受け皿を新設する。
   ⚠️ 数値は 2026-09-06 に公式（goodeli.jp）で確認したもののみ。
      当サイトは実食レビュー未実施・出典付きの口コミも未収集のため、
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-09-06T00:00:00+09:00",
-    modifiedTime: "2026-09-06T00:00:00+09:00",
+    modifiedTime: "2026-11-09T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -41,7 +42,7 @@ const faqData = [
   {
     question: "goodeli（グーデリ）とGOFOOD（ゴーフード）は同じサービスですか？",
     answer:
-      "別のサービスです。goodeliは goodeli.jp が運営する冷凍宅配食で、主菜に副菜が付く構成です。GOFOOD（ゴーフード）は全メニュー糖質20g以下を掲げていた低糖質の冷凍弁当で、運営会社も価格体系も異なります（GOFOODは公式お知らせで2025年6月30日のサービス終了を告知済み）。名前が似ているため検索時に混同されやすいので、公式サイトのドメインで見分けてください。",
+      "別のサービス（ブランド）ですが、販売業者はどちらもゴーフード株式会社です（両サイトの特定商取引法に基づく表記・2026年11月9日確認）。goodeliは主菜に副菜が付く冷凍宅配食で、GOFOOD（ゴーフード）は全メニュー糖質20g以下を掲げていた低糖質の冷凍弁当です。価格体系も異なります（GOFOODは公式お知らせで2025年6月30日のサービス終了を告知済み）。名前が似ているため検索時に混同されやすいので、公式サイトのドメインで見分けてください。",
   },
   {
     question: "goodeliの料金はいくらですか？",
@@ -79,7 +80,7 @@ const jsonLd = {
       description: ARTICLE_DESCRIPTION,
       url: ARTICLE_URL,
       datePublished: "2026-09-06T00:00:00+09:00",
-      dateModified: "2026-09-06T00:00:00+09:00",
+      dateModified: "2026-11-09T00:00:00+09:00",
       author: { "@type": "Organization", name: "宅食びより編集部" },
       publisher: { "@type": "Organization", name: "宅食びより" },
     },
@@ -122,14 +123,15 @@ export default function Page() {
         <h1 className="mt-4 text-2xl md:text-3xl font-bold leading-relaxed">
           goodeli(グーデリ)とは？料金・送料・GOFOOD(ゴーフード)との違いを公式情報で整理
         </h1>
-        <p className="mt-3 text-xs text-gray-500">最終更新：{CHECKED}／公式サイトで確認した情報のみ掲載</p>
+        <p className="mt-3 text-xs text-gray-500">最終更新：2026年11月9日（販売業者・申込受付の表示を公式で確認して訂正。料金は{CHECKED}確認）／公式サイトで確認した情報のみ掲載</p>
         </div>{/* /subhead */}
 
         {/* 結論ファースト */}
         <div className="mt-6 rounded-xl border-l-4 border-accent bg-cream p-5">
           <p className="text-sm font-bold mb-2">この記事の要点</p>
           <ul className="space-y-2 text-sm leading-relaxed">
-            <li>・goodeli（グーデリ）と GOFOOD（ゴーフード）は<strong>別のサービス</strong>です。名前が似ているだけで、運営も価格体系も違います。なお GOFOOD は2025年6月30日にサービスを終了しています（公式お知らせ）。</li>
+            <li>・goodeli（グーデリ）と GOFOOD（ゴーフード）は<strong>別のサービス</strong>です。ただし販売業者はどちらも<strong>ゴーフード株式会社</strong>です（両サイトの特定商取引法に基づく表記・2026年11月9日確認）。GOFOOD は2025年6月30日にサービスを終了し、公式お知らせで「新たに新ブランドとして生まれ変わります」と案内していました。</li>
+            <li>・goodeli のセット選択ページには<strong>「※現在お申込みの受付は行っておりません」</strong>と表示されています（2026年11月9日確認）。申し込めるかは公式サイトで確認してください。</li>
             <li>・料金は<strong>14食で1食896円（税込）、21食で1食842円（税込）</strong>。まとめ買いほど1食あたりが下がります。</li>
             <li>・送料は<strong>通常1,100円・北海道と沖縄は2,750円です（税込）</strong>。1食あたりで比べるときはここを足してください。</li>
             <li>・<strong>初回購入分は解約・キャンセルができません</strong>。ここは申し込み前に必ず確認してください。</li>
@@ -140,7 +142,7 @@ export default function Page() {
         <ServiceCapture id="goodeli" />{/* svc-cap-202610 */}
         <p className="mt-4 text-sm leading-relaxed">
           「グーデリ」と検索する人の多くが、名前の近い GOFOOD（ゴーフード）のページにたどり着いています。
-          読み方が似ているうえ、どちらも冷凍の宅配食だからです。ただし中身は別物です。
+          読み方が似ているうえ、どちらも冷凍の宅配食だからです。販売業者は同じゴーフード株式会社ですが、中身は別物です。
         </p>
         <div className="mt-4 overflow-x-auto">
           <table className="w-full text-sm border-collapse">
@@ -158,8 +160,13 @@ export default function Page() {
                 <td className="border p-2">gofood.jp</td>
               </tr>
               <tr>
+                <th className="border p-2 text-left font-normal text-gray-600">販売業者</th>
+                <td className="border p-2">ゴーフード株式会社</td>
+                <td className="border p-2">ゴーフード株式会社</td>
+              </tr>
+              <tr>
                 <th className="border p-2 text-left font-normal text-gray-600">提供状況</th>
-                <td className="border p-2">販売中</td>
+                <td className="border p-2">セット選択ページに「現在お申込みの受付は行っておりません」と表示（2026年11月9日確認）</td>
                 <td className="border p-2">2025年6月30日にサービス終了（公式告知）</td>
               </tr>
               <tr>

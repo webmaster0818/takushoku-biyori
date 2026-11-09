@@ -5,7 +5,7 @@ import ServiceCapture from "@/components/ServiceCapture";
 const ARTICLE_TITLE =
   "GOFOOD(ゴーフード)の口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "GOFOOD(ゴーフード)は「まずい」って本当？良い・悪い口コミを出典付きで検証します。糖質20g以下・タンパク質20g以上の低糖質冷凍弁当の料金（10食1食税込598円〜）・送料・解約条件も解説します。公式は2025年6月30日のサービス終了を告知しています。【2026年10月更新】";
+  "GOFOOD(ゴーフード)は2025年6月30日にサービス終了（公式告知）。同じゴーフード株式会社の新ブランドgoodeliの料金（1食税込842円〜）、公式に残る料金（1食598円〜）と良い・悪い口コミを出典付きで整理します。【2026年11月確認】";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/gofood-kuchikomi/";
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-10T00:00:00+09:00",
+    modifiedTime: "2026-11-09T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -341,7 +341,7 @@ export default function GofoodKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-10-10T00:00:00+09:00",
+    dateModified: "2026-11-09T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -402,7 +402,7 @@ export default function GofoodKuchikomiPage() {
         {/* goodeli-disambig-202609
             「グーデリ」で検索した人がこの記事に着地していたため、別サービスであることを先頭で明示する。 */}
         <div className="mt-2 rounded-lg border p-3 text-xs leading-relaxed" style={{ borderColor: "#dde3eb", color: "#6b7785" }}>
-          「goodeli（グーデリ）」をお探しの方へ：goodeli は GOFOOD とは別のサービスです。
+          「goodeli（グーデリ）」をお探しの方へ：goodeli は GOFOOD と同じゴーフード株式会社が販売する別ブランドです（両サイトの特定商取引法に基づく表記・2026年11月9日確認）。
           <Link href="/articles/goodeli-kuchikomi/" className="underline">goodeli(グーデリ)の料金・送料・違いはこちら</Link>
         </div>
 
@@ -422,7 +422,7 @@ export default function GofoodKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
-            <time dateTime="2026-10-09">更新: 2026年10月9日（公式で再確認）</time>
+            <time dateTime="2026-11-09">更新: 2026年11月9日（公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -437,6 +437,34 @@ export default function GofoodKuchikomiPage() {
         </header>
         </div>{/* /subhead */}
 
+        {/* 現況の答え（2026-11-09 公式で確認） */}
+        <div className="bg-yellow-50 border border-yellow-300 rounded-xl p-4 mb-8 text-sm leading-relaxed">
+          <p className="font-bold mb-2">【結論】GOFOODは2025年6月30日にサービス終了（2026年11月9日 公式で確認）</p>
+          <div className="table-wrapper mb-2">
+            <table className="w-full text-sm border-collapse">
+              <tbody>
+                <tr>
+                  <th className="border border-warm-border px-3 py-2 text-left font-bold whitespace-nowrap align-top">現況</th>
+                  <td className="border border-warm-border px-3 py-2">公式お知らせ（2025年5月30日付）で「2025年6月30日をもちましてサービスを終了」と告知（<a href="https://gofood.jp/shop/information/info40" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式お知らせ</a>）。公式サイトの商品一覧は表示されますが、掲載25品はすべて「販売価格：0円」の表示です。</td>
+                </tr>
+                <tr>
+                  <th className="border border-warm-border px-3 py-2 text-left font-bold whitespace-nowrap align-top">後継</th>
+                  <td className="border border-warm-border px-3 py-2">同じお知らせで「GOFOODは新たに新ブランドとして生まれ変わります」と案内。新ブランド名の記載はありませんが、goodeli（グーデリ・2026年1月15日公式サイト開設）の販売業者は GOFOOD と同じ<strong>ゴーフード株式会社</strong>です（両サイトの特定商取引法に基づく表記）。</td>
+                </tr>
+                <tr>
+                  <th className="border border-warm-border px-3 py-2 text-left font-bold whitespace-nowrap align-top">goodeliの料金</th>
+                  <td className="border border-warm-border px-3 py-2">弁当1食 税込896円（14食セット）・842円（21食セット）、送料1,100円（北海道・沖縄2,750円）。ただし goodeli のセット選択ページには「※現在お申込みの受付は行っておりません」と表示されています。<Link href="/articles/goodeli-kuchikomi/" className="underline">goodeliの料金・送料の詳細</Link></td>
+                </tr>
+                <tr>
+                  <th className="border border-warm-border px-3 py-2 text-left font-bold whitespace-nowrap align-top">GOFOODの料金（公式ページに残る掲載値）</th>
+                  <td className="border border-warm-border px-3 py-2">セット購入ページの表示は、10食・20食セットで1食 税込598円〜、5食セットで656円〜（注文できるかは確認できません）。送料は5食・10食で940円〜2,170円（地域別）、20食は北海道・沖縄（980円）を除き無料（<a href="#price" className="underline">料金・送料の表へ</a>）。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-warm-gray">出典: gofood.jp（お知らせ info40・商品一覧・特定商取引法に基づく表記）、goodeli.jp（トップ・セット選択ページ・特定商取引法に基づく表示）。いずれも2026年11月9日確認。低糖質×高たんぱくの宅配食を今から始めるなら、<Link href="/articles/kinnikushokudo-deli-kuchikomi/" className="underline">筋肉食堂DELI</Link>など販売中のサービスと比べてください。</p>
+        </div>
+
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
@@ -447,14 +475,6 @@ export default function GofoodKuchikomiPage() {
           </p>
           <p>
             さらに、<strong>プラン別の料金・地域別送料・回数縛りなしの仕組み</strong>まで詳しく解説します。GOFOODが自分に合うかどうか、この記事で判断できます。
-          </p>
-        </div>
-
-        {/* 販売状況の注記 */}
-        <div className="bg-yellow-50 border border-yellow-300 rounded-xl p-4 mb-8 text-sm leading-relaxed">
-          <p className="font-bold mb-1">【2026年10月9日時点の販売状況について】</p>
-          <p>
-            公式サイトのお知らせ（2025年5月30日付）で「2025年6月30日をもちましてサービスを終了」「新たに新ブランドとして生まれ変わります」と告知されています（<a href="https://gofood.jp/shop/information/info40" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式お知らせ</a>・2026年10月9日確認）。同日時点で購入ページ自体は表示されますが、商品一覧は全品「販売価格：0円」表示で、実際に注文できるかは確認できませんでした。運営会社は新ブランド「goodeli（グーデリ）」を展開しています。本記事の料金・送料は公式サイトに掲載されている値をそのまま記載したものです。<strong>注文前に必ず公式サイトで最新の販売状況をご確認ください。</strong>
           </p>
         </div>
 
