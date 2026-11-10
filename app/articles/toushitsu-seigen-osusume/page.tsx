@@ -424,7 +424,7 @@ export default function ToushitsuSeigenOsusumePage() {
         />
         <ServiceCapture id="mitsuboshi" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
-          「糖質制限でも美味しさは妥協したくない」方には三ツ星ファームです。糖質25g以下・たんぱく質15g以上・350kcal以下の三ツ星基準で、プロの料理人監修メニューは「低糖質とは思えない」クオリティです。メニューは125種類以上から毎回選べます。詳しくは<Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark underline">三ツ星ファームの口コミ・評判を徹底調査</Link>をご覧ください。
+          「糖質制限でも美味しさは妥協したくない」方には三ツ星ファームです。糖質25g以下・たんぱく質15g以上・350kcal以下の三ツ星基準です。公式サイトは「一流シェフの味を自宅にお届け」としています（2026年11月10日に公式サイトで確認）。メニューは125種類以上から毎回選べます。詳しくは<Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark underline">三ツ星ファームの口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
 
         <RankingCard
