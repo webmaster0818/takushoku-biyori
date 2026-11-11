@@ -20,9 +20,10 @@ const ARTICLE_TITLE =
   "宅配クック123の料金はいくら？全9メニューの価格表（1食577円〜・配達料無料）と口コミ【2026年11月】";
 const ARTICLE_H1 = "宅配クック123の料金はいくら？全9メニューの価格表と口コミ・安否確認";
 const ARTICLE_DESCRIPTION =
-  "宅配クック123の料金は普通食がごはん付き685円・おかずのみ577円、制限食は885円・777円（税込）です。配達料・会費は無料で1食から注文できます。全9メニューの価格と栄養基準、月額の目安、支払い方法、出典付きの口コミを2026年11月1日に公式で確認しました。";
+  "宅配クック123の料金は普通食がごはん付き685円・おかずのみ577円、制限食は885円・777円（税込）です。2025年12月にごはんだけ値上げ（おかずは据え置き）。配達料・会費は無料で1食から注文可。全9メニューの価格、月額の目安、出典付きの口コミを2026年11月11日に公式で確認しました。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/takuhai-cook123-kuchikomi/";
 const CHECKED = "2026年11月1日";
+const PRICE_CHECKED = "2026年11月11日"; /* 料金表・価格改定は 11/11 に公式で再確認 */
 const OFFICIAL = "https://takuhaicook123.jp/";
 
 export const metadata: Metadata = {
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-09-18T00:00:00+09:00",
-    modifiedTime: "2026-11-01T00:00:00+09:00",
+    modifiedTime: "2026-11-11T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -48,6 +49,11 @@ const faqData = [
     question: "宅配クック123の料金はいくらですか？",
     answer:
       "普通食がごはん付き685円・おかずのみ577円（税込）です。幸たんぱく食は724円／616円、健康ボリューム食は788円／680円です。カロリー・塩分調整食、たんぱく・塩分調整食、透析食、消化にやさしい食、やわらか食、ムースセット食は885円／777円です（2026年11月1日 公式サイト確認）。",
+  },
+  {
+    question: "宅配クック123は値上げしましたか？",
+    answer:
+      "公式の新着情報（2025年12月23日掲載）によると、2025年12月1日お届け分から、ごはん・おかゆの単品価格を65円（税抜）から100円（税抜）に改定しています。おかずの価格は変わっておらず、ごはん付きの価格が普通食で648円から685円になるなど、各メニューで37〜38円上がりました。これ以外の価格改定のお知らせは公式に掲載されていません（2026年11月11日 公式サイト確認）。",
   },
   {
     question: "店舗によって料金は違いますか？",
@@ -106,6 +112,15 @@ const MENU = [
   { name: "消化にやさしい食", rice: "885円", okazu: "777円", spec: "塩分2.0g未満", note: "消化機能が弱っている方・術後の自宅療養向け" },
   { name: "やわらか食", rice: "885円", okazu: "777円", spec: "塩分3.0g以下。歯茎と舌でつぶせるやわらかさ", note: "かむ力が弱ってきた方向け" },
   { name: "ムースセット食", rice: "885円", okazu: "777円", spec: "おかずのみ280kcal以上・たんぱく質14g以上・塩分2.0g未満", note: "かむ力・飲み込む力が弱ってきた方向け" },
+];
+
+/* 2025-12-01 の「ごはん・おかゆ」価格改定（公式 /topic/detail/256）。改定前は Wayback 20251009230139 の /menu、
+   現在は 2026-11-11 の公式 /menu。おかずのみは据え置き（Wayback と現在で同額）。 */
+const PRICE_REVISION = [
+  { name: "普通食", before: "648円", after: "685円", okazu: "577円（変更なし）" },
+  { name: "幸たんぱく食", before: "686円", after: "724円", okazu: "616円（変更なし）" },
+  { name: "健康ボリューム食", before: "750円", after: "788円", okazu: "680円（変更なし）" },
+  { name: "制限食など6メニュー", before: "847円", after: "885円", okazu: "777円（変更なし）" },
 ];
 
 /* 月額の目安（当サイトの算出。公式価格×食数。配達料・会費は無料なので加算なし） */
@@ -172,7 +187,7 @@ const jsonLd = {
       description: ARTICLE_DESCRIPTION,
       url: ARTICLE_URL,
       datePublished: "2026-09-18T00:00:00+09:00",
-      dateModified: "2026-11-01T00:00:00+09:00",
+      dateModified: "2026-11-11T00:00:00+09:00",
       author: { "@type": "Organization", name: "宅食びより編集部" },
       publisher: { "@type": "Organization", name: "宅食びより" },
     },
@@ -230,7 +245,7 @@ export default function Page() {
           {ARTICLE_H1}
         </h1>
         <p className="mt-3 text-xs text-gray-500">
-          公開：<time dateTime="2026-09-18">2026年9月18日</time>／更新：<time dateTime="2026-11-01">{CHECKED}</time>（料金・条件を公式サイトで再確認）
+          公開：<time dateTime="2026-09-18">2026年9月18日</time>／更新：<time dateTime="2026-11-11">{PRICE_CHECKED}</time>（料金と2025年12月の価格改定を公式サイトで再確認）
         </p>
         </div>{/* /subhead */}
 
@@ -239,7 +254,7 @@ export default function Page() {
           <h2 className="text-lg font-bold">結論：宅配クック123の料金は1食577円〜885円（税込）</h2>
           <p className="mt-2 text-sm leading-relaxed">
             普通食は<strong>ごはん付き685円／おかずのみ577円</strong>です。配達料・会費はかからず、<strong>支払いは弁当代のみ</strong>です。
-            価格は公式サイトに<strong>全国共通の税込価格</strong>で表示されており、店舗別の価格表はありません（{CHECKED} 確認）。
+            価格は公式サイトに<strong>全国共通の税込価格</strong>で表示されており、店舗別の価格表はありません（{PRICE_CHECKED} 確認）。2025年12月1日に<a href="#price-revision" className="underline">ごはんの価格だけ改定</a>されています。
           </p>
           <div className="mt-4 overflow-x-auto">
             <table className="w-full text-sm border-collapse">
@@ -264,11 +279,45 @@ export default function Page() {
             </table>
           </div>
           <ul className="mt-3 space-y-1 text-xs text-gray-600 leading-relaxed">
-            <li>※出典: <a href="https://takuhaicook123.jp/menu" target="_blank" rel="noopener noreferrer" className="underline">宅配クック123「お弁当の種類」</a>と各メニューのページ（{CHECKED} 確認・税込）。特定商取引法に基づく表示も「販売価格は『お弁当の種類』ページに税込価格で表示」「送料 無料」としています。</li>
+            <li>※出典: <a href="https://takuhaicook123.jp/menu" target="_blank" rel="noopener noreferrer" className="underline">宅配クック123「お弁当の種類」</a>と各メニューのページ（{PRICE_CHECKED} 確認・税込）。特定商取引法に基づく表示も「販売価格は『お弁当の種類』ページに税込価格で表示」「送料 無料」としています。</li>
             <li>※店舗で違うもの: 透析食は「一部取扱いの無い店舗」があります。支払い方法（口座振替は一部店舗）と市区町村の補助の扱いは、店舗・地域ごとに異なります。</li>
             <li>※制限食は特別用途食品ではなく、公式は「医師または管理栄養士にご相談の上」の利用を案内しています。</li>
-            <li>※他サイトには「普通食おかずのみ540円」「491円（税抜き）」の記載がありますが、{CHECKED}時点の公式表示は577円（税込）です。</li>
+            <li>※他サイトには「普通食おかずのみ540円」「491円（税抜き）」の記載がありますが、{PRICE_CHECKED}時点の公式表示は577円（税込）です。</li>
           </ul>
+
+          <div id="price-revision" className="mt-5 rounded-lg bg-cream p-4">
+            <h3 className="text-base font-bold">値上げはあった？ 2025年12月1日に「ごはん・おかゆ」が改定（おかずは据え置き）</h3>
+            <p className="mt-2 text-sm leading-relaxed">
+              公式の新着情報（2025年12月23日掲載）によると、米価格の高騰を理由に<strong>2025年12月1日お届け分から、ごはん・おかゆの単品価格を65円（税抜）→100円（税抜）</strong>に改定しています。
+              公式は「お弁当の『おかず』の価格に変更はございません」としており、<strong>値上がりしたのは「ごはん付き」の価格だけ</strong>です。
+            </p>
+            <div className="mt-3 overflow-x-auto">
+              <table className="w-full text-sm border-collapse bg-white">
+                <thead>
+                  <tr className="bg-cream">
+                    <th className="border p-2 text-left">メニュー（ごはん付き・税込）</th>
+                    <th className="border p-2 text-left whitespace-nowrap">改定前</th>
+                    <th className="border p-2 text-left whitespace-nowrap">現在</th>
+                    <th className="border p-2 text-left whitespace-nowrap">おかずのみ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {PRICE_REVISION.map((r) => (
+                    <tr key={r.name}>
+                      <th className="border p-2 text-left font-bold">{r.name}</th>
+                      <td className="border p-2 whitespace-nowrap">{r.before}</td>
+                      <td className="border p-2 whitespace-nowrap font-bold">{r.after}</td>
+                      <td className="border p-2 whitespace-nowrap">{r.okazu}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <ul className="mt-3 space-y-1 text-xs text-gray-600 leading-relaxed">
+              <li>※出典: <a href="https://takuhaicook123.jp/topic/detail/256" target="_blank" rel="noopener noreferrer" className="underline">宅配クック123「『ごはん・おかゆ』の価格改定について」</a>（2025年12月23日掲載・{PRICE_CHECKED} 確認）。「改定前」は公式「お弁当の種類」ページのインターネットアーカイブ（2025年10月9日取得）の表示、「現在」は{PRICE_CHECKED}の公式表示です。</li>
+              <li>※公式の新着情報（{PRICE_CHECKED}時点で2025年8月〜2026年11月分）に、これ以外の価格改定のお知らせはありません。公式は詳細を「各店舗へお問い合わせください」としています。</li>
+            </ul>
+          </div>
         </section>
 
         <div className="mt-6 rounded-xl border-l-4 border-accent bg-cream p-5">

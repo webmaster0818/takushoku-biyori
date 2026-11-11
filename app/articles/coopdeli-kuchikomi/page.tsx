@@ -7,6 +7,7 @@ const ARTICLE_TITLE =
 const ARTICLE_DESCRIPTION =
   "コープの宅配弁当（コープデリ夕食宅配・舞菜）はまずい？口コミの不満は薄味・量・飽きが中心で、みんなのランキングの口コミ8件に「まずい」とする投稿はありません。1食464〜842円の料金、2食・3食の税込額、kcal・塩分、出資金を2026年11月1日に公式で確認しました。";
 const CHECKED = "2026年11月1日";
+const PRICE_CHECKED = "2026年11月11日"; /* 冒頭の料金早見表は 11/11 に公式で再確認 */
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/coopdeli-kuchikomi/";
 
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-11-01T00:00:00+09:00",
+    modifiedTime: "2026-11-11T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -408,7 +409,7 @@ export default function CoopdeliKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-11-01T00:00:00+09:00",
+    dateModified: "2026-11-11T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -482,7 +483,7 @@ export default function CoopdeliKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
-            <time dateTime="2026-11-01">更新: 2026年11月1日（料金・利用条件を公式で再確認）</time>
+            <time dateTime="2026-11-11">更新: 2026年11月11日（料金・利用条件を公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -537,6 +538,34 @@ export default function CoopdeliKuchikomiPage() {
               </tbody>
             </table>
           </div>
+          <p className="font-bold text-sm mt-4 mb-2">料金の早見表（コープデリ夕食宅配・6コース・{PRICE_CHECKED}公式確認）</p>
+          <div className="table-wrapper mb-2">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-accent/10">
+                  <th className="border border-warm-border px-3 py-2 text-left">コース</th>
+                  <th className="border border-warm-border px-3 py-2 text-left whitespace-nowrap">1食（税込）</th>
+                  <th className="border border-warm-border px-3 py-2 text-left whitespace-nowrap">1日2食（税込）</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td className="border border-warm-border px-3 py-2">舞菜ミニ弁当（ご飯＋3品）</td><td className="border border-warm-border px-3 py-2 whitespace-nowrap">464円</td><td className="border border-warm-border px-3 py-2">表示なし</td></tr>
+                <tr><td className="border border-warm-border px-3 py-2">舞菜弁当（ご飯＋5品）</td><td className="border border-warm-border px-3 py-2 whitespace-nowrap">680円</td><td className="border border-warm-border px-3 py-2 whitespace-nowrap">1,308円</td></tr>
+                <tr><td className="border border-warm-border px-3 py-2">舞菜おかず</td><td className="border border-warm-border px-3 py-2 whitespace-nowrap">702円</td><td className="border border-warm-border px-3 py-2 whitespace-nowrap">1,352円</td></tr>
+                <tr><td className="border border-warm-border px-3 py-2">舞菜しっかりおかず</td><td className="border border-warm-border px-3 py-2 whitespace-nowrap">756円</td><td className="border border-warm-border px-3 py-2 whitespace-nowrap">1,460円</td></tr>
+                <tr><td className="border border-warm-border px-3 py-2">舞菜御膳</td><td className="border border-warm-border px-3 py-2 whitespace-nowrap">842円</td><td className="border border-warm-border px-3 py-2 whitespace-nowrap">1,632円</td></tr>
+                <tr><td className="border border-warm-border px-3 py-2">エネルギー塩分調整食</td><td className="border border-warm-border px-3 py-2 whitespace-nowrap">842円</td><td className="border border-warm-border px-3 py-2 whitespace-nowrap">1,684円</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <ul className="text-xs text-warm-gray mb-3 space-y-1 leading-relaxed">
+            <li>※ご飯150g 140円・もち麦入りご飯150g 162円（おかずのコースに追加）。配達手数料は無料。献立は日替わりで、メニューは選べません。</li>
+            <li>※利用には生協への加入が必要で、出資金は「各生協により500〜1,000円」（脱退時に返還）。お届けは月〜金のうち週3日以上、代金は登録口座からの引き落とし（毎月5日以降）です。</li>
+            <li>※「コープの宅配弁当」は地域の生協ごとに別サービスで、価格・コース・条件が違います（例: ユーコープの夕食宅配Maiciは1食740〜898円・2026年10月16日確認）。<a href="#other-coops" className="underline">他の生協の料金</a>もあわせて確認してください。</li>
+          </ul>
+          <p className="text-xs text-warm-gray">
+            ※料金の出典: <a href="https://daily.coopdeli.jp/index.html" target="_blank" rel="noopener noreferrer" className="underline">デイリーコープ公式サイト</a>の税込表示・<a href="https://www.coopdeli.jp/contents/daily/flow/index.html" target="_blank" rel="noopener noreferrer" className="underline">お届けまでの流れ</a>（出資金・週3日・引き落とし）。いずれも{PRICE_CHECKED}確認。
+          </p>
           <p className="text-xs text-warm-gray">
             ※出典: <a href="https://ranking.net/items/e3d69e" target="_blank" rel="noopener noreferrer nofollow" className="underline">みんなのランキング「デイリーコープ（コープデリ）」</a>（口コミ8件・9人の評価・{CHECKED}確認）／<a href="https://daily.coopdeli.jp/index.html" target="_blank" rel="noopener noreferrer" className="underline">デイリーコープ公式サイト</a>（料金・{CHECKED}確認）／公式献立表サンプル（2026年3月23日〜27日分）・公式FAQ（献立基準・消費期限・2026年10月16日確認）。詳しい検証は<a href="#mazui" className="underline">「まずい」と言われる理由5つと対策</a>へ。
           </p>
