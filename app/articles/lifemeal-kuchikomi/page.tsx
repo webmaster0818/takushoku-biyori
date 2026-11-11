@@ -150,7 +150,7 @@ function SourcedReview({
 export default function LifemealKuchikomiPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-10-13T00:00:00+09:00",
+    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-11-11T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -311,7 +311,7 @@ export default function LifemealKuchikomiPage() {
           ]}
         />
         <p className="text-sm mb-4 leading-relaxed">
-          <strong>価格のポイント：</strong>通常価格でも1食490〜520円と、nosh（612円〜・2026年10月10日公式確認）より安く、まごころケア食（394円〜・送料別）に近い最安クラスです。さらに<strong>まとめ買い割引や、累計購入数に応じて単価が下がるクラブ制度</strong>があり、継続すると1食430円台まで下がる設計になっています。送料は毎回別途かかり、<strong>沖縄県以外は980円・沖縄県は1,480円</strong>です（ご飯付きセットを含む場合は各+250円＝1,230円／1,730円。公式FAQ・2026年10月13日確認）。
+          <strong>価格のポイント：</strong>通常価格でも1食490〜520円と、nosh（612円〜・2026年10月10日公式確認）より安く、まごころケア食（394円〜・送料別）に近い最安クラスです。さらに<strong>まとめ買い割引や、累計購入数に応じて単価が下がるクラブ制度</strong>があります。公式トップの表示では、8回まとめ買い（20食×8回）が1食395円（税込）、クラブ制度の最上位ランクが1食436円（20食プランを継続した場合の例）、会員ランク10でまとめ買い20食セットにすると1食382円です（送料は別途。2026年11月11日確認）。送料は毎回別途かかり、<strong>沖縄県以外は980円・沖縄県は1,480円</strong>です（ご飯付きセットを含む場合は各+250円＝1,230円／1,730円。公式FAQ・2026年10月13日確認）。
         </p>
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">冷凍庫無料レンタルについて</p>
