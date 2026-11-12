@@ -611,3 +611,8 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - coopdeli-kuchikomi（「コープ 宅配弁当 まずい」494@7.7）: 冒頭の「まずい」結論表は 11/1 のまま。その下に6コースの料金早見表（1食・1日2食の税込）・ご飯140/もち麦162円・出資金「各生協により500〜1,000円」・週3日・引き落とし・地域生協ごとに別サービス（Maici 740〜898円例・#other-coops へ）を追加。公式 daily.coopdeli.jp・/contents/daily/flow/（11/11）で全値一致・訂正なし
 - 競合: WebSearch はUS版で日本の順位は取れず。「宅配クック123 料金 値上げ」で2025年12月の改定に触れた第三者ページは見つからなかった
 - sitemap: TOP は表示不変のため 11/8 に戻した。/articles/ は一覧の更新日が変わるので 11/11
+
+### 2026-11-12 朝ルーチン: trust-audit C3 11ページ（直す箇所0）＋watami-reviews ダイレクトのメニュー数（source d4c29f9 / deploy 24b45e7d・precheck 72頁 全項目OK・計測リンク md5 作業前 deploy と一致・本番反映約9分・Indexing 1本）
+- C3 11ページ（yoshikei・mitsuboshi-coupon・coopdeli・green-spoon・mealtime・ouchi-coop・白書・nichirei-otameshi・author・editorial・methodology）を本番原文で確認。当サイトが食べたと読める文は0。「監修: 宅食びより編集部（/ 編集部メンバー）」8記事と「実食レビュー 導入準備中」（記事末尾・author/editorial/methodology）は判断待ちで不変。他は否定文（「当サイトは実食をしておらず」等）か、媒体名つきの第三者の実食（OZmall・ミールキットガイド・宅食まにあ・プロの宅食さがし・HonNe 等）
+- watami-reviews: ワタミの宅食ダイレクト「100種類以上」×3（表・メリット・まとめ）は公式（watami-takushoku-direct.jp トップ・料金一覧・FAQ）に記載なし。公式の選べるセット選択画面（/shop/sets/2・/shop/sets/3 ?menu_view=true・11/12）の掲載は いつでも三菜 96種類（汁物・アイス等を含め106品）・いつでも五菜 91種類（満足ディッシュ・鍋等を含め119品）→「選べるセットは三菜96・五菜91種類」「90種類以上」に。「和食・中華・洋食・麺類・丼の具まで」は削除（公式に分類の記載なし）。「1食約360円〜」は料金一覧の いつでも二菜 都度7食2,520円（360円）と一致→根拠を明記。dateModified 11/12
+- sitemap はトップ 11/8 に戻した（表示不変）・/articles/ と watami-reviews は 11/12
