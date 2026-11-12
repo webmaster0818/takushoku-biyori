@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-21T00:00:00+09:00",
-    modifiedTime: "2026-10-19T00:00:00+09:00",
+    modifiedTime: "2026-11-12T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -148,7 +148,7 @@ function SourcedReview({ review, tone }: { review: SourcedReviewItem; tone: "goo
 export default function WatamiReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-10-29T00:00:00+09:00",
+    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-11-12T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -218,7 +218,7 @@ export default function WatamiReviewsPage() {
             ["タイプ", "冷蔵（毎日配送）＋冷凍（クール宅配便）"],
             ["配送", "冷蔵：自社スタッフが毎日お届け / 冷凍：宅配便"],
             ["送料", "冷蔵：宅配料込み価格 / 冷凍：本州・四国・九州990円（税込・2026年10月1日改定）"],
-            ["メニュー数", "冷蔵：週替わり / 冷凍：100種類以上"],
+            ["メニュー数", "冷蔵：週替わり / 冷凍：選べるセットは いつでも三菜96種類・いつでも五菜91種類（2026年11月12日 公式の選択画面で確認）"],
             ["支払い方法", "クレジットカード・口座振替・現金（冷蔵のみ）"],
             ["特徴", "自社スタッフ配送・まごころスタッフによる安否確認"],
           ]}
@@ -373,7 +373,7 @@ export default function WatamiReviewsPage() {
           {[
             { title: "冷蔵タイプは送料無料・毎日配送", text: "まごころスタッフが毎日自宅まで届けてくれ、送料は一切かかりません。毎日新鮮なお弁当を受け取れるのは冷蔵タイプならではのメリットです。" },
             { title: "安否確認サービス付き（冷蔵タイプ）", text: "一人暮らしの高齢者の「見守り」としても機能します。配達時に挨拶・確認を行い、異変があれば緊急連絡先に通知してくれます。" },
-            { title: "冷凍タイプは100種類以上のメニュー", text: "ワタミの宅食ダイレクトは和食・中華・洋食・麺類・丼の具まで100種類以上です。冷凍庫にストックしておけば、好きなときに好きなメニューを食べられます。" },
+            { title: "冷凍タイプは選べるメニューが90種類以上", text: "ワタミの宅食ダイレクトの「選べるセット」は、いつでも三菜が96種類、いつでも五菜が91種類から選べます（2026年11月12日 公式の選択画面で確認）。冷凍庫にストックしておけば、好きなときに好きなメニューを食べられます。" },
             { title: "業界最安クラスの価格設定", text: "冷凍の「いつでも二菜」は1食約360円、冷蔵の「まごころ手鞠」は1食約590円と、業界内でも手頃な価格帯です。" },
           ].map((item) => (
             <div key={item.title} className="bg-green-50 rounded-lg p-4">
@@ -434,7 +434,7 @@ export default function WatamiReviewsPage() {
           <p className="font-bold text-sm mb-3">ワタミの宅食 まとめ</p>
           <div className="space-y-2 text-sm leading-relaxed">
             <p>ワタミの宅食は<strong>冷蔵（毎日配送・送料無料）と冷凍（全国配送・ストック可能）</strong>の2つのタイプを持つ、業界最大手の宅配弁当サービスです。</p>
-            <p>冷蔵タイプは送料無料・安否確認サービス付きで、特に高齢者やそのご家族から高い支持を得ています。冷凍タイプ（ダイレクト）は100種類以上のメニューと1食約360円〜の低価格が魅力です。</p>
+            <p>冷蔵タイプは送料無料・安否確認サービス付きで、特に高齢者やそのご家族から高い支持を得ています。冷凍タイプ（ダイレクト）は選べるセットで90種類以上のメニューと1食約360円〜（いつでも二菜7食セット）の低価格が魅力です。</p>
             <p>「味が薄い」「メニューが選べない」という声もありますが、健康的な味付けと栄養バランスの良さは口コミで高評価です。まずは気になるコースを1週間試してみることをおすすめします。</p>
           </div>
         </div>
