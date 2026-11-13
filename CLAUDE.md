@@ -616,3 +616,8 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - C3 11ページ（yoshikei・mitsuboshi-coupon・coopdeli・green-spoon・mealtime・ouchi-coop・白書・nichirei-otameshi・author・editorial・methodology）を本番原文で確認。当サイトが食べたと読める文は0。「監修: 宅食びより編集部（/ 編集部メンバー）」8記事と「実食レビュー 導入準備中」（記事末尾・author/editorial/methodology）は判断待ちで不変。他は否定文（「当サイトは実食をしておらず」等）か、媒体名つきの第三者の実食（OZmall・ミールキットガイド・宅食まにあ・プロの宅食さがし・HonNe 等）
 - watami-reviews: ワタミの宅食ダイレクト「100種類以上」×3（表・メリット・まとめ）は公式（watami-takushoku-direct.jp トップ・料金一覧・FAQ）に記載なし。公式の選べるセット選択画面（/shop/sets/2・/shop/sets/3 ?menu_view=true・11/12）の掲載は いつでも三菜 96種類（汁物・アイス等を含め106品）・いつでも五菜 91種類（満足ディッシュ・鍋等を含め119品）→「選べるセットは三菜96・五菜91種類」「90種類以上」に。「和食・中華・洋食・麺類・丼の具まで」は削除（公式に分類の記載なし）。「1食約360円〜」は料金一覧の いつでも二菜 都度7食2,520円（360円）と一致→根拠を明記。dateModified 11/12
 - sitemap はトップ 11/8 に戻した（表示不変）・/articles/ と watami-reviews は 11/12
+
+### 2026-11-13 朝ルーチン: trust-audit C3 11ページ（直す箇所0）＋reitou-bento-eiyou-baransu 食塩目標量の根拠を2025年版に（source b82a4c2・7193e8c / deploy 3c8fa168・precheck 72頁 全項目OK・計測リンク 126件 md5 作業前 deploy と一致）
+- C3 11ページ（reitou-bento-eiyou-baransu・yushoku・dietician・watami-reviews・yoshikei-vs-watami・lifemeal・watami-direct・nichirei-foods-direct・author・editorial・methodology）を本番原文で確認。当サイトが食べたと読める文は0。dietician の「筆者の実食」「筆者実食」は ひとり暮らしの宅配食生活／宅食まにあ／shokuji-takuhai.com の筆者（媒体名つき）、nichirei の「編集部の実食」は OZmall編集部、他は否定文（「当サイトは実食していません」等）か媒体名つきの第三者実食。「監修: 宅食びより編集部（/ 編集部メンバー）」と「実食レビュー 導入準備中」は判断待ちで不変
+- reitou-bento-eiyou-baransu: 「日本人の食事摂取基準(2020年版)」×2 → 2025年版（厚労省 策定検討会報告書・ナトリウムの表1：18歳以上 男性7.5g未満・女性6.5g未満＝値は不変、11/13 確認）。PFC 13〜20／20〜30／50〜65%（18〜49歳）も2025年版の表と一致で不変。dateModified・更新表示 11/13
+- sitemap はトップ 11/8 に戻した（表示不変）・/articles/ と当該記事は 11/13
