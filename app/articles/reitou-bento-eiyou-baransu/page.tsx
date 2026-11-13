@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-06-14T00:00:00+09:00",
-    modifiedTime: "2026-06-14T00:00:00+09:00",
+    modifiedTime: "2026-11-13T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -42,7 +42,7 @@ const faqData = [
   {
     question: "塩分はどのくらいが目安？",
     answer:
-      "食塩の摂取目安は、厚生労働省「日本人の食事摂取基準(2020年版)」で成人男性7.5g未満／成人女性6.5g未満(1日)とされています。高血圧などで医師から指導を受けている場合は、より厳しい目標が示されることもあります。宅配弁当を1食として捉え、1日の合計が目安の範囲に収まるよう、他の食事とのバランスで考えるのが現実的です。減塩タイプを用意しているサービスもあるため、塩分が気になる方は食塩相当量の表示を比較して選ぶとよいでしょう。",
+      "食塩の摂取目安は、厚生労働省「日本人の食事摂取基準(2025年版)」で18歳以上の男性7.5g未満／女性6.5g未満(1日)とされています。高血圧などで医師から指導を受けている場合は、より厳しい目標が示されることもあります。宅配弁当を1食として捉え、1日の合計が目安の範囲に収まるよう、他の食事とのバランスで考えるのが現実的です。減塩タイプを用意しているサービスもあるため、塩分が気になる方は食塩相当量の表示を比較して選ぶとよいでしょう。",
   },
   {
     question: "添加物が入っていると体に悪いの？",
@@ -210,7 +210,7 @@ export default function ReitouBentoEiyouBaransuPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-06-14T00:00:00+09:00",
-    dateModified: "2026-06-14T00:00:00+09:00",
+    dateModified: "2026-11-13T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -271,6 +271,7 @@ export default function ReitouBentoEiyouBaransuPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-06-14">公開: 2026年6月14日</time>
+            <time dateTime="2026-11-13">更新: 2026年11月13日（食塩の目標量を食事摂取基準2025年版で確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -377,7 +378,7 @@ export default function ReitouBentoEiyouBaransuPage() {
 
         <SubHeading>塩分・カロリーの目安</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          食塩相当量の1日の目安は、食事摂取基準(2020年版)で<strong>成人男性7.5g未満／成人女性6.5g未満</strong>とされています。1食の宅配弁当をこの枠のなかに位置づけ、ほかの食事と合わせて1日合計で考えましょう。カロリーは「1食あたり」か「100gあたり」かで意味が変わるため、<strong>どちらを基準にした数値か</strong>を必ず確認してください。減塩・低カロリーをうたうコースを用意しているサービスもあります。
+          食塩相当量の1日の目安は、厚生労働省「日本人の食事摂取基準(2025年版)」で<strong>18歳以上の男性7.5g未満／女性6.5g未満</strong>とされています（2026年11月13日確認）。1食の宅配弁当をこの枠のなかに位置づけ、ほかの食事と合わせて1日合計で考えましょう。カロリーは「1食あたり」か「100gあたり」かで意味が変わるため、<strong>どちらを基準にした数値か</strong>を必ず確認してください。減塩・低カロリーをうたうコースを用意しているサービスもあります。
         </p>
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6 text-sm leading-relaxed">
