@@ -5,7 +5,7 @@ import ServiceCapture from "@/components/ServiceCapture";
 const ARTICLE_TITLE =
   "つくりおき.jp(現ツクリオ)の口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "つくりおき.jp（2026年3月に「ツクリオ」へ名称変更）は「まずい」って本当？良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。冷蔵の手作りおかず宅配の料金（2人前週3食7,990円〜・4人前週3食10,690円・送料込）、対応エリア、変更締切も解説します。【2026年10月更新】";
+  "ツクリオ（旧つくりおき.jp）はまずい？LiPro・HonNe等の口コミ記事では「まずい」は主な不満ではなく、不満は価格・配送枠・子どもの好み。公式は「大人も子供も食べられる薄味」。料金は4人前週3食10,690円（初回6,690円）・2人前週3食7,990円（税込・送料込）。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/tsukurioki-jp-kuchikomi/";
 
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-13T00:00:00+09:00",
+    modifiedTime: "2026-11-13T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -361,7 +361,7 @@ export default function TsukuriokiJpKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-10-13T00:00:00+09:00",
+    dateModified: "2026-11-13T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -435,7 +435,7 @@ export default function TsukuriokiJpKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
-            <time dateTime="2026-10-10">更新: 2026年10月10日（公式で再確認）</time>
+            <time dateTime="2026-11-13">更新: 2026年11月13日（公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -449,6 +449,32 @@ export default function TsukuriokiJpKuchikomiPage() {
           </div>
         </header>
         </div>{/* /subhead */}
+
+        {/* 結論：まずい？（2026-11-13 追加・出典と公式は同日確認） */}
+        <div id="mazui-answer" className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white text-sm leading-relaxed">
+          <p className="font-bold text-base mb-2">【結論】ツクリオ（旧つくりおき.jp）はまずい？</p>
+          <p className="mb-3">
+            確認した第三者の口コミ記事では、<strong>「まずい」は主な不満として挙がっていません</strong>。不満の中心は<strong>価格・配送枠（曜日）・子どもの好み</strong>で、味については「薄味」「大人には少し濃い」と家庭によって感じ方が分かれています。公式は味付けを「大人も子供も一緒に食べられる薄味」と案内しています。
+          </p>
+          <ComparisonTable
+            headers={["出典", "味についての記載"]}
+            rows={[
+              ["LiPro（イード運営・2026年10月30日更新）", "「悪い口コミに「まずい」は挙がっていません。出ているのは大人からの「味が少し濃い」という評価です」。SNSでよく見られる不満は「味ではなく届く曜日と時間」"],
+              ["HonNe（エキサイト運営）", "X（旧Twitter）の口コミを調べた結果として「まずいという声はほとんどなく」"],
+              ["HAPPINESS! magazine（ティップネス）", "「だしを中心とした優しい味付け」「子どもでも食べられるくらいの薄味」"],
+              ["ツクリオ公式", "管理栄養士監修のレシピをもとにプロが手作り。「大人も子供も一緒に食べられる薄味」。ある週のメニュー例：デミグラスソースハンバーグ・辛くないマーボーなす・きのこおろしポン酢で食べるサバ竜田（主菜）"],
+              ["料金（公式・税込・送料込）", "4人前×週3食 10,690円（1食891円・初回限定6,690円）／4人前×週5食 16,960円（初回限定12,960円）／2人前×週3食 7,990円（1食1,332円）／2人前×週5食 11,990円"],
+            ]}
+          />
+          <p className="text-xs text-warm-gray">
+            ※出典：
+            <a href="https://meals.iid.co.jp/tsukuriokijp-yameta/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">LiPro</a>・
+            <a href="https://exidea.co.jp/blog/meal/home-meal/tsukurioki-jp/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">HonNe</a>・
+            <a href="https://online.tipness.co.jp/feature/home_meal/ready-made/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">HAPPINESS! magazine</a>・
+            <a href="https://www.tsukurioki.jp/" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">ツクリオ公式トップ</a>
+            （いずれも2026年11月13日確認・引用は原文ママ）。当サイトは実食していません。詳しくは<a href="#mazui" className="text-accent underline">味の評判の検証</a>へ。
+          </p>
+        </div>
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -534,14 +560,14 @@ export default function TsukuriokiJpKuchikomiPage() {
         <ComparisonTable
           headers={["プラン", "週あたり料金", "1食（人前）あたり目安"]}
           rows={[
-            ["2人前×週3食", "7,990円", "1人前あたり1,331円"],
+            ["2人前×週3食", "7,990円", "1人前あたり1,332円"],
             ["2人前×週5食", "11,990円", "1人前あたり1,199円"],
             ["4人前×週3食", "10,690円", "1人前あたり891円"],
             ["4人前×週5食", "16,960円", "1人前あたり848円"],
           ]}
         />
         <p className="text-sm mb-2 leading-relaxed">
-          公式ヘルプによると「料金は税込み、送料込みの価格です」「4人前の内訳は、大人2名子供2名です」と案内されています。<strong>1人前あたり848〜1,331円</strong>（4人前週5食が最安）で、買い物も調理も不要の手作りおかずが揃う計算です。公式トップでは4人前プランに初回限定価格（週3食6,690円・週5食12,960円）が表示されています（2026年10月10日確認）。
+          公式ヘルプによると「料金は税込み、送料込みの価格です」「4人前の内訳は、大人2名子供2名です」と案内されています。<strong>1人前あたり848〜1,332円</strong>（4人前週5食が最安）で、買い物も調理も不要の手作りおかずが揃う計算です。公式トップでは4人前プランに初回限定価格（週3食6,690円・週5食12,960円）が表示されています（2026年10月10日確認）。
         </p>
         <p className="text-xs text-warm-gray mb-6">
           ※出典: ツクリオ公式ヘルプ「料金はいくらですか」・公式トップです（2026年10月10日確認）。価格・キャンペーンは変更される場合があるため、最新は公式サイトでご確認ください。
@@ -781,7 +807,7 @@ export default function TsukuriokiJpKuchikomiPage() {
         <ComparisonTable
           headers={["プラン", "週あたり", "月4週利用時", "1人前あたり目安"]}
           rows={[
-            ["2人前×週3食", "7,990円", "31,960円", "1,331円"],
+            ["2人前×週3食", "7,990円", "31,960円", "1,332円"],
             ["2人前×週5食", "11,990円", "47,960円", "1,199円"],
             ["4人前×週3食", "10,690円", "42,760円", "891円"],
             ["4人前×週5食", "16,960円", "67,840円", "848円"],
