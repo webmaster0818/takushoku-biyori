@@ -169,7 +169,7 @@ export default function DelipicksMenuPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "ホーム", item: "https://takushoku-biyori.com/" },
-      { "@type": "ListItem", position: 2, name: "選び方・使い方・サービス紹介", item: "https://takushoku-biyori.com/articles/#guide" },
+      { "@type": "ListItem", position: 2, name: "選び方・使い方・サービス紹介" },
       { "@type": "ListItem", position: 3, name: "デリピックスのメニュー一覧" },
     ],
   };

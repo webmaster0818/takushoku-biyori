@@ -158,7 +158,7 @@ export default function KaigoshokuTakuhaiPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "ホーム", item: "https://takushoku-biyori.com/" },
-      { "@type": "ListItem", position: 2, name: "目的別ガイド・ランキング", item: "https://takushoku-biyori.com/articles/#mokuteki" },
+      { "@type": "ListItem", position: 2, name: "目的別ガイド・ランキング" },
       { "@type": "ListItem", position: 3, name: "介護食の宅配7社比較" },
     ],
   };

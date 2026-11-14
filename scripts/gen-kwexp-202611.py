@@ -169,7 +169,7 @@ export default function {comp}() {{
     "@type": "BreadcrumbList",
     itemListElement: [
       {{ "@type": "ListItem", position: 1, name: "ホーム", item: "https://takushoku-biyori.com/" }},
-      {{ "@type": "ListItem", position: 2, name: {js(a["cat"])}, item: "https://takushoku-biyori.com/articles/#{a["cat_id"]}" }},
+      {{ "@type": "ListItem", position: 2, name: {js(a["cat"])} }},
       {{ "@type": "ListItem", position: 3, name: {js(a["crumb"])} }},
     ],
   }};

@@ -157,7 +157,7 @@ export default function MutenkaTakuhaiBentoPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "ホーム", item: "https://takushoku-biyori.com/" },
-      { "@type": "ListItem", position: 2, name: "目的別ガイド・ランキング", item: "https://takushoku-biyori.com/articles/#mokuteki" },
+      { "@type": "ListItem", position: 2, name: "目的別ガイド・ランキング" },
       { "@type": "ListItem", position: 3, name: "無添加の宅配弁当・宅食5社" },
     ],
   };

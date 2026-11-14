@@ -238,7 +238,7 @@ export default function FitdishKuchikomiPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "ホーム", item: "https://takushoku-biyori.com/" },
-      { "@type": "ListItem", position: 2, name: "口コミ・評判", item: "https://takushoku-biyori.com/articles/#kuchikomi" },
+      { "@type": "ListItem", position: 2, name: "口コミ・評判" },
       { "@type": "ListItem", position: 3, name: "FitDishの口コミ・評判" },
     ],
   };
