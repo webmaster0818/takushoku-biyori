@@ -7,6 +7,7 @@ const ARTICLE_TITLE =
 const ARTICLE_DESCRIPTION =
   "おうちコープの夕食宅配「マイシィ」は「まずい」と断じる声は確認できず、不満の中心は薄味と魚料理でした。公式の塩分基準（1食約3.0〜4.5g）と3コースの料金（1食740円〜・配達料無料）、出資金や支払い条件も2026年11月に確認して整理しました。";
 const CHECKED = "2026年11月4日";
+const PRICE_RECHECKED = "2026年11月14日";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/ouchi-coop-kuchikomi/";
 
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-11-04T00:00:00+09:00",
+    modifiedTime: "2026-11-14T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -333,7 +334,7 @@ export default function OuchiCoopKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-11-04T00:00:00+09:00",
+    dateModified: "2026-11-14T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -407,7 +408,7 @@ export default function OuchiCoopKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
-            <time dateTime="2026-11-04">更新: {CHECKED}（公式で再確認）</time>
+            <time dateTime="2026-11-14">更新: {PRICE_RECHECKED}（料金・配達料・支払いを公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -451,6 +452,10 @@ export default function OuchiCoopKuchikomiPage() {
               </tbody>
             </table>
           </div>
+          <p className="font-bold text-sm mb-2">マイシィ（マイシイ）の値段：1食740〜898円・配達料0円・別の手数料の記載なし</p>
+          <p className="text-sm leading-relaxed mb-3">
+            支払うのは<strong>商品代だけ</strong>です。公式のコース紹介は全コースに「配達料無料」と書いており、コース紹介・よくあるご質問・ご利用の流れに配達料以外の手数料の記載は見当たりませんでした。支払いは<strong>口座引き落とし（月1回）のみ</strong>で、現金・クレジットカードは使えません。加入時の出資金500円は脱退時に払い戻されます（{PRICE_RECHECKED}確認。コース別の1食価格・2食以上20円引き・ごはん140円・サラダ156円も同日に一致を確認）。
+          </p>
           <p className="font-bold text-sm mb-2">料金の早見表（1食・税込・配達料無料）</p>
           <div className="table-wrapper mb-3">
             <table className="w-full text-sm border-collapse">

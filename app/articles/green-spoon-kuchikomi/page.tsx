@@ -5,7 +5,7 @@ import ServiceCapture from "@/components/ServiceCapture";
 const ARTICLE_TITLE =
   "GREEN SPOON(グリーンスプーン)の口コミ・評判は？まずいって本当？良い・悪い評価を出典付きで中立検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "GREEN SPOON(グリーンスプーン)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。野菜ゴロゴロの冷凍宅配食の料金（定期L BOX1食税込724円〜）、送料、解約の締切、メニューカテゴリも解説します。【2026年10月更新】";
+  "GREEN SPOON(グリーンスプーン)は「まずい」？公開レビューの原文では、不満は一部メニューと薄味・野菜の硬さ（加熱ムラ）が中心でした。料金は定期の初回1食724円〜（2回目以降はカテゴリ別で上限852〜963円）、送料1,089円。2026年11月に公式で確認。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/green-spoon-kuchikomi/";
 
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-10T00:00:00+09:00",
+    modifiedTime: "2026-11-14T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -349,7 +349,7 @@ export default function GreenSpoonKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-10-10T00:00:00+09:00",
+    dateModified: "2026-11-14T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -423,7 +423,7 @@ export default function GreenSpoonKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
-            <time dateTime="2026-10-10">更新: 2026年10月10日（公式で再確認）</time>
+            <time dateTime="2026-11-14">更新: 2026年11月14日（「まずい」の結論・料金の初回／2回目以降を公式で確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -437,6 +437,53 @@ export default function GreenSpoonKuchikomiPage() {
           </div>
         </header>
         </div>{/* /subhead */}
+
+        {/* 「まずい」への答え（11/14 追加） */}
+        <section className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-2">結論：「まずい」は一部メニューと薄味・加熱ムラへの声で、全体を否定する声は少数でした</p>
+          <p className="text-sm leading-relaxed mb-4">
+            公開されているレビューで「まずい」に触れた箇所を原文で確認しました（2026年11月14日）。当サイトは実食していません。
+          </p>
+          <div className="table-wrapper mb-4">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-accent/10">
+                  <th className="border border-warm-border px-3 py-2 text-left whitespace-nowrap">出典</th>
+                  <th className="border border-warm-border px-3 py-2 text-left">原文</th>
+                  <th className="border border-warm-border px-3 py-2 text-left">読み取れること</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-warm-border px-3 py-2 whitespace-nowrap"><a href="https://meal-navi.com/green-spoon-review/" target="_blank" rel="noopener noreferrer nofollow" className="underline">meal-navi</a>（料理家が8品を実食・2026年11月2日更新）</td>
+                  <td className="border border-warm-border px-3 py-2">「悪い評価の中では「具材（野菜）が硬かった（生煮え）」、「味が薄い」という声が目立ちました。」</td>
+                  <td className="border border-warm-border px-3 py-2">不満は硬さと薄味。同記事は追加加熱や水の量の調整を対処法に挙げています</td>
+                </tr>
+                <tr>
+                  <td className="border border-warm-border px-3 py-2 whitespace-nowrap"><a href="https://www.foodsupply.co.jp/media/green-spoon" target="_blank" rel="noopener noreferrer nofollow" className="underline">フードサプライ</a>（2026年11月9日更新）</td>
+                  <td className="border border-warm-border px-3 py-2">「美味しくないと感じた人の意見としては、カロリーが抑えられているヘルシーな料理になっていることもあり、味付けが薄いと感じたようです。」</td>
+                  <td className="border border-warm-border px-3 py-2">悪い口コミの中心は「値段が高い」で、味は好みが分かれるという整理</td>
+                </tr>
+                <tr>
+                  <td className="border border-warm-border px-3 py-2 whitespace-nowrap"><a href="https://ameblo.jp/kappameal/entry-12862203037.html" target="_blank" rel="noopener noreferrer nofollow" className="underline">かっぱごはん</a>（個人ブログ・2024年8月）</td>
+                  <td className="border border-warm-border px-3 py-2">「初めて美味しくないを通り越してまずいと思ってしまいました」（太刀魚とブロッコリーのレモンバターソテー）</td>
+                  <td className="border border-warm-border px-3 py-2">同じ筆者は肉系の商品には「大満足」と書いており、外れは魚の1品</td>
+                </tr>
+                <tr>
+                  <td className="border border-warm-border px-3 py-2 whitespace-nowrap"><a href="https://green-spoon.jp/" target="_blank" rel="noopener noreferrer" className="underline">公式</a></td>
+                  <td className="border border-warm-border px-3 py-2">管理栄養士監修のオリジナルレシピ。1食分の食材と調味料が個包装で届き、レンジ5分で完成</td>
+                  <td className="border border-warm-border px-3 py-2">調味料が別に入っているため、加熱や混ぜ方で味のなじみ方が変わります</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-sm leading-relaxed mb-2">
+            料金は定期BOXの<strong>初回が1食810円（S・8食）／745円（M・12食）／724円（L・20食）</strong>で、2回目以降はカテゴリによって異なり、上限はS 963円・M 886円・L 852円です。定期の送料は全国一律1,089円（北海道・沖縄を除く）。いずれも税込です。
+          </p>
+          <p className="text-xs text-warm-gray">
+            ※出典: 各記事の本文、GREEN SPOON公式トップページの注記（2026年11月14日確認）。公式トップには、今日の時点で初回価格以外のキャンペーン（割引率の表示など）は見当たりませんでした。詳しくは<a href="#mazui" className="text-accent underline">「まずい」の検証</a>へ。
+          </p>
+        </section>
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -520,18 +567,18 @@ export default function GreenSpoonKuchikomiPage() {
 
         <SubHeading>料金プラン概要（定期BOX）</SubHeading>
         <ComparisonTable
-          headers={["プラン", "食数", "1食あたり（税込）"]}
+          headers={["プラン", "食数", "初回の1食（全カテゴリ・税込）", "2回目以降の1食（カテゴリ別・税込）"]}
           rows={[
-            ["S BOX", "8食", "810円"],
-            ["M BOX", "12食", "745円"],
-            ["L BOX", "20食", "724円"],
+            ["S BOX", "8食", "810円", "〜963円"],
+            ["M BOX", "12食", "745円", "〜886円"],
+            ["L BOX", "20食", "724円", "〜852円"],
           ]}
         />
         <p className="text-sm mb-2 leading-relaxed">
-          定期プランは<strong>注文数が増えるほど1食単価が下がる仕組み</strong>で、2回目以降は8〜28食の範囲で自由に変更できます。初回はS/M/L BOXが特別価格で提供されるキャンペーンが実施されることがあります（時期により内容が変わるため、具体額は公式サイトでご確認ください）。
+          定期プランは<strong>注文数が増えるほど1食単価が下がる仕組み</strong>で、2回目以降は8〜28食の範囲で自由に変更できます。公式トップの注記では、上の810円・745円・724円は<strong>初回の1食価格（カテゴリにかかわらず同額）</strong>で、2回目以降の通常価格はカテゴリによって異なり、上限はS BOX 963円・M BOX 886円・L BOX 852円（いずれも税込）です（2026年11月14日確認）。
         </p>
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: GREEN SPOON公式サイトの定期プラン料金データ（2026年10月10日確認・税込）。S BOXは8〜11食、M BOXは12〜19食、L BOXは20〜28食の範囲で、食数に応じてBOXが決まります。カテゴリごとの単品価格・最新のキャンペーンは公式サイトでご確認ください。
+          ※出典: GREEN SPOON公式サイトの定期プラン料金データ（2026年10月10日確認・税込）とトップページの価格注記（2026年11月14日確認）。S BOXは8〜11食、M BOXは12〜19食、L BOXは20〜28食の範囲で、食数に応じてBOXが決まります。カテゴリごとの単品価格・最新のキャンペーンは公式サイトでご確認ください。
         </p>
 
         <SubHeading>GREEN SPOONの3つの特徴</SubHeading>
@@ -773,7 +820,7 @@ export default function GreenSpoonKuchikomiPage() {
 
         <SubHeading>定期プラン（BOX別・税込）</SubHeading>
         <ComparisonTable
-          headers={["プラン", "食数", "1食あたり", "送料込み1食あたり（全国・試算）"]}
+          headers={["プラン", "食数", "初回の1食", "初回の送料込み1食あたり（全国・試算）"]}
           rows={[
             ["S BOX", "8食", "810円", "約946円"],
             ["M BOX", "12食", "745円", "約836円"],
@@ -781,7 +828,7 @@ export default function GreenSpoonKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: GREEN SPOON公式サイト（2026年10月10日確認）。送料込み単価は全国送料（税込1,089円）で編集部が試算しています。2回目以降は8〜28食で変更可能・カテゴリごとの単価制です。最新は公式サイトでご確認ください。
+          ※出典: GREEN SPOON公式サイト（2026年10月10日確認）。送料込み単価は全国送料（税込1,089円）で編集部が試算しています。2回目以降は8〜28食で変更可能で、1食価格はカテゴリによって異なります（上限 S 963円・M 886円・L 852円、2026年11月14日 公式トップで確認）。最新は公式サイトでご確認ください。
         </p>
 
         <SubHeading>送料（2025年9月改定後・税込）</SubHeading>

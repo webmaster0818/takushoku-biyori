@@ -5,7 +5,7 @@ import ServiceCapture from "@/components/ServiceCapture";
 const ARTICLE_TITLE =
   "【2026年最新】nosh(ナッシュ)クーポン・割引コードガイド｜1〜3回目に各1,000円OFF・総額3,000円OFFの全手順";
 const ARTICLE_DESCRIPTION =
-  "nosh(ナッシュ)で使えるクーポン・割引コード・キャンペーンを公式情報ベースで整理します。1〜3回目に各1,000円OFF（総額3,000円OFF）の内訳、nosh club継続割引、友達紹介の仕組みと申込手順、注意点まで丁寧に解説します。";
+  "nosh(ナッシュ)の入力式クーポンコードは公式で配布中のものを確認できず（2026年11月14日）、割引は注文確定日に自動適用です。1〜3回目に各1,000円OFF（総額3,000円OFF）、友達紹介クーポン、nosh clubの仕組みと注意点を整理しました。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/nosh-coupon/";
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-05-28T00:00:00+09:00",
-    modifiedTime: "2026-10-26T00:00:00+09:00",
+    modifiedTime: "2026-11-14T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -52,7 +52,7 @@ const faqData = [
   {
     question: "noshのクーポンに有効期限はある？",
     answer:
-      "初回〜3回目の自動割引は、新規登録後に注文した3回分まで有効です。注文を行わない期間が長く続いてもクーポンが消失することは公式には案内されていませんが、キャンペーン内容自体が変更される可能性があります。最新の割引内容はnosh公式サイトでご確認ください。なお、友達紹介クーポンには有効期限が設定されていることがあるため、付与後は早めの利用がおすすめです。",
+      "初回〜3回目の自動割引は、新規登録後に注文した3回分まで有効です。公式のよくある質問によると、プランを停止すると保有しているクーポンは失効します（2026年11月14日確認）。キャンペーン内容自体が変更される可能性もあるため、最新の割引内容はnosh公式サイトでご確認ください。保有中のクーポンはマイページの「クーポン」で確認できます。",
   },
 ];
 
@@ -211,7 +211,7 @@ export default function NoshCouponPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-10-26T00:00:00+09:00",
+    dateModified: "2026-11-14T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -286,7 +286,7 @@ export default function NoshCouponPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-05-28">公開: 2026年5月28日</time>
-            <time dateTime="2026-10-26">更新: 2026年10月26日（新規割引の表記を公式で再確認）</time>
+            <time dateTime="2026-11-14">更新: 2026年11月14日（クーポンコードの有無・適用ルールを公式のよくある質問で確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -305,6 +305,50 @@ export default function NoshCouponPage() {
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 text-xs leading-relaxed">
           <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。リンク経由でのお申込みにより当サイトに収益が発生する場合がありますが、評価・記載内容は公平を期しています。料金・キャンペーン情報は<strong>2026年10月17日時点の公式情報</strong>に基づきます。最新情報は必ず<a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">nosh公式サイト</a>でご確認ください。
         </div>
+
+        {/* 「今使えるクーポンコード」への答え（11/14 追加） */}
+        <section className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-2">結論：入力して使うクーポンコードは、公式では確認できませんでした（2026年11月14日）</p>
+          <p className="text-sm leading-relaxed mb-4">
+            nosh公式のよくある質問では、クーポンは<strong>コードを入力するものではなく、注文確定日に自動で1枚適用</strong>されると案内されています。2026年11月14日に公式サイトとよくある質問を確認した範囲で、配布中のクーポンコード（入力欄に入れる文字列）は見つかりませんでした。
+          </p>
+          <div className="table-wrapper mb-3">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-accent/10">
+                  <th className="border border-warm-border px-3 py-2 text-left whitespace-nowrap">今使えるもの</th>
+                  <th className="border border-warm-border px-3 py-2 text-left">内容</th>
+                  <th className="border border-warm-border px-3 py-2 text-left whitespace-nowrap">受け取り方</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-warm-border px-3 py-2 font-medium whitespace-nowrap">新規割引</td>
+                  <td className="border border-warm-border px-3 py-2">1〜3回目に各1,000円OFF（総額3,000円OFF）</td>
+                  <td className="border border-warm-border px-3 py-2">新規登録で自動適用（入力不要）</td>
+                </tr>
+                <tr>
+                  <td className="border border-warm-border px-3 py-2 font-medium whitespace-nowrap">友達紹介</td>
+                  <td className="border border-warm-border px-3 py-2">紹介した人・された人の双方にクーポン（金額は公式のよくある質問に記載なし）</td>
+                  <td className="border border-warm-border px-3 py-2">利用者がマイページの「お友達を紹介するとクーポンプレゼント！」のバナーから出すシェア用URLで注文を完了</td>
+                </tr>
+                <tr>
+                  <td className="border border-warm-border px-3 py-2 font-medium whitespace-nowrap">nosh club</td>
+                  <td className="border border-warm-border px-3 py-2">累計購入数で1食単価が下がる（最高ランクで12食プラン1食492円）</td>
+                  <td className="border border-warm-border px-3 py-2">自動（クーポンではない）</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <ul className="text-sm space-y-1 list-disc list-inside mb-2">
+            <li>保有しているクーポンはマイページの「クーポン」で確認できます</li>
+            <li>1回の注文に使えるのは1枚で、複数あれば割引額の高い順に適用されます（キャンペーンによって例外あり）</li>
+            <li>注文確定日はお届けの3〜4日前（地域で異なる）。プランを停止すると保有クーポンは失効します</li>
+          </ul>
+          <p className="text-xs text-warm-gray">
+            ※出典: nosh公式 よくある質問「<a href="https://nosh.jp/faq/answer/140" target="_blank" rel="noopener noreferrer" className="underline">クーポンの確認・使用方法について</a>」「<a href="https://nosh.jp/faq/answer/124" target="_blank" rel="noopener noreferrer" className="underline">お友達紹介クーポンについて</a>」（2026年11月14日確認）。新規割引の表記はキャンペーンページの案内に合わせています。申し込みの経路で表示が異なる場合があるため、注文確認画面で割引額を確認してください。
+          </p>
+        </section>
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -497,7 +541,7 @@ export default function NoshCouponPage() {
           <ul className="list-disc list-inside space-y-1">
             <li>紹介リンク経由 + 通常の新規割引の<strong>併用可否</strong>はキャンペーン時期により異なります。公式案内を確認</li>
             <li>SNSで面識のない方の紹介リンクを使うと、トラブルの原因になる場合があります。信頼できる知人のリンクのみを利用</li>
-            <li>紹介クーポンには<strong>有効期限</strong>が設定されていることが多い</li>
+            <li>プランを停止すると、保有しているクーポンは<strong>失効</strong>します（公式のよくある質問・2026年11月14日確認）</li>
           </ul>
         </div>
 

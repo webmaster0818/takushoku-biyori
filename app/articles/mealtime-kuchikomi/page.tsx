@@ -5,7 +5,7 @@ import Link from "next/link";
   ミールタイム（株式会社ファンデリー）の受け皿ページ。
   ⚠️ 作った理由: 中小ブランド×口コミ面が当サイトの勝ち型。
      「食事療法（腎臓病・糖尿病）× 管理栄養士に無料相談」という軸は既存58記事に無い。
-  ⚠️ 数値は 2026-11-04 に公式（www.mealtime.jp。mealtime.jp は証明書切れ）で確認したもののみ。
+  ⚠️ 数値は 2026-11-04（11-14 に再照合・一致）に公式（www.mealtime.jp。mealtime.jp は証明書切れ）で確認したもののみ。
   ⚠️ 1食の価格は商品ページ（/shop/items/<番号>）の通常価格・インターネット価格。区分ごとの先頭10商品で同額を確認。
      トップのプラン例の月額は「通常価格×食数」と一致し、送料を含まない。
   ⚠️ 送料は /shop/freight・/shop/law に記載（冷凍950円・常温740円。各4,980円以上で無料）。
@@ -14,11 +14,11 @@ import Link from "next/link";
 */
 
 const ARTICLE_TITLE =
-  "ミールタイムの口コミ・評判と料金｜1食646円〜・送料950円（4,980円以上で無料）【2026年11月】";
+  "ミールタイムの評判・口コミと料金｜1食646円〜・注文方法とカタログの入手先【2026年11月】";
 const ARTICLE_DESCRIPTION =
-  "ミールタイム（ファンデリー）の料金を公式の商品ページで確認しました。1食646〜862円（区分別）、送料は冷凍950円・常温740円で各4,980円以上は無料です。「薄味」「量が少ない」「温めムラ」など口コミの傾向も出典付きで整理しました。";
+  "ミールタイムの評判は「普通に美味しい」がある一方、不満は薄味・量・温めムラ（出典付き）。料金は1食646〜862円、送料950円（4,980円以上無料）。注文はネット（3%引き）か栄養士が出る電話、カタログは医療機関かデジタル版で。2026年11月14日に公式で確認。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/mealtime-kuchikomi/";
-const CHECKED = "2026年11月4日";
+const CHECKED = "2026年11月14日";
 const REVIEW_SOURCE = "https://coop-bento.com/mealtime-all/";
 
 export const metadata: Metadata = {
@@ -34,21 +34,36 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-09-18T00:00:00+09:00",
-    modifiedTime: "2026-11-04T00:00:00+09:00",
+    modifiedTime: "2026-11-14T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
 
 const faqData = [
   {
+    question: "ミールタイムは評判が悪いのですか？",
+    answer:
+      "第三者ブログ（こせたん宅配弁当）は、「まずい」とストレートに書いた口コミはほとんど見つからなかったとしています。挙がっている不満は「薄味」「量が少ない」「温めムラ」で、いずれも公式の基準（全商品で塩分2.0g未満、ヘルシー食おかずは300kcal未満）や容器の大きさと関係しています。量が気になる場合はヘルシー食多めがあります。当サイトは実食していません。",
+  },
+  {
+    question: "ミールタイムはどうやって注文しますか？",
+    answer:
+      "インターネット（公式オンラインショップ）か電話で注文できます。インターネット注文は通常価格の3%引きで、カタログ番号を入力して注文するページもあります。電話は0120-054-014（携帯電話からは0570-054-014）、平日9時〜17時15分で、公式によると必ず栄養士が電話に出ます。栄養士おまかせ定期便は、電話か公式の連絡フォームから申し込みます（2026年11月14日 公式サイト確認）。",
+  },
+  {
+    question: "ミールタイムのカタログはどうやって手に入れますか？",
+    answer:
+      "公式のお問い合わせページによると、紙のカタログは全国約21,000か所の医療機関等で入手でき、通院先の医療機関か利用している施設から入手するよう案内されています。通院先が配布先リストにない場合は、公式サイトのデジタルカタログ（2026年秋号）を見られます（2026年11月14日 公式サイト確認）。",
+  },
+  {
     question: "ミールタイムの料金はいくらですか？",
     answer:
-      "公式の商品ページの通常価格は1食646〜862円です。ヘルシー食はおかず646円・ごはん付700円、低たんぱく食はおかず646円・ごはん付862円などで、インターネット注文は3%引きになります。定期便のプラン例は毎週7食で月約19,600円、毎週14食で月約36,176円などです（2026年11月4日 公式サイト確認）。",
+      "公式の商品ページの通常価格は1食646〜862円です。ヘルシー食はおかず646円・ごはん付700円、低たんぱく食はおかず646円・ごはん付862円などで、インターネット注文は3%引きになります。定期便のプラン例は毎週7食で月約19,600円、毎週14食で月約36,176円などです（2026年11月14日 公式サイト確認）。",
   },
   {
     question: "送料はいくらかかりますか？",
     answer:
-      "冷凍は950円、常温は740円です。温度帯ごとの商品合計が4,980円以上なら、その温度帯の送料は無料になります。インターネット注文はインターネット価格で判定されます。代金引換の場合は手数料330円がかかります（2026年11月4日 公式サイト確認）。",
+      "冷凍は950円、常温は740円です。温度帯ごとの商品合計が4,980円以上なら、その温度帯の送料は無料になります。インターネット注文はインターネット価格で判定されます。代金引換の場合は手数料330円がかかります（2026年11月14日 公式サイト確認）。",
   },
   {
     question: "ミールタイムの口コミ・評判はどうですか？",
@@ -58,17 +73,17 @@ const faqData = [
   {
     question: "どんな食事療法に対応していますか？",
     answer:
-      "公式によると、ヘルシー食（糖尿病・脂質異常症・高血圧・痛風の方向け、メタボ対策、ダイエット）、ヘルシー食多め、低たんぱく食（腎臓病・糖尿病性腎症）、やわらか食（咀嚼・嚥下が難しい方向け）などがあります（2026年11月4日 公式サイト確認）。",
+      "公式によると、ヘルシー食（糖尿病・脂質異常症・高血圧・痛風の方向け、メタボ対策、ダイエット）、ヘルシー食多め、低たんぱく食（腎臓病・糖尿病性腎症）、やわらか食（咀嚼・嚥下が難しい方向け）などがあります（2026年11月14日 公式サイト確認）。",
   },
   {
     question: "栄養士に相談できますか？費用は？",
     answer:
-      "できます。公式に「栄養相談の費用は無料です」と明記され、追加料金は不要、回数の制限もないとされています。公式のオンラインショップには「管理栄養士もしくは栄養士がお電話でご注文を承ります」とあります。電話の受付は平日9時〜17時15分です（2026年11月4日 公式サイト確認）。",
+      "できます。公式に「栄養相談の費用は無料です」と明記され、追加料金は不要、回数の制限もないとされています。公式のオンラインショップには「管理栄養士もしくは栄養士がお電話でご注文を承ります」とあります。電話の受付は平日9時〜17時15分です（2026年11月14日 公式サイト確認）。",
   },
   {
     question: "何食から頼めますか？",
     answer:
-      "商品番号が赤色のマークの商品は7商品以上の組み合わせで、緑色のマークの商品は1商品から注文できます。定期便（栄養士おまかせ定期便）は毎週または隔週で、1回7食以上です（2026年11月4日 公式サイト確認）。",
+      "商品番号が赤色のマークの商品は7商品以上の組み合わせで、緑色のマークの商品は1商品から注文できます。定期便（栄養士おまかせ定期便）は毎週または隔週で、1回7食以上です（2026年11月14日 公式サイト確認）。",
   },
 ];
 
@@ -127,7 +142,7 @@ const jsonLd = {
       description: ARTICLE_DESCRIPTION,
       url: ARTICLE_URL,
       datePublished: "2026-09-18T00:00:00+09:00",
-      dateModified: "2026-11-04T00:00:00+09:00",
+      dateModified: "2026-11-14T00:00:00+09:00",
       author: { "@type": "Organization", name: "宅食びより編集部" },
       publisher: { "@type": "Organization", name: "宅食びより" },
     },
@@ -173,6 +188,46 @@ export default function Page() {
         <p className="mt-3 text-xs text-gray-500">最終更新：{CHECKED}／料金は公式サイトで確認。口コミは出典を明記</p>
         </div>{/* /subhead */}
 
+        <div className="mt-6 rounded-xl border-2 border-accent/30 bg-white p-5">
+          <p className="text-sm font-bold mb-2">評判の結論：良い声は「普通に美味しい」、悪い声は薄味・量・温めムラ</p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr>
+                  <th className="border p-2 text-left whitespace-nowrap">評判</th>
+                  <th className="border p-2 text-left">口コミの例（出典に引用された投稿）</th>
+                  <th className="border p-2 text-left">公式の情報</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th className="border p-2 text-left font-bold whitespace-nowrap">良い</th>
+                  <td className="border p-2">「透析患者向けの宅配弁当が届いたけど普通に美味しい。これやったら苦痛なく続けていけそうや」（2021年1月）</td>
+                  <td className="border p-2">栄養士の相談は無料・回数制限なし</td>
+                </tr>
+                <tr>
+                  <th className="border p-2 text-left font-bold whitespace-nowrap">悪い：薄味</th>
+                  <td className="border p-2">「味の薄さに無言になっていくスタッフもいました」（クリニックの投稿・2021年6月）</td>
+                  <td className="border p-2">全商品で塩分2.0g未満</td>
+                </tr>
+                <tr>
+                  <th className="border p-2 text-left font-bold whitespace-nowrap">悪い：量</th>
+                  <td className="border p-2">「物足りひん」</td>
+                  <td className="border p-2">ヘルシー食おかずは300kcal未満。300g以上の「多め」あり</td>
+                </tr>
+                <tr>
+                  <th className="border p-2 text-left font-bold whitespace-nowrap">悪い：温め</th>
+                  <td className="border p-2">「主菜は規程の時間温めても冷たい」</td>
+                  <td className="border p-2">—</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-2 text-xs text-gray-500">
+            出典：<a href={REVIEW_SOURCE} target="_blank" rel="noopener noreferrer nofollow" className="underline">こせたん宅配弁当</a>（同ブログの筆者は、ストレートに「まずい」とする口コミはほとんどなかったと書いています）。当サイトは実食していません。
+          </p>
+        </div>
+
         <div className="mt-6 rounded-xl border-l-4 border-accent bg-cream p-5">
           <p className="text-sm font-bold mb-2">料金の早見表（1食あたり）</p>
           <div className="overflow-x-auto">
@@ -201,6 +256,7 @@ export default function Page() {
             <li>・<strong>送料</strong>：冷凍950円・常温740円。温度帯ごとの合計が<strong>4,980円以上で無料</strong>です。</li>
             <li>・<strong>口コミ</strong>：「普通に美味しい」という声がある一方、不満は<strong>薄味・量・温めムラ</strong>に集まっています（<a href="#kuchikomi" className="text-accent underline">口コミの傾向へ</a>）。</li>
             <li>・<strong>栄養相談</strong>：無料で、回数の制限もありません。</li>
+            <li>・<strong>注文</strong>：ネット（3%引き）か電話（0120-054-014・平日9時〜17時15分・栄養士が対応）。カタログは医療機関で入手するか、公式のデジタルカタログで見られます（<a href="#order" className="text-accent underline">注文方法とカタログへ</a>）。</li>
           </ul>
           <p className="mt-3 text-xs text-gray-500">
             出典：<a href="https://www.mealtime.jp/shop" target="_blank" rel="noopener noreferrer" className="underline">ミールタイム オンラインショップ</a>の商品ページ・<a href="https://www.mealtime.jp/shop/freight" target="_blank" rel="noopener noreferrer" className="underline">送料について</a>・<a href="https://www.mealtime.jp/service" target="_blank" rel="noopener noreferrer" className="underline">サービス</a>（{CHECKED} 確認）。価格は区分ごとの先頭10商品で同額であることを確認しました。公式の販売ページに税込・税別の記載は見当たりませんでした。最新の価格は公式サイトでご確認ください。
@@ -308,6 +364,43 @@ export default function Page() {
         <p className="mt-3 text-xs text-gray-500">
           出典：ミールタイム <a href="https://www.mealtime.jp/shop/freight" target="_blank" rel="noopener noreferrer" className="underline">送料について</a>・<a href="https://www.mealtime.jp/shop/guide/item" target="_blank" rel="noopener noreferrer" className="underline">商品の補足情報</a>・<a href="https://www.mealtime.jp/shop/guide/deliver" target="_blank" rel="noopener noreferrer" className="underline">お届けについて</a>・<a href="https://www.mealtime.jp/shop/guide" target="_blank" rel="noopener noreferrer" className="underline">お支払いについて</a>（{CHECKED} 確認）。
           送料まで含めた他社との比べ方は<Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent underline">料金白書</Link>にまとめています。
+        </p>
+
+        <h2 id="order" className="mt-10 text-xl font-bold border-b pb-2 scroll-mt-20">注文方法とカタログの入手先（公式の手順）</h2>
+        <div className="mt-4 overflow-x-auto">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-cream">
+                <th className="border p-2 text-left whitespace-nowrap">方法</th>
+                <th className="border p-2 text-left">手順・条件</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th className="border p-2 text-left font-bold whitespace-nowrap">インターネット</th>
+                <td className="border p-2">公式オンラインショップで商品を選ぶか、手元のカタログの番号を「カタログ番号から注文」ページに入力します。価格は通常価格の3%引きです。支払いは代金引換（手数料330円）・クレジットカード（一括）・PayPay</td>
+              </tr>
+              <tr>
+                <th className="border p-2 text-left font-bold whitespace-nowrap">電話</th>
+                <td className="border p-2">0120-054-014（携帯電話からは0570-054-014・通話料は利用者負担）。平日9時〜17時15分（土日祝は休み）。公式によると必ず栄養士が電話に出ます。名前・住所・電話番号・カタログの入手先・通院先・食事指示・血液検査結果・身長・体重を聞かれるので、検査結果を手元に用意すると早いと案内されています</td>
+              </tr>
+              <tr>
+                <th className="border p-2 text-left font-bold whitespace-nowrap">栄養士おまかせ定期便</th>
+                <td className="border p-2">電話か公式の連絡フォームで申し込みます。疾病・食事指示・検査結果の聞き取り → 申込書を返送（約1週間後）→ 担当栄養士が電話で確認（約1週間後）→ お届け開始。毎週か隔週、1回7食以上。サービス料はかからず、食事の代金だけです</td>
+              </tr>
+              <tr>
+                <th className="border p-2 text-left font-bold whitespace-nowrap">カタログ</th>
+                <td className="border p-2">紙のカタログは全国約21,000か所の医療機関等で配布され、通院先か利用している施設で入手するよう案内されています。通院先が配布先リストにない場合は、公式サイトのデジタルカタログ（2026年秋号）を見られます。郵送でのカタログ請求の受付は、お問い合わせページに書かれていませんでした</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <ul className="mt-4 space-y-2 text-sm leading-relaxed">
+          <li>・<strong>問い合わせフォーム</strong>：営業時間内であれば2時間以内に返信すると書かれています（15時30分以降と休日は翌営業日になる場合あり）</li>
+          <li>・<strong>キャンセル</strong>：出荷準備後の都合によるキャンセルは、往復の送料と手数料として3,000円かかります。返品・交換は注文と違う商品・不良品のみで、到着後8日以内に電話で連絡します</li>
+        </ul>
+        <p className="mt-3 text-xs text-gray-500">
+          出典：ミールタイム <a href="https://www.mealtime.jp/shop/guide/tel_order" target="_blank" rel="noopener noreferrer" className="underline">電話注文について</a>・<a href="https://www.mealtime.jp/shop/cart/catalog" target="_blank" rel="noopener noreferrer" className="underline">カタログ番号から注文</a>・<a href="https://www.mealtime.jp/shop/guide/periodically_order" target="_blank" rel="noopener noreferrer" className="underline">定期コースのお申し込み</a>・<a href="https://www.mealtime.jp/shop/inquiry" target="_blank" rel="noopener noreferrer" className="underline">お問い合わせ</a>・<a href="https://www.mealtime.jp/web_catalog" target="_blank" rel="noopener noreferrer" className="underline">デジタルカタログ</a>・<a href="https://www.mealtime.jp/shop/guide/cancel" target="_blank" rel="noopener noreferrer" className="underline">返品・キャンセル</a>（{CHECKED} 確認）。カタログの配布先の数は、公式トップでは「約19,900カ所」、お問い合わせページでは「約21,000か所」と書かれています。
         </p>
 
         <h2 id="kuchikomi" className="mt-10 text-xl font-bold border-b pb-2 scroll-mt-20">口コミ・評判の傾向（出典付き）</h2>
