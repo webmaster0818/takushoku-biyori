@@ -5,7 +5,7 @@ import ServiceCapture from "@/components/ServiceCapture";
 const ARTICLE_TITLE =
   "FIT FOOD HOME(フィットフードホーム)の口コミ・評判は？まずいって本当？無添加調理の実力を出典付きで中立検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "FIT FOOD HOME(フィットフードホーム)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。無添加調理の冷凍おかずの料金（おかず1個1,188円〜・まとめ割で1,129円〜・2026年10月11日公式確認）、送料、定期の割引条件も解説します。";
+  "FIT FOOD HOME(フィットフードホーム)は「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。無添加調理の冷凍おかずの料金（おかず1個1,188円〜・まとめ割で1,129円〜・2026年11月14日公式確認）、送料、定期の割引条件も解説します。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/fitfoodhome-kuchikomi/";
 
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-11T00:00:00+09:00",
+    modifiedTime: "2026-11-14T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -38,12 +38,12 @@ const faqData = [
   {
     question: "FIT FOOD HOMEのセット価格はいくら？",
     answer:
-      "FIT FOOD HOMEは「固定価格のセット」ではなく、選んだ商品の合計金額から個数に応じて割引される方式です（10個で最大5%OFF・14個で最大8%OFF・20個で最大12%OFF。割引率は5個・7個入りとの比較で、商品により異なる。2026年10月11日公式確認）。おかずは1個1,188円〜（5個・7個入り時の価格）で、10個入りのまとめ割（5%OFF）なら1,129円〜です。定期購入はさらに都度購入価格の5%OFF＋送料無料（公式FAQ）ですが、組み合わせで総額が変わるため、正確なセット金額は公式ストアのカートでご確認ください。",
+      "FIT FOOD HOMEは「固定価格のセット」ではなく、選んだ商品の合計金額から個数に応じて割引される方式です（10個で最大5%OFF・14個で最大8%OFF・20個で最大12%OFF。割引率は5個・7個入りとの比較で、商品により異なる。2026年11月14日公式確認）。おかずは1個1,188円〜（5個・7個入り時の価格）で、10個入りのまとめ割（5%OFF）なら1,129円〜です。定期購入はさらに都度購入価格の5%OFF＋送料無料（公式FAQ）ですが、組み合わせで総額が変わるため、正確なセット金額は公式ストアのカートでご確認ください。",
   },
   {
     question: "FIT FOOD HOMEの送料はいくら？",
     answer:
-      "都度購入は1回990円（税込）、定期購入は送料無料です（2026年10月11日公式確認）。北海道は+550円、沖縄は+1,100円（税込）の追加送料がかかります。クロネコヤマトのクール便で届きます。最新の送料条件は公式ストアでご確認ください。",
+      "都度購入は1回990円（税込）、定期購入は送料無料です（2026年11月14日公式確認）。北海道は+550円、沖縄は+1,100円（税込）の追加送料がかかります。クロネコヤマトのクール便で届きます。最新の送料条件は公式ストアでご確認ください。",
   },
   {
     question: "FIT FOOD HOMEの無添加はどこまで本当？",
@@ -53,7 +53,7 @@ const faqData = [
   {
     question: "FIT FOOD HOMEの定期購入はすぐ解約できる？",
     answer:
-      "定期購入は初回分のキャンセルができない点に注意が必要です。2回目以降は解約・休止が可能で、違約金はありません。スキップは注文確定メール受け取り後、翌水曜14時までに手続きが必要です（2026年10月11日の公式確認時点）。申し込み前に公式ストアの最新規約をご確認ください。",
+      "定期購入は初回分のキャンセルができない点に注意が必要です。2回目以降は解約・休止が可能で、違約金はありません。スキップは注文確定メール受け取り後、翌水曜14時までに手続きが必要です（2026年11月14日の公式確認時点）。申し込み前に公式ストアの最新規約をご確認ください。",
   },
 ];
 
@@ -302,7 +302,7 @@ const badReviewCategories: {
       },
     ],
     comment:
-      "おかずは1個1,188円〜（10個入りのまとめ割5%OFFで1,129円〜・2026年10月11日の公式ストア確認時点）と、低価格帯の冷凍弁当の2倍前後の水準です。国産食材・無添加調理・自社工場製造のコストが乗っているため、「安さ」ではなく「素材と調理の質」を買うサービスと考えるのが適切です。",
+      "おかずは1個1,188円〜（10個入りのまとめ割5%OFFで1,129円〜・2026年11月14日の公式ストア確認時点）と、低価格帯の冷凍弁当の2倍前後の水準です。国産食材・無添加調理・自社工場製造のコストが乗っているため、「安さ」ではなく「素材と調理の質」を買うサービスと考えるのが適切です。",
   },
   {
     title: "量が控えめで男性には物足りないことも",
@@ -348,7 +348,7 @@ export default function FitFoodHomeKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-10-11T00:00:00+09:00",
+    dateModified: "2026-11-14T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -422,7 +422,7 @@ export default function FitFoodHomeKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
-            <time dateTime="2026-10-11">更新: 2026年10月11日（公式で再確認）</time>
+            <time dateTime="2026-11-14">更新: 2026年11月14日（公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -446,7 +446,7 @@ export default function FitFoodHomeKuchikomiPage() {
             この記事では、<strong>公開されている実在のレビュー記事を出典付きで整理</strong>し、FIT FOOD HOMEの良い口コミ・悪い口コミの両方を中立に検証します。「まずい」という評判の有無についても調査しました。
           </p>
           <p>
-            さらに、<strong>単品×個数割引という独特な料金体系・送料・定期の注意点</strong>を2026年10月11日確認の公式データで解説します。
+            さらに、<strong>単品×個数割引という独特な料金体系・送料・定期の注意点</strong>を2026年11月14日確認の公式データで解説します。
           </p>
         </div>
 
@@ -514,7 +514,7 @@ export default function FitFoodHomeKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: FIT FOOD HOME公式ストア（store.tavenal.com・2026年10月11日時点の編集部確認）。最新情報は公式サイトでご確認ください。
+          ※出典: FIT FOOD HOME公式ストア（store.tavenal.com・2026年11月14日時点の編集部確認）。最新情報は公式サイトでご確認ください。
         </p>
 
         <SubHeading>FIT FOOD HOMEの3つの特徴</SubHeading>
@@ -530,7 +530,7 @@ export default function FitFoodHomeKuchikomiPage() {
             },
             {
               title: "単品×個数割引の自由な組み立て方式",
-              text: "固定セットではなく、好きな商品を選んで10個で最大5%OFF・14個で最大8%OFF・20個で最大12%OFFになる方式です（2026年10月11日公式確認）。定期購入にすると都度購入価格の5%OFFになり、送料も無料になります。",
+              text: "固定セットではなく、好きな商品を選んで10個で最大5%OFF・14個で最大8%OFF・20個で最大12%OFFになる方式です（2026年11月14日公式確認）。定期購入にすると都度購入価格の5%OFFになり、送料も無料になります。",
             },
           ].map((item) => (
             <div key={item.title} className="bg-green-50 rounded-lg p-4">
@@ -672,7 +672,7 @@ export default function FitFoodHomeKuchikomiPage() {
           {
             num: 1,
             title: "価格は高め（おかず1個1,188円〜）",
-            text: "おかずは1個1,188円〜（10個入りのまとめ割で1,129円〜）、デミグラスハンバーグや国産豚の角煮は1,308円（同1,243円）です（2026年10月11日公式確認）。まとめ買い割引と定期送料無料を使っても、低価格帯サービスの約2倍の水準は変わりません。",
+            text: "おかずは1個1,188円〜（10個入りのまとめ割で1,129円〜）、デミグラスハンバーグや国産豚の角煮は1,308円（同1,243円）です（2026年11月14日公式確認）。まとめ買い割引と定期送料無料を使っても、低価格帯サービスの約2倍の水準は変わりません。",
           },
           {
             num: 2,
@@ -700,7 +700,7 @@ export default function FitFoodHomeKuchikomiPage() {
         <SectionHeading id="price">FIT FOOD HOMEの料金・送料を解説</SectionHeading>
 
         <p className="text-xs text-warm-gray mb-4">
-          ※本セクションの料金・送料は、編集部が2026年10月11日にFIT FOOD HOME公式ストア（store.tavenal.com）で直接確認した金額（税込）です。最新の金額は公式サイトでご確認ください。
+          ※本セクションの料金・送料は、編集部が2026年11月14日にFIT FOOD HOME公式ストア（store.tavenal.com）で直接確認した金額（税込）です。最新の金額は公式サイトでご確認ください。
         </p>
 
         <SubHeading>料金体系（単品×個数割引方式）</SubHeading>
