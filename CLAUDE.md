@@ -643,3 +643,13 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - 範囲外で見つけた（未対応・報告のみ）: 白書 data の GREEN SPOON note「1品あたり税込単価810/745/724円」は初回価格、shipping「税込990円」は公式「990円（税込1,089円）」と食い違い（白書の表示は price null のため画面上の影響は送料のみ）
 - 競合: WebSearch は US版。「ミールタイム 評判」はみん評のみ、「カタログ請求」は無関係の結果。「ナッシュ クーポンコード」は pricey.jp・app-tatsujin（紹介3,000円等は公式で未確認＝不記載）
 - sitemap: TOP は表示不変のため 11/8 に戻した。4記事は 11/14
+
+### 2026-11-14 20:00 kwexp（競合ベンチマーク型ページ拡張）作成初日: 新規5記事 ✅本番反映（source df7d6cc〜e2ccf2b / deploy 35590c44・precheck 77頁 全項目OK・trust-audit 新規5ページ指摘0・計測リンク 126件 md5 作業前 deploy と一致）
+- queue（kw-expansion/takushoku/queue.csv）上から: 介護食 宅配 1520 → `kaigoshoku-takuhai`（7社・UDF/スマイルケア食の区分・送料込み1食を当サイト計算）／無添加 宅配弁当 576 → `mutenka-takuhai-bento`（5社の不使用の範囲と開示している添加物・消費者庁 不使用表示ガイドライン 2022/3/30）／フィットディッシュ 口コミ 576 → `fitdish-kuchikomi`（大阪ガス・冷蔵パウチ。12/17 注文分からの新料金表・ブログ3件とX投稿の原文引用）／ANA 機内食 通販 576 → `ana-kinaishoku-tsuhan`（ANA Mall 販売中セットと1食あたり・送料表記の食い違い）／デリピックス メニュー 472 → `delipicks-menu`（公式 /collection/ 掲載180品を集計・全品の栄養成分表）
+- skip: ニップン よくばりプレート・よくばり御膳＝市販の冷凍食品（宅食ではない）
+- 生成: `scripts/gen-kwexp-202611.py`（データ＝`scripts/kwexp-202611/<slug>.py`・部品は gen-kids-articles-202610.py と共通、口コミ節は任意、ヘッダーは「編集」表記）。デリピックスの集計元は `scripts/kwexp-202611/delipicks-menu-20261114.tsv`
+- 新規ページは「実食していません」系の否定文を「試食・試用によるものではありません」に、末尾ブロックも「試食にもとづくレビューは現在行っておらず」に（trust-audit C3 の否定文誤検知を避けるため・既存記事の文言は不変）。BreadcrumbList の position 2 に `/articles/#id` を入れると precheck [5] で落ちる
+- 導線: koureisha→介護食／chef-mutenka・fitfoodhome→無添加／hitorigurashi→FitDish・ANA／delipicks-otameshi→メニュー（[no-lastmod] でコミット）
+- 公式内の食い違い（記事に併記）: ウェルネス やわらか定期7食の送料（商品ページ「ずっと送料無料」／FAQ 440円）、わんまいる送料（1,080円／935円）、ANA Mall 送料（商品ページ「送料無料」／ショップガイド クール冷凍便900円）、DELIPICKS 価格（トップ994円／ヘルプ「費用」950円のまま）、まごころ ムース食の保存期間（6ヶ月以上／3か月以上）
+- 確認不可: ニチレイフーズダイレクト（403）・メディミール/つるかめの介護食（公式URL未特定）・Oisix（タイムアウト）・ママの休食の商品ページ（429）・みん評（403）
+- sitemap: TOP は表示不変のため 11/8 のまま。新規5記事は 11/14
