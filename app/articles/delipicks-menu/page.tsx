@@ -204,7 +204,7 @@ export default function DelipicksMenuPage() {
           <p className="mb-3">
             公式は「100種類以上のラインナップ」と案内しています。この記事では、2026年11月14日に公式のメニュー一覧（/collection/）に掲載されていた<strong>180品の栄養成分を当サイトで集計</strong>し、料理の分類・たんぱく質・塩分の分布を整理しました。
           </p>
-          <p>当サイトでは実食・試用はしていません。</p>
+          <p>本記事は公式情報と公開されている口コミ・データにもとづいて作成しており、試食・試用によるものではありません。</p>
         </div>
 
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
@@ -606,7 +606,7 @@ export default function DelipicksMenuPage() {
 
         {/* eeat-links-202607 */}
         <div className="mt-10 rounded-lg border p-4 text-xs leading-relaxed" style={{ borderColor: "#dde3eb", color: "#6b7785" }}>
-          この記事は宅食びより編集部が「<Link href="/methodology/" className="underline">評価方法・データ源</Link>」に基づき、各社公式サイトの一次確認と出典付きの口コミ集約のみで作成しています（編集部による実食レビューは現在未実施・導入準備中）。編集体制は「<Link href="/author/" className="underline">編集部の体制と役割</Link>」をご覧ください。内容の誤りにお気づきの場合は<Link href="/editorial/" className="underline">編集部</Link>までご指摘ください。
+          この記事は宅食びより編集部が「<Link href="/methodology/" className="underline">評価方法・データ源</Link>」に基づき、各社公式サイトの一次確認と出典付きの口コミ集約のみで作成しています（試食にもとづくレビューは現在行っておらず、導入を準備しています）。編集体制は「<Link href="/author/" className="underline">編集部の体制と役割</Link>」をご覧ください。内容の誤りにお気づきの場合は<Link href="/editorial/" className="underline">編集部</Link>までご指摘ください。
         </div>
 
       </article>

@@ -34,6 +34,10 @@ def table(headers, rows, indent=8):
     return "\n".join(out)
 
 
+FOOTER = gk.FOOTER.replace("（編集部による実食レビューは現在未実施・導入準備中）", "（試食にもとづくレビューは現在行っておらず、導入を準備しています）")
+assert "試食にもとづく" in FOOTER
+
+
 def build(a):
     has_reviews = bool(a.get("good_reviews"))
     published = a["published"]
@@ -238,7 +242,7 @@ export default function {comp}() {{
 {related}
           </ul>
         </div>
-{gk.FOOTER}
+{FOOTER}
       </article>
     </>
   );

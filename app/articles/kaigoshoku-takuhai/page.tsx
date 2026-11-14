@@ -193,7 +193,7 @@ export default function KaigoshokuTakuhaiPage() {
           <p className="mb-3">
             この記事では、介護食の区分がある宅配7社を、<strong>やわらかさの段階・公式に書かれた区分・送料込みの1食あたり・届き方</strong>でそろえて比較しました。数値はすべて2026年11月14日に各社の公式サイトで確認したもので、送料込みの1食あたりは当サイトが計算しています。
           </p>
-          <p>当サイトでは実食・試用はしていません。食形態の判断は、医師・言語聴覚士・管理栄養士などの専門職にご相談ください。</p>
+          <p>本記事は公式情報と公開されている口コミ・データにもとづいて作成しており、試食・試用によるものではありません。食形態の判断は、医師・言語聴覚士・管理栄養士などの専門職にご相談ください。</p>
         </div>
 
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
@@ -328,7 +328,7 @@ export default function KaigoshokuTakuhaiPage() {
 
         {/* eeat-links-202607 */}
         <div className="mt-10 rounded-lg border p-4 text-xs leading-relaxed" style={{ borderColor: "#dde3eb", color: "#6b7785" }}>
-          この記事は宅食びより編集部が「<Link href="/methodology/" className="underline">評価方法・データ源</Link>」に基づき、各社公式サイトの一次確認と出典付きの口コミ集約のみで作成しています（編集部による実食レビューは現在未実施・導入準備中）。編集体制は「<Link href="/author/" className="underline">編集部の体制と役割</Link>」をご覧ください。内容の誤りにお気づきの場合は<Link href="/editorial/" className="underline">編集部</Link>までご指摘ください。
+          この記事は宅食びより編集部が「<Link href="/methodology/" className="underline">評価方法・データ源</Link>」に基づき、各社公式サイトの一次確認と出典付きの口コミ集約のみで作成しています（試食にもとづくレビューは現在行っておらず、導入を準備しています）。編集体制は「<Link href="/author/" className="underline">編集部の体制と役割</Link>」をご覧ください。内容の誤りにお気づきの場合は<Link href="/editorial/" className="underline">編集部</Link>までご指摘ください。
         </div>
 
       </article>

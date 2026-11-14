@@ -273,7 +273,7 @@ export default function FitdishKuchikomiPage() {
           <p className="mb-3">
             この記事では、利用者のブログとX（旧Twitter）の投稿から<strong>良い口コミ・悪い口コミを出典付きで</strong>紹介し、料金・送料・解約の締切を2026年11月14日に公式サイトで確認した値で整理しました。2026年12月17日の注文分から料金が改定されるため、新旧の料金を並べています。
           </p>
-          <p>当サイトでは実食・試用はしていません。</p>
+          <p>本記事は公式情報と公開されている口コミ・データにもとづいて作成しており、試食・試用によるものではありません。</p>
         </div>
 
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
@@ -384,7 +384,7 @@ export default function FitdishKuchikomiPage() {
             ["X（@Meeeeeeee86）2025年2月20日", "フィットディッシュまじでまずいから覚悟した方がいい", "理由の記載なし"],
             ["X（@yakiu_tanoshi）2024年3月4日", "肉の油多いやつは温めないと不味いけど、魚は冷たいままでも全然食える", "温めずに食べた場合の話。投稿者は利用を続けている"],
             ["X（@noalisky）2024年1月30日", "鯖味噌と副菜は美味しかったけど、あと2種は正直そんなにだったな…。カレークリーム煮は味が薄すぎて、塩胡椒足した😇", "商品による好みの差"],
-            ["お気楽グルメノート", "それがFitDish（フィットディッシュ）の冷蔵パウチおかずは、ハズレと思うものがなかったです。", "肯定的な実食レビュー"],
+            ["お気楽グルメノート", "それがFitDish（フィットディッシュ）の冷蔵パウチおかずは、ハズレと思うものがなかったです。", "利用者ブログの肯定的な評価"],
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">※出典: <a href="https://x.com/Meeeeeeee86/status/1892449023162012013" target="_blank" rel="noopener noreferrer" className="text-accent underline">X @Meeeeeeee86</a>・<a href="https://x.com/yakiu_tanoshi/status/1764618943132819943" target="_blank" rel="noopener noreferrer" className="text-accent underline">X @yakiu_tanoshi</a>・<a href="https://x.com/noalisky/status/1752183534624903249" target="_blank" rel="noopener noreferrer" className="text-accent underline">X @noalisky</a>・<a href="https://takuhaireitoubentou.com/fitdish-taste-review/" target="_blank" rel="noopener noreferrer" className="text-accent underline">お気楽グルメノート</a>（2026年11月14日に原文を確認）</p>
@@ -437,7 +437,7 @@ export default function FitdishKuchikomiPage() {
 
         {/* eeat-links-202607 */}
         <div className="mt-10 rounded-lg border p-4 text-xs leading-relaxed" style={{ borderColor: "#dde3eb", color: "#6b7785" }}>
-          この記事は宅食びより編集部が「<Link href="/methodology/" className="underline">評価方法・データ源</Link>」に基づき、各社公式サイトの一次確認と出典付きの口コミ集約のみで作成しています（編集部による実食レビューは現在未実施・導入準備中）。編集体制は「<Link href="/author/" className="underline">編集部の体制と役割</Link>」をご覧ください。内容の誤りにお気づきの場合は<Link href="/editorial/" className="underline">編集部</Link>までご指摘ください。
+          この記事は宅食びより編集部が「<Link href="/methodology/" className="underline">評価方法・データ源</Link>」に基づき、各社公式サイトの一次確認と出典付きの口コミ集約のみで作成しています（試食にもとづくレビューは現在行っておらず、導入を準備しています）。編集体制は「<Link href="/author/" className="underline">編集部の体制と役割</Link>」をご覧ください。内容の誤りにお気づきの場合は<Link href="/editorial/" className="underline">編集部</Link>までご指摘ください。
         </div>
 
       </article>
