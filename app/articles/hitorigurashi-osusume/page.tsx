@@ -956,6 +956,8 @@ export default function HitorigurashiOsusumePage() {
         <div className="mt-10 bg-cream rounded-xl p-6">
           <p className="font-bold text-sm mb-3">関連記事</p>
           <ul className="space-y-2 text-sm">
+            <li><Link href="/articles/fitdish-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">FitDish（フィットディッシュ）の口コミ・評判｜冷蔵パウチのおかず定期便</Link></li>
+            <li><Link href="/articles/ana-kinaishoku-tsuhan/" className="text-accent hover:text-accent-dark transition-colors">ANAの機内食は通販で買える？冷凍セットの価格と1食あたり</Link></li>
             <li>
               <Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark transition-colors">
                 【2026年最新】nosh(ナッシュ)の口コミ・評判を徹底調査

@@ -838,6 +838,7 @@ export default function FitFoodHomeKuchikomiPage() {
         <div className="mt-10 bg-cream rounded-xl p-6">
           <p className="font-bold text-sm mb-3">関連記事</p>
           <ul className="space-y-2 text-sm">
+            <li><Link href="/articles/mutenka-takuhai-bento/" className="text-accent hover:text-accent-dark transition-colors">無添加の宅配弁当・冷凍宅食5社を公式の表記で比較</Link></li>
             <li>
               <Link href="/articles/chef-mutenka-tsukurioki-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">
                 シェフの無添つくりおきの口コミ・評判は？まずいって本当？
