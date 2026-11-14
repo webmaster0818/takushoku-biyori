@@ -628,3 +628,9 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - description を答えに（139字）・更新/dateModified 11/13。title（【2026年10月最新】）は効果判定の切り分けのため不変。
 - 競合: WebSearch（US版）で HonNe・minhyo.jp・ameblo（カッパパ）が出た。minhyo.jp は 403 で未照合。HonNe は「編集部15名の実食調査」を掲げる（当サイトは実食なしのため同型は足さない）。
 - sitemap: TOP は表示不変のため 11/8 に戻した。/articles/ と当該記事は 11/13。
+
+### 2026-11-14 朝ルーチン: trust-audit C3 11ページ（直す箇所0）＋FIT FOOD HOME（白書で確認日が最古 10/11）を公式で再照合（source 3e25573・e9426c6 / deploy 7c0616ab・precheck 72頁 全項目OK・計測リンク 320件（txt含む）md5 作業前 deploy と一致）
+- C3 11ページ（delipicks・koureisha・mitsuboshi-farm-reviews・goodeli・mogumogu-oyatsubin・kou-tanpaku・fitfoodhome・chef-mutenka・author・editorial・methodology）を本番原文で確認。当サイトが食べたと読める文は0。delipicks の「監修」はシェフ監修（公式の事実）、goodeli・mogumogu・mitsuboshi は否定文（「当サイトは実食していません」等）、mitsuboshi・fitfoodhome・chef-mutenka の実食は媒体名つきの第三者（プロの宅食さがし・ひとり暮らしの宅配食生活・宅食グルメ・HonNe・ROOMIE・HAPPINESS!・スマートフードナビ）。「監修: 宅食びより編集部（/ 編集部メンバー）」と「実食レビュー 導入準備中」は判断待ちで不変
+- 報告のみ: chef-mutenka メリット1「複数の実食レビューが「無添加とは思えないほどちょうど良い味付け」と評価」→ この引用は HAPPINESS! の1媒体（「複数」は不正確の可能性）。同記事の料金は「2026年7月時点」表記のまま
+- FIT FOOD HOME: 公式ストア /product/all（おかず1,188円・角煮等1,308円・まとめ割5% 1,129/1,243円・個数割 10個5%/14個8%/20個12%）・/question-answer（送料 都度990円・定期無料・北海道+550・沖縄+1,100円、定期5%OFF、初回キャンセル/スキップ不可・翌水曜14時・違約金なし）を 11/14 に確認→全値一致・訂正なし。お試しセットは購入先が「予定の数量が完売…終了」。記事の確認日・dateModified を 11/14、白書 data の verified_at 11/14、白書本文に「FFH は 11/14 にも確認・変更なし」1文。title（【2026年10月最新】）は不変
+- sitemap: TOP は表示不変のため 11/8 に戻した。/articles/・fitfoodhome・白書は 11/14
