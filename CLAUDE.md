@@ -664,3 +664,11 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - dateModified 11/15（表示の「更新」日は公式再確認の日なので据え置き）。sitemap: TOP は表示不変のため 11/8 のまま
 - 報告のみ: lifemeal「魚メニューの匂いなどで好みが分かれるという声」は出典なし（元は Appliv 由来の可能性・未対応）
 - 点検 C3 10ページ（mealtime・ouchi-coop・白書・nichirei-otameshi・reitou-bento-eiyou-baransu・yushoku・dietician・author・editorial・methodology）は本番原文で全件誤検知（否定文／媒体名つき第三者の実食／サービス側の管理栄養士監修）。「監修:」「実食レビュー 導入準備中」は判断待ちで不変
+
+### 2026-11-15 20:00 kwexp 作成2日目: 新規5記事 ✅本番反映（source ec72118〜febc412 / deploy 0f1ab314・precheck 82頁 全項目OK・trust-audit check_page 新規5ページ指摘0・計測リンク W3533K 42→48 のみ増（新規 wellness-dining-coupon）・他は作業前 deploy と一致）
+- queue 上から: デリピックス 解約 256 → `delipicks-kaiyaku`（Zendesk API のヘルプ本文・利用規約PDF。締切＝毎週日曜23:59／月曜0時確定をお届け週ごとの早見表に当サイト計算）／グリーンスプーン 解約 168 → `green-spoon-kaiyaku`（faq.green-spoon.jp は Zendesk API `/api/v2/help_center/ja/articles.json` で取得可＝10/10 の「Cloudflareで不可」は解消。特商法の変更締切4〜8日前、精算金のある3プラン：スタート応援＝差額・お得に継続8,000円・冷凍庫17,800円）／グリーンスプーン スムージー 168 → `green-spoon-smoothie`（商品ページ13品の栄養成分を集計：110〜229kcal・中央値158、単品/BOX別の送料込み1杯）／マッスルデリ 解約 136 → `muscle-deli-kaiyaku`（/shop/pages/faq・subscription-discount。継続割6/12/24回の違約金＝直近1回分の商品代金、一時停止は通常定期のみ）／ウェルネスダイニング クーポン 112 → `wellness-dining-coupon`（入力式クーポンの掲載なし→送料無料の注文方法・秋冬同時注文最大5%OFF〈11/25締切〉・6コース×注文方法の1食単価を当サイト計算）
+- skip: ニップン いまどきごはん（宅食でない）・食のそよ風 口コミ（公式で価格が見えない＝ブランドページは描画後も価格なし。robots は AI 系 UA に Crawl-delay 10）・チョコザップ 弁当（公式ページなし）・三ツ星ファーム おせち（宅食でない）・オイシエダイニング 口コミ（oisie.co.jp メンテ中）
+- `gen-kwexp-202611.py` に `affiliate`（rel sponsored・PR注記）と `ad_note`（ヘッダー注記）を追加。既定は従来どおり（既存5記事の再生成で差分0を確認）。ウェルネスは提携済みのため既存記事と同じ W3533K を転記（計測リンクは開いていない）
+- 導線: delipicks-menu（data に追加して再生成）・delipicks-otameshi・green-spoon-kuchikomi（解約・スムージー）・muscle-deli-reviews・wellness-dining-reviews の関連記事（[no-lastmod]）
+- 公式内の食い違い（記事は両方を併記または安全側）: DELIPICKS の締切表記「前週日曜」と「前週月曜0時確定」（後者で日付を計算）、マッスルデリ継続割の自動更新後の解約条件（公式文言のみ記載・問い合わせを案内）
+- sitemap: TOP は表示不変のため 11/8 に戻した（prebuild が 11/15 にする）。新規5記事は 11/15
