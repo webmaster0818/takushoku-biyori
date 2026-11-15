@@ -215,7 +215,7 @@ export default function DelipicksKaiyakuPage() {
           <div className="grid md:grid-cols-2 gap-4 mb-4 text-sm">
             <div className="bg-cream rounded-lg p-3">
               <p className="font-bold text-accent mb-2">◎ 解約しやすい点</p>
-              <ul className="space-y-1 list-disc list-inside"><li>マイページで本人が24時間手続きできる</li><li>解約金・違約金の記載はない</li><li>解約後も「定期購入へ変更」で再開できる</li></ul>
+              <ul className="space-y-1 list-disc list-inside"><li>マイページで本人が手続きできる</li><li>解約金・違約金の記載はない</li><li>解約後も「定期購入へ変更」で再開できる</li></ul>
             </div>
             <div className="bg-cream rounded-lg p-3">
               <p className="font-bold text-warm-gray mb-2">△ 注意したい点</p>
