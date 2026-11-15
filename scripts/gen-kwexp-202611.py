@@ -102,14 +102,24 @@ def build(a):
 '''
     point_labels = a.get("point_labels", ("◎ 良いと評価されやすい点", "△ 注意したい点"))
     official = a.get("official_url")
+    # 提携済みサービス（ASP の計測リンクを既存記事からそのまま転記する場合）は affiliate=True。
+    # 計測リンクは開かない・書き換えない。rel に sponsored、注記を PR 表記にする
+    affiliate = bool(a.get("affiliate"))
+    rel = "noopener noreferrer sponsored" if affiliate else "noopener noreferrer"
+    link_note = "PR・本記事はアフィリエイト広告を含みます" if affiliate else "※リンク先は公式サイトです（本リンクはアフィリエイト広告ではありません）"
+    ad_note = a.get("ad_note", "※本記事で紹介するサービスとは提携しておらず、記事内のリンクは広告ではありません。")
     official_const = f"const OFFICIAL_URL = {js(official)};\n" if official else ""
     cta_box = ""
     cta_bottom = ""
     if official:
         cta_box = f'''
-          <a href={{OFFICIAL_URL}} target="_blank" rel="noopener noreferrer" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">{a["cta"]} →</a>
-          <p className="text-[10px] text-gray-400 text-center mt-2">※リンク先は公式サイトです（本リンクはアフィリエイト広告ではありません）</p>'''
+          <a href={{OFFICIAL_URL}} target="_blank" rel="{rel}" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">{a["cta"]} →</a>
+          <p className="text-[10px] text-gray-400 text-center mt-2">{link_note}</p>'''
         cta_bottom = f"\n        <OfficialButton>{a['cta']}</OfficialButton>\n"
+        if affiliate:
+            helpers = helpers.replace('rel="noopener noreferrer" className="inline-block bg-accent', f'rel="{rel}" className="inline-block bg-accent')
+            helpers = helpers.replace("※リンク先は公式サイトです（本リンクはアフィリエイト広告ではありません）", link_note)
+            assert link_note in helpers
     else:
         start = helpers.index("function OfficialButton")
         helpers = helpers[:start]
@@ -198,7 +208,7 @@ export default function {comp}() {{
               編集: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link>
             </span>
           </div>
-          <p className="mt-3 text-xs text-warm-gray">※本記事で紹介するサービスとは提携しておらず、記事内のリンクは広告ではありません。</p>
+          <p className="mt-3 text-xs text-warm-gray">{ad_note}</p>
         </header>
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">

@@ -186,6 +186,7 @@ ARTICLE = {
     ]),
     "related": [
         ("/articles/delipicks-otameshi/", "DELIPICKS（デリピックス）のお試し・特徴まとめ"),
+        ("/articles/delipicks-kaiyaku/", "DELIPICKS（デリピックス）の解約方法と締切"),
         ("/articles/kou-tanpaku-ranking/", "高たんぱくの宅配弁当ランキング"),
         ("/articles/fitdish-kuchikomi/", "FitDish（フィットディッシュ）の口コミ・評判"),
         ("/articles/muscle-deli-reviews/", "マッスルデリの口コミ・評判"),
