@@ -492,6 +492,8 @@ export default function DelipicksOtameshiPage() {
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
           <p className="font-bold mb-2">関連記事</p>
+          <Link href="/articles/delipicks-kaiyaku/" className="text-accent hover:text-accent-dark underline font-medium text-sm">デリピックスの解約方法と締切</Link>
+          <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/delipicks-menu/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
             デリピックスのメニュー一覧（掲載180品の集計）
           </Link>

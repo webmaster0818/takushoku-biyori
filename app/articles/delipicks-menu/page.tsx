@@ -597,6 +597,7 @@ export default function DelipicksMenuPage() {
           <p className="font-bold text-sm mb-3">関連記事</p>
           <ul className="space-y-2 text-sm">
             <li><Link href="/articles/delipicks-otameshi/" className="text-accent hover:text-accent-dark transition-colors">DELIPICKS（デリピックス）のお試し・特徴まとめ</Link></li>
+            <li><Link href="/articles/delipicks-kaiyaku/" className="text-accent hover:text-accent-dark transition-colors">DELIPICKS（デリピックス）の解約方法と締切</Link></li>
             <li><Link href="/articles/kou-tanpaku-ranking/" className="text-accent hover:text-accent-dark transition-colors">高たんぱくの宅配弁当ランキング</Link></li>
             <li><Link href="/articles/fitdish-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">FitDish（フィットディッシュ）の口コミ・評判</Link></li>
             <li><Link href="/articles/muscle-deli-reviews/" className="text-accent hover:text-accent-dark transition-colors">マッスルデリの口コミ・評判</Link></li>
