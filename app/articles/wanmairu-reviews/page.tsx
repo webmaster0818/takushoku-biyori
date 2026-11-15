@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-21T00:00:00+09:00",
-    modifiedTime: "2026-10-27T00:00:00+09:00",
+    modifiedTime: "2026-11-15T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -30,7 +30,7 @@ const faqData = [
   {
     question: "わんまいるはまずいって本当？",
     answer:
-      "公開レビューを確認すると、「がんもの煮付けは、正直まずいと思いました」（宅食グルメ掲載の口コミ）のような特定メニューへの否定評価は実在しますが、同じ媒体でも「まずいと感じたメニューはなかった」という声があり、実食メディアの総評は「上品な味」「ほっこりする美味しさ」が優勢です。健康志向の控えめな塩加減のため、濃い味が好きな人には物足りない可能性があります。感じ方には個人差があるため、まずは少量で試すのが確実です。",
+      "公開レビューを確認すると、「がんもの煮付けは、正直まずいと思いました」（宅食グルメ掲載の口コミ）のような特定メニューへの否定評価は実在しますが、同じ媒体でも「まずいと感じたメニューはなかった」という声があり、実食メディアの総評は「ほっこりする美味しさ」など好意的な評価が優勢です。健康志向の控えめな塩加減のため、濃い味が好きな人には物足りない可能性があります。感じ方には個人差があるため、まずは少量で試すのが確実です。",
   },
   {
     question: "わんまいるはお試しできる？",
@@ -190,19 +190,13 @@ const goodReviewCategories: {
     ],
   },
   {
-    title: "湯煎解凍の仕上がりが良い・上品な味",
+    title: "湯煎解凍の仕上がりが良い",
     reviews: [
       {
         text: "鮭はパサついておらずホロホロとしていて、冷凍ではなかなか食べられない食感だと思いました",
         meta: "宅食グルメの実食レポート",
         sourceName: "宅食グルメ（Appliv）",
         sourceUrl: "https://meal.app-liv.jp/archive/139772/",
-      },
-      {
-        text: "あまり濃すぎずに、全体として上品な味という印象でした",
-        meta: "女性・36歳・主婦",
-        sourceName: "宅食グルメ（Appliv）",
-        sourceUrl: "https://meal.app-liv.jp/archive/140336/",
       },
       {
         text: "ジューシーな鶏肉と甘酸っぱい南蛮ソースが絶妙で、ボリュームも満点でとても美味しかったです。",
@@ -220,27 +214,14 @@ const badReviewCategories: {
   comment: string;
 }[] = [
   {
-    title: "価格が高め・自炊よりコストがかかる",
-    reviews: [
-      {
-        text: "やはり、自分で食材を買って作る方が断然安いです",
-        meta: "女性・35歳・主婦",
-        sourceName: "宅食グルメ（Appliv）",
-        sourceUrl: "https://meal.app-liv.jp/archive/140336/",
-      },
-    ],
+    title: "価格が高め（公式料金で確認）",
+    reviews: [],
     comment:
       "健幸ディナー5食セットは定期6,280円（1食約1,256円）＋送料1,080円と、冷凍宅配食の中では高価格帯です（2026年10月27日の公式サイト確認時点）。国産食材100%・手作り調理のコストを「健康への投資」と捉えられるかで評価が分かれます。食費最優先なら低価格帯サービスの方が向いています。",
   },
   {
     title: "湯煎解凍の手間がかかる",
     reviews: [
-      {
-        text: "湯煎での解凍調理は意外と面倒という印象です",
-        meta: "女性・36歳・主婦",
-        sourceName: "宅食グルメ（Appliv）",
-        sourceUrl: "https://meal.app-liv.jp/archive/140336/",
-      },
       {
         text: "食べる際には湯煎か流水で解凍する手間がかかる。",
         meta: "編集部によるデメリット評",
@@ -262,7 +243,7 @@ const badReviewCategories: {
 export default function WanmairuReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-10-27T00:00:00+09:00",
+    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-11-15T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -423,7 +404,7 @@ export default function WanmairuReviewsPage() {
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">編集部の見解：「まずい」は一部メニューの外れ体験と薄味の好みに分解できる</p>
           <p>
-            酷評は「がんもの煮付け」のような特定メニューへの外れ体験が中心で、同じ媒体でも全体評価は「上品な味」「ほっこりする美味しさ」が優勢です。健康志向の控えめな塩加減のため、濃い味・こってり系が好きな人には物足りない可能性があります。和食・煮物・魚料理を好む人ほど満足度が高い傾向です。感じ方には個人差があるため、まずは少量セットで試すのが確実です。
+            酷評は「がんもの煮付け」のような特定メニューへの外れ体験が中心で、同じ媒体でも全体評価は「ほっこりする美味しさ」など好意的な声が優勢です。健康志向の控えめな塩加減のため、濃い味・こってり系が好きな人には物足りない可能性があります。和食・煮物・魚料理を好む人ほど満足度が高い傾向です。感じ方には個人差があるため、まずは少量セットで試すのが確実です。
           </p>
         </div>
 
@@ -504,7 +485,7 @@ export default function WanmairuReviewsPage() {
           <p className="font-bold text-sm mb-3">わんまいる まとめ</p>
           <div className="space-y-2 text-sm leading-relaxed">
             <p>わんまいるは<strong>国産食材100%・手作り調理</strong>にこだわった、冷凍宅食の中でもプレミアムなサービスです。</p>
-            <p>1食約1,256円〜（定期5食6,280円・2026年10月27日公式確認）と価格は高めですが、「ほっこりする美味しさ」「上品な味」といった出典付きの実食評価は他社にない魅力です。特に煮魚や煮物などの和食は、口コミで高い評価を得ています。</p>
+            <p>1食約1,256円〜（定期5食6,280円・2026年10月27日公式確認）と価格は高めですが、「ほっこりする美味しさ」といった出典付きの評価は他社にない魅力です。特に煮魚や煮物などの和食は、口コミで高い評価を得ています。</p>
             <p>湯煎解凍は慣れれば10〜15分で完了します。レンジ加熱とは仕上がりの差を実感できるはずです。最新のお試し・キャンペーン情報は公式サイトで確認のうえ、まずは1回分でその味を確かめてみてください。</p>
           </div>
         </div>

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-11-06T00:00:00+09:00",
+    modifiedTime: "2026-11-15T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -349,7 +349,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-11-06T00:00:00+09:00",
+    dateModified: "2026-11-15T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -650,20 +650,9 @@ export default function NichireiFoodsDirectKuchikomiPage() {
             </p>
           </div>
           <div className="bg-red-50 rounded-lg p-4 text-sm leading-relaxed">
-            <p className="font-bold mb-1">2. ボリュームは「腹七分目」程度</p>
+            <p className="font-bold mb-1">2. おかずのみ300kcal以下でボリュームは控えめ</p>
             <p className="mb-1.5">
-              実食検証を行った宅食グルメ（Appliv）は、ボリュームを「『腹七分目』程度」と評価しています。おかずのみで300kcal以下の設計なので、<strong>一般食の感覚で食べると量の物足りなさが不満につながりやすい</strong>構図です。同記事（宅食グルメ）の実食判定では「『まずい』『美味しくない』と感じた料理はひとつもありません」と、味自体は高評価でした。
-            </p>
-            <p className="text-xs text-warm-gray">
-              出典:{" "}
-              <a
-                href="https://meal.app-liv.jp/archive/139185/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="underline hover:text-accent"
-              >
-                宅食グルメ（Appliv）
-              </a>
+              主力のきくばりごぜんはおかずのみで300kcal以下の設計なので、<strong>一般食の感覚で食べると量の物足りなさが不満につながりやすい</strong>構図です。
             </p>
           </div>
           <div className="bg-red-50 rounded-lg p-4 text-sm leading-relaxed">
@@ -774,7 +763,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
           },
           {
             num: 2,
-            title: "健康設計ゆえの薄味・腹七分目のボリューム",
+            title: "健康設計ゆえの薄味・控えめなボリューム",
             text: "「濃い味好きなので気に入らなかった」（HonNe掲載のX投稿）という声の通り、味の濃さ・量を重視する人には向きません。ご飯を足す、まめなごはん（500kcal以下・たんぱく質20g以上）を選ぶなどの工夫が前提です。",
           },
           {
@@ -924,7 +913,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
             ニチレイフーズダイレクトは、<strong>「冷凍食品大手の味の完成度」と「300kcal以下・塩分2.0g以下の健康設計」の両立</strong>が最大の強みの宅配食です。公開レビューでは「おいしくてレンジで楽」「この食べ応えで232kcalは驚き」という評価が目立ち、実食メディアの味の評価も一貫して高水準でした。
           </p>
           <p className="text-sm leading-relaxed mb-4">
-            「まずい」という検索の実態は、健康設計による薄味・腹七分目のボリューム・価格感への感じ方が中心で、味の完成度を正面から酷評する実食レビューは確認できませんでした。一方、<strong>濃い味・大盛り志向に合わないのと、都度購入の送料負担は事実</strong>なので、定期購入（1食800円・送料無料）前提で検討するのが現実的です。
+            「まずい」という検索の実態は、健康設計による薄味・控えめなボリューム・価格感への感じ方が中心で、味の完成度を正面から酷評する実食レビューは確認できませんでした。一方、<strong>濃い味・大盛り志向に合わないのと、都度購入の送料負担は事実</strong>なので、定期購入（1食800円・送料無料）前提で検討するのが現実的です。
           </p>
           <p className="text-sm leading-relaxed">
             まずはお試し4食セット（税込3,300円）で味と量を確かめ、合えば定期に切り替えるのが失敗しない始め方です。

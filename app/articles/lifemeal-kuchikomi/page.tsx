@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-13T00:00:00+09:00",
+    modifiedTime: "2026-11-15T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -150,7 +150,7 @@ function SourcedReview({
 export default function LifemealKuchikomiPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-11-11T00:00:00+09:00",
+    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-11-15T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -198,10 +198,10 @@ export default function LifemealKuchikomiPage() {
         {/* 結論ボックス（ファーストビュー） */}
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
           <p className="font-bold text-base mb-3">ライフミールが向いている方</p>
-          <p className="text-sm leading-relaxed mb-4">ライフミールは、<strong>「1食500円前後の低価格で、栄養バランスの整った冷凍弁当を日常的に続けたい人」</strong>に向いたサービスです。実食レビューでは「冷凍とは思えないクオリティ」「水っぽさは感じなかった」と味も一定の評価を得ています。一方、ボリュームは控えめで、メニューによって好みが分かれるという指摘もあります。「まずい」という強い不満は当サイトが確認した範囲では主流ではありません。</p>
+          <p className="text-sm leading-relaxed mb-4">ライフミールは、<strong>「1食500円前後の低価格で、栄養バランスの整った冷凍弁当を日常的に続けたい人」</strong>に向いたサービスです。実食レビューでは「水っぽさは感じませんでした」と味も一定の評価を得ています。一方、ボリュームは控えめで、メニューによって好みが分かれるという指摘もあります。「まずい」という強い不満は当サイトが確認した範囲では主流ではありません。</p>
           <div className="grid md:grid-cols-2 gap-4 mb-4 text-sm">
-            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>1食490円台〜の業界最安クラスの価格</li><li>「冷凍とは思えないクオリティ」という実食評価</li><li>冷凍庫無料レンタルなど継続支援の仕組み</li></ul></div>
-            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>ボリュームは腹八分目程度と控えめ</li><li>魚メニューなどで好みが分かれる声</li><li>送料が毎回かかる（沖縄県以外980円・沖縄県1,480円）</li></ul></div>
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>1食490円台〜の業界最安クラスの価格</li><li>「水っぽさは感じませんでした」という実食評価</li><li>冷凍庫無料レンタルなど継続支援の仕組み</li></ul></div>
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>ボリュームは控えめ（男性には物足りないという評価）</li><li>魚メニューなどで好みが分かれる声</li><li>送料が毎回かかる（沖縄県以外980円・沖縄県1,480円）</li></ul></div>
           </div>
           <p className="text-xs text-warm-gray mb-4">※料金・送料・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。</p>
           <a href="https://l-meal.com/" target="_blank" rel="noopener noreferrer sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">ライフミール 公式サイトで最新の料金・初回割引を見る →</a>
@@ -235,22 +235,12 @@ export default function LifemealKuchikomiPage() {
         <SectionHeading id="good-reviews">ライフミールの良い口コミ・評判（出典付き）</SectionHeading>
         <p className="text-sm mb-6 leading-relaxed">第三者メディアの実食レビューから、味・コスパに関する評価を出典付きで紹介します（引用は各記事の原文より）。</p>
 
-        <SubHeading>味への評価：「冷凍とは思えないクオリティ」</SubHeading>
+        <SubHeading>味への評価：「水っぽさは感じませんでした」</SubHeading>
         <div className="space-y-2 mb-6">
-          <SourcedReview
-            text="「どれも食材が自然な柔らかさで手作りに近い食感だった」「食べていてコンビニ弁当のような罪悪感がない温かみのあるクオリティ」（実食レビュー）"
-            sourceLabel="宅食グルメ（Appliv） 実食レビュー"
-            sourceUrl="https://meal.app-liv.jp/archive/149700/"
-          />
           <SourcedReview
             text="冷凍弁当は「野菜メニューが水っぽくなり、全体的に味がぼんやりしてしまう」イメージがあったが、実食では「水っぽさは感じませんでした」（実食レビュー）"
             sourceLabel="HAPPINESS! magazine（ティップネス運営）実食レビュー"
             sourceUrl="https://online.tipness.co.jp/feature/home_meal/lifemeal/"
-          />
-          <SourcedReview
-            text="「彩りも味付けもいい」「冷凍とは思えないクオリティ」「低カロリーで食べやすい」（同記事で紹介されている利用者の声）"
-            sourceLabel="宅食グルメ（Appliv）掲載の口コミ紹介"
-            sourceUrl="https://meal.app-liv.jp/archive/149700/"
           />
         </div>
 
@@ -269,31 +259,19 @@ export default function LifemealKuchikomiPage() {
         <div className="space-y-2 mb-3">
           <SourcedReview
             negative
-            text="「1食のボリュームは腹八分目ほどとやや少なめ」（実食レビュー）"
-            sourceLabel="宅食グルメ（Appliv） 実食レビュー"
-            sourceUrl="https://meal.app-liv.jp/archive/149700/"
-          />
-          <SourcedReview
-            negative
             text="「男性からすると少し物足りないボリュームですが、女性や子どもには十分な量です」（実食レビュー）"
             sourceLabel="HAPPINESS! magazine 実食レビュー"
             sourceUrl="https://online.tipness.co.jp/feature/home_meal/lifemeal/"
           />
-          <SourcedReview
-            negative
-            text="「PFCバランスが気になる」「脂質が高い（多い）」（同記事で紹介されている利用者の声）"
-            sourceLabel="宅食グルメ（Appliv）掲載の口コミ紹介"
-            sourceUrl="https://meal.app-liv.jp/archive/149700/"
-          />
         </div>
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">編集部の見解</p>
-          <p>悪い評価は「ボリューム控えめ」に集中しています。これは1食500円前後・430kcal以下目安という設計の裏返しで、ダイエット・健康管理目的ならむしろ適量です。がっつり食べたい方はご飯や汁物を足す前提で考えましょう。脂質などの栄養素はメニューごとに公開されているので、気になる方は注文時に数値を確認して選ぶのがおすすめです。</p>
+          <p>悪い評価は「ボリューム控えめ」に集中しています。これは1食500円前後・430kcal以下目安という設計の裏返しで、ダイエット・健康管理目的ならむしろ適量です。がっつり食べたい方はご飯や汁物を足す前提で考えましょう。</p>
         </div>
 
         <SectionHeading id="mazui">ライフミールは「まずい」って本当？味の評判を検証</SectionHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          「ライフミール まずい」という検索候補が表示されることがありますが、<strong>当サイトが確認した範囲では、「まずい」という強い不満は実食レビューでも利用者の声でも主流ではありません</strong>。むしろ「冷凍とは思えないクオリティ」「水っぽさは感じなかった」（<a href="https://online.tipness.co.jp/feature/home_meal/lifemeal/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">HAPPINESS! magazine</a>）、「手作りに近い食感」（<a href="https://meal.app-liv.jp/archive/149700/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">宅食グルメ</a>）と、冷凍弁当としては良好な評価が並びます。
+          「ライフミール まずい」という検索候補が表示されることがありますが、<strong>当サイトが確認した範囲では、「まずい」という強い不満は実食レビューでも利用者の声でも主流ではありません</strong>。むしろ「水っぽさは感じませんでした」（<a href="https://online.tipness.co.jp/feature/home_meal/lifemeal/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">HAPPINESS! magazine</a>）と、冷凍弁当としては良好な評価です。
         </p>
         <p className="text-sm mb-4 leading-relaxed">
           ただし注意点もあります。全メニューが塩分に配慮した設計のため、<strong>濃い味に慣れている人には薄めに感じるメニューがある</strong>こと、そして<strong>魚メニューの匂いなどで好みが分かれる</strong>という声があることです。100種類以上あるメニューには当たり外れの感じ方に個人差があるので、初回割引で10食程度をまとめて試し、自分の口に合う系統を見つけるのが現実的な判断方法です。
@@ -324,7 +302,7 @@ export default function LifemealKuchikomiPage() {
           {[
             { title: "1食490円台〜の業界最安クラス価格", text: "20食セットなら1食約490円。クラブ制度やまとめ買いでさらに下がり、宅配弁当の中でもトップクラスの安さです。毎日続ける前提のコスパで設計されています。" },
             { title: "配食専門企業シルバーライフの製造ノウハウ", text: "まごころ弁当・まごころケア食で培った大量調理と栄養管理のノウハウをベースに、国内自社工場で製造しています。低価格でも運営基盤がしっかりしている安心感があります。" },
-            { title: "実食レビューで味の評価が良好", text: "「冷凍とは思えないクオリティ」「水っぽさを感じない」など、第三者メディアの実食評価は価格を考えると良好です。低価格帯サービスの中では味のバランスが取れています。" },
+            { title: "実食レビューで味の評価が良好", text: "「水っぽさは感じませんでした」など、第三者メディアの実食評価は価格を考えると良好です。低価格帯サービスの中では味のバランスが取れています。" },
             { title: "冷凍庫無料レンタルで置き場所問題を解決", text: "宅配弁当最大の障壁である「冷凍庫スペース」を、専用冷凍庫の無料レンタル（条件あり）で解決できるのは業界でも珍しい特典です。" },
             { title: "管理栄養士監修・カロリー控えめ設計", text: "塩分・糖質・脂質に配慮した設計で、430kcal以下目安のメニューが用意されています。ダイエットや健康管理目的の置き換えにも使いやすい栄養設計です。" },
           ].map((item) => (
@@ -338,7 +316,7 @@ export default function LifemealKuchikomiPage() {
         <SectionHeading id="demerits">デメリット3つ</SectionHeading>
         <div className="space-y-3 mb-6">
           {[
-            { title: "ボリュームは控えめ", text: "実食レビューでも「腹八分目」「男性には物足りない」という評価が一致しています。がっつり食べたい方はご飯・汁物を足すか、ボリューム系のサービスをご検討ください。" },
+            { title: "ボリュームは控えめ", text: "実食レビューでも「男性からすると少し物足りないボリューム」という評価があります。がっつり食べたい方はご飯・汁物を足すか、ボリューム系のサービスをご検討ください。" },
             { title: "送料が毎回かかる", text: "送料は無料ではなく、注文のたびにかかります。1食単価が安くても送料込みの実質単価で比較することが重要です。20食セットでまとめ買いすると1食あたりの送料負担を最小化できます。" },
             { title: "メニューは日替わり系で選択の自由度が低め", text: "noshのように1食ずつ自由に選ぶスタイルではなく、セット中心の構成です。苦手な食材が多い方は、メニュー内容を事前に公式サイトで確認してから注文することをおすすめします。" },
           ].map((item) => (
@@ -400,7 +378,7 @@ export default function LifemealKuchikomiPage() {
         <div className="bg-cream rounded-xl p-6 mb-8">
           <p className="font-bold mb-3">ライフミール まとめ</p>
           <div className="space-y-2 text-sm leading-relaxed">
-            <p>ライフミールは、配食専門企業シルバーライフが手がける<strong>1食490円台からの低価格冷凍弁当</strong>です。実食レビューでは「冷凍とは思えないクオリティ」と味も良好な評価で、「まずい」という強い不満は主流ではありません。</p>
+            <p>ライフミールは、配食専門企業シルバーライフが手がける<strong>1食490円台からの低価格冷凍弁当</strong>です。実食レビューでは「水っぽさは感じませんでした」と味も良好な評価で、「まずい」という強い不満は主流ではありません。</p>
             <p>弱点はボリュームの控えめさと毎回かかる送料です。ご飯を足す前提で、20食まとめ買い＋クラブ制度を活用すれば、送料込みでも業界最安クラスの実質単価で続けられます。</p>
             <p>まずは<strong>初回割引キャンペーン</strong>で10食程度を試し、味と量が自分に合うか確かめるのが失敗しない始め方です。</p>
           </div>

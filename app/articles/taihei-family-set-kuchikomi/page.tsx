@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-10-10T00:00:00+09:00",
+    modifiedTime: "2026-11-15T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -248,18 +248,6 @@ const goodReviewCategories: {
         sourceName: "宅食グルメ（Appliv）",
         sourceUrl: "https://meal.app-liv.jp/archive/141265/",
       },
-      {
-        text: "思いのほか使いやすく、味も美味しくて、ボリュームも満足しています",
-        meta: "20代男性の口コミ",
-        sourceName: "宅食グルメ（Appliv）",
-        sourceUrl: "https://meal.app-liv.jp/archive/138918/",
-      },
-      {
-        text: "肉じゃがが印象的で、味つけや、ボリュームに非常に満足",
-        meta: "30代男性の口コミ",
-        sourceName: "宅食グルメ（Appliv）",
-        sourceUrl: "https://meal.app-liv.jp/archive/138918/",
-      },
     ],
   },
   {
@@ -287,19 +275,6 @@ const badReviewCategories: {
   comment: string;
 }[] = [
   {
-    title: "薄味・健康的な味付けが濃い味好みに合わない",
-    reviews: [
-      {
-        text: "全体的に健康的な味で濃い目が好きな私には合わなかった",
-        meta: "20代男性の口コミ",
-        sourceName: "宅食グルメ（Appliv）",
-        sourceUrl: "https://meal.app-liv.jp/archive/138918/",
-      },
-    ],
-    comment:
-      "ヘルシー御膳は塩分2.2g以下、彩ごころは1.3g以下という制限食設計のため、外食や市販弁当の濃い味に慣れていると薄く感じやすいのは事実です。健康管理が目的のサービスなので、味の濃さを求める人には構造的に合いません。逆に、管理栄養士が実食したレビュー（おいしい宅食）には「薄味を想像していましたが、主菜の味付けがしっかりしているため、満足感があります」という評価もあり、感じ方には個人差があります。",
-  },
-  {
     title: "価格の割に量が物足りないという声",
     reviews: [
       {
@@ -316,7 +291,7 @@ const badReviewCategories: {
       },
     ],
     comment:
-      "ヘルシー御膳はおかずのみで200kcal前後の設計なので、食べ盛りの世代や男性にはご飯を足す前提で考える必要があります。宅食グルメの筆者による実食レビューでも「20代男性の筆者にはボリュームが足りず、ご飯が欲しい」という評価があり、カロリー制限食としては標準的な量ですが、ボリューム重視なら「ごはん付き御膳」（440kcal前後）を選ぶか、他社の一般食をご検討ください。",
+      "ヘルシー御膳はおかずのみで200kcal前後の設計なので、食べ盛りの世代や男性にはご飯を足す前提で考える必要があります。カロリー制限食としては標準的な量ですが、ボリューム重視なら「ごはん付き御膳」（440kcal前後）を選ぶか、他社の一般食をご検討ください。",
   },
 ];
 
@@ -330,7 +305,7 @@ export default function TaiheiFamilySetKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-10-10T00:00:00+09:00",
+    dateModified: "2026-11-15T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -592,17 +567,17 @@ export default function TaiheiFamilySetKuchikomiPage() {
           <div className="bg-red-50 rounded-lg p-4 text-sm leading-relaxed">
             <p className="font-bold mb-1">1. 塩分制限による薄味が濃い味好みに合わない</p>
             <p className="mb-1.5">
-              「まずい？」をタイトルに掲げて検証した宅食グルメ（Appliv）の記事では、「薄味気味」という口コミを紹介しつつ、同記事の筆者は7食の実食で「冷凍とは思えませんでした」、魚料理は「身がふっくらとジューシー」と評価しています。塩分2.2g以下（ヘルシー御膳）の設計上、<strong>濃い味に慣れた人が最初に薄いと感じるのは構造的な問題</strong>で、味の完成度そのものへの酷評ではありません。
+              ヘルシー御膳は塩分2.2g以下、彩ごころは1.3g以下という制限食設計のため、<strong>外食や市販弁当の濃い味に慣れた人が最初に薄いと感じるのは構造的な問題</strong>です。一方で、管理栄養士が実食したレビュー（おいしい宅食）には「薄味を想像していましたが、主菜の味付けがしっかりしているため、満足感があります」という評価もあり、感じ方には個人差があります。
             </p>
             <p className="text-xs text-warm-gray">
               出典:{" "}
               <a
-                href="https://meal.app-liv.jp/archive/138918/"
+                href="https://oishi-takushoku.com/taihei/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 className="underline hover:text-accent"
               >
-                宅食グルメ（Appliv）
+                おいしい宅食
               </a>
             </p>
           </div>
@@ -626,23 +601,23 @@ export default function TaiheiFamilySetKuchikomiPage() {
           <div className="bg-red-50 rounded-lg p-4 text-sm leading-relaxed">
             <p className="font-bold mb-1">3. おかずのみ約200kcalの量が「物足りない」に直結</p>
             <p className="mb-1.5">
-              宅食グルメの筆者による実食では「20代男性の筆者にはボリュームが足りず、ご飯が欲しい」という評価がありました。ヘルシー御膳はカロリー制限食として約200kcalに設計されているため、<strong>一般食の感覚で食べると量の物足りなさが「まずい（満足できない）」評価につながりやすい</strong>構図です。ボリュームが必要ならごはん付き御膳（約440kcal）を選ぶ手があります。
+              シニアのあんしん相談室 宅配ごはん案内には「お値段の割には味は相応とは言い難く、量も物足りない」という口コミがあります。ヘルシー御膳はカロリー制限食として約200kcalに設計されているため、<strong>一般食の感覚で食べると量の物足りなさが「まずい（満足できない）」評価につながりやすい</strong>構図です。ボリュームが必要ならごはん付き御膳（約440kcal）を選ぶ手があります。
             </p>
             <p className="text-xs text-warm-gray">
               出典:{" "}
               <a
-                href="https://meal.app-liv.jp/archive/138918/"
+                href="https://gohan.soudan-anshin.com/service/691/review/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 className="underline hover:text-accent"
               >
-                宅食グルメ（Appliv）
+                シニアのあんしん相談室 宅配ごはん案内
               </a>
             </p>
           </div>
         </div>
 
-        <SubHeading>一方で「美味しい」という評価も多い</SubHeading>
+        <SubHeading>一方で「美味しい」という評価もある</SubHeading>
         <div className="space-y-2 mb-6">
           <SourcedReview
             review={{
@@ -650,15 +625,6 @@ export default function TaiheiFamilySetKuchikomiPage() {
               meta: "40代女性の口コミ",
               sourceName: "宅食グルメ（Appliv）",
               sourceUrl: "https://meal.app-liv.jp/archive/141265/",
-            }}
-            tone="good"
-          />
-          <SourcedReview
-            review={{
-              text: "肉じゃがが印象的で、味つけや、ボリュームに非常に満足",
-              meta: "30代男性の口コミ",
-              sourceName: "宅食グルメ（Appliv）",
-              sourceUrl: "https://meal.app-liv.jp/archive/138918/",
             }}
             tone="good"
           />
@@ -727,7 +693,7 @@ export default function TaiheiFamilySetKuchikomiPage() {
           {
             num: 1,
             title: "制限食設計ゆえに薄味・量控えめと感じやすい",
-            text: "塩分2.2g以下・約200kcalの設計は健康管理には利点ですが、「濃い目が好きな私には合わなかった」（宅食グルメ掲載の口コミ）の通り、味の濃さ・ボリューム重視の人には向きません。一般食感覚で選ぶとギャップが生まれます。",
+            text: "塩分2.2g以下・約200kcalの設計は健康管理には利点ですが、味の濃さ・ボリューム重視の人には向きません。一般食感覚で選ぶとギャップが生まれます。",
           },
           {
             num: 2,

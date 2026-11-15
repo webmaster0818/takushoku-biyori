@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-16T00:00:00+09:00",
-    modifiedTime: "2026-11-07T00:00:00+09:00",
+    modifiedTime: "2026-11-15T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -143,7 +143,7 @@ function StarRating({ count }: { count: number }) {
 export default function ShokutakubinReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-16T00:00:00+09:00", dateModified: "2026-11-07T00:00:00+09:00",
+    datePublished: "2026-04-16T00:00:00+09:00", dateModified: "2026-11-15T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -293,10 +293,6 @@ export default function ShokutakubinReviewsPage() {
             <p className="mb-1">「甘めの大根おろしソースとよくあっていて、万人に受け入れられるようなバランスのよい美味しさ」「おかずがバラエティに富んでいるので飽きが来ない」（実食レビュー）</p>
             <p className="text-xs text-warm-gray">出典: <a href="https://www.ozmall.co.jp/healthcare/food/article/40177/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">OZmall「食宅便はまずいって本当？」実食レビュー</a></p>
           </div>
-          <div className="bg-green-50 rounded-lg p-3 text-sm leading-relaxed">
-            <p className="mb-1">「野菜がシャキシャキで、食感の違いを楽しめました」「ブロッコリーの歯ごたえと、帆立のコリコリ食感が美味しかった」（実食レビュー）</p>
-            <p className="text-xs text-warm-gray">出典: <a href="https://meal.app-liv.jp/archive/138979/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">宅食グルメ（Appliv）実食レビュー</a></p>
-          </div>
         </div>
 
         <SubHeading>第三者メディアのアンケート・モニター検証の傾向</SubHeading>
@@ -382,7 +378,7 @@ export default function ShokutakubinReviewsPage() {
         {/* ===== まずい？検証 ===== */}
         <SectionHeading id="mazui">食宅便は「まずい」って本当？味の評判を検証</SectionHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          「食宅便 まずい」という検索候補が表示されることがありますが、<strong>当サイトが確認した範囲では、実食レビューメディアの評価はむしろ良好です</strong>。3品を実食した宅食グルメは、そのうち「帆立のバター醤油」について<strong>「主菜・副菜がいずれも一定レベルの美味しさなので、『まずい』といったストレスなく食べられました」</strong>（<a href="https://meal.app-liv.jp/archive/138979/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">出典</a>）と書いています。OZmallの実食レビューでも<strong>「万人に受け入れられるようなバランスのよい美味しさ」</strong>（<a href="https://www.ozmall.co.jp/healthcare/food/article/40177/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">出典</a>）と表現されています。
+          「食宅便 まずい」という検索候補が表示されることがありますが、<strong>当サイトが確認した範囲では、実食レビューメディアの評価はむしろ良好です</strong>。OZmallの実食レビューでは<strong>「万人に受け入れられるようなバランスのよい美味しさ」</strong>（<a href="https://www.ozmall.co.jp/healthcare/food/article/40177/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">出典</a>）と表現されています。
         </p>
         <p className="text-sm mb-6 leading-relaxed">
           一方で「まずい」と感じる余地があるのは主に2つのケースです。1つは<strong>制限食コース（塩分ケア・たんぱくケアなど）</strong>で、栄養基準を守るぶん味付けが控えめになり、濃い味に慣れた人には物足りなく感じられることです。もう1つは<strong>「派手さはない家庭的な味」</strong>という設計上、レストラン級の感動を期待すると肩透かしに感じることです。病院・介護給食最大手の日清医療食品が作る「毎日食べても飽きない安定した味」がコンセプトなので、味の方向性が合うかはおまかせコースの1回注文（都度購入）で確かめるのが確実です。
