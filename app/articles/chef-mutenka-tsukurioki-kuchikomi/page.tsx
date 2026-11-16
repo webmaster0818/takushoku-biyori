@@ -33,7 +33,7 @@ const faqData = [
   {
     question: "シェフの無添つくりおきは冷凍？冷蔵？日持ちはどれくらい？",
     answer:
-      "シェフの無添つくりおきは冷凍弁当ではなく、調理済みのおかずが「冷蔵」で届くサービスです。保存料を使わない無添加調理のため消費期限は短く、到着後数日以内（商品ラベルに記載）に食べきる前提です。冷凍弁当のように長期ストックする使い方はできないので、「届いた週のおかず」として使うサービスと理解しておきましょう。",
+      "シェフの無添つくりおきは冷凍弁当ではなく、調理済みのおかずが「冷蔵」で届くサービスです。保存料を使わない無添加調理のため、消費期限はお届けから4日です（公式）。余った分は一部のメニューを除き家庭で冷凍保存できると公式に案内されていますが、基本は「届いた週のおかず」として使うサービスと理解しておきましょう。",
   },
   {
     question: "シェフの無添つくりおきの「無添加」はどこまで無添加？",
@@ -150,7 +150,7 @@ function SourcedReview({
 export default function ChefMutenkaTsukuriokiKuchikomiPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-10-12T00:00:00+09:00",
+    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-11-16T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -184,6 +184,7 @@ export default function ChefMutenkaTsukuriokiKuchikomiPage() {
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
+            <time dateTime="2026-11-16">更新: 2026年11月16日（料金・送料を公式で再確認）</time>
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
@@ -201,7 +202,7 @@ export default function ChefMutenkaTsukuriokiKuchikomiPage() {
           <p className="text-sm leading-relaxed mb-4">シェフの無添つくりおきは、<strong>「子どもに安心して食べさせられる夕食を、調理なしで用意したい共働き・子育て世帯」</strong>に向いた冷蔵おかず宅配です。実食レビューでは「無添加とは思えないほどちょうど良い味付け」という評価がある一方、優しい味付けゆえに「物足りない」と感じる声や、1人1食換算では割高という指摘もあります。冷蔵のため消費期限が短い点も要注意です。</p>
           <div className="grid md:grid-cols-2 gap-4 mb-4 text-sm">
             <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>無添加調理でも味の評価が高い実食レビューが多い</li><li>温めるだけで家族の夕食が完成する時短効果</li><li>管理栄養士監修の週替わり献立で栄養バランスが整う</li></ul></div>
-            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>薄味が物足りないと感じる人もいる</li><li>1人1食換算では冷凍弁当より割高</li><li>冷蔵配送のため消費期限が短い（長期ストック不可）</li></ul></div>
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>薄味が物足りないと感じる人もいる</li><li>1人1食換算では冷凍弁当より割高</li><li>冷蔵配送のため消費期限が短い（お届けから4日）</li></ul></div>
           </div>
           <p className="text-xs text-warm-gray mb-4">※料金・プラン・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。</p>
           <a href="https://store.tavenal.com/tsukurioki/" target="_blank" rel="noopener noreferrer sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">シェフの無添つくりおき 公式サイトで最新の料金・初回特典を見る →</a>
@@ -225,12 +226,12 @@ export default function ChefMutenkaTsukuriokiKuchikomiPage() {
             ["調理", "電子レンジ等で温めるだけ"],
             ["味付け", "化学調味料・保存料などを使わない無添加調理"],
             ["献立", "管理栄養士監修・週替わり（メニュー選択は不可）"],
-            ["消費期限", "冷蔵のため短め（到着後数日以内・商品ラベル記載）"],
+            ["消費期限", "お届けから4日（冷蔵・公式）"],
             ["プラン", "食卓サポートプラン / 食卓おまかせプランの2種"],
             ["定期縛り", "回数縛りなし・スキップ可（締切あり）"],
           ]}
         />
-        <p className="text-xs text-warm-gray mb-6">※2026年7月時点の公式サイト等の公開情報に基づく整理です。配送エリア・最新仕様は公式サイトでご確認ください。</p>
+        <p className="text-xs text-warm-gray mb-6">※2026年11月16日に公式サイト（トップ・特定商取引法に基づく表記）で確認しました。配送エリア・お届け曜日は公式サイトでご確認ください。</p>
 
         <SubHeading>2つのプランの違い</SubHeading>
         <ComparisonTable
@@ -318,21 +319,21 @@ export default function ChefMutenkaTsukuriokiKuchikomiPage() {
 
         <SectionHeading id="price">料金・送料の目安</SectionHeading>
         <ComparisonTable
-          headers={["プラン", "通常価格の目安（税込）", "送料の目安"]}
+          headers={["プラン", "価格（税込・1回）", "送料（税込）"]}
           rows={[
-            ["食卓サポートプラン", "約4,800〜5,200円/回", "約990円（初回は送料無料の特典あり）"],
-            ["食卓おまかせプラン", "約13,000〜13,600円/回", "約990円（初回は送料無料の特典あり）"],
+            ["食卓サポートプラン（3人前×2食分）", "初回 3,799円／2回目以降 5,173円", "990円（初回は送料無料）"],
+            ["食卓おまかせプラン（4人前×3食分）", "初回 9,980円／2回目以降 13,607円", "990円（初回は送料無料）"],
           ]}
         />
         <p className="text-sm mb-4 leading-relaxed">
-          <strong>価格の考え方：</strong>食卓サポートプランは「大人2人＋幼児1人×2日分」の設計なので、おおよそ<strong>大人1人1食あたり900〜1,000円前後</strong>の計算になります。nosh（612円〜・2026年10月10日公式確認）やまごころケア食（394円〜・送料別）などの冷凍弁当と比べると割高ですが、「冷蔵の手作りおかず」「無添加調理」「家族全員分」という条件を踏まえた価格です。初回は割引＋送料無料の特典が用意されていることが多いので、必ず初回特典から始めましょう。
+          <strong>価格の考え方：</strong>食卓サポートプランは公式表記で「3人前×2食分」（大人2名＋幼児1名の2日分）なので、2回目以降は送料込み6,163円÷6で<strong>1人前あたり約1,027円</strong>、食卓おまかせプラン（4人前×3食分）は14,597円÷12で約1,216円です（当サイト計算）。nosh（612円〜・2026年10月10日公式確認）やまごころケア食（394円〜・送料別）などの冷凍弁当と比べると割高ですが、「冷蔵の手作りおかず」「無添加調理」「家族全員分」という条件を踏まえた価格です。2026年11月16日時点では初回限定価格と初回送料無料が案内されています。なお公式FAQでは、初回のお届け分はキャンセルできず、2回目以降はいつでも解約でき違約金はないとされています。
         </p>
-        <p className="text-xs text-warm-gray mb-6">※上記は2026年7月時点の公開情報に基づく目安です。正確な最新価格・特典は必ず公式サイトでご確認ください。</p>
+        <p className="text-xs text-warm-gray mb-6">※価格・送料は2026年11月16日に公式サイトで確認した税込額です。初回価格・初回送料無料は公式で「今だけ」と表示されているため、申し込み前に公式サイトでご確認ください。</p>
 
         <SectionHeading id="merits">メリット4つ</SectionHeading>
         <div className="space-y-3 mb-6">
           {[
-            { title: "無添加調理でも「美味しい」という実食評価", text: "複数の実食レビューが「無添加とは思えないほどちょうど良い味付け」と評価しています。子どもと同じおかずを取り分けられる安心感は、冷凍弁当にはない強みです。" },
+            { title: "無添加調理でも「美味しい」という実食評価", text: "HAPPINESS! magazineの実食レビューは「無添加とは思えないほどちょうど良い味付け」、スマートフードナビの実食レビューも「バランスの良い味付けで美味しかった」と評価しています。子どもと同じおかずを取り分けられる安心感は、冷凍弁当にはない強みです。" },
             { title: "夕食づくりの時間がほぼゼロになる", text: "献立決め・買い物・調理・片付けが「温めるだけ」に短縮されます。「家族との時間が増えた」という声が象徴的で、共働き世帯の平日の負担軽減効果は大きいと考えられます。" },
             { title: "管理栄養士監修の週替わり献立", text: "主菜＋副菜の組み合わせで自然と品目数が増え、栄養バランスが整います。献立を考える精神的な負担がなくなるのも隠れたメリットです。" },
             { title: "回数縛りなしで始めやすい", text: "定期便ですが回数の縛りはなく、スキップも可能とされています。初回特典で1回だけ試して判断する、という使い方ができます。" },
@@ -347,8 +348,8 @@ export default function ChefMutenkaTsukuriokiKuchikomiPage() {
         <SectionHeading id="demerits">デメリット3つ</SectionHeading>
         <div className="space-y-3 mb-6">
           {[
-            { title: "消費期限が短い（冷蔵・長期ストック不可）", text: "保存料を使わない冷蔵配送のため、到着後数日以内に食べきる必要があります。冷凍弁当のように「ストックしておいて好きな日に食べる」使い方はできません。外食が多い週はスキップするなどの運用が必要です。" },
-            { title: "1人1食換算では割高", text: "実食レビューでは1人1食換算で約970円という試算もあり、冷凍弁当の相場より高めです。一人暮らしのコスパ重視には不向きで、家族の食卓まるごとの時短に価値を感じられるかが分かれ目です。" },
+            { title: "消費期限が短い（冷蔵・お届けから4日）", text: "保存料を使わない冷蔵配送のため、消費期限はお届けから4日です（公式）。余った分は一部のメニューを除き冷凍保存できると公式に案内されていますが、冷凍弁当のように届いた分をまとめてストックする使い方には向きません。外食が多い週はスキップするなどの運用が必要です。" },
+            { title: "1人1食換算では割高", text: "スマートフードナビの実食レビューでは1人1食換算で972円という試算があり、2026年11月16日の公式料金では送料込みで1人前約1,027円（当サイト計算）と、冷凍弁当の相場より高めです。一人暮らしのコスパ重視には不向きで、家族の食卓まるごとの時短に価値を感じられるかが分かれ目です。" },
             { title: "メニューが選べない・薄味が合わない人もいる", text: "週替わりのおまかせ献立のため、苦手な食材が届く可能性があります。また化学調味料を使わない優しい味付けは、濃い味に慣れた人には物足りなく感じられることがあります。" },
           ].map((item) => (
             <div key={item.title} className="bg-red-50 rounded-lg p-4">
