@@ -3,9 +3,9 @@ import Link from "next/link";
 import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
-  "筋肉食堂DELIはまずい？口コミ・評判と「しょっぱい・量が少ない」の声、料金を出典付きで検証【2026年10月最新】";
+  "筋肉食堂DELIはまずい？口コミ・評判と「しょっぱい・量が少ない」の声、料金を出典付きで検証【11月13日からお届け停止中】";
 const ARTICLE_DESCRIPTION =
-  "筋肉食堂DELIは「まずい」って本当？公開レビューから良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。レストラン「筋肉食堂」発の高たんぱく冷凍宅配食の料金（ベーシック7食7,560円・2026年10月10日公式確認）・地域別送料・解約締切・マッスルデリとの違いも解説します。";
+  "筋肉食堂DELIは2026年11月13日以降のお届けを一時停止中（再開未定・対象注文は全額返金と公式発表）。「まずい」の評判を出典付きの口コミで検証し、停止前の料金・送料、停止中の解約の連絡先、マッスルデリとの違いを解説します。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/kinnikushokudo-deli-kuchikomi/";
 
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-11-06T00:00:00+09:00",
+    modifiedTime: "2026-11-16T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -30,6 +30,11 @@ export const metadata: Metadata = {
 /* ---------- FAQ data ---------- */
 
 const faqData = [
+  {
+    question: "筋肉食堂DELIは今注文できる？",
+    answer:
+      "2026年11月16日時点では、公式のお知らせ（2026年11月13日）で「11月13日以降の商品のお届けを一時停止」と発表されており、再開時期は未定です。11月13日以降にお届け予定だった注文は運営会社がキャンセルし全額返金、定期便はすべて一時停止中で、再開時は利用者の同意を確認してから再開すると案内されています（公式「お届け停止に関するよくあるご質問」）。",
+  },
   {
     question: "筋肉食堂DELIはまずいって本当？",
     answer:
@@ -53,7 +58,7 @@ const faqData = [
   {
     question: "筋肉食堂DELIの解約・スキップは簡単？",
     answer:
-      "定期購入に回数縛り・解約金はなく、次回お届け予定日の7日前までにマイページから「停止」にすれば解約扱いになります（公式FAQ「停止＝解約と同等」）。自動注文はお届け日の6日前に決済されるため、それ以降の手続きは次回分から反映です（2026年10月10日の公式サイト確認時点）。電話が必要なサービスと比べて手続きは簡単な部類です。",
+      "定期購入に回数縛り・解約金はなく、次回お届け予定日の7日前までにマイページから「停止」にすれば解約扱いになります（公式FAQ「停止＝解約と同等」）。自動注文はお届け日の6日前に決済されるため、それ以降の手続きは次回分から反映です（2026年10月10日の公式サイト確認時点）。電話が必要なサービスと比べて手続きは簡単な部類です。なお2026年11月13日からのお届け停止中は、定期便が運営側で一時停止されており、自分で解約手続きをする必要はないと案内されています。解約を希望する場合は support-deli@kinnikushokudo.jp 宛に「解約希望・契約メールアドレス・契約コース」を送るよう公式FAQに記載があります（2026年11月16日確認）。",
   },
 ];
 
@@ -351,7 +356,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-11-06T00:00:00+09:00",
+    dateModified: "2026-11-16T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -425,7 +430,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
-            <time dateTime="2026-11-06">更新: 2026年11月6日（公式で再確認）</time>
+            <time dateTime="2026-11-16">更新: 2026年11月16日（公式のお届け停止のお知らせを確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -439,6 +444,20 @@ export default function KinnikushokudoDeliKuchikomiPage() {
           </div>
         </header>
         </div>{/* /subhead */}
+
+        {/* お届け停止のお知らせ（2026-11-16 公式確認） */}
+        <div className="border-2 border-red-300 bg-red-50 rounded-xl p-5 mb-8 text-sm leading-relaxed">
+          <p className="font-bold text-base mb-2">筋肉食堂DELIは2026年11月13日からお届けを一時停止しています</p>
+          <p className="mb-2">
+            公式のお知らせ（2026年11月13日）によると、製造体制の問題で<strong>11月13日以降の商品のお届けを一時停止</strong>し、対象の注文は運営会社がキャンセルして<strong>全額返金</strong>します。定期便はすべて一時停止中で、<strong>再開時期は未定</strong>です。再開する場合は利用者の意向を確認してから再開し、同意なく決済・お届けが行われることはないと案内されています。11月16日時点で公式のコース詳細ページ（ローカーボ・ベーシック・バルクアップ）は表示されません。
+          </p>
+          <p className="mb-2">
+            停止中に解約したい場合は、support-deli@kinnikushokudo.jp 宛に「解約希望・契約メールアドレス・契約コース」を送るよう案内されています（電話窓口は準備中）。今回の停止・キャンセルで継続回数の制約や違約金は発生しないとされています。
+          </p>
+          <p className="text-xs text-warm-gray">
+            ※出典: <a href="https://deli.kinnikushokudo.jp/shop/information/news1113" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">筋肉食堂DELI公式「定期便の提供停止に関するお知らせ」</a>・<a href="https://242854284.hs-sites-na2.com/faq/%E7%AD%8B%E8%82%89%E9%A3%9F%E5%A0%82deli-%E3%81%8A%E5%B1%8A%E3%81%91%E5%81%9C%E6%AD%A2%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E3%81%94%E8%B3%AA%E5%95%8Ffaq" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">お届け停止に関するよくあるご質問</a>（いずれも2026年11月16日確認）。以下の料金・口コミは停止前の情報です。
+          </p>
+        </div>
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -455,7 +474,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
 
         {/* 早見表＋「まずい」の答え（2026-11-06） */}
         <div className="border border-warm-border rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">筋肉食堂DELIの料金・送料の早見表（税込・2026年11月6日公式確認）</p>
+          <p className="font-bold text-base mb-3">筋肉食堂DELIの料金・送料の早見表（停止前・税込・2026年11月6日公式確認）</p>
           <ComparisonTable
             headers={["コース", "7食（定期）", "14食（定期）", "21食（定期）", "定期の1食あたり", "関東の送料込み1食（算出）"]}
             rows={[
@@ -508,7 +527,7 @@ export default function KinnikushokudoDeliKuchikomiPage() {
             rel="noopener noreferrer"
             className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition"
           >
-            筋肉食堂DELI公式サイトで最新の料金・メニューを見る →
+            筋肉食堂DELI公式サイトでお届け再開の案内を確認する →
           </a>
           <p className="text-[10px] text-gray-400 text-center mt-2">※リンク先は公式サイトです（本リンクはアフィリエイト広告ではありません）</p>
         </div>
