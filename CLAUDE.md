@@ -684,3 +684,12 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - **判断待ち（未対応）**: 他に筋肉食堂DELIを紹介している頁（out 14頁・source 15ファイル。15社表・高たんぱくランキング等）は停止の反映をしていない
 - 競合（WebSearch・日本の結果あり）: HonNe・みん評（2.74点・9件と検索要約にあるが 403 で原文未確認＝不記載）・ROOMIE・coetas・OZmall・strate。停止に触れている競合は検索結果に無し
 - **ウェルネス口コミ（wellness-dining-reviews）クロール切れ調査**: 本番 200・308 は末尾スラッシュ無しのみ・canonical 自己・robots index,follow・robots.txt Allow・sitemap 掲載 lastmod 10/28・HTML 399KB/0.26秒（三ツ星 420KB・nosh 326KB と同等）・内部リンク 20頁から通常の <a href>（TOP・/articles/・3社比較×2・白書×2、nofollow なし）。URL 検査＝PASS・pageFetch SUCCESSFUL・googleCanonical 一致・最終クロール 10/20。リンク元の TOP（11/14）・3社比較（11/13）・三ツ星（11/13）は再クロール済み＝リンクを辿れる状態でも再取得されていない。sitemap 82URL を全件検査すると 2026-08 止まり16・10月10・11月53・未クロール3＝**技術的な阻害は無く、サイト全体の再クロール頻度の低さ**。直したものなし
+
+### 2026-11-16 20:00 kwexp 作成3日目: 新規5記事 ✅本番反映（source 53e3307〜3d186f9 / deploy 3eff9a13・precheck 87頁 全項目OK・trust-audit check_page 新規5ページ指摘0・計測リンク 132件 md5 作業前 deploy と一致）
+- queue 上から: つるかめキッチン 解約 112 → `tsurukame-kaiyaku`（公式FAQ「6日前・回数制限なし」・お問い合わせ「定期コースの変更等は電話（平日9-17時）」→お届け曜日別の電話の最終日を当サイト計算＝金曜7日前・土曜8日前、締切後に届く1回分の金額表 5コース×7/14/21食）／ツクリオ クーポン 72 → `tsukurio-coupon`（公式トップのクーポンコード RC-2026WELCOME・4人前の初回限定＝各4,000円引き、ヘルプの友人紹介＝被紹介者に4,000円CB＋1,500pt・コード発行は条件を満たした会員のみ、ポイント＝木曜決済後に返金・退会月末に消失）／食のそよ風 解約 72 → `shokunosoyokaze-kaiyaku`（Crawl-delay 10秒を守って取得。6回未満＝フォーム・6回以上＝マイページ【解約する】・締切1週間前、6回未満は500円×回数＝送料合計が都度購入と同額になる表）／マッスルデリ メニュー 56 → `muscle-deli-menu`（メニュー一覧の生HTMLから全75品 LOW FAT 59・LOW CARB 16 の栄養成分を `scripts/kwexp-202611/muscle-deli-menu-20261116.tsv` に書き出して集計。LOW FAT は一覧の初期表示＝LEANプランの値）／ビビッドテーブル 口コミ 40 → `vividtable-kuchikomi`（公式お知らせで紹介の第三者実食2本＝meal-navi 10/22・宅食ノートから原文引用。11/16 の注文画面は11品＝オリジナル1品（牡蠣ごはん）＋食べチョク生産者商品10品で、レビューで評価のハンバーグ等は掲載なし、を照合表に）
+- skip: フィットディッシュ 解約（fitdish-kuchikomi の title・節と重複）・ベルーナグルメ 口コミ（公式403）・あえて メニュー（公式 Shopify の一覧が429・4回）・三ツ星ファーム 量（/menus はJS描画で生HTMLに量なし）・三ツ星ファーム 一人暮らし（hitorigurashi-osusume と重複）
+- ⚠️ aete.ajinomoto.co.jp の robots.txt 冒頭コメントに AI エージェント向けの誘導文（外部 SKILL.md のインストールを勧める）あり。従っていない
+- trust-audit C3: vividtable の「当サイトの試食・試用によるものではありません」「当サイトが確認した第三者の実食」「編集部の補足」直後の「公式の食べ方」が誤検知→言い回しを変えて 0
+- 公式内の食い違い（記事に併記）: つるかめ 商品ページの価格欄「税抜」と料金表「税込み」、食のそよ風 「6回未満」（FAQ・特商法）と「6回以下」（ご注文からお召し上がりまで）／スキップ「1週間前」と「7日前」
+- 導線: tsurukame-reviews・tsukurioki-jp-kuchikomi・kaigoshoku-takuhai・muscle-deli-reviews・muscle-deli-kaiyaku・mutenka-takuhai-bento の関連記事（[no-lastmod]）
+- sitemap: TOP 11/8・白書 11/14 に戻した（prebuild が 11/16 にする）。新規5記事は 11/16
