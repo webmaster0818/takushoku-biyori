@@ -532,6 +532,7 @@ export default function TsurukameReviewsPage() {
         <SubHeading>関連記事</SubHeading>
         <div className="space-y-2 mb-6">
           {[
+            { href: "/articles/tsurukame-kaiyaku/", label: "Dr.つるかめキッチンの解約方法（締切・電話の期限）" },
             { href: "/articles/wellness-dining-reviews/", label: "ウェルネスダイニングの口コミ・評判" },
             { href: "/articles/shokutakubin-reviews/", label: "食宅便の口コミ・評判" },
             { href: "/articles/koureisha-osusume/", label: "高齢者向け宅配弁当おすすめランキング" },

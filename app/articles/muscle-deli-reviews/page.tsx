@@ -639,6 +639,8 @@ export default function MuscleDeliReviewsPage() {
           <p className="font-bold mb-2">関連記事</p>
           <Link href="/articles/muscle-deli-kaiyaku/" className="text-accent hover:text-accent-dark underline font-medium text-sm">マッスルデリの解約方法と違約金</Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
+          <Link href="/articles/muscle-deli-menu/" className="text-accent hover:text-accent-dark underline font-medium text-sm">マッスルデリのメニュー一覧（全品の栄養成分）</Link>
+          <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/kou-tanpaku-ranking/" className="text-accent hover:text-accent-dark underline font-medium text-sm">高タンパク質 冷凍宅配弁当ランキング</Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/diet-osusume/" className="text-accent hover:text-accent-dark underline font-medium text-sm">ダイエットおすすめ宅配</Link>

@@ -969,6 +969,11 @@ export default function TsukuriokiJpKuchikomiPage() {
           <p className="font-bold text-sm mb-3">関連記事</p>
           <ul className="space-y-2 text-sm">
             <li>
+              <Link href="/articles/tsukurio-coupon/" className="text-accent hover:text-accent-dark transition-colors">
+                ツクリオのクーポン・初回割引・友人紹介の特典
+              </Link>
+            </li>
+            <li>
               <Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark transition-colors">
                 nosh(ナッシュ)の口コミ・評判は？まずいって本当？
               </Link>

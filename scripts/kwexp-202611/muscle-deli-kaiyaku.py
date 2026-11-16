@@ -135,6 +135,7 @@ ARTICLE = {
     ]),
     "related": [
         ("/articles/muscle-deli-reviews/", "マッスルデリの口コミ・評判"),
+        ("/articles/muscle-deli-menu/", "マッスルデリのメニュー一覧（全品の栄養成分）"),
         ("/articles/kou-tanpaku-ranking/", "高たんぱくの宅配弁当ランキング"),
         ("/articles/kinnikushokudo-deli-kuchikomi/", "筋肉食堂DELIの口コミ・評判"),
         ("/articles/takushoku-ryokin-hakusho/", "宅食料金白書｜各社の料金・送料・1食単価"),

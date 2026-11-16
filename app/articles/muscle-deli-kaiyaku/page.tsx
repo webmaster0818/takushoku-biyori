@@ -304,6 +304,7 @@ export default function MuscleDeliKaiyakuPage() {
           <p className="font-bold text-sm mb-3">関連記事</p>
           <ul className="space-y-2 text-sm">
             <li><Link href="/articles/muscle-deli-reviews/" className="text-accent hover:text-accent-dark transition-colors">マッスルデリの口コミ・評判</Link></li>
+            <li><Link href="/articles/muscle-deli-menu/" className="text-accent hover:text-accent-dark transition-colors">マッスルデリのメニュー一覧（全品の栄養成分）</Link></li>
             <li><Link href="/articles/kou-tanpaku-ranking/" className="text-accent hover:text-accent-dark transition-colors">高たんぱくの宅配弁当ランキング</Link></li>
             <li><Link href="/articles/kinnikushokudo-deli-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">筋肉食堂DELIの口コミ・評判</Link></li>
             <li><Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark transition-colors">宅食料金白書｜各社の料金・送料・1食単価</Link></li>
