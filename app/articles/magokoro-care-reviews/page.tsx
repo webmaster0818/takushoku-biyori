@@ -632,6 +632,7 @@ export default function MagokoroCareReviewsPage() {
             <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link></li>
             <li><Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark transition-colors">【2026年】一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5</Link></li>
             <li><Link href="/articles/lifemeal-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">ライフミールの口コミ・評判は？まずいって本当？（同じシルバーライフ運営）</Link></li>
+            <li><Link href="/articles/gohan-tsuki-reitou-bento/" className="text-accent hover:text-accent-dark transition-colors">ご飯付きの冷凍弁当がある宅配食（まごころケア食 ご飯付きセットほか）</Link></li>
           </ul>
         </div>
       

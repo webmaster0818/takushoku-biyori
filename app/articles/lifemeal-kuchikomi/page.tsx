@@ -359,6 +359,7 @@ export default function LifemealKuchikomiPage() {
         <SubHeading>関連記事</SubHeading>
         <div className="space-y-2 mb-6">
           {[
+            { href: "/articles/lifemeal-menu/", label: "ライフミールのメニュー一覧（全119品の栄養成分）" },
             { href: "/articles/magokoro-care-reviews/", label: "まごころケア食の口コミ・評判（同じシルバーライフ運営）" },
             { href: "/articles/chef-mutenka-tsukurioki-kuchikomi/", label: "シェフの無添つくりおきの口コミ・評判" },
             { href: "/articles/takushoku-ryokin-hakusho/", label: "冷凍弁当は「送料込みの実質単価」で比較" },

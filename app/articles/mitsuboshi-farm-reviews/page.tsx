@@ -1134,6 +1134,14 @@ export default function MitsuboshiFarmReviewsPage() {
           <ul className="space-y-2 text-sm">
             <li>
               <Link
+                href="/articles/mitsuboshi-osusume-menu/"
+                className="text-accent hover:text-accent-dark transition-colors"
+              >
+                三ツ星ファームのおすすめメニュー（公式の人気順と目的別）
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/articles/nosh-vs-mitsuboshi-vs-wellness/"
                 className="text-accent hover:text-accent-dark transition-colors"
               >

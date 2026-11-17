@@ -208,6 +208,7 @@ ARTICLE = {
     "related": [
         ("/articles/muscle-deli-reviews/", "マッスルデリの口コミ・評判"),
         ("/articles/muscle-deli-kaiyaku/", "マッスルデリの解約方法"),
+        ("/articles/muscle-deli-nosh-hikaku/", "マッスルデリとnoshの比較"),
         ("/articles/kou-tanpaku-ranking/", "高たんぱくの宅配弁当ランキング"),
         ("/articles/delipicks-menu/", "デリピックスのメニュー一覧"),
     ],
