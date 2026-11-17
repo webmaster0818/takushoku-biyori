@@ -150,7 +150,7 @@ function SourcedReview({
 export default function ChefMutenkaTsukuriokiKuchikomiPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-11-16T00:00:00+09:00",
+    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-11-17T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -201,7 +201,7 @@ export default function ChefMutenkaTsukuriokiKuchikomiPage() {
           <p className="font-bold text-base mb-3">シェフの無添つくりおきが向いている方</p>
           <p className="text-sm leading-relaxed mb-4">シェフの無添つくりおきは、<strong>「子どもに安心して食べさせられる夕食を、調理なしで用意したい共働き・子育て世帯」</strong>に向いた冷蔵おかず宅配です。実食レビューでは「無添加とは思えないほどちょうど良い味付け」という評価がある一方、優しい味付けゆえに「物足りない」と感じる声や、1人1食換算では割高という指摘もあります。冷蔵のため消費期限が短い点も要注意です。</p>
           <div className="grid md:grid-cols-2 gap-4 mb-4 text-sm">
-            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>無添加調理でも味の評価が高い実食レビューが多い</li><li>温めるだけで家族の夕食が完成する時短効果</li><li>管理栄養士監修の週替わり献立で栄養バランスが整う</li></ul></div>
+            <div className="bg-cream rounded-lg p-3"><p className="font-bold text-accent mb-2">◎ 良いと評価されやすい点</p><ul className="space-y-1 list-disc list-inside"><li>無添加調理でも、引用した実食レビュー2媒体（HAPPINESS! magazine・スマートフードナビ）はいずれも味を評価</li><li>温めるだけで家族の夕食が完成する時短効果</li><li>管理栄養士監修の週替わり献立で栄養バランスが整う</li></ul></div>
             <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>薄味が物足りないと感じる人もいる</li><li>1人1食換算では冷凍弁当より割高</li><li>冷蔵配送のため消費期限が短い（お届けから4日）</li></ul></div>
           </div>
           <p className="text-xs text-warm-gray mb-4">※料金・プラン・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。</p>
@@ -311,7 +311,7 @@ export default function ChefMutenkaTsukuriokiKuchikomiPage() {
 
         <SectionHeading id="mazui">シェフの無添つくりおきは「まずい」って本当？味の評判を検証</SectionHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          「シェフの無添つくりおき まずい」という検索候補が表示されることがありますが、<strong>当サイトが確認した範囲では、実食レビューの多くはむしろ味を高評価しています</strong>。実食したHAPPINESS! magazineは記事の結論として<strong>「『まずい』どころか、無添加の常識を覆すプロの味でした」</strong>（<a href="https://online.tipness.co.jp/feature/home_meal/tsukurioki_home-asp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">出典</a>）と述べています。
+          「シェフの無添つくりおき まずい」という検索候補が表示されることがありますが、<strong>当サイトが引用した実食レビュー2媒体（HAPPINESS! magazine・スマートフードナビ）は、いずれも味を評価しています</strong>。実食したHAPPINESS! magazineは記事の結論として<strong>「『まずい』どころか、無添加の常識を覆すプロの味でした」</strong>（<a href="https://online.tipness.co.jp/feature/home_meal/tsukurioki_home-asp/" target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">出典</a>）と述べています。
         </p>
         <p className="text-sm mb-4 leading-relaxed">
           一方で「まずい」と感じる可能性があるのは、<strong>ふだん外食やコンビニの濃い味に慣れている人</strong>です。化学調味料を使わない設計上、第一印象は薄味に感じられやすく、実食レビューでも「一口目は薄く感じる」と明記されています。素材の旨みを活かした味付けを「優しい・美味しい」と取るか「物足りない」と取るかで評価が分かれる、というのが実態です。味の許容範囲は個人差が大きいため、まずは初回特典のある1回分で試し、家族の口に合うか確かめるのが確実です。
