@@ -693,3 +693,9 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - 公式内の食い違い（記事に併記）: つるかめ 商品ページの価格欄「税抜」と料金表「税込み」、食のそよ風 「6回未満」（FAQ・特商法）と「6回以下」（ご注文からお召し上がりまで）／スキップ「1週間前」と「7日前」
 - 導線: tsurukame-reviews・tsukurioki-jp-kuchikomi・kaigoshoku-takuhai・muscle-deli-reviews・muscle-deli-kaiyaku・mutenka-takuhai-bento の関連記事（[no-lastmod]）
 - sitemap: TOP 11/8・白書 11/14 に戻した（prebuild が 11/16 にする）。新規5記事は 11/16
+
+### 2026-11-17 朝ルーチン（15:1x やり直し）: trust-audit C3 10ページ（直す箇所0）＋chef-mutenka「実食レビューが多い／多くは」を引用2媒体に（source b03d896 / deploy f5c45a39・precheck 87頁 全項目OK・計測リンク 132件 md5 作業前 deploy と一致・本番反映約1分）
+- C3 10頁（sango・mealkit-vs-reitou・reitou-atatame・mamano・hitorigurashi・kinnikushokudo・muscle-deli-reviews・author・editorial・methodology）を本番原文で確認：「監修: 宅食びより編集部」「編集部メンバー」は判断待ちで不変。「編集部による実食」「当サイトは実食」は全て否定文（未実施・していません）、「筆者による実食」はマイナビニュース記事執筆者の帰属つき、その他の実食は HonNe・うちらいふ・meal-navi・HAPPINESS! 等の媒体名つき＝全件誤検知
+- kwexp 11/14〜16 の新規15記事も本番で確認：自前の実食・試食の主張なし（否定文と媒体名つき第三者の実食のみ）、ヘッダーは全て「編集:」・「監修: 宅食びより」「編集部メンバー」0
+- chef-mutenka: 結論ボックス「無添加調理でも味の評価が高い実食レビューが多い」・まずい節「実食レビューの多くはむしろ味を高評価」→ ページ内で引用している2媒体（HAPPINESS! magazine・スマートフードナビ、11/16 原文確認済み）の記述に。dateModified 11/17（表示の更新日は公式再確認日なので 11/16 のまま）。sitemap は chef だけ 11/17、TOP 11/8・/articles/ 11/16・白書 11/14 に戻した
+- Indexing 429 → sitemap 再送
