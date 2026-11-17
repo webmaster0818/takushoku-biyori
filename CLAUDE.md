@@ -699,3 +699,12 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - kwexp 11/14〜16 の新規15記事も本番で確認：自前の実食・試食の主張なし（否定文と媒体名つき第三者の実食のみ）、ヘッダーは全て「編集:」・「監修: 宅食びより」「編集部メンバー」0
 - chef-mutenka: 結論ボックス「無添加調理でも味の評価が高い実食レビューが多い」・まずい節「実食レビューの多くはむしろ味を高評価」→ ページ内で引用している2媒体（HAPPINESS! magazine・スマートフードナビ、11/16 原文確認済み）の記述に。dateModified 11/17（表示の更新日は公式再確認日なので 11/16 のまま）。sitemap は chef だけ 11/17、TOP 11/8・/articles/ 11/16・白書 11/14 に戻した
 - Indexing 429 → sitemap 再送
+
+### 2026-11-17 20:00 kwexp 作成4日目: 新規5記事 ✅本番反映（source 112640d〜8709e6a / deploy dfa7d514・precheck 92頁 全項目OK・trust-audit check_page 新規5ページ指摘0・計測リンク M5863L 21→24 のみ増（新規 mitsuboshi-osusume-menu）・他は作業前 deploy と一致）
+- queue 上から: ご飯付き 冷凍弁当 40 → `gohan-tsuki-reitou-bento`（全食ご飯付き＝まごころ ご飯付きセット・ニチレイ まめなごはん・ママの休食・ライフミール ご飯付きセット／追加＝DELIPICKS／一部＝三ツ星・nosh・マッスルデリ（メニュー名で数えた）／おかずのみ＝ワタミダイレクト・食宅便・ウェルネス・つるかめ。送料込み1食を当サイト計算）／わんまいる メニュー 40 → `wanmairu-menu`（献立ページの5週×2商品＝50食の kcal・糖質・塩分を `wanmairu-menu-20261117.tsv` に。週平均は全週で公式基準内）／マッスルデリ ナッシュ 比較 40 → `muscle-deli-nosh-hikaku`（nosh /menu 生HTMLの100品 `nosh-menu-20261117.tsv` と 11/16 のマッスルデリ75品を集計。マッスルデリ価格は商品ページの税抜×1.08＝公式の計算）／ライフミール メニュー 32 → `lifemeal-menu`（l-meal.com 121品の詳細ページを `lifemeal-menu-20261117.tsv` に）／三ツ星ファーム おすすめメニュー 32 → `mitsuboshi-osusume-menu`（/menus が読み込む公開データ mitsuboshi-web-api…workers.dev/api/regular_menus の159品＋ /data/ranking.json の人気順を `mitsuboshi-menu-20261117.tsv` に。提携済みのため既存記事と同じ M5863L を転記・計測リンクは開いていない）
+- skip: 学童 お弁当 宅配（施設向けの仕出し＝宅食でない）・ナッシュ 20食（nosh-reviews の料金・送料表と重複）
+- 三ツ星の公式データ: 「三ツ星基準とは…350kcal以下/糖質25g以下/タンパク質15g以上」（/menus の JS 内の注記）。牛カルビライスバーガーは糖質69g＞炭水化物41.1g（公式の誤記の可能性・記事に注記）。この API で 11/16 skip の「三ツ星ファーム 量」も一次情報が取れる可能性あり
+- 公式内の食い違い（記事に併記）: わんまいる送料 1,080円（商品ページ・FAQ）／935円（申込フォームのご利用ガイド）
+- 導線: wanmairu-reviews・lifemeal-kuchikomi・mitsuboshi-farm-reviews・magokoro-care-reviews・muscle-deli-menu（[no-lastmod]）。precheck [14] で gohan-tsuki が被リンク1本→ magokoro・lifemeal-menu から追加
+- カテゴリ名は lib/articles.ts の CATEGORY_GROUPS と完全一致が必要（「比較・ランキング」は未定義でビルド失敗→「比較・料金データ」）
+- sitemap: TOP 11/8・白書 11/14 に戻した。新規5記事は 11/17
