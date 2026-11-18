@@ -3,9 +3,9 @@ import Link from "next/link";
 import ServiceCaptureGrid from "@/components/ServiceCaptureGrid";
 
 const ARTICLE_TITLE =
-  "【2026年最新】コープデリとパルシステムの違いを比較｜料金・安全性・品揃え・配送エリアで選ぶならどっち？";
+  "コープデリとパルシステムの違いを比較｜一人暮らしの手数料・料金・安全性で選ぶならどっち？【2026年11月】";
 const ARTICLE_DESCRIPTION =
-  "コープデリとパルシステムの違いを7項目で比較します。料金・配送手数料・品揃え・安全基準・離乳食・ミールキット・注文方法を表で分かりやすく解説します。";
+  "コープデリとパルシステムの違いを比較。一人暮らしの手数料は東京でコープデリが6,000円(税別)未満198円、パルシステムが2,000円未満248円〜12,000円以上無料（公式11/18確認）。品揃え・安全基準・離乳食も表で比べます。";
 const ARTICLE_URL =
   "https://takushoku-biyori.com/articles/coopdeli-vs-palsystem/";
 
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-21T00:00:00+09:00",
-    modifiedTime: "2026-10-16T00:00:00+09:00",
+    modifiedTime: "2026-11-18T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -199,7 +199,7 @@ export default function CoopdeliVsPalsystemPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-21T00:00:00+09:00",
-    dateModified: "2026-10-21T00:00:00+09:00",
+    dateModified: "2026-11-18T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -248,12 +248,29 @@ export default function CoopdeliVsPalsystemPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-04-21">公開: 2026年4月21日</time>
+            <time dateTime="2026-11-18">更新: 2026年11月18日（手数料は11月18日に公式で確認）</time>
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
         </div>{/* /subhead */}
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
+          <p className="font-bold mb-2">一人暮らしで使うなら：1回の注文額と年齢で手数料が変わる（東京の公式値）</p>
+          <p className="mb-3">
+            どちらも1人（個人）で加入でき、注文額が少ない週も届けてもらえます。違いが大きいのは手数料です。コープデリは<strong>6,000円（税別）未満なら198円</strong>、パルシステムは<strong>2,000円未満248円・2,000円以上198円・5,000円以上165円</strong>で、無料になるのはコープデリが6,000円（税別）以上、パルシステムが12,000円以上です。注文しない週も、どちらも手数料がかかります。
+          </p>
+          <ComparisonTable
+            headers={["1人で使う場合（東京・税込）", "コープデリ（コープみらい）", "パルシステム（東京）"]}
+            rows={[
+              ["1回の手数料", "6,000円（税別）未満 198円（基本手数料88円＋配達手数料110円）／6,000円（税別）以上 0円", "2,000円未満 248円／2,000円以上 198円／5,000円以上 165円／12,000円以上 0円（加入5年以上は8,000円以上で0円）"],
+              ["注文しない週", "基本手数料88円のみ", "パルシステム手数料が発生（公式は「注文がない場合でも発生」と記載）"],
+              ["高齢の一人暮らしの割引", "シルバー割引（世帯全員が65歳以上など）：配達手数料0円・基本手数料88円のみ", "シルバー特典（単身で満70歳以上など）：加入3年未満は2,000円以上99円・2,000円未満124円、加入3年以上は0円"],
+              ["1人暮らしの満足度（オリコン2026・首都圏）", "食材宅配 71.9点／ミールキット 73.1点", "食材宅配 74.7点／ミールキット 75.2点"],
+            ]}
+          />
+          <p className="text-xs text-warm-gray mb-4">
+            出典: <a href="https://efriends.coopdeli.jp/look/guide/fee/" target="_blank" rel="noopener noreferrer nofollow" className="underline">コープデリの手数料（東京都）</a>／<a href="https://www.pal-system.co.jp/service/weekly-delivery/delivery/fee/" target="_blank" rel="noopener noreferrer nofollow" className="underline">パルシステム 手数料・割引制度（東京）</a>（いずれも2026年11月18日確認。ほかの都県は金額が異なります）／<a href="https://life.oricon.co.jp/rank-food-delivery/syutoken/family/" target="_blank" rel="noopener noreferrer nofollow" className="underline">オリコン 食材宅配 首都圏 1人暮らしランキング</a>・<a href="https://life.oricon.co.jp/rank-food-delivery/meal-kit/syutoken/family/" target="_blank" rel="noopener noreferrer nofollow" className="underline">ミールキット 首都圏 1人暮らしランキング</a>（調査期間 2025年9月25日〜10月27日・更新日 2026年2月2日。当サイトの調査ではありません）。
+          </p>
           <p className="mb-3">
             「コープデリとパルシステム、どっちにすればいいの？」——どちらも関東圏で人気の生協宅配サービスですが、料金・品揃え・安全基準など、実は大きな違いがあります。
           </p>
@@ -305,7 +322,7 @@ export default function CoopdeliVsPalsystemPage() {
           headers={["比較項目", "コープデリ", "パルシステム", "おすすめ"]}
           rows={[
             ["価格の安さ", "スーパー並みの低価格", "やや割高だが品質相応", "コープデリ"],
-            ["配送手数料", "198円（6,000円以上で無料）", "198〜270円（地域差あり）", "コープデリ"],
+            ["配送手数料", "198円（東京・6,000円（税別）以上で無料）", "165〜248円（東京・12,000円以上で無料。地域差あり）", "コープデリ"],
             ["品揃え・品数", "約6,000品目（日用品も充実）", "約1,000品目（厳選型）", "コープデリ"],
             ["安全基準", "国の基準に準拠", "国より厳しい独自基準", "パルシステム"],
             ["離乳食・ベビー", "きらきらステップ（品数豊富・安い）", "yumyum（産直素材・安全性重視）", "引き分け"],
@@ -329,16 +346,16 @@ export default function CoopdeliVsPalsystemPage() {
         <ComparisonTable
           headers={["条件", "コープデリ（東京）", "パルシステム（東京）"]}
           rows={[
-            ["基本手数料（注文なし週）", "88円（税込）", "198〜248円（税込）"],
-            ["注文あり（6,000円未満）", "198円（税込）", "198〜248円（税込）"],
-            ["注文あり（6,000円以上）", "無料", "無料（地域により異なる）"],
-            ["赤ちゃん割引", "手数料無料（1歳未満）", "手数料無料（1歳未満）"],
-            ["子育て割引", "一定金額以上で無料（小学校入学前）", "一定金額以上で無料（小学校入学前）"],
+            ["注文しない週", "基本手数料88円", "発生する（公式は「注文がない場合でも発生」と記載）"],
+            ["少額の注文", "6,000円（税別）未満 198円", "2,000円未満 248円／2,000円以上 198円／5,000円以上 165円"],
+            ["無料になる金額", "6,000円（税別）以上", "12,000円以上（加入5年以上は8,000円以上）"],
+            ["妊娠中〜1歳", "赤ちゃん割引：金額に関わらず無料（申込から1年間）", "キッズ特典を1歳の誕生日までに申請：申請から26週は無料"],
+            ["1歳〜小学校入学前", "子育て割引：3,000円（税別）以上で無料", "キッズ特典：3,000円以上で無料"],
           ]}
         />
 
         <p className="text-sm mb-6 leading-relaxed">
-          注文しない週の手数料は、コープデリが88円に対しパルシステムは198〜248円と差があります。毎週必ず注文するなら大きな差ではありませんが、隔週利用やお休みが多い方にはコープデリのほうが経済的です。なお、コープデリは2026年6月に手数料体系の変更を予定しており、「基本手数料」と「配達手数料」が「コープデリ手数料」に一本化される見込みです。
+          注文しない週は、コープデリが基本手数料88円のみ、パルシステムもパルシステム手数料が発生します。少額の注文が続くなら、コープデリは6,000円（税別）未満が一律198円、パルシステムは5,000円以上で165円に下がり、無料ラインは12,000円以上です（東京・2026年11月18日に両公式の手数料ページで確認）。なお、コープデリが2026年6月以降に予定していた手数料体系の変更（「基本手数料」と「配達手数料」の「コープデリ手数料」への一本化）は、コープみらいが2026年5月11日に延期（時期未定）を発表したと報じられており（<a href="https://www.logi-today.com/948464" target="_blank" rel="noopener noreferrer nofollow" className="underline">LOGI-TODAY 2026年5月11日</a>）、11月18日時点の公式の手数料ページも基本手数料＋配達手数料の体系のままです。
         </p>
 
         <SubHeading>商品価格の違い</SubHeading>

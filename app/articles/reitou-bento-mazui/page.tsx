@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-21T00:00:00+09:00",
-    modifiedTime: "2026-11-07T00:00:00+09:00",
+    modifiedTime: "2026-11-18T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -31,7 +31,7 @@ const faqData = [
   {
     question: "冷凍弁当はどのくらいの期間保存できる？",
     answer:
-      "ほとんどの冷凍宅配弁当は製造日から6ヶ月〜1年の賞味期限があります。ただし、冷凍庫の開閉が多いと温度変化で品質が劣化する可能性があるため、届いてから1〜2ヶ月以内に食べるのが理想的です。家庭用冷凍庫は業務用より温度が安定しにくいため、なるべく奥のほうに保管してください。",
+      "賞味期限は商品ごとに違うため、パッケージのラベルで確認します（食宅便の公式FAQも「商品パッケージに貼ってあるラベルに記載」「お届け後はお早めに」と案内しています）。日本冷凍食品協会は、家庭の冷凍室ではドアの開閉などで温度が上下するため、未開封でも2〜3か月で食べることをすすめています。開封後は密閉して-18℃以下で保存します（いずれも2026年11月18日確認）。",
   },
   {
     question: "冷凍弁当を一度解凍してから再冷凍しても大丈夫？",
@@ -46,7 +46,7 @@ const faqData = [
   {
     question: "冷凍弁当をお弁当として持参することはできる？",
     answer:
-      "可能です。朝、冷凍のまま保冷バッグに入れて持参し、昼食時に電子レンジで温める方法が一般的です。自然解凍で4〜5時間かけてゆっくり解凍されるため、お昼頃にはちょうどよい状態になります。ただし、夏場は保冷剤を入れるなど温度管理に注意してください。",
+      "冷凍のまま持ち歩いて昼に温める方法は、味の面でもおすすめしにくい方法です。日本冷凍食品協会は、解凍された状態で電子レンジ加熱すると過加熱の原因になり味や食感が悪くなるとして、冷凍された状態で加熱するよう案内しています。持参するなら職場の冷凍庫で保管し、食べる直前に表示どおり加熱してください。宅配の冷凍弁当は電子レンジで温める前提の商品です（食宅便は公式FAQで電子レンジでの温め方を案内し、オーブン・湯せんは不可としています）。",
   },
   {
     question: "一番美味しい冷凍弁当サービスはどれ？",
@@ -146,7 +146,7 @@ export default function ReitouBentoMazuiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-21T00:00:00+09:00",
-    dateModified: "2026-11-07T00:00:00+09:00",
+    dateModified: "2026-11-18T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -181,7 +181,7 @@ export default function ReitouBentoMazuiPage() {
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-04-21">公開: 2026年4月21日</time>
-            <time dateTime="2026-11-07">更新: 2026年11月7日</time>
+            <time dateTime="2026-11-18">更新: 2026年11月18日</time>
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
@@ -299,8 +299,8 @@ export default function ReitouBentoMazuiPage() {
             },
             {
               num: "7",
-              title: "到着後1ヶ月以内に食べきる",
-              text: "賞味期限は6ヶ月〜1年と記載されていますが、家庭用冷凍庫では温度変化により品質が劣化しやすい点に注意が必要です。届いてから1ヶ月以内に食べきるのが最も美味しく食べられる目安です。2週間に1回の配送サイクルなら、次の配送前に食べきるペースがベストです。",
+              title: "賞味期限内でも早めに食べきる",
+              text: "賞味期限はパッケージのラベルで確認します。家庭用冷凍庫ではドアの開閉で温度が上下するため、日本冷凍食品協会は未開封でも2〜3か月で食べることをすすめています。配送の間隔に合わせて、次の配送前に食べきれる食数で頼むと、冷凍焼けを防ぎやすくなります。",
             },
           ].map((item) => (
             <div key={item.num} className="bg-green-50 border border-green-200 rounded-lg p-4">
