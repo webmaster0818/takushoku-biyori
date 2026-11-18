@@ -226,6 +226,7 @@ ARTICLE = {
     "related": [
         ("/articles/mitsuboshi-farm-reviews/", "三ツ星ファームの口コミ・評判"),
         ("/articles/mitsuboshi-coupon/", "三ツ星ファームのクーポン・キャンペーン"),
+        ("/articles/mitsuboshi-tapioca/", "三ツ星ファームのタピオカ（黒糖・抹茶）"),
         ("/articles/nosh-vs-mitsuboshi-vs-wellness/", "nosh・三ツ星ファーム・ウェルネスダイニングの3社比較"),
         ("/articles/toushitsu-seigen-osusume/", "糖質制限向けの宅配弁当の比較"),
     ],

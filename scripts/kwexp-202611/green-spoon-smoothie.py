@@ -193,6 +193,7 @@ ARTICLE = {
     "related": [
         ("/articles/green-spoon-kuchikomi/", "GREEN SPOON（グリーンスプーン）の口コミ・評判"),
         ("/articles/green-spoon-kaiyaku/", "GREEN SPOONの解約方法"),
+        ("/articles/reitou-soup-takuhai/", "冷凍スープの宅配の比較"),
         ("/articles/mutenka-takuhai-bento/", "無添加の宅配弁当の比較"),
         ("/articles/takushoku-ryokin-hakusho/", "宅食料金白書｜各社の料金・送料・1食単価"),
     ],

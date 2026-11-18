@@ -986,6 +986,7 @@ export default function GreenSpoonKuchikomiPage() {
           <ul className="space-y-2 text-sm">
             <li><Link href="/articles/green-spoon-kaiyaku/" className="text-accent hover:text-accent-dark transition-colors">GREEN SPOONの解約方法と締切</Link></li>
             <li><Link href="/articles/green-spoon-smoothie/" className="text-accent hover:text-accent-dark transition-colors">GREEN SPOONのスムージー全13種のカロリーと料金</Link></li>
+            <li><Link href="/articles/reitou-soup-takuhai/" className="text-accent hover:text-accent-dark transition-colors">冷凍スープの宅配の比較（GREEN SPOONのスープ18品の栄養成分）</Link></li>
             <li>
               <Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark transition-colors">
                 nosh(ナッシュ)の口コミ・評判は？まずいって本当？

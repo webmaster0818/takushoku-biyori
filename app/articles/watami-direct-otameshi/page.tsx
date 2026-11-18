@@ -488,6 +488,8 @@ export default function WatamiDirectOtameshiPage() {
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">
           <p className="font-bold mb-2">関連記事</p>
+          <Link href="/articles/watami-direct-menu/" className="text-accent hover:text-accent-dark underline font-medium text-sm">ワタミの宅食ダイレクト メニュー一覧</Link>
+          <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/watami-reviews/" className="text-accent hover:text-accent-dark underline font-medium text-sm">ワタミの宅食 口コミ・評判</Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/souryou-yasui-ranking/" className="text-accent hover:text-accent-dark underline font-medium text-sm">送料が安い宅配ランキング</Link>

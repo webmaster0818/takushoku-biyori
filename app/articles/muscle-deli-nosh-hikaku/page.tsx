@@ -341,6 +341,7 @@ export default function MuscleDeliNoshHikakuPage() {
             <li><Link href="/articles/muscle-deli-menu/" className="text-accent hover:text-accent-dark transition-colors">マッスルデリのメニュー一覧</Link></li>
             <li><Link href="/articles/muscle-deli-reviews/" className="text-accent hover:text-accent-dark transition-colors">マッスルデリの口コミ・評判</Link></li>
             <li><Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark transition-colors">noshの口コミ・評判</Link></li>
+            <li><Link href="/articles/nosh-osusume-menu/" className="text-accent hover:text-accent-dark transition-colors">ナッシュのおすすめメニュー</Link></li>
             <li><Link href="/articles/kou-tanpaku-ranking/" className="text-accent hover:text-accent-dark transition-colors">高たんぱくの宅配弁当の比較</Link></li>
           </ul>
         </div>

@@ -1073,6 +1073,7 @@ export default function NoshReviewsPage() {
         <div className="mt-10 bg-cream rounded-xl p-6">
           <p className="font-bold text-sm mb-3">関連記事</p>
           <ul className="space-y-2 text-sm">
+            <li><Link href="/articles/nosh-osusume-menu/" className="text-accent hover:text-accent-dark transition-colors">ナッシュのおすすめメニュー（公式の人気No.1〜20と目的別）</Link></li>
             <li>
               <Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">
                 【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング

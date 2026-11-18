@@ -331,6 +331,7 @@ export default function GreenSpoonSmoothiePage() {
           <ul className="space-y-2 text-sm">
             <li><Link href="/articles/green-spoon-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">GREEN SPOON（グリーンスプーン）の口コミ・評判</Link></li>
             <li><Link href="/articles/green-spoon-kaiyaku/" className="text-accent hover:text-accent-dark transition-colors">GREEN SPOONの解約方法</Link></li>
+            <li><Link href="/articles/reitou-soup-takuhai/" className="text-accent hover:text-accent-dark transition-colors">冷凍スープの宅配の比較</Link></li>
             <li><Link href="/articles/mutenka-takuhai-bento/" className="text-accent hover:text-accent-dark transition-colors">無添加の宅配弁当の比較</Link></li>
             <li><Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark transition-colors">宅食料金白書｜各社の料金・送料・1食単価</Link></li>
           </ul>

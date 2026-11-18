@@ -229,6 +229,7 @@ ARTICLE = {
         ("/articles/muscle-deli-menu/", "マッスルデリのメニュー一覧"),
         ("/articles/muscle-deli-reviews/", "マッスルデリの口コミ・評判"),
         ("/articles/nosh-reviews/", "noshの口コミ・評判"),
+        ("/articles/nosh-osusume-menu/", "ナッシュのおすすめメニュー"),
         ("/articles/kou-tanpaku-ranking/", "高たんぱくの宅配弁当の比較"),
     ],
 }

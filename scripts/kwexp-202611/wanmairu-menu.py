@@ -201,6 +201,7 @@ ARTICLE = {
     ]),
     "related": [
         ("/articles/wanmairu-reviews/", "わんまいるの口コミ・評判"),
+        ("/articles/wanmairu-kaiyaku/", "わんまいるの解約方法"),
         ("/articles/mutenka-takuhai-bento/", "無添加の宅配弁当の比較"),
         ("/articles/takushoku-ryokin-hakusho/", "宅食料金白書｜各社の料金・送料・1食単価"),
         ("/articles/koureisha-osusume/", "高齢者向けの宅配弁当の選び方"),

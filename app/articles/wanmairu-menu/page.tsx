@@ -418,6 +418,7 @@ export default function WanmairuMenuPage() {
           <p className="font-bold text-sm mb-3">関連記事</p>
           <ul className="space-y-2 text-sm">
             <li><Link href="/articles/wanmairu-reviews/" className="text-accent hover:text-accent-dark transition-colors">わんまいるの口コミ・評判</Link></li>
+            <li><Link href="/articles/wanmairu-kaiyaku/" className="text-accent hover:text-accent-dark transition-colors">わんまいるの解約方法</Link></li>
             <li><Link href="/articles/mutenka-takuhai-bento/" className="text-accent hover:text-accent-dark transition-colors">無添加の宅配弁当の比較</Link></li>
             <li><Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark transition-colors">宅食料金白書｜各社の料金・送料・1食単価</Link></li>
             <li><Link href="/articles/koureisha-osusume/" className="text-accent hover:text-accent-dark transition-colors">高齢者向けの宅配弁当の選び方</Link></li>

@@ -517,6 +517,7 @@ export default function MitsuboshiOsusumeMenuPage() {
           <ul className="space-y-2 text-sm">
             <li><Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark transition-colors">三ツ星ファームの口コミ・評判</Link></li>
             <li><Link href="/articles/mitsuboshi-coupon/" className="text-accent hover:text-accent-dark transition-colors">三ツ星ファームのクーポン・キャンペーン</Link></li>
+            <li><Link href="/articles/mitsuboshi-tapioca/" className="text-accent hover:text-accent-dark transition-colors">三ツ星ファームのタピオカ（黒糖・抹茶）</Link></li>
             <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">nosh・三ツ星ファーム・ウェルネスダイニングの3社比較</Link></li>
             <li><Link href="/articles/toushitsu-seigen-osusume/" className="text-accent hover:text-accent-dark transition-colors">糖質制限向けの宅配弁当の比較</Link></li>
           </ul>

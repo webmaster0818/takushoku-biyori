@@ -863,6 +863,7 @@ export default function WatamiDirectKuchikomiPage() {
         <div className="mt-10 bg-cream rounded-xl p-6">
           <p className="font-bold text-sm mb-3">関連記事</p>
           <ul className="space-y-2 text-sm">
+            <li><Link href="/articles/watami-direct-menu/" className="text-accent hover:text-accent-dark transition-colors">ワタミの宅食ダイレクトのメニュー一覧（三菜・五菜・満足ディッシュの栄養成分）</Link></li>
             <li>
               <Link href="/articles/watami-reviews/" className="text-accent hover:text-accent-dark transition-colors">
                 ワタミの宅食の口コミ・評判を徹底調査

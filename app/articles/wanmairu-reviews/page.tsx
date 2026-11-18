@@ -467,6 +467,7 @@ export default function WanmairuReviewsPage() {
         <div className="space-y-2 mb-6">
           {[
             { href: "/articles/wanmairu-menu/", label: "わんまいるのメニュー（5週分の献立・カロリー・糖質・塩分）" },
+            { href: "/articles/wanmairu-kaiyaku/", label: "わんまいるの解約方法（お届け曜日別の締切）" },
             { href: "/articles/nosh-reviews/", label: "nosh(ナッシュ)の口コミ・評判" },
             { href: "/articles/mitsuboshi-farm-reviews/", label: "三ツ星ファームの口コミ・評判" },
             { href: "/articles/reitou-bento-mazui/", label: "冷凍弁当がまずい？美味しく食べるコツ" },
