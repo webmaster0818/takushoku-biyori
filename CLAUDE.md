@@ -708,3 +708,8 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - 導線: wanmairu-reviews・lifemeal-kuchikomi・mitsuboshi-farm-reviews・magokoro-care-reviews・muscle-deli-menu（[no-lastmod]）。precheck [14] で gohan-tsuki が被リンク1本→ magokoro・lifemeal-menu から追加
 - カテゴリ名は lib/articles.ts の CATEGORY_GROUPS と完全一致が必要（「比較・ランキング」は未定義でビルド失敗→「比較・料金データ」）
 - sitemap: TOP 11/8・白書 11/14 に戻した。新規5記事は 11/17
+
+### 2026-11-18 朝ルーチン: trust-audit C3 10ページ（直す箇所0）＋メディミール（白書で確認日が最古 10/11）を公式で再照合（source 0afb3fa・c307ef2 / deploy ff111330・precheck 92頁 全項目OK・計測リンク html 138件 md5 作業前 deploy と一致）
+- C3 10ページ（okihai-taiou・diet-osusume・shokutakubin-reviews・super-vs-takuhai・sango-osusume・mealkit-vs-reitou・reitou-bento-atatame-kata・author・editorial・methodology）は全て前日までと同型。「監修: 宅食びより編集部（/ 編集部メンバー）」と「編集部による実食レビュー 導入準備中」は判断待ちで不変、shokutakubin「当サイトが確認した範囲では、実食レビューメディアの評価は」は OZmall 等の第三者実食（出典付き・11/6 と同じ誤検知）
+- メディミール: 公式 /restricted/{calorie,protein,lowcarbs,lowsalt,balance,mousse}/（HTMLコメントを除いて読む＝コメント内に旧「送料800円(税別)半額」「初回3食2,797円」「3月末まで初回500円引き」が残っている）・/QA/・/privilege/・特商法 を 11/18 確認→6コースの初回・定期価格、送料（初回・定期無料／都度880円・沖縄離島1,100円／税抜10,000円以上無料＝21食無料）、最低回数なし・7日前連絡・解約金なし＝全一致。記事の公式確認日（10/11・11/6）を 11/18 に（第三者レビュー出典の「11/6確認」は据え置き）、比較表注記はメディミール列だけ 11/18、白書 data verified_at 11/18、白書本文に1文。title【2026年10月最新】は不変
+- sitemap: medimeal・白書・/articles/ 11/18、TOP は 11/8 に戻した
