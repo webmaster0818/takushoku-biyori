@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "冷凍スープの宅配を比較｜スープストックトーキョーの定期便・GREEN SPOON 18品・三ツ星ファームの料金と栄養を公式で確認【2026年11月】";
 const ARTICLE_DESCRIPTION =
-  "冷凍スープを宅配で届けるサービスを、公式情報で比較しました。Soup Stock Tokyoの「選べるスープの定期便」は送料込みで1個567〜725円、GREEN SPOONのスープ18品は1食172〜237g・たんぱく質2.6〜14.5g、三ツ星ファームはおかずの定期便でスープ系2品を選べます（2026年11月18日確認・当サイト計算）。";
+  "冷凍スープを宅配で届けるサービスを公式情報で比較しました。Soup Stock Tokyoの「選べるスープの定期便」は送料込みで1個567〜725円、GREEN SPOONのスープ18品は1食172〜237g、三ツ星ファームはおかずの定期便でスープ系を選べます（2026年11月18日確認・当サイト計算）。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/reitou-soup-takuhai/";
 
 export const metadata: Metadata = {
