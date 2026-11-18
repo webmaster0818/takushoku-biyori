@@ -1,0 +1,6 @@
+rank_all	id	name	kcal	protein	fat	carb	sugar	fiber	salt	can_purchase	premium_fee	source
+133	675	タピオカ（抹茶）2袋セット	179	0.5	0	44.3	43.1	1.1	0.01	0	0	mitsuboshi-web-api /api/regular_menus
+101	674	タピオカ（黒糖）2袋セット	209	0.2	0	52.1	51.6	0.5	0.03	1	0	mitsuboshi-web-api /api/regular_menus
+122	673	ストロベリー＆ナタデココ 2袋セット	122	0.4	0.3	29.4	29	0.45	0.01	1	0	mitsuboshi-web-api /api/regular_menus
+138	653	パイナップル&パッション&ナタデココ 2袋セット	138	0.5	0.4	33.2	32.8	0.45	0.01	0	0	mitsuboshi-web-api /api/regular_menus
+117	2651	台湾レモン&ナタデココ 2袋セット	175	0.3	0.5	42.4			0.01	1	0	mitsuboshi-web-api /api/regular_menus
