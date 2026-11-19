@@ -753,3 +753,8 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - ⚠️ shop.mamakyu.com の /products/*.js は 11/19 に 429 が続いた（回避していない）→ 解約記事の価格は 10/24 確認値と明記。robots.txt に AI エージェント向けの誘導文あり（従っていない）
 - 導線: watami-direct-kuchikomi・-menu・-otameshi→解約／mamano-kyushoku-reviews・sango-osusume→解約／nosh-reviews・muscle-deli-nosh-hikaku・nosh-osusume-menu・toushitsu-seigen-osusume→nosh 似てる／toushitsu・mutenka・vividtable→おいしいプラス（[no-lastmod]）
 - sitemap: TOP 11/8 に戻した。新規4記事は 11/19
+
+### 2026-11-20 0:00 受け皿強化: ウェルネス・ママの休食 口コミ記事を競合3件と比較 ✅本番反映（source 28dabd0・918e138 / deploy 9dad12e4・precheck 全項目OK・felmat 集合一致）
+- 差分表: `~/.openclaw/workspace/growth/ukezara-serp/2026-11-20/takushoku.md`
+- wellness: 6コース価格 11/20 一致→title【2026年11月】。冒頭に料金、秋冬メニュー同時注文割引（7食約3%・14/21食5%、秋は11/25締切・冬は2/3締切＝**締切後に表を消す/更新すること**）、配達不可の離島、窓口現金+110円・後払い限度55,000円、楽天4.54/423件・Yahoo!4.56/126件（公式トップの掲載値・2026/5/1時点）、15年3,000万食、やわらか段階名「ほどよく/かなり/ムース」、FAQ クーポン・配達エリア
+- mamano: 特商法表記・配送ポリシー（11/20）からお届け日数・受け取れない場合（代金50%＋往復送料・再配達不可）・ドーナツ/パン/ポン菓子・問い合わせ（電話不可）。第三者レビュー表（HAPPINESS! magazine 11/11・きのこもちブログ 1/5）。⚠️ /products/obento は 11/20 も 429（回避せず）→ 価格は 10/24 確認値のまま。置き配可否は公式で未確認
