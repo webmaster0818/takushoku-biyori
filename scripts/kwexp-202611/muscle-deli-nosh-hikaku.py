@@ -226,6 +226,7 @@ ARTICLE = {
         p("料金・送料・メニューは変わることがあります。ご利用前に、公式サイトで最新の情報をご確認ください。"),
     ]),
     "related": [
+        ("/articles/nosh-niteru-takushoku/", "ナッシュに似てる宅食（nosh の基準で6社を集計）"),
         ("/articles/muscle-deli-menu/", "マッスルデリのメニュー一覧"),
         ("/articles/muscle-deli-reviews/", "マッスルデリの口コミ・評判"),
         ("/articles/nosh-reviews/", "noshの口コミ・評判"),

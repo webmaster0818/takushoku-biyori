@@ -206,6 +206,7 @@ ARTICLE = {
         p("メニュー・栄養成分・料金は変わることがあります。ご利用前に、公式サイトで最新の情報をご確認ください。"),
     ]),
     "related": [
+        ("/articles/watami-direct-kaiyaku/", "ワタミの宅食ダイレクトの解約方法"),
         ("/articles/watami-direct-kuchikomi/", "ワタミの宅食ダイレクトの口コミ・評判"),
         ("/articles/watami-direct-otameshi/", "ワタミの宅食ダイレクトのお試しセット"),
         ("/articles/watami-reviews/", "ワタミの宅食の口コミ・評判"),

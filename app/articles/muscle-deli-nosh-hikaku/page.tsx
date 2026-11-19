@@ -338,6 +338,7 @@ export default function MuscleDeliNoshHikakuPage() {
         <div className="border-t border-warm-border pt-6 mt-8">
           <p className="font-bold text-sm mb-3">関連記事</p>
           <ul className="space-y-2 text-sm">
+            <li><Link href="/articles/nosh-niteru-takushoku/" className="text-accent hover:text-accent-dark transition-colors">ナッシュに似てる宅食（nosh の基準で6社を集計）</Link></li>
             <li><Link href="/articles/muscle-deli-menu/" className="text-accent hover:text-accent-dark transition-colors">マッスルデリのメニュー一覧</Link></li>
             <li><Link href="/articles/muscle-deli-reviews/" className="text-accent hover:text-accent-dark transition-colors">マッスルデリの口コミ・評判</Link></li>
             <li><Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark transition-colors">noshの口コミ・評判</Link></li>

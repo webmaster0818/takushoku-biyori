@@ -224,6 +224,7 @@ ARTICLE = {
         p("メニュー・栄養成分・人気の表示・料金は変わることがあります。ご利用前に、公式サイトで最新の情報をご確認ください。"),
     ]),
     "related": [
+        ("/articles/nosh-niteru-takushoku/", "ナッシュに似てる宅食（nosh の基準で6社を集計）"),
         ("/articles/nosh-reviews/", "nosh（ナッシュ）の口コミ・評判"),
         ("/articles/nosh-ryoukin-souryou/", "nosh（ナッシュ）の料金・送料の仕組み"),
         ("/articles/muscle-deli-nosh-hikaku/", "マッスルデリとナッシュの比較"),

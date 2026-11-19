@@ -405,6 +405,7 @@ export default function VividtableKuchikomiPage() {
         <div className="border-t border-warm-border pt-6 mt-8">
           <p className="font-bold text-sm mb-3">関連記事</p>
           <ul className="space-y-2 text-sm">
+            <li><Link href="/articles/oishiiplus-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">おいしいプラスの口コミ・評判</Link></li>
             <li><Link href="/articles/mutenka-takuhai-bento/" className="text-accent hover:text-accent-dark transition-colors">無添加の宅配弁当・冷凍宅食を公式の表記で比較</Link></li>
             <li><Link href="/articles/green-spoon-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">GREEN SPOONの口コミ・評判</Link></li>
             <li><Link href="/articles/otameshi-set-osusume/" className="text-accent hover:text-accent-dark transition-colors">宅配弁当のお試しセットまとめ</Link></li>

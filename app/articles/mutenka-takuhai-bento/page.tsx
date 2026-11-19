@@ -278,6 +278,7 @@ export default function MutenkaTakuhaiBentoPage() {
         <div className="border-t border-warm-border pt-6 mt-8">
           <p className="font-bold text-sm mb-3">関連記事</p>
           <ul className="space-y-2 text-sm">
+            <li><Link href="/articles/oishiiplus-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">おいしいプラスの口コミ・評判</Link></li>
             <li><Link href="/articles/chef-mutenka-tsukurioki-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">シェフの無添つくりおきの口コミ・評判</Link></li>
             <li><Link href="/articles/fitfoodhome-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">FIT FOOD HOMEの口コミ・評判</Link></li>
             <li><Link href="/articles/wanmairu-reviews/" className="text-accent hover:text-accent-dark transition-colors">わんまいるの口コミ・評判</Link></li>

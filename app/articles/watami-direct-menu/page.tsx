@@ -551,6 +551,7 @@ export default function WatamiDirectMenuPage() {
         <div className="border-t border-warm-border pt-6 mt-8">
           <p className="font-bold text-sm mb-3">関連記事</p>
           <ul className="space-y-2 text-sm">
+            <li><Link href="/articles/watami-direct-kaiyaku/" className="text-accent hover:text-accent-dark transition-colors">ワタミの宅食ダイレクトの解約方法</Link></li>
             <li><Link href="/articles/watami-direct-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">ワタミの宅食ダイレクトの口コミ・評判</Link></li>
             <li><Link href="/articles/watami-direct-otameshi/" className="text-accent hover:text-accent-dark transition-colors">ワタミの宅食ダイレクトのお試しセット</Link></li>
             <li><Link href="/articles/watami-reviews/" className="text-accent hover:text-accent-dark transition-colors">ワタミの宅食の口コミ・評判</Link></li>

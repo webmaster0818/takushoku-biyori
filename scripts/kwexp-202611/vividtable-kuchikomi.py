@@ -180,6 +180,7 @@ ARTICLE = {
         p("料金・商品は変わることがあります。ご利用前に、公式サイトで最新の情報をご確認ください。"),
     ]),
     "related": [
+        ("/articles/oishiiplus-kuchikomi/", "おいしいプラスの口コミ・評判"),
         ("/articles/mutenka-takuhai-bento/", "無添加の宅配弁当・冷凍宅食を公式の表記で比較"),
         ("/articles/green-spoon-kuchikomi/", "GREEN SPOONの口コミ・評判"),
         ("/articles/otameshi-set-osusume/", "宅配弁当のお試しセットまとめ"),

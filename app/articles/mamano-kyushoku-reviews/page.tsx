@@ -648,6 +648,7 @@ export default function MamanoKyushokuReviewsPage() {
         <div className="border-t border-warm-border pt-6 mt-8">
           <p className="font-bold text-sm mb-3">関連記事</p>
           <ul className="space-y-2 text-sm">
+            <li><Link href="/articles/mamano-kyushoku-kaiyaku/" className="text-accent hover:text-accent-dark transition-colors">ママの休食の解約方法（窓口と6営業日前の締切）</Link></li>
             <li><Link href="/articles/sango-osusume/" className="text-accent hover:text-accent-dark underline">産後ママにおすすめの宅食</Link></li>
             <li><Link href="/articles/reitou-bento-eiyou-baransu/" className="text-accent hover:text-accent-dark underline">冷凍弁当の栄養バランス</Link></li>
             <li><Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark underline">実質単価で比較する宅食</Link></li>

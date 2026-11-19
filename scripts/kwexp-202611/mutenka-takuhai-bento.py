@@ -152,6 +152,7 @@ ARTICLE = {
         p("料金・送料・表記は変わることがあります。ご利用前に、各社の公式サイトと商品の原材料表示で最新の情報をご確認ください。"),
     ]),
     "related": [
+        ("/articles/oishiiplus-kuchikomi/", "おいしいプラスの口コミ・評判"),
         ("/articles/chef-mutenka-tsukurioki-kuchikomi/", "シェフの無添つくりおきの口コミ・評判"),
         ("/articles/fitfoodhome-kuchikomi/", "FIT FOOD HOMEの口コミ・評判"),
         ("/articles/wanmairu-reviews/", "わんまいるの口コミ・評判"),
