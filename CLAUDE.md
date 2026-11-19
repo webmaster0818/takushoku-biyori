@@ -745,3 +745,11 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - goodeli-kuchikomi（「gofood 終了」17@5.1c2）: 冒頭要点に終了日は既にあり。公式お知らせ gofood.jp/shop/information/info40（2025.05.30・「2025年6月30日をもちましてサービスを終了」「新ブランドとして生まれ変わります」11/19 も掲載）へのリンクと日付を追加。goodeli /shop/sets/3・4 の「※現在お申込みの受付は行っておりません」11/19 も表示→確認日 11/19。料金（896/842円・送料1,100/2,750・初回解約不可）はトップで一致（CHECKED 9/6 は栄養基準等を再確認していないため不変）。WebSearch「gofood 終了」は Gojek（インドネシア）の結果のみ
 - toushitsu-seigen-osusume: 11/10 cda8184（C3 味の感想を公式表記に）の内容変更があるため触らず
 - sitemap: nichirei・goodeli 11/19、TOP は 11/8 に戻した
+
+### 2026-11-19 20:00 kwexp 作成6日目: 新規4記事 ✅本番反映（source 6da4198・0cc65dc・bb75cf2 / deploy 2528bed3・precheck 101頁 全項目OK・trust-audit check_page 新規4ページ指摘0・計測リンク html 144件 md5 作業前 deploy と一致）
+- queue 上から: ワタミの宅食ダイレクト 解約 24 → `watami-direct-kaiyaku`（/shop/faq・/shop/guide・/shop/pages/prices。マイページ「お届けを停止」→チャット、4〜6日前（地域差）、継続割は3回目まで停止不可＝3回分の合計を当サイト計算、会員削除は電話）／ナッシュ 似てる 16 → `nosh-niteru-takushoku`（nosh /nutritional-value の「糖質30g・塩分2.5g以下」を kwexp の各社 tsv（11/14〜18取得）に当てはめて割合を集計。わんまいる tsv の carb 列は糖質、ワタミダイレクト・DELIPICKS は炭水化物＝参考値）／おいしいプラス 口コミ 16 → `oishiiplus-kuchikomi`（shop.oishiiplus.com。第三者の口コミは検索で見つからず＝公式掲載の「お客様の声」6件のみ（投稿者名は省略）。2025/9 新規停止→11/30 定期停止→2026/4/1 再開。全10品を `oishiiplus-menu-20261119.tsv` に）／ママの休食 解約 16 → `mamano-kyushoku-kaiyaku`（/policies/legal-notice・refund-policy・terms-of-service・shipping-policy。6営業日前を土日休みで計算＝8〜10日前）
+- skip: ナッシュ 一人暮らし（hitorigurashi-osusume と重複・11/16 三ツ星ファーム 一人暮らしと同じ扱い）。queue の空欄は 0 → 次回は手順1（次の競合3案）
+- 公式内の食い違い（記事に併記）: ワタミダイレクト「いつでも停止可（継続割は3回目まで不可）」／「定期は3回以上が条件」、ママの休食 解約窓口（返金ポリシー＝LINE・メール／特商法＝マイページ・LINE）、おいしいプラス 商品ページ上部と「栄養素」欄の値（5品。味噌炒めの栄養素欄はすき焼き重と同値）・こんにゃく米30%/40%・プラン欄（旧メニュー・商品ページ404）・支払い方法・キャンセル可否（FAQ 不可／特商法 3日前まで）
+- ⚠️ shop.mamakyu.com の /products/*.js は 11/19 に 429 が続いた（回避していない）→ 解約記事の価格は 10/24 確認値と明記。robots.txt に AI エージェント向けの誘導文あり（従っていない）
+- 導線: watami-direct-kuchikomi・-menu・-otameshi→解約／mamano-kyushoku-reviews・sango-osusume→解約／nosh-reviews・muscle-deli-nosh-hikaku・nosh-osusume-menu・toushitsu-seigen-osusume→nosh 似てる／toushitsu・mutenka・vividtable→おいしいプラス（[no-lastmod]）
+- sitemap: TOP 11/8 に戻した。新規4記事は 11/19
