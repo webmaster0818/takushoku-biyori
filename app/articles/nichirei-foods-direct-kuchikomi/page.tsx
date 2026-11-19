@@ -349,7 +349,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-11-15T00:00:00+09:00",
+    dateModified: "2026-11-19T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -423,7 +423,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
-            <time dateTime="2026-11-06">更新: 2026年11月6日（公式で再確認）</time>
+            <time dateTime="2026-11-19">更新: 2026年11月19日（公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -453,7 +453,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
 
         {/* 早見表＋「まずい」の答え（2026-11-06） */}
         <div className="border border-warm-border rounded-xl p-5 mb-8 bg-white">
-          <p className="font-bold text-base mb-3">ニチレイフーズダイレクトの料金・送料の早見表（税込・2026年11月6日公式確認）</p>
+          <p className="font-bold text-base mb-3">ニチレイフーズダイレクトの料金・送料の早見表（税込・2026年11月19日公式確認）</p>
           <ComparisonTable
             headers={["コース", "価格", "1食あたり"]}
             rows={[
@@ -461,6 +461,8 @@ export default function NichireiFoodsDirectKuchikomiPage() {
               ["きくばりごぜん お試し4食セット", "3,300円", "825円"],
               ["きくばりごぜん 8食セット", "7,000〜7,760円", "約875〜970円"],
               ["きくばりごぜん 16食セット", "12,980〜15,020円", "約811〜939円"],
+              ["きくばりごぜん おまとめ12食（6種×2食）", "10,400円", "約867円"],
+              ["きくばりごぜん おまとめ14食（7種×2食）", "12,200円", "約871円"],
               ["きくばりごぜん 単品", "—", "860〜1,080円"],
               ["パワーデリ 5食セット", "5,400円", "1,080円"],
             ]}
@@ -472,7 +474,7 @@ export default function NichireiFoodsDirectKuchikomiPage() {
             <strong>「まずい」の答え：</strong>HonNeは「『まずい』との意見はなく評価が高い傾向」とまとめており、宅食ラボの筆者も「副菜は全体的に薄い味付けですが、水っぽさもなくおいしく食べられました」と評価しています。一方で「味が薄い」という声は実際にあり、HonNe掲載のX投稿には「夫は濃い味好きなので気に入らなかったもよう」とあります。味の完成度より、塩分2.0g以下の薄味が好みに合うかどうかが分かれ目です。
           </p>
           <p className="text-xs text-warm-gray">
-            ※出典: <a href="https://wellness.nichirei.co.jp/shop/c/c1010/" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">ニチレイフーズダイレクト公式 きくばりごぜん</a>・<a href="https://wellness.nichirei.co.jp/shop/pages/guide02.aspx" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">送料・配送について</a>／<a href="https://exidea.co.jp/blog/meal/home-meal/nichirei/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">HonNe（2026年11月3日更新）</a>・<a href="https://takushoku-lab.com/nichirei-foods/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">宅食ラボ</a>（いずれも2026年11月6日確認）。当サイトは実食していません。
+            ※出典: <a href="https://wellness.nichirei.co.jp/shop/c/c1010/" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">ニチレイフーズダイレクト公式 きくばりごぜん</a>・<a href="https://wellness.nichirei.co.jp/shop/pages/guide02.aspx" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">送料・配送について</a>（2026年11月19日確認）／<a href="https://exidea.co.jp/blog/meal/home-meal/nichirei/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">HonNe（2026年11月3日更新）</a>・<a href="https://takushoku-lab.com/nichirei-foods/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">宅食ラボ</a>（2026年11月6日確認）。1食あたりは価格÷食数の当サイト計算。当サイトは実食していません。
           </p>
         </div>
 
@@ -672,6 +674,23 @@ export default function NichireiFoodsDirectKuchikomiPage() {
               </a>
             </p>
           </div>
+        </div>
+
+        <SubHeading>「まずい」と感じたときの対処（公式FAQ・2026年11月19日確認）</SubHeading>
+        <div className="bg-white border border-warm-border rounded-lg p-4 mb-6 text-sm leading-relaxed">
+          <p className="mb-2">
+            口コミには「水っぽくて美味しくない」「もう少しパンチのある味がいい」という声もあります（ROOMIE・2024年4月10日公開の口コミまとめ）。温め方と選び方で防げる部分について、公式のよくある質問には次のように書かれています。
+          </p>
+          <ul className="list-disc list-inside space-y-1 mb-2">
+            <li>「きくばりごぜん」などのトレイ商品は、トップシールの紙フタを点線まで開けてから電子レンジで加熱。加熱時間は商品ごとに違うので、パッケージか商品ページの表示どおりに温める</li>
+            <li>温まりきらず冷たいときは、10秒ずつ追加で加熱する（電子レンジ専用）</li>
+            <li>一度解凍した商品の再冷凍はおすすめしない（品質や食感が損なわれる場合がある）</li>
+            <li>溶けた状態で届いた場合は食べずに、到着後8日以内にフリーダイヤルかお問い合わせフォームへ連絡</li>
+            <li>初めてなら「お試しセット」から。きくばりごぜん お試し4食3,300円のほか、糖質・塩分・脂質を控えたい方向けのお試し4食（各3,550円）、パワーデリ お試し4食（4,320円）がある（公式「まずはお試し」ページ）</li>
+          </ul>
+          <p className="text-xs text-warm-gray">
+            出典: <a href="https://wellness.nichirei.co.jp/shop/pages/faq.aspx" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">ニチレイフーズダイレクト よくあるご質問</a>・<a href="https://wellness.nichirei.co.jp/shop/pages/trial_2010.aspx" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">まずはお試し</a>（2026年11月19日確認）／<a href="https://www.roomie.jp/2024/04/1201594/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">ROOMIE</a>（2026年11月19日確認）
+          </p>
         </div>
 
         <SubHeading>一方で「美味しい」という評価も多い</SubHeading>

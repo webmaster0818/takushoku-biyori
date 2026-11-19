@@ -80,7 +80,7 @@ const jsonLd = {
       description: ARTICLE_DESCRIPTION,
       url: ARTICLE_URL,
       datePublished: "2026-09-06T00:00:00+09:00",
-      dateModified: "2026-11-09T00:00:00+09:00",
+      dateModified: "2026-11-19T00:00:00+09:00",
       author: { "@type": "Organization", name: "宅食びより編集部" },
       publisher: { "@type": "Organization", name: "宅食びより" },
     },
@@ -123,15 +123,15 @@ export default function Page() {
         <h1 className="mt-4 text-2xl md:text-3xl font-bold leading-relaxed">
           goodeli(グーデリ)とは？料金・送料・GOFOOD(ゴーフード)との違いを公式情報で整理
         </h1>
-        <p className="mt-3 text-xs text-gray-500">最終更新：2026年11月9日（販売業者・申込受付の表示を公式で確認して訂正。料金は{CHECKED}確認）／公式サイトで確認した情報のみ掲載</p>
+        <p className="mt-3 text-xs text-gray-500">最終更新：2026年11月19日（GOFOOD終了の公式告知・申込受付の表示を公式で再確認。販売業者は2026年11月9日、料金は{CHECKED}確認）／公式サイトで確認した情報のみ掲載</p>
         </div>{/* /subhead */}
 
         {/* 結論ファースト */}
         <div className="mt-6 rounded-xl border-l-4 border-accent bg-cream p-5">
           <p className="text-sm font-bold mb-2">この記事の要点</p>
           <ul className="space-y-2 text-sm leading-relaxed">
-            <li>・goodeli（グーデリ）と GOFOOD（ゴーフード）は<strong>別のサービス</strong>です。ただし販売業者はどちらも<strong>ゴーフード株式会社</strong>です（両サイトの特定商取引法に基づく表記・2026年11月9日確認）。GOFOOD は2025年6月30日にサービスを終了し、公式お知らせで「新たに新ブランドとして生まれ変わります」と案内していました。</li>
-            <li>・goodeli のセット選択ページには<strong>「※現在お申込みの受付は行っておりません」</strong>と表示されています（2026年11月9日確認）。申し込めるかは公式サイトで確認してください。</li>
+            <li>・goodeli（グーデリ）と GOFOOD（ゴーフード）は<strong>別のサービス</strong>です。ただし販売業者はどちらも<strong>ゴーフード株式会社</strong>です（両サイトの特定商取引法に基づく表記・2026年11月9日確認）。GOFOOD は<strong>2025年6月30日にサービスを終了</strong>しました。公式のお知らせ「<a href="https://gofood.jp/shop/information/info40" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">『GOFOOD』サービス終了のお知らせ</a>」（2025年5月30日付・2026年11月19日にも掲載を確認）で「2025年6月30日をもちましてサービスを終了」「新たに新ブランドとして生まれ変わります」と告知されています。</li>
+            <li>・goodeli のセット選択ページには<strong>「※現在お申込みの受付は行っておりません」</strong>と表示されています（2026年11月19日確認）。申し込めるかは公式サイトで確認してください。</li>
             <li>・料金は<strong>14食で1食896円（税込）、21食で1食842円（税込）</strong>。まとめ買いほど1食あたりが下がります。</li>
             <li>・送料は<strong>通常1,100円・北海道と沖縄は2,750円です（税込）</strong>。1食あたりで比べるときはここを足してください。</li>
             <li>・<strong>初回購入分は解約・キャンセルができません</strong>。ここは申し込み前に必ず確認してください。</li>
@@ -166,8 +166,8 @@ export default function Page() {
               </tr>
               <tr>
                 <th className="border p-2 text-left font-normal text-gray-600">提供状況</th>
-                <td className="border p-2">セット選択ページに「現在お申込みの受付は行っておりません」と表示（2026年11月9日確認）</td>
-                <td className="border p-2">2025年6月30日にサービス終了（公式告知）</td>
+                <td className="border p-2">セット選択ページに「現在お申込みの受付は行っておりません」と表示（2026年11月19日確認）</td>
+                <td className="border p-2">2025年6月30日にサービス終了（公式告知・2025年5月30日付）</td>
               </tr>
               <tr>
                 <th className="border p-2 text-left font-normal text-gray-600">主な特徴</th>
