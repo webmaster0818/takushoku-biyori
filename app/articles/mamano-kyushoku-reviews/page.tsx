@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-05-28T00:00:00+09:00",
-    modifiedTime: "2026-10-24T00:00:00+09:00",
+    modifiedTime: "2026-11-20T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -54,6 +54,11 @@ const faqData = [
     question: "定期便の解約・休止はいつまでに手続きが必要ですか？",
     answer:
       "定期便に回数の縛りはありません。停止・解約・内容の変更は、次回配送日の6営業日前までにマイページまたは公式LINEで手続きします。初回の注文はすぐに出荷作業が始まるためキャンセルできません。定期便2回目以降の決済は、次回配送予定日の4日前に行われます（2026年10月24日・特定商取引法に基づく表記で確認）。",
+  },
+  {
+    question: "注文してから何日で届きますか？受け取れなかったらどうなりますか？",
+    answer:
+      "配送日の指定がなければ、注文から1〜2営業日で発送されます。土日祝を除く平日11時までの注文なら最短2〜3日で届き、配送希望日・時間帯の指定もできます。不在で配送会社の保管期間が過ぎた場合は返品扱いになり、再配達はされず、商品代金の50%と往復の送料が利用者の負担になります（2026年11月20日・特定商取引法に基づく表記と配送ポリシーで確認）。",
   },
   {
     question: "賞味期限と容器のサイズは？",
@@ -238,7 +243,7 @@ export default function MamanoKyushokuReviewsPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-10-24T00:00:00+09:00",
+    dateModified: "2026-11-20T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -279,7 +284,7 @@ export default function MamanoKyushokuReviewsPage() {
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-05-28">公開: 2026年5月28日</time>
-            <time dateTime="2026-10-24" className="font-medium text-foreground/70">最終更新: 2026年10月24日（料金・送料・プラン・栄養価・解約条件を公式サイトで再確認）</time>
+            <time dateTime="2026-11-20" className="font-medium text-foreground/70">最終更新: 2026年11月20日（送料・お届け日数・解約条件・受け取りの注意は11月20日、料金・プラン・栄養価は10月24日に公式サイトで確認）</time>
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link></span>
           </div>
           <div className="mt-3 text-xs text-warm-gray bg-yellow-50 border border-yellow-200 rounded p-2">
@@ -342,11 +347,14 @@ export default function MamanoKyushokuReviewsPage() {
             ["賞味期限", "3ヶ月〜最大1年間"],
             ["容器サイズ", "20.5cm×15.5cm×3.6cm"],
             ["配送", "ヤマト運輸のクール宅急便（全国）"],
+            ["注文から届くまで", "配送日の指定がなければ注文から1〜2営業日で発送。土日祝を除く平日11時までの注文なら最短2〜3日で届く。配送希望日・時間帯を指定でき、指定した場合は希望日の1〜3営業日前に発送"],
+            ["お弁当以外の商品", "ドーナツ・パン（冷凍・お弁当と同じクール宅急便）、ポン菓子（常温・クリックポストでポスト投函、4袋ごとに送料185円）"],
+            ["問い合わせ", "メール（お客様相談室）と公式LINE。電話での問い合わせは受け付けていない"],
             ["アレルギー対応", "なし"],
             ["栄養相談", "会員は公式LINE「ママ休ほけんしつ」で管理栄養士に無料で何度でも相談可"],
           ]}
         />
-        <p className="text-xs text-warm-gray mb-6">※出典: ママの休食 公式サイト（トップ・お弁当の商品ページ・お弁当へのこだわり・よくあるご質問・特定商取引法に基づく表記。2026年10月24日確認）</p>
+        <p className="text-xs text-warm-gray mb-6">※出典: ママの休食 公式サイト（トップ・お弁当の商品ページ・お弁当へのこだわり・よくあるご質問・特定商取引法に基づく表記。2026年10月24日確認）。「注文から届くまで」「お弁当以外の商品」「問い合わせ」は<a href="https://shop.mamakyu.com/policies/legal-notice" target="_blank" rel="noopener noreferrer nofollow" className="underline">特定商取引法に基づく表記</a>と<a href="https://shop.mamakyu.com/policies/shipping-policy" target="_blank" rel="noopener noreferrer nofollow" className="underline">配送ポリシー</a>です（2026年11月20日確認）。</p>
 
         <SubHeading>ママの休食の3つの特徴</SubHeading>
         <div className="space-y-3 mb-6">
@@ -410,7 +418,7 @@ export default function MamanoKyushokuReviewsPage() {
             ["沖縄", "1,650円", "2,090円", "2,860円"],
           ]}
         />
-        <p className="text-xs text-warm-gray mb-6">※出典: 公式サイト 配送ポリシー（2026年10月24日確認）。ドーナツ・パンなど他の冷凍商品を同時に購入すると箱のサイズが変わります。</p>
+        <p className="text-xs text-warm-gray mb-6">※出典: 公式サイト 配送ポリシー（2026年10月24日確認、2026年11月20日に同じ金額であることを再確認）。ドーナツ・パンなど他の冷凍商品を同時に購入すると箱のサイズが変わります。</p>
 
         <SubHeading>送料込みの1食あたり（関東・中部の場合）</SubHeading>
         <ComparisonTable
@@ -431,7 +439,19 @@ export default function MamanoKyushokuReviewsPage() {
             <li>初回の注文はキャンセル不可。2回目以降は次回配送予定日の4日前に決済</li>
             <li>初回のメニューはプランごとの候補からランダム。2回目以降はマイページで選択、または「おまかせ」</li>
             <li>支払いはクレジットカード（VISA・Mastercard・JCB・AMEX）とShop Pay</li>
+            <li>契約期間は、停止・解約しない限り自動で更新（2026年11月20日に同じ内容であることを再確認）</li>
           </ul>
+        </div>
+
+        <div className="bg-cream rounded-lg p-4 text-sm leading-relaxed mb-6">
+          <p className="font-bold mb-2">受け取れなかった場合の扱い（配送ポリシー・2026年11月20日確認）</p>
+          <ul className="space-y-1 list-disc list-inside">
+            <li>不在などで届けられない場合は、メールまたはLINEで連絡が来ます。返信がないまま配送会社の保管期間が過ぎると、返品扱いになります</li>
+            <li>返品扱いになった商品は、食品のため再配達されません。<strong>商品代金の50%と、往復の送料は利用者の負担</strong>です</li>
+            <li>発送後にお届け先を変更（転送）する場合は、転送費用が着払いでかかります</li>
+            <li>届いた商品に不備（破損・注文と違う商品など）があった場合は、到着後7日以内にお客様相談室へ連絡します。利用者の都合による返品・交換は原則としてできません</li>
+          </ul>
+          <p className="text-xs text-warm-gray mt-2">置き配・宅配ボックスで受け取れるかどうかは、配送ポリシーと特定商取引法に基づく表記には記載がありません。冷凍のクール宅急便のため、受け取れる日時を指定して注文することをおすすめします。</p>
         </div>
 
         <SectionHeading id="good-reviews">ママの休食の良い口コミ・評判（出典付き）</SectionHeading>
@@ -454,6 +474,25 @@ export default function MamanoKyushokuReviewsPage() {
         <p className="text-sm mb-6 leading-relaxed">
           2026年10月24日に確認した範囲では、みん評の4件とHonNeの引用に「まずい」という投稿はありませんでした。味に関する否定的な声は「副菜の野菜がベチャッとしている」「見た目が好みではない」といった食感・見た目についてのものです（下記）。HonNeの実食レビューでは「他社と比較しても特に美味しいと感じました」と評価されています。
         </p>
+
+        <SubHeading>第三者メディア・利用者ブログの評価</SubHeading>
+        <p className="text-sm mb-4 leading-relaxed">
+          みん評とHonNe以外に、実際に注文して書かれた記事を2件確認しました（2026年11月20日確認）。いずれもアフィリエイト広告を含む記事で、評価は各記事の筆者の主観です。当サイトの要約で、本文の転載ではありません。
+        </p>
+        <ComparisonTable
+          headers={["記事（更新日）", "利用の内容", "評価が高かった点", "注意点として挙げた点"]}
+          rows={[
+            ["HAPPINESS! magazine（ティップネス・2026年11月11日更新）", "4食セットを注文し、筆者の家族で実食", "幼児も食べられる味付け・夕食の家事が減る・常備用なら費用負担が小さい", "濃い味が好きな人には物足りない・毎日使うと費用がかさむ"],
+            ["きのこもちブログ（個人・2026年1月5日）", "2年以上、月2回程度の継続利用", "主菜の味付け・管理栄養士に無料で相談できる", "温めムラ・お弁当のメニュー数（筆者の集計で2025年11月時点21種類）・ほうれん草やあさり、豆類が副菜に多い・初回はメニューを選べない"],
+          ]}
+        />
+        <p className="text-xs text-warm-gray mb-6 leading-relaxed">
+          出典: <a href="https://online.tipness.co.jp/feature/home_meal/moms-break/" target="_blank" rel="noopener noreferrer nofollow" className="underline">HAPPINESS! magazine「ママの休食を試しに食べてみた」</a>／<a href="https://kinocomochi.com/mamakyu-review/" target="_blank" rel="noopener noreferrer nofollow" className="underline">きのこもちブログ「ママの休食の評判」</a>。両記事とも料金は2026年10月の価格改定前の時期に書かれた部分があるため、料金は上の「料金・送料」の表をご覧ください。
+        </p>
+        <div className="bg-cream rounded-lg p-4 text-sm leading-relaxed mb-6">
+          <p className="font-bold mb-1">編集部の整理</p>
+          <p>味については、みん評・HonNe・上の2記事とも「まずい」とする評価はなく、注意点として共通するのは<strong>味付けの薄さの感じ方・価格・温めムラ</strong>です。温めムラは、公式FAQでも向きを変えて数十秒ずつ追加で温める方法が案内されています。毎日使うより、産前産後の忙しい時期に冷凍庫へ常備する使い方を挙げる記事が複数ありました。</p>
+        </div>
 
         <SectionHeading id="bad-reviews">ママの休食の悪い口コミ・評判（出典付き）</SectionHeading>
 
