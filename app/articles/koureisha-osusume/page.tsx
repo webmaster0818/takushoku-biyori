@@ -222,7 +222,7 @@ export default function KoureishaOsusumePage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-16T00:00:00+09:00",
-    dateModified: "2026-10-21T00:00:00+09:00",
+    dateModified: "2026-11-19T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -508,7 +508,7 @@ export default function KoureishaOsusumePage() {
         />
         <ServiceCapture id="tsurukame" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
-          糖尿病・腎臓病・高血圧などの持病があり、医師の指導のもと食事管理が必要な方にはDr.つるかめキッチンです。糖尿病専門医や腎臓病専門医が監修しており、医療レベルの制限食を自宅で手軽に食べられます。定期便は送料無料で、費用面でも優れています。
+          糖尿病・腎臓病・高血圧などの持病があり、医師の指導のもと食事管理が必要な方にはDr.つるかめキッチンです。糖尿病専門医や日本内科学会認定医などがコースごとに監修しており（公式）、医療レベルの制限食を自宅で手軽に食べられます。定期便は送料無料で、費用面でも優れています。
         </p>
 
         {/* ===== 詳細レビュー ===== */}
@@ -536,7 +536,7 @@ export default function KoureishaOsusumePage() {
 
         <SubHeading>Dr.つるかめキッチン - 専門医監修の安心感</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">
-          Dr.つるかめキッチンは、糖尿病専門医・腎臓病専門医・生活習慣病専門医が監修する制限食専門サービスです。「医師が監修している」という安心感は、持病のある高齢者やそのご家族にとって大きな判断材料です。糖尿病食は糖質15g以下・塩分2.0g以下・カロリー240kcal±10%、腎臓病食はたんぱく質10g以下・カリウム500mg以下・塩分2.0g以下と、細かい栄養制限に対応しています。定期便で送料無料になるのもコスパ面で優秀です。
+          Dr.つるかめキッチンは、糖尿病専門医・日本内科学会認定医・総合内科専門医などがコースごとに監修する制限食専門サービスです（公式の各コースページ）。「医師が監修している」という安心感は、持病のある高齢者やそのご家族にとって大きな判断材料です。糖尿病食は糖質15g以下・塩分2.0g以下・カロリー240kcal±10%、腎臓病食はたんぱく質10g以下・カリウム500mg以下・塩分2.0g以下と、細かい栄養制限に対応しています。定期便で送料無料になるのもコスパ面で優秀です。
         </p>
 
         {/* ===== 料金比較 ===== */}

@@ -5,7 +5,7 @@ import ServiceCapture from "@/components/ServiceCapture";
 const ARTICLE_TITLE =
   "Dr.つるかめキッチンの口コミ・評判は？まずいって本当？制限食5コースの料金・味を出典付きで検証【2026年10月最新】";
 const ARTICLE_DESCRIPTION =
-  "Dr.つるかめキッチンは「まずい」って本当？公開レビューの良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。専門医・管理栄養士W監修の制限食5コース（糖質制限/塩分制限/たんぱく質制限/カロリー制限/バランス栄養）の料金・送料も2026年10月11日確認の公式データで解説します。";
+  "Dr.つるかめキッチンは「まずい」って本当？公開レビューの良い口コミ・悪い口コミを出典付きで紹介し、味の評判を検証します。専門医・管理栄養士W監修の制限食5コース（糖質制限/塩分制限/たんぱく質制限/カロリー制限/バランス栄養）の料金・送料も2026年11月19日確認の公式データで解説します。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/tsurukame-reviews/";
 
 export const metadata: Metadata = {
@@ -50,7 +50,7 @@ const faqData = [
   {
     question: "Dr.つるかめキッチンと食宅便・ウェルネスダイニングの違いは？",
     answer:
-      "3社とも制限食を扱っていますが、Dr.つるかめキッチンは「専門医＋管理栄養士のW監修」が最大の特徴です。糖尿病専門医、腎臓病専門医などの各分野の専門医が監修しています。食宅便は日清医療食品の大規模な製造体制が強み、ウェルネスダイニングは管理栄養士への電話相談が無料で利用できる点が差別化ポイントです。",
+      "3社とも制限食を扱っていますが、Dr.つるかめキッチンは「専門医＋管理栄養士のW監修」が最大の特徴です。糖尿病専門医・総合内科専門医・抗加齢医学専門医など、コースごとに医師が監修しています（各コースの公式ページの記載）。食宅便は日清医療食品の大規模な製造体制が強み、ウェルネスダイニングは管理栄養士への電話相談が無料で利用できる点が差別化ポイントです。",
   },
   {
     question: "定期購入の解約方法は？",
@@ -244,7 +244,7 @@ const badReviewCategories: {
       },
     ],
     comment:
-      "定期コース（28%OFF・送料無料）なら7食5,184円＝1食約741円ですが、都度購入は7食7,228円＋送料770円＝1食約1,143円と割高です。回数縛りのない定期で注文するのが前提のサービスと考えましょう（料金は2026年10月11日の公式サイト確認時点）。",
+      "定期コース（28%OFF・送料無料）なら7食5,184円＝1食約741円ですが、都度購入は7食7,228円（商品6,458円＋送料770円）＝1食約1,033円と割高です。回数縛りのない定期で注文するのが前提のサービスと考えましょう（料金は2026年11月19日の公式サイト確認時点）。",
   },
   {
     title: "量が控えめで男性には物足りないことも",
@@ -264,7 +264,7 @@ const badReviewCategories: {
 export default function TsurukameReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-10-21T00:00:00+09:00",
+    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-11-19T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -291,7 +291,7 @@ export default function TsurukameReviewsPage() {
           <div className="flex items-center gap-3 mb-4"><span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">口コミ・評判</span><span className="text-[10px] text-gray-400">PR掲載も含みます</span></div>
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
-            <time dateTime="2026-04-21">公開: 2026年4月21日</time><time dateTime="2026-10-11">更新: 2026年10月11日（公式で再確認）</time><span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
+            <time dateTime="2026-04-21">公開: 2026年4月21日</time><time dateTime="2026-11-19">更新: 2026年11月19日（公式で再確認）</time><span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
         </div>{/* /subhead */}
@@ -317,7 +317,7 @@ export default function TsurukameReviewsPage() {
 
         <SectionHeading id="about">Dr.つるかめキッチンとは？基本情報</SectionHeading>
         <ServiceCapture id="tsurukame" />{/* svc-cap-202610 */}
-        <p className="text-sm mb-6 leading-relaxed">Dr.つるかめキッチンは、株式会社クロスエッジが運営する制限食専門の冷凍宅配弁当サービスです。最大の特徴は<strong>各分野の専門医と管理栄養士によるW監修</strong>。糖尿病専門医、ダイエット専門医、腎臓病専門医などがそれぞれのコースの栄養設計を監修しているため、医学的な根拠に基づいた食事管理ができます。</p>
+        <p className="text-sm mb-6 leading-relaxed">Dr.つるかめキッチンは、株式会社クロスエッジが運営する制限食専門の冷凍宅配弁当サービスです。最大の特徴は<strong>各分野の専門医と管理栄養士によるW監修</strong>。公式の各コースページによると、糖尿病専門医・日本内科学会認定医・総合内科専門医・抗加齢医学専門医がそれぞれのコースを監修しています。</p>
 
         <ComparisonTable
           headers={["項目", "内容"]}
@@ -355,11 +355,11 @@ export default function TsurukameReviewsPage() {
         <SubHeading>各コースの監修医について</SubHeading>
         <div className="space-y-3 mb-6">
           {[
-            { title: "糖質制限気づかい御膳", text: "糖尿病専門医が監修。糖質を1食15g以下に厳密にコントロールしながら、出汁や香辛料を活かした味付けで満足感を確保しています。" },
-            { title: "塩分制限気づかい御膳", text: "循環器専門医が監修。塩分2.0g以下でありながら、減塩を感じさせない味付けの工夫（レモンや酢、香辛料の活用）がされています。" },
-            { title: "たんぱく＆塩分制限気づかい御膳", text: "腎臓病専門医が監修。たんぱく質10g以下・カリウム500mg以下と、腎臓への負担を最小限に抑えた設計です。" },
-            { title: "カロリー制限気づかい御膳", text: "ダイエット専門医が監修。240kcal(±10%)で食べ応えを出す工夫として、野菜をたっぷり使い、噛む回数が自然に増えるメニュー構成になっています。" },
-            { title: "つるかめバランス栄養御膳", text: "管理栄養士が監修。特定の栄養素を制限するのではなく、総合的な栄養バランスを整えたコースです。健康維持目的の方に。" },
+            { title: "糖質制限気づかい御膳", text: "糖尿病専門医の原島伸一先生（御所南はらしまクリニック院長）が監修。1食の糖質15g以下・カロリー240kcal（±10%）・塩分2.0g以下です。" },
+            { title: "塩分制限気づかい御膳", text: "日本内科学会認定医の杉原徳彦先生（仁友クリニック院長）が監修。塩分2.0g以下・カロリー300kcal以下で、公式は「お出汁や香辛料で味付け」と説明しています。" },
+            { title: "たんぱく＆塩分制限気づかい御膳", text: "日本内科学会認定医の佐野彰彦先生（佐野病院）が監修。たんぱく質10g以下・塩分2.0g以下・カリウム500mg以下・リン200mg以下・カロリー300kcal以上です。" },
+            { title: "カロリー制限気づかい御膳", text: "日本内科学会 総合内科専門医の古家美幸先生（ふるや糖尿病・甲状腺クリニック院長）が監修。カロリー240kcal（±10%）・塩分2.5g以下です。" },
+            { title: "つるかめバランス栄養御膳", text: "抗加齢医学専門医の菅原道仁先生が監修。カロリー300kcal以下・塩分2.5g以下で、健康維持を目的とするコースです。" },
           ].map((item) => (
             <div key={item.title} className="bg-blue-50 rounded-lg p-4">
               <p className="font-bold text-sm mb-1">{item.title}</p>
@@ -457,7 +457,7 @@ export default function TsurukameReviewsPage() {
 
         <SectionHeading id="price">料金・送料を解説</SectionHeading>
         <p className="text-xs text-warm-gray mb-4">
-          ※本セクションの料金・送料は2026年10月11日に編集部が公式サイトで直接確認した金額（税込）です。最新の金額は公式サイトでご確認ください。
+          ※本セクションの料金・送料は2026年11月19日に編集部が公式サイト（各コースページの料金表・送料のページ・注文画面の金額表示）で直接確認した金額（税込）です。都度購入の7,228円は、注文画面で商品6,458円＋送料770円の合計として表示されます。最新の金額は公式サイトでご確認ください。
         </p>
         <SubHeading>定期購入 vs 都度購入</SubHeading>
         <ComparisonTable
@@ -465,12 +465,12 @@ export default function TsurukameReviewsPage() {
           rows={[
             ["価格", "28%OFF", "通常価格"],
             ["送料", "全国送料無料", "全国一律770円"],
-            ["7食セット（糖質制限）", "5,184円（741円/食）", "7,228円＋770円＝7,998円（1,143円/食）"],
+            ["7食セット（糖質制限）", "5,184円（741円/食）", "6,458円＋770円＝7,228円（1,033円/食）"],
             ["解約", "いつでも可（縛りなし）", "—"],
           ]}
         />
         <p className="text-sm mb-6 leading-relaxed">
-          <strong>定期購入が圧倒的にお得</strong>です。7食セットの糖質制限コースの場合、定期購入なら5,184円（送料無料）、都度購入なら7,998円（送料込み）と、<strong>1回の注文で2,814円の差</strong>になります。定期購入に縛りはないため、まず定期で注文し、合わなければ次回配送前に解約するのが賢い方法です。
+          <strong>定期購入が圧倒的にお得</strong>です。7食セットの糖質制限コースの場合、定期購入なら5,184円（送料無料）、都度購入なら7,228円（送料込み）と、<strong>1回の注文で2,044円の差</strong>になります。定期購入に縛りはないため、まず定期で注文し、合わなければ次回配送前に解約するのが賢い方法です。
         </p>
 
         <SubHeading>食数による1食あたりコストの違い</SubHeading>
@@ -489,7 +489,7 @@ export default function TsurukameReviewsPage() {
         <SectionHeading id="merits">メリット4つ</SectionHeading>
         <div className="space-y-3 mb-6">
           {[
-            { title: "専門医＋管理栄養士のW監修", text: "糖尿病専門医、腎臓病専門医など各分野の専門医が栄養設計を監修しています。医学的根拠に基づいた制限食は他社にない強みです。" },
+            { title: "専門医＋管理栄養士のW監修", text: "コースごとに医師（糖尿病専門医・日本内科学会認定医・総合内科専門医・抗加齢医学専門医）が監修し、管理栄養士が献立を作っています（公式）。" },
             { title: "定期購入で全国送料無料", text: "北海道・沖縄を含む全国どこでも送料無料です。送料が高い地域にお住まいの方には特に大きなメリットです。" },
             { title: "定期購入の縛りなし", text: "購入回数の条件や解約金は一切はありません。1回だけ注文して解約することも可能なため、実質お試し感覚で利用できます。" },
             { title: "制限食でも美味しい味付け", text: "出汁・香辛料・酢・レモンなどを活用し、減塩・低糖質でも満足感のある味付けです。「制限食＝まずい」のイメージを覆す品質です。" },
