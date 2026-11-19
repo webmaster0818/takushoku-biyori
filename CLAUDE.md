@@ -728,3 +728,12 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - 本番の wanmairu-kaiyaku は Cloudflare のメール難読化で support@onemile.jp が書き換わる（out と差分はそれのみ）
 - 導線: mitsuboshi-osusume-menu・mitsuboshi-farm-reviews→タピオカ／nosh-reviews・muscle-deli-nosh-hikaku→nosh／green-spoon-smoothie・green-spoon-kuchikomi→スープ／wanmairu-reviews・wanmairu-menu→解約／watami-direct-kuchikomi・watami-direct-otameshi→メニュー（[no-lastmod]）
 - sitemap: TOP 11/8 に戻した。新規5記事は 11/18。queue の空欄は残り5
+
+### 2026-11-19 朝ルーチン: trust-audit C3 10ページ（直す箇所0）＋Dr.つるかめキッチン（tsurukame-reviews）を公式で再照合（source 4f76d8f・ccc2e8e / deploy f1860706・precheck 97頁 全項目OK・計測リンク html 144件 md5 作業前 deploy と一致）
+- C3 10ページ（mealkit-vs-reitou・reitou-bento-atatame-kata・mamano・hitorigurashi・kinnikushokudo・muscle-deli-reviews・souryou-yasui・author・editorial・methodology）は前日までと同型＝「監修: 宅食びより編集部（/ 編集部メンバー）」は判断待ちで不変、「編集部による実食」「当サイト（の編集部）は実食」は否定文、その他の実食は HonNe・うちらいふ・マイナビニュース・HAPPINESS!・meal-navi 等の媒体名つき。kwexp 11/18 の新規5記事は本番で「編集:」ヘッダー・「試食・試用によるものではありません」の否定文のみ
+- つるかめ: 公式 /menu/post-9・93・108・123・128（HTMLコメント除去）・/faq/・/souryo/・/tokutei/・注文画面（cart の add_to_cart→form。注文はしていない）を 11/19 確認。5コースの定期価格（7/14/21食）・都度価格・送料（都度770円・定期無料）・支払い4種（後払い240円・代引330円）・ヤマト クール・7日前後・6日前締切・栄養基準＝一致
+- **訂正1（都度の二重計上）**: 料金表の都度7食7,228円は送料込み（注文画面＝商品6,458円＋送料770円＝合計7,228円。料金表の打ち消し線にも「税込み・送料込み」）。記事の「7,228円＋送料770円＝7,998円（1,143円/食）」「2,814円の差」→「6,458円＋770円＝7,228円（1,033円/食）」「2,044円の差」
+- **訂正2（監修医）**: 各コースページの記載＝糖質 原島伸一（糖尿病専門医）／塩分 杉原徳彦（日本内科学会認定医・お出汁や香辛料）／たんぱく＆塩分 佐野彰彦（日本内科学会認定医・リン200mg以下も）／カロリー 古家美幸（総合内科専門医）／バランス 菅原道仁（抗加齢医学専門医）。記事の「循環器専門医」「腎臓病専門医」「ダイエット専門医」「管理栄養士が監修（バランス）」「レモンや酢」「野菜たっぷり・噛む回数」は公式に記載なし→公式の記載に。koureisha-osusume の「腎臓病専門医」2か所も
+- 白書 data: つるかめ verified_at 11/19、都度価格の注記に「送料770円込み」。白書本文の確認日注記に1文
+- **報告のみ（判断待ち候補）**: 白書の実質単価はつるかめを「定期価格5,184円＋都度送料770円」（851円）、21食も同様（721円）で計算＝実在しない組み合わせ（定期なら741/684円・都度なら1,033円）。メディミールも同型（定期価格＋都度送料880円）
+- sitemap: tsurukame-reviews・koureisha・白書・/articles/ 11/19、TOP は 11/8 に戻した
