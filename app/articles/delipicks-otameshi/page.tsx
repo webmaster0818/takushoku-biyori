@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-06-14T00:00:00+09:00",
-    modifiedTime: "2026-06-14T00:00:00+09:00",
+    modifiedTime: "2026-11-20T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -32,22 +32,22 @@ const faqData = [
   {
     question: "DELIPICKS（デリピックス）はどんなサービス？",
     answer:
-      "DELIPICKS（デリピックス）は、フレンチのミシュラン星付きレストランで経験を積んだシェフ（中村元気シェフ）が監修する冷凍宅配弁当サービスです。電子レンジで温めるだけで食べられる冷凍弁当が中心で、栄養バランスに配慮したメニュー設計が特徴とされています。お弁当のほか、オープンサンドなどの商品展開もあります。詳しい商品ラインナップは公式サイトでご確認ください。",
+      "DELIPICKS（デリピックス）は、フランスの星付きレストランでの勤務経験がある中村元気シェフが監修する冷凍宅配弁当サービスです。電子レンジで温めるだけで食べられる冷凍弁当が中心で、公式は冷凍弁当全体の平均で「糖質30g以下・タンパク質15g以上」としています。お弁当のほか、冷凍オープンサンドも販売しています。詳しい商品ラインナップは公式サイトでご確認ください。",
   },
   {
     question: "お試しはできる？料金はいくら？",
     answer:
-      "DELIPICKSは新規向けに「お試しセット」を用意しています。具体的な料金・お試し割引・招待コードなどの内容は時期によって変動するため、本記事では断定しません。まずは少ない食数のお試しで、味・量・冷凍庫の収まり具合・温め方を確認するのがおすすめです。最新・正確な金額やキャンペーンは、必ず公式サイトでご確認ください。",
+      "お試しセットは「シェフのおすすめ5食＋ご飯1食」で、初回限定価格2,980円（税込3,218円）です。送料はキャンペーン中につき無料で、お一人あたり1セットまでです。お試しセットを注文しただけでは定期購入にはなりません（いずれも2026年11月20日に公式サイトで確認）。キャンペーンは変わることがあるため、注文前に公式サイトでご確認ください。",
   },
   {
     question: "高タンパク・低糖質をうたっているの？",
     answer:
-      "公式では、メニューの設計目安として「糖質を抑えつつ、たんぱく質をしっかり摂れる」方向性が示されています（具体的な数値はメニューや時期で異なります）。ボディメイクや栄養バランスを意識して食事を選びたい人に向いた設計といえます。各メニューの正確な栄養成分は、公式サイトの商品ページでご確認ください。",
+      "公式サイトは冷凍弁当の特徴として「糖質平均30g以下、タンパク質平均15g以上、1食分の野菜（1日の目標摂取量350gの1/3量）がとれる」と示しています。いずれも全冷凍弁当の平均値で、メニューごとの値は異なります。各メニューの栄養成分は、公式サイトの商品ページでご確認ください。",
   },
   {
     question: "温め方や保存はどうなっている？",
     answer:
-      "DELIPICKSは冷凍で届く宅配弁当で、電子レンジで温めて食べるスタイルです。パッケージはコンパクトな真空パック形状で、冷凍庫のスペースを取りにくいよう配慮されているとされています。温め時間の目安やワット数、保存方法はパッケージや公式の案内に従ってください。",
+      "DELIPICKSは冷凍で届く宅配弁当で、電子レンジで温めて食べるスタイルです。公式FAQによると、お弁当のパッケージは縦17.4cm×横14.4cm×高さ2.5cmで、5食分を重ねても高さ12.5cmです。公式サイトでは、お弁当の平均解凍時間をレンジ500Wで5分としています。商品ごとの温め時間や保存方法はパッケージの表示に従ってください。",
   },
   {
     question: "どんな人に向いている？",
@@ -210,7 +210,7 @@ export default function DelipicksOtameshiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-06-14T00:00:00+09:00",
-    dateModified: "2026-06-14T00:00:00+09:00",
+    dateModified: "2026-11-20T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -271,6 +271,7 @@ export default function DelipicksOtameshiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-06-14">公開: 2026年6月14日</time>
+            <time dateTime="2026-11-20">更新: 2026年11月20日（料金・送料を公式で確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -282,7 +283,7 @@ export default function DelipicksOtameshiPage() {
         </div>{/* /subhead */}
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 text-xs leading-relaxed">
-          <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。<strong>2026年6月時点の公式情報に基づき記述</strong>しています。料金・お試し・キャンペーンは変動するため、最新は<a href="https://deli-picks.com/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">DELIPICKS公式サイト</a>でご確認ください。
+          <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。<strong>料金・送料・お試しセットは2026年11月20日に公式サイトで確認</strong>しています。料金・お試し・キャンペーンは変動するため、最新は<a href="https://deli-picks.com/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">DELIPICKS公式サイト</a>でご確認ください。
         </div>
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -290,10 +291,10 @@ export default function DelipicksOtameshiPage() {
             「DELIPICKS（デリピックス）って実際どうなの？お試しから始めて大丈夫？」——そんな疑問に答える記事です。
           </p>
           <p className="mb-3">
-            DELIPICKSは、<strong>フレンチのミシュラン星付きレストランで経験を積んだシェフが監修する冷凍宅配弁当です</strong>。電子レンジで温めるだけで、味にこだわった一皿を手軽に食べられるのが大きな特徴です。
+            DELIPICKSは、<strong>フランスの星付きレストランでの勤務経験があるシェフが監修する冷凍宅配弁当です</strong>。電子レンジで温めるだけで、味にこだわった一皿を手軽に食べられるのが大きな特徴です。
           </p>
           <p>
-            この記事では、特徴・お試しの考え方・向いている人を整理します。<strong>料金やお試し割引は時期で変動</strong>するため具体額は断定せず、最新は公式サイトでご確認ください。
+            この記事では、特徴・お試しセットの料金・定期便の料金と送料・向いている人を整理します。料金は2026年11月20日に公式サイトで確認した値です。<strong>キャンペーンは時期で変わる</strong>ため、注文前に公式サイトでご確認ください。
           </p>
         </div>
 
@@ -323,7 +324,7 @@ export default function DelipicksOtameshiPage() {
             <li>DELIPICKSは<strong>フレンチシェフ監修の冷凍宅配弁当</strong></li>
             <li><strong>温めるだけ</strong>で、味にこだわった食事を続けやすい</li>
             <li><strong>高タンパク・糖質オフ志向</strong>の栄養設計が特徴</li>
-            <li>料金・お試しは<strong>時期で変動</strong>するため公式で要確認</li>
+            <li>お試しセットは<strong>5食＋ご飯1食で税込3,218円・送料無料</strong>（2026年11月20日確認）</li>
           </ul>
         </div>
 
@@ -331,11 +332,11 @@ export default function DelipicksOtameshiPage() {
         <SectionHeading id="overview">DELIPICKS（デリピックス）とは</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          DELIPICKS（デリピックス）は、<strong>電子レンジで温めるだけで食べられる冷凍宅配弁当のサービス</strong>です。最大の特徴は、<strong>フランスのミシュラン星付きレストランで経験を積んだシェフ（中村元気シェフ）がメニューを監修</strong>している点。レシピの考案から改善検討までシェフが関わっており、家庭で手軽に「お店のような一皿」を再現することをコンセプトにしています。
+          DELIPICKS（デリピックス）は、<strong>電子レンジで温めるだけで食べられる冷凍宅配弁当のサービス</strong>です。最大の特徴は、<strong>フランスの星付きレストランでの勤務経験がある中村元気シェフがメニューを監修</strong>している点です。公式サイトによると、中村シェフは六本木「L’ESSOR」でメインシェフを務め、表参道「BENOIT」にも勤務していました。レシピの考案から改善の検討までシェフが関わっており、家庭で手軽に「お店のような一皿」を再現することをコンセプトにしています。
         </p>
 
         <p className="text-sm mb-6 leading-relaxed">
-          冷凍弁当のほかに、オープンサンドなどの商品展開もあり、ライフスタイルや食シーンに合わせて選べる構成になっています。具体的なラインナップや組み合わせは時期によって更新されるため、最新のメニューは公式サイトでご確認ください。
+          冷凍弁当のほかに、冷凍オープンサンドも販売しており、ライフスタイルや食シーンに合わせて選べる構成になっています。具体的なラインナップや組み合わせは時期によって更新されるため、最新のメニューは公式サイトでご確認ください。
         </p>
 
         {/* ===== 特徴 ===== */}
@@ -343,41 +344,83 @@ export default function DelipicksOtameshiPage() {
 
         <SubHeading>1. フレンチシェフ監修の本格的な味</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          ミシュラン星付きレストランで経験を積んだシェフが監修している点が、DELIPICKS最大の個性です。冷凍宅配弁当は「手軽さ」が魅力の反面、味の満足度がネックになりがちですが、DELIPICKSは<strong>味・クオリティを重視する層に向けた設計</strong>になっています。
+          星付きレストラン出身のシェフが監修している点が、DELIPICKS最大の個性です。冷凍宅配弁当は「手軽さ」が魅力の反面、味の満足度がネックになりがちですが、DELIPICKSは<strong>味・クオリティを重視する層に向けた設計</strong>になっています。
         </p>
 
         <SubHeading>2. 高タンパク・糖質オフ志向の栄養設計</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          公式では、<strong>糖質を抑えつつ、たんぱく質をしっかり摂れる</strong>方向性のメニュー設計が示されています。ボディメイクや栄養バランスを意識する人にとって、選ぶ手間なく「整った食事」を続けやすいのがメリットです。各メニューの正確な栄養成分（たんぱく質量・糖質量など）はメニューや時期で異なるため、公式の商品ページにてご確認ください。
+          公式サイトは冷凍弁当の特徴として、<strong>糖質平均30g以下・タンパク質平均15g以上・1食分の野菜（1日の目標350gの1/3量）</strong>を示しています。いずれも全冷凍弁当の平均値です。ご飯つき（雑穀米）や半量ブロッコリーへの変更もできます。各メニューの栄養成分は公式の商品ページでご確認ください。
         </p>
 
         <SubHeading>3. 温めるだけ・コンパクトな冷凍パッケージ</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          冷凍で届き、<strong>電子レンジで温めるだけ</strong>で食べられます。パッケージはコンパクトな真空パック形状で、冷凍庫のスペースを取りにくいよう配慮されているとされています。忙しい平日や、料理の時間を取りにくい人でも続けやすい設計です。
+          冷凍で届き、<strong>電子レンジで温めるだけ</strong>で食べられます。公式サイトでは、お弁当の平均解凍時間をレンジ500Wで5分としています。お弁当のパッケージは縦17.4cm×横14.4cm×高さ2.5cmで、5食分を重ねても高さ12.5cmです（公式FAQ）。
         </p>
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">栄養成分・容量は商品ごとに異なります</p>
-          <p>たんぱく質量・糖質量・カロリー・パッケージサイズなどはメニューや時期で変わります。当サイトでは正確性を優先し、具体的な数値は断定しません。<strong>正確な情報は公式サイトの各商品ページ</strong>でご確認ください。</p>
+          <p>上記の糖質・タンパク質は全冷凍弁当の平均値です。メニューごとのたんぱく質量・糖質量・カロリーは<strong>公式サイトの各商品ページ</strong>でご確認ください。</p>
         </div>
 
         {/* ===== お試し ===== */}
         <SectionHeading id="otameshi">お試しの考え方（料金は公式で確認）</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          DELIPICKSは、新規向けに<strong>「お試しセット」</strong>を用意しています。いきなり定期購入を始めるのではなく、まずは少ない食数で味・量・使い勝手を確かめられるのが安心ポイントです。
+          DELIPICKSは、新規向けに<strong>「お試しセット」</strong>を用意しています。定期契約の縛りはなく、お試しセットを注文しただけでは定期購入になりません。まずは少ない食数で味・量・使い勝手を確かめられます。
         </p>
 
-        <p className="text-sm mb-6 leading-relaxed">
-          ただし、<strong>お試しの料金・割引・招待コード・送料の扱いは時期によって変動</strong>します。本記事では具体的な金額やクーポンは断定しません。比較・検討の際は、次のポイントを公式サイトで確認しておくことをおすすめします。
-        </p>
+        <SubHeading>お試しセットの料金と内容</SubHeading>
+        <ComparisonTable
+          headers={["項目", "公式サイトの記載"]}
+          rows={[
+            ["内容", "シェフのおすすめおかず5食＋「雑穀ごはんとブロッコリー」1食"],
+            ["価格", "初回限定価格 2,980円（税込3,218円）"],
+            ["送料", "無料（キャンペーン中）"],
+            ["購入できる数", "お一人あたり1セットまで"],
+            ["定期購入への移行", "自動では移行しない（続ける場合はマイページで定期購入の手続き）"],
+            ["キャンセル", "注文手続きの完了時に確定し、申込み後のキャンセルは不可"],
+            ["お届け", "日付の指定がなければ注文から通常1〜2営業日で発送、発送後1〜2日で到着（地域による）"],
+          ]}
+        />
+        <p className="text-xs text-warm-gray mb-6">※出典: <a href="https://deli-picks.com/trial/" target="_blank" rel="noopener noreferrer" className="text-accent underline">DELIPICKS お試しセット</a>（2026年11月20日確認）。キャンセル不可は<Link href="/articles/delipicks-kaiyaku/" className="text-accent underline">解約方法の記事</Link>で利用規約・ヘルプ（2026年11月15日確認）をもとに整理しています。お試しセットの内容（メニュー）は時期により変わる場合があります。</p>
 
-        <ul className="text-sm space-y-2 mb-6 list-disc list-inside leading-relaxed">
-          <li>お試しセットの食数・内容（和・洋・フレンチなどの組み合わせ）</li>
-          <li>お試し価格・送料・適用条件（初回限定かどうか）</li>
-          <li>お試し後に定期購入へ自動で移行するか</li>
-          <li>定期購入の食数・割引率・スキップや停止の方法</li>
-        </ul>
+        <SubHeading>定期便の料金（まとめ買い割引）</SubHeading>
+        <p className="text-sm mb-4 leading-relaxed">
+          定期便は、カートに入れた金額（税抜）に応じて「まとめ買い割引」が適用されます。最低注文金額は5,000円（税抜・オリジナル商品のみ）で、割引の対象もオリジナル商品のみです。
+        </p>
+        <ComparisonTable
+          headers={["カートの金額（税抜）", "割引率", "お弁当1食（税込）", "ご飯1食（税込）"]}
+          rows={[
+            ["7,000円未満", "なし", "994円", "313円"],
+            ["7,000円以上", "10%OFF", "894円", "282円"],
+            ["10,000円以上", "15%OFF", "845円", "267円"],
+            ["15,000円以上", "20%OFF", "795円", "251円"],
+          ]}
+        />
+        <p className="text-xs text-warm-gray mb-6">※出典: <a href="https://deli-picks.com/" target="_blank" rel="noopener noreferrer" className="text-accent underline">DELIPICKS 公式サイト「定期便の料金」</a>（2026年11月20日確認）。公式は「割引はご注文の合計金額に基づいて適用」「表示されている商品単価は参考価格」としています。継続利用で3〜13%OFFになる「マイランク」もあります。冷凍オープンサンドは定価580円（税抜）〜です。</p>
+
+        <SubHeading>定期便の送料（配送手数料）</SubHeading>
+        <p className="text-sm mb-4 leading-relaxed">
+          定期便には、お届け先の都道府県に応じた配送手数料が別にかかります。ヤマト運輸のクール便（冷凍）で届き、宅配ボックスには届けられません。沖縄県・離島・山間部など一部の地域には配送していません。
+        </p>
+        <ComparisonTable
+          headers={["地域", "配送手数料（税込）"]}
+          rows={[
+            ["北海道", "1,386円"],
+            ["北東北（青森・岩手・秋田）", "1,155円"],
+            ["南東北（宮城・山形・福島）", "1,144円"],
+            ["関東（茨城・栃木・群馬・埼玉・千葉・東京・神奈川・山梨）", "1,089円"],
+            ["信越（新潟・長野）", "1,122円"],
+            ["東海（静岡・愛知・岐阜・三重）", "1,122円"],
+            ["北陸（富山・石川・福井）", "1,133円"],
+            ["関西（京都・滋賀・奈良・大阪・兵庫・和歌山）", "1,177円"],
+            ["中国（鳥取・島根・岡山・広島・山口）", "1,232円"],
+            ["四国（徳島・香川・愛媛・高知）", "1,309円"],
+            ["北九州（福岡・佐賀・大分・長崎）", "1,386円"],
+            ["南九州（熊本・宮崎・鹿児島）", "1,386円"],
+          ]}
+        />
+        <p className="text-xs text-warm-gray mb-6">※出典: <a href="https://delipicks.zendesk.com/hc/ja/articles/16364536029081" target="_blank" rel="noopener noreferrer" className="text-accent underline">DELIPICKS ヘルプ「配送について」</a>の地域別配送手数料の表（2026年11月20日確認）。お試しセットの送料はキャンペーン中につき無料です。</p>
 
         <div className="bg-cream rounded-xl p-5 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-2">お試しでまず確かめたい4つ</p>
@@ -448,7 +491,7 @@ export default function DelipicksOtameshiPage() {
         />
 
         <p className="text-sm mb-6 leading-relaxed">
-          特に「お試し後に定期購入へ自動で移行するか」「停止・スキップの操作が簡単か」は、後悔しないために必ず公式で確認しておきたいポイントです。お試しは、<strong>味と生活への合いやすさを見極めるための投資</strong>と考えると失敗しにくくなります。お試しセット全般の選び方は<Link href="/articles/otameshi-set-osusume/" className="text-accent underline">宅配弁当のお試しセットおすすめ</Link>も参考にしてください。
+          DELIPICKSのお試しセットは定期購入に自動で移行しません。定期便を始めた後は、毎週日曜23:59の締切までにマイページからスキップ・キャンセルができます（公式FAQ・2026年11月20日確認）。お試しは、<strong>味と生活への合いやすさを見極めるための投資</strong>と考えると失敗しにくくなります。お試しセット全般の選び方は<Link href="/articles/otameshi-set-osusume/" className="text-accent underline">宅配弁当のお試しセットおすすめ</Link>も参考にしてください。
         </p>
 
         {/* ===== FAQ ===== */}
@@ -471,7 +514,7 @@ export default function DelipicksOtameshiPage() {
             DELIPICKS（デリピックス）は、<strong>フレンチシェフ監修の冷凍宅配弁当</strong>。温めるだけで味にこだわった食事をとれ、<strong>高タンパク・糖質オフ志向の栄養設計</strong>が特徴です。調理の手間をかけずに食事のクオリティを上げたい人に向いています。
           </p>
           <p className="mb-3">
-            料金・お試し・キャンペーンは<strong>時期によって変動</strong>します。当サイトでは正確性を優先し、具体額やクーポンは断定しません。
+            お試しセットは5食＋ご飯1食で税込3,218円・送料無料、定期便はお弁当1食が税込994円（まとめ買い割引で最大20%OFF＝795円）に配送手数料1,089〜1,386円です（2026年11月20日に公式サイトで確認）。キャンペーンは<strong>時期によって変わる</strong>ため、注文前に公式サイトでご確認ください。
           </p>
           <p>
             迷ったら、まずは<strong>お試しセット</strong>で味・量・冷凍庫の収まり・手軽さを確認するのがおすすめです。最新・正確な情報は、必ず公式サイトでご確認ください。
