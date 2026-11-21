@@ -20,10 +20,10 @@ const ARTICLE_TITLE =
   "宅配クック123の料金はいくら？全9メニューの価格表（1食577円〜・配達料無料）と口コミ【2026年11月】";
 const ARTICLE_H1 = "宅配クック123の料金はいくら？全9メニューの価格表と口コミ・安否確認";
 const ARTICLE_DESCRIPTION =
-  "宅配クック123の料金は普通食がごはん付き685円・おかずのみ577円、制限食は885円・777円（税込）です。2025年12月にごはんだけ値上げ（おかずは据え置き）。配達料・会費は無料で1食から注文可。全9メニューの価格、月額の目安、出典付きの口コミを2026年11月11日に公式で確認しました。";
+  "宅配クック123の料金は普通食がごはん付き685円・おかずのみ577円、制限食は885円・777円（税込）です。2025年12月にごはんだけ値上げ（おかずは据え置き）。配達料・会費は無料で1食から注文可。全9メニューの価格、月額の目安、出典付きの口コミを2026年11月21日に公式で確認しました。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/takuhai-cook123-kuchikomi/";
 const CHECKED = "2026年11月1日";
-const PRICE_CHECKED = "2026年11月11日"; /* 料金表・価格改定は 11/11 に公式で再確認 */
+const PRICE_CHECKED = "2026年11月21日"; /* 料金表・価格改定は 11/11・11/21 に公式で再確認（11/21 は /menu・/law・/faq・/about/order・/topic 一覧・/menu/breakfast・/menu/supplement・topic/detail/304・305） */
 const OFFICIAL = "https://takuhaicook123.jp/";
 
 export const metadata: Metadata = {
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-09-18T00:00:00+09:00",
-    modifiedTime: "2026-11-11T00:00:00+09:00",
+    modifiedTime: "2026-11-21T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -53,7 +53,7 @@ const faqData = [
   {
     question: "宅配クック123は値上げしましたか？",
     answer:
-      "公式の新着情報（2025年12月23日掲載）によると、2025年12月1日お届け分から、ごはん・おかゆの単品価格を65円（税抜）から100円（税抜）に改定しています。おかずの価格は変わっておらず、ごはん付きの価格が普通食で648円から685円になるなど、各メニューで37〜38円上がりました。これ以外の価格改定のお知らせは公式に掲載されていません（2026年11月11日 公式サイト確認）。",
+      "公式の新着情報（2025年12月23日掲載）によると、2025年12月1日お届け分から、ごはん・おかゆの単品価格を65円（税抜）から100円（税抜）に改定しています。おかずの価格は変わっておらず、ごはん付きの価格が普通食で648円から685円になるなど、各メニューで37〜38円上がりました。これ以外の価格改定のお知らせは公式に掲載されていません（2026年11月21日 公式サイト確認）。",
   },
   {
     question: "店舗によって料金は違いますか？",
@@ -187,7 +187,7 @@ const jsonLd = {
       description: ARTICLE_DESCRIPTION,
       url: ARTICLE_URL,
       datePublished: "2026-09-18T00:00:00+09:00",
-      dateModified: "2026-11-11T00:00:00+09:00",
+      dateModified: "2026-11-21T00:00:00+09:00",
       author: { "@type": "Organization", name: "宅食びより編集部" },
       publisher: { "@type": "Organization", name: "宅食びより" },
     },
@@ -245,7 +245,7 @@ export default function Page() {
           {ARTICLE_H1}
         </h1>
         <p className="mt-3 text-xs text-gray-500">
-          公開：<time dateTime="2026-09-18">2026年9月18日</time>／更新：<time dateTime="2026-11-11">{PRICE_CHECKED}</time>（料金と2025年12月の価格改定を公式サイトで再確認）
+          公開：<time dateTime="2026-09-18">2026年9月18日</time>／更新：<time dateTime="2026-11-21">{PRICE_CHECKED}</time>（料金と2025年12月の価格改定を公式サイトで再確認）
         </p>
         </div>{/* /subhead */}
 
@@ -315,8 +315,19 @@ export default function Page() {
             </div>
             <ul className="mt-3 space-y-1 text-xs text-gray-600 leading-relaxed">
               <li>※出典: <a href="https://takuhaicook123.jp/topic/detail/256" target="_blank" rel="noopener noreferrer" className="underline">宅配クック123「『ごはん・おかゆ』の価格改定について」</a>（2025年12月23日掲載・{PRICE_CHECKED} 確認）。「改定前」は公式「お弁当の種類」ページのインターネットアーカイブ（2025年10月9日取得）の表示、「現在」は{PRICE_CHECKED}の公式表示です。</li>
-              <li>※公式の新着情報（{PRICE_CHECKED}時点で2025年8月〜2026年11月分）に、これ以外の価格改定のお知らせはありません。公式は詳細を「各店舗へお問い合わせください」としています。</li>
+              <li>※公式の新着情報（{PRICE_CHECKED}時点で最新は2026年10月30日掲載分）に、これ以外の価格改定のお知らせはありません。公式は詳細を「各店舗へお問い合わせください」としています。</li>
             </ul>
+            <div className="mt-4 rounded-lg bg-white p-3 text-sm leading-relaxed">
+              <p className="font-bold">公式サイト内で「648円」の表記が残っている箇所</p>
+              <p className="mt-1">
+                月1回の特別メニュー「ご馳走の日」の新着情報（2026年9月28日・10月27日掲載）は、ご馳走の日を<strong>「通常のお弁当(普通食)と同じ648円(税込・ごはん付き)」</strong>で届けると書いています。
+                648円は上の表の<strong>改定前</strong>の普通食ごはん付きの価格で、同じ公式サイトの「お弁当の種類」ページの現在の表示は<strong>685円</strong>です。
+                「ご馳走の日も普通食と同じ価格」という点は共通しているため、実際の請求額は担当店舗に確認してください（{PRICE_CHECKED} 確認）。
+              </p>
+              <p className="mt-1 text-xs text-gray-600">
+                ※ご馳走の日は、各地域の食材やご当地メニューを取り入れた特別メニューを月に1回、全国約350店舗で提供する取り組みです（2026年11月は「秋うらら 三陸さんまと旬獲り味覚弁当」・11月27日の昼食）。出典: <a href="https://takuhaicook123.jp/topic/detail/305" target="_blank" rel="noopener noreferrer" className="underline">公式 新着情報（2026年10月27日掲載）</a>・<a href="https://takuhaicook123.jp/topic/detail/304" target="_blank" rel="noopener noreferrer" className="underline">同（2026年10月26日掲載）</a>
+              </p>
+            </div>
           </div>
         </section>
 
@@ -378,10 +389,11 @@ export default function Page() {
         <h3 className="mt-6 text-lg font-bold">朝食・追加メニューの料金</h3>
         <ul className="mt-3 space-y-2 text-sm leading-relaxed">
           <li>・朝食のパン単品<strong>205円</strong>、ドリンク単品<strong>160円</strong>、パン＋ドリンクのセット<strong>355円</strong>（単品合計より10円安い・税込）</li>
+          <li>・栄養補助食品（いずれも税込）: 森永トリプルBLACK（ドリンク）<strong>214円</strong>、アイソカルゼリー ハイカロリー（1個66g・150kcal）<strong>181円</strong>、プロッカ ゼットエヌ（1個77g・80kcal・たんぱく質6.2g）<strong>172円</strong>、楽歩習慣グルコサミンプラス（ドリンク）<strong>214円</strong></li>
           <li>・朝食と栄養補助食品は「昼食・夕食をご利用の方が対象」で、朝食は昼食・夕食と一緒に届くため単品の注文はできません</li>
           <li>・アレルギー食材を含む献立の差し替え、おかゆ・刻みへの対応は無料です（一部対応できない場合あり）</li>
         </ul>
-        <p className="mt-3 text-xs text-gray-500">※出典: 宅配クック123「朝食」・よくあるご質問・3分でわかる123（{CHECKED} 確認）</p>
+        <p className="mt-3 text-xs text-gray-500">※出典: 宅配クック123「朝食」・よくあるご質問・3分でわかる123（{CHECKED} 確認）、<a href="https://takuhaicook123.jp/menu/breakfast" target="_blank" rel="noopener noreferrer" className="underline">朝食</a>の価格と<a href="https://takuhaicook123.jp/menu/supplement" target="_blank" rel="noopener noreferrer" className="underline">栄養補助食品</a>は{PRICE_CHECKED} 再確認</p>
 
         <h2 id="reviews" className="mt-10 text-xl font-bold border-b pb-2">宅配クック123の口コミ・評判（出典付き）</h2>
         <p className="mt-4 text-sm leading-relaxed">
