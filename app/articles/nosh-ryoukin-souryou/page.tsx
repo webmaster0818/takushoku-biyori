@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-06-14T00:00:00+09:00",
-    modifiedTime: "2026-06-14T00:00:00+09:00",
+    modifiedTime: "2026-11-21T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -33,17 +33,17 @@ const faqData = [
   {
     question: "noshは結局1食いくらになるの？",
     answer:
-      "1食あたりの単価は「選ぶプランの食数」「継続割引（nosh club）の進み具合」によって変わるため、本記事では具体的な金額を断定しません。一般的な傾向として、1回に届く食数が多いプランほど1食あたりの単価は下がりやすく、継続して利用するほど割引が進む仕組みになっています。最新・正確な1食単価は、必ず公式サイトの料金表示でご確認ください。",
+      "1食あたりの単価は「選ぶプランの食数」「継続割引（nosh club）の進み具合」によって変わります。2026年11月21日の公式表示では、通常価格が6食プラン税込719円・8食644円・10食620円・12食612円で、12食プランが最も安くなります。nosh clubの最高ランク（累計購入数280）では12食プランが税込492円です。一般的な傾向として、1回に届く食数が多いプランほど1食あたりの単価は下がりやすく、継続して利用するほど割引が進む仕組みになっています。最新・正確な1食単価は、必ず公式サイトの料金表示でご確認ください。",
   },
   {
     question: "送料はいくらかかる？",
     answer:
-      "noshの送料は、お届け先の地域や選ぶ食数によって変動する仕組みです。冷凍便で全国に配送されるため、地域によって送料の目安が異なります。送料は本体価格とは別にかかるため、1食単価だけでなく「送料込みの総額」で比較するのがおすすめです。具体的な送料の金額は地域・時期で変わるため、注文画面や公式サイトでご確認ください。",
+      "noshの送料はお届け先の地域で変わり、4〜12食セットは同じ金額、20食セットは別の金額です。公式の全国送料一覧（2026年7月27日改訂版・2026年11月21日確認・クール宅急便料金込み）では、4〜12食セットが関西1,023円〜北海道1,713円、20食セットが関西1,243円〜北海道1,992円です。送料は本体価格とは別にかかるため、1食単価だけでなく「送料込みの総額」で比較するのがおすすめです。",
   },
   {
     question: "nosh club（継続割引）とは？",
     answer:
-      "nosh clubは、累計の購入食数に応じて割引率が上がっていく継続割引の仕組みです。利用を続けるほど1食あたりの単価が下がっていく設計で、長く使う人ほどお得になりやすいのが特徴です。割引率や適用条件の詳細は変更されることがあるため、最新の内容は公式サイトでご確認ください。",
+      "nosh clubは、累計購入数に応じて1食あたりの料金が下がる継続割引の仕組みです。公式の表では累計購入数10ごとにランクが上がり、ランク1（累計0）からランク29（累計280）まであります。スキップ・停止を何回行ってもランクは保持され、退会または会員資格を喪失するまで適用されます（2026年11月21日・公式nosh clubページで確認）。",
   },
   {
     question: "食数が多いほど安くなるって本当？",
@@ -84,6 +84,7 @@ function Breadcrumbs() {
 function TableOfContents() {
   const sections = [
     { id: "summary-top", label: "noshの料金は「食数×継続割引×送料」で決まる" },
+    { id: "kingaku", label: "公式の料金・送料（2026年11月21日確認）" },
     { id: "kihon", label: "noshの料金の基本構造" },
     { id: "tansa", label: "1食単価が変わる仕組み（プラン食数）" },
     { id: "souryou", label: "送料の仕組み（地域・食数で変動）" },
@@ -211,7 +212,7 @@ export default function NoshRyoukinSouryouPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-06-14T00:00:00+09:00",
-    dateModified: "2026-06-14T00:00:00+09:00",
+    dateModified: "2026-11-21T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -272,6 +273,7 @@ export default function NoshRyoukinSouryouPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-06-14">公開: 2026年6月14日</time>
+            <time dateTime="2026-11-21">更新: 2026年11月21日（料金・送料を公式で確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -283,7 +285,7 @@ export default function NoshRyoukinSouryouPage() {
         </div>{/* /subhead */}
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 text-xs leading-relaxed">
-          <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。<strong>2026年6月時点の公式情報に基づき記述</strong>しています。料金・送料・割引の内容は変動するため、最新・正確な金額は<a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">nosh（ナッシュ）公式サイト</a>でご確認ください。
+          <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。<strong>料金・送料・nosh clubの金額は2026年11月21日に公式サイトで確認</strong>しています。料金・送料・割引の内容は変動するため、最新・正確な金額は<a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">nosh（ナッシュ）公式サイト</a>でご確認ください。
         </div>
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -294,7 +296,7 @@ export default function NoshRyoukinSouryouPage() {
             ポイントは、<strong>①プランの食数で1食単価が変わる</strong>、<strong>②送料は地域・食数で変わる</strong>、<strong>③継続割引（nosh club）で長く使うほど安くなる</strong>——この3つの「仕組み」を理解することです。
           </p>
           <p>
-            この記事では、具体的な金額ではなく<strong>料金の仕組み・考え方</strong>をわかりやすく整理します。<strong>金額は時期・地域で変動</strong>するため、最新・正確な料金は必ず公式サイトでご確認ください。
+            この記事では、<strong>料金の仕組み・考え方</strong>と、2026年11月21日に公式サイトで確認した金額を整理します。<strong>金額は時期・地域で変動</strong>するため、注文前に公式サイトの表示もご確認ください。
           </p>
         </div>
 
@@ -324,9 +326,63 @@ export default function NoshRyoukinSouryouPage() {
             <li><strong>nosh club</strong>で継続するほど割引が進む仕組み</li>
             <li>送料は<strong>地域・食数で変動</strong>し、本体とは別計算</li>
             <li>比較は<strong>「送料込みの総額」</strong>で見るのがコツ</li>
+            <li>通常価格は<strong>12食プラン税込612円/食が最安</strong>（2026年11月21日・公式）</li>
             <li>具体額は変動するため<strong>公式で要確認</strong></li>
           </ul>
         </div>
+
+        {/* ===== 公式の金額 11/21 ===== */}
+        <SectionHeading id="kingaku">公式の料金・送料（2026年11月21日確認）</SectionHeading>
+        <p className="text-sm mb-4 leading-relaxed">
+          nosh公式サイトのトップ・<a href="https://nosh.jp/club" target="_blank" rel="noopener noreferrer" className="text-accent underline">nosh club</a>・<a href="https://nosh.jp/shipping" target="_blank" rel="noopener noreferrer" className="text-accent underline">全国送料一覧</a>の各ページで、2026年11月21日に確認した金額です。
+        </p>
+        <SubHeading>プラン別の1食あたり料金（通常価格）</SubHeading>
+        <ComparisonTable
+          headers={["プラン", "1食あたり（税抜）", "1食あたり（税込）"]}
+          rows={[
+            ["6食プラン", "666円", "719円"],
+            ["8食プラン", "596円", "644円"],
+            ["10食プラン", "574円", "620円"],
+            ["12食プラン", "566円", "612円"],
+          ]}
+        />
+        <p className="text-xs text-warm-gray mb-6 leading-relaxed">
+          ※公式の表記は「通常価格は12食プランが最もお安くなります」。トップページのプラン紹介は8・10・12食の3つで、6食は全国送料一覧・nosh clubページの注文欄に表示されています。20食プランは2回目以降の配送で選べます（全国送料一覧の記載）。4食プランは現在新規申込みを受け付けていません。初回から3回目までのクーポンは、公式トップで「1回目1,500円OFF・2回目1,000円OFF・3回目500円OFF」と表示されています。
+        </p>
+        <SubHeading>全国送料一覧（税込・クール宅急便料金込み）</SubHeading>
+        <ComparisonTable
+          headers={["エリア", "4〜12食セット", "20食セット"]}
+          rows={[
+            ["北海道", "1,713円", "1,992円"],
+            ["北東北", "1,628円", "1,661円"],
+            ["南東北", "1,529円", "1,551円"],
+            ["関東", "1,166円", "1,386円"],
+            ["信越", "1,188円", "1,408円"],
+            ["北陸", "1,089円", "1,309円"],
+            ["中部", "1,089円", "1,309円"],
+            ["関西", "1,023円", "1,243円"],
+            ["中国", "1,089円", "1,298円"],
+            ["四国", "1,089円", "1,298円"],
+            ["九州", "1,188円", "1,408円"],
+            ["沖縄", "1,623円", "1,918円"],
+          ]}
+        />
+        <p className="text-xs text-warm-gray mb-6 leading-relaxed">
+          ※出典: nosh公式「全国送料一覧表」（2026年7月27日改訂版・2026年11月21日確認）。4〜12食セットは同じ金額です。エリアの区分は公式の表のとおりです（北東北＝青森・秋田・岩手、南東北＝宮城・山形・福島、関東＝茨城・栃木・群馬・埼玉・千葉・神奈川・東京・山梨、信越＝新潟・長野、北陸＝富山・石川・福井、中部＝静岡・愛知・三重・岐阜、関西＝大阪・京都・滋賀・奈良・和歌山・兵庫、中国＝岡山・広島・山口・鳥取・島根、四国＝香川・徳島・愛媛・高知、九州＝福岡・佐賀・長崎・熊本・大分・宮崎・鹿児島）。商品の組み合わせによっては別サイズの箱でのお届けとなる場合があります。
+        </p>
+        <SubHeading>nosh club割引後の1食あたり料金（税込・抜粋）</SubHeading>
+        <ComparisonTable
+          headers={["プラン", "ランク1（累計0）", "ランク2（累計10）", "ランク29（累計280）"]}
+          rows={[
+            ["6食", "719円", "714円", "579円"],
+            ["8食", "644円", "640円", "519円"],
+            ["10食", "620円", "616円", "499円"],
+            ["12食", "612円", "607円", "492円"],
+          ]}
+        />
+        <p className="text-xs text-warm-gray mb-8 leading-relaxed">
+          ※出典: nosh公式「nosh club」ページの割引後料金表（2026年11月21日確認）。累計購入数10ごとにランクが上がります。スキップ・停止を何回行ってもランクは保持されます。
+        </p>
 
         {/* ===== 基本構造 ===== */}
         <SectionHeading id="kihon">noshの料金の基本構造</SectionHeading>
@@ -402,7 +458,7 @@ export default function NoshRyoukinSouryouPage() {
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">送料の金額は地域・時期で変動します</p>
-          <p>当サイトでは正確性を優先し、送料の具体額は断定しません。<strong>お住まいの地域の送料は、注文時の画面や公式サイトの表示</strong>で必ずご確認ください。</p>
+          <p>2026年11月21日時点の金額は<a href="#kingaku" className="text-accent underline">全国送料一覧</a>のとおりです（4〜12食セットは同額）。改訂されることがあるため、<strong>お住まいの地域の送料は、注文時の画面や公式サイトの表示</strong>でもご確認ください。</p>
         </div>
 
         {/* ===== nosh club ===== */}
@@ -492,7 +548,7 @@ export default function NoshRyoukinSouryouPage() {
             一方、送料は地域・食数で変動し本体価格とは別にかかるため、比較するときは<strong>「送料込みの総額」</strong>で見るのが選び方のポイントです。
           </p>
           <p>
-            具体的な金額・割引率・送料は<strong>時期や地域で変動</strong>します。当サイトでは正確性を優先し、価格は断定しません。最新・正確な料金は、必ず公式サイトの表示でご確認ください。
+            具体的な金額・割引率・送料は<strong>時期や地域で変動</strong>します。2026年11月21日に公式サイトで確認した金額は<a href="#kingaku" className="text-accent underline">公式の料金・送料</a>にまとめています。最新・正確な料金は、必ず公式サイトの表示でご確認ください。
           </p>
         </div>
 
