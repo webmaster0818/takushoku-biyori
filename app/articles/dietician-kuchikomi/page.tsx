@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-11-06T00:00:00+09:00",
+    modifiedTime: "2026-11-22T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -53,7 +53,7 @@ const faqData = [
   {
     question: "ダイエティシャンの代わりになる宅配弁当は？",
     answer:
-      "高タンパク・PFC管理という特徴が近いのはマッスルデリ（タンパク質30g以上のプランあり）です。糖質を強く抑えたいなら筋肉食堂DELIのローカーボコース（1食平均 糖質12.2g・タンパク質31.8g）、手軽な低糖質管理ならnosh（全品糖質30g以下）も選択肢になります。なお、以前代替候補に挙げていたGOFOODは、公式お知らせで2025年6月30日のサービス終了が告知されています。当サイトの高タンパク宅配弁当ランキングもあわせてご覧ください。",
+      "高タンパク・PFC管理という特徴が近いのはマッスルデリ（タンパク質30g以上のプランあり）です。糖質を強く抑えたい人に挙げていた筋肉食堂DELIのローカーボコース（1食平均 糖質12.2g・タンパク質31.8g）は、公式お知らせで2026年11月13日からお届けを一時停止しており、再開時期は未定です（2026年11月22日確認）。手軽な低糖質管理ならnosh（全品糖質30g以下）も選択肢になります。なお、以前代替候補に挙げていたGOFOODは、公式お知らせで2025年6月30日のサービス終了が告知されています。当サイトの高タンパク宅配弁当ランキングもあわせてご覧ください。",
   },
 ];
 
@@ -334,7 +334,7 @@ export default function DieticianKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-11-06T00:00:00+09:00",
+    dateModified: "2026-11-22T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -408,7 +408,7 @@ export default function DieticianKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
-            <time dateTime="2026-11-06">更新: 2026年11月6日（公式で再確認）</time>
+            <time dateTime="2026-11-22">更新: 2026年11月22日（公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -442,13 +442,13 @@ export default function DieticianKuchikomiPage() {
         <div className="border-2 border-red-300 rounded-xl p-5 mb-8 bg-red-50">
           <p className="font-bold text-base mb-3">Dieticianは販売を終了しており、現在は注文できません</p>
           <p className="text-sm leading-relaxed mb-3">
-            公式サイトには2025年10月31日付で<strong>「＜重要＞商品終売のお知らせ　Dieticianは11月28日出荷をもちまして、終売させて頂きました。」</strong>という告知が掲載されました（公式サイトのインターネットアーカイブで確認）。2026年11月6日時点でも公式サイト（dietician-family.jp）はドメインの名前解決ができず接続できず、新規注文・再開の告知はありません。
+            公式サイトには2025年10月31日付で<strong>「＜重要＞商品終売のお知らせ　Dieticianは11月28日出荷をもちまして、終売させて頂きました。」</strong>という告知が掲載されました（公式サイトのインターネットアーカイブで確認）。2026年11月22日時点でも公式サイト（dietician-family.jp）はドメインの名前解決ができず接続できず、新規注文・再開の告知はありません。
           </p>
           <p className="text-sm leading-relaxed mb-4">
             運営していたのは病態食・健康食の専門メーカーである<strong>メディカルフードサービス株式会社</strong>（2004年創業・横浜市）。2021年9月のサービス開始から約4年での終売でした。口コミの評価は決して低くなかったため、「気になっていたのに終わっていた」という人は、後半の<a href="#alternatives" className="text-accent underline">代替サービス3選</a>を参考にしてください。
           </p>
           <p className="text-xs text-warm-gray mb-4">
-            ※出典: Dietician公式サイト（dietician-family.jp）2025年12月10日時点のインターネットアーカイブ（2026年11月6日再確認）
+            ※出典: Dietician公式サイト（dietician-family.jp）2025年12月10日時点のインターネットアーカイブ（2026年11月22日に公式ドメインへ接続できないことを再確認）
           </p>
           <Link
             href="/articles/kou-tanpaku-ranking/"
@@ -467,18 +467,19 @@ export default function DieticianKuchikomiPage() {
             rows={[
               ["Dietician SMALL（初回）", "968〜1,066円", "商品代金に込み", "終売（当時の価格）"],
               ["Dietician MEDIUM（初回）", "1,068〜1,166円", "商品代金に込み", "終売（当時の価格）"],
-              ["筋肉食堂DELI ローカーボ（定期）", "994〜1,048円", "別途（関東1,640円〜）", "販売中"],
+              ["マッスルデリ（単品・4プラン）", "1,109〜1,557円", "別途（5食1,200円・10〜15食1,420円。北海道・沖縄1,530円〜）", "販売中"],
+              ["筋肉食堂DELI ローカーボ（定期）", "994〜1,048円（停止前の表示）", "別途（関東1,640円〜）", "2026年11月13日からお届け停止中・新規受付休止"],
               ["nosh（通常価格）", "612〜719円", "別途", "販売中"],
             ]}
           />
           <p className="text-sm leading-relaxed mb-3">
-            当時の価格は10食と5食の幅で、2026年7月4日に公式サイトのアーカイブで確認した値です。筋肉食堂DELIとnoshは2026年11月6日に各公式サイトで確認しました。マッスルデリを含む3社の比較は<a href="#alternatives" className="text-accent underline">代替サービス3選</a>にまとめています。
+            当時の価格は10食と5食の幅で、2026年7月4日に公式サイトのアーカイブで確認した値です。マッスルデリ（単品価格・税込÷食数）と筋肉食堂DELIは2026年11月22日、noshは2026年11月6日に各公式サイトで確認しました。<strong>筋肉食堂DELIは公式お知らせ（2026年11月13日）で、製造体制の問題により11月13日以降のお届けを一時停止し、該当注文はキャンセル・全額返金、再開時期は未定としています。</strong>公式トップも「新規注文受付を停止しております」の表示です（2026年11月22日確認）。マッスルデリを含む3社の比較は<a href="#alternatives" className="text-accent underline">代替サービス3選</a>にまとめています。
           </p>
           <p className="text-sm leading-relaxed mb-3">
             <strong>「まずい」の答え：</strong>ひとり暮らしの宅配食生活の筆者はSMALL・MEDIUMの実食で「実際はかなりおいしかったです」と評価しており、確認した実食レビューの総評は肯定的です。不満が出ていたのは低脂質ゆえの食感と副菜の味で、宅食まにあの筆者は鶏肉について「ちょっと水っ気が足りなくてパサパサ感あるな」、和え物について「味があんまりしない」と書いています。
           </p>
           <p className="text-xs text-warm-gray">
-            ※出典: <a href="https://www.single-meallife.com/dietician-delivery/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">ひとり暮らしの宅配食生活</a>・<a href="https://home-gohan.net/dietician/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">宅食まにあ</a>（2026年11月6日確認）／<a href="https://deli.kinnikushokudo.jp/shop/products/low-carb" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">筋肉食堂DELI公式</a>・<a href="https://nosh.jp/plan" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">nosh公式</a>。当サイトは実食していません。
+            ※出典: <a href="https://www.single-meallife.com/dietician-delivery/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">ひとり暮らしの宅配食生活</a>・<a href="https://home-gohan.net/dietician/" target="_blank" rel="noopener noreferrer nofollow" className="underline hover:text-accent">宅食まにあ</a>（2026年11月6日確認）／<a href="https://deli.kinnikushokudo.jp/shop/products/low-carb" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">筋肉食堂DELI公式</a>・<a href="https://deli.kinnikushokudo.jp/shop/information/news1113" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">筋肉食堂DELI 定期便の提供停止に関するお知らせ</a>・<a href="https://muscledeli.jp/" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">マッスルデリ公式</a>（各プランの商品ページ）・<a href="https://nosh.jp/plan" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">nosh公式</a>。当サイトは実食していません。
           </p>
         </div>
 
@@ -672,9 +673,9 @@ export default function DieticianKuchikomiPage() {
             </Link>
           </div>
           <div className="bg-green-50 rounded-lg p-4 text-sm leading-relaxed">
-            <p className="font-bold mb-1">② 糖質制限×高タンパクなら → 筋肉食堂DELI（ローカーボ）</p>
+            <p className="font-bold mb-1">② 糖質制限×高タンパクなら → 筋肉食堂DELI（ローカーボ）※2026年11月13日からお届け停止中</p>
             <p className="mb-2">
-              ローカーボコースは1食平均で糖質12.2g・タンパク質31.8g・269kcal（公式表記）。定期21食なら1食税込994円で、本体価格はDieticianの販売当時（送料込968円〜）に近い水準ですが、送料が別途かかります（関東21食1,840円）。回数縛りなし・7日前までマイページで停止できます（2026年10月10日公式確認）。※以前ここで紹介していたGOFOODは、公式が2025年6月30日のサービス終了を告知しています。
+              <strong>公式お知らせ（2026年11月13日）によると、製造体制の問題で11月13日以降のお届けを一時停止しており、新規注文も受け付けていません（再開時期は未定・2026年11月22日確認）。</strong>以下は停止前の公式表示です。ローカーボコースは1食平均で糖質12.2g・タンパク質31.8g・269kcal（公式表記）。定期21食なら1食税込994円で、本体価格はDieticianの販売当時（送料込968円〜）に近い水準ですが、送料が別途かかります（関東21食1,840円）。回数縛りなし・7日前までマイページで停止できます（2026年10月10日公式確認）。※以前ここで紹介していたGOFOODは、公式が2025年6月30日のサービス終了を告知しています。
             </p>
             <Link href="/articles/kinnikushokudo-deli-kuchikomi/" className="text-accent hover:text-accent-dark underline font-medium">
               筋肉食堂DELIの口コミ・評判を見る →
@@ -698,11 +699,11 @@ export default function DieticianKuchikomiPage() {
             ["糖質", "35〜45g以下", "プランによる（LOW CARB 15g以下・LEAN 35g以下）", "平均12.2g", "30g以下"],
             ["1食あたり目安（税込）", "968円〜（送料込・当時）", "1,109〜1,557円", "994〜1,048円（定期21〜7食）＋送料", "612円〜＋送料"],
             ["メニュー選択", "不可（おまかせ）", "可", "可（えらべる28種）／おまかせ（21種）", "可"],
-            ["現在の販売", "終売", "販売中", "販売中", "販売中"],
+            ["現在の販売", "終売", "販売中", "2026年11月13日からお届け停止中（再開未定）", "販売中"],
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">
-          ※各社公式サイトの公開情報をもとに編集部が作成しています（筋肉食堂DELIとnoshの価格は2026年11月6日、マッスルデリは2026年10月14日に確認）。最新情報は各公式サイトでご確認ください。
+          ※各社公式サイトの公開情報をもとに編集部が作成しています（noshの価格は2026年11月6日、マッスルデリと筋肉食堂DELIは2026年11月22日に確認。筋肉食堂DELIの価格は停止前の表示）。最新情報は各公式サイトでご確認ください。
         </p>
 
         {/* ===== FAQ ===== */}
@@ -724,7 +725,7 @@ export default function DieticianKuchikomiPage() {
             「まずい」という検索の実態は、低脂質設計に由来する肉のパサつき・副菜の薄味への声が中心で、確認できた実食メディア4媒体の総評はすべて肯定的でした。この「高タンパク×低脂質のトレードオフ」は代替サービスでも共通するので、乗り換え時の前提として覚えておきましょう。
           </p>
           <p className="text-sm leading-relaxed">
-            PFC管理重視なら<strong>マッスルデリ</strong>、糖質制限×高タンパクなら<strong>筋肉食堂DELIのローカーボ</strong>、続けやすさなら<strong>nosh</strong>——目的に合わせて、当サイトの各口コミ記事から比較検討してください。
+            PFC管理重視なら<strong>マッスルデリ</strong>、糖質制限×高タンパクなら<strong>筋肉食堂DELIのローカーボ</strong>（2026年11月13日からお届け停止中・再開は公式で確認）、続けやすさなら<strong>nosh</strong>——目的に合わせて、当サイトの各口コミ記事から比較検討してください。
           </p>
         </div>
 

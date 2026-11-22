@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-16T00:00:00+09:00",
-    modifiedTime: "2026-10-17T00:00:00+09:00",
+    modifiedTime: "2026-11-22T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -177,7 +177,7 @@ export default function ToushitsuSeigenOsusumePage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-16T00:00:00+09:00",
-    dateModified: "2026-10-21T00:00:00+09:00",
+    dateModified: "2026-11-22T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -228,7 +228,7 @@ export default function ToushitsuSeigenOsusumePage() {
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-04-16">公開: 2026年4月16日</time>
-            <time dateTime="2026-10-17">更新: 2026年10月17日</time>
+            <time dateTime="2026-11-22">更新: 2026年11月22日</time>
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
@@ -521,18 +521,18 @@ export default function ToushitsuSeigenOsusumePage() {
         <ComparisonTable
           headers={["サービス・コース", "1食の糖質", "熱量", "塩分", "1食（税込）", "送料", "確認日"]}
           rows={[
-            ["食宅便 低糖質セレクト", "10g以下", "−", "−", "740円（7食5,180円）", "定期940円／都度1,330円", "2026/10/12"],
-            ["筋肉食堂DELI ローカーボ", "平均12.2g", "平均269kcal", "−", "994〜1,048円（定期21〜7食）", "関東1,640〜1,840円", "2026/10/17"],
-            ["ウェルネスダイニング 糖質＆カロリー制限", "15g以下", "240kcal±10%", "2.0g以下", "約770円〜（定期21食）", "定期14・21食無料（7食440円）", "2026/10/10・10/15"],
-            ["Dr.つるかめキッチン 糖質制限気づかい御膳", "15g以下", "240kcal±10%", "2.0g以下", "約741円（定期7食5,184円）", "定期は無料", "2026/10/14"],
-            ["まごころケア食 糖質制限食", "15g以下", "−", "2.0g以下", "394〜426円（お得便）", "980円（沖縄・離島1,480円）", "2026/10/12・10/16"],
-            ["Muscle Deli LOW CARB", "15g以下", "350kcal以上", "−", "−（4プランで1,109〜1,557円）", "−", "2026/10/14"],
-            ["タイヘイ ヘルシー御膳 糖質少なめ", "17.0g以下", "−", "2.2g以下", "783円〜", "条件を満たすと無料", "2026/10/10"],
-            ["三ツ星ファーム", "25g以下（一部除く）", "350kcal以下", "−", "711円〜（21食・定期）", "990円", "2026/10/9"],
-            ["nosh（ナッシュ）", "30g以下（主菜87品は7.7〜29.7g）", "−", "2.5g以下", "612〜719円", "1,023円〜（地域・食数別）", "2026/10/10・10/17"],
+            ["食宅便 低糖質セレクト", "10g以下", "−", "−", "740円（7食5,180円）", "定期940円／都度1,330円", "2026/11/22"],
+            ["筋肉食堂DELI ローカーボ（2026年11月13日からお届け停止中・新規受付休止）", "平均12.2g", "平均269kcal", "−", "994〜1,048円（定期21〜7食・停止前の表示）", "関東1,640〜1,840円", "2026/11/22"],
+            ["ウェルネスダイニング 糖質＆カロリー制限", "15g以下", "240kcal±10%", "2.0g以下", "約770円〜（定期21食）", "定期14・21食無料（7食440円）", "2026/11/22"],
+            ["Dr.つるかめキッチン 糖質制限気づかい御膳", "15g以下", "240kcal±10%", "2.0g以下", "約741円（定期7食5,184円）", "定期は無料", "2026/11/22"],
+            ["まごころケア食 糖質制限食", "15g以下", "240kcal±10%", "2.0g以下", "394〜426円（お得便）", "980円（沖縄・離島1,480円）", "2026/11/22"],
+            ["Muscle Deli LOW CARB", "15g以下", "350kcal以上", "−", "約1,175〜1,227円（単品15〜5食）", "5食1,200円・10〜15食1,420円（北海道・沖縄1,530円〜）", "2026/11/22"],
+            ["タイヘイ ヘルシー御膳 糖質少なめ", "17.0g以下", "200kcal前後", "2.2g以下", "783円〜（定期7食5,480円）", "冷凍のみ5,400円以上・同日時指定で無料", "2026/11/22"],
+            ["三ツ星ファーム", "25g以下（一部除く）", "350kcal以下", "−", "711円〜（21食・定期）", "990円", "2026/11/22"],
+            ["nosh（ナッシュ）", "30g以下（主菜87品は7.7〜29.7g）", "−", "2.5g以下", "612〜719円", "1,023円〜（地域・食数別）", "2026/11/22"],
           ]}
         />
-        <p className="text-xs text-warm-gray -mt-4 mb-4">※「−」は公式サイトでそのコースの基準を確認できなかった項目です。筋肉食堂DELIは上限ではなく公式のコース平均値です。Muscle Deliは4プランの単品価格（税込）÷食数の範囲で、LOW CARB単独の価格は記載していません。</p>
+        <p className="text-xs text-warm-gray -mt-4 mb-4">※「−」は公式サイトでそのコースの基準を確認できなかった項目です。筋肉食堂DELIは上限ではなく公式のコース平均値です。筋肉食堂DELIは公式お知らせ（2026年11月13日）で製造体制の問題により11月13日以降のお届けを一時停止し、再開時期は未定としています（公式トップも「新規注文受付を停止しております」・2026年11月22日確認）。Muscle DeliはLOW CARBプランの単品価格（税込）÷食数です。確認日の値はすべて2026年11月22日に各社公式サイトで照合しました（料金・基準は前回の確認値と一致。まごころケア食・タイヘイの熱量と、Muscle Deli LOW CARBの単品価格・送料は今回公式の表記から追記）。</p>
         <p className="text-sm mb-6 leading-relaxed">各社の詳しい料金・口コミは<Link href="/articles/shokutakubin-reviews/" className="text-accent underline">食宅便</Link>・<Link href="/articles/kinnikushokudo-deli-kuchikomi/" className="text-accent underline">筋肉食堂DELI</Link>・<Link href="/articles/wellness-dining-reviews/" className="text-accent underline">ウェルネスダイニング</Link>・<Link href="/articles/tsurukame-reviews/" className="text-accent underline">Dr.つるかめキッチン</Link>・<Link href="/articles/magokoro-care-reviews/" className="text-accent underline">まごころケア食</Link>・<Link href="/articles/muscle-deli-reviews/" className="text-accent underline">Muscle Deli</Link>・<Link href="/articles/taihei-family-set-kuchikomi/" className="text-accent underline">タイヘイ</Link>・<Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent underline">三ツ星ファーム</Link>・<Link href="/articles/nosh-reviews/" className="text-accent underline">nosh</Link>の各記事にまとめています。</p>
 
         <SubHeading>ランキング5社の糖質量・料金比較一覧</SubHeading>
