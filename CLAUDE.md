@@ -775,3 +775,10 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - 競合（WebSearch 米国経由・日本語結果あり）: monita（2026/6/3 更新・普通食 594/540円＝旧価格・前日18時締切と記載）・ROOMIE・mybest・オリコン・静岡市の配食事業者一覧PDF（624円＝自治体の配食事業の負担額で一般価格ではない＝載せていない）。店舗差・エリア・注文方法・1食から・支払い・改定日はすでに冒頭〜本文にあり。ご馳走の日は競合に無し
 - coopdeli-kuchikomi（「コープ 宅配弁当 まずい」449@6.2c7）: daily.coopdeli.jp の6コース・2食/3食・ご飯追加 11/21 一致。冒頭の注記にお試し（舞菜専用は公式に案内なし）・週3日から・登録翌々週の月曜開始（/contents/daily/flow/）。title 不変。「1週間だけの利用も可」は今日再確認できず（FAQ 検索が空応答）＝追記していない
 - sitemap: 2記事 11/21、TOP は 11/8 に戻した
+
+### 2026-11-22 朝ルーチン: trust-audit C3 9ページ（直す箇所0）＋nosh-reviews の初回クーポン・メニュー数を公式で照合（source b8b84f6・bed005b / deploy 95ad5dee・precheck 101頁 全項目OK・計測リンク html 144件 md5 作業前 deploy と一致・可視テキスト変化は nosh-reviews と /articles/ のみ）
+- C3 9ページ（tsurukame・nosh-reviews・watami-direct-otameshi・nosh-vs-mitsuboshi-vs-wellness・kyoudoki-yushoku-takuhai・oisix-vs-nosh・author・editorial・methodology）は前日までと同型＝「監修: 宅食びより編集部（/ 編集部メンバー）」は判断待ちで不変、「編集部による実食レビューは現在未実施」は否定文、つるかめの「筆者の実食」は宅食ラボ・おいしい宅食の記事筆者（媒体名つき第三者）
+- nosh-reviews: 公式トップ・/club・/plan・/shipping・/company・/package を 11/22 確認。通常価格（6/8/10/12食 719/644/620/612円・合計 4,318/5,157/6,206/7,344円）・club（rank29 12食492/10食499円）・送料12エリア・容器 18.0×16.5×4.5cm・本社 大阪市北区・設立2016年 は一致。**訂正**: 初回クーポン「1〜3回目に各1,000円OFF」→公式「1回目1,500円・2回目1,000円・3回目500円OFF」、料金表の列「初回クーポン適用時（1,000円OFF・当サイト試算 約520〜553円）」→公式注文欄の「初回特別価格」税込 469.7/457.1/470.6/487.0円、メニュー数「100種類以上」（7か所）→公式「約100種類」。title 不変・dateModified 11/22
+- 今日確認できなかったもの（不変）: 「累計1.5億食（2025年12月時点）」（公式トップ・会社概要・お知らせに記載なし）、20食プラン 12,240円（公式の注文欄・/plan は 6〜12食のみ）、FAQ の締切・初回キャンセル不可（/faq は JS 描画で本文が取れない＝10/9 確認値のまま）
+- **残り（判断待ち）**: 旧クーポン表記（各1,000円OFF 等）は 9記事＋白書 data に計59か所（nosh-coupon 35・nosh-vs-mitsuboshi-vs-wellness 8・diet-osusume 4・souryou-yasui-ranking 3・reitou-bento-mazui 2・sango-osusume 2・hitorigurashi-osusume 2・magokoro-care-reviews 1（初回1,000円OFF適用で約520〜553円）・otameshi-set-osusume 1・data/ryokin-hakusho first_discount 1）。「総額/合計3,000円」は 1,500+1,000+500 でも合計は同じで、誤りは「各1,000円」と1,000円で割った試算
+- sitemap: nosh-reviews・/articles/ 11/22、TOP は 11/8 に戻した
