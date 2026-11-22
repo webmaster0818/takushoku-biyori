@@ -782,3 +782,11 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - 今日確認できなかったもの（不変）: 「累計1.5億食（2025年12月時点）」（公式トップ・会社概要・お知らせに記載なし）、20食プラン 12,240円（公式の注文欄・/plan は 6〜12食のみ）、FAQ の締切・初回キャンセル不可（/faq は JS 描画で本文が取れない＝10/9 確認値のまま）
 - **残り（判断待ち）**: 旧クーポン表記（各1,000円OFF 等）は 9記事＋白書 data に計59か所（nosh-coupon 35・nosh-vs-mitsuboshi-vs-wellness 8・diet-osusume 4・souryou-yasui-ranking 3・reitou-bento-mazui 2・sango-osusume 2・hitorigurashi-osusume 2・magokoro-care-reviews 1（初回1,000円OFF適用で約520〜553円）・otameshi-set-osusume 1・data/ryokin-hakusho first_discount 1）。「総額/合計3,000円」は 1,500+1,000+500 でも合計は同じで、誤りは「各1,000円」と1,000円で割った試算
 - sitemap: nosh-reviews・/articles/ 11/22、TOP は 11/8 に戻した
+
+### 2026-11-22 12:00 成長ルーチン: dietician・toushitsu に筋肉食堂DELI お届け停止を反映／9社糖質表を公式照合（source d8cf2a2 / deploy 0427bded・precheck 全項目OK・計測リンク html 144件 md5 作業前 deploy と一致・可視テキスト変化は2記事＋/articles/ の並び順のみ・本番反映約2分）
+- dietician-kuchikomi（「ダイエティシャン」17@9.7・「dietician」9@8.4、11/22 クロール済み）: title/h1 に「ダイエティシャン(Dietician)」両表記・冒頭に早見表あり＝title 不変。**早見表・代替②・比較表「現在の販売」・FAQ・まとめの筋肉食堂DELIを「販売中」→ 2026年11月13日からお届け停止中・新規受付休止**（公式 /shop/information/news1113・トップ「新規注文受付を停止しております」・FAQ 重要なお知らせ 11/22 確認。低糖質コースページ・送料表は表示あり＝価格 994〜1,048円・関東 1,640〜1,840円は一致、「停止前の表示」と明記）。早見表にマッスルデリ行（4プランの単品価格 税込÷食数 1,109〜1,557円＝商品ページ data-trial-price×1.08・10/14 値と一致／送料 5食1,200円・10〜15食1,420円・北海道沖縄1,530円〜）。dietician-family.jp は 11/22 も SERVFAIL。dateModified 11/22
+- toushitsu-seigen-osusume（「糖質制限 宅配 ランキング」18@7.7c0）: 9社表を各社公式（食宅便 default/guide_04・ウェルネス k120/teiki・つるかめ post-123・まごころ products/detail/25・list・guide・タイヘイ familyset.jp locabo-set/payment・三ツ星 JS バンドル・nosh /・/plan・/shipping）で 11/22 照合＝値は全一致。確認日を 2026/11/22 に、まごころ熱量 240kcal±10%・タイヘイ 200kcal前後／定期7食5,480円／送料条件（冷凍のみ5,400円以上・同日時指定で無料）、Muscle Deli LOW CARB 単品 約1,175〜1,227円（15〜5食）と送料を追記、筋肉食堂DELI 行に停止の注記。title 不変
+- 競合（WebSearch 米国経由）: 「ダイエティシャン」系は日本の上位を返さず（無関係の結果のみ）＝公式値で代替
+- 触っていない: lifemeal-kuchikomi・taihei-family-set-kuchikomi（11/15 に 404 出典の引用削除＝11/13 以降の内容変更＝報告のみ）。dietician の nosh「100種類以上」は 11/4 MediaXAI 指示の表記で、今朝 nosh-reviews のみ公式「約100種類」に変更＝判断待ちの旧クーポン表記と同じ扱いで不変
+- **判断待ち（継続）**: 筋肉食堂DELI を紹介している他ページ（15社表・高たんぱくランキング等）は停止未反映のまま（11/16 から）
+- sitemap: 2記事・/articles/ 11/22、TOP は 11/8 に戻した
