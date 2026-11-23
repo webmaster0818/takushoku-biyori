@@ -35,12 +35,12 @@ const faqData = [
   {
     question: "1週間セットと2週間セットはどちらを選ぶべき？",
     answer:
-      "1週間セット(7食)は通常価格6,180円、2週間セット(14食)は通常価格12,200円です(いずれも公式サイト2026年5月時点)。1食あたり単価はほぼ同等です。冷凍庫スペースに余裕があり継続前提なら2週間セットの方が受取回数が減って楽です。試したい方は1週間セットから始めるのが無難です。",
+      "1週間セット(7食)は通常価格6,180円、2週間セット(14食)は通常価格12,200円です(いずれも税込・2026年11月23日に公式サイトで確認)。商品代だけなら1食あたり単価はほぼ同等ですが、単品購入の送料(クール便800円)は1回1万円(税込)以上で無料になるため、単品購入では2週間セットは送料無料・1週間セットは送料800円がかかります(送料込みで1食約871円と約997円)。定期購入は送料0円です。冷凍庫スペースに余裕があり継続前提なら2週間セットの方が受取回数が減って楽です。試したい方は1週間セットから始めるのが無難です。",
   },
   {
     question: "定期購入の縛りはありますか？解約はできますか？",
     answer:
-      "公式サイトによると、定期購入は通常価格から5%OFFになりますが、原則3回以上の継続が条件とされています。マイページから配送間隔の変更や休止が可能です。3回未満で解約したい場合は通常価格との差額が発生する場合があるため、申込前に必ず公式サイトの「特定商取引法に基づく表記」を確認してください。",
+      "公式サイトによると、定期購入は通常価格から5%OFF(送料0円)で、3回以上続けて利用することが前提です。お届け日の変更やお休み(スキップ)は次回お届け予定日の10日前までにマイページから、解約は10日前までにマイページ内のお問い合わせフォームまたは電話で連絡します。3回未満の解約について、商品ページは「既購入分は通常購入価格との差額を支払う」、定期購入制度のご案内は「ご利用3回以内は解約を受け付けない」と書いており、表現が異なります(2026年11月23日確認)。申込前に公式サイトの「定期購入制度のご案内」を確認してください。",
   },
   {
     question: "サポートミールはRIZAPに通っていなくても買えますか？",
@@ -50,7 +50,7 @@ const faqData = [
   {
     question: "メニューはどんな種類がありますか？飽きませんか？",
     answer:
-      "セットA・セットB・セットAB・セットAD・セットBDなど、複数のメニュー組み合わせが用意されています。チーズハンバーグ、デミグラスソース、焼き魚、トマトソース、鶏肉料理など多彩なメニューがあり、洋食寄りの構成が中心です。最新のラインナップは公式サイトで確認してください。",
+      "1週間セットはA・B・お肉・お魚、2週間セットはAB・AD・BDの組み合わせが用意されています(2026年11月23日・公式)。チーズハンバーグ、デミグラスソース、焼き魚、トマトソース、鶏肉料理など多彩なメニューがあり、洋食寄りの構成が中心です。最新のラインナップは公式サイトで確認してください。",
   },
 ];
 
@@ -169,7 +169,7 @@ export default function RizapSupportMealReviewsPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-10-10T00:00:00+09:00",
+    dateModified: "2026-11-23T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -238,7 +238,7 @@ export default function RizapSupportMealReviewsPage() {
             <div className="bg-cream rounded-lg p-3"><p className="font-bold text-warm-gray mb-2">△ 注意したい点</p><ul className="space-y-1 list-disc list-inside"><li>1食800円台と宅配弁当としては価格が高め</li><li>糖質制限が不要な人やコスパ重視の人には割高</li><li>主食を抑えた設計のためボリュームに物足りなさを感じる場合がある</li></ul></div>
           </div>
           <p className="text-xs text-warm-gray mb-4">※料金・送料・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。</p>
-          <a href="https://shop.rizap.jp/shop/pages/supportmeal" target="_blank" rel="noopener noreferrer sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">RIZAPサポートミール 公式サイトで最新の料金・お試しを見る →</a>
+          <a href="https://shop.rizap.jp/shop/pages/supportmeal_c.aspx" target="_blank" rel="noopener noreferrer sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">RIZAPサポートミール 公式サイトで最新の料金・お試しを見る →</a>
         </div>
 
         <TableOfContents />
@@ -254,19 +254,20 @@ export default function RizapSupportMealReviewsPage() {
         <ComparisonTable
           headers={["項目", "内容"]}
           rows={[
-            ["運営", "RIZAPグループ(株式会社RIZAP)"],
+            ["運営", "RIZAP株式会社"],
             ["1食あたり糖質", "9.5〜12.0g"],
             ["セット種類", "1週間セット(7食)/2週間セット(14食)"],
-            ["メニューパターン", "セットA・B・AB・AD・BDなど複数"],
+            ["メニューパターン", "1週間: A・B・お肉・お魚 / 2週間: AB・AD・BD"],
             ["1週間セット価格", "通常6,180円(税込) / 定期5,871円"],
             ["2週間セット価格", "通常12,200円(税込) / 定期11,590円"],
             ["配送形態", "冷凍便(電子レンジ加熱)"],
+            ["送料(全国一律・税込)", "単品購入800円(1回1万円以上は無料) / 定期購入0円"],
             ["パッケージサイズ", "1週セット:210×180mm / 2週セット:210×360mm"],
             ["定期購入条件", "原則3回以上の継続"],
             ["公式サイト", "https://shop.rizap.jp/"],
           ]}
         />
-        <p className="text-xs text-warm-gray mb-6">※出典: RIZAP公式オンラインショップ(2026年5月時点)。最新情報は必ず公式サイトでご確認ください。</p>
+        <p className="text-xs text-warm-gray mb-6">※出典: RIZAP公式オンラインショップ(商品ページ・ご利用ガイド・定期購入制度のご案内・特定商取引に関する表記、2026年11月23日確認)。最新情報は必ず公式サイトでご確認ください。</p>
 
         <SubHeading>サポートミールの3つの特徴</SubHeading>
         <div className="space-y-3 mb-6">
@@ -284,15 +285,15 @@ export default function RizapSupportMealReviewsPage() {
 
         <SectionHeading id="price">料金プランと定期購入の仕組み</SectionHeading>
 
-        <SubHeading>料金体系(2026年5月時点)</SubHeading>
+        <SubHeading>料金体系(2026年11月23日・公式確認)</SubHeading>
         <ComparisonTable
-          headers={["セット", "通常価格(税込)", "定期価格(税込)", "1食あたり目安"]}
+          headers={["セット", "通常価格(税込)", "定期価格(税込)", "1食あたり目安(送料込み)"]}
           rows={[
-            ["1週間セット(7食)", "6,180円", "5,871円", "通常883円 / 定期839円"],
-            ["2週間セット(14食)", "12,200円", "11,590円", "通常871円 / 定期828円"],
+            ["1週間セット(7食)", "6,180円", "5,871円", "通常約997円(送料800円) / 定期839円(送料0円)"],
+            ["2週間セット(14食)", "12,200円", "11,590円", "通常871円(1万円以上で送料無料) / 定期828円(送料0円)"],
           ]}
         />
-        <p className="text-xs text-warm-gray mb-6">※出典: RIZAP公式オンラインショップ。最新の価格・送料は公式サイトでご確認ください。</p>
+        <p className="text-xs text-warm-gray mb-6">※出典: RIZAP公式オンラインショップ(商品ページ・ご利用ガイド「送料について」)。1食あたりは(価格＋送料)÷食数の当サイト計算。最新の価格・送料は公式サイトでご確認ください。</p>
 
         <p className="text-sm mb-6 leading-relaxed">
           サポートミールは、宅配弁当としては<strong>1食あたり800円台の中〜高価格帯</strong>に位置します。noshの612円〜（2026年10月10日・公式確認）と比べると割高ですが、糖質9.5〜12gという低糖質設計は他社には真似できない強みです。「糖質を確実に絞りたい」目的なら価格に見合う価値があります。
@@ -301,11 +302,11 @@ export default function RizapSupportMealReviewsPage() {
         <SubHeading>定期購入のポイント</SubHeading>
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <ul className="list-disc list-inside space-y-1">
-            <li>定期購入は通常価格から5%OFF</li>
+            <li>定期購入は通常価格から5%OFF・送料0円</li>
             <li><strong>原則3回以上の継続が条件</strong></li>
-            <li>マイページから変更・休止可能</li>
-            <li>セットの種類(A/B/AB/AD/BD)を変更できる</li>
-            <li>3回未満で解約する場合、通常価格との差額が発生する可能性があるので必ず公式の規約を確認</li>
+            <li>お届け日の変更・お休み(スキップ)は次回お届け予定日の10日前までにマイページから</li>
+            <li>解約は次回お届け予定日の10日前までに、マイページ内のお問い合わせフォームまたは電話で連絡</li>
+            <li>3回未満の解約は、商品ページでは「既購入分は通常購入価格との差額を支払う」、定期購入制度のご案内では「ご利用3回以内は解約を受け付けない」と表現が異なるため、必ず公式の規約を確認</li>
           </ul>
         </div>
 
@@ -377,7 +378,7 @@ export default function RizapSupportMealReviewsPage() {
         {[
           { num: 1, title: "1食単価が高め(800円台)", text: "コスパを重視する方にとっては負担が大きくなります。「全食置き換え」よりも「夕食だけ」「平日5日だけ」など部分置き換えで運用すると財布へのダメージを抑えられます。" },
           { num: 2, title: "定期購入は3回継続条件", text: "定期割引を受けるには3回継続が原則です。試したい場合は都度購入で1セット試してから定期に移行するのが安全です。短期で離脱したい人は注意が必要です。" },
-          { num: 3, title: "送料・配送条件は公式確認必須", text: "送料は地域により異なります。北海道・沖縄など離島地域は割高になる可能性が高いため、申込前に正確な総額を公式で確認してください。" },
+          { num: 3, title: "送料・配送条件は公式確認必須", text: "送料は全国一律で、クール便は単品購入800円(1回1万円(税込)以上は無料)・定期購入0円です(2026年11月23日・公式)。単品の1週間セットだけは送料800円がかかり、送料込みで1食約997円になります。冷凍商品は代金引換を利用できません。" },
         ].map((demerit) => (
           <div key={demerit.num} className="flex gap-4 mb-5">
             <span className="flex-shrink-0 w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center text-sm font-bold">{demerit.num}</span>
@@ -440,7 +441,7 @@ export default function RizapSupportMealReviewsPage() {
             ["ブランド", "RIZAPメソッド", "コスパ・自由度", "味のクオリティ"],
           ]}
         />
-        <p className="text-xs text-warm-gray mb-6">※2026年5月時点の公開情報。最新の正確な価格・栄養成分は各公式でご確認ください。</p>
+        <p className="text-xs text-warm-gray mb-6">※2026年5月時点の公開情報(サポートミールの価格・定期条件は2026年11月23日に公式で再確認)。最新の正確な価格・栄養成分は各公式でご確認ください。</p>
 
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-2">使い分けの目安</p>
