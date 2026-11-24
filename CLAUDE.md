@@ -729,7 +729,7 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - 導線: mitsuboshi-osusume-menu・mitsuboshi-farm-reviews→タピオカ／nosh-reviews・muscle-deli-nosh-hikaku→nosh／green-spoon-smoothie・green-spoon-kuchikomi→スープ／wanmairu-reviews・wanmairu-menu→解約／watami-direct-kuchikomi・watami-direct-otameshi→メニュー（[no-lastmod]）
 - sitemap: TOP 11/8 に戻した。新規5記事は 11/18。queue の空欄は残り5
 
-### 2026-11-19 朝ルーチン: trust-audit C3 10ページ（直す箇所0）＋Dr.つるかめキッチン（tsurukame-reviews）を公式で再照合（source 4f76d8f・ccc2e8e / deploy f1860706・precheck 97頁 全項目OK・計測リンク html 144件 md5 作業前 deploy と一致）
+### 2026-11-19 朝ルーチン: trust-audit C3 10ページ（直す箇所0）＋Dr.つるかめキッチン（tsurukame-reviews）を公式で再照合（source 4f76d8f・ccc2e8e / deploy f1860706・precheck 97頁 全項目OK・計測リンク html 144件 md5 作業前 deploy と一致・本番反映約11分・Indexing 1本）
 - C3 10ページ（mealkit-vs-reitou・reitou-bento-atatame-kata・mamano・hitorigurashi・kinnikushokudo・muscle-deli-reviews・souryou-yasui・author・editorial・methodology）は前日までと同型＝「監修: 宅食びより編集部（/ 編集部メンバー）」は判断待ちで不変、「編集部による実食」「当サイト（の編集部）は実食」は否定文、その他の実食は HonNe・うちらいふ・マイナビニュース・HAPPINESS!・meal-navi 等の媒体名つき。kwexp 11/18 の新規5記事は本番で「編集:」ヘッダー・「試食・試用によるものではありません」の否定文のみ
 - つるかめ: 公式 /menu/post-9・93・108・123・128（HTMLコメント除去）・/faq/・/souryo/・/tokutei/・注文画面（cart の add_to_cart→form。注文はしていない）を 11/19 確認。5コースの定期価格（7/14/21食）・都度価格・送料（都度770円・定期無料）・支払い4種（後払い240円・代引330円）・ヤマト クール・7日前後・6日前締切・栄養基準＝一致
 - **訂正1（都度の二重計上）**: 料金表の都度7食7,228円は送料込み（注文画面＝商品6,458円＋送料770円＝合計7,228円。料金表の打ち消し線にも「税込み・送料込み」）。記事の「7,228円＋送料770円＝7,998円（1,143円/食）」「2,814円の差」→「6,458円＋770円＝7,228円（1,033円/食）」「2,044円の差」
@@ -746,7 +746,7 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - toushitsu-seigen-osusume: 11/10 cda8184（C3 味の感想を公式表記に）の内容変更があるため触らず
 - sitemap: nichirei・goodeli 11/19、TOP は 11/8 に戻した
 
-### 2026-11-19 20:00 kwexp 作成6日目: 新規4記事 ✅本番反映（source 6da4198・0cc65dc・bb75cf2 / deploy 2528bed3・precheck 101頁 全項目OK・trust-audit check_page 新規4ページ指摘0・計測リンク html 144件 md5 作業前 deploy と一致）
+### 2026-11-19 20:00 kwexp 作成6日目: 新規4記事 ✅本番反映（source 6da4198・0cc65dc・bb75cf2 / deploy 2528bed3・precheck 101頁 全項目OK・trust-audit check_page 新規4ページ指摘0・計測リンク html 144件 md5 作業前 deploy と一致・本番反映約11分・Indexing 1本）
 - queue 上から: ワタミの宅食ダイレクト 解約 24 → `watami-direct-kaiyaku`（/shop/faq・/shop/guide・/shop/pages/prices。マイページ「お届けを停止」→チャット、4〜6日前（地域差）、継続割は3回目まで停止不可＝3回分の合計を当サイト計算、会員削除は電話）／ナッシュ 似てる 16 → `nosh-niteru-takushoku`（nosh /nutritional-value の「糖質30g・塩分2.5g以下」を kwexp の各社 tsv（11/14〜18取得）に当てはめて割合を集計。わんまいる tsv の carb 列は糖質、ワタミダイレクト・DELIPICKS は炭水化物＝参考値）／おいしいプラス 口コミ 16 → `oishiiplus-kuchikomi`（shop.oishiiplus.com。第三者の口コミは検索で見つからず＝公式掲載の「お客様の声」6件のみ（投稿者名は省略）。2025/9 新規停止→11/30 定期停止→2026/4/1 再開。全10品を `oishiiplus-menu-20261119.tsv` に）／ママの休食 解約 16 → `mamano-kyushoku-kaiyaku`（/policies/legal-notice・refund-policy・terms-of-service・shipping-policy。6営業日前を土日休みで計算＝8〜10日前）
 - skip: ナッシュ 一人暮らし（hitorigurashi-osusume と重複・11/16 三ツ星ファーム 一人暮らしと同じ扱い）。queue の空欄は 0 → 次回は手順1（次の競合3案）
 - 公式内の食い違い（記事に併記）: ワタミダイレクト「いつでも停止可（継続割は3回目まで不可）」／「定期は3回以上が条件」、ママの休食 解約窓口（返金ポリシー＝LINE・メール／特商法＝マイページ・LINE）、おいしいプラス 商品ページ上部と「栄養素」欄の値（5品。味噌炒めの栄養素欄はすき焼き重と同値）・こんにゃく米30%/40%・プラン欄（旧メニュー・商品ページ404）・支払い方法・キャンセル可否（FAQ 不可／特商法 3日前まで）
@@ -764,7 +764,7 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - delipicks-otameshi: 公式 /trial/・トップ「定期便の料金」・ヘルプ「配送について」（Zendesk API・地域別手数料は画像）を 11/20 確認。「料金は断定しない」の記事だったのを、お試し（5食＋ご飯1食 2,980円/税込3,218円・送料無料キャンペーン・1人1セット・定期に自動移行しない）・まとめ買い割引（税抜7,000/10,000/15,000円以上 10/15/20%・弁当994→894/845/795円・ご飯313→282/267/251円・最低5,000円）・配送手数料12地域（1,089〜1,386円・沖縄/離島は配送不可）の表に。訂正: シェフ経歴「ミシュラン星付き」→公式の「フランスの星付きレストラン勤務・L'ESSOR メインシェフ・BENOIT 勤務」、弁当の「真空パック」（公式は冷凍オープンサンドの説明）→公式FAQの寸法 17.4×14.4×2.5cm、栄養は公式の平均値（糖質30g以下・タンパク質15g以上・野菜1/3）。title・description は不変。dateModified 11/20
 - sitemap: delipicks-otameshi・/articles/ 11/20、TOP は 11/8 に戻した
 
-### 2026-11-21 朝ルーチン: trust-audit C3 8ページ（直す箇所0）＋nosh-ryoukin-souryou（6/14 のまま・「金額は断定しない」記事）を公式で照合（source f714d29・d0a3da6 / deploy 55c84aaa・precheck 101頁 全項目OK・計測リンク html 144件 md5 作業前 deploy と一致）
+### 2026-11-21 朝ルーチン: trust-audit C3 8ページ（直す箇所0）＋nosh-ryoukin-souryou（6/14 のまま・「金額は断定しない」記事）を公式で照合（source f714d29・d0a3da6 / deploy 55c84aaa・precheck 101頁 全項目OK・計測リンク html 144件 md5 作業前 deploy と一致・本番反映約11分・Indexing 1本）
 - C3 8ページ（fitfoodhome・chef-mutenka・tedemogu・tsukurioki-jp・medimeal・author・editorial・methodology）は前日までと同型＝「監修: 宅食びより編集部 / 編集部メンバー」「実食レビュー 未実施・導入準備中」は判断待ちで不変。「当サイトでは実食・試用はしていません」「当サイトは実食していません」は否定文、「当サイトが引用した実食レビュー2媒体」「筆者の実食」（スマートフードナビの記事筆者）「25食実食ブロガー」は媒体名つきの第三者
 - nosh-ryoukin-souryou: 公式トップ・/club・/shipping を 11/21 確認。新節「公式の料金・送料（2026年11月21日確認）」＝6/8/10/12食 税抜666/596/574/566・税込719/644/620/612円、全国送料一覧（2026/7/27改訂版・colspan で 4〜12食同額を確認）12エリア、club ランク1/2/29（累計0/10/280・12食 612/607/492円）、初回〜3回目クーポン。FAQ Q1〜3・PR表記・送料の注意枠・まとめの「断定しない」を公式値に。title・description 不変。20食の料金は今日公式で見つからず書いていない
 - 🚨 **nosh の初回クーポンが変わっている**: 11/21 公式トップ・各ページ注文欄は「1回目1,500円OFF・2回目1,000円OFF・3回目500円OFF」（初回特別価格 8食 税込457.1円 等）。サイト内に「各1,000円OFF／総額3,000円OFF」が 50か所（nosh-coupon・nosh-reviews・souryou-yasui-ranking・otameshi-set-osusume ほか10記事＋白書 data）→ 件数が多いので判断待ちとして報告（今日は nosh-ryoukin-souryou のみ新値）。上の「1〜3回目に各1,000円OFFで書く」（11/14）は 11/21 時点で古い
@@ -796,3 +796,11 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - rizap: 公式 /shop/pages/supportmeal_c.aspx・guide.aspx・purchase.aspx・law.aspx（Shift_JIS）11/23。価格（1週6,180/定期5,871・2週12,200/11,590）・糖質9.5〜12.0g・3回以上前提・サイズは一致。**訂正**: 送料「地域により異なる・離島は割高」→全国一律クール便 単品800円（1回1万円以上無料）・定期0円、1食単価を送料込み（単品1週 約997円）、セットにお肉・お魚、定期の締切10日前・解約連絡先（マイページ問い合わせフォーム/電話）・3回未満の扱いの公式内表記差（商品ページ「差額」／定期購入制度「3回以内は解約不可」）を併記、運営 株式会社RIZAP→RIZAP株式会社、「セットの種類を変更できる」（公式の変更手続き一覧に無し）を削除、ヘッダー CTA の /shop/pages/supportmeal（404）→ supportmeal_c.aspx。dateModified 11/23・title 不変
 - 触っていない: 比較表の nosh「100種類以上」（判断待ちの nosh 旧表記と同じ扱い）・三ツ星列、良い/悪い口コミの出典なし評価（11/10 報告済みの同型）
 - sitemap: rizap・/articles/ 11/23、TOP は 11/8 に戻した
+
+### 2026-11-24 朝ルーチン: 白書 Dr.つるかめ・メディミールを定期送料0円で再計算（11/23 宣言の既定案A・source e022027 / deploy f87693d2・precheck 101頁 全項目OK・計測リンク html 144件 md5 作業前 deploy と一致・本番反映約11分・Indexing 1本）
+- 公式を 11/24 に再確認: つるかめ /souryo/「定期購入の場合は全国送料無料」・/menu/post-123「２回目以降も28％OFFの5,184円（税込）、送料無料」、メディミール /QA/「定期便ご登録商品は送料無料」・/restricted/calorie/「定期便は送料無料…送料分の880円がお得」・定期購入7食 税込5,270円
+- 実装: page.tsx に `SUBSCRIPTION_SHIP`（tsurukame-kitchen・medimeal＝0）と `repShip()`。代表プラン表・大容量表で使う。JSON の shipping.representative_jpy（都度 770/880）は変えていない＝目的別ハブ（HakushoUnitPriceTable）の計算は従来どおり
+- 結果（代表プラン表）: つるかめ 851→741円（6→5位）・メディミール 879→753円（7→6位）・食宅便 824円 5→7位。上位4社不変。大容量表 つるかめ21食 721→684円。送料列「0円（定期コース）」「0円（定期便）」、補足に都度の単価（つるかめ都度7食 7,228円＝1食1,033円、メディミール2回目以降の都度7食 1食879円）、価格帯表で2社を 600〜700円台へ。確認日の注記に1文、dateModified 11/24。title 不変
+- JSON: 両社 verified_at 11/24・reverify_note に1文
+- 報告のみ: 目的別ハブ（koureisha ほか）の実質単価表は今も つるかめ・メディミールを都度送料込みで計算（定期価格＋770/880円）。白書と同じ扱いにするかは判断待ち
+- sitemap: 白書・/articles/ 11/24、TOP は 11/8 に戻した
