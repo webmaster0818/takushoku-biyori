@@ -214,7 +214,7 @@ export default function LifedeliKuchikomiPage() {
             </div>
             <div className="bg-cream rounded-lg p-3">
               <p className="font-bold text-warm-gray mb-2">△ 注意したい点</p>
-              <ul className="space-y-1 list-disc list-inside"><li>普通食の価格は店舗ごとに違う</li><li>店舗の無い地域には届かない（都道府県ページは43件）</li><li>冷蔵の当日配達なので、作り置きはできない</li></ul>
+              <ul className="space-y-1 list-disc list-inside"><li>普通食の価格は店舗ごとに違う</li><li>店舗のない地域には届かない（都道府県ページは43件）</li><li>冷蔵の当日配達なので、作り置きはできない</li></ul>
             </div>
           </div>
           <p className="text-xs text-warm-gray">※料金・送料・商品は時期により変わります。最新の情報は公式サイトでご確認ください。</p>
