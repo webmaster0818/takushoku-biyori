@@ -35,7 +35,7 @@ const faqData = [
 
 const sections = [
   { id: "about", label: "ホーミール（homeal）とは" },
-  { id: "reviews", label: "公式サイトのレビュー（74件）" },
+  { id: "reviews", label: "口コミの掲載状況（公式サイトのレビュー74件）" },
   { id: "menu", label: "メニューの対象年齢と価格（単品60品を集計）" },
   { id: "price", label: "継続コースと単品購入の送料・初回特典" },
   { id: "cancel", label: "解約・スキップの方法" },
@@ -202,7 +202,6 @@ export default function HomealKuchikomiPage() {
           <p className="mb-3">
             口コミを調べたところ、2026年11月25日時点で確認できた利用者の声の中心は、公式サイトの「カスタマーレビュー」に掲載された74件でした。この記事では、そのレビューを原文で一部紹介したうえで、全商品一覧の対象年齢・価格を当サイトで集計し、送料・初回特典・解約の条件を公式のページとよくあるご質問で確認しています。
           </p>
-          <p>当サイトはホーミールと提携しておらず、試食・試用によるものではありません。</p>
         </div>
 
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
@@ -238,7 +237,7 @@ export default function HomealKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">※出典: 公式 <a href="https://homeal.co.jp/" target="_blank" rel="noopener noreferrer" className="text-accent underline">トップページ</a>・<a href="https://homeal.co.jp/pages/specific-trade-law" target="_blank" rel="noopener noreferrer" className="text-accent underline">特定商取引法に基づく表記</a>・よくあるご質問「<a href="https://docs.channel.io/homeal-faq/ja/articles/%E5%95%86%E5%93%81%E3%81%AE%E5%9F%BA%E6%9C%AC%E6%83%85%E5%A0%B1-9eb9256d" target="_blank" rel="noopener noreferrer" className="text-accent underline">商品の基本情報</a>」「<a href="https://docs.channel.io/homeal-faq/ja/articles/%E9%85%8D%E9%80%81%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8-90d6a282" target="_blank" rel="noopener noreferrer" className="text-accent underline">配送に関すること</a>」（2026年11月25日確認）。</p>
-        <SectionHeading id="reviews">公式サイトのレビュー（74件）</SectionHeading>
+        <SectionHeading id="reviews">口コミの掲載状況（公式サイトのレビュー74件）</SectionHeading>
         <ComparisonTable
           headers={["5段階の評価", "割合"]}
           rows={[
@@ -254,12 +253,12 @@ export default function HomealKuchikomiPage() {
         <ComparisonTable
           headers={["商品", "評価", "投稿日", "本文（原文の一部）"]}
           rows={[
-            ["保育園で人気のドライカレー（1歳から・120g）", "5", "2024/8/12", "とっても簡単なのに本格的で美味しくて、私も子供も大満足でした"],
-            ["7種野菜と豚肉の中華丼風の具（2歳から・120g）", "5", "2024/4/21", "中華丼、野菜嫌いの子供が美味しいといってたべてくれました。"],
-            ["やさいぱん 3種セット（1歳から）", "5", "2024/4/19", "材料もシンプルで安心してあげられます。そしてふわっふわ。"],
-            ["フレンチ風 3種のきのこと若鶏のクリームシチュー（2歳から・120g）", "5", "2023/9/18", "少なめなのでちょい足しの一品にちょうどいいです！"],
-            ["レバー入りミートボールのトマト煮（1歳から・120g）", "5", "2023/7/24", "2歳の娘、初回は食わず嫌いで全く手を付けませんでしたが、2回目は「これおいしいね」と納得の表情で完食。"],
-            ["レバー入りミートボールのトマト煮（1歳から・120g）", "3", "2023/6/1", "レバー感がしっかりとあって身体にいい感じがしました。"],
+            ["保育園で人気のドライカレー（1歳から・120g）", "5", "2024/8/12", "「とっても簡単なのに本格的で美味しくて、私も子供も大満足でした」"],
+            ["7種野菜と豚肉の中華丼風の具（2歳から・120g）", "5", "2024/4/21", "「中華丼、野菜嫌いの子供が美味しいといってたべてくれました。」"],
+            ["やさいぱん 3種セット（1歳から）", "5", "2024/4/19", "「材料もシンプルで安心してあげられます。そしてふわっふわ。」"],
+            ["フレンチ風 3種のきのこと若鶏のクリームシチュー（2歳から・120g）", "5", "2023/9/18", "「少なめなのでちょい足しの一品にちょうどいいです！」"],
+            ["レバー入りミートボールのトマト煮（1歳から・120g）", "5", "2023/7/24", "「2歳の娘、初回は食わず嫌いで全く手を付けませんでしたが、2回目は「これおいしいね」と納得の表情で完食。」"],
+            ["レバー入りミートボールのトマト煮（1歳から・120g）", "3", "2023/6/1", "「レバー感がしっかりとあって身体にいい感じがしました。」"],
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">※出典: 公式 <a href="https://homeal.co.jp/pages/customer-reviews" target="_blank" rel="noopener noreferrer" className="text-accent underline">カスタマーレビュー</a>（2026年11月25日確認）。本文は原文のまま、長いものは一部だけを引用しています。</p>

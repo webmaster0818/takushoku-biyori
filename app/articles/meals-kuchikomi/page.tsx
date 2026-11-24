@@ -35,7 +35,7 @@ const faqData = [
 
 const sections = [
   { id: "about", label: "ミールズ（Meals）とは" },
-  { id: "voices", label: "公式に掲載されている利用者の声" },
+  { id: "voices", label: "口コミの掲載状況（公式に掲載の利用者の声3件）" },
   { id: "price", label: "料金と送料込みの1食あたり" },
   { id: "nutrition", label: "全63メニューの栄養値を集計" },
   { id: "cancel", label: "停止・スキップ・解約と1回だけの利用" },
@@ -202,7 +202,6 @@ export default function MealsKuchikomiPage() {
           <p className="mb-3">
             口コミを調べたところ、2026年11月25日時点で公式サイトに掲載されている利用者の声は3件（「個人の感想です」と表示）でした。この記事では、その3件を原文で紹介したうえで、料金・送料と送料込みの1食あたりを計算し、公式のメニュー一覧に載っている63品の栄養値を当サイトで集計しています。
           </p>
-          <p>当サイトはミールズと提携しておらず、試食・試用によるものではありません。</p>
         </div>
 
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
@@ -239,13 +238,13 @@ export default function MealsKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">※出典: 公式 <a href="https://meals.delishkitchen.tv/" target="_blank" rel="noopener noreferrer" className="text-accent underline">トップページ</a>・<a href="https://meals.delishkitchen.tv/menus" target="_blank" rel="noopener noreferrer" className="text-accent underline">メニュー一覧</a>・<a href="https://meals.delishkitchen.tv/info/law_info" target="_blank" rel="noopener noreferrer" className="text-accent underline">特定商取引法に基づく表記</a>（2026年11月25日確認）。</p>
-        <SectionHeading id="voices">公式に掲載されている利用者の声</SectionHeading>
+        <SectionHeading id="voices">口コミの掲載状況（公式に掲載の利用者の声3件）</SectionHeading>
         <ComparisonTable
           headers={["利用状況（公式の表示）", "本文（原文）"]}
           rows={[
-            ["二人暮らし（14食／1ヶ月おき）", "見た目が彩りよくスゴくおいしそう。もちろん味も良いです！パッケージ外から中身が見えるのが気に入ってます。"],
-            ["一人暮らし（14食／1ヶ月おき）", "献立を考える時間を他の時間に活用できるようになった！バランスもカロリーもいいので、安心して食べられます！"],
-            ["子育て家庭（7食／1ヶ月おき）", "どれもおいしくて“はずれ”がほとんどなく、素朴な味が良いです。タンパク質がメイン以外の料理にも使われているのが嬉しい。"],
+            ["二人暮らし（14食／1ヶ月おき）", "「見た目が彩りよくスゴくおいしそう。もちろん味も良いです！パッケージ外から中身が見えるのが気に入ってます。」"],
+            ["一人暮らし（14食／1ヶ月おき）", "「献立を考える時間を他の時間に活用できるようになった！バランスもカロリーもいいので、安心して食べられます！」"],
+            ["子育て家庭（7食／1ヶ月おき）", "「どれもおいしくて“はずれ”がほとんどなく、素朴な味が良いです。タンパク質がメイン以外の料理にも使われているのが嬉しい。」"],
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">※出典: 公式 <a href="https://meals.delishkitchen.tv/" target="_blank" rel="noopener noreferrer" className="text-accent underline">トップページ</a>の「お客様の声」（2026年11月25日確認）。公式は「※個人の感想です」と表示しています。販売元が選んで掲載したもので、投稿の時期は記載がありません。</p>

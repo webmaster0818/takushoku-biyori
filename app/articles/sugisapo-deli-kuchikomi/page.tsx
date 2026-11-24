@@ -35,7 +35,7 @@ const faqData = [
 
 const sections = [
   { id: "about", label: "スギサポdeliとは" },
-  { id: "reviews", label: "公式サイトのレビュー件数と評価" },
+  { id: "reviews", label: "口コミの掲載状況（公式サイトのレビュー9件）" },
   { id: "price", label: "料金・送料と1食あたりの金額" },
   { id: "nutrition", label: "シリーズ別の栄養成分（全154食を集計）" },
   { id: "order", label: "注文・お届け・キャンセルの条件" },
@@ -202,7 +202,6 @@ export default function SugisapoDeliKuchikomiPage() {
           <p className="mb-3">
             口コミを調べたところ、2026年11月25日時点で公式サイトの商品一覧に表示されている利用者のレビューは9件でした。この記事では、その件数と評価をセットごとに示したうえで、料金・送料、全22セット・154食の栄養成分、注文の条件を公式ページで確認し、当サイトで集計しています。
           </p>
-          <p>当サイトはスギサポdeliと提携しておらず、試食・試用によるものではありません。</p>
         </div>
 
         <div className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
@@ -239,7 +238,7 @@ export default function SugisapoDeliKuchikomiPage() {
           ]}
         />
         <p className="text-xs text-warm-gray mb-6">※出典: 公式 <a href="https://sugisapodeli.sugi-net.jp/" target="_blank" rel="noopener noreferrer" className="text-accent underline">トップページ</a>・<a href="https://sugisapodeli.sugi-net.jp/pages/faq" target="_blank" rel="noopener noreferrer" className="text-accent underline">よくあるご質問</a>・<a href="https://sugisapodeli.sugi-net.jp/policies/shipping-policy" target="_blank" rel="noopener noreferrer" className="text-accent underline">配送ポリシー</a>・<a href="https://sugisapodeli.sugi-net.jp/policies/legal-notice" target="_blank" rel="noopener noreferrer" className="text-accent underline">特定商取引法に基づく表示</a>・各商品ページ（2026年11月25日確認）。</p>
-        <SectionHeading id="reviews">公式サイトのレビュー件数と評価</SectionHeading>
+        <SectionHeading id="reviews">口コミの掲載状況（公式サイトのレビュー9件）</SectionHeading>
         <p className="text-sm mb-6 leading-relaxed">公式サイトの商品一覧では、セットごとにレビューの件数と5段階の評価が表示されます。2026年11月25日時点で表示されていたのは、次の9件（各セット1件ずつ）です。ライトプラス・やわらか食・N-3・N-4・N-6・P-6・SU-2は「レビューなし」でした。</p>
         <ComparisonTable
           headers={["セット", "レビュー件数", "評価（5段階）"]}
