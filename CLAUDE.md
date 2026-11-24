@@ -813,3 +813,12 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - 全5記事の ad_note は「リンクはすべて公式サイト（・アプリストア）で、アフィリエイト広告ではありません」（三ツ星・ウェルネスは提携済みのため「提携しておらず」の既定文は使わない）
 - 導線: koureisha・tsurukame-reviews・kaigoshoku→減塩/腎臓病、medimeal→腎臓病、mitsuboshi-farm-reviews・mitsuboshi-osusume-menu→添加物/アプリ、mutenka→添加物、watami-reviews・watami-direct-otameshi→ワタミの宅食お試し（[no-lastmod]）
 - sitemap: 新規5記事 11/25・/articles/ 11/25、TOP 11/8 のまま
+
+### 2026-11-25 深夜4時 kwexp: 新規5記事 ✅本番反映（source 91c9940〜36cf9cb / deploy 7201dfcf・1834759f・precheck 111頁 全項目OK・trust-audit check_page 新規5ページ指摘0・heading-lint 既存1件のみ・計測リンク html 144件 md5 作業前 deploy と一致）
+- queue 上から: スギサポdeli 口コミ 112 → `sugisapo-deli-kuchikomi`（Shopify 公式。商品ページ22セット・154食の栄養成分を `sugisapo-deli-menu-20261125.tsv` に＝塩分カロリー調整食42食すべて食塩2.0g以下・たんぱく調整食42食すべて10.0g以下・やわらか食28食すべて食塩2.0g超。公式の商品レビューは一覧表示で9件（本文は JS 読み込みで未確認＝件数と5段階の評価だけ）。定期・おためし・単品なし、送料917円/2セット、キャンセル不可）／ナッシュ 支払い方法 112 → `nosh-shiharai-houhou`（FAQ answer/40・20・23 と /tradelaw。カード・コンビニ後払い249円・Apple Pay。代引572円・d払い・PayPal・Amazon Pay は新規受付終了。後払い手数料の1食あたりを当サイト計算）／ホーミール 口コミ 88 → `homeal-kuchikomi`（幼児食。公式カスタマーレビュー74件・平均4.9の原文6件を「」引用、/collections/all 単品60品＝1歳から31・2歳から27・4歳から2、120g 24品 511〜954円・中央値583円。FAQ は docs.channel.io/homeal-faq）／ミールズ 口コミ 88 → `meals-kuchikomi`（デリッシュキッチン Meals。/menus 63品を `meals-menu-20261125.tsv` に＝弁当60品すべて 350kcal以下・たんぱく質20g以上・塩分2.5g以下、塩分中央値2.3g。公式「お客様の声」3件を引用）／ライフデリ 口コミ 56 → `lifedeli-kuchikomi`（都道府県別ページ43件を `lifedeli-area-20261125.tsv` に＝普通食 税込486〜780円・宅配料無料、全店共通の治療食料金は東京港店ページ、公式「お客様の声」（店舗に届いた手紙）4件を引用）
+- skip: グリーンスプーン お試し（green-spoon-kuchikomi と重複）・離乳食 宅配（First Spoon の価格が JS 描画・the kindest の公式ドメイン不明＝時間をおけば作成可）・食宅便 お試し（otameshi-set-osusume と重複）・まごころケア食 解約（まごころ A/B の判断待ち＝朝に確認）・ナッシュ ご飯付き（gohan-tsuki-reitou-bento と重複）
+- ⚠️ trust-audit: 口コミ記事のリードに「当サイトは〇〇と提携しておらず、試食・試用によるものではありません」を書くと C3 に掛かる（末尾ブロックで足りる＝リードからは外した）。口コミ本文の無い記事は C5 → 節見出しを「口コミの掲載状況（…）」にし件数と確認日を置くと通る。引用は「」で囲む
+- 訂正: nosh-vs-mitsuboshi-vs-wellness の支払い方法表の nosh 列（代引○→新規受付終了・後払い×→コンビニ後払い249円・Amazon Pay◎→新規受付終了・コンビニ払い×→後払い○）＋注記と支払い方法記事へのリンク（公式 FAQ・特商法 11/25）。三ツ星・ウェルネスの列は未照合
+- 公式内の食い違い（記事に併記）: ライフデリ トップ「1食513円〜」が同じページで（税抜）と（税込）の両方、鳥取県ページに税込486円／ホーミール トップ「常時80種類以上」・一覧は77品（ギフト含む）／ミールズ トップ「約60種類」・一覧63種
+- 導線: nosh-reviews・nosh-ryoukin-souryou・nosh-osusume-menu→支払い方法、genenshoku・jinzobyo・kaigoshoku→スギサポ、mogumo・tedemogu・sango→ホーミール、kou-tanpaku-ranking・nosh-niteru→ミールズ、watami-reviews・koureisha→ライフデリ（[no-lastmod]）。kids-articles の mogumo/tedemogu データにも追記
+- sitemap: 新規5記事・nosh-vs-mitsuboshi-vs-wellness 11/25、TOP 11/8 のまま（npm run build が TOP を 11/25 にするため毎回戻した）
