@@ -4,7 +4,7 @@ import Link from "next/link";
 const ARTICLE_TITLE =
   "nosh（ナッシュ）の支払い方法は3つ｜クレジットカード・コンビニ後払い・Apple Pay、決済のタイミングと手数料【2026年11月】";
 const ARTICLE_DESCRIPTION =
-  "nosh（ナッシュ）で使える支払い方法を公式FAQと特定商取引法に基づく表記で確認しました。クレジットカード・コンビニ後払い（手数料249円）・Apple Payの3つで、代引き・d払い・PayPal・Amazon Payは新規受付を終了しています。決済のタイミング、後払いの限度額、決済エラー時の扱いもまとめました（2026年11月25日確認）。";
+  "nosh（ナッシュ）の支払い方法を公式FAQと特定商取引法に基づく表記で確認。クレジットカード・コンビニ後払い（手数料249円）・Apple Payの3つで、代引き・Amazon Pay等は新規受付終了。決済のタイミングや決済エラー時の扱いもまとめました（2026年11月25日確認）。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/nosh-shiharai-houhou/";
 const OFFICIAL_URL = "https://nosh.jp/";
 
