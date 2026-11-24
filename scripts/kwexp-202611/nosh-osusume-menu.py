@@ -227,6 +227,7 @@ ARTICLE = {
         ("/articles/nosh-niteru-takushoku/", "ナッシュに似てる宅食（nosh の基準で6社を集計）"),
         ("/articles/nosh-reviews/", "nosh（ナッシュ）の口コミ・評判"),
         ("/articles/nosh-ryoukin-souryou/", "nosh（ナッシュ）の料金・送料の仕組み"),
+        ("/articles/nosh-shiharai-houhou/", "nosh（ナッシュ）の支払い方法"),
         ("/articles/muscle-deli-nosh-hikaku/", "マッスルデリとナッシュの比較"),
         ("/articles/mitsuboshi-osusume-menu/", "三ツ星ファームのおすすめメニュー"),
     ],

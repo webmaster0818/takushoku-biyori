@@ -226,6 +226,7 @@ ARTICLE = {
         ("/articles/takuhai-cook123-kuchikomi/", "宅配クック123の料金・配達料・安否確認"),
         ("/articles/mutenka-takuhai-bento/", "無添加の宅配弁当・冷凍宅食を公式の表記で比較"),
         ("/articles/shokunosoyokaze-kaiyaku/", "食のそよ風の解約方法（6回未満の送料の差額）"),
+        ("/articles/sugisapo-deli-kuchikomi/", "スギサポdeliの口コミ・評判（スギ薬局の冷凍宅配食）"),
         ("/articles/takushoku-ryokin-hakusho/", "宅食料金白書｜各社の料金・送料・1食単価"),
     ],
 }

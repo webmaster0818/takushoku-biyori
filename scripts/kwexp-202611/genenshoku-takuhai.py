@@ -187,6 +187,7 @@ ARTICLE = {
         ("/articles/tsurukame-reviews/", "Dr.つるかめキッチンの口コミ・評判"),
         ("/articles/medimeal-kuchikomi/", "メディミールの口コミ・評判"),
         ("/articles/shokutakubin-reviews/", "食宅便の口コミ・評判"),
+        ("/articles/sugisapo-deli-kuchikomi/", "スギサポdeliの口コミ・評判（スギ薬局の冷凍宅配食）"),
         ("/articles/takushoku-ryokin-hakusho/", "宅食料金白書"),
     ],
 }

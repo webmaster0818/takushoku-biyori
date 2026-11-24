@@ -199,5 +199,6 @@ ARTICLE = {
         ("/articles/nosh-vs-mitsuboshi-vs-wellness/", "nosh・三ツ星ファーム・ウェルネスダイニング 3社比較"),
         ("/articles/muscle-deli-nosh-hikaku/", "マッスルデリと nosh の比較"),
         ("/articles/toushitsu-seigen-osusume/", "糖質制限におすすめの宅配弁当"),
+        ("/articles/meals-kuchikomi/", "ミールズ（Meals）の口コミ・評判"),
     ],
 }

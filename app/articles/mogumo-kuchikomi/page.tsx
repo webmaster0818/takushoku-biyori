@@ -478,6 +478,7 @@ export default function MogumoKuchikomiPage() {
             <li><Link href="/articles/mogumoguimo-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">MOGUMOGUいも（歯固め干し芋）の口コミ・評判</Link></li>
             <li><Link href="/articles/sango-osusume/" className="text-accent hover:text-accent-dark transition-colors">産後におすすめの宅配弁当ランキング</Link></li>
             <li><Link href="/articles/mamano-kyushoku-reviews/" className="text-accent hover:text-accent-dark transition-colors">ママの休食の口コミ・評判</Link></li>
+            <li><Link href="/articles/homeal-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">ホーミール（homeal）の口コミ・評判</Link></li>
             <li><Link href="/articles/reitouko-chiisai-takuhai-bento/" className="text-accent hover:text-accent-dark transition-colors">冷凍庫が小さくても使える宅配弁当</Link></li>
           </ul>
         </div>

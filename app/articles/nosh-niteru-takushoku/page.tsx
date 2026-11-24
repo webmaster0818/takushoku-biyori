@@ -279,6 +279,7 @@ export default function NoshNiteruTakushokuPage() {
             <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">nosh・三ツ星ファーム・ウェルネスダイニング 3社比較</Link></li>
             <li><Link href="/articles/muscle-deli-nosh-hikaku/" className="text-accent hover:text-accent-dark transition-colors">マッスルデリと nosh の比較</Link></li>
             <li><Link href="/articles/toushitsu-seigen-osusume/" className="text-accent hover:text-accent-dark transition-colors">糖質制限におすすめの宅配弁当</Link></li>
+            <li><Link href="/articles/meals-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">ミールズ（Meals）の口コミ・評判</Link></li>
           </ul>
         </div>
 

@@ -325,6 +325,7 @@ export default function KaigoshokuTakuhaiPage() {
             <li><Link href="/articles/takuhai-cook123-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">宅配クック123の料金・配達料・安否確認</Link></li>
             <li><Link href="/articles/mutenka-takuhai-bento/" className="text-accent hover:text-accent-dark transition-colors">無添加の宅配弁当・冷凍宅食を公式の表記で比較</Link></li>
             <li><Link href="/articles/shokunosoyokaze-kaiyaku/" className="text-accent hover:text-accent-dark transition-colors">食のそよ風の解約方法（6回未満の送料の差額）</Link></li>
+            <li><Link href="/articles/sugisapo-deli-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">スギサポdeliの口コミ・評判（スギ薬局の冷凍宅配食）</Link></li>
             <li><Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark transition-colors">宅食料金白書｜各社の料金・送料・1食単価</Link></li>
           </ul>
         </div>

@@ -495,6 +495,7 @@ export default function NoshOsusumeMenuPage() {
             <li><Link href="/articles/nosh-niteru-takushoku/" className="text-accent hover:text-accent-dark transition-colors">ナッシュに似てる宅食（nosh の基準で6社を集計）</Link></li>
             <li><Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark transition-colors">nosh（ナッシュ）の口コミ・評判</Link></li>
             <li><Link href="/articles/nosh-ryoukin-souryou/" className="text-accent hover:text-accent-dark transition-colors">nosh（ナッシュ）の料金・送料の仕組み</Link></li>
+            <li><Link href="/articles/nosh-shiharai-houhou/" className="text-accent hover:text-accent-dark transition-colors">nosh（ナッシュ）の支払い方法</Link></li>
             <li><Link href="/articles/muscle-deli-nosh-hikaku/" className="text-accent hover:text-accent-dark transition-colors">マッスルデリとナッシュの比較</Link></li>
             <li><Link href="/articles/mitsuboshi-osusume-menu/" className="text-accent hover:text-accent-dark transition-colors">三ツ星ファームのおすすめメニュー</Link></li>
           </ul>

@@ -485,6 +485,8 @@ export default function KouTanpakuRankingPage() {
           <Link href="/articles/toushitsu-seigen-osusume/" className="text-accent hover:text-accent-dark underline font-medium text-sm">糖質制限おすすめ宅配</Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline font-medium text-sm">nosh口コミ・評判</Link>
+          <span className="text-warm-gray text-sm mx-2">|</span>
+          <Link href="/articles/meals-kuchikomi/" className="text-accent hover:text-accent-dark underline font-medium text-sm">ミールズ（Meals）の口コミ・評判</Link>
         </div>
 
         <div className="border-t border-warm-border pt-6 mt-8">

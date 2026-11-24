@@ -1121,6 +1121,7 @@ export default function NoshReviewsPage() {
               </Link>
             </li>
             <li><Link href="/articles/nosh-ryoukin-souryou/" className="text-accent hover:text-accent-dark transition-colors">nosh（ナッシュ）の料金・送料の仕組みをわかりやすく解説</Link></li>
+            <li><Link href="/articles/nosh-shiharai-houhou/" className="text-accent hover:text-accent-dark transition-colors">nosh（ナッシュ）の支払い方法（クレジットカード・コンビニ後払い・Apple Pay）</Link></li>
             <li><Link href="/articles/oisix-vs-nosh/" className="text-accent hover:text-accent-dark transition-colors">オイシックス vs nosh(ナッシュ)比較｜ミールキットと冷凍弁当はどっちが向いている？</Link></li>
           </ul>
         </div>

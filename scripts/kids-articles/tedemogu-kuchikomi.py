@@ -227,5 +227,6 @@ ARTICLE = {
         ("/articles/mogumoguimo-kuchikomi/", "MOGUMOGUいも（歯固め干し芋）の口コミ・評判"),
         ("/articles/sango-osusume/", "産後におすすめの宅配弁当ランキング"),
         ("/articles/mamano-kyushoku-reviews/", "ママの休食の口コミ・評判"),
+        ("/articles/homeal-kuchikomi/", "ホーミール（homeal）の口コミ・評判"),
     ],
 }
