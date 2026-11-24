@@ -415,6 +415,7 @@ export default function WatamiReviewsPage() {
         <div className="space-y-2 mb-6">
           {[
             { href: "/articles/watami-takushoku-otameshi/", label: "ワタミの宅食のお試し（初回割引）" },
+            { href: "/articles/lifedeli-kuchikomi/", label: "ライフデリの口コミ・評判（毎日手渡しの高齢者向け配食）" },
             { href: "/articles/nosh-vs-mitsuboshi-vs-wellness/", label: "nosh・三ツ星ファーム・ウェルネスダイニング 3社比較" },
             { href: "/articles/koureisha-osusume/", label: "高齢者向け宅配弁当おすすめランキング" },
             { href: "/articles/souryou-yasui-ranking/", label: "送料が安い宅配弁当ランキング" },

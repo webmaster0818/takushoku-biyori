@@ -726,6 +726,7 @@ export default function KoureishaOsusumePage() {
             <li><Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark transition-colors">一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5</Link></li>
             <li><Link href="/articles/coopdeli-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">コープ（生協）の宅配弁当の口コミ｜コープデリ夕食宅配は冷蔵で平日毎日お届け</Link></li>
             <li><Link href="/articles/takuhai-cook123-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">宅配クック123の料金・配達料・安否確認｜1食から頼める高齢者向け宅配弁当</Link></li>
+            <li><Link href="/articles/lifedeli-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">ライフデリの口コミ・評判｜43都道府県の普通食の価格と治療食の料金</Link></li>
           </ul>
         </div>
       
