@@ -515,6 +515,8 @@ export default function MitsuboshiOsusumeMenuPage() {
         <div className="border-t border-warm-border pt-6 mt-8">
           <p className="font-bold text-sm mb-3">関連記事</p>
           <ul className="space-y-2 text-sm">
+            <li><Link href="/articles/mitsuboshi-app/" className="text-accent hover:text-accent-dark transition-colors">三ツ星ファームのアプリでできること</Link></li>
+            <li><Link href="/articles/mitsuboshi-tenkabutsu/" className="text-accent hover:text-accent-dark transition-colors">三ツ星ファームの添加物（原材料表示の集計）</Link></li>
             <li><Link href="/articles/mitsuboshi-farm-reviews/" className="text-accent hover:text-accent-dark transition-colors">三ツ星ファームの口コミ・評判</Link></li>
             <li><Link href="/articles/mitsuboshi-coupon/" className="text-accent hover:text-accent-dark transition-colors">三ツ星ファームのクーポン・キャンペーン</Link></li>
             <li><Link href="/articles/mitsuboshi-tapioca/" className="text-accent hover:text-accent-dark transition-colors">三ツ星ファームのタピオカ（黒糖・抹茶）</Link></li>

@@ -900,6 +900,7 @@ export default function MedimealKuchikomiPage() {
         <div className="mt-10 bg-cream rounded-xl p-6">
           <p className="font-bold text-sm mb-3">関連記事</p>
           <ul className="space-y-2 text-sm">
+            <li><Link href="/articles/jinzobyo-takuhai-bento/" className="text-accent hover:text-accent-dark transition-colors">腎臓病向けの宅配弁当4社（たんぱく質・カリウムの基準）</Link></li>
             <li>
               <Link href="/articles/tsurukame-reviews/" className="text-accent hover:text-accent-dark transition-colors">
                 Dr.つるかめキッチンの口コミ・評判は？まずいって本当？

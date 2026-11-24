@@ -532,6 +532,8 @@ export default function TsurukameReviewsPage() {
         <SubHeading>関連記事</SubHeading>
         <div className="space-y-2 mb-6">
           {[
+            { href: "/articles/genenshoku-takuhai/", label: "減塩食の宅配4社を比較" },
+            { href: "/articles/jinzobyo-takuhai-bento/", label: "腎臓病向けの宅配弁当4社を比較" },
             { href: "/articles/tsurukame-kaiyaku/", label: "Dr.つるかめキッチンの解約方法（締切・電話の期限）" },
             { href: "/articles/wellness-dining-reviews/", label: "ウェルネスダイニングの口コミ・評判" },
             { href: "/articles/shokutakubin-reviews/", label: "食宅便の口コミ・評判" },

@@ -224,6 +224,8 @@ ARTICLE = {
         p("メニュー・栄養成分・人気順は変わることがあります。ご利用前に、公式サイトで最新の情報をご確認ください。"),
     ]),
     "related": [
+        ("/articles/mitsuboshi-app/", "三ツ星ファームのアプリでできること"),
+        ("/articles/mitsuboshi-tenkabutsu/", "三ツ星ファームの添加物（原材料表示の集計）"),
         ("/articles/mitsuboshi-farm-reviews/", "三ツ星ファームの口コミ・評判"),
         ("/articles/mitsuboshi-coupon/", "三ツ星ファームのクーポン・キャンペーン"),
         ("/articles/mitsuboshi-tapioca/", "三ツ星ファームのタピオカ（黒糖・抹茶）"),

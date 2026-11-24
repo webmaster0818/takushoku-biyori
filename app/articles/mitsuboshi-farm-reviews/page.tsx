@@ -1132,6 +1132,8 @@ export default function MitsuboshiFarmReviewsPage() {
         <div className="mt-10 bg-cream rounded-xl p-6">
           <p className="font-bold text-sm mb-3">関連記事</p>
           <ul className="space-y-2 text-sm">
+            <li><Link href="/articles/mitsuboshi-tenkabutsu/" className="text-accent hover:text-accent-dark transition-colors">三ツ星ファームの添加物（全メニューの原材料表示を集計）</Link></li>
+            <li><Link href="/articles/mitsuboshi-app/" className="text-accent hover:text-accent-dark transition-colors">三ツ星ファームのアプリでできること</Link></li>
             <li><Link href="/articles/mitsuboshi-tapioca/" className="text-accent hover:text-accent-dark transition-colors">三ツ星ファームのタピオカ（黒糖・抹茶の作り方と栄養成分）</Link></li>
             <li>
               <Link

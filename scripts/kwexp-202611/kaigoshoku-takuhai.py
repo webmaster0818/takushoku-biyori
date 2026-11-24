@@ -218,6 +218,8 @@ ARTICLE = {
         p("料金・送料・商品は変わることがあります。ご利用前に、各社の公式サイトで最新の情報をご確認ください。"),
     ]),
     "related": [
+        ("/articles/genenshoku-takuhai/", "減塩食の宅配4社を比較"),
+        ("/articles/jinzobyo-takuhai-bento/", "腎臓病向けの宅配弁当4社を比較"),
         ("/articles/koureisha-osusume/", "高齢者向け宅配弁当の比較｜やわらか食・制限食も"),
         ("/articles/magokoro-care-reviews/", "まごころケア食の口コミ・評判"),
         ("/articles/wellness-dining-reviews/", "ウェルネスダイニングの口コミ・評判"),

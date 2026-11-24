@@ -317,6 +317,8 @@ export default function KaigoshokuTakuhaiPage() {
         <div className="border-t border-warm-border pt-6 mt-8">
           <p className="font-bold text-sm mb-3">関連記事</p>
           <ul className="space-y-2 text-sm">
+            <li><Link href="/articles/genenshoku-takuhai/" className="text-accent hover:text-accent-dark transition-colors">減塩食の宅配4社を比較</Link></li>
+            <li><Link href="/articles/jinzobyo-takuhai-bento/" className="text-accent hover:text-accent-dark transition-colors">腎臓病向けの宅配弁当4社を比較</Link></li>
             <li><Link href="/articles/koureisha-osusume/" className="text-accent hover:text-accent-dark transition-colors">高齢者向け宅配弁当の比較｜やわらか食・制限食も</Link></li>
             <li><Link href="/articles/magokoro-care-reviews/" className="text-accent hover:text-accent-dark transition-colors">まごころケア食の口コミ・評判</Link></li>
             <li><Link href="/articles/wellness-dining-reviews/" className="text-accent hover:text-accent-dark transition-colors">ウェルネスダイニングの口コミ・評判</Link></li>

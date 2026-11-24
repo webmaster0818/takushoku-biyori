@@ -494,6 +494,8 @@ export default function WatamiDirectOtameshiPage() {
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/watami-reviews/" className="text-accent hover:text-accent-dark underline font-medium text-sm">ワタミの宅食 口コミ・評判</Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
+          <Link href="/articles/watami-takushoku-otameshi/" className="text-accent hover:text-accent-dark underline font-medium text-sm">ワタミの宅食（冷蔵）のお試し＝初回割引</Link>
+          <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/souryou-yasui-ranking/" className="text-accent hover:text-accent-dark underline font-medium text-sm">送料が安い宅配ランキング</Link>
           <span className="text-warm-gray text-sm mx-2">|</span>
           <Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline font-medium text-sm">nosh口コミ・評判</Link>
