@@ -62,6 +62,12 @@ const BRANDS = hakusho.brands as unknown as Brand[];
 // ワタミの宅食ダイレクトのみ、plans[0] が1回限りのお試し価格のため通常プラン（plans[1]）を採用。
 const REP_PLAN_INDEX: Record<string, number> = { "watami-direct": 1 };
 
+// 代表プランが定期価格で、定期なら送料無料の社は、定期の送料（0円）で計算する。
+// 定期価格＋都度送料という実在しない組み合わせにしない（公式で定期送料無料を 2026-11-23・11-24 に確認）
+const SUBSCRIPTION_SHIP: Record<string, number> = { "tsurukame-kitchen": 0, medimeal: 0 };
+const repShip = (brand: Brand): number | null =>
+  SUBSCRIPTION_SHIP[brand.slug] ?? brand.shipping.representative_jpy;
+
 // 実質単価を「−」表示にするブランドと、その理由（欠損の推測埋めはしない）
 const MISSING_REASON: Record<string, string> = {
   yoshikei:
@@ -177,16 +183,16 @@ const DISPLAY: Record<
   },
   "tsurukame-kitchen": {
     reviewHref: "/articles/tsurukame-reviews/",
-    shippingLabel: "770円（都度）",
+    shippingLabel: "0円（定期コース）",
     discountLabel: "定期28%OFF（初回から適用）",
     lockLabel: "なし",
-    unitNote: "定期コースは送料無料",
+    unitNote: "都度購入は送料770円",
   },
   medimeal: {
-    shippingLabel: "880円（都度）",
+    shippingLabel: "0円（定期便）",
     discountLabel: "初回送料無料",
     lockLabel: "なし",
-    unitNote: "初回・定期便は送料無料",
+    unitNote: "2回目以降の都度注文は7食・14食で送料880円",
   },
   // 注: マッスルデリ（muscle-deli-reviews）は別サービスのため口コミ記事リンクなし
   "kinnikushokudo-deli": {
@@ -216,7 +222,7 @@ type Row = {
 
 const rows: Row[] = BRANDS.map((brand) => {
   const plan = brand.plans[REP_PLAN_INDEX[brand.slug] ?? 0];
-  const ship = brand.shipping.representative_jpy;
+  const ship = repShip(brand);
   const missingReason = MISSING_REASON[brand.slug];
   const unit =
     !missingReason && plan.price_jpy != null && plan.meals != null && ship != null
@@ -356,7 +362,7 @@ function SubHeading({ children }: { children: React.ReactNode }) {
 export default function TakushokuRyokinHakushoPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-10-12T00:00:00+09:00",
+    datePublished: "2026-07-04T00:00:00+09:00", dateModified: "2026-11-24T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -419,7 +425,7 @@ export default function TakushokuRyokinHakushoPage() {
         <SectionHeading id="methodology">調査方法（全18社を公式サイトで直接確認）</SectionHeading>
         <ul className="text-sm mb-6 leading-relaxed list-disc list-inside space-y-2">
           <li><strong>調査対象:</strong> 宅配弁当・宅食（冷凍弁当・冷蔵惣菜・夕食宅配・ミールキット）18ブランド</li>
-          <li><strong>確認日:</strong> {VERIFIED_DATE}（初回調査は2026年7月4日。本ページの数値は税込で、15社は2026年10月12日、Dr.つるかめキッチン・メディミール・FIT FOOD HOMEの3社は2026年10月11日に公式サイトで再確認した値です（FIT FOOD HOMEは2026年11月14日、メディミールは2026年11月18日、Dr.つるかめキッチンは2026年11月19日にも公式サイトで料金・送料を確認し、変更はありませんでした）。10月の再確認で反映した主な変更＝ワタミの宅食ダイレクトの送料改定（2026年10月1日〜・本州990円）、ウェルネスダイニング全コースとツクリオ4人前プランの値上げ、noshの送料表改訂、ヨシケイのお試し価格の表記変更、FIT FOOD HOMEの単品価格訂正、メディミール都度21食の送料無料。GREEN SPOONの食数別価格など、公式で確定できない値は引き続き「−」です）</li>
+          <li><strong>確認日:</strong> {VERIFIED_DATE}（初回調査は2026年7月4日。本ページの数値は税込で、15社は2026年10月12日、Dr.つるかめキッチン・メディミール・FIT FOOD HOMEの3社は2026年10月11日に公式サイトで再確認した値です（FIT FOOD HOMEは2026年11月14日、メディミールは2026年11月18日、Dr.つるかめキッチンは2026年11月19日にも公式サイトで料金・送料を確認し、変更はありませんでした。Dr.つるかめキッチン・メディミールは定期なら送料無料であることを2026年11月24日に公式サイトで確認し、この日から実質単価を定期の送料（無料）で計算しています。それまでは定期価格に都度の送料を足して計算していました）。10月の再確認で反映した主な変更＝ワタミの宅食ダイレクトの送料改定（2026年10月1日〜・本州990円）、ウェルネスダイニング全コースとツクリオ4人前プランの値上げ、noshの送料表改訂、ヨシケイのお試し価格の表記変更、FIT FOOD HOMEの単品価格訂正、メディミール都度21食の送料無料。GREEN SPOONの食数別価格など、公式で確定できない値は引き続き「−」です）</li>
           <li><strong>情報源:</strong> 各社公式サイトのみを直接確認しています。<strong>比較サイト・まとめ記事からの転記は一切していません</strong></li>
           <li><strong>実質単価の計算式:</strong> (代表プランの税込料金＋代表送料)÷食数。送料は各社の代表値（地域別の場合は関東など公式の代表表記）を採用し、送料無料・配達料込みのサービスは0円として計算</li>
           <li><strong>代表プラン:</strong> 各社の基準となる最小〜標準プラン（1回限りのお試し特価は比較対象から除外）</li>
@@ -491,8 +497,8 @@ export default function TakushokuRyokinHakushoPage() {
         <div className="bg-cream rounded-lg p-4 text-xs text-warm-gray leading-relaxed mb-6">
           <p className="font-bold text-foreground mb-2">補足（表の実質単価が変わる条件）</p>
           <ul className="space-y-1.5 list-disc list-inside">
-            <li>Dr.つるかめキッチンは定期コースなら送料無料のため、定期継続時は1食{yen(Math.round((brandOf("tsurukame-kitchen").plans[0].price_jpy as number) / 7))}円になります（表は都度送料770円で計算）。</li>
-            <li>メディミールは初回・定期便が送料無料のため、その場合は1食{yen(Math.round((brandOf("medimeal").plans[0].price_jpy as number) / 7))}円になります（表は都度送料880円で計算）。</li>
+            <li>Dr.つるかめキッチンは代表プランが定期コース価格のため、表は定期の送料（無料）で計算しています。都度購入は7食{yen(brandOf("tsurukame-kitchen").plans[3].price_jpy as number)}円（送料770円込み）で、1食{yen(Math.round((brandOf("tsurukame-kitchen").plans[3].price_jpy as number) / 7))}円になります。</li>
+            <li>メディミールは初回・定期便が送料無料のため、表は定期便の送料（無料）で計算しています。2回目以降を都度で注文する場合は7食・14食に送料880円がかかり、7食なら1食{yen(calcUnit(brandOf("medimeal").plans[0].price_jpy as number, 880, 7))}円になります（21食は送料無料）。</li>
             <li>ウェルネスダイニングの定期は7食で送料440円（1食{yen(calcUnit(brandOf("wellness-dining").plans[0].price_jpy as number, 440, 7))}円）、14食・21食は送料無料になります。</li>
             <li>ツクリオは2人前×3食＝6食分として換算しています（おかずのセットで1人前1食分あたりの価格）。</li>
             <li>コープデリ・おうちコープの夕食宅配は1食単位の定期（週3日以上等の条件あり）で、2食以上の注文で1食あたり割引があります。</li>
@@ -514,13 +520,13 @@ export default function TakushokuRyokinHakushoPage() {
             ],
             [
               "600〜700円台",
-              `ライフミール（${yen(unitOf("lifemeal") as number)}円）、コープデリ舞菜おかず（${yen(unitOf("coopdeli") as number)}円）`,
-              "低価格帯。生協は配達手数料無料が効く",
+              `ライフミール（${yen(unitOf("lifemeal") as number)}円）、コープデリ舞菜おかず（${yen(unitOf("coopdeli") as number)}円）、Dr.つるかめキッチン（${yen(unitOf("tsurukame-kitchen") as number)}円・定期）、メディミール（${yen(unitOf("medimeal") as number)}円・定期便）`,
+              "低価格帯。生協は配達手数料無料、制限食の2社は定期の送料無料が効く",
             ],
             [
               "800円台",
-              `食宅便（${yen(unitOf("shokutakubin") as number)}円）、Dr.つるかめキッチン（${yen(unitOf("tsurukame-kitchen") as number)}円）、メディミール（${yen(unitOf("medimeal") as number)}円）、おうちコープ（${yen(unitOf("ouchi-coop") as number)}円）`,
-              "制限食・栄養管理系の主戦場",
+              `食宅便（${yen(unitOf("shokutakubin") as number)}円）、おうちコープ（${yen(unitOf("ouchi-coop") as number)}円）`,
+              "定期便でも送料がかかる冷凍弁当（食宅便は定期940円）と、生協の夕食宅配",
             ],
             [
               "900円〜1,000円台",
@@ -557,8 +563,8 @@ export default function TakushokuRyokinHakushoPage() {
                 const brand = brandOf(bp.slug);
                 const plan = brand.plans[bp.planIndex];
                 const unit =
-                  plan.price_jpy != null && plan.meals != null && brand.shipping.representative_jpy != null
-                    ? calcUnit(plan.price_jpy, brand.shipping.representative_jpy, plan.meals)
+                  plan.price_jpy != null && plan.meals != null && repShip(brand) != null
+                    ? calcUnit(plan.price_jpy, repShip(brand) as number, plan.meals)
                     : null;
                 return (
                   <tr key={bp.slug} className={i % 2 === 1 ? "bg-cream/50" : ""}>
@@ -573,7 +579,7 @@ export default function TakushokuRyokinHakushoPage() {
           </table>
         </div>
         <p className="text-xs text-warm-gray mb-4">
-          ※noshの送料は4〜12食で同額（関東1,166円）のため、10食なら実質単価は{yen(calcUnit(brandOf("nosh").plans[2].price_jpy as number, 1166, 10))}円、12食なら{yen(calcUnit(brandOf("nosh").plans[3].price_jpy as number, 1166, 12))}円になります（2026年7月27日改訂の送料表・2026年10月10日確認）。Dr.つるかめキッチンは定期なら送料無料でさらに下がります。三ツ星ファームの14食・21食は初回送料無料です。
+          ※noshの送料は4〜12食で同額（関東1,166円）のため、10食なら実質単価は{yen(calcUnit(brandOf("nosh").plans[2].price_jpy as number, 1166, 10))}円、12食なら{yen(calcUnit(brandOf("nosh").plans[3].price_jpy as number, 1166, 12))}円になります（2026年7月27日改訂の送料表・2026年10月10日確認）。Dr.つるかめキッチンは定期の送料（無料）で計算しています。三ツ星ファームの14食・21食は初回送料無料です。
         </p>
         <p className="text-sm mb-6 leading-relaxed">
           まごころケア食は21食セットで<strong>1食{yen(calcUnit(magokoro21.price_jpy as number, 980, magokoro21.meals as number))}円</strong>まで下がり、今回の調査で最も安い水準でした。また三ツ星ファームには長期継続応援プラン21食（{yen(mitsuboshiChoki21.price_jpy as number)}円＋送料）という選択肢もありますが、後述の<a href="#cancel-lock" className="text-accent hover:underline">解約縛り</a>とセットなので注意が必要です。冷凍庫の容量が許すなら、大容量プランを選ぶのが送料負担を下げる最短ルートです。
