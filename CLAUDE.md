@@ -804,3 +804,12 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - JSON: 両社 verified_at 11/24・reverify_note に1文
 - 報告のみ: 目的別ハブ（koureisha ほか）の実質単価表は今も つるかめ・メディミールを都度送料込みで計算（定期価格＋770/880円）。白書と同じ扱いにするかは判断待ち
 - sitemap: 白書・/articles/ 11/24、TOP は 11/8 に戻した
+
+### 2026-11-25 深夜2時 kwexp: 新規5記事 ✅本番反映（source 1b4922e・42e1ef9・95235b9 / deploy aece3f2e・precheck 106頁 全項目OK・trust-audit check_page 新規5ページ指摘0・heading-lint 既存1件のみ・計測リンク html 144件 md5 作業前 deploy と一致）
+- queue 上から: 減塩食 宅配 800 → `genenshoku-takuhai`（ウェルネス k130・つるかめ post-93・メディミール lowsalt・食宅便 c30。食宅便 塩分&カロリーケア34品の栄養成分を `shokutakubin-enbun-care-20261125.tsv` に＝塩分1.5〜1.9g・中央値1.9g・カリウム500mg超21品）／腎臓病 宅配弁当 312 → `jinzobyo-takuhai-bento`（ウェルネス k110・つるかめ post-108・メディミール protein・食宅便 c31。たんぱくケア35品 `shokutakubin-tanpaku-care-20261125.tsv` と減塩コースを比較＝たんぱく質 中央値10.6g vs 18.4g・10.2g超22品）／三ツ星ファーム 添加物 384 → `mitsuboshi-tenkabutsu`（公開データ regular_menus の【原材料】を `mitsuboshi-ingredients-20261125.tsv` に。注文可・原材料あり137品：調味料（アミノ酸等）115・保存料8・甘味料8。食宅便69品と比較＝`shokutakubin-ingredients-20261125.tsv`）／三ツ星ファーム アプリ 208 → `mitsuboshi-app`（App Store id6468603197＝iPhoneのみ・iOS15.1以降・4.2/9,378件、Google Play jp.mitsuboshifarm＝5万+・4.0/1,550件・最終更新11/09。停止は公式トップ注意事項「次回出荷予定日の4日前までにアプリ・LINE・電話」）／ワタミの宅食 お試し 168 → `watami-takushoku-otameshi`（/category/firstfree の初回割引＝7商品の5日間コース通常→割引（全て20%OFF）・対象者・除外週、/contents/bento-faq・bento-flow の締切・届き方）
+- skip: おかずのみ 宅配（gohan-tsuki-reitou-bento の「おかずのみ」節と重複）・まごころ弁当 まずい（GSC で magokoro-care-reviews が「まごころ弁当」系に表示中）
+- 公式内の食い違い（記事に併記）: つるかめ コースページ料金表「税抜」／本文「5,184円（税込）」、メディミール protein ページ「定期は毎回送料無料」／「定期お届けは送料800円(税別)がずっと半額」、ウェルネス k130「ずっと送料無料」／FAQ 定期7食のみ440円
+- ⚠️ 既存 mitsuboshi-farm-reviews の「iOS・Android向けの公式アプリ」は正しい（Google Play 掲載を確認）。App Store の表示は「iPhoneのみ対応」（iPad 非対応）
+- 全5記事の ad_note は「リンクはすべて公式サイト（・アプリストア）で、アフィリエイト広告ではありません」（三ツ星・ウェルネスは提携済みのため「提携しておらず」の既定文は使わない）
+- 導線: koureisha・tsurukame-reviews・kaigoshoku→減塩/腎臓病、medimeal→腎臓病、mitsuboshi-farm-reviews・mitsuboshi-osusume-menu→添加物/アプリ、mutenka→添加物、watami-reviews・watami-direct-otameshi→ワタミの宅食お試し（[no-lastmod]）
+- sitemap: 新規5記事 11/25・/articles/ 11/25、TOP 11/8 のまま
