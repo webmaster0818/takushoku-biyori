@@ -185,5 +185,6 @@ ARTICLE = {
         ("/articles/mutenka-takuhai-bento/", "無添加の宅配弁当・冷凍宅食5社"),
         ("/articles/reitou-bento-eiyou-baransu/", "冷凍弁当の栄養バランス・添加物の見方"),
         ("/articles/nosh-vs-mitsuboshi-vs-wellness/", "nosh・三ツ星ファーム・ウェルネスダイニングを比較"),
+        ("/articles/nosh-tenkabutsu/", "ナッシュの添加物（おかず79品の集計）"),
     ],
 }

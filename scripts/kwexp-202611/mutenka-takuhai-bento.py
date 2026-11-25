@@ -161,5 +161,6 @@ ARTICLE = {
         ("/articles/kaigoshoku-takuhai/", "介護食の宅配7社を比較"),
         ("/articles/reitou-bento-eiyou-baransu/", "冷凍弁当の栄養バランス"),
         ("/articles/vividtable-kuchikomi/", "ビビッドテーブル（食べチョク発の国産冷凍食）の口コミ・評判"),
+        ("/articles/nosh-tenkabutsu/", "ナッシュの添加物（使用しない添加物リストとの照合）"),
     ],
 }

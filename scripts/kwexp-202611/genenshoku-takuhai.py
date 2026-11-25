@@ -189,5 +189,6 @@ ARTICLE = {
         ("/articles/shokutakubin-reviews/", "食宅便の口コミ・評判"),
         ("/articles/sugisapo-deli-kuchikomi/", "スギサポdeliの口コミ・評判（スギ薬局の冷凍宅配食）"),
         ("/articles/takushoku-ryokin-hakusho/", "宅食料金白書"),
+        ("/articles/kenko-chokkyubin-kuchikomi/", "健康直球便の口コミ・評判（カロリー・塩分調整食ほか）"),
     ],
 }

@@ -585,6 +585,10 @@ export default function NoshRyoukinSouryouPage() {
           <Link href="/articles/nosh-shiharai-houhou/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
             noshの支払い方法
           </Link>
+          <span className="text-warm-gray text-sm mx-2">|</span>
+          <Link href="/articles/nosh-shoumi-kigen/" className="text-accent hover:text-accent-dark underline font-medium text-sm">
+            noshの賞味期限
+          </Link>
         </div>
 
         <div className="border-t border-warm-border pt-6 mt-8">

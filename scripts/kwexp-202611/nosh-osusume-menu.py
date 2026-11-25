@@ -230,5 +230,6 @@ ARTICLE = {
         ("/articles/nosh-shiharai-houhou/", "nosh（ナッシュ）の支払い方法"),
         ("/articles/muscle-deli-nosh-hikaku/", "マッスルデリとナッシュの比較"),
         ("/articles/mitsuboshi-osusume-menu/", "三ツ星ファームのおすすめメニュー"),
+        ("/articles/nosh-tenkabutsu/", "nosh（ナッシュ）の添加物（おかず79品の原材料表示を集計）"),
     ],
 }

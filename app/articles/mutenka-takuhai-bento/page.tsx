@@ -287,6 +287,7 @@ export default function MutenkaTakuhaiBentoPage() {
             <li><Link href="/articles/kaigoshoku-takuhai/" className="text-accent hover:text-accent-dark transition-colors">介護食の宅配7社を比較</Link></li>
             <li><Link href="/articles/reitou-bento-eiyou-baransu/" className="text-accent hover:text-accent-dark transition-colors">冷凍弁当の栄養バランス</Link></li>
             <li><Link href="/articles/vividtable-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">ビビッドテーブル（食べチョク発の国産冷凍食）の口コミ・評判</Link></li>
+            <li><Link href="/articles/nosh-tenkabutsu/" className="text-accent hover:text-accent-dark transition-colors">ナッシュの添加物（使用しない添加物リストとの照合）</Link></li>
           </ul>
         </div>
 

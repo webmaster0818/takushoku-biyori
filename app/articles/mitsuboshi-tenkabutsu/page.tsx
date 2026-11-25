@@ -294,6 +294,7 @@ export default function MitsuboshiTenkabutsuPage() {
             <li><Link href="/articles/mutenka-takuhai-bento/" className="text-accent hover:text-accent-dark transition-colors">無添加の宅配弁当・冷凍宅食5社</Link></li>
             <li><Link href="/articles/reitou-bento-eiyou-baransu/" className="text-accent hover:text-accent-dark transition-colors">冷凍弁当の栄養バランス・添加物の見方</Link></li>
             <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">nosh・三ツ星ファーム・ウェルネスダイニングを比較</Link></li>
+            <li><Link href="/articles/nosh-tenkabutsu/" className="text-accent hover:text-accent-dark transition-colors">ナッシュの添加物（おかず79品の集計）</Link></li>
           </ul>
         </div>
 

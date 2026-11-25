@@ -681,6 +681,7 @@ export default function SangoOsusumePage() {
             <li><Link href="/articles/diet-osusume/" className="text-accent hover:text-accent-dark transition-colors">ダイエット向け宅配弁当おすすめランキングTOP5</Link></li>
             <li><Link href="/articles/mamano-kyushoku-reviews/" className="text-accent hover:text-accent-dark transition-colors">ママの休食の口コミ・評判｜2026年10月改定後の料金・送料</Link></li>
             <li><Link href="/articles/homeal-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">ホーミール（homeal）の口コミ・評判（1歳からの幼児食）</Link></li>
+            <li><Link href="/articles/ninshinchu-takuhai-bento/" className="text-accent hover:text-accent-dark transition-colors">妊娠中の宅配弁当の選び方（食事摂取基準2025で7社を集計）</Link></li>
           </ul>
         </div>
       

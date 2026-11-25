@@ -533,6 +533,7 @@ export default function Page() {
           <li>・<Link href="/articles/mealtime-kuchikomi/" className="text-accent underline">ミールタイム（食事療法向け・管理栄養士に無料相談）</Link></li>
           <li>・<Link href="/articles/ouchi-coop-kuchikomi/" className="text-accent underline">おうちコープ（マイシィ）の評判</Link></li>
           <li>・<Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent underline">宅配弁当の料金白書（送料込みで比較）</Link></li>
+          <li>・<Link href="/articles/kenko-chokkyubin-kuchikomi/" className="text-accent underline">健康直球便（同じ本部が楽天市場で販売する冷凍弁当）</Link></li>
         </ul>
       </article>
     </>
