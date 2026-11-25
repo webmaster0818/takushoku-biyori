@@ -263,7 +263,7 @@ export default function MitsuboshiFarmReviewsPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-16T00:00:00+09:00",
-    dateModified: "2026-11-07T00:00:00+09:00",
+    dateModified: "2026-11-26T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -316,7 +316,7 @@ export default function MitsuboshiFarmReviewsPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-04-16">公開: 2026年4月16日</time>
-            <time dateTime="2026-11-07">更新: 2026年11月7日（料金・送料とレビュー件数は11月7日、解約の手順は10月28日に確認。満足度調査は2025年の結果）</time>
+            <time dateTime="2026-11-26">更新: 2026年11月26日（11月の会員情報漏えいのお知らせを11月26日、料金・送料とレビュー件数は11月7日、解約の手順は10月28日に確認。満足度調査は2025年の結果）</time>
             <span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
@@ -329,6 +329,7 @@ export default function MitsuboshiFarmReviewsPage() {
             <li><strong>味</strong>：評価は高めです。宅食利用者2,078名のGMO顧客満足度ランキング（2025年）で「商品のおいしさ」は8社中1位でした。Xの投稿を集計した Moovoo（2022年7〜8月）では、利用の感想のべ60件のうち味についてが42件で、味を評価しない声は4件でした。</li>
             <li><strong>「まずい」の中身</strong>：メニュー全体ではなく、一部のメニューや副菜への不満が中心です。48件を集計した tokyolucci では、不満の約3割が「味・量と料金の釣り合い」でした。</li>
             <li><strong>料金・解約</strong>：通常の定期便は1食711円〜927円（税込）＋送料990円です（料金・送料は公式で2026年11月7日確認）。停止はアプリ・公式LINE（24時間）か電話で、マイページの「変更締切日」（原則次回お届け予定日の7日前）までに手続きします。初回分はキャンセルできません（手続きは公式で2026年10月28日確認）。</li>
+            <li><strong>2026年11月のお知らせ</strong>：メール配信に使っている外部サービス（株式会社プレイドの「KARTE」）への不正アクセスで、会員の氏名・メールアドレス・電話番号・生年月日などが漏えいしたと公式が発表しています（2026年11月19日更新）。クレジットカード情報・住所・ログインパスワードは対象外で、注文やお届けへの影響はないとされています。詳しくは<a href="#caution" className="underline">口コミを読むときの注意点</a>へ。</li>
           </ul>
           <ComparisonTable
             headers={["定期便（税込）", "料金", "1食あたり", "送料込み1食（2回目以降）"]}
@@ -680,6 +681,25 @@ export default function MitsuboshiFarmReviewsPage() {
         <p className="text-xs text-gray-500 mb-6 leading-relaxed">
           出典: <a href="https://www.caa.go.jp/notice/entry/043618/" target="_blank" rel="noopener noreferrer nofollow" className="underline">消費者庁「株式会社イングリウッドから申請があった確約計画の認定について」</a>（2025年9月19日公表・2026年10月9日確認）
         </p>
+        <SubHeading>2026年11月：外部サービス経由の会員情報の漏えい</SubHeading>
+        <p className="text-sm mb-4 leading-relaxed">
+          公式サイトのお知らせ（2026年11月17日掲載・11月19日更新）によると、三ツ星ファームがメール配信などに使っている株式会社プレイドのサービス「KARTE（カルテ）」が第三者の不正アクセスを受け、会員情報が漏えいしました。三ツ星ファーム自体のシステムが不正アクセスを受けたものではないと説明されています。対象には退会済みの人も含まれます。
+        </p>
+        <ComparisonTable
+          headers={["漏えいした情報", "件数（公式発表）"]}
+          rows={[
+            ["氏名・メールアドレス・電話番号＋年齢・生年月日・性別（ユーザーID・定期契約ID）", "80,296件"],
+            ["氏名・メールアドレス・電話番号（ユーザーID・定期契約ID）", "22件"],
+            ["年齢・生年月日・性別（ユーザーID）※連絡先は含まない", "424,096件"],
+            ["クレジットカード情報・住所・ログインパスワード", "対象外"],
+          ]}
+        />
+        <p className="text-sm mb-4 leading-relaxed">
+          対象者には2026年11月18日から登録メールアドレス宛てに個別の連絡が送られています。公式は、三ツ星ファームや宅配業者・金融機関を名乗る不審なメール・SMS・電話に注意するよう呼びかけ、メール・SMS・電話でパスワードを尋ねることはないとしています（発表時点で三ツ星ファームを装った不審な連絡は確認されていないとのことです）。注文やお届けには影響がない一方、KARTE との連携を止めているため、当面は一部のメール・アプリのお知らせが届かない場合があります。本件の問い合わせ窓口は 0120-06-0512（9:00〜18:00・土日祝も受付）です。
+        </p>
+        <p className="text-xs text-gray-500 mb-6 leading-relaxed">
+          出典: <a href="https://mitsuboshifarm.jp/news/?news_id=20261117_news" target="_blank" rel="noopener noreferrer nofollow" className="underline">三ツ星ファーム公式「株式会社プレイドへの不正アクセスに伴うお客様情報の漏えいに関するお詫びとお知らせ」</a>（2026年11月19日更新版を2026年11月26日に確認）。調査の進み具合で内容が変わる可能性があると公式に記載されています。
+        </p>
 
         {/* ===== メリット ===== */}
         <SectionHeading id="merits">
@@ -906,6 +926,9 @@ export default function MitsuboshiFarmReviewsPage() {
         </p>
         <p className="text-sm mb-4 leading-relaxed">
           解約せずに少し休みたい場合は、お届け日の変更で受け取りを先に延ばせます。アプリでは「お届け」→「次回お届け日変更」→「お届け日」を選んで日付と時間帯を選び「変更する」、Webではマイページの「お届け日時の変更」→「次回お届け日時を変更」から選びます（最大2週間先まで。4週間ごとの人は受け取り日から最大42日先まで）。
+        </p>
+        <p className="text-sm mb-4 leading-relaxed">
+          なお、2026年11月19日更新の公式お知らせでは、上の<a href="#caution" className="underline">会員情報の漏えい</a>への対応でメール配信サービスとの連携を止めているため、当面は一部のメール・アプリのお知らせが届かない場合があるとして、定期プランのメニュー変更締切日は公式サイト・アプリのマイページで確認するよう案内しています（2026年11月26日確認）。
         </p>
         <p className="text-xs text-gray-500 mb-6 leading-relaxed">
           出典: <a href="https://faq.mitsuboshifarm.jp/" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式よくある質問</a>（「定期プランの停止について」「注文情報の変更期限について」「お届けを一時的に休止したい」）／<a href="https://terms.inglewood.co.jp/n09mnby078/commercial-transactions/" target="_blank" rel="noopener noreferrer nofollow" className="underline">特定商取引法に基づく表記</a>（2026年7月24日改定版）。いずれも2026年10月28日に確認しました。特定商取引法に基づく表記では、変更可能日は「原則次回配送日の7日前（配送地域や休業日により前後）」、解約の窓口は「公式アプリ、公式サイト、公式LINE又はお電話」とされています。公式トップページの注記では「次回出荷予定日の4日前までに公式アプリ・公式LINEのいずれかでお手続き、またはお電話」と表現されています（お届け日ではなく出荷予定日が基準）。締切はマイページの表示で確認するのが確実です。
