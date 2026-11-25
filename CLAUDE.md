@@ -822,3 +822,11 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - 公式内の食い違い（記事に併記）: ライフデリ トップ「1食513円〜」が同じページで（税抜）と（税込）の両方、鳥取県ページに税込486円／ホーミール トップ「常時80種類以上」・一覧は77品（ギフト含む）／ミールズ トップ「約60種類」・一覧63種
 - 導線: nosh-reviews・nosh-ryoukin-souryou・nosh-osusume-menu→支払い方法、genenshoku・jinzobyo・kaigoshoku→スギサポ、mogumo・tedemogu・sango→ホーミール、kou-tanpaku-ranking・nosh-niteru→ミールズ、watami-reviews・koureisha→ライフデリ（[no-lastmod]）。kids-articles の mogumo/tedemogu データにも追記
 - sitemap: 新規5記事・nosh-vs-mitsuboshi-vs-wellness 11/25、TOP 11/8 のまま（npm run build が TOP を 11/25 にするため毎回戻した）
+
+### 2026-11-25 20:00 kwexp: 新規4記事 ✅本番反映（source 2957884・a166b17・4236174 / deploy a1febf45・precheck 115頁 全項目OK・trust-audit check_page 新規4ページ指摘0・heading-lint 既存1件のみ・計測リンク html 144件 md5 作業前 deploy と一致）
+- queue 上から: ナッシュ 添加物 40 → `nosh-tenkabutsu`（/menu/detail/<id> 102件の原材料を `nosh-ingredients-20261125.tsv` に。販売中おかず79品：調味料（アミノ酸等）・加工でん粉 79/79・甘味料44・保存料34。公式 /promise の「使用しない食品添加物リスト」28成分は102件に0件。同日の三ツ星・食宅便と比較）／ナッシュ 賞味期限 40 → `nosh-shoumi-kigen`（同じ102件：おかず80・朝食6＝「製造日から365日」、デザート・パン・アイス16＝記載なし。FAQ answer/27「製造から約6ヵ月～1年程度・短いものでも1ヶ月程度余裕」・78・105・93、冷食協会 claim_06 の2〜3ヶ月、600W加熱時間の分布）／妊娠中 宅配弁当 32 → `ninshinchu-takuhai-bento`（食事摂取基準2025 策定ポイント PDF の妊婦の値→1食＝塩分2.1g以下・たんぱく質17g/25g以上に換算し、既存 tsv 7社791品を集計。両方満たすのは19品）／健康直球便 口コミ 24 → `kenko-chokkyubin-kuchikomi`（シニアライフクリエイト＝宅配クック123 本部。販売は楽天市場「健康直球便」店のみ。カテゴリ6ページ＝35セットの価格・レビュー件数（計18,454件）、商品ページ7件の栄養設計、info.html の送料・キャンセル。レビューは販売ページ表示分を原文で6件・投稿者名省略）
+- skip: グリーンスプーン 料金（green-spoon-kuchikomi と重複）・メディカルフードサービス 口コミ（公式販売ページ特定できず・候補 mfs-net.co.jp 403）・ワタミの宅食ダイレクト 料金（watami-direct-kuchikomi と重複）・ウェルネスダイニング ミールキット（宅食でない）・ほほえみ御膳 口コミ（belluna-gourmet.com 403＝11/16 と同じ扱い）。queue 空欄 0 → 次回は手順1（次の競合3案）
+- ⚠️ item.rakuten.co.jp は連続取得（2.5秒間隔）の1件目で 503 → 即停止。以後10秒間隔・必要な7件だけで 200。shop.mamakyu.com は 11/25 も products.json が 429（回避せず・妊娠中の記事でママの休食の個別情報は扱っていない）
+- メディミールの販売業者はベストリハ株式会社（medimeal.net 特商法）。メディカルフードサービス＝ダイエティシャンの会社で別
+- 導線: nosh-reviews・nosh-osusume-menu・mitsuboshi-tenkabutsu・mutenka→添加物、nosh-reviews・nosh-ryoukin-souryou→賞味期限、takuhai-cook123・koureisha・genenshoku・jinzobyo→健康直球便、sango・mamano→妊娠中（[no-lastmod]）
+- sitemap: 新規4記事 11/25、TOP 11/8 のまま（build 後に戻した）
