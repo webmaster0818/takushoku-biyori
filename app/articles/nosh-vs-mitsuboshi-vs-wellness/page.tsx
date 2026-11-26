@@ -524,10 +524,10 @@ export default function ArticlePage() {
             ["代金引換", "×（新規受付終了）", "×（カードエラー時の自動切替のみ）", "○（手数料330円）"],
             ["後払い", "○（コンビニ後払い・249円）", "○（NP後払い・248円）", "○（コンビニ・郵便局等・手数料330円）"],
             ["Amazon Pay", "×（新規受付終了）", "×", "○"],
-            ["コンビニ払い", "○（後払い）", "×", "○（後払い）"],
+            ["コンビニ払い", "○（後払い）", "○（NP後払い）", "○（後払い）"],
           ]}
         />
-        <p className="text-xs text-warm-gray mb-6">※noshの列は公式FAQ・特定商取引法に基づく表記で2026年11月25日に確認（ほかにApple Payも可。代金引換・Amazon Payは新規受付終了）。詳しくは<Link href="/articles/nosh-shiharai-houhou/" className="text-accent underline">nosh（ナッシュ）の支払い方法</Link>をご覧ください。</p>
+        <p className="text-xs text-warm-gray mb-6">※noshの列は公式FAQ・特定商取引法に基づく表記で2026年11月25日に確認（ほかにApple Payも可。代金引換・Amazon Payは新規受付終了）。詳しくは<Link href="/articles/nosh-shiharai-houhou/" className="text-accent underline">nosh（ナッシュ）の支払い方法</Link>をご覧ください。三ツ星ファームの列は公式FAQ「お支払い方法について」・特定商取引法に基づく表記、ウェルネスダイニングの列は公式FAQで2026年11月26日に確認しました。三ツ星ファームのNP後払いはコンビニ・郵便局・銀行で支払えます（アプリからは選択できません）。</p>
 
         {/* ===== 料金・コスト詳細比較表 ===== */}
         <SectionHeading id="price-detail">料金・コスト詳細比較表</SectionHeading>
