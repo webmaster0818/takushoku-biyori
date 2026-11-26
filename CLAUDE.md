@@ -830,3 +830,8 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - メディミールの販売業者はベストリハ株式会社（medimeal.net 特商法）。メディカルフードサービス＝ダイエティシャンの会社で別
 - 導線: nosh-reviews・nosh-osusume-menu・mitsuboshi-tenkabutsu・mutenka→添加物、nosh-reviews・nosh-ryoukin-souryou→賞味期限、takuhai-cook123・koureisha・genenshoku・jinzobyo→健康直球便、sango・mamano→妊娠中（[no-lastmod]）
 - sitemap: 新規4記事 11/25、TOP 11/8 のまま（build 後に戻した）
+
+### 2026-11-26 朝ルーチン: 点検 C3 返信・11/25 20時の新規4記事を公式で照合（変更なし）・nosh-vs-mitsuboshi-vs-wellness 支払い方法表の三ツ星/ウェルネス列を照合（source cdf9a00 / deploy 0b746e4f・precheck 115頁 全項目OK・計測リンク html 144件 md5 作業前 deploy と一致）
+- 点検 C3（otameshi-set-osusume・nosh-ryoukin-souryou・reitouko-chiisai-takuhai-bento・1shoku-200yen-dai・author・editorial・methodology）: 「編集部による実食」はすべて「現在未実施・導入準備中」等の否定文＝誤検知。otameshi の「実食比較できる」は読者への提案。「監修:」は判断待ちのため変更なし
+- 11/25 20時の4本を 11/26 に公式で再照合し、ずれ0: 健康直球便（楽天 slc-123 カテゴリ8ページ＝35セットの価格すべて一致・info.html の送料 沖縄のみ1,000円/30分キャンセル/2〜3営業日/後払い250円/平日9-17時・商品 2332045・2330025 の栄養設計一致。レビュー件数は微増＝11/25 時点の値として据え置き、ショップ評価 4.80/7,745件）／妊娠中（MHLW 策定ポイント PDF の 6.5g未満・50g・+0/+5/+25・1,950/2,050kcal・+50/250/450・葉酸+240/400µg 一致）／nosh 賞味期限・添加物（FAQ answer/27・78、/promise 28成分・食数6/8/10/12×1/2/3週、詳細 1037・1131・208 の 365日・加熱時間・添加物、冷食協会 claim_06 の2〜3ヶ月 一致）
+- 訂正: 支払い方法表 三ツ星ファーム「コンビニ払い ×」→「○（NP後払い）」（faq.mitsuboshifarm.jp「お支払い方法について」・特商法 terms.inglewood.co.jp＝NP後払い248円はコンビニ・郵便局・銀行で支払い可・アプリでは選択不可）。他の三ツ星列（代引はカードエラー時の自動切替のみ330円・Amazon Pay なし）とウェルネス列（/faq/kikubari/＝カード・AmazonPay・代引330円・後払い330円）は一致。注記に確認日。sitemap 11/26
