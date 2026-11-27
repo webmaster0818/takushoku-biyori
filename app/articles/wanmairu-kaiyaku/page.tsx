@@ -6,7 +6,8 @@ const ARTICLE_TITLE =
 const ARTICLE_DESCRIPTION =
   "わんまいる（健幸ディナー・美食弁当）の定期購入を解約する方法を、公式のよくあるご質問と定期商品ページで整理しました。解約・休止はマイページではなくサポートセンター（電話は平日10〜16時・メール・フォーム）で受け付け、締切は次回お届け予定日の6日前です。お届け曜日ごとの電話の最終日を当サイトで計算しています。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/wanmairu-kaiyaku/";
-const OFFICIAL_URL = "https://www.onemile.jp/";
+const OFFICIAL_URL = "https://t.felmat.net/fmcl?ak=H928D.1.V161884Z.B1357443";
+const OFFICIAL_IMP = "https://t.felmat.net/fmimp/H928D.V161884Z.B1357443";
 
 export const metadata: Metadata = {
   title: ARTICLE_TITLE,
@@ -132,8 +133,8 @@ function SubHeading({ children }: { children: React.ReactNode }) {
 function OfficialButton({ children }: { children: React.ReactNode }) {
   return (
     <div className="my-6 text-center">
-      <a href={OFFICIAL_URL} target="_blank" rel="noopener noreferrer" className="inline-block bg-accent hover:bg-accent-dark text-white font-bold py-3 px-8 rounded-full text-sm md:text-base transition-colors shadow-md">{children}</a>
-      <p className="text-[10px] text-gray-400 mt-2">※リンク先は公式サイトです（本リンクはアフィリエイト広告ではありません）</p>
+      <a href={OFFICIAL_URL} target="_blank" rel="nofollow noopener sponsored" className="inline-block bg-accent hover:bg-accent-dark text-white font-bold py-3 px-8 rounded-full text-sm md:text-base transition-colors shadow-md">{children}</a><img src={OFFICIAL_IMP} width={1} height={1} alt="" style={{ border: "none" }} />
+      <p className="text-[10px] text-gray-400 mt-2">PR・本記事はアフィリエイト広告を含みます</p>
     </div>
   );
 }
@@ -193,7 +194,7 @@ export default function WanmairuKaiyakuPage() {
               編集: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link>
             </span>
           </div>
-          <p className="mt-3 text-xs text-warm-gray">※本記事で紹介するサービスとは提携しておらず、記事内のリンクは広告ではありません。</p>
+          <p className="mt-3 text-xs text-warm-gray">※PR・本記事はアフィリエイト広告を含みます。</p>
         </header>
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -220,8 +221,8 @@ export default function WanmairuKaiyakuPage() {
             </div>
           </div>
           <p className="text-xs text-warm-gray">※料金・送料・商品は時期により変わります。最新の情報は公式サイトでご確認ください。</p>
-          <a href={OFFICIAL_URL} target="_blank" rel="noopener noreferrer" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">わんまいる 公式サイトを見る →</a>
-          <p className="text-[10px] text-gray-400 text-center mt-2">※リンク先は公式サイトです（本リンクはアフィリエイト広告ではありません）</p>
+          <a href={OFFICIAL_URL} target="_blank" rel="nofollow noopener sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">わんまいる 公式サイトを見る →</a><img src={OFFICIAL_IMP} width={1} height={1} alt="" style={{ border: "none" }} />
+          <p className="text-[10px] text-gray-400 text-center mt-2">PR・本記事はアフィリエイト広告を含みます</p>
         </div>
 
         <TableOfContents />

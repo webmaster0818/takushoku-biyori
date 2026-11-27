@@ -283,7 +283,7 @@ export default function YoshikeiVsWatamiPage() {
         </div>{/* /subhead */}
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 text-xs leading-relaxed">
-          <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。<strong>2026年11月1日時点の各社公式情報に基づき記述</strong>しています。料金・キャンペーンは変動するため、最新は<a href="https://www.yoshikei-dvlp.co.jp/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">ヨシケイ公式サイト</a>・<a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">ワタミの宅食公式サイト</a>でご確認ください。
+          <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。<strong>2026年11月1日時点の各社公式情報に基づき記述</strong>しています。料金・キャンペーンは変動するため、最新は<a href="https://t.felmat.net/fmcl?ak=G5087Q.1.X89994P.B1357443" target="_blank" rel="nofollow noopener sponsored" className="text-accent underline">ヨシケイ公式サイト</a><img src="https://t.felmat.net/fmimp/G5087Q.X89994P.B1357443" width={1} height={1} alt="" style={{ border: "none" }} />・<a href="https://www.watami-takushoku.co.jp/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">ワタミの宅食公式サイト</a>でご確認ください。
         </div>
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">

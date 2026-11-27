@@ -285,7 +285,7 @@ export default function NoshRyoukinSouryouPage() {
         </div>{/* /subhead */}
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 text-xs leading-relaxed">
-          <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。<strong>料金・送料・nosh clubの金額は2026年11月21日に公式サイトで確認</strong>しています。料金・送料・割引の内容は変動するため、最新・正確な金額は<a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">nosh（ナッシュ）公式サイト</a>でご確認ください。
+          <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。<strong>料金・送料・nosh clubの金額は2026年11月21日に公式サイトで確認</strong>しています。料金・送料・割引の内容は変動するため、最新・正確な金額は<a href="https://t.felmat.net/fmcl?ak=B6814F.1.5108619M.B1357443" target="_blank" rel="nofollow noopener sponsored" className="text-accent underline">nosh（ナッシュ）公式サイト</a><img src="https://t.felmat.net/fmimp/B6814F.5108619M.B1357443" width={1} height={1} alt="" style={{ border: "none" }} />でご確認ください。
         </div>
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -554,13 +554,14 @@ export default function NoshRyoukinSouryouPage() {
 
         <div className="text-center my-8">
           <a
-            href="https://nosh.jp/"
+            href="https://t.felmat.net/fmcl?ak=B6814F.1.5108619M.B1357443"
             target="_blank"
-            rel="noopener noreferrer sponsored"
+            rel="nofollow noopener sponsored"
             className="inline-block bg-accent text-white font-bold px-8 py-4 rounded-lg hover:bg-accent-dark transition-colors text-base"
           >
             nosh（ナッシュ）公式サイトを見る
           </a>
+          <img src="https://t.felmat.net/fmimp/B6814F.5108619M.B1357443" width={1} height={1} alt="" style={{ border: "none" }} />
           <p className="text-xs text-warm-gray mt-2">※最新の料金・送料・割引は公式サイトの案内をご確認ください</p>
         </div>
 

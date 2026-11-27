@@ -6,7 +6,8 @@ const ARTICLE_TITLE =
 const ARTICLE_DESCRIPTION =
   "GREEN SPOON（グリーンスプーン）の定期便を解約する方法を、公式FAQと特定商取引法に基づく表示で整理しました。解約ページは初回お届けの翌日から使え、締切はお届け4〜8日前の変更締切日。通常の定期便は解約金なしですが、スタート応援・お得に継続・冷凍庫プレゼントの3プランは途中解約で精算金がかかります。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/green-spoon-kaiyaku/";
-const OFFICIAL_URL = "https://green-spoon.jp/";
+const OFFICIAL_URL = "https://t.felmat.net/fmcl?ak=T11644V.1.Q160106K.B1357443";
+const OFFICIAL_IMP = "https://t.felmat.net/fmimp/T11644V.Q160106K.B1357443";
 
 export const metadata: Metadata = {
   title: ARTICLE_TITLE,
@@ -132,8 +133,8 @@ function SubHeading({ children }: { children: React.ReactNode }) {
 function OfficialButton({ children }: { children: React.ReactNode }) {
   return (
     <div className="my-6 text-center">
-      <a href={OFFICIAL_URL} target="_blank" rel="noopener noreferrer" className="inline-block bg-accent hover:bg-accent-dark text-white font-bold py-3 px-8 rounded-full text-sm md:text-base transition-colors shadow-md">{children}</a>
-      <p className="text-[10px] text-gray-400 mt-2">※リンク先は公式サイトです（本リンクはアフィリエイト広告ではありません）</p>
+      <a href={OFFICIAL_URL} target="_blank" rel="nofollow noopener sponsored" className="inline-block bg-accent hover:bg-accent-dark text-white font-bold py-3 px-8 rounded-full text-sm md:text-base transition-colors shadow-md">{children}</a><img src={OFFICIAL_IMP} width={1} height={1} alt="" style={{ border: "none" }} />
+      <p className="text-[10px] text-gray-400 mt-2">PR・本記事はアフィリエイト広告を含みます</p>
     </div>
   );
 }
@@ -193,7 +194,7 @@ export default function GreenSpoonKaiyakuPage() {
               編集: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link>
             </span>
           </div>
-          <p className="mt-3 text-xs text-warm-gray">※本記事で紹介するサービスとは提携しておらず、記事内のリンクは広告ではありません。</p>
+          <p className="mt-3 text-xs text-warm-gray">※PR・本記事はアフィリエイト広告を含みます。</p>
         </header>
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -220,8 +221,8 @@ export default function GreenSpoonKaiyakuPage() {
             </div>
           </div>
           <p className="text-xs text-warm-gray">※料金・送料・商品は時期により変わります。最新の情報は公式サイトでご確認ください。</p>
-          <a href={OFFICIAL_URL} target="_blank" rel="noopener noreferrer" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">GREEN SPOON 公式サイトを見る →</a>
-          <p className="text-[10px] text-gray-400 text-center mt-2">※リンク先は公式サイトです（本リンクはアフィリエイト広告ではありません）</p>
+          <a href={OFFICIAL_URL} target="_blank" rel="nofollow noopener sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">GREEN SPOON 公式サイトを見る →</a><img src={OFFICIAL_IMP} width={1} height={1} alt="" style={{ border: "none" }} />
+          <p className="text-[10px] text-gray-400 text-center mt-2">PR・本記事はアフィリエイト広告を含みます</p>
         </div>
 
         <TableOfContents />

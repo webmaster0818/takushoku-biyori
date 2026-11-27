@@ -303,7 +303,7 @@ export default function NoshCouponPage() {
 
         {/* PR Disclosure */}
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 text-xs leading-relaxed">
-          <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。リンク経由でのお申込みにより当サイトに収益が発生する場合がありますが、評価・記載内容は公平を期しています。料金・キャンペーン情報は<strong>2026年10月17日時点の公式情報</strong>に基づきます。最新情報は必ず<a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">nosh公式サイト</a>でご確認ください。
+          <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。リンク経由でのお申込みにより当サイトに収益が発生する場合がありますが、評価・記載内容は公平を期しています。料金・キャンペーン情報は<strong>2026年10月17日時点の公式情報</strong>に基づきます。最新情報は必ず<a href="https://t.felmat.net/fmcl?ak=B6814F.1.5108619M.B1357443" target="_blank" rel="nofollow noopener sponsored" className="text-accent underline">nosh公式サイト</a><img src="https://t.felmat.net/fmimp/B6814F.5108619M.B1357443" width={1} height={1} alt="" style={{ border: "none" }} />でご確認ください。
         </div>
 
         {/* 「今使えるクーポンコード」への答え（11/14 追加） */}
@@ -394,13 +394,14 @@ export default function NoshCouponPage() {
 
         <div className="text-center my-6">
           <a
-            href="https://nosh.jp/"
+            href="https://t.felmat.net/fmcl?ak=B6814F.1.5108619M.B1357443"
             target="_blank"
-            rel="noopener noreferrer sponsored"
+            rel="nofollow noopener sponsored"
             className="inline-block bg-accent text-white font-bold px-6 py-3 rounded-lg hover:bg-accent-dark transition-colors text-sm"
           >
             nosh公式サイトでクーポン詳細を見る
           </a>
+          <img src="https://t.felmat.net/fmimp/B6814F.5108619M.B1357443" width={1} height={1} alt="" style={{ border: "none" }} />
           <p className="text-xs text-warm-gray mt-2">※キャンペーン内容は予告なく変更される場合があります</p>
         </div>
 
@@ -653,13 +654,14 @@ export default function NoshCouponPage() {
 
         <div className="text-center my-8">
           <a
-            href="https://nosh.jp/"
+            href="https://t.felmat.net/fmcl?ak=B6814F.1.5108619M.B1357443"
             target="_blank"
-            rel="noopener noreferrer sponsored"
+            rel="nofollow noopener sponsored"
             className="inline-block bg-accent text-white font-bold px-8 py-4 rounded-lg hover:bg-accent-dark transition-colors text-base"
           >
             nosh公式サイトで最新クーポンを見る
           </a>
+          <img src="https://t.felmat.net/fmimp/B6814F.5108619M.B1357443" width={1} height={1} alt="" style={{ border: "none" }} />
           <p className="text-xs text-warm-gray mt-2">※キャンペーン内容・料金は変更される場合があります</p>
         </div>
 

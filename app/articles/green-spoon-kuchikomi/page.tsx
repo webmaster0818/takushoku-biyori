@@ -526,14 +526,15 @@ export default function GreenSpoonKuchikomiPage() {
             ※料金・送料・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。
           </p>
           <a
-            href="https://green-spoon.jp/"
+            href="https://t.felmat.net/fmcl?ak=T11644V.1.Q160106K.B1357443"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener sponsored"
             className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition"
           >
             GREEN SPOON公式サイトで最新の料金・メニューを見る →
           </a>
-          <p className="text-[10px] text-gray-400 text-center mt-2">※リンク先は公式サイトです（本リンクはアフィリエイト広告ではありません）</p>
+          <img src="https://t.felmat.net/fmimp/T11644V.Q160106K.B1357443" width={1} height={1} alt="" style={{ border: "none" }} />
+          <p className="text-[10px] text-gray-400 text-center mt-2">PR・本記事はアフィリエイト広告を含みます</p>
         </div>
 
         <TableOfContents />

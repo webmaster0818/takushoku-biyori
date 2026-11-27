@@ -210,7 +210,7 @@ export default function OisixVsNoshPage() {
         </div>{/* /subhead */}
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 text-xs leading-relaxed">
-          <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。料金・キャンペーン情報は<strong>2026年5月時点の公式サイト記載情報</strong>に基づきます。最新情報は<a href="https://www.oisix.com/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">Oisix公式</a>・<a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">nosh公式</a>でご確認ください。
+          <strong>PR表記：</strong>当ページにはアフィリエイトリンクが含まれます。料金・キャンペーン情報は<strong>2026年5月時点の公式サイト記載情報</strong>に基づきます。最新情報は<a href="https://www.oisix.com/" target="_blank" rel="noopener noreferrer sponsored" className="text-accent underline">Oisix公式</a>・<a href="https://t.felmat.net/fmcl?ak=B6814F.1.5108619M.B1357443" target="_blank" rel="nofollow noopener sponsored" className="text-accent underline">nosh公式</a><img src="https://t.felmat.net/fmimp/B6814F.5108619M.B1357443" width={1} height={1} alt="" style={{ border: "none" }} />でご確認ください。
         </div>
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -464,13 +464,14 @@ export default function OisixVsNoshPage() {
             Oisix公式サイトを見る
           </a>
           <a
-            href="https://nosh.jp/"
+            href="https://t.felmat.net/fmcl?ak=B6814F.1.5108619M.B1357443"
             target="_blank"
-            rel="noopener noreferrer sponsored"
+            rel="nofollow noopener sponsored"
             className="block bg-accent text-white font-bold text-center px-6 py-4 rounded-lg hover:bg-accent-dark transition-colors text-sm"
           >
             nosh公式サイトを見る
           </a>
+          <img src="https://t.felmat.net/fmimp/B6814F.5108619M.B1357443" width={1} height={1} alt="" style={{ border: "none" }} />
         </div>
 
         <div className="bg-accent/10 rounded-xl p-5 mb-8 text-center">

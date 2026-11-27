@@ -190,16 +190,19 @@ function SubHeading({ children }: { children: React.ReactNode }) {
   );
 }
 
-function CTAButton({ href, label }: { href: string; label: string }) {
+function CTAButton({ href, label, imp }: { href: string; label: string; imp?: string }) {
   return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer nofollow sponsored"
-      className="inline-block bg-accent text-white font-bold text-sm px-5 py-3 rounded-lg hover:bg-accent-dark transition-colors"
-    >
-      {label} &rarr;
-    </a>
+    <>
+      <a
+        href={href}
+        target="_blank"
+        rel={imp ? "nofollow noopener sponsored" : "noopener noreferrer nofollow sponsored"}
+        className="inline-block bg-accent text-white font-bold text-sm px-5 py-3 rounded-lg hover:bg-accent-dark transition-colors"
+      >
+        {label} &rarr;
+      </a>
+      {imp && <img src={imp} width={1} height={1} alt="" style={{ border: "none" }} />}
+    </>
   );
 }
 
@@ -358,7 +361,7 @@ export default function OtameshiSetOsusumePage() {
           <strong>注意点:</strong> 定期申し込み型のため、お試しのみで終了したい場合は初回到着後にマイページから解約手続きを忘れずに行ってください。最新の初回キャンペーン内容は公式サイトにてご確認ください。
         </p>
         <div className="mb-6">
-          <CTAButton href="https://nosh.jp/" label="noshの公式サイトで詳細を見る" />
+          <CTAButton href="https://t.felmat.net/fmcl?ak=B6814F.1.5108619M.B1357443" label="noshの公式サイトで詳細を見る" imp="https://t.felmat.net/fmimp/B6814F.5108619M.B1357443" />
         </div>
         <p className="text-sm mb-6 leading-relaxed">
           詳しいレビューは <Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline">noshの口コミ・評判記事</Link> をご覧ください。

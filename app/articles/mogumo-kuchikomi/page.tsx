@@ -7,7 +7,8 @@ const ARTICLE_TITLE =
 const ARTICLE_DESCRIPTION =
   "冷凍幼児食の宅配「モグモ（mogumo）」の口コミ・評判を、子どもが実食した家庭のレビューから出典付きで紹介します。1歳6ヵ月〜6歳向け・管理栄養士監修、定期便8食5,110円〜（2026年6月改定後）、地域別送料、10日前の変更締切、6回のお約束がある送料無料コースまで公式情報で確認しました。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/mogumo-kuchikomi/";
-const OFFICIAL_URL = "https://mogumo.jp/";
+const OFFICIAL_URL = "https://t.felmat.net/fmcl?ak=K7152A.1.8112100V.B1357443";
+const OFFICIAL_IMP = "https://t.felmat.net/fmimp/K7152A.8112100V.B1357443";
 
 export const metadata: Metadata = {
   title: ARTICLE_TITLE,
@@ -149,8 +150,8 @@ function SourcedReview({ review, tone }: { review: SourcedReviewItem; tone: "goo
 function OfficialButton({ children }: { children: React.ReactNode }) {
   return (
     <div className="my-6 text-center">
-      <a href={OFFICIAL_URL} target="_blank" rel="noopener noreferrer" className="inline-block bg-accent hover:bg-accent-dark text-white font-bold py-3 px-8 rounded-full text-sm md:text-base transition-colors shadow-md">{children}</a>
-      <p className="text-[10px] text-gray-400 mt-2">※リンク先は公式サイトです（本リンクはアフィリエイト広告ではありません）</p>
+      <a href={OFFICIAL_URL} target="_blank" rel="nofollow noopener sponsored" className="inline-block bg-accent hover:bg-accent-dark text-white font-bold py-3 px-8 rounded-full text-sm md:text-base transition-colors shadow-md">{children}</a><img src={OFFICIAL_IMP} width={1} height={1} alt="" style={{ border: "none" }} />
+      <p className="text-[10px] text-gray-400 mt-2">PR・本記事はアフィリエイト広告を含みます</p>
     </div>
   );
 }
@@ -263,7 +264,7 @@ export default function MogumoKuchikomiPage() {
               <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link>
             </span>
           </div>
-          <p className="mt-3 text-xs text-warm-gray">※本記事で紹介するサービスとは提携しておらず、記事内のリンクは広告ではありません。</p>
+          <p className="mt-3 text-xs text-warm-gray">※PR・本記事はアフィリエイト広告を含みます。</p>
         </header>
         </div>{/* /subhead */}
 
@@ -291,8 +292,8 @@ export default function MogumoKuchikomiPage() {
             </div>
           </div>
           <p className="text-xs text-warm-gray mb-4">※料金・送料・在庫は時期により変わります。最新の情報は公式サイトでご確認ください。</p>
-          <a href={OFFICIAL_URL} target="_blank" rel="noopener noreferrer" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">モグモ 公式サイトで最新の料金・メニューを見る →</a>
-          <p className="text-[10px] text-gray-400 text-center mt-2">※リンク先は公式サイトです（本リンクはアフィリエイト広告ではありません）</p>
+          <a href={OFFICIAL_URL} target="_blank" rel="nofollow noopener sponsored" className="block w-full text-center bg-accent text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition">モグモ 公式サイトで最新の料金・メニューを見る →</a><img src={OFFICIAL_IMP} width={1} height={1} alt="" style={{ border: "none" }} />
+          <p className="text-[10px] text-gray-400 text-center mt-2">PR・本記事はアフィリエイト広告を含みます</p>
         </div>
 
         <TableOfContents />

@@ -150,10 +150,11 @@ function StarRating({ count }: { count: number }) {
   );
 }
 
-function CTAButton({ href, children }: { href: string; children: React.ReactNode }) {
+function CTAButton({ href, imp, children }: { href: string; imp?: string; children: React.ReactNode }) {
   return (
     <div className="my-4 text-center">
-      <a href={href} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-accent hover:bg-accent-dark text-white font-bold py-2.5 px-6 rounded-full text-sm transition-colors shadow-md">{children}</a>
+      <a href={href} target="_blank" rel={imp ? "nofollow noopener sponsored" : "noopener noreferrer sponsored"} className="inline-block bg-accent hover:bg-accent-dark text-white font-bold py-2.5 px-6 rounded-full text-sm transition-colors shadow-md">{children}</a>
+      {imp && <img src={imp} width={1} height={1} alt="" style={{ border: "none" }} />}
     </div>
   );
 }
@@ -213,7 +214,8 @@ const rankingItems = [
   {
     rank: 5,
     name: "nosh(ナッシュ)",
-    url: "https://nosh.jp/",
+    url: "https://t.felmat.net/fmcl?ak=B6814F.1.5108619M.B1357443",
+    imp: "https://t.felmat.net/fmimp/B6814F.5108619M.B1357443",
     protein: "14〜20g（主菜の中央50%）",
     price: "低〜中(1食612円〜)",
     score: 4,
@@ -381,7 +383,7 @@ export default function KouTanpakuRankingPage() {
                 <Link href={item.reviewLink} className="text-accent hover:text-accent-dark underline">→ 詳しい口コミ・評判はこちら</Link>
               </p>
             )}
-            <CTAButton href={item.url}>{item.name}の公式サイトを見る</CTAButton>
+            <CTAButton href={item.url} imp={"imp" in item ? item.imp : undefined}>{item.name}の公式サイトを見る</CTAButton>
           </div>
         ))}
 
