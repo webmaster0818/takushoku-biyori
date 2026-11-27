@@ -3,9 +3,9 @@ import Link from "next/link";
 import ServiceCapture from "@/components/ServiceCapture";
 
 const ARTICLE_TITLE =
-  "【2026年最新】nosh(ナッシュ)クーポン・割引コードガイド｜1〜3回目に各1,000円OFF・総額3,000円OFFの全手順";
+  "【2026年最新】nosh(ナッシュ)クーポン・割引コードガイド｜1回目1,500円・2回目1,000円・3回目500円OFFの全手順";
 const ARTICLE_DESCRIPTION =
-  "nosh(ナッシュ)の入力式クーポンコードは公式で配布中のものを確認できず（2026年11月14日）、割引は注文確定日に自動適用です。1〜3回目に各1,000円OFF（総額3,000円OFF）、友達紹介クーポン、nosh clubの仕組みと注意点を整理しました。";
+  "nosh(ナッシュ)の入力式クーポンコードは公式で配布中のものを確認できず（2026年11月14日）、割引は注文確定日に自動適用です。1回目1,500円・2回目1,000円・3回目500円OFF（合計3,000円）、友達紹介クーポン、nosh clubの仕組みと注意点を整理しました。";
 const ARTICLE_URL = "https://takushoku-biyori.com/articles/nosh-coupon/";
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-05-28T00:00:00+09:00",
-    modifiedTime: "2026-11-14T00:00:00+09:00",
+    modifiedTime: "2026-11-27T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -32,12 +32,12 @@ const faqData = [
   {
     question: "noshのクーポンコードはどこで入手できる？",
     answer:
-      "nosh公式サイト経由で新規登録すると、3回分の割引（1〜3回目に各1,000円OFF・総額3,000円OFF）が自動適用されます。クーポンコードを手入力する必要はありません。また、既存利用者からの友達紹介リンクを経由した場合は、友達紹介限定の割引（紹介された側にもクーポン）が付与されます。怪しいクーポンコード掲載サイトは公式情報ではないため、必ず公式サイトから確認してください。",
+      "nosh公式サイト経由で新規登録すると、3回分の割引（1回目1,500円・2回目1,000円・3回目500円OFF・合計3,000円）が自動適用されます。クーポンコードを手入力する必要はありません。また、既存利用者からの友達紹介リンクを経由した場合は、友達紹介限定の割引（紹介された側にもクーポン）が付与されます。怪しいクーポンコード掲載サイトは公式情報ではないため、必ず公式サイトから確認してください。",
   },
   {
     question: "新規割引（3回分の合計3,000円OFF）は10食プランにも適用される？",
     answer:
-      "はい。キャンペーンページでは、1〜3回目の購入時にそれぞれ1,000円OFFとなる総額3,000円OFFのクーポンが案内されています。割引額は食数に関わらず定額で、初回の1食あたりは8食プランが約520円と最も低くなります（通常価格からの当サイトの算出）。",
+      "はい。公式サイトでは、1回目1,500円・2回目1,000円・3回目500円OFF（合計3,000円）のクーポンが8・10・12食のどのプランにも同じ額で案内されています（2026年11月27日確認）。割引額は食数に関わらず定額で、初回の1食あたりは8食プランが税込457.1円と最も低くなります（公式の注文欄に表示される初回特別価格）。",
   },
   {
     question: "クーポンが使えない・適用されない時は？",
@@ -211,7 +211,7 @@ export default function NoshCouponPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-05-28T00:00:00+09:00",
-    dateModified: "2026-11-14T00:00:00+09:00",
+    dateModified: "2026-11-27T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -286,7 +286,7 @@ export default function NoshCouponPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-05-28">公開: 2026年5月28日</time>
-            <time dateTime="2026-11-14">更新: 2026年11月14日（クーポンコードの有無・適用ルールを公式のよくある質問で確認）</time>
+            <time dateTime="2026-11-27">更新: 2026年11月27日（新規割引の額を公式の現行表示「1回目1,500円・2回目1,000円・3回目500円OFF」に更新）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -324,7 +324,7 @@ export default function NoshCouponPage() {
               <tbody>
                 <tr>
                   <td className="border border-warm-border px-3 py-2 font-medium whitespace-nowrap">新規割引</td>
-                  <td className="border border-warm-border px-3 py-2">1〜3回目に各1,000円OFF（総額3,000円OFF）</td>
+                  <td className="border border-warm-border px-3 py-2">1回目1,500円・2回目1,000円・3回目500円OFF（合計3,000円）</td>
                   <td className="border border-warm-border px-3 py-2">新規登録で自動適用（入力不要）</td>
                 </tr>
                 <tr>
@@ -346,14 +346,14 @@ export default function NoshCouponPage() {
             <li>注文確定日はお届けの3〜4日前（地域で異なる）。プランを停止すると保有クーポンは失効します</li>
           </ul>
           <p className="text-xs text-warm-gray">
-            ※出典: nosh公式 よくある質問「<a href="https://nosh.jp/faq/answer/140" target="_blank" rel="noopener noreferrer" className="underline">クーポンの確認・使用方法について</a>」「<a href="https://nosh.jp/faq/answer/124" target="_blank" rel="noopener noreferrer" className="underline">お友達紹介クーポンについて</a>」（2026年11月14日確認）。新規割引の表記はキャンペーンページの案内に合わせています。申し込みの経路で表示が異なる場合があるため、注文確認画面で割引額を確認してください。
+            ※出典: nosh公式 よくある質問「<a href="https://nosh.jp/faq/answer/140" target="_blank" rel="noopener noreferrer" className="underline">クーポンの確認・使用方法について</a>」「<a href="https://nosh.jp/faq/answer/124" target="_blank" rel="noopener noreferrer" className="underline">お友達紹介クーポンについて</a>」（2026年11月14日確認）。新規割引の額は公式トップのプラン欄・注文欄の表示（2026年11月27日確認）です。申し込みの経路で表示が異なる場合があるため、注文確認画面で割引額を確認してください。
           </p>
         </section>
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
-            「nosh(ナッシュ)を始めたいけど、クーポンや割引コードはあるの？」「初回いくら安くなる？」——人気の冷凍宅配弁当noshには複数の割引制度があり、1〜3回目の購入時に<strong>各1,000円OFF</strong>となり、<strong>3回分の合計で3,000円OFF</strong>になります。
+            「nosh(ナッシュ)を始めたいけど、クーポンや割引コードはあるの？」「初回いくら安くなる？」——人気の冷凍宅配弁当noshには複数の割引制度があり、1回目<strong>1,500円OFF</strong>・2回目1,000円OFF・3回目500円OFFとなり、<strong>3回分の合計で3,000円OFF</strong>になります（2026年11月27日・公式確認）。
           </p>
           <p className="mb-3">
             この記事では、<strong>2026年10月17日時点のnosh公式サイトの情報</strong>をもとに、自動割引・nosh club・友達紹介の3つの仕組みを丁寧に整理します。クーポンコードの真偽、適用手順、注意点まで初心者にもわかりやすく解説します。
@@ -376,7 +376,7 @@ export default function NoshCouponPage() {
         <ComparisonTable
           headers={["割引制度", "対象", "割引額/率", "適用方法"]}
           rows={[
-            ["初回〜3回目の新規割引", "新規登録者", "総額3,000円OFF（1,000円×3回）", "自動適用"],
+            ["初回〜3回目の新規割引", "新規登録者", "合計3,000円OFF（1回目1,500円・2回目1,000円・3回目500円）", "自動適用"],
             ["nosh club", "全利用者", "累計購入数に応じて1食単価が下がる（最高ランクで12食1食492円）", "自動適用（ランク制）"],
             ["友達紹介クーポン", "紹介する側・される側", "公式案内に準ずる（時期により変動）", "紹介リンク経由で登録"],
           ]}
@@ -386,7 +386,7 @@ export default function NoshCouponPage() {
           <p className="font-bold mb-2">この記事のポイント</p>
           <ul className="list-disc list-inside space-y-1">
             <li>クーポンコードの手入力は<strong>不要</strong>。公式サイト経由なら自動適用</li>
-            <li>初回〜3回目で<strong>合計3,000円OFF</strong>（1〜3回目に各1,000円）</li>
+            <li>初回〜3回目で<strong>合計3,000円OFF</strong>（1回目1,500円・2回目1,000円・3回目500円）</li>
             <li>長期利用なら<strong>nosh club</strong>で1食最安492円（12食プラン・累計280食）まで下がる</li>
             <li>「秘密のクーポンコード」「裏技」を謳うサイトは公式情報ではない</li>
           </ul>
@@ -408,48 +408,48 @@ export default function NoshCouponPage() {
         <SectionHeading id="initial">初回〜3回目の自動割引｜合計3,000円OFFの内訳</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          noshの新規登録者向け割引は、<strong>3回に分けて適用</strong>される仕組みです。キャンペーンページでは、1〜3回目の購入時にそれぞれ1,000円OFFとなる<strong>総額3,000円OFFのクーポン</strong>が案内されています。「初回だけ大きく割引」ではなく3回に分けて適用されるため、継続利用しないと割引の総額を受け取れない設計です。お申し込みの経路によって表示が異なる場合があるため、注文確認画面で割引額をご確認ください。
+          noshの新規登録者向け割引は、<strong>3回に分けて適用</strong>される仕組みです。公式サイトでは、<strong>1回目1,500円OFF・2回目1,000円OFF・3回目500円OFF</strong>（合計3,000円）のクーポンが案内されています（2026年11月27日確認）。1回目の割引がいちばん大きく、3回に分けて適用されるため、継続利用しないと割引の総額を受け取れない設計です。お申し込みの経路によって表示が異なる場合があるため、注文確認画面で割引額をご確認ください。
         </p>
 
         <SubHeading>3回分の割引内訳</SubHeading>
         <ComparisonTable
           headers={["回数", "割引額", "適用イメージ（10食プラン税込6,206円の場合）"]}
           rows={[
-            ["1回目（初回）", "1,000円OFF", "6,206円 → 5,206円"],
+            ["1回目（初回）", "1,500円OFF", "6,206円 → 4,706円"],
             ["2回目", "1,000円OFF", "6,206円 → 5,206円"],
-            ["3回目", "1,000円OFF", "6,206円 → 5,206円"],
+            ["3回目", "500円OFF", "6,206円 → 5,706円"],
             ["合計", "3,000円OFF", "3回合計で約16.1%相当の値引き（算出）"],
           ]}
         />
 
         <p className="text-sm mb-6 leading-relaxed">
-          ※上記は2026年10月10日に公式で確認した税込料金で計算しています。送料は別途かかります（地域別送料は<Link href="/articles/nosh-reviews/" className="text-accent underline">nosh口コミ・評判記事</Link>で詳しく解説）。
+          ※上記は公式の税込料金（10食プラン6,206円・2026年11月27日確認）で計算しています。送料は別途かかります（地域別送料は<Link href="/articles/nosh-reviews/" className="text-accent underline">nosh口コミ・評判記事</Link>で詳しく解説）。
         </p>
 
         <SubHeading>初回の1食単価はプランでどう変わる？</SubHeading>
         <p className="text-sm mb-6 leading-relaxed">
-          割引額は3回分とも<strong>食数に関わらず一律</strong>です。通常価格（2026年10月10日・公式確認）から1,000円を引いた、初回の1食あたりの目安は以下のとおりです（当サイトの算出）。
+          割引額は<strong>食数に関わらず同じ</strong>（1回目は1,500円）です。公式サイトの注文欄には、1回目（1,500円OFF適用）の1食あたりの「初回特別価格」が表示されています（2026年11月27日確認）。
         </p>
 
         <ComparisonTable
-          headers={["プラン", "通常1食（税込）", "初回1,000円OFF適用時（算出）"]}
+          headers={["プラン", "通常1食（税込）", "初回特別価格（税込・1回目1,500円OFF適用）"]}
           rows={[
-            ["6食プラン", "719円", "約553円"],
-            ["8食プラン", "644円", "約520円"],
-            ["10食プラン", "620円", "約521円"],
-            ["12食プラン", "612円", "約529円"],
+            ["6食プラン", "719円", "469.7円"],
+            ["8食プラン", "644円", "457.1円"],
+            ["10食プラン", "620円", "470.6円"],
+            ["12食プラン", "612円", "487.0円"],
           ]}
         />
 
         <p className="text-sm mb-6 leading-relaxed">
-          初回の1食単価は8食プラン（約520円）と10食プラン（約521円）が低く、12食は約529円、6食は約553円です。2回目以降の通常価格は12食プラン（612円）が最安なので、<strong>冷凍庫の余裕</strong>と合わせて食数を選ぶのがおすすめです。
+          初回の1食単価は8食プラン（457.1円）がいちばん低く、6食は469.7円、10食は470.6円、12食は487.0円です。2回目以降の通常価格は12食プラン（612円）が最安なので、<strong>冷凍庫の余裕</strong>と合わせて食数を選ぶのがおすすめです。
         </p>
 
         {/* ===== 申込手順 ===== */}
         <SectionHeading id="how-to">クーポン適用の申込手順（5ステップ）</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          新規割引（1〜3回目に各1,000円OFF）を確実に適用するための手順を、画面の流れに沿って解説します。最も大事なのは「<strong>公式サイトを経由すること</strong>」。比較サイトや個人ブログのリンクからでも同じ割引が適用されますが、信頼できる公式ドメイン（nosh.jp）を踏むことが重要です。
+          新規割引（1回目1,500円・2回目1,000円・3回目500円OFF）を確実に適用するための手順を、画面の流れに沿って解説します。最も大事なのは「<strong>公式サイトを経由すること</strong>」。比較サイトや個人ブログのリンクからでも同じ割引が適用されますが、信頼できる公式ドメイン（nosh.jp）を踏むことが重要です。
         </p>
 
         {[
@@ -476,7 +476,7 @@ export default function NoshCouponPage() {
           {
             num: 5,
             title: "注文確認画面で割引額を確認",
-            text: "初回の1,000円OFFが金額欄に表示されているかを必ずご確認ください。表示されていれば適用済みです。表示されない場合はカスタマーサポートにお問い合わせください。",
+            text: "初回の1,500円OFFが金額欄に表示されているかを必ずご確認ください。表示されていれば適用済みです。表示されない場合はカスタマーサポートにお問い合わせください。",
           },
         ].map((step) => (
           <div key={step.num} className="flex gap-4 mb-5">
@@ -576,7 +576,7 @@ export default function NoshCouponPage() {
         <SectionHeading id="fake">「裏ワザクーポンコード」「裏技」に要注意</SectionHeading>
 
         <p className="text-sm mb-6 leading-relaxed">
-          ネット上には「nosh限定クーポンコード」「秘密の裏技で5,000円オフ」といった煽り文句のブログやSNS投稿が散見されます。しかし、<strong>2026年10月17日時点でnosh公式が提供している新規割引は「総額3,000円OFF（1,000円×3回）」のみ</strong>です。
+          ネット上には「nosh限定クーポンコード」「秘密の裏技で5,000円オフ」といった煽り文句のブログやSNS投稿が散見されます。しかし、<strong>2026年11月27日時点でnosh公式サイトに表示されている新規割引は「1回目1,500円・2回目1,000円・3回目500円OFF（合計3,000円）」</strong>です。
         </p>
 
         <SubHeading>注意すべきパターン</SubHeading>
@@ -641,10 +641,10 @@ export default function NoshCouponPage() {
 
         <div className="bg-cream rounded-xl p-6 mb-8 text-sm leading-relaxed">
           <p className="mb-3">
-            nosh(ナッシュ)のクーポン・割引コードは、<strong>キャンペーンページで案内されている「1〜3回目に各1,000円OFF（総額3,000円OFF）」</strong>が最大値です。クーポンコードの手入力は不要で、公式サイト経由で新規登録するだけで自動的に適用されます。
+            nosh(ナッシュ)のクーポン・割引コードは、<strong>公式サイトで案内されている「1回目1,500円・2回目1,000円・3回目500円OFF（合計3,000円）」</strong>が最大値です。クーポンコードの手入力は不要で、公式サイト経由で新規登録するだけで自動的に適用されます。
           </p>
           <p className="mb-3">
-            さらに、3回分の新規割引終了後は<strong>nosh club</strong>が引き継ぎ、累計購入数に応じて1食単価が自動で下がっていく仕組みです（最高ランクで12食プラン1食492円）。継続利用する人ほどお得になる設計なので、「合うかどうか」をまず初回の1,000円OFFで試して、合えば長期で続けるのが最適解です。
+            さらに、3回分の新規割引終了後は<strong>nosh club</strong>が引き継ぎ、累計購入数に応じて1食単価が自動で下がっていく仕組みです（最高ランクで12食プラン1食492円）。継続利用する人ほどお得になる設計なので、「合うかどうか」をまず初回の1,500円OFFで試して、合えば長期で続けるのが最適解です。
           </p>
           <p>
             「秘密のクーポンコード」「裏技5,000円オフ」といった怪しい情報は無視して、公式情報のとおりに進めるのが結果的に最もお得かつ安全です。最新のキャンペーン情報は必ず公式サイトで確認してから申し込んでください。

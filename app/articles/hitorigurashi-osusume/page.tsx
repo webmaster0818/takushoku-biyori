@@ -547,7 +547,7 @@ export default function HitorigurashiOsusumePage() {
         />
         <ServiceCapture id="nosh" className="-mt-2 mb-8 max-w-xl" />{/* svc-cap-202610 */}
         <p className="text-sm mb-6 leading-relaxed">
-          一人暮らしに最もおすすめなのがnosh。1食612円〜（12食）のコスパの良さ、100種類以上のメニューから自分で選べる自由度、アプリの使いやすさ、解約の簡単さ——一人暮らしに必要な要素をすべて高水準で満たしています。1〜3回目に各1,000円OFF（総額3,000円OFF）の割引でお得に始められます。詳しくは<Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline">nosh(ナッシュ)の口コミ・評判を徹底調査</Link>をご覧ください。
+          一人暮らしに最もおすすめなのがnosh。1食612円〜（12食）のコスパの良さ、100種類以上のメニューから自分で選べる自由度、アプリの使いやすさ、解約の簡単さ——一人暮らしに必要な要素をすべて高水準で満たしています。1回目1,500円・2回目1,000円・3回目500円OFF（合計3,000円・2026年11月27日・公式確認）の割引でお得に始められます。詳しくは<Link href="/articles/nosh-reviews/" className="text-accent hover:text-accent-dark underline">nosh(ナッシュ)の口コミ・評判を徹底調査</Link>をご覧ください。
         </p>
 
         <RankingCard
@@ -913,7 +913,7 @@ export default function HitorigurashiOsusumePage() {
             一人暮らしの宅食選びで迷ったら、まずは<strong>nosh</strong>から始めるのがおすすめです。コスパ・メニューの自由度・アプリの使いやすさ・解約の簡単さと、一人暮らしに必要な要素をすべて高水準で満たしています。
           </p>
           <p className="text-sm leading-relaxed mb-4">
-            1〜3回目に各1,000円OFF（総額3,000円OFF）の割引があり、10食プランなら初回5,206円でスタートできます。合わなければマイページから解約できます（お届け予定日の4〜5日前まで・初回分はキャンセル不可）。
+            1回目1,500円・2回目1,000円・3回目500円OFF（合計3,000円）の割引があり、10食プランなら初回4,706円でスタートできます。合わなければマイページから解約できます（お届け予定日の4〜5日前まで・初回分はキャンセル不可）。
           </p>
           <p className="text-sm leading-relaxed">
             「毎日のコンビニ弁当やカップ麺を卒業したい」「自炊は面倒だけど健康は気になる」——そんな一人暮らしの食事問題、宅配弁当でスマートに解決してみませんか。
