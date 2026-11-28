@@ -853,3 +853,9 @@ MediaXAI「デザイン改修するよ。他のサイトでやった通り、進
 - yoshikei-reviews: h1直下に料金早見表（ヨシケイ東京 service.php の2人用5日分 通常価格目安＋本部 /shishoku/smileandtable-a/ のお試し2人用価格）、コース表にスマイリークイック（ヨシケイ東京・7,130円）。⚠️夕食ネット you-shoku.net が 11/28 404 で、1,350円・初回半額・送料110円は未照合のまま
 - wanmairu-reviews: h1直下に料金早見表。「お試し価格を確認できなかった」→公式の定期初回限定5,780円（6,280円から500円引き・過去利用者対象外・申込ページの画像表記）。送料FAQの「ご利用ガイド欄に935円」→ご利用ガイドは1,080円に揃っており、935円/2,500円（税別）は申込ページ内の表示に残る、と訂正。解約FAQの「1回でも解約OK」「マイページ 5日前9時」（11/28 公式で確認できず）→公式FAQの「定期期間の縛りは一切有りません」「5日前に自動確定」に
 - title は4本とも不変。Indexing は 429 → sitemap 再送。sitemap は4記事のみ 11/28（8ac862b の [no-lastmod] なし由来の 11/27 化は作業前の値に戻した）
+
+### 2026-11-28 20:00 kwexp（競合 mitsubachi-nouen.com の queue）: 新規5記事 ✅本番反映（source 8b3d5f3・56aacf7・5674e2e / deploy 770770a3f・precheck 120頁 全項目OK・trust-audit check_page 新規5ページ指摘0・heading-lint 既存1件のみ・計測リンク html 624件 md5 作業前 deploy と一致）
+- queue 上から: ご飯作りたくない 1920 → `gohan-tsukuritakunai-takuhai`（クック123 前日17時・ライフデリ 前日18時→翌日／ワタミの宅食 毎週水曜が翌週分確定→翌週月曜／ワタミダイレクト 最短3〜5日後／食宅便 最短4日後。注文曜日別の最短お届け日を当サイト計算・送料込み1食）／惣菜 宅配 1040 → `souzai-takuhai`（当日型・作り置き型・冷凍型の8サービスを公式の日持ち表記で比較。ワタミ 御膳/小箱＝当日22時・おかず/手鞠＝翌日15時、ツクリオ 4日間、nosh 製造から6か月〜1年）／つくりおき 宅配 1040 → `tsukurioki-takuhai`（ツクリオ×シェフの無添つくりおき。4人前×3食で 10,690円 vs 14,597円（送料込み）、シェフ FAQ は store.tavenal.com/faq の埋め込み JSON）／糖尿病 宅配弁当 704 → `tounyoubyou-takuhai-bento`（7コースの栄養基準と料金・**消費者庁 特別用途食品「糖尿病用組合せ食品」許可件数0（R8.9.16現在）**と許可基準・食宅便 低糖質セレクト35品 `shokutakubin-teitoushitsu-20261128.tsv`。効果は書かない・まごころは載せていない）／マッスルデリ クーポン 472 → `muscle-deli-coupon`（10周年 YMMD20 全商品20%OFF 12/8 23:59まで・定期初回25%OFF・継続割・紹介クーポン併用不可。**12/8 を過ぎたらクーポン節を更新すること**）
+- skip: 料理 嫌い（悩み語の書き分けに判断が要る）・一人暮らし 野菜不足（野菜量gを公式に示す社なし）・デリピックス 料金（delipicks-otameshi 11/20 に料金表掲載済み＝重複）。queue 空欄 残り5
+- 導線: lifedeli・watami-takushoku-otameshi→ご飯作りたくない、gohan-tsuki→惣菜、tsukurio-coupon・chef-mutenka→つくりおき、toushitsu・jinzobyo・genenshoku→糖尿病（koureisha は高齢者ハブ単価 A の判断中のため触っていない）、muscle-deli-kaiyaku・-menu→クーポン（[no-lastmod]）
+- sitemap: build が 8ac862b 由来で既存25本を 11/27 にしたため、既存URLは作業前の値に戻し新規5本のみ 11/28
