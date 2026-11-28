@@ -211,5 +211,6 @@ ARTICLE = {
         ("/articles/muscle-deli-nosh-hikaku/", "マッスルデリとnoshの比較"),
         ("/articles/kou-tanpaku-ranking/", "高たんぱくの宅配弁当ランキング"),
         ("/articles/delipicks-menu/", "デリピックスのメニュー一覧"),
+        ("/articles/muscle-deli-coupon/", "マッスルデリのクーポン・割引"),
     ],
 }

@@ -139,5 +139,6 @@ ARTICLE = {
         ("/articles/kou-tanpaku-ranking/", "高たんぱくの宅配弁当ランキング"),
         ("/articles/kinnikushokudo-deli-kuchikomi/", "筋肉食堂DELIの口コミ・評判"),
         ("/articles/takushoku-ryokin-hakusho/", "宅食料金白書｜各社の料金・送料・1食単価"),
+        ("/articles/muscle-deli-coupon/", "マッスルデリのクーポン・割引"),
     ],
 }

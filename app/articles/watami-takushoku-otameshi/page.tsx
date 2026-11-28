@@ -299,6 +299,7 @@ export default function WatamiTakushokuOtameshiPage() {
             <li><Link href="/articles/otameshi-set-osusume/" className="text-accent hover:text-accent-dark transition-colors">宅配弁当のお試しセットおすすめ</Link></li>
             <li><Link href="/articles/koureisha-osusume/" className="text-accent hover:text-accent-dark transition-colors">高齢者向けの宅配弁当</Link></li>
             <li><Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark transition-colors">宅食料金白書</Link></li>
+            <li><Link href="/articles/gohan-tsukuritakunai-takuhai/" className="text-accent hover:text-accent-dark transition-colors">ご飯を作りたくない日に頼める宅配弁当（最短で届く日）</Link></li>
           </ul>
         </div>
 

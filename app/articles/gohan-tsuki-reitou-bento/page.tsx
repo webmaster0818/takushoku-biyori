@@ -301,6 +301,7 @@ export default function GohanTsukiReitouBentoPage() {
             <li><Link href="/articles/magokoro-care-reviews/" className="text-accent hover:text-accent-dark transition-colors">まごころケア食の口コミ・評判</Link></li>
             <li><Link href="/articles/nichirei-foods-direct-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">ニチレイフーズダイレクトの口コミ・評判</Link></li>
             <li><Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark transition-colors">宅食料金白書｜各社の料金・送料・1食単価</Link></li>
+            <li><Link href="/articles/souzai-takuhai/" className="text-accent hover:text-accent-dark transition-colors">惣菜の宅配は冷蔵と冷凍でどう違う？</Link></li>
           </ul>
         </div>
 

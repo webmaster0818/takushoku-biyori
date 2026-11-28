@@ -437,6 +437,7 @@ export default function ChefMutenkaTsukuriokiKuchikomiPage() {
             <li><Link href="/articles/mealkit-vs-reitou-bento/" className="text-accent hover:text-accent-dark transition-colors">ミールキット vs 冷凍弁当 どっちを選ぶ？</Link></li>
             <li><Link href="/articles/hitorigurashi-osusume/" className="text-accent hover:text-accent-dark transition-colors">【2026年】一人暮らしにおすすめの宅食・宅配弁当ランキングTOP5</Link></li>
             <li><Link href="/articles/fitfoodhome-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">FIT FOOD HOME(フィットフードホーム)の口コミ・評判は？まずいって本当？</Link></li>
+            <li><Link href="/articles/tsukurioki-takuhai/" className="text-accent hover:text-accent-dark transition-colors">作り置き惣菜の宅配2社を比較（ツクリオ・シェフの無添つくりおき）</Link></li>
           </ul>
         </div>
               {/* eeat-links-202607 */}

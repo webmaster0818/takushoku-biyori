@@ -293,6 +293,7 @@ export default function GenenshokuTakuhaiPage() {
             <li><Link href="/articles/sugisapo-deli-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">スギサポdeliの口コミ・評判（スギ薬局の冷凍宅配食）</Link></li>
             <li><Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark transition-colors">宅食料金白書</Link></li>
             <li><Link href="/articles/kenko-chokkyubin-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">健康直球便の口コミ・評判（カロリー・塩分調整食ほか）</Link></li>
+            <li><Link href="/articles/tounyoubyou-takuhai-bento/" className="text-accent hover:text-accent-dark transition-colors">糖尿病の方向けの宅配弁当（7コースの栄養基準）</Link></li>
           </ul>
         </div>
 

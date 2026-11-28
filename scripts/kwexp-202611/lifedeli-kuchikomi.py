@@ -183,5 +183,6 @@ ARTICLE = {
         ("/articles/jinzobyo-takuhai-bento/", "腎臓病向けの宅配弁当"),
         ("/articles/genenshoku-takuhai/", "減塩食の宅配"),
         ("/articles/takushoku-ryokin-hakusho/", "宅食料金白書"),
+        ("/articles/gohan-tsukuritakunai-takuhai/", "ご飯を作りたくない日に頼める宅配弁当（最短で届く日）"),
     ],
 }

@@ -150,5 +150,6 @@ ARTICLE = {
         ("/articles/otameshi-set-osusume/", "宅配弁当のお試しセットまとめ"),
         ("/articles/chef-mutenka-tsukurioki-kuchikomi/", "シェフの無添つくりおきの口コミ・評判"),
         ("/articles/takushoku-ryokin-hakusho/", "宅食料金白書｜各社の料金・送料・1食単価"),
+        ("/articles/tsukurioki-takuhai/", "作り置き惣菜の宅配2社を比較（ツクリオ・シェフの無添つくりおき）"),
     ],
 }

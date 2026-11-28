@@ -333,6 +333,7 @@ export default function LifedeliKuchikomiPage() {
             <li><Link href="/articles/jinzobyo-takuhai-bento/" className="text-accent hover:text-accent-dark transition-colors">腎臓病向けの宅配弁当</Link></li>
             <li><Link href="/articles/genenshoku-takuhai/" className="text-accent hover:text-accent-dark transition-colors">減塩食の宅配</Link></li>
             <li><Link href="/articles/takushoku-ryokin-hakusho/" className="text-accent hover:text-accent-dark transition-colors">宅食料金白書</Link></li>
+            <li><Link href="/articles/gohan-tsukuritakunai-takuhai/" className="text-accent hover:text-accent-dark transition-colors">ご飯を作りたくない日に頼める宅配弁当（最短で届く日）</Link></li>
           </ul>
         </div>
 

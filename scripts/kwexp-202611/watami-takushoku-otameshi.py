@@ -152,5 +152,6 @@ ARTICLE = {
         ("/articles/otameshi-set-osusume/", "宅配弁当のお試しセットおすすめ"),
         ("/articles/koureisha-osusume/", "高齢者向けの宅配弁当"),
         ("/articles/takushoku-ryokin-hakusho/", "宅食料金白書"),
+        ("/articles/gohan-tsukuritakunai-takuhai/", "ご飯を作りたくない日に頼める宅配弁当（最短で届く日）"),
     ],
 }

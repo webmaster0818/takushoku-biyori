@@ -431,6 +431,7 @@ export default function MuscleDeliMenuPage() {
             <li><Link href="/articles/muscle-deli-nosh-hikaku/" className="text-accent hover:text-accent-dark transition-colors">マッスルデリとnoshの比較</Link></li>
             <li><Link href="/articles/kou-tanpaku-ranking/" className="text-accent hover:text-accent-dark transition-colors">高たんぱくの宅配弁当ランキング</Link></li>
             <li><Link href="/articles/delipicks-menu/" className="text-accent hover:text-accent-dark transition-colors">デリピックスのメニュー一覧</Link></li>
+            <li><Link href="/articles/muscle-deli-coupon/" className="text-accent hover:text-accent-dark transition-colors">マッスルデリのクーポン・割引</Link></li>
           </ul>
         </div>
 

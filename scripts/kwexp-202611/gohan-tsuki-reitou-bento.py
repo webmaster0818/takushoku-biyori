@@ -212,5 +212,6 @@ ARTICLE = {
         ("/articles/magokoro-care-reviews/", "まごころケア食の口コミ・評判"),
         ("/articles/nichirei-foods-direct-kuchikomi/", "ニチレイフーズダイレクトの口コミ・評判"),
         ("/articles/takushoku-ryokin-hakusho/", "宅食料金白書｜各社の料金・送料・1食単価"),
+        ("/articles/souzai-takuhai/", "惣菜の宅配は冷蔵と冷凍でどう違う？"),
     ],
 }

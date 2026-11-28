@@ -726,6 +726,7 @@ export default function ToushitsuSeigenOsusumePage() {
             <li><Link href="/articles/nosh-vs-mitsuboshi-vs-wellness/" className="text-accent hover:text-accent-dark transition-colors">【3社比較】nosh・三ツ星ファーム・ウェルネスダイニング</Link></li>
             <li><Link href="/articles/goodeli-kuchikomi/" className="text-accent hover:text-accent-dark transition-colors">goodeli(グーデリ)とは？料金・送料・GOFOODとの違い</Link></li>
             <li><Link href="/articles/rizap-supportmeal-reviews/" className="text-accent hover:text-accent-dark transition-colors">ライザップ サポートミールの口コミ・評判</Link></li>
+            <li><Link href="/articles/tounyoubyou-takuhai-bento/" className="text-accent hover:text-accent-dark transition-colors">糖尿病の方向けの宅配弁当（7コースの栄養基準と特別用途食品の許可状況）</Link></li>
           </ul>
         </div>
       
