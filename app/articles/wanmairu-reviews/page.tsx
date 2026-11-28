@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-21T00:00:00+09:00",
-    modifiedTime: "2026-11-15T00:00:00+09:00",
+    modifiedTime: "2026-11-28T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -35,7 +35,7 @@ const faqData = [
   {
     question: "わんまいるはお試しできる？",
     answer:
-      "初回向けのお試しセット・割引は時期によって実施内容が変わります。2026年10月27日の編集部確認時点では、公式サイト上でお試しセットの現行価格を確認できなかったため、最新のお試し・キャンペーン情報は公式サイト（onemile.jp）で直接ご確認ください。まずは1回分で味を確認してから定期購入を検討するのがおすすめです。",
+      "少量の単発お試しセットは現在販売されていません。代わりに、健幸ディナー定期お届けコースの初回限定価格として、定期購入価格6,280円から500円引きの5,780円（税込・送料別・1週間分5食）が案内されています。過去に利用したことがある方は対象外です（2026年11月28日・公式の定期購入申込ページで確認）。定期は回数の縛りがないため、初回で味を確かめてから続けるかを決められます。",
   },
   {
     question: "わんまいるは電子レンジで温められる？",
@@ -50,12 +50,12 @@ const faqData = [
   {
     question: "わんまいるの配送エリアは？",
     answer:
-      "全国配送可能です（一部離島を除く）。ヤマト運輸のクール宅急便で届きます。送料は本州・四国・九州で1,080円、北海道・沖縄で2,645円です（税込・公式の購入ページFAQと定期商品ページで2026年10月27日に確認。なお同じページの「ご利用ガイド」欄には935円／北海道・沖縄2,500円という別の金額も記載されており、公式内で表記が食い違っています。確定額は注文画面でご確認ください）。北海道・沖縄は送料が高いため、まとめ注文で1回あたりの負担を減らすことをおすすめします。",
+      "全国配送可能です（一部離島を除く）。ヤマト運輸のクール宅急便で届きます。送料は本州・四国・九州で1,080円、北海道・沖縄で2,645円です（税込・公式のよくある質問・ご利用ガイド・定期商品ページで2026年11月28日に確認。なお定期購入の申込ページ内の表示には935円／特別配送料金2,500円という税別の金額も残っています。確定額は注文画面でご確認ください）。北海道・沖縄は送料が高いため、まとめ注文で1回あたりの負担を減らすことをおすすめします。",
   },
   {
     question: "わんまいるは解約金やペナルティはある？",
     answer:
-      "ありません。公式サイトでは定期の回数しばりはなく「1回でも解約OK」、お届けのスキップも可能と案内されています。休止・解約はわんまいるサポートセンター（電話0120-548-113・平日10〜16時、メール、お問い合わせフォーム）で受け付けており、次回お届け予定日の6日前までに連絡が必要です（公式FAQ・定期商品ページで2026年10月27日に確認）。次回お届け予定日の変更などはマイページからも操作でき、こちらは次回お届け日5日前の午前9時までです。",
+      "ありません。公式サイトでは「定期期間の縛りは一切有りません」と案内されており、お届けのスキップも可能です。休止・解約はわんまいるサポートセンター（電話0120-548-113・平日10〜16時、メール、お問い合わせフォーム）で受け付けており、次回お届け予定日の6日前までに連絡が必要です（公式FAQ・定期商品ページで2026年11月28日に確認）。公式FAQでは、次回お届け予定の5日前に注文が自動的に確定すると案内されています。",
   },
 ];
 
@@ -243,7 +243,7 @@ const badReviewCategories: {
 export default function WanmairuReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-11-15T00:00:00+09:00",
+    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-11-28T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -270,10 +270,48 @@ export default function WanmairuReviewsPage() {
           <div className="flex items-center gap-3 mb-4"><span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">口コミ・評判</span><span className="text-[10px] text-gray-400">PR掲載も含みます</span></div>
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
-            <time dateTime="2026-04-21">公開: 2026年4月21日</time><span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
+            <time dateTime="2026-04-21">公開: 2026年4月21日</time><time dateTime="2026-11-28">更新: 2026年11月28日（料金・送料を公式で再確認）</time><span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
         </div>{/* /subhead */}
+        {/* 料金早見表（h1直下・2026-11-28 公式で確認） */}
+        <section className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-3">わんまいる「健幸ディナー」の料金早見表（税込・2026年11月28日 公式で確認）</p>
+          <div className="table-wrapper mb-3">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-accent/10">
+                  <th className="border border-warm-border px-3 py-2 text-left">買い方</th>
+                  <th className="border border-warm-border px-3 py-2 text-right">価格</th>
+                  <th className="border border-warm-border px-3 py-2 text-right">1食あたり</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["定期 初回（1週間分・5食）", "5,780円", "1,156円"],
+                  ["定期（1週間に1回・5食）", "6,280円", "1,256円"],
+                  ["定期（2週間に1回・10食）", "12,560円", "1,256円"],
+                  ["都度購入（5食）", "6,780円", "1,356円"],
+                ].map((r) => (
+                  <tr key={r[0]}>
+                    <td className="border border-warm-border px-3 py-2">{r[0]}</td>
+                    <td className="border border-warm-border px-3 py-2 text-right">{r[1]}</td>
+                    <td className="border border-warm-border px-3 py-2 text-right">{r[2]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <ul className="text-sm leading-relaxed list-disc list-inside space-y-1 mb-3">
+            <li>1食は主菜1品＋副菜2品。初回は定期購入価格6,280円から500円引きで、過去に利用したことがある方は対象外です</li>
+            <li>送料（1回のお届けごと）: 本州・四国・九州 1,080円、北海道・沖縄 2,645円。注文金額による送料無料の設定はありません</li>
+            <li>定期は回数の縛りがなく、休止・解約は次回お届け予定日の6日前までにサポートセンターへ連絡します</li>
+            <li>お試しセット（少量の単発セット）は現在販売されていません</li>
+          </ul>
+          <p className="text-xs text-warm-gray">
+            ※出典: わんまいる公式 <a href="https://www.onemile.jp/product/370" target="_blank" rel="noopener noreferrer" className="underline">定期お届けコース（1週間）</a>・<a href="https://www.onemile.jp/product/371" target="_blank" rel="noopener noreferrer" className="underline">（2週間）</a>・<a href="https://www.onemile.jp/product-buy-form/teiki-dinner" target="_blank" rel="noopener noreferrer" className="underline">定期購入の申込ページ</a>（初回価格は同ページの画像の表記）・<a href="https://www.onemile.jp/fs/q_a" target="_blank" rel="noopener noreferrer" className="underline">よくある質問</a>・<a href="https://www.onemile.jp/fs/info" target="_blank" rel="noopener noreferrer" className="underline">ご利用ガイド</a>。いずれも2026年11月28日確認。1食あたりは当サイトが5食で割って算出しています。
+          </p>
+        </section>
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">「わんまいるって美味しいの？」「国産食材100%って本当？」「湯煎って面倒じゃない？」——冷凍宅食の中でも「味」と「素材」にとことんこだわるわんまいるです。</p>
@@ -404,25 +442,25 @@ export default function WanmairuReviewsPage() {
         <div className="bg-cream rounded-lg p-4 mb-6 text-sm leading-relaxed">
           <p className="font-bold mb-1">編集部の見解：「まずい」は一部メニューの外れ体験と薄味の好みに分解できる</p>
           <p>
-            酷評は「がんもの煮付け」のような特定メニューへの外れ体験が中心で、同じ媒体でも全体評価は「ほっこりする美味しさ」など好意的な声が優勢です。健康志向の控えめな塩加減のため、濃い味・こってり系が好きな人には物足りない可能性があります。和食・煮物・魚料理を好む人ほど満足度が高い傾向です。感じ方には個人差があるため、まずは少量セットで試すのが確実です。
+            酷評は「がんもの煮付け」のような特定メニューへの外れ体験が中心で、同じ媒体でも全体評価は「ほっこりする美味しさ」など好意的な声が優勢です。健康志向の控えめな塩加減のため、濃い味・こってり系が好きな人には物足りない可能性があります。和食・煮物・魚料理を好む人ほど満足度が高い傾向です。感じ方には個人差があるため、まずは定期の初回分（1週間分5食）で味を確かめるのが確実です。
           </p>
         </div>
 
         <SectionHeading id="price">料金・送料を解説</SectionHeading>
         <p className="text-xs text-warm-gray mb-4">
-          ※本セクションの料金・送料は2026年10月27日に編集部がわんまいる公式サイト（onemile.jp）で直接確認した金額（税込）です。最新の金額・キャンペーンは公式サイトでご確認ください。
+          ※本セクションの料金・送料は2026年11月28日に編集部がわんまいる公式サイト（onemile.jp）で直接確認した金額（税込）です。最新の金額・キャンペーンは公式サイトでご確認ください。
         </p>
-        <SubHeading>健幸ディナーの料金（2026年10月27日公式確認）</SubHeading>
+        <SubHeading>健幸ディナーの料金（2026年11月28日公式確認）</SubHeading>
         <ComparisonTable
           headers={["プラン", "セット内容", "価格（税込）", "1食あたり"]}
           rows={[
             ["定期（1週間に1回・1週間分）", "5食セット（主菜1品＋副菜2品）", "6,280円", "約1,256円"],
             ["定期（2週間に1回・2週間分）", "10食（5食セット×2）", "12,560円", "約1,256円"],
             ["都度注文", "5食セット", "6,780円", "約1,356円"],
-            ["初回お試し", "5食セット", "公式サイトでご確認ください（時期により実施内容が変動）", "—"],
+            ["定期 初回限定（1週間分）", "5食セット（定期購入価格から500円引き・過去に利用した方は対象外）", "5,780円", "約1,156円"],
           ]}
         />
-        <SubHeading>送料（2026年10月27日公式確認）</SubHeading>
+        <SubHeading>送料（2026年11月28日公式確認）</SubHeading>
         <ComparisonTable
           headers={["エリア", "送料（税込）"]}
           rows={[["本州・四国・九州", "1,080円"], ["北海道", "2,645円"], ["沖縄", "2,645円"]]}

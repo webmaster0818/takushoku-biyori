@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-15T00:00:00+09:00",
-    modifiedTime: "2026-11-22T00:00:00+09:00",
+    modifiedTime: "2026-11-28T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -37,7 +37,7 @@ const faqData = [
   {
     question: "noshの賞味期限はどれくらい？",
     answer:
-      "noshは冷凍でのお届けで、賞味期限は商品パッケージに記載されています（おおむね製造から半年〜1年程度が目安）。冷凍保存（-18℃以下）が必要で、一度解凍したものは再冷凍せずその日のうちに食べきってください。冷凍庫にストックしておけば、忙しい日にいつでもすぐ食べられます。正確な期限は届いた商品の表示をご確認ください。",
+      "noshは冷凍でのお届けで、賞味期限は商品パッケージに記載されています（公式FAQでは製造から約6か月〜1年程度、短いものでも賞味期限まで1か月程度の余裕があるものをお届けすると案内されています）。冷凍保存（-18℃以下）が必要で、一度解凍したものは再冷凍せずその日のうちに食べきってください。冷凍庫にストックしておけば、忙しい日にいつでもすぐ食べられます。正確な期限は届いた商品の表示をご確認ください。",
   },
   {
     question: "noshの配送頻度は変更できる？",
@@ -52,7 +52,7 @@ const faqData = [
   {
     question: "noshのアレルギー対応は？",
     answer:
-      "noshはメニューごとにアレルギー情報を公式サイト・アプリで公開しています。注文時にアレルゲンでフィルタリングして該当メニューを除外することが可能です。ただし、同じ製造ラインで複数のメニューを製造しているため、完全なアレルゲン除去食ではありません。公式FAQでは「重篤な症状が出る方はご利用をお控えください」と案内されています（2026年10月9日確認）。",
+      "noshはメニューごとにアレルギー情報を公式サイト・アプリで公開しています。注文時にアレルゲンでフィルタリングして該当メニューを除外することが可能です。ただし、同じ製造ラインで複数のメニューを製造しているため、完全なアレルゲン除去食ではありません。公式FAQでは「アレルギーによって重篤な症状が出る方は、ご利用をお控えいただくようお願いいたします。」と案内されています（2026年11月28日確認）。",
   },
 ];
 
@@ -360,7 +360,7 @@ export default function NoshReviewsPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-04-15T00:00:00+09:00",
-    dateModified: "2026-11-22T00:00:00+09:00",
+    dateModified: "2026-11-28T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -434,7 +434,7 @@ export default function NoshReviewsPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-04-15">公開: 2026年4月15日</time>
-            <time dateTime="2026-11-22">更新: 2026年11月22日（公式で再確認）</time>
+            <time dateTime="2026-11-28">更新: 2026年11月28日（料金・送料を公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -448,6 +448,48 @@ export default function NoshReviewsPage() {
           </div>
         </header>
         </div>{/* /subhead */}
+
+        {/* 料金早見表（h1直下・2026-11-28 公式で確認） */}
+        <section className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-3">nosh(ナッシュ)の料金早見表（税込・2026年11月28日 公式で確認）</p>
+          <div className="table-wrapper mb-3">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-accent/10">
+                  <th className="border border-warm-border px-3 py-2 text-left whitespace-nowrap">プラン</th>
+                  <th className="border border-warm-border px-3 py-2 text-right">通常 1食</th>
+                  <th className="border border-warm-border px-3 py-2 text-right">通常 合計</th>
+                  <th className="border border-warm-border px-3 py-2 text-right">初回特別価格 1食</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["6食", "719円", "4,318円", "469.7円"],
+                  ["8食", "644円", "5,157円", "457.1円"],
+                  ["10食", "620円", "6,206円", "470.6円"],
+                  ["12食", "612円", "7,344円", "487.0円"],
+                  ["20食（2回目から選択可）", "612円", "12,240円", "—"],
+                ].map((r) => (
+                  <tr key={r[0]}>
+                    <td className="border border-warm-border px-3 py-2 whitespace-nowrap">{r[0]}</td>
+                    <td className="border border-warm-border px-3 py-2 text-right">{r[1]}</td>
+                    <td className="border border-warm-border px-3 py-2 text-right">{r[2]}</td>
+                    <td className="border border-warm-border px-3 py-2 text-right">{r[3]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <ul className="text-sm leading-relaxed list-disc list-inside space-y-1 mb-3">
+            <li>新規クーポン: 1回目1,500円・2回目1,000円・3回目500円OFF（初回特別価格は1回目の割引を適用した1食あたりの価格です）</li>
+            <li>送料（4〜12食・クール便込み）: 関西1,023円〜北海道1,713円。全12地域は<a href="#price" className="text-accent underline">送料の表</a>をご覧ください</li>
+            <li>継続割引 nosh club: 最安1食492円（12食プラン・累計280食以上）</li>
+            <li>お試しプランはなく、定期購入のみです。4食プランは現在新規申込みを受け付けていません</li>
+          </ul>
+          <p className="text-xs text-warm-gray">
+            ※出典: <a href="https://nosh.jp/" target="_blank" rel="noopener noreferrer" className="underline">nosh公式トップ</a>（注文欄・クーポン表示）、<a href="https://nosh.jp/faq/answer/19" target="_blank" rel="noopener noreferrer" className="underline">公式FAQ（料金）</a>、<a href="https://nosh.jp/shipping" target="_blank" rel="noopener noreferrer" className="underline">全国送料一覧表（2026年07月27日改訂版）</a>、<a href="https://nosh.jp/club" target="_blank" rel="noopener noreferrer" className="underline">nosh club</a>、<a href="https://nosh.jp/faq/answer/128" target="_blank" rel="noopener noreferrer" className="underline">公式FAQ（お試し）</a>。いずれも2026年11月28日確認。価格・クーポンは変更される場合があります。
+          </p>
+        </section>
 
         {/* Lead */}
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
@@ -475,6 +517,7 @@ export default function NoshReviewsPage() {
                 <li>メニュー約100種類で飽きにくい</li>
                 <li>全メニュー糖質30g・塩分2.5g以下の設計</li>
                 <li>アプリで注文・スキップ・解約まで完結</li>
+                <li>レンジで温めるだけで、容器は紙製で片付けが楽</li>
               </ul>
             </div>
             <div className="bg-cream rounded-lg p-3">
@@ -483,9 +526,13 @@ export default function NoshReviewsPage() {
                 <li>送料が地域・プランで変わる</li>
                 <li>メニューによって味の当たり外れがある</li>
                 <li>まとめ買い前提で冷凍庫スペースが要る</li>
+                <li>おかずのみでご飯は付かず、量は少なめという声がある</li>
               </ul>
             </div>
           </div>
+          <p className="text-xs text-warm-gray mb-2">
+            ※口コミの傾向は <a href="https://ferme-du-soleil.co.jp/column/nosh-kuchikomi/" target="_blank" rel="noopener noreferrer nofollow" className="underline">たくしょく畑</a>・<a href="https://www.ozmall.co.jp/healthcare/food/article/40170/" target="_blank" rel="noopener noreferrer nofollow" className="underline">OZmall</a>・<a href="https://online.tipness.co.jp/feature/home_meal/nosh/" target="_blank" rel="noopener noreferrer nofollow" className="underline">HAPPINESS! magazine</a>・<a href="https://www.tori-den.com/blog/nosh-menu/" target="_blank" rel="noopener noreferrer nofollow" className="underline">とりでん</a> の公開記事を当サイトが要約したものです（2026年11月28日確認）。
+          </p>
           <p className="text-xs text-warm-gray mb-4">
             ※料金・送料・キャンペーンは時期により変動します。最新の正確な金額は公式サイトでご確認ください。
           </p>
@@ -822,21 +869,29 @@ export default function NoshReviewsPage() {
           ※出典: nosh公式サイト（2026年10月9日確認）。価格は変更される場合があるため、最新の合計金額は公式サイトでご確認ください。
         </p>
 
-        <SubHeading>地域別送料の例（税込）</SubHeading>
+        <SubHeading>地域別送料（税込・全12地域）</SubHeading>
         <ComparisonTable
           headers={["地域", "4〜12食", "20食"]}
           rows={[
-            ["関西", "1,023円", "1,243円"],
-            ["関東", "1,166円", "1,386円"],
             ["北海道", "1,713円", "1,992円"],
+            ["北東北（青森・秋田・岩手）", "1,628円", "1,661円"],
+            ["南東北（宮城・山形・福島）", "1,529円", "1,551円"],
+            ["関東（茨城・栃木・群馬・埼玉・千葉・神奈川・東京・山梨）", "1,166円", "1,386円"],
+            ["信越（新潟・長野）", "1,188円", "1,408円"],
+            ["北陸（富山・石川・福井）", "1,089円", "1,309円"],
+            ["中部（静岡・愛知・三重・岐阜）", "1,089円", "1,309円"],
+            ["関西（大阪・京都・滋賀・奈良・和歌山・兵庫）", "1,023円", "1,243円"],
+            ["中国（岡山・広島・山口・鳥取・島根）", "1,089円", "1,298円"],
+            ["四国（香川・徳島・愛媛・高知）", "1,089円", "1,298円"],
+            ["九州（福岡・佐賀・長崎・熊本・大分・宮崎・鹿児島）", "1,188円", "1,408円"],
             ["沖縄", "1,623円", "1,918円"],
           ]}
         />
         <p className="text-sm mb-2 leading-relaxed">
-          <strong>送料のポイント：</strong>製造拠点が関西にあるため、関西が最安です。送料は毎回かかるので、<strong>「送料込みの1食あたり」で考えることが重要です</strong>。10食プラン（関東）なら送料込みで1食あたり約737円、関西なら約723円です（プラン合計6,206円＋送料で試算）。まとめ買いで配送回数を減らすほど送料負担は下がります。
+          <strong>送料のポイント：</strong>関西が最安、北海道が最も高くなります。送料は毎回かかるので、<strong>「送料込みの1食あたり」で考えることが重要です</strong>。10食プラン（関東）なら送料込みで1食あたり約737円、関西なら約723円です（プラン合計6,206円＋送料で試算）。まとめ買いで配送回数を減らすほど送料負担は下がります。
         </p>
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: nosh公式サイト「全国送料一覧」（2026年7月27日改訂版・2026年10月9日確認・クール便料金込み）。4〜12食は同一料金です。上記以外の地域は公式サイトの送料一覧をご確認ください。
+          ※出典: nosh公式サイト「全国送料一覧表」（2026年07月27日改訂版・2026年11月28日確認・クール宅急便料金込み）。4〜12食は同一料金です。4食プランは現在新規申込みを受け付けていません。配送曜日・地域により配送業者が変わる場合があります。
         </p>
 
         <SubHeading>nosh club割引の仕組み</SubHeading>

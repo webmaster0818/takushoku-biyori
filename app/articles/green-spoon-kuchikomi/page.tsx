@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-07-04T00:00:00+09:00",
-    modifiedTime: "2026-11-14T00:00:00+09:00",
+    modifiedTime: "2026-11-28T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -349,7 +349,7 @@ export default function GreenSpoonKuchikomiPage() {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     datePublished: "2026-07-04T00:00:00+09:00",
-    dateModified: "2026-11-14T00:00:00+09:00",
+    dateModified: "2026-11-28T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: {
       "@type": "Organization",
@@ -423,7 +423,7 @@ export default function GreenSpoonKuchikomiPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
             <time dateTime="2026-07-04">公開: 2026年7月4日</time>
-            <time dateTime="2026-11-14">更新: 2026年11月14日（「まずい」の結論・料金の初回／2回目以降を公式で確認）</time>
+            <time dateTime="2026-11-28">更新: 2026年11月28日（料金・送料を公式で再確認）</time>
             <span>
               監修:{" "}
               <Link href="/editorial/" className="text-accent hover:underline">
@@ -481,7 +481,7 @@ export default function GreenSpoonKuchikomiPage() {
             料金は定期BOXの<strong>初回が1食810円（S・8食）／745円（M・12食）／724円（L・20食）</strong>で、2回目以降はカテゴリによって異なり、上限はS 963円・M 886円・L 852円です。定期の送料は全国一律1,089円（北海道・沖縄を除く）。いずれも税込です。
           </p>
           <p className="text-xs text-warm-gray">
-            ※出典: 各記事の本文、GREEN SPOON公式トップページの注記（2026年11月14日確認）。公式トップには、今日の時点で初回価格以外のキャンペーン（割引率の表示など）は見当たりませんでした。詳しくは<a href="#mazui" className="text-accent underline">「まずい」の検証</a>へ。
+            ※出典: 各記事の本文、GREEN SPOON公式トップページの注記（2026年11月14日確認・11月28日に再確認し同じ表記）。公式トップには、11月28日の時点で初回価格以外のキャンペーン（割引率の表示など）は見当たりませんでした。詳しくは<a href="#mazui" className="text-accent underline">「まずい」の検証</a>へ。
           </p>
         </section>
 
@@ -845,7 +845,7 @@ export default function GreenSpoonKuchikomiPage() {
           <strong>送料のポイント：</strong>送料は注文ごとにかかるため、<strong>1回の食数を増やして配送回数を減らす</strong>のが実質単価を下げるコツです。L BOX（20食）なら送料負担は1食あたり約54円です。S BOX（8食）だと約136円になります。
         </p>
         <p className="text-xs text-warm-gray mb-6">
-          ※出典: GREEN SPOON公式「特定商取引法に基づく表示」で送料の範囲（税込1,089円〜3,289円）を2026年10月10日に確認しています。北海道・沖縄の内訳は2026年7月確認値です（公式FAQがアクセス制限で今回は閲覧できず）。なお公式トップの注記には「定期購入は全国一律税込990円」との記載も残っており、公式内で表記が分かれています。最新の送料は注文画面でご確認ください。
+          ※出典: GREEN SPOON公式トップの注記「定期購入の場合は、送料は全国一律990円(税込1,089円) (北海道/沖縄を除く)」と「特定商取引法に基づく表示」の送料の範囲（税込1,089円〜3,289円）を2026年11月28日に確認しています。北海道・沖縄の内訳は2026年7月確認値です（公式FAQがアクセス制限で今回は閲覧できず）。最新の送料は注文画面でご確認ください。
         </p>
 
         {/* ===== おすすめな人・おすすめしない人 ===== */}

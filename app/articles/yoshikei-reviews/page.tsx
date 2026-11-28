@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: ARTICLE_DESCRIPTION,
     url: ARTICLE_URL,
     publishedTime: "2026-04-21T00:00:00+09:00",
-    modifiedTime: "2026-10-16T00:00:00+09:00",
+    modifiedTime: "2026-11-28T00:00:00+09:00",
     authors: ["宅食・栄養食編集部"],
   },
 };
@@ -133,7 +133,7 @@ function SubHeading({ children }: { children: React.ReactNode }) {
 export default function YoshikeiReviewsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: ARTICLE_TITLE, description: ARTICLE_DESCRIPTION, url: ARTICLE_URL,
-    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-10-21T00:00:00+09:00",
+    datePublished: "2026-04-21T00:00:00+09:00", dateModified: "2026-11-28T00:00:00+09:00",
     author: { "@type": "Organization", name: "宅食・栄養食編集部" },
     publisher: { "@type": "Organization", name: "宅食びより", url: "https://takushoku-biyori.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": ARTICLE_URL },
@@ -160,10 +160,55 @@ export default function YoshikeiReviewsPage() {
           <div className="flex items-center gap-3 mb-4"><span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">口コミ・評判</span><span className="text-[10px] text-gray-400">PR掲載も含みます</span></div>
           <h1 className="text-2xl md:text-3xl font-bold leading-tight mb-4">{ARTICLE_TITLE}</h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-warm-gray">
-            <time dateTime="2026-04-21">公開: 2026年4月21日</time><time dateTime="2026-10-16">更新: 2026年10月16日（公式で再確認）</time><span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
+            <time dateTime="2026-04-21">公開: 2026年4月21日</time><time dateTime="2026-11-28">更新: 2026年11月28日（料金・お試しを公式で再確認）</time><span>監修: <Link href="/editorial/" className="text-accent hover:underline">宅食びより編集部</Link> / <Link href="/author/" className="text-accent hover:underline">編集部メンバー</Link></span>
           </div>
         </header>
         </div>{/* /subhead */}
+        {/* 料金早見表（h1直下・2026-11-28 公式で確認） */}
+        <section className="border-2 border-accent/30 rounded-xl p-5 mb-8 bg-white">
+          <p className="font-bold text-base mb-3">ヨシケイの料金早見表（2人用5日分・2026年11月28日 公式で確認）</p>
+          <div className="table-wrapper mb-3">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-accent/10">
+                  <th className="border border-warm-border px-3 py-2 text-left whitespace-nowrap">コース</th>
+                  <th className="border border-warm-border px-3 py-2 text-left">タイプ</th>
+                  <th className="border border-warm-border px-3 py-2 text-right">通常価格目安<br />（ヨシケイ東京）</th>
+                  <th className="border border-warm-border px-3 py-2 text-right">お試し5days<br />（本部・税込）</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["スマイリーミール", "ミールキット", "6,880円", "3,450円（約50%OFF）"],
+                  ["スタンダードミール", "ミールキット", "約7,400円", "3,700円（約50%OFF）"],
+                  ["バランスミール", "ミールキット", "約6,850円", "3,450円（約50%OFF）"],
+                  ["カットミール", "カット野菜のキット", "約7,460円", "3,750円（約50%OFF）"],
+                  ["クイックダイニング（Lovyu）", "キット＋惣菜", "約6,830円", "3,600円（約50%OFF）"],
+                  ["ファンミール", "ミールキット", "約9,200円", "6,300円（約30%OFF）"],
+                  ["タイムリーミール", "調理済み", "約8,810円", "6,160円（約30%OFF）"],
+                  ["シンプルミール", "冷凍弁当", "3食セット1,290円", "—"],
+                  ["ベジミール", "冷凍弁当", "2食セット1,490円", "—"],
+                ].map((r) => (
+                  <tr key={r[0]}>
+                    <td className="border border-warm-border px-3 py-2 whitespace-nowrap">{r[0]}</td>
+                    <td className="border border-warm-border px-3 py-2">{r[1]}</td>
+                    <td className="border border-warm-border px-3 py-2 text-right">{r[2]}</td>
+                    <td className="border border-warm-border px-3 py-2 text-right">{r[3]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <ul className="text-sm leading-relaxed list-disc list-inside space-y-1 mb-3">
+            <li>配達料・入会金・年会費はかかりません。定期の縛りもありません</li>
+            <li>お試しの1食（税込）はコースにより約280〜670円で、週により金額が前後します。申込みは配達日の前週水曜日17:00までです</li>
+            <li>ヨシケイ東京には「スマイリークイック」（スマイリーミールと同じレシピをカット野菜で届けるコース・2人用7,130円）もあり、同社のお試しはスマイリークイックとカットミールの2コース（初回限定・通常価格より50%OFF）です</li>
+            <li>料金・コースは地域のヨシケイごとに異なります。お住まいの地域の価格は公式サイトでご確認ください</li>
+          </ul>
+          <p className="text-xs text-warm-gray">
+            ※出典: <a href="https://yoshikei-tokyo.co.jp/service.php" target="_blank" rel="noopener noreferrer nofollow" className="underline">ヨシケイ東京 サービス概要</a>（通常価格目安）、<a href="https://yoshikei-dvlp.co.jp/shishoku/smileandtable-a/" target="_blank" rel="noopener noreferrer nofollow" className="underline">ヨシケイ開発 お試し5days</a>・<a href="https://yoshikei-dvlp.co.jp/shishoku/" target="_blank" rel="noopener noreferrer nofollow" className="underline">お試しトップ</a>（お試し価格・締切）。いずれも2026年11月28日確認。ヨシケイ東京の通常価格目安のページには税込・税抜の表記がありません。
+          </p>
+        </section>
 
         <div className="bg-cream rounded-xl p-5 mb-8 text-sm leading-relaxed">
           <p className="mb-3">「ヨシケイの弁当はまずい？」「冷凍弁当の口コミは？」「評判はどう？」——ヨシケイは1975年創業（2025年に50周年）の食材宅配で、公式によると全国64社・292営業所（2026年4月現在）で約50万世帯に届けています。主力はミールキット（食材＋レシピ）ですが、レンジで温めるだけの<strong>冷凍弁当「シンプルミール」「ベジミール」</strong>もあります。</p>
@@ -217,6 +262,7 @@ export default function YoshikeiReviewsPage() {
           headers={["コース", "タイプ", "2人用5日分（通常価格目安）", "1人前あたり", "公式の説明"]}
           rows={[
             ["スマイリーミール", "ミールキット", "6,880円", "約688円", "メニューブックの基本コース"],
+            ["スマイリークイック", "ミールキット（カット野菜）", "7,130円", "約713円", "スマイリーミールと同じレシピをカット野菜で（ヨシケイ東京）"],
             ["スタンダードミール", "ミールキット", "約7,400円", "約740円", "バランスよくしっかり食べられる定番コース"],
             ["バランスミール", "ミールキット", "約6,850円", "約685円", "1食400kcal以下・1日の野菜目標量の約1/2"],
             ["カットミール", "ミールキット", "約7,460円", "約746円", "カット野菜で15分で2品"],
@@ -227,7 +273,7 @@ export default function YoshikeiReviewsPage() {
             ["ベジミール", "冷凍弁当", "1回2食セット1,490円", "745円", "おかず4品・1食で1日の野菜目標量の約2/3"],
           ]}
         />
-        <p className="text-xs text-warm-gray mb-6">※出典: <a href="https://yoshikei-tokyo.co.jp/service.php" target="_blank" rel="noopener noreferrer nofollow" className="underline">ヨシケイ東京 サービス概要</a>（2026年10月16日確認。1人前あたりは2人用5日分÷10食で当サイトが算出）、<a href="https://yoshikei-dvlp.co.jp/news/press/2025/929_2.php" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式リリース（2025年9月リニューアル）</a>、<a href="https://yoshikei-dvlp.co.jp/news/info/2026/lovyu_1.php" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式お知らせ（Lovyu販売終了）</a>、<a href="https://yoshikei-dvlp.co.jp/news/info/2025/post_350.php" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式お知らせ（離乳食とりわけレシピ終了）</a>。公式本部のお試しページでは「お住まいの地域・ご注文週によって価格が異なる」とされています。</p>
+        <p className="text-xs text-warm-gray mb-6">※出典: <a href="https://yoshikei-tokyo.co.jp/service.php" target="_blank" rel="noopener noreferrer nofollow" className="underline">ヨシケイ東京 サービス概要</a>（2026年10月16日確認・11月28日に再確認し同じ価格。スマイリークイックは11月28日確認。1人前あたりは2人用5日分÷10食で当サイトが算出）、<a href="https://yoshikei-dvlp.co.jp/news/press/2025/929_2.php" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式リリース（2025年9月リニューアル）</a>、<a href="https://yoshikei-dvlp.co.jp/news/info/2026/lovyu_1.php" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式お知らせ（Lovyu販売終了）</a>、<a href="https://yoshikei-dvlp.co.jp/news/info/2025/post_350.php" target="_blank" rel="noopener noreferrer nofollow" className="underline">公式お知らせ（離乳食とりわけレシピ終了）</a>。公式本部のお試しページでは「お住まいの地域・ご注文週によって価格が異なる」とされています。</p>
 
         <SubHeading>冷凍弁当「シンプルミール」は2か所で買える</SubHeading>
         <p className="text-sm mb-4 leading-relaxed">「ヨシケイの弁当」「ヨシケイの冷凍弁当」として口コミが多いのはシンプルミールです。買い方は2つあり、<strong>地域のヨシケイで他のメニューと一緒に頼む</strong>方法（ヨシケイ東京は月・水・金のお届けで1回3食セット1,290円）と、<strong>ヨシケイの通販サイト「夕食ネット」で頼む</strong>方法があります。夕食ネットのシンプルミールは販売期間ごとの3食セット（1,350円）から選ぶ方式で、1品ずつは選べません。初回注文は10セットまで半額、電子レンジ約4分（500W）で温めます。夕食ネットの対象は埼玉・千葉・東京・大阪・奈良・兵庫・徳島の7都府県です（2026年10月16日・公式確認）。夕食ネット側の口コミは<Link href="/articles/yushoku-net-kuchikomi/" className="text-accent underline">夕食ネット（ヨシケイ）の口コミ・評判</Link>にまとめています。</p>
